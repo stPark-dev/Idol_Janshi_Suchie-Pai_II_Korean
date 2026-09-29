@@ -101,7 +101,8 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
     """lines: [{text, size, x ('center'|'right'|int), y ('center'|int), area ([x0,y0,x1,y1] used
     for centring, default whole canvas), fill (idx, {"v": [idx, ...]} vertical gradient over the
     line, or a list of those per '|' segment), weight (extra stroke px, optional), aa (False =
-    no antialiasing, crisp pixel glyphs), outline (idx, optional), shadow ({idx, dx, dy},
+    no antialiasing, crisp pixel glyphs), outline (idx or a list per '|' segment, optional),
+    shadow ({idx, dx, dy},
     optional)}]. Everything drawn (glyph, stroke, outline, shadow) must lie inside box (default
     the whole canvas); otherwise LabelError, never silent clipping."""
     w, h = size
@@ -137,7 +138,10 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
         full = Image.new("L", big, 0)
         for m, _ in masks:
             full = ImageChops.lighter(full, m)
-        outline = full.filter(ImageFilter.MaxFilter(3)) if ln.get("outline") is not None else None
+        ol = ln.get("outline")
+        if isinstance(ol, list) and (len(ol) != len(segs) or not all(isinstance(o, int) for o in ol)):
+            raise LabelError(f"{len(segs)} colour segments need {len(segs)} outline indices, got {ol}: {ln['text']!r}")
+        outline = full.filter(ImageFilter.MaxFilter(3)) if ol is not None else None
         shape = outline or full
         if shape.getbbox() is None:
             continue
@@ -153,8 +157,11 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
                              f"(drawn {ex0 - pad},{ey0 - pad}-{ex1 - pad},{ey1 - pad})")
         if moved is not None:
             layer.paste(Image.new("RGBA", big, _colour(pal, ln["shadow"]["idx"])), (0, 0), moved)
-        if outline is not None:
-            layer.paste(Image.new("RGBA", big, _colour(pal, ln["outline"])), (0, 0), outline)
+        if isinstance(ol, list):
+            for (m, _), oi in zip(masks, ol):
+                layer.paste(Image.new("RGBA", big, _colour(pal, oi)), (0, 0), m.filter(ImageFilter.MaxFilter(3)))
+        elif outline is not None:
+            layer.paste(Image.new("RGBA", big, _colour(pal, ol)), (0, 0), outline)
         for m, fi in masks:
             layer.paste(_fill_image(big, pal, fi, full), (0, 0), m)
     return layer.crop((pad, pad, pad + w, pad + h))

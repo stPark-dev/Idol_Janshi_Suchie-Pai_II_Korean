@@ -1,8 +1,9 @@
 """Primary product build: source BIN/CUE -> patched BIN/CUE + manifest.json.
 
-Current scope: the title-screen sprite bundle inside PROLOG.BIN (LZSS-compressed Yc block) and
-the menu sprite bundle SELECT1.BIN (uncompressed Yc). All output changes go through one
-WritePlan over the raw Track 1 image, one write per touched sector.
+Current scope: the title-screen sprite bundle inside PROLOG.BIN (LZSS-compressed Yc block),
+other LZSS-compressed Yc blocks ("packed" jobs, e.g. the opening name plates), and uncompressed
+Yc bundles in whole files (menu, match screen, cards). All output changes go through one
+WritePlan over the raw Track 1 image, one write per touched sector (changes merged per file).
 """
 import hashlib
 import json
@@ -37,6 +38,8 @@ class SourceProfile:
     select1_size: int | None = None
     select1_bundle: int | None = None  # SELECT1.BIN offset of the Yc bundle
     files: dict = field(default_factory=dict)   # other patched files: name -> (lba, size)
+    packed: dict = field(default_factory=dict)  # compressed Yc blocks: name -> (file, lo, hi, region_sha1)
+    read_only: dict = field(default_factory=dict)  # files read (e.g. CRAM images) but never written
 
 
 # Idol Janshi Suchie-Pai II (Japan) (Disc 1), T-5705G V1.001 (docs/initial-survey.md §1, §3.6)
@@ -74,6 +77,9 @@ JP_DISC1 = SourceProfile(
         "APTSUKA.BIN": (22279, 393216),
         "APYUKI.BIN": (25717, 393216),
     },
+    # opening character-intro name plates (docs/initial-survey.md §3.11)
+    packed={"opening": ("PROLOG.BIN", 0x3C00, 0x7900, "ab1dd22d24cf71013f7f7cce22b55a0bae0c75a1")},
+    read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening (banks 0x60/0x70)
 )
 STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "SIHO.BIN", "SESIL.BIN",
                "SESIL2.BIN", "HIMITU.BIN", "NAZO.BIN", "SECRET.BIN", "HIDDEN.BIN", "KAKUSHI.BIN"]
@@ -201,7 +207,8 @@ def _rel(path: Path) -> str:
         return path.name
 
 
-def _verify_output(track1: Path, prolog_lba: int, lo: int, hi: int, stream: bytes, bundle: bytes, lbas: list[int]) -> None:
+def _verify_output(track1: Path, prolog_lba: int, lo: int, hi: int, stream: bytes, bundle: bytes, lbas: list[int],
+                   what: str = "title") -> None:
     t = _Track1(track1)
     try:
         for lba in lbas:
@@ -212,10 +219,10 @@ def _verify_output(track1: Path, prolog_lba: int, lo: int, hi: int, stream: byte
     finally:
         t.close()
     if got[:len(stream)] != stream or any(got[len(stream):]):
-        raise BuildError("output title region differs from the planned stream + zero padding")
+        raise BuildError(f"output {what} region differs from the planned stream + zero padding")
     for stale in (None, b"\xa5" * lzss.STALE_LEN):
         if lzss.decompress(got[:len(stream)], stale=stale) != bundle:
-            raise BuildError("output title block does not decode to the built bundle")
+            raise BuildError(f"output {what} block does not decode to the built bundle")
 
 
 def _outside(extents: list[tuple[int, int]], total: int) -> list[tuple[int, int]]:
@@ -240,6 +247,13 @@ def _file_extent(profile: SourceProfile, name: str) -> tuple[int, int]:
     raise BuildError(f"{name} is not in the source profile")
 
 
+def _packed_extent(profile: SourceProfile, name: str) -> tuple[int, int]:
+    """Extent of a file holding compressed blocks (PROLOG.BIN or a profile file)."""
+    if name == profile.prolog_name:
+        return profile.prolog_lba, profile.prolog_size
+    return _file_extent(profile, name)
+
+
 def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[dict, list]]:
     """Render one translation/layout pair into every listed file (all protected checks run per
     file). Returns (info, changes) per file; sector writes are registered later, once per file."""
@@ -247,6 +261,8 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
     tdoc = json.loads(translation.read_text())
+    if "packed" in tdoc or "palette_file" in tdoc:
+        raise BuildError(f"{translation.name}: packed table used in a file job")
     bundle = int(tdoc["bundle_offset"], 16)
     if "files" in tdoc and sorted(tdoc["files"]) != sorted(job["files"]):
         raise BuildError(f"{translation.name}: job files {job['files']} differ from the table's files {tdoc['files']}")
@@ -275,6 +291,67 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
     return out
 
 
+def _checked_file(t1: _Track1, extent: tuple[int, int], name: str) -> bytes:
+    found = iso9660.find_file(t1.user, name)
+    if found != tuple(extent):
+        raise BuildError(f"{name} extent {found} differs from profile {tuple(extent)}")
+    return _read_file_range(t1, extent[0], 0, extent[1])
+
+
+def _recompress(bundle: bytes, room: int, what: str) -> bytes:
+    stream = lzss.compress(bundle)
+    if lzss.decompress(stream) != bundle or lzss.decompress(stream, stale=b"\xa5" * lzss.STALE_LEN) != bundle:
+        raise BuildError(f"recompressed {what} block does not round-trip")
+    if len(stream) > room:
+        raise BuildError(f"{what} block {len(stream)} bytes exceeds region {room}")
+    return stream
+
+
+def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict) -> tuple[dict, list, bytes, bytes]:
+    """Render one translation/layout pair into an LZSS-compressed Yc block of the profile and
+    recompress it into the same region. Returns (info, changes, stream, rebuilt bundle)."""
+    name = job["packed"]
+    translation, layout = Path(job["translation"]), Path(job["layout"])
+    glossary = Path(job["glossary"]) if job.get("glossary") else None
+    font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
+    tdoc = json.loads(translation.read_text())
+    if tdoc.get("packed") != name:
+        raise BuildError(f"{translation.name}: table is for packed block {tdoc.get('packed')!r}, job is {name!r}")
+    if int(tdoc.get("bundle_offset", "0x0"), 16) != 0:
+        raise BuildError(f"{translation.name}: packed tables index the decoded block, bundle_offset must be 0x0")
+    unpinned = [e["id"] for e in tdoc["entries"] if len(e.get("palette_sha1", "")) != 40]
+    if "palette_offset" not in tdoc or unpinned:
+        raise BuildError(f"{translation.name}: packed tables need palette_offset and every entry's palette_sha1 "
+                         f"(missing: {unpinned})")
+    fname, lo, hi, region_sha1 = profile.packed[name]
+    lba, size = _packed_extent(profile, fname)
+    if not 0 <= lo < hi <= size:
+        raise BuildError(f"{name}: region {lo:#x}-{hi:#x} outside {fname}")
+    region = _checked_file(t1, (lba, size), fname)[lo:hi]
+    if hashlib.sha1(region).hexdigest() != region_sha1:
+        raise BuildError(f"{name}: region bytes differ from the supported source")
+    if any(region[4 + int.from_bytes(region[:4], "big"):]):
+        raise BuildError(f"{name}: region tail after the source stream is not zero padding")
+    bundle = lzss.decompress(region)
+    ents = yc.parse(bundle)
+    pf = tdoc.get("palette_file")
+    if pf not in profile.read_only:
+        raise BuildError(f"{translation.name}: palette_file {pf!r} is not a read-only file of the profile")
+    pal_data = _checked_file(t1, profile.read_only[pf], pf)
+    res = select1_mod.render(bundle, translation, layout, font=font, glossary=glossary, file_name=fname,
+                             palette_data=pal_data)
+    new = yc.build([yc.Entry(e.width, e.height, e.attr, e.colr, res.textures.get(i, e.data)) for i, e in enumerate(ents)])
+    stream = _recompress(new, hi - lo, name)
+    info = {"packed": name, "file": fname, "lba": lba, "region": [lo, hi], "stream_bytes": len(stream),
+            "entries": res.ids, "states": res.states, "distribution": res.distribution, "sectors": [],
+            "palette_file": pf, "palette_file_sha1": hashlib.sha1(pal_data).hexdigest(),
+            "translation": _rel(translation), "translation_sha1": _sha1(translation),
+            "layout": _rel(layout), "layout_sha1": _sha1(layout),
+            "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
+            "font": font, "font_sha1": _sha1(Path(font))}
+    return info, [(lo, stream + bytes(hi - lo - len(stream)))], stream, new
+
+
 def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile,
            select1=None, bundles=None, title: bool = True) -> dict:
     tr1, tr2 = _cue_tracks(source_cue)
@@ -284,7 +361,17 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
         raise BuildError(f"Track 2 SHA-1 mismatch: {tr2}")
     if title_spec and not title:
         raise BuildError("a title spec was given but the title bundle is disabled")
-    jobs = list(bundles or [])
+    jobs = [j for j in (bundles or []) if "packed" not in j]
+    packed_jobs = [j for j in (bundles or []) if "packed" in j]
+    if any("files" in j for j in packed_jobs):
+        raise BuildError("a job is either packed or files, not both")
+    unknown = [j["packed"] for j in packed_jobs if j["packed"] not in profile.packed]
+    if unknown:
+        raise BuildError(f"packed blocks {unknown} are not in the source profile")
+    compressed = {f for f, *_ in profile.packed.values()} | {profile.prolog_name}
+    held = sorted({n for j in jobs for n in j["files"] if n in compressed})
+    if held:
+        raise BuildError(f"{held} hold compressed blocks; use a packed job")
     if select1:
         jobs.insert(0, {"files": [profile.select1_name or "SELECT1.BIN"], "translation": select1[0], "layout": select1[1],
                         "glossary": select1[2] if len(select1) > 2 else None, "_select1": True})
@@ -292,6 +379,7 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
     t1 = _Track1(tr1)
     try:
         extents = [_file_extent(profile, n) for job in jobs for n in job["files"]]
+        extents += [_packed_extent(profile, profile.packed[j["packed"]][0]) for j in packed_jobs]
         if title:
             if not 0 <= lo < hi <= profile.prolog_size:
                 raise BuildError(f"title region {lo:#x}-{hi:#x} outside {profile.prolog_name}")
@@ -300,6 +388,12 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
                 raise BuildError(f"{profile.prolog_name} extent {prolog_lba}/{size} differs from profile")
             extents.append((prolog_lba, size))
         plan = WritePlan(tr1, protected=_outside(extents, tr1.stat().st_size))
+        regions = [(profile.prolog_name, lo, hi, "title")] if title else []
+        regions += [(*profile.packed[j["packed"]][:3], j["packed"]) for j in packed_jobs]
+        for i, (fa, a0, a1, na) in enumerate(regions):      # early, named form of the _file_writes check
+            for fb, b0, b1, nb in regions[i + 1:]:
+                if fa == fb and a0 < b1 and b0 < a1:
+                    raise BuildError(f"compressed regions {na} and {nb} overlap in {fa}")
         if title:
             region = _read_file_range(t1, prolog_lba, lo, hi)
             if hashlib.sha1(region).hexdigest() != profile.title_region_sha1:
@@ -307,23 +401,26 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
             entries = yc.parse(lzss.decompress(region))
             new_entries = compose_title(entries, title_spec) if title_spec else entries
             tbundle = yc.build(new_entries)
-            stream = lzss.compress(tbundle)
-            if lzss.decompress(stream) != tbundle or lzss.decompress(stream, stale=b"\xa5" * lzss.STALE_LEN) != tbundle:
-                raise BuildError("recompressed title block does not round-trip")
-            if len(stream) > hi - lo:
-                raise BuildError(f"title block {len(stream)} bytes exceeds region {hi - lo}")
-            lbas = _file_writes(plan, t1, prolog_lba, [(lo, stream + bytes(hi - lo - len(stream)))], "title")
+            stream = _recompress(tbundle, hi - lo, "title")
         results = [(job, _plan_bundle(t1, profile, job)) for job in jobs]
+        packed = [_plan_packed(t1, profile, job) for job in packed_jobs]
+        results += [(job, [(info, changes)]) for job, (info, changes, _, _) in zip(packed_jobs, packed)]
         per_file: dict[str, list] = {}
+        title_slot = {"file": profile.prolog_name, "lba": prolog_lba} if title else None
+        if title:
+            per_file[profile.prolog_name] = [(title_slot, [(lo, stream + bytes(hi - lo - len(stream)))])]
         for _, infos in results:
             for info, changes in infos:
                 per_file.setdefault(info["file"], []).append((info, changes))
         for name, items in per_file.items():
             lba = items[0][0]["lba"]
+            if any(info["lba"] != lba for info, _ in items):
+                raise BuildError(f"{name}: jobs disagree on the file's LBA")
             sectors = _file_writes(plan, t1, lba, [c for _, ch in items for c in ch], name)
             for info, ch in items:
                 touched = {lba + (o + k) // cdsector.USER for o, t in ch for k in (0, len(t) - 1)}
                 info["sectors"] = [x for x in sectors if min(touched, default=-1) <= x <= max(touched, default=-1)]
+        lbas = title_slot["sectors"] if title else []
     finally:
         t1.close()
 
@@ -334,6 +431,8 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
         raise BuildError("Track 2 copy differs from source")
     if title:
         _verify_output(out_dir / o1, prolog_lba, lo, hi, stream, tbundle, lbas)
+    for info, _, pstream, bundle in packed:
+        _verify_output(out_dir / o1, info["lba"], *info["region"], pstream, bundle, info["sectors"], what=info["packed"])
     t = _Track1(out_dir / o1)
     try:
         for _, per_file in results:

@@ -162,7 +162,8 @@ def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], gl
 
 
 def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAULT_FONT,
-           glossary: Path | None = None, file_name: str | None = None) -> Result:
+           glossary: Path | None = None, file_name: str | None = None, palette_data: bytes | None = None) -> Result:
+    """palette_data: the file holding the CRAM image when it is not the bundle's own file."""
     tr = json.loads(Path(translation).read_text())
     lay = json.loads(Path(layout).read_text())
     prefix = tr.get("id_prefix")
@@ -176,7 +177,8 @@ def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAU
     bundle = int(tr["bundle_offset"], 16)
     ents = entries(data, bundle)
     cram = int(tr.get("palette_offset", "0x0"), 16)
-    _check_tables(tr, lay, ents, offsets(data, bundle), gl, file_name, data, cram)
+    pal_src = data if palette_data is None else palette_data
+    _check_tables(tr, lay, ents, offsets(data, bundle), gl, file_name, pal_src, cram)
     by_id = {e["id"]: e for e in tr["entries"]}
     templates = lay.get("templates", {})
     res = Result()
@@ -213,7 +215,7 @@ def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAU
             for b in range(a + 1, len(regions)):
                 if _overlap(regions[a]["box"], regions[b]["box"]):
                     raise Select1Error(f"{spec['id']}: regions {a} and {b} overlap")
-        pal = palette(data, src.colr, cram)
+        pal = palette(pal_src, src.colr, cram)
         tex = Texture(src.width, src.height, bytearray(src.data))
         k = 0
         for region in regions:

@@ -364,7 +364,7 @@ def _stage_disc(tmp_path):
                    'FILE "t2.bin" BINARY\n  TRACK 02 AUDIO\n    INDEX 00 00:00:00\n    INDEX 01 00:02:00\n')
     profile = build.SourceProfile(
         track1_sha1=hashlib.sha1(bytes(raw)).hexdigest(), track2_sha1=hashlib.sha1(b"\x00" * 2352 * 3).hexdigest(),
-        prolog_name="STG1.BIN", prolog_lba=60, prolog_size=len(sel), title_region=(0, 1), title_region_sha1="",
+        prolog_name="PROLOG.BIN", prolog_lba=0, prolog_size=0, title_region=(0, 1), title_region_sha1="",   # title unused
         files={n: (lba, len(sel)) for n, lba in STG})
     return cue, profile, sel
 
@@ -444,3 +444,223 @@ def test_bundle_output_equals_render_and_leaves_other_sectors(tmp_path):
     for lba in range(80):
         if lba not in m["bundles"][0]["sectors"]:
             assert raw[lba * 2352:(lba + 1) * 2352] == src[lba * 2352:(lba + 1) * 2352]
+
+
+# --- compressed ("packed") Yc bundles: PROLOG.BIN block whose CRAM image lives in another file ---
+PK_LO, PK_HI = 0x500, 0x1900
+TITLE_HI = 0x500                     # title block 0x100-0x500 shares sector 0 with the packed block
+PAL_LBA = 50
+
+
+def _packed_bundle():
+    return yc.build([yc.Entry(32, 16, 0x0080, 0x10, bytes(256)), yc.Entry(32, 16, 0x0080, 0x10, bytes([0x33]) * 256)])
+
+
+def _pal_file():
+    pal = bytearray(0x40)
+    pal[0x22:0x24] = (0x7FFF).to_bytes(2, "big")
+    pal[0x24:0x26] = (0x001F).to_bytes(2, "big")
+    pal[0x26:0x28] = (0x7C00).to_bytes(2, "big")
+    return bytes(pal)
+
+
+def _packed_disc(tmp_path, tail=b""):
+    prolog = bytearray(0x2000)
+    ts = lzss.compress(yc.build(_entries()))
+    prolog[BLOCK_OFF:BLOCK_OFF + len(ts)] = ts
+    ps = lzss.compress(_packed_bundle())
+    prolog[PK_LO:PK_LO + len(ps)] = ps
+    prolog[PK_LO + len(ps):PK_LO + len(ps) + len(tail)] = tail
+    pal = _pal_file()
+    user = {}
+    root = bytearray(2048)
+    p = 0
+    for rec in [_dirrec(b"\x00", 20, 2048, 2), _dirrec(b"\x01", 20, 2048, 2),
+                _dirrec(b"PAL.BIN;1", PAL_LBA, len(pal)), _dirrec(b"PROLOG.BIN;1", FILE_LBA, len(prolog))]:
+        root[p:p + len(rec)] = rec
+        p += len(rec)
+    pvd = bytearray(2048)
+    pvd[0:6] = b"\x01CD001"
+    pvd[156:190] = _dirrec(b"\x00", 20, 2048, 2)
+    user[16], user[20] = bytes(pvd), bytes(root)
+    for i in range(0, len(prolog), 2048):
+        user[FILE_LBA + i // 2048] = bytes(prolog[i:i + 2048])
+    user[PAL_LBA] = pal.ljust(2048, b"\x00")
+    raw = bytearray()
+    for lba in range(PAL_LBA + 2):
+        s = bytearray(2352)
+        s[0:12] = cdsector.SYNC
+        m, rem = divmod(lba + 150, 4500)
+        sec, fr = divmod(rem, 75)
+        s[12:15] = bytes(((v // 10) << 4) | (v % 10) for v in (m, sec, fr))
+        s[15] = 1
+        s[16:2064] = user.get(lba, bytes(2048))
+        raw += cdsector.fix_mode1(s)
+    (tmp_path / "t1.bin").write_bytes(bytes(raw))
+    (tmp_path / "t2.bin").write_bytes(b"\x00" * 2352 * 3)
+    cue = tmp_path / "src.cue"
+    cue.write_text('FILE "t1.bin" BINARY\n  TRACK 01 MODE1/2352\n    INDEX 01 00:00:00\n'
+                   'FILE "t2.bin" BINARY\n  TRACK 02 AUDIO\n    INDEX 00 00:00:00\n    INDEX 01 00:02:00\n')
+    profile = build.SourceProfile(
+        track1_sha1=hashlib.sha1(bytes(raw)).hexdigest(), track2_sha1=hashlib.sha1(b"\x00" * 2352 * 3).hexdigest(),
+        prolog_name="PROLOG.BIN", prolog_lba=FILE_LBA, prolog_size=len(prolog),
+        title_region=(BLOCK_OFF, TITLE_HI),
+        title_region_sha1=hashlib.sha1(bytes(prolog[BLOCK_OFF:TITLE_HI])).hexdigest(),
+        packed={"opening": ("PROLOG.BIN", PK_LO, PK_HI, hashlib.sha1(bytes(prolog[PK_LO:PK_HI])).hexdigest())},
+        read_only={"PAL.BIN": (PAL_LBA, len(pal))})
+    return cue, profile, prolog
+
+
+def _packed_tables(tmp_path, **over):
+    ents = yc.parse(_packed_bundle())
+    pos = [4 + 8 * len(ents)]
+    for e in ents[:-1]:
+        pos.append(pos[-1] + len(e.data))
+    tr = {"packed": "opening", "bundle_offset": "0x0", "palette_file": "PAL.BIN", "palette_offset": "0x0",
+          "entries": [{"id": f"op.e{i}", "entry": i, "offset": hex(p), "size": [e.width, e.height], "colr": hex(e.colr),
+                       "src_sha1": hashlib.sha1(e.data).hexdigest(), "ja": "あ", "ko": "가", "state": "needs_review",
+                       "terms": [], "note": "", "palette_sha1": hashlib.sha1(_pal_file()[0x20:0x40]).hexdigest()}
+                      for i, (e, p) in enumerate(zip(ents, pos))], "excluded": []}
+    tr.update(over)
+    lay = {"entries": [
+        {"id": "op.e0", "box": [0, 0, 32, 16], "allowed": [1, 2],
+         "lines": [{"size": 12, "x": "center", "y": 1, "fill": 1, "outline": 2}]},
+        {"id": "op.e1", "box": [0, 0, 32, 16], "clean": {"method": "rows", "text_idx": [1, 2]}, "allowed": [1, 2, 3],
+         "lines": [{"size": 12, "x": "center", "y": 1, "fill": 1}]}]}
+    (tmp_path / "ptr.json").write_text(json.dumps(tr, ensure_ascii=False))
+    (tmp_path / "play.json").write_text(json.dumps(lay, ensure_ascii=False))
+    return {"packed": "opening", "translation": tmp_path / "ptr.json", "layout": tmp_path / "play.json"}
+
+
+def _decode_at(data, off):
+    n = int.from_bytes(data[off:off + 4], "big")
+    return lzss.decompress(data[off:off + 4 + n]), 4 + n
+
+
+def test_packed_job_rewrites_compressed_bundle_in_place(tmp_path):
+    cue, profile, prolog = _packed_disc(tmp_path)
+    job = _packed_tables(tmp_path)
+    m = build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+    new = _read_prolog(tmp_path / "out" / m["track1"], FILE_LBA, len(prolog))
+    from suchie2 import select1
+    want = select1.render(_packed_bundle(), job["translation"], job["layout"], palette_data=_pal_file()).textures
+    bundle, n = _decode_at(new, PK_LO)
+    assert {i: e.data for i, e in enumerate(yc.parse(bundle))} == want
+    assert not any(new[PK_LO + n:PK_HI])                         # rest of the region is zero padding
+    assert new[:PK_LO] == prolog[:PK_LO] and new[PK_HI:] == prolog[PK_HI:]
+    info = m["bundles"][0]
+    assert info["packed"] == "opening" and info["file"] == "PROLOG.BIN" and info["stream_bytes"] == n
+    assert info["palette_file"] == "PAL.BIN" and info["sectors"] == [FILE_LBA + s for s in range(PK_LO // 2048, (PK_HI - 1) // 2048 + 1)]
+
+
+def test_packed_and_title_blocks_share_a_sector(tmp_path):
+    cue, profile, prolog = _packed_disc(tmp_path)
+    m = build.build(cue, tmp_path / "out", _spec(tmp_path), profile=profile, bundles=[_packed_tables(tmp_path)])
+    new = _read_prolog(tmp_path / "out" / m["track1"], FILE_LBA, len(prolog))
+    title_ents = yc.parse(_decode_at(new, BLOCK_OFF)[0])
+    assert set(title_ents[1].data) == {0} and title_ents[0].data[3 * 8 + 2] == 0x11
+    assert any(yc.parse(_decode_at(new, PK_LO)[0])[0].data)
+    assert m["title"]["sectors"] == [FILE_LBA]
+    assert FILE_LBA in next(b for b in m["bundles"] if b.get("packed"))["sectors"]
+    pal_out = (tmp_path / "out" / m["track1"]).read_bytes()[PAL_LBA * 2352:(PAL_LBA + 1) * 2352]
+    assert pal_out == (tmp_path / "t1.bin").read_bytes()[PAL_LBA * 2352:(PAL_LBA + 1) * 2352]   # read-only file
+
+
+def test_packed_region_must_match_the_profile_hash(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    bad = build.SourceProfile(**{**profile.__dict__, "packed": {"opening": ("PROLOG.BIN", PK_LO, PK_HI, "0" * 40)}})
+    with pytest.raises(build.BuildError, match="opening"):
+        build.build(cue, tmp_path / "out", None, profile=bad, bundles=[_packed_tables(tmp_path)], title=False)
+
+
+def test_packed_block_that_does_not_fit_is_rejected(tmp_path, monkeypatch):
+    cue, profile, _ = _packed_disc(tmp_path)
+    job = _packed_tables(tmp_path)
+    real = lzss.compress
+    monkeypatch.setattr(build.lzss, "compress", lambda b: real(b) + bytes(PK_HI - PK_LO))
+    with pytest.raises(build.BuildError, match="exceeds"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+@pytest.mark.parametrize("over,msg", [({"palette_file": "OTHER.BIN"}, "palette_file"),
+                                      ({"packed": "nope"}, "packed"),
+                                      ({"bundle_offset": "0x10"}, "bundle_offset"),
+                                      ({"palette_offset": None}, "palette_offset")])
+def test_packed_table_must_name_the_profile_block(tmp_path, over, msg):
+    cue, profile, _ = _packed_disc(tmp_path)
+    job = _packed_tables(tmp_path, **over)
+    t = json.loads(job["translation"].read_text())
+    t = {k: v for k, v in t.items() if v is not None}
+    job["translation"].write_text(json.dumps(t, ensure_ascii=False))
+    with pytest.raises(build.BuildError, match=msg):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_packed_region_overlapping_the_title_is_rejected(tmp_path):
+    cue, profile, prolog = _packed_disc(tmp_path)
+    bad = build.SourceProfile(**{**profile.__dict__, "packed": {
+        "opening": ("PROLOG.BIN", TITLE_HI - 0x10, PK_HI, hashlib.sha1(bytes(prolog[TITLE_HI - 0x10:PK_HI])).hexdigest())}})
+    with pytest.raises(build.BuildError, match="overlap"):
+        build.build(cue, tmp_path / "out", _spec(tmp_path), profile=bad, bundles=[_packed_tables(tmp_path)])
+
+
+def test_packed_readback_rejects_corrupted_output(tmp_path, monkeypatch):
+    cue, profile, _ = _packed_disc(tmp_path)
+    job = _packed_tables(tmp_path)
+    real = build.WritePlan.apply
+
+    def corrupt(self, path):
+        real(self, path)
+        data = bytearray(path.read_bytes())
+        data[(FILE_LBA + 1) * 2352 + 16 + 5] ^= 0xFF       # inside the packed stream, EDC left stale
+        path.write_bytes(bytes(data))
+    monkeypatch.setattr(build.WritePlan, "apply", corrupt)
+    with pytest.raises(build.BuildError, match="LBA 22"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_packed_entries_need_a_palette_hash(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    job = _packed_tables(tmp_path)
+    t = json.loads(job["translation"].read_text())
+    del t["entries"][1]["palette_sha1"]
+    job["translation"].write_text(json.dumps(t, ensure_ascii=False))
+    with pytest.raises(build.BuildError, match="palette_sha1"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_packed_region_tail_must_be_zero_padding(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path, tail=b"\x01")
+    with pytest.raises(build.BuildError, match="padding"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[_packed_tables(tmp_path)], title=False)
+
+
+def test_unknown_packed_job_fails_before_rendering(tmp_path, monkeypatch):
+    cue, profile, _ = _packed_disc(tmp_path)
+    job = {**_packed_tables(tmp_path), "packed": "nope"}
+    monkeypatch.setattr(build, "_plan_bundle", lambda *a: pytest.fail("rendered before validating jobs"))
+    with pytest.raises(build.BuildError, match="not in the source profile"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_job_is_either_packed_or_files(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    job = {**_packed_tables(tmp_path), "files": ["PROLOG.BIN"]}
+    with pytest.raises(build.BuildError, match="either"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_file_job_cannot_target_a_file_with_compressed_blocks(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    with pytest.raises(build.BuildError, match="compressed"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["PROLOG.BIN"], "translation": tr, "layout": lay}])
+
+
+def test_packed_table_cannot_be_used_by_a_file_job(tmp_path):
+    cue, profile, _ = _stage_disc(tmp_path)
+    job = _packed_tables(tmp_path)
+    with pytest.raises(build.BuildError, match="packed table"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN"], "translation": job["translation"], "layout": job["layout"]}])

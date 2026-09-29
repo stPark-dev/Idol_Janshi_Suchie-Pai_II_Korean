@@ -1,0 +1,908 @@
+{
+ "_about": "오프닝(데모) 캐릭터 소개 이름표. PROLOG.BIN 0x3C00 LZSS 블록 안의 Yc 묶음(47항목; 오프셋은 압축 해제 결과 기준). 팔레트는 OPENING1.BIN 0x56800의 CRAM 이미지(뱅크 0x60/0x70). 0~14 별명, 15~29 이름, 30~44 성우, 45 '(声 )' 틀, 46 이름 칸 바탕.",
+ "packed": "opening",
+ "bundle_offset": "0x0",
+ "palette_file": "OPENING1.BIN",
+ "palette_offset": "0x56800",
+ "id_prefix": "opening.",
+ "entries": [
+  {
+   "id": "opening.e000",
+   "entry": 0,
+   "offset": "0x17c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "ab566e7849549cb1aae540f933520e6ba99f6bd2",
+   "ja": "アンコのマイ こと…",
+   "ko": "안커의 마이|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "term.ankou",
+    "name.mai",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e001",
+   "entry": 1,
+   "offset": "0x5fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "17baab466aa03363c604b99b712381bc96ee1ab7",
+   "ja": "フウパイのエリカ こと…",
+   "ko": "풍패의 에리카|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "term.kazehai",
+    "name.erika",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e002",
+   "entry": 2,
+   "offset": "0xa7c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "45e4b75b65f1f4c45d9edb54e450c249982efc10",
+   "ja": "イーペーコーのサユリ こと…",
+   "ko": "이페코의 사유리|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "yaku.一盃口",
+    "name.sayuri",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e003",
+   "entry": 3,
+   "offset": "0xefc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "b1f5cb3c2cedd9d13ec5e5cd59d21130e731cb0d",
+   "ja": "ジハイのリエ こと…",
+   "ko": "자패의 리에|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "term.jihai",
+    "name.rie",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e004",
+   "entry": 4,
+   "offset": "0x137c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "c1a64626bc594fb4ab2f3534feac6ef80ec21ab9",
+   "ja": "最強の雀士",
+   "ko": "최강의 작사",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e005",
+   "entry": 5,
+   "offset": "0x17fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "122fcf5c01f6b6655d2ee1215ae1f2380b91aafa",
+   "ja": "病弱な少女",
+   "ko": "병약한 소녀",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e006",
+   "entry": 6,
+   "offset": "0x1c7c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "fa33bf9ea939c9b23bbe7177d12b6fc0c8d4387e",
+   "ja": "ピーチパイ こと…",
+   "ko": "피치파이|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "epithet.peach",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e007",
+   "entry": 7,
+   "offset": "0x20fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "e16f62dfbc0494b33079b2cf67fca6fc8acc9312",
+   "ja": "チェリーパイ こと…",
+   "ko": "체리파이|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "epithet.cherry",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e008",
+   "entry": 8,
+   "offset": "0x257c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "859c3a7758ac2bc344614c4c56b5e1d294832ce0",
+   "ja": "レモンパイ こと…",
+   "ko": "레몬파이|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "epithet.lemon",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e009",
+   "entry": 9,
+   "offset": "0x29fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "5e8aec0f692b960ff56a4f2e21a0d17434aea998",
+   "ja": "チャンタのルミ こと…",
+   "ko": "찬타의 루미|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "yaku.全帯么",
+    "name.rumi",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e010",
+   "entry": 10,
+   "offset": "0x2e7c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "f5454398409881495862b658f1ed9175300d3520",
+   "ja": "ブリッジのユキ こと…",
+   "ko": "브릿지의 유키|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "epithet.bridge",
+    "name.yuki",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e011",
+   "entry": 11,
+   "offset": "0x32fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "3f62fb0bdc6fa894130f9c53ee23458deb79ed34",
+   "ja": "ペットのうさぎ?",
+   "ko": "애완 토끼?",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e012",
+   "entry": 12,
+   "offset": "0x377c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "4befbddc97226131f68d3668e6d42c1138fb03bb",
+   "ja": "ドラのシホ こと…",
+   "ko": "도라의 시호|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ",
+    "name.shiho",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e013",
+   "entry": 13,
+   "offset": "0x3bfc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "aa27bf3342e87374e7e1bb3745a5c51d66377174",
+   "ja": "ナゾのシスター",
+   "ko": "수수께끼의 시스터",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e014",
+   "entry": 14,
+   "offset": "0x407c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "b26d0ccbad3f01b596073c678f41fafaa8f5333f",
+   "ja": "スーチーパイ こと…",
+   "ko": "스치파이|라 불리는…",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie",
+    "ui.koto"
+   ],
+   "note": "원문 'こと…'(흰 글자·파란 테두리) 부분은 같은 색으로 '라 불리는…'",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  },
+  {
+   "id": "opening.e015",
+   "entry": 15,
+   "offset": "0x44fc",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "e02bcc89f0ed1fc18ef379ce3ed39465005214d3",
+   "ja": "天野麻衣",
+   "ko": "아마노 마이",
+   "state": "needs_review",
+   "terms": [
+    "name.mai"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e016",
+   "entry": 16,
+   "offset": "0x4a3c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "1bf08e4d8b3ac5f74ae6f3c39a2d760f2dd221b4",
+   "ja": "西野絵利佳",
+   "ko": "니시노 에리카",
+   "state": "needs_review",
+   "terms": [
+    "name.erika"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e017",
+   "entry": 17,
+   "offset": "0x4f7c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "be93f2d51eeb4142e0a1fa4cf57f4b9bd3322903",
+   "ja": "河本小百合",
+   "ko": "카와모토 사유리",
+   "state": "needs_review",
+   "terms": [
+    "name.sayuri"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e018",
+   "entry": 18,
+   "offset": "0x54bc",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "917a33292f63f6cc948b48d4e219a19b1d5abdf6",
+   "ja": "南條理恵",
+   "ko": "난조 리에",
+   "state": "needs_review",
+   "terms": [
+    "name.rie"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e019",
+   "entry": 19,
+   "offset": "0x59fc",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "b368ce8eddbbc499ffc72897ab982e937b5bdd0e",
+   "ja": "橘麗華",
+   "ko": "타치바나 레이카",
+   "state": "needs_review",
+   "terms": [
+    "name.reika"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e020",
+   "entry": 20,
+   "offset": "0x5f3c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "4b32439ce711b934e520d9e255a59041f3744076",
+   "ja": "桜井美優里",
+   "ko": "사쿠라이 미유리",
+   "state": "needs_review",
+   "terms": [
+    "name.miyuri"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e021",
+   "entry": 21,
+   "offset": "0x647c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "31ead35e68bbf02527cbda66800ce6ce511d808e",
+   "ja": "篠原ありす",
+   "ko": "시노하라 아리스",
+   "state": "needs_review",
+   "terms": [
+    "name.alice"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e022",
+   "entry": 22,
+   "offset": "0x69bc",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "ff981068fc2c2655a88448842b5263cde600034c",
+   "ja": "槙枝早苗",
+   "ko": "마키에다 사나에",
+   "state": "needs_review",
+   "terms": [
+    "name.sanae"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e023",
+   "entry": 23,
+   "offset": "0x6efc",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "c8f0e129db8415fbacfc478712a1e183df937a4f",
+   "ja": "一文字つかさ",
+   "ko": "이치몬지 츠카사",
+   "state": "needs_review",
+   "terms": [
+    "name.tsukasa"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e024",
+   "entry": 24,
+   "offset": "0x743c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "5c3e08dd684992e7d4666d8e981c63e4fe690e65",
+   "ja": "佐々木留美",
+   "ko": "사사키 루미",
+   "state": "needs_review",
+   "terms": [
+    "name.rumi"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e025",
+   "entry": 25,
+   "offset": "0x797c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "d2cdae685fc50e52f78614df1e5ea235a88ea1b7",
+   "ja": "水野佑紀",
+   "ko": "미즈노 유키",
+   "state": "needs_review",
+   "terms": [
+    "name.yuki_full"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e026",
+   "entry": 26,
+   "offset": "0x7ebc",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "fb46674578a38cffc76e4d0a9f89dbcacba717a5",
+   "ja": "みるく",
+   "ko": "밀크",
+   "state": "needs_review",
+   "terms": [
+    "name.milk"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e027",
+   "entry": 27,
+   "offset": "0x83fc",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "5b1d8e628ce606f9dd4d66dead86dce7b0e4b803",
+   "ja": "片桐志穂",
+   "ko": "카타기리 시호",
+   "state": "needs_review",
+   "terms": [
+    "name.shiho_full"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e028",
+   "entry": 28,
+   "offset": "0x893c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "f1a87c76b3a3a5151da96cd56e5da1144f98f988",
+   "ja": "セシル・デリンジャー",
+   "ko": "세실 데린저",
+   "state": "needs_review",
+   "terms": [
+    "name.cecil_full"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e029",
+   "entry": 29,
+   "offset": "0x8e7c",
+   "size": [
+    112,
+    24
+   ],
+   "colr": "0x70",
+   "src_sha1": "b75f3d563db6b2e1863eb0ab4fa3a69eaac8ea73",
+   "ja": "御崎恭子",
+   "ko": "미사키 쿄코",
+   "state": "needs_review",
+   "terms": [
+    "name.kyoko_full"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e030",
+   "entry": 30,
+   "offset": "0x93bc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "6c5a805d597e5f5702df6bbdea5ea596f8e2c1aa",
+   "ja": "吉田古奈美",
+   "ko": "요시다 코나미",
+   "state": "needs_review",
+   "terms": [
+    "va.yoshida"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e031",
+   "entry": 31,
+   "offset": "0x96fc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "f7fc463987b21ca8f103ad843f07e8d3856ad502",
+   "ja": "平松晶子",
+   "ko": "히라마츠 아키코",
+   "state": "needs_review",
+   "terms": [
+    "va.hiramatsu"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e032",
+   "entry": 32,
+   "offset": "0x9a3c",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "f945f7b5a590b35d4de35e8811c92fb5133a7dfb",
+   "ja": "西原久美子",
+   "ko": "니시하라 쿠미코",
+   "state": "needs_review",
+   "terms": [
+    "va.nishihara"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e033",
+   "entry": 33,
+   "offset": "0x9d7c",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "e28d884d582d60430f5ec793b785af015f76c377",
+   "ja": "深見梨加",
+   "ko": "후카미 리카",
+   "state": "needs_review",
+   "terms": [
+    "va.fukami"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e034",
+   "entry": 34,
+   "offset": "0xa0bc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "35ad16579040443478587dd069ab95a07f1257cd",
+   "ja": "松本梨香",
+   "ko": "마츠모토 리카",
+   "state": "needs_review",
+   "terms": [
+    "va.matsumoto"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e035",
+   "entry": 35,
+   "offset": "0xa3fc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "b584d6403b8eecd4b8faa2a23fd05a8cb53ac716",
+   "ja": "こおろぎさとみ",
+   "ko": "코오로기 사토미",
+   "state": "needs_review",
+   "terms": [
+    "va.korogi"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e036",
+   "entry": 36,
+   "offset": "0xa73c",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "6c5a805d597e5f5702df6bbdea5ea596f8e2c1aa",
+   "ja": "吉田古奈美",
+   "ko": "요시다 코나미",
+   "state": "needs_review",
+   "terms": [
+    "va.yoshida"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e037",
+   "entry": 37,
+   "offset": "0xaa7c",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "0e0c705e416d82e4da4bc618e92650ab6cb71d3a",
+   "ja": "水谷優子",
+   "ko": "미즈타니 유코",
+   "state": "needs_review",
+   "terms": [
+    "va.mizutani"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e038",
+   "entry": 38,
+   "offset": "0xadbc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "35ad16579040443478587dd069ab95a07f1257cd",
+   "ja": "松本梨香",
+   "ko": "마츠모토 리카",
+   "state": "needs_review",
+   "terms": [
+    "va.matsumoto"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e039",
+   "entry": 39,
+   "offset": "0xb0fc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "8683731dbc13f386983741f57ac856ff2c71a40e",
+   "ja": "冨永みーな",
+   "ko": "토미나가 미나",
+   "state": "needs_review",
+   "terms": [
+    "va.tominaga"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e040",
+   "entry": 40,
+   "offset": "0xb43c",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "6b354567e73412716ce7f3111c130b88a24ed9a0",
+   "ja": "高橋美紀",
+   "ko": "타카하시 미키",
+   "state": "needs_review",
+   "terms": [
+    "va.takahashi"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e041",
+   "entry": 41,
+   "offset": "0xb77c",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "f945f7b5a590b35d4de35e8811c92fb5133a7dfb",
+   "ja": "西原久美子",
+   "ko": "니시하라 쿠미코",
+   "state": "needs_review",
+   "terms": [
+    "va.nishihara"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e042",
+   "entry": 42,
+   "offset": "0xbabc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "7be28134a0ca2baca1ff060b9571f1581de316cc",
+   "ja": "矢島晶子",
+   "ko": "야지마 아키코",
+   "state": "needs_review",
+   "terms": [
+    "va.yajima"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e043",
+   "entry": 43,
+   "offset": "0xbdfc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "851d9731387f1978e1821153d10b1351d3491ca2",
+   "ja": "折笠愛",
+   "ko": "오리카사 아이",
+   "state": "needs_review",
+   "terms": [
+    "va.orikasa"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e044",
+   "entry": 44,
+   "offset": "0xc13c",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "56a3a843fa053d758368ca948420e2782190067c",
+   "ja": "かないみか",
+   "ko": "카나이 미카",
+   "state": "needs_review",
+   "terms": [
+    "va.kanai"
+   ],
+   "note": "",
+   "palette_sha1": "5f8f11925e77dc5d44df76e10acf9be7ce447cc4"
+  },
+  {
+   "id": "opening.e045",
+   "entry": 45,
+   "offset": "0xc47c",
+   "size": [
+    136,
+    24
+   ],
+   "colr": "0x60",
+   "src_sha1": "912cbcefe02d47b882f1dd42f49323aa93f636a8",
+   "ja": "( 声 )",
+   "ko": "성우",
+   "state": "needs_review",
+   "terms": [
+    "ui.cv"
+   ],
+   "note": "괄호 틀은 그대로 두고 '声' 자리만 바꿈",
+   "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "opening.e046",
+   "entry": 46,
+   "offset": "0xcadc",
+   "size": [
+    120,
+    32
+   ],
+   "colr": "0x70",
+   "src_sha1": "07bf7875fea58c8034737722ef4962b73760eb72",
+   "reason": "이름 칸 바탕 틀 (글자 없음)"
+  }
+ ]
+}

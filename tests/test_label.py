@@ -201,3 +201,19 @@ def test_clean_rows_borrow_tie_prefers_upper_row_and_all_empty_fails():
     assert _rows(t)[1] == "aaaa"
     with pytest.raises(label.LabelError):
         label.clean_rows(_tex(["1111", "2222"]), (0, 0, 4, 2), text_idx={1, 2}, borrow_rows={0, 1})
+
+
+def test_render_lines_outline_per_segment():
+    pal = [0, 0x001F, 0x03E0, 0x7C00, 0x7FFF] + [0] * 11   # red, green, blue, white
+    layer = label.render_lines((60, 20), [
+        {"text": "가|나", "size": 14, "x": 2, "y": 2, "fill": 4, "outline": [1, 3], "aa": False}], pal)
+    px = layer.load()
+    left = {px[x, y][:3] for x in range(0, 14) for y in range(20) if px[x, y][3] == 255}
+    right = {px[x, y][:3] for x in range(18, 40) for y in range(20) if px[x, y][3] == 255}
+    assert (255, 0, 0) in left and (0, 0, 255) not in left
+    assert (0, 0, 255) in right and (255, 0, 0) not in right
+    assert (255, 255, 255) in left and (255, 255, 255) in right
+    with pytest.raises(label.LabelError, match="outline"):
+        label.render_lines((60, 20), [{"text": "가|나", "size": 14, "x": 2, "y": 2, "fill": 4, "outline": [1]}], pal)
+    with pytest.raises(label.LabelError, match="outline"):
+        label.render_lines((60, 20), [{"text": "가|나", "size": 14, "x": 2, "y": 2, "fill": 4, "outline": [1, None]}], pal)

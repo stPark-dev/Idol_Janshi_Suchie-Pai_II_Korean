@@ -25,6 +25,8 @@ def main(argv=None) -> int:
                    help="'original' leaves the match-screen UI in the 13 stage overlays unchanged")
     b.add_argument("--cards", choices=["ko", "original"], default="ko",
                    help="'original' leaves the opponent introduction cards (AP*.BIN) unchanged")
+    b.add_argument("--opening", choices=["ko", "original"], default="ko",
+                   help="'original' leaves the opening name plates (PROLOG.BIN LZSS block) unchanged")
     args = ap.parse_args(argv)
     spec = ROOT / "assets/title/title_ko.json" if args.title == "ko" else None
     sel = (ROOT / "translation/select1.json", ROOT / "assets/select1/layout.json",
@@ -38,6 +40,9 @@ def main(argv=None) -> int:
         jobs += [{"files": [f], "translation": ROOT / f"translation/cards/{f[:-4]}.json",
                   "layout": ROOT / "assets/cards/layout.json", "glossary": ROOT / "translation/glossary.json"}
                  for f in build.CARD_FILES]
+    if args.opening == "ko":
+        jobs.append({"packed": "opening", "translation": ROOT / "translation/opening.json",
+                     "layout": ROOT / "assets/opening/layout.json", "glossary": ROOT / "translation/glossary.json"})
     try:
         m = build.build(args.source, args.out, spec, select1=sel, bundles=jobs)
     except build.BuildError as err:

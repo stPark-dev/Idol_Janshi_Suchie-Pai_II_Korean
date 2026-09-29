@@ -879,6 +879,195 @@
    "approved_by": "",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
+  },
+  {
+   "id": "term.ankou",
+   "ja": "暗刻(アンコ)",
+   "ko": "안커",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "마작 용어 통용 표기(작혼식, 산안커와 같은 계열)",
+   "scope": "opening"
+  },
+  {
+   "id": "term.kazehai",
+   "ja": "風牌(フウパイ)",
+   "ko": "풍패",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "마작 용어 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "term.jihai",
+   "ja": "字牌(ジハイ)",
+   "ko": "자패",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "마작 용어 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "epithet.peach",
+   "ja": "ピーチパイ",
+   "ko": "피치파이",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "오프닝 별명 (아리스)",
+   "scope": "opening"
+  },
+  {
+   "id": "epithet.cherry",
+   "ja": "チェリーパイ",
+   "ko": "체리파이",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "오프닝 별명 (사나에)",
+   "scope": "opening"
+  },
+  {
+   "id": "epithet.lemon",
+   "ja": "レモンパイ",
+   "ko": "레몬파이",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "오프닝 별명 (츠카사)",
+   "scope": "opening"
+  },
+  {
+   "id": "epithet.bridge",
+   "ja": "ブリッジ",
+   "ko": "브릿지",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "오프닝 별명 (유키). 뜻(카드 게임/체조 자세)은 인게임에서 미확인",
+   "scope": "opening"
+  },
+  {
+   "id": "ui.koto",
+   "ja": "〜こと…",
+   "ko": "〜라 불리는…",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "오프닝 별명 뒤 연결어 (별명 → 본명)",
+   "scope": "opening"
+  },
+  {
+   "id": "ui.cv",
+   "ja": "声",
+   "ko": "성우",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "오프닝 이름표의 성우 표시. 대안: CV",
+   "scope": "opening"
+  },
+  {
+   "id": "va.yoshida",
+   "ja": "吉田古奈美",
+   "ko": "요시다 코나미",
+   "state": "approved",
+   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.hiramatsu",
+   "ja": "平松晶子",
+   "ko": "히라마츠 아키코",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.nishihara",
+   "ja": "西原久美子",
+   "ko": "니시하라 쿠미코",
+   "state": "approved",
+   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.fukami",
+   "ja": "深見梨加",
+   "ko": "후카미 리카",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.matsumoto",
+   "ja": "松本梨香",
+   "ko": "마츠모토 리카",
+   "state": "approved",
+   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.korogi",
+   "ja": "こおろぎさとみ",
+   "ko": "코오로기 사토미",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.mizutani",
+   "ja": "水谷優子",
+   "ko": "미즈타니 유코",
+   "state": "approved",
+   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.tominaga",
+   "ja": "冨永みーな",
+   "ko": "토미나가 미나",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.takahashi",
+   "ja": "高橋美紀",
+   "ko": "타카하시 미키",
+   "state": "approved",
+   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.yajima",
+   "ja": "矢島晶子",
+   "ko": "야지마 아키코",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.orikasa",
+   "ja": "折笠愛",
+   "ko": "오리카사 아이",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
+  },
+  {
+   "id": "va.kanai",
+   "ja": "かないみか",
+   "ko": "카나이 미카",
+   "state": "approved",
+   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "note": "성우 이름 통용 표기",
+   "scope": "opening"
   }
  ]
 }

@@ -28,12 +28,13 @@
 
 ## 현재 상태
 
-**v0.4 — 개발판** (검수 전 번역이 들어 있어 배포용 아님). 들어 있는 것:
+**v0.5 — 개발판** (검수 전 번역이 들어 있어 배포용 아님). 들어 있는 것:
 
 - 한글 타이틀 로고 (제공 로고 `title_logo.png`를 원래 스프라이트 3칸과 팔레트에 맞춰 넣음, 사람 확인 대기)
 - 메뉴 그림 글자 58개 (`SELECT1.BIN`: 메뉴·난이도·파트너 선택·사운드 테스트·스테이지 선택, 초벌 번역·검수 대기)
 - 대국 화면 그림 글자 104개 (스테이지 오버레이 13개: 이름·버튼·안내·선언·역 이름 등, 초벌 번역·검수 대기)
 - 상대 소개 카드 17개와 저장 안내 1개 (`AP*.BIN` 11개, 초벌 번역·검수 대기)
+- 오프닝(데모) 캐릭터 소개 이름표 46개 (`PROLOG.BIN` 압축 블록: 별명·이름·성우, 초벌 번역·검수 대기)
 - 제품 빌드 도구: LZSS 압축·해제(게임 해제 코드와 같은 형식), 스프라이트 묶음(Yc), ISO9660, 섹터 EDC/ECC, 쓰기 계획, 그림 글자 렌더러
 
 ## 번역 데이터
@@ -44,7 +45,8 @@
 | [`translation/glossary.json`](translation/glossary.json) | 용어·표기 결정 (승인 / 제안) |
 | [`translation/match.json`](translation/match.json), [`match2.json`](translation/match2.json) | 대국 화면 그림 글자 104개와 제외 항목 |
 | [`translation/cards/`](translation/cards/) | 상대 소개 카드·저장 안내 18개 (파일별 번역 표 11개) |
-| [`assets/select1/layout.json`](assets/select1/layout.json), [`assets/match/`](assets/match/) | 그림 글자 배치 (편집 영역, 배경 복원 방식, 글자 크기·색 번호) |
+| [`translation/opening.json`](translation/opening.json) | 오프닝 캐릭터 소개 이름표 46개와 제외 항목 1개 |
+| [`assets/select1/layout.json`](assets/select1/layout.json), [`assets/match/`](assets/match/), [`assets/cards/`](assets/cards/), [`assets/opening/`](assets/opening/) | 그림 글자 배치 (편집 영역, 배경 복원 방식, 글자 크기·색 번호) |
 
 번역문 규칙: `\n`은 줄바꿈, `|`는 글자 색 구간 경계. 상태는 `needs_review` → `needs_human_review` → `distribution_eligible`. 모든 항목이 `distribution_eligible`이 되고 타이틀 로고가 승인되기 전까지 빌드 결과는 `distribution: false`입니다.
 
@@ -65,7 +67,7 @@
 python3 tools/khpatch.py build --source "/경로/Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
 
 # 대조군: 타이틀 그림은 그대로 두고 압축만 다시 한 디스크 (압축기 호환 확인용)
-python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original
+python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original
 
 # 테스트
 python3 -m pytest -q tests

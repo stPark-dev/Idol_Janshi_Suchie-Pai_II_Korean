@@ -345,3 +345,13 @@ def test_id_prefix_must_end_with_a_dot(tmp_path):
     tr, lay = _mutate(tmp_path, data, off, lambda t: t.update(id_prefix="x"))
     with pytest.raises(select1.Select1Error, match="id_prefix"):
         select1.render(data, tr, lay)
+
+
+def test_palette_data_reads_banks_from_another_file(tmp_path):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    want = select1.render(data, tr, lay).textures
+    blank = bytes(0x40) + data[0x40:]                       # same bundle, palette bytes zeroed
+    with pytest.raises(select1.Select1Error, match="palette"):
+        select1.render(blank, tr, lay, palette_data=bytes(0x10))   # bank 0x10 outside a 16-byte image
+    assert select1.render(blank, tr, lay, palette_data=bytes(PAL)).textures == want
