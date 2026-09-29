@@ -19,15 +19,22 @@ def main(argv=None) -> int:
     b.add_argument("--out", type=Path, default=ROOT / "out")
     b.add_argument("--title", choices=["ko", "original"], default="ko",
                    help="'original' recompresses the untouched title bundle (codec control)")
+    b.add_argument("--select1", choices=["ko", "original"], default="ko",
+                   help="'original' leaves the menu sprite bundle SELECT1.BIN unchanged")
     args = ap.parse_args(argv)
     spec = ROOT / "assets/title/title_ko.json" if args.title == "ko" else None
+    sel = (ROOT / "translation/select1.json", ROOT / "assets/select1/layout.json",
+           ROOT / "translation/glossary.json") if args.select1 == "ko" else None
     try:
-        m = build.build(args.source, args.out, spec)
+        m = build.build(args.source, args.out, spec, select1=sel)
     except build.BuildError as err:
         print(f"build failed: {err}", file=sys.stderr)
         return 1
-    print(f"{args.out / m['cue']}  title={m['title']['mode']} stream={m['title']['stream_bytes']} bytes "
-          f"sectors={m['title']['sectors']}")
+    print(f"{args.out / m['cue']}  title={m['title']['mode']} stream={m['title']['stream_bytes']} bytes")
+    if m["select1"]:
+        print(f"  select1: {len(m['select1']['entries'])} labels, states {m['select1']['states']}, "
+              f"sectors {len(m['select1']['sectors'])}")
+    print(f"  distribution: {m['distribution']}")
     return 0
 
 

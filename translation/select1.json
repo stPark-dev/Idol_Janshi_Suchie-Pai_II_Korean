@@ -1,0 +1,1970 @@
+{
+ "_about": "SELECT1.BIN 'Yc' bundle @0x2fc0 (uncompressed, 139 entries; head 0..0x2fc0 = CRAM image). ja = transcription from rendered textures; protected: entry/offset/size/colr/src_sha1. '|' splits colour segments, '\\n' splits lines. States: untranslated, in_progress, needs_review, needs_human_review, distribution_eligible.",
+ "file": "SELECT1.BIN",
+ "bundle_offset": "0x2fc0",
+ "entries": [
+  {
+   "id": "select1.e000",
+   "entry": 0,
+   "offset": "0x341c",
+   "size": [
+    80,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "1511781b7964820db6db09b81b4bbefb14f8e44b",
+   "ja": "イージー",
+   "ko": "쉬움",
+   "state": "needs_review",
+   "terms": [
+    "diff.easy"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e001",
+   "entry": 1,
+   "offset": "0x37dc",
+   "size": [
+    80,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "b259146c1c0af2df8916ef3e506479d15f75e169",
+   "ja": "ノーマル",
+   "ko": "보통",
+   "state": "needs_review",
+   "terms": [
+    "diff.normal"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e002",
+   "entry": 2,
+   "offset": "0x3b9c",
+   "size": [
+    80,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "42fb6803294351d733d8a02b1b6df555d5da1044",
+   "ja": "ハード",
+   "ko": "어려움",
+   "state": "needs_review",
+   "terms": [
+    "diff.hard"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e005",
+   "entry": 5,
+   "offset": "0x4cdc",
+   "size": [
+    120,
+    32
+   ],
+   "colr": "0x20",
+   "src_sha1": "ee7f9b5504b243af22aa5a4128817e622ce049fa",
+   "ja": "メニュー",
+   "ko": "메뉴",
+   "state": "needs_review",
+   "terms": [
+    "ui.menu"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e008",
+   "entry": 8,
+   "offset": "0x6b5c",
+   "size": [
+    176,
+    32
+   ],
+   "colr": "0x30",
+   "src_sha1": "9aec53376b42a2745f89220a4bb0133cf26b4b96",
+   "ja": "パートナーセレクト",
+   "ko": "파트너 선택",
+   "state": "needs_review",
+   "terms": [
+    "ui.select"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e009",
+   "entry": 9,
+   "offset": "0x765c",
+   "size": [
+    176,
+    32
+   ],
+   "colr": "0x40",
+   "src_sha1": "274a360c3ddf6348e1ba1493d496af52103cb87e",
+   "ja": "難易度セレクト",
+   "ko": "난이도 선택",
+   "state": "needs_review",
+   "terms": [
+    "ui.select"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e010",
+   "entry": 10,
+   "offset": "0x815c",
+   "size": [
+    176,
+    32
+   ],
+   "colr": "0x50",
+   "src_sha1": "fd592e02f280f58961bc9c4d7b9663ba33e6af48",
+   "ja": "サウンドテスト",
+   "ko": "사운드 테스트",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e011",
+   "entry": 11,
+   "offset": "0x8c5c",
+   "size": [
+    176,
+    32
+   ],
+   "colr": "0x60",
+   "src_sha1": "74a7f294de849f88be1648ab4369c61ed23bffc3",
+   "ja": "ステージセレクト",
+   "ko": "스테이지 선택",
+   "state": "needs_review",
+   "terms": [
+    "ui.select"
+   ],
+   "note": "메뉴 버튼"
+  },
+  {
+   "id": "select1.e012",
+   "entry": 12,
+   "offset": "0x975c",
+   "size": [
+    176,
+    32
+   ],
+   "colr": "0x70",
+   "src_sha1": "74a7f294de849f88be1648ab4369c61ed23bffc3",
+   "ja": "ステージセレクト",
+   "ko": "스테이지 선택",
+   "state": "needs_review",
+   "terms": [
+    "ui.select"
+   ],
+   "note": "스테이지 선택 화면 제목(색만 다름)"
+  },
+  {
+   "id": "select1.e013",
+   "entry": 13,
+   "offset": "0xa25c",
+   "size": [
+    72,
+    40
+   ],
+   "colr": "0x80",
+   "src_sha1": "4488c60062f4efd0cbce384e08a8ab22e5ef8cab",
+   "ja": "篠原\nありす",
+   "ko": "시노하라\n아리스",
+   "state": "needs_review",
+   "terms": [
+    "name.alice"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e014",
+   "entry": 14,
+   "offset": "0xa7fc",
+   "size": [
+    72,
+    40
+   ],
+   "colr": "0x90",
+   "src_sha1": "9bb4603bbba680f2558ae096c2cdab0bc157c616",
+   "ja": "一文字\nつかさ",
+   "ko": "이치몬지\n츠카사",
+   "state": "needs_review",
+   "terms": [
+    "name.tsukasa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e015",
+   "entry": 15,
+   "offset": "0xad9c",
+   "size": [
+    72,
+    40
+   ],
+   "colr": "0xa0",
+   "src_sha1": "3111d177d8a721a2fadc215bce7fe7169a408959",
+   "ja": "槙枝\n早苗",
+   "ko": "마키에다\n사나에",
+   "state": "needs_review",
+   "terms": [
+    "name.sanae"
+   ],
+   "note": "성 읽기 まきえだ: pixiv 백과사전"
+  },
+  {
+   "id": "select1.e016",
+   "entry": 16,
+   "offset": "0xb33c",
+   "size": [
+    72,
+    40
+   ],
+   "colr": "0xb0",
+   "src_sha1": "96c62f4584bf4dd016502af7f76ddb95622f7b17",
+   "ja": "みるく",
+   "ko": "밀크",
+   "state": "needs_review",
+   "terms": [
+    "name.milk"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e017",
+   "entry": 17,
+   "offset": "0xb8dc",
+   "size": [
+    96,
+    32
+   ],
+   "colr": "0xc0",
+   "src_sha1": "02e422b6be0e314a1952f0213f6c03169e0c0e85",
+   "ja": "ドラ|好きな\n女の子",
+   "ko": "도라를 |좋아하는\n소녀",
+   "state": "needs_review",
+   "terms": [],
+   "note": "ドラ=마작 도라. 색 구간 3개"
+  },
+  {
+   "id": "select1.e018",
+   "entry": 18,
+   "offset": "0xbedc",
+   "size": [
+    96,
+    32
+   ],
+   "colr": "0xc0",
+   "src_sha1": "325735b25240a11a5d2458c2e53d2593f7edf0e5",
+   "ja": "平和を|愛する\n勇者",
+   "ko": "핑후를 |사랑하는\n용사",
+   "state": "needs_review",
+   "terms": [
+    "pun.pinfu"
+   ],
+   "note": "平和=마작 역 핑후 말장난. 사람 결정: '핑후를 사랑하는 용사'"
+  },
+  {
+   "id": "select1.e019",
+   "entry": 19,
+   "offset": "0xc4dc",
+   "size": [
+    96,
+    32
+   ],
+   "colr": "0xc0",
+   "src_sha1": "0c699d7be15144ef0973f38d3603c787556150e0",
+   "ja": "アンコ|系が\n得意な子",
+   "ko": "안커 |계열이\n특기인 아이",
+   "state": "needs_review",
+   "terms": [],
+   "note": "アンコ=안커(암각). 색 구간은 원문과 같게 나눔"
+  },
+  {
+   "id": "select1.e020",
+   "entry": 20,
+   "offset": "0xcadc",
+   "size": [
+    96,
+    32
+   ],
+   "colr": "0xc0",
+   "src_sha1": "2ddbe1f81b3dc0f5f69229c6f044b62e563c591f",
+   "ja": "染め|好き\nウサちゃん",
+   "ko": "일색을 |좋아하는\n토끼",
+   "state": "needs_review",
+   "terms": [],
+   "note": "染め=일색(혼일색·청일색). ウサちゃん 어감 → 사람 판단"
+  },
+  {
+   "id": "select1.e021",
+   "entry": 21,
+   "offset": "0xd0dc",
+   "size": [
+    176,
+    128
+   ],
+   "colr": "0xd0",
+   "src_sha1": "f8b86e342ae6940c1a84e29e9fca1091a50a3f70",
+   "ja": "テーマ曲\nNG集",
+   "ko": "테마곡\nNG집",
+   "state": "needs_review",
+   "terms": [],
+   "note": "명패 2개"
+  },
+  {
+   "id": "select1.e022",
+   "entry": 22,
+   "offset": "0xfcdc",
+   "size": [
+    160,
+    56
+   ],
+   "colr": "0xe0",
+   "src_sha1": "506714192d43a9e06fc7fe10ac728d4c1f74e40b",
+   "ja": "あいうえ oh my god\n― 涙は風に ―\n歌:かないみか",
+   "ko": "아이우에 oh my god\n― 눈물은 바람에 ―\n노래: 가나이 미카",
+   "state": "needs_review",
+   "terms": [],
+   "note": "곡 제목 번역 방침 → 사람 판단"
+  },
+  {
+   "id": "select1.e023",
+   "entry": 23,
+   "offset": "0x10e5c",
+   "size": [
+    160,
+    56
+   ],
+   "colr": "0xe0",
+   "src_sha1": "fc21141d12cdf70dc1eb93ad5f9cbb48e62ef23e",
+   "ja": "純情LOVE遊戯(ゲーム)\n歌:吉田古奈美",
+   "ko": "순정 LOVE 게임\n노래: 요시다 고나미",
+   "state": "needs_review",
+   "terms": [],
+   "note": "遊戯에 ゲーム 루비. 루비 생략안"
+  },
+  {
+   "id": "select1.e024",
+   "entry": 24,
+   "offset": "0x11fdc",
+   "size": [
+    160,
+    56
+   ],
+   "colr": "0xe0",
+   "src_sha1": "330cb11d727d9c496332948714dbf06f6c6ec8cb",
+   "ja": "女神はショート!\n来る者拒まず\n歌:松本梨香",
+   "ko": "여신은 쇼트!\n오는 사람 막지 않아\n노래: 마쓰모토 리카",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e025",
+   "entry": 25,
+   "offset": "0x1315c",
+   "size": [
+    160,
+    56
+   ],
+   "colr": "0xe0",
+   "src_sha1": "17cb08146ce756f5f85473f3fc2f94ccef1b1047",
+   "ja": "Please change me now\n歌:水谷優子",
+   "ko": "Please change me now\n노래: 미즈타니 유코",
+   "state": "needs_review",
+   "terms": [],
+   "note": "영어 제목 유지"
+  },
+  {
+   "id": "select1.e026",
+   "entry": 26,
+   "offset": "0x142dc",
+   "size": [
+    160,
+    56
+   ],
+   "colr": "0xe0",
+   "src_sha1": "789ddd64f0aed38b363f77ac51b9e30d0071e3ba",
+   "ja": "肉球みゃーみゃ\n歌:西原久美子",
+   "ko": "젤리 발바닥 먀~먀\n노래: 니시하라 구미코",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e027",
+   "entry": 27,
+   "offset": "0x1545c",
+   "size": [
+    160,
+    56
+   ],
+   "colr": "0xe0",
+   "src_sha1": "464cb84bfea8d42bb71495b37675a467d2b272c2",
+   "ja": "くちびるのfortune\n歌:高橋美紀",
+   "ko": "입술의 fortune\n노래: 다카하시 미키",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e028",
+   "entry": 28,
+   "offset": "0x165dc",
+   "size": [
+    160,
+    56
+   ],
+   "colr": "0xe0",
+   "src_sha1": "f292b4cf7f67c22d410ebba5253c9f2537133e18",
+   "ja": "再見(ツァイツェン)\n歌:スーチー合唱隊|♥",
+   "ko": "짜이젠\n노래: 스치 합창대|♥",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": "再見 = 중국어 작별 인사, 루비 ツァイツェン"
+  },
+  {
+   "id": "select1.e049",
+   "entry": 49,
+   "offset": "0x1847c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "239fdc613053bbf1fdcd75035909d67c563bfcc6",
+   "ja": "美少女じゃんし〜",
+   "ko": "미소녀 작사~",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e050",
+   "entry": 50,
+   "offset": "0x188fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "f2f7c23d5b3f5caf2d952c9dd61a6de8221c5922",
+   "ja": "ぷれぜんてっど〜",
+   "ko": "프레젠티드~",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e051",
+   "entry": 51,
+   "offset": "0x18d7c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "ea811f0f39c5549ae572d5692f525ab126a60a1b",
+   "ja": "ウサギがしゃべった〜",
+   "ko": "토끼가 말했다~",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e052",
+   "entry": 52,
+   "offset": "0x191fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "40f2322bd20776922610dbe83e20340396fb65b6",
+   "ja": "ハデハデとジミジミ〜",
+   "ko": "번쩍번쩍과 수수수수~",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e053",
+   "entry": 53,
+   "offset": "0x1967c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "ae04a1afe878ca3c14674a48d44c2f975aea830d",
+   "ja": "よろしかったら〜",
+   "ko": "괜찮으시다면~",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e054",
+   "entry": 54,
+   "offset": "0x19afc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "c479e2763092dbcc83272185ac05857b6407d953",
+   "ja": "疲れているのよね〜",
+   "ko": "지쳐 있는 거지~",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e055",
+   "entry": 55,
+   "offset": "0x19f7c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "b23e9fabdcf2497c59d71a81e09f90d5157016a2",
+   "ja": "メキシト(？)",
+   "ko": "메키시토(?)",
+   "state": "needs_review",
+   "terms": [],
+   "note": "ZZG.AIF: 퀴즈 오답 NG('ブブー', '국 이름', '답은 뉴델리'). 제목은 틀린 대답을 그대로 옮긴 것으로 보여 음역 유지"
+  },
+  {
+   "id": "select1.e056",
+   "entry": 56,
+   "offset": "0x1a3fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "b507a46bde13fcc50e5f3fa8999e73d5a0b8b902",
+   "ja": "魔法で脳みそ…あれ？",
+   "ko": "마법으로 뇌가… 어라?",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e057",
+   "entry": 57,
+   "offset": "0x1a87c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "8b1d6d7930cb357ed76bc5d4ee00cdb4d1e6fe18",
+   "ja": "ぼーえーぐん　第一話",
+   "ko": "방위군 제1화",
+   "state": "needs_review",
+   "terms": [],
+   "note": "ぼーえーぐん=防衛軍"
+  },
+  {
+   "id": "select1.e058",
+   "entry": 58,
+   "offset": "0x1acfc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "94084564af8fb2829a8660d097d8c493eba5c93c",
+   "ja": "ぼーえーぐん　第二話",
+   "ko": "방위군 제2화",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e059",
+   "entry": 59,
+   "offset": "0x1b17c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "4914459badd11b8494acbc10345fc82fabf70fa5",
+   "ja": "ぼーえーぐん　第三話",
+   "ko": "방위군 제3화",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e060",
+   "entry": 60,
+   "offset": "0x1b5fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "94f475727da92c7a823ba84b5d0b40b0e4f778ec",
+   "ja": "ぼーえーぐん　最終回",
+   "ko": "방위군 최종회",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e061",
+   "entry": 61,
+   "offset": "0x1ba7c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "cbd2ef8b2cd14958f0ec356061bfe39d721220d1",
+   "ja": "プレゼンテッド〜",
+   "ko": "프레젠티드~",
+   "state": "needs_review",
+   "terms": [],
+   "note": "50과 같은 말, 표기만 히라가나/가타카나"
+  },
+  {
+   "id": "select1.e062",
+   "entry": 62,
+   "offset": "0x1befc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "72cafed9b51e7cdb730c236083f965d6baaff469",
+   "ja": "まずは！牛フィレの〜",
+   "ko": "우선은! 소 안심의~",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e063",
+   "entry": 63,
+   "offset": "0x1c37c",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "881bc48cebe064464298b797e53bfea11d176afc",
+   "ja": "街の灯り(窓の…です)",
+   "ko": "거리 불빛(창문…입니다)",
+   "state": "needs_review",
+   "terms": [],
+   "note": "칸 너비 144px(12px 글꼴)에 맞추려고 '거리의 불빛(창문의…입니다)'를 줄임 → 사람 확인"
+  },
+  {
+   "id": "select1.e064",
+   "entry": 64,
+   "offset": "0x1c7fc",
+   "size": [
+    144,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "78a52c4a099a0ec534c0114f86b2d048d75e646e",
+   "ja": "ぺこぺこピーにゃんで",
+   "ko": "페코페코피냥으로",
+   "state": "needs_review",
+   "terms": [],
+   "note": "NG집 16번 = ZZP.AIF (NG집 16개와 ZZA~ZZP 16개의 순서 대응을 음성 받아쓰기로 확인). 성우가 토끼 말투('~ぴょん')의 뜻 없는 말놀이 대사 'つまりぽんぽこがぺこぺこぴーにゃんで…'를 꼬여서 반복하는 장면이라, 사람 지시('인게임 흐름을 보고 번역')에 따라 들리는 소리를 살려 음역"
+  },
+  {
+   "id": "select1.e072",
+   "entry": 72,
+   "offset": "0x1cf9c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x110",
+   "src_sha1": "c94ddf153623495212b7fd8d48d4ddcdaa5bf120",
+   "ja": "選ぶ",
+   "ko": "선택",
+   "state": "needs_review",
+   "terms": [
+    "ui.choose"
+   ],
+   "note": "방향키 아이콘 버튼"
+  },
+  {
+   "id": "select1.e073",
+   "entry": 73,
+   "offset": "0x1d39c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x110",
+   "src_sha1": "aa485661bd8086908aa0622c2e1844f8d39624fc",
+   "ja": "選ぶ",
+   "ko": "선택",
+   "state": "needs_review",
+   "terms": [
+    "ui.choose"
+   ],
+   "note": "십자 아이콘 버튼"
+  },
+  {
+   "id": "select1.e074",
+   "entry": 74,
+   "offset": "0x1d79c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x120",
+   "src_sha1": "bad5d6a1ec10c18e63d54754c9525f3eb903f819",
+   "ja": "決定",
+   "ko": "결정",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e075",
+   "entry": 75,
+   "offset": "0x1db9c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x120",
+   "src_sha1": "a7ebb2303f6ec76040ab02c05d13bc2ad72b4932",
+   "ja": "演奏",
+   "ko": "연주",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e076",
+   "entry": 76,
+   "offset": "0x1df9c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x120",
+   "src_sha1": "47cc90fb14c255e31f9a2b105d69386ac7a86ace",
+   "ja": "メニュー",
+   "ko": "메뉴",
+   "state": "needs_review",
+   "terms": [
+    "ui.menu"
+   ],
+   "note": "B 버튼"
+  },
+  {
+   "id": "select1.e077",
+   "entry": 77,
+   "offset": "0x1e39c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x120",
+   "src_sha1": "828e4b0a2e24e265e2b0160ab9751a5be38e853b",
+   "ja": "中止",
+   "ko": "중지",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e093",
+   "entry": 93,
+   "offset": "0x3025c",
+   "size": [
+    176,
+    120
+   ],
+   "colr": "0x130",
+   "src_sha1": "9a64f09a82bda6d65f4af56854e7dc69dd38cfd0",
+   "ja": "ステージ 1\nステージ 2\nステージ 3\nステージ 4\nステージ 5\nステージ 6\nステージ 7\n佑紀\n志穂\nセシル\nセシル",
+   "ko": "스테이지 1\n스테이지 2\n스테이지 3\n스테이지 4\n스테이지 5\n스테이지 6\n스테이지 7\n유키\n시호\n세실\n세실",
+   "state": "needs_review",
+   "terms": [
+    "name.shiho",
+    "name.cecil",
+    "name.yuki"
+   ],
+   "note": "패널. VS는 유지. 줄 순서 = 배치 영역 순서(라벨 L1~L4, R5~R7, 이름 L4, R5~R7)"
+  },
+  {
+   "id": "select1.e094",
+   "entry": 94,
+   "offset": "0x32b9c",
+   "size": [
+    176,
+    96
+   ],
+   "colr": "0x130",
+   "src_sha1": "e3da4bf89425bbab327cc6646c19b92bc6cfddc1",
+   "ja": "ステージ 1\nステージ 2\nステージ 3\nステージ 4\nステージ 5\n早苗\n留美\nつかさ\nありす\n恭子\nおまけ",
+   "ko": "스테이지 1\n스테이지 2\n스테이지 3\n스테이지 4\n스테이지 5\n사나에\n루미\n츠카사\n아리스\n쿄코\n보너스",
+   "state": "needs_review",
+   "terms": [
+    "name.sanae",
+    "name.alice",
+    "name.rumi",
+    "name.kyoko",
+    "name.tsukasa",
+    "ui.omake"
+   ],
+   "note": "패널. VS는 유지. 줄 순서 = 배치 영역 순서(라벨 L1~L3, R4~R5, 이름 L1~L3, R4~R5, おまけ)"
+  },
+  {
+   "id": "select1.e095",
+   "entry": 95,
+   "offset": "0x34c9c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "8d5e6c16341030db0e75ef560fa4d88618faf83e",
+   "ja": "ありす",
+   "ko": "아리스",
+   "state": "needs_review",
+   "terms": [
+    "name.alice"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e096",
+   "entry": 96,
+   "offset": "0x34e1c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "06e702f73873a178d030fe39572f5d2688231852",
+   "ja": "つかさ",
+   "ko": "츠카사",
+   "state": "needs_review",
+   "terms": [
+    "name.tsukasa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e097",
+   "entry": 97,
+   "offset": "0x34f9c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "e0d0a0d55f88dfbf962b4ac80397470454b93c7b",
+   "ja": "早苗",
+   "ko": "사나에",
+   "state": "needs_review",
+   "terms": [
+    "name.sanae"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e098",
+   "entry": 98,
+   "offset": "0x3511c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "76d6b06bb3e5d2adc151f69cb194deff095f4dbf",
+   "ja": "留美",
+   "ko": "루미",
+   "state": "needs_review",
+   "terms": [
+    "name.rumi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e099",
+   "entry": 99,
+   "offset": "0x3529c",
+   "size": [
+    96,
+    40
+   ],
+   "colr": "0x140",
+   "src_sha1": "94f7c14281d20c8f1ec7ef05a0a392cc47e07575",
+   "ja": "真の エンディング を\n見ないと",
+   "ko": "진짜 엔딩을\n보지 않으면",
+   "state": "needs_review",
+   "terms": [],
+   "note": "100과 한 문장. 한국어는 칸마다 두 줄로 나눠 경계에 걸치는 줄이 없게 함"
+  },
+  {
+   "id": "select1.e100",
+   "entry": 100,
+   "offset": "0x35a1c",
+   "size": [
+    96,
+    40
+   ],
+   "colr": "0x140",
+   "src_sha1": "6c42315a8d1f09d75bdcfabbfa512995c2025fa5",
+   "ja": "ステージ セレクト\nできません",
+   "ko": "스테이지 선택을\n할 수 없습니다",
+   "state": "needs_review",
+   "terms": [
+    "ui.select"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e101",
+   "entry": 101,
+   "offset": "0x3619c",
+   "size": [
+    72,
+    40
+   ],
+   "colr": "0x150",
+   "src_sha1": "bf1e5ee8b15de243a65ad3684153edc01dbc4022",
+   "ja": "全員クリアー\nすると…!?",
+   "ko": "전원 클리어\n하면…!?",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "select1.e102",
+   "entry": 102,
+   "offset": "0x3673c",
+   "size": [
+    72,
+    40
+   ],
+   "colr": "0x160",
+   "src_sha1": "9345da12c4ac2c1578d66c40d1b16065a00e00bf",
+   "ja": "スーチー\nユキ|♥",
+   "ko": "스치\n유키|♥",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie",
+    "name.yuki"
+   ],
+   "note": ""
+  },
+  {
+   "id": "select1.e138",
+   "entry": 138,
+   "offset": "0x6b55c",
+   "size": [
+    224,
+    24
+   ],
+   "colr": "0x180",
+   "src_sha1": "08a7b7584c0c844fcdae3cf85d0e3e85ce847973",
+   "ja": "スーチーパイおまけ劇場",
+   "ko": "스치파이 보너스 극장",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie",
+    "ui.omake"
+   ],
+   "note": ""
+  }
+ ],
+ "excluded": [
+  {
+   "id": "select1.e003",
+   "entry": 3,
+   "offset": "0x3f5c",
+   "size": [
+    96,
+    32
+   ],
+   "colr": "0x10",
+   "src_sha1": "f0bebffa92fe84963eff868ad5b35af6d63d35ad",
+   "reason": "빈 틀"
+  },
+  {
+   "id": "select1.e004",
+   "entry": 4,
+   "offset": "0x455c",
+   "size": [
+    96,
+    40
+   ],
+   "colr": "0x10",
+   "src_sha1": "a7484000e05aa4be240c637d0ad0116b30989841",
+   "reason": "빈 틀"
+  },
+  {
+   "id": "select1.e006",
+   "entry": 6,
+   "offset": "0x545c",
+   "size": [
+    176,
+    32
+   ],
+   "colr": "0x20",
+   "src_sha1": "46b84309d68c1a3725b8a9a12656770e5b5533a7",
+   "reason": "빈 틀"
+  },
+  {
+   "id": "select1.e007",
+   "entry": 7,
+   "offset": "0x5f5c",
+   "size": [
+    96,
+    64
+   ],
+   "colr": "0x20",
+   "src_sha1": "074f4a2b569238601974fc54a909cc7d45d53def",
+   "reason": "빈 틀"
+  },
+  {
+   "id": "select1.e029",
+   "entry": 29,
+   "offset": "0x1775c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "65dde540f9a79dd418fc4684997055dd87caad0c",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e030",
+   "entry": 30,
+   "offset": "0x177dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "67ffb4dbf61432fff563530ba83bd48ba100ab45",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e031",
+   "entry": 31,
+   "offset": "0x1785c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "420294254f37e26009e2b9211099314ddaec4e3a",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e032",
+   "entry": 32,
+   "offset": "0x178dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "ba1aa5f0e092321ea5379451b39d37ddfe1402fc",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e033",
+   "entry": 33,
+   "offset": "0x1795c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "e07e35c116b03d8363a0b5ec26c5d6b6b8ea0afb",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e034",
+   "entry": 34,
+   "offset": "0x179dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "4c98aa5b11796dd32762b91247f3720d55b3bb9f",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e035",
+   "entry": 35,
+   "offset": "0x17a5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "a4f3a59ac6b5fa212a8c6be098919ff978c3b4f3",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e036",
+   "entry": 36,
+   "offset": "0x17adc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "9e928361e5fc42671f1bdde6cac2681debb0f7b4",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e037",
+   "entry": 37,
+   "offset": "0x17b5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "56a8af6daa8adaa6b89bf37ec831b69210c4c702",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e038",
+   "entry": 38,
+   "offset": "0x17bdc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "a8ba9bd1f445394e78f3dc9e286fe646784257c0",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e039",
+   "entry": 39,
+   "offset": "0x17c5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "15406e4d036231ba7585f368419e699f7c8467d6",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e040",
+   "entry": 40,
+   "offset": "0x17cdc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "57becd7c85aa88899f7a80cd90f7c5266c713b80",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e041",
+   "entry": 41,
+   "offset": "0x17d5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "6f7a0f62f80dc1cae74b15ec568d3dc3c1eb12e6",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e042",
+   "entry": 42,
+   "offset": "0x17ddc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "f292237b14e762cf2fafb3917796188d8bcb57ef",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e043",
+   "entry": 43,
+   "offset": "0x17e5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "92858f4f237b7cc74ac5fdb274e167e353550cef",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e044",
+   "entry": 44,
+   "offset": "0x17edc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "dd7bb9901c2170c9e990a62c26435eb63b73cdf8",
+   "reason": "숫자"
+  },
+  {
+   "id": "select1.e045",
+   "entry": 45,
+   "offset": "0x17f5c",
+   "size": [
+    24,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "58d7bbdb59a5e0fb62ab0ce2aab986850cb3f260",
+   "reason": "'No.' 영어 유지"
+  },
+  {
+   "id": "select1.e046",
+   "entry": 46,
+   "offset": "0x1801c",
+   "size": [
+    72,
+    24
+   ],
+   "colr": "0xe0",
+   "src_sha1": "497ddf102ce65fbd3521a446530b22ccf04100e4",
+   "reason": "빈 틀"
+  },
+  {
+   "id": "select1.e047",
+   "entry": 47,
+   "offset": "0x1837c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "49deeca20c6855dfb171a9a984ac33a71bbd2856",
+   "reason": "화살표"
+  },
+  {
+   "id": "select1.e048",
+   "entry": 48,
+   "offset": "0x183fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0xe0",
+   "src_sha1": "4f22f19f7733c823efe4952992d3cb3773c874de",
+   "reason": "화살표"
+  },
+  {
+   "id": "select1.e065",
+   "entry": 65,
+   "offset": "0x1cc7c",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0xf0",
+   "src_sha1": "64f5c09a5514c3f9f4a5f556911002dd55118944",
+   "reason": "음표"
+  },
+  {
+   "id": "select1.e066",
+   "entry": 66,
+   "offset": "0x1cc9c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "cf182019e77048c3e6fe36da0753c36d775dffb2",
+   "reason": "음표"
+  },
+  {
+   "id": "select1.e067",
+   "entry": 67,
+   "offset": "0x1cd1c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "3316603ac0dc6d317bb5d08ba2f80ff7d11cbd26",
+   "reason": "음표"
+  },
+  {
+   "id": "select1.e068",
+   "entry": 68,
+   "offset": "0x1cd9c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "e399d3b537cc81ac21ab699594d509614d486972",
+   "reason": "음표"
+  },
+  {
+   "id": "select1.e069",
+   "entry": 69,
+   "offset": "0x1ce1c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "338820e09b56b1bd9d097846b34f7a5fcf60519e",
+   "reason": "음표"
+  },
+  {
+   "id": "select1.e070",
+   "entry": 70,
+   "offset": "0x1ce9c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "8291b00250e25ece8d934dfbf506d7e42104260c",
+   "reason": "음표"
+  },
+  {
+   "id": "select1.e071",
+   "entry": 71,
+   "offset": "0x1cf1c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "b61fe58d254bd93edccf3071bcd454eaed6daf1c",
+   "reason": "음표"
+  },
+  {
+   "id": "select1.e078",
+   "entry": 78,
+   "offset": "0x1e79c",
+   "size": [
+    128,
+    152
+   ],
+   "colr": "0x200",
+   "src_sha1": "4442f2c9bb9a074310410a8750ca090e9de97ade",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e079",
+   "entry": 79,
+   "offset": "0x2339c",
+   "size": [
+    128,
+    144
+   ],
+   "colr": "0x200",
+   "src_sha1": "96152f389b99c09a6fce6f46b575c735422002fc",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e080",
+   "entry": 80,
+   "offset": "0x27b9c",
+   "size": [
+    40,
+    16
+   ],
+   "colr": "0x200",
+   "src_sha1": "25c456d3bfe3e734f6b401754d4eba2425f5bc39",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e081",
+   "entry": 81,
+   "offset": "0x27e1c",
+   "size": [
+    40,
+    16
+   ],
+   "colr": "0x200",
+   "src_sha1": "adee256b1f9c22abcf6ab3e1ec07327092dafd1e",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e082",
+   "entry": 82,
+   "offset": "0x2809c",
+   "size": [
+    40,
+    16
+   ],
+   "colr": "0x200",
+   "src_sha1": "4bc9be1a506a49c9ed6f7f72b6af6bde1657ca1c",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e083",
+   "entry": 83,
+   "offset": "0x2831c",
+   "size": [
+    40,
+    16
+   ],
+   "colr": "0x200",
+   "src_sha1": "7ab0fa3c78b2e00707de6d3628f04a9f3f9be112",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e084",
+   "entry": 84,
+   "offset": "0x2859c",
+   "size": [
+    40,
+    16
+   ],
+   "colr": "0x200",
+   "src_sha1": "fd8250beedd0d046fcc143cd7d56055a7e102777",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e085",
+   "entry": 85,
+   "offset": "0x2881c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x200",
+   "src_sha1": "3fc4f969628d1b3358770b795823498e088b6a86",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e086",
+   "entry": 86,
+   "offset": "0x2891c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x200",
+   "src_sha1": "a9e1952d9ae4b47779f06012b62a865219d4274d",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e087",
+   "entry": 87,
+   "offset": "0x28a1c",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x300",
+   "src_sha1": "c8d7d0ef0eedfa82d2ea1aa592845b9a6d4b02b7",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e088",
+   "entry": 88,
+   "offset": "0x28a5c",
+   "size": [
+    96,
+    64
+   ],
+   "colr": "0x400",
+   "src_sha1": "aeb5bfe09ce0cde377a9f13c8c47e18e0ecc9feb",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e089",
+   "entry": 89,
+   "offset": "0x2a25c",
+   "size": [
+    96,
+    64
+   ],
+   "colr": "0x500",
+   "src_sha1": "e1d30e1b8b73a3beb125975c769fa8c88d458fee",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e090",
+   "entry": 90,
+   "offset": "0x2ba5c",
+   "size": [
+    96,
+    64
+   ],
+   "colr": "0x600",
+   "src_sha1": "1868b6ba2db5d14599273b5acd3749f891a6603c",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e091",
+   "entry": 91,
+   "offset": "0x2d25c",
+   "size": [
+    96,
+    64
+   ],
+   "colr": "0x700",
+   "src_sha1": "7dec9ec29081c2aea0f3b7cbd48b93ba6b94bb3f",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e092",
+   "entry": 92,
+   "offset": "0x2ea5c",
+   "size": [
+    96,
+    64
+   ],
+   "colr": "0x800",
+   "src_sha1": "7288670657fa716ba5dc9b5738d4c1914b6288c7",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e103",
+   "entry": 103,
+   "offset": "0x36cdc",
+   "size": [
+    72,
+    40
+   ],
+   "colr": "0x150",
+   "src_sha1": "fed50202c0df723da5a22c4a0d67d481e5c5f208",
+   "reason": "빈 틀"
+  },
+  {
+   "id": "select1.e104",
+   "entry": 104,
+   "offset": "0x3727c",
+   "size": [
+    80,
+    32
+   ],
+   "colr": "0x130",
+   "src_sha1": "e7b62d4524292837a7e99f5f541fd62219f7ab0f",
+   "reason": "빈 틀(화살표 틀)"
+  },
+  {
+   "id": "select1.e105",
+   "entry": 105,
+   "offset": "0x3777c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "896556742e587f5f5f1cafa929e449da2308bbe2",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e106",
+   "entry": 106,
+   "offset": "0x383bc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "1fac25c4163277ac7f1f16bf1ab8eaf23c41bcfe",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e107",
+   "entry": 107,
+   "offset": "0x38ffc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "9cdf71832b256e2a2fc28d882bb4c2a12ca04d1d",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e108",
+   "entry": 108,
+   "offset": "0x39c3c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "2a4fd54e3db147b84d99697a74df5939385cbdc2",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e109",
+   "entry": 109,
+   "offset": "0x3a87c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "e68bb9ecd990538e63ccf1546732c468f9362169",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e110",
+   "entry": 110,
+   "offset": "0x3b4bc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "6c1379b3ae290a2297f70cdea1d042289621ed9e",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e111",
+   "entry": 111,
+   "offset": "0x3c0fc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "c22620956c63d10e8ca10581edabba2f32d0805c",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e112",
+   "entry": 112,
+   "offset": "0x3cd3c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "d4a8d7ef3f25984708f9fd10c3d644acbba9f73f",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e113",
+   "entry": 113,
+   "offset": "0x3d97c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x900",
+   "src_sha1": "7f214bc526fe0bf8a43593fce5552d8da76249f6",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e114",
+   "entry": 114,
+   "offset": "0x3e5bc",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x170",
+   "src_sha1": "aa65bdf39df37449a50980ec152349573c694cfa",
+   "reason": "점 하나"
+  },
+  {
+   "id": "select1.e115",
+   "entry": 115,
+   "offset": "0x3e5dc",
+   "size": [
+    64,
+    136
+   ],
+   "colr": "0xa00",
+   "src_sha1": "b552c81ec78aebb4326caaf0beeb6371533231a4",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e116",
+   "entry": 116,
+   "offset": "0x407dc",
+   "size": [
+    72,
+    96
+   ],
+   "colr": "0xb00",
+   "src_sha1": "2150bde8dd5982378ab500f5de348416300e29e6",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e117",
+   "entry": 117,
+   "offset": "0x422dc",
+   "size": [
+    88,
+    144
+   ],
+   "colr": "0xa00",
+   "src_sha1": "dd226d610ca3a487c3ccd8996b6b8a1fc5bfbe53",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e118",
+   "entry": 118,
+   "offset": "0x4545c",
+   "size": [
+    88,
+    136
+   ],
+   "colr": "0xb00",
+   "src_sha1": "0ab85179743803ce788a3ebd7d45a05c4176b4ea",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e119",
+   "entry": 119,
+   "offset": "0x4831c",
+   "size": [
+    80,
+    152
+   ],
+   "colr": "0xc00",
+   "src_sha1": "733c69006413a0ec80e032f89290e16e70811e4c",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e120",
+   "entry": 120,
+   "offset": "0x4b29c",
+   "size": [
+    72,
+    152
+   ],
+   "colr": "0xc00",
+   "src_sha1": "6f2ecfdd0e3ba69c46e5f8fbf9cf4f7c88a92303",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e121",
+   "entry": 121,
+   "offset": "0x4dd5c",
+   "size": [
+    128,
+    144
+   ],
+   "colr": "0xd00",
+   "src_sha1": "088ee34c24bfe2a58903ed305df701aab498afe9",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e122",
+   "entry": 122,
+   "offset": "0x5255c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0xe00",
+   "src_sha1": "2a40156fa502f01541232f69864398035c6d09cd",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e123",
+   "entry": 123,
+   "offset": "0x53e5c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0xf00",
+   "src_sha1": "df14e11f6777f296bc51c890c055efc437e0952f",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e124",
+   "entry": 124,
+   "offset": "0x5575c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0xe00",
+   "src_sha1": "b7b968254d099b0ce0a4c98a33a0f5a6afb12293",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e125",
+   "entry": 125,
+   "offset": "0x5705c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0xe00",
+   "src_sha1": "cbf21c5c7e80e8e4144433014c3b9093701315e8",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e126",
+   "entry": 126,
+   "offset": "0x5895c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1000",
+   "src_sha1": "d13db71a17010c1d1732298f0c0730f80c0d044d",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e127",
+   "entry": 127,
+   "offset": "0x5a25c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1000",
+   "src_sha1": "74ef8bcc9414584ea5be045ec3bfdb930c10eefd",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e128",
+   "entry": 128,
+   "offset": "0x5bb5c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1100",
+   "src_sha1": "bed2b01ffb880fb7a82d2bc02c53c134323ac470",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e129",
+   "entry": 129,
+   "offset": "0x5d45c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1200",
+   "src_sha1": "c8fcf01edb178ce6a2964f4f0712378ffa65c11f",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e130",
+   "entry": 130,
+   "offset": "0x5ed5c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1300",
+   "src_sha1": "4a05216242969cebf36da368d61fecacfb0ae368",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e131",
+   "entry": 131,
+   "offset": "0x6065c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1300",
+   "src_sha1": "40f4048088f4ce3b10440733d38c08a5ef6ea7ce",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e132",
+   "entry": 132,
+   "offset": "0x61f5c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1300",
+   "src_sha1": "3b7f0e9cc72e78dd27cea1beaf8e65478caabca1",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e133",
+   "entry": 133,
+   "offset": "0x6385c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1300",
+   "src_sha1": "ee5899208de1f04bb0f19ef411eb1fd1e6438ae5",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e134",
+   "entry": 134,
+   "offset": "0x6515c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1400",
+   "src_sha1": "c11e9b2add978cc44cf767c7c0bb7c8f3c313390",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e135",
+   "entry": 135,
+   "offset": "0x66a5c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1500",
+   "src_sha1": "0e32edd03780cd8d406e376037f680bd16059018",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e136",
+   "entry": 136,
+   "offset": "0x6835c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1500",
+   "src_sha1": "752ee5e2c5fbc2f88cf0b4251704f34ce8cc2113",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  },
+  {
+   "id": "select1.e137",
+   "entry": 137,
+   "offset": "0x69c5c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x1600",
+   "src_sha1": "1ddef5418053b0522ae525328fd566aa383c92d5",
+   "reason": "8bpp 캐릭터 그림, 글자 없음"
+  }
+ ]
+}

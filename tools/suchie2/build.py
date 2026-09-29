@@ -1,7 +1,8 @@
 """Primary product build: source BIN/CUE -> patched BIN/CUE + manifest.json.
 
-Current scope: the title-screen sprite bundle inside PROLOG.BIN (LZSS-compressed Yc block).
-All output changes go through one WritePlan over the raw Track 1 image.
+Current scope: the title-screen sprite bundle inside PROLOG.BIN (LZSS-compressed Yc block) and
+the menu sprite bundle SELECT1.BIN (uncompressed Yc). All output changes go through one
+WritePlan over the raw Track 1 image, one write per touched sector.
 """
 import hashlib
 import json
@@ -12,7 +13,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import cdsector, iso9660, lzss, title, yc
+from . import cdsector, iso9660, lzss, select1 as select1_mod, title, yc
 from .writeplan import PlanError, WritePlan
 
 OUT_STEM = "Idol Janshi Suchie-Pai II (Korean) (Disc 1)"
@@ -31,6 +32,10 @@ class SourceProfile:
     prolog_size: int
     title_region: tuple[int, int]      # PROLOG.BIN offsets: compressed block + following zero gap
     title_region_sha1: str
+    select1_name: str | None = None
+    select1_lba: int | None = None
+    select1_size: int | None = None
+    select1_bundle: int | None = None  # SELECT1.BIN offset of the Yc bundle
 
 
 # Idol Janshi Suchie-Pai II (Japan) (Disc 1), T-5705G V1.001 (docs/initial-survey.md §1, §3.6)
@@ -40,6 +45,7 @@ JP_DISC1 = SourceProfile(
     prolog_name="PROLOG.BIN", prolog_lba=267880, prolog_size=1005312,
     title_region=(0x7900, 0xA600),
     title_region_sha1="22088bff3f7fc47c9596660b131d46c391bff82d",
+    select1_name="SELECT1.BIN", select1_lba=14841, select1_size=442368, select1_bundle=0x2FC0,
 )
 
 
@@ -118,22 +124,33 @@ def compose_title(entries: list[yc.Entry], spec_path: Path) -> list[yc.Entry]:
     return out
 
 
-def _sector_writes(plan: WritePlan, t1: _Track1, file_lba: int, offset: int, new: bytes, writer: str) -> list[int]:
+def _file_writes(plan: WritePlan, t1: _Track1, file_lba: int, changes: list[tuple[int, bytes]], writer: str) -> list[int]:
+    """Register one sector write per touched sector for byte changes given in file offsets."""
+    spans = sorted((off, off + len(new)) for off, new in changes)
+    for (a0, a1), (b0, b1) in zip(spans, spans[1:]):
+        if b0 < a1:
+            raise BuildError(f"{writer}: changes overlap at file offset {b0:#x}")
+    per_sector: dict[int, list[tuple[int, bytes]]] = {}
+    for off, new in changes:
+        pos = 0
+        while pos < len(new):
+            sec = (off + pos) // cdsector.USER
+            so = (off + pos) % cdsector.USER
+            n = min(cdsector.USER - so, len(new) - pos)
+            per_sector.setdefault(sec, []).append((so, new[pos:pos + n]))
+            pos += n
     lbas = []
-    pos = 0
-    while pos < len(new):
-        lba = file_lba + (offset + pos) // cdsector.USER
-        so = (offset + pos) % cdsector.USER
-        n = min(cdsector.USER - so, len(new) - pos)
+    for sec_no in sorted(per_sector):
+        lba = file_lba + sec_no
         raw = t1.raw(lba)
         if bytes(cdsector.fix_mode1(bytearray(raw))) != raw or cdsector.header_lba(raw) != lba:
             raise BuildError(f"LBA {lba}: source sector does not match the Mode 1 EDC/ECC model")
         sec = bytearray(raw)
-        sec[16 + so:16 + so + n] = new[pos:pos + n]
+        for so, piece in per_sector[sec_no]:
+            sec[16 + so:16 + so + len(piece)] = piece
         cdsector.fix_mode1(sec)
         plan.add(f"{writer}@{lba}", lba * cdsector.RAW + 16, raw[16:], bytes(sec[16:]))
         lbas.append(lba)
-        pos += n
     return lbas
 
 
@@ -168,7 +185,54 @@ def _verify_output(track1: Path, prolog_lba: int, lo: int, hi: int, stream: byte
             raise BuildError("output title block does not decode to the built bundle")
 
 
-def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile) -> dict:
+def _outside(extents: list[tuple[int, int]], total: int) -> list[tuple[int, int]]:
+    """Protected byte ranges of the raw image: everything outside the given file extents."""
+    spans = sorted((lba * cdsector.RAW, (lba + (size + cdsector.USER - 1) // cdsector.USER) * cdsector.RAW)
+                   for lba, size in extents)
+    out, pos = [], 0
+    for a, b in spans:
+        if a > pos:
+            out.append((pos, a))
+        pos = max(pos, b)
+    if pos < total:
+        out.append((pos, total))
+    return out
+
+
+def _plan_select1(plan: WritePlan, t1: _Track1, profile: SourceProfile, select1) -> tuple[dict, list]:
+    if profile.select1_name is None:
+        raise BuildError("source profile has no SELECT1.BIN location")
+    lba, size = iso9660.find_file(t1.user, profile.select1_name)
+    if (lba, size) != (profile.select1_lba, profile.select1_size):
+        raise BuildError(f"{profile.select1_name} extent {lba}/{size} differs from profile")
+    data = _read_file_range(t1, lba, 0, size)
+    translation, layout = Path(select1[0]), Path(select1[1])
+    glossary = Path(select1[2]) if len(select1) > 2 and select1[2] else None
+    font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
+    res = select1_mod.render(data, translation, layout, font=font, glossary=glossary)
+    ents = select1_mod.entries(data, profile.select1_bundle)
+    offsets, pos = [], profile.select1_bundle + 4 + 8 * len(ents)
+    for e in ents:
+        offsets.append(pos)
+        pos += len(e.data)
+    by_entry = {e["entry"]: e for e in json.loads(translation.read_text())["entries"]}
+    changes = []
+    for i, tex in sorted(res.textures.items()):
+        if int(by_entry[i]["offset"], 16) != offsets[i]:
+            raise BuildError(f"{by_entry[i]['id']}: offset differs from the bundle table")
+        if tex != ents[i].data:
+            changes.append((offsets[i], tex))
+    lbas = _file_writes(plan, t1, lba, changes, "select1")
+    info = {"lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
+            "changes": [[o, len(t)] for o, t in changes], "sectors": lbas,
+            "translation": _rel(translation), "translation_sha1": _sha1(translation),
+            "layout": _rel(layout), "layout_sha1": _sha1(layout),
+            "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
+            "font": font, "font_sha1": _sha1(Path(font))}
+    return info, changes
+
+
+def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile, select1=None) -> dict:
     tr1, tr2 = _cue_tracks(source_cue)
     if _sha1(tr1) != profile.track1_sha1:
         raise BuildError(f"Track 1 SHA-1 mismatch: {tr1}")
@@ -193,9 +257,12 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
             raise BuildError("recompressed title block does not round-trip")
         if len(stream) > hi - lo:
             raise BuildError(f"title block {len(stream)} bytes exceeds region {hi - lo}")
-        extent = (prolog_lba * cdsector.RAW, (prolog_lba + (size + cdsector.USER - 1) // cdsector.USER) * cdsector.RAW)
-        plan = WritePlan(tr1, protected=[(0, extent[0]), (extent[1], tr1.stat().st_size)])
-        lbas = _sector_writes(plan, t1, prolog_lba, lo, stream + bytes(hi - lo - len(stream)), "title")
+        extents = [(prolog_lba, size)]
+        if select1:
+            extents.append((profile.select1_lba, profile.select1_size))
+        plan = WritePlan(tr1, protected=_outside(extents, tr1.stat().st_size))
+        lbas = _file_writes(plan, t1, prolog_lba, [(lo, stream + bytes(hi - lo - len(stream)))], "title")
+        sel, sel_changes = _plan_select1(plan, t1, profile, select1) if select1 else (None, [])
     finally:
         t1.close()
 
@@ -205,6 +272,18 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
     if _sha1(out_dir / o2) != profile.track2_sha1:
         raise BuildError("Track 2 copy differs from source")
     _verify_output(out_dir / o1, prolog_lba, lo, hi, stream, bundle, lbas)
+    if sel:
+        t = _Track1(out_dir / o1)
+        try:
+            for lba in sel["sectors"]:
+                raw = t.raw(lba)
+                if bytes(cdsector.fix_mode1(bytearray(raw))) != raw:
+                    raise BuildError(f"output LBA {lba}: EDC/ECC inconsistent")
+            for off, tex in sel_changes:
+                if _read_file_range(t, sel["lba"], off, off + len(tex)) != tex:
+                    raise BuildError(f"output SELECT1 texture at {off:#x} differs from the rendered label")
+        finally:
+            t.close()
     cue_name = f"{OUT_STEM}.cue"
     (out_dir / cue_name).write_text(
         f'FILE "{o1}" BINARY\n  TRACK 01 MODE1/2352\n    INDEX 01 00:00:00\n'
@@ -214,19 +293,24 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
     if title_spec:
         spec = json.loads(title_spec.read_text())
         title_info.update(spec=_rel(title_spec), spec_sha1=_sha1(title_spec),
-                          logo_sha1=_sha1(title_spec.parent / spec["logo"]))
+                          logo_sha1=_sha1(title_spec.parent / spec["logo"]),
+                          presentation=spec.get("presentation", "needs_human_review"))
+    title_ok = title_spec is None or json.loads(title_spec.read_text()).get("presentation") == "approved"
     manifest = {
         "cue": cue_name, "track1": o1, "track2": o2,
+        "distribution": bool(title_ok and (sel is None or sel["distribution"])),
         "source": {"track1_sha1": profile.track1_sha1, "track2_sha1": profile.track2_sha1},
         "output": {"track1_sha1": _sha1(out_dir / o1), "track2_sha1": _sha1(out_dir / o2)},
         "title": title_info,
+        "select1": sel,
         "profile": asdict(profile),
     }
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
     return manifest
 
 
-def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile = None) -> dict:
+def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile = None,
+          select1=None) -> dict:
     """Build into a fresh staging directory and replace out_dir only when every check passed."""
     profile = profile or JP_DISC1
     source_cue, out_dir = Path(source_cue), Path(out_dir)
@@ -236,7 +320,7 @@ def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: Sou
         shutil.rmtree(stage)
     stage.mkdir(parents=True)
     try:
-        manifest = _build(source_cue, stage, title_spec, profile)
+        manifest = _build(source_cue, stage, title_spec, profile, select1)
     except BuildError:
         raise
     except (PlanError, ValueError, OSError, KeyError) as err:

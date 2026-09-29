@@ -1,0 +1,171 @@
+{
+ "_about": "용어·표기 결정. state: approved(사람 승인) / proposed(초벌, 사람 확인 필요) / conflicting. 같은 원어라도 적용 범위가 다르면 별도 id.",
+ "rules": {
+  "japanese_names": "국립국어원 일본어 표기법을 따르되 이미 굳은 표기가 있으면 그것을 씀 (README 번역 원칙)",
+  "voice_actor_names": "성우 이름(歌:)은 국립국어원 일본어 표기법 (제안): かないみか=가나이 미카, 吉田古奈美=요시다 고나미, 松本梨香=마쓰모토 리카, 水谷優子=미즈타니 유코, 西原久美子=니시하라 구미코, 高橋美紀=다카하시 미키"
+ },
+ "terms": [
+  {
+   "id": "diff.easy",
+   "ja": "イージー",
+   "ko": "쉬움",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 한글화 범위 질문에 대한 답)",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "diff.normal",
+   "ja": "ノーマル",
+   "ko": "보통",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 한글화 범위 질문에 대한 답)",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "diff.hard",
+   "ja": "ハード",
+   "ko": "어려움",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 한글화 범위 질문에 대한 답)",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "ui.select",
+   "ja": "〜セレクト",
+   "ko": "~ 선택",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 한글화 범위 질문에 대한 답)",
+   "note": "파트너 선택, 난이도 선택, 스테이지 선택",
+   "scope": "title"
+  },
+  {
+   "id": "ui.menu",
+   "ja": "メニュー",
+   "ko": "메뉴",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "ui.choose",
+   "ja": "選ぶ",
+   "ko": "선택",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "ui.omake",
+   "ja": "おまけ",
+   "ko": "보너스",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "README는 '오마케(부록)'. 화면 표기는 보너스 제안",
+   "scope": "title"
+  },
+  {
+   "id": "name.suchie",
+   "ja": "スーチー",
+   "ko": "스치",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 제공 표지·로고 표기",
+   "note": "스치파이",
+   "scope": "title"
+  },
+  {
+   "id": "name.alice",
+   "ja": "篠原ありす",
+   "ko": "시노하라 아리스",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "국립국어원 표기",
+   "scope": "title"
+  },
+  {
+   "id": "name.tsukasa",
+   "ja": "一文字つかさ",
+   "ko": "이치몬지 츠카사",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 번역 확인 답변)",
+   "note": "국립국어원 '쓰카사' 대신 통용 표기 '츠카사' (사람 결정)",
+   "scope": "title"
+  },
+  {
+   "id": "name.sanae",
+   "ja": "槙枝早苗",
+   "ko": "마키에다 사나에",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "성 읽기 まきえだ (pixiv 백과사전)",
+   "scope": "title"
+  },
+  {
+   "id": "name.rumi",
+   "ja": "佐々木留美",
+   "ko": "사사키 루미",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "name.milk",
+   "ja": "みるく",
+   "ko": "밀크",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 번역 확인 답변)",
+   "note": "루미의 애완 토끼",
+   "scope": "title"
+  },
+  {
+   "id": "name.shiho",
+   "ja": "志穂",
+   "ko": "시호",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "name.cecil",
+   "ja": "セシル",
+   "ko": "세실",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "name.yuki",
+   "ja": "佑紀",
+   "ko": "유키",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "",
+   "scope": "title"
+  },
+  {
+   "id": "name.kyoko",
+   "ja": "恭子",
+   "ko": "쿄코",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 번역 확인 답변)",
+   "note": "국립국어원 '교코' 대신 통용 표기 '쿄코' (사람 결정)",
+   "scope": "title"
+  },
+  {
+   "id": "pun.pinfu",
+   "ja": "平和 (마작 역 핑후와 '평화' 말장난)",
+   "ko": "핑후",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 번역 확인 답변)",
+   "note": "파트너 소개 '平和を愛する勇者' → '핑후를 사랑하는 용사'",
+   "scope": "title"
+  }
+ ]
+}

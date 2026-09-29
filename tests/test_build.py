@@ -20,15 +20,30 @@ def _entries():
     ]
 
 
+SEL_LBA = 40
+SEL_BUNDLE = 0x40
+
+
+def _select1_file():
+    head = bytearray(SEL_BUNDLE)
+    head[0x22:0x24] = (0x7FFF).to_bytes(2, "big")      # bank 0x10 idx 1 white
+    head[0x24:0x26] = (0x001F).to_bytes(2, "big")      # idx 2 red
+    a = yc.Entry(32, 16, 0x0080, 0x10, bytes(256))
+    b = yc.Entry(32, 16, 0x0080, 0x10, bytes(256))
+    return bytes(head) + yc.build([a, b]) + bytes(100)
+
+
 def _make_disc(tmp_path):
     prolog = bytearray(0x2000)
     stream = lzss.compress(yc.build(_entries()))
     prolog[BLOCK_OFF:BLOCK_OFF + len(stream)] = stream
+    sel = _select1_file()
     user = {}
     root = bytearray(2048)
     p = 0
     for rec in [_dirrec(b"\x00", 20, 2048, 2), _dirrec(b"\x01", 20, 2048, 2),
-                _dirrec(b"PROLOG.BIN;1", FILE_LBA, len(prolog))]:
+                _dirrec(b"PROLOG.BIN;1", FILE_LBA, len(prolog)),
+                _dirrec(b"SELECT1.BIN;1", SEL_LBA, len(sel))]:
         root[p:p + len(rec)] = rec
         p += len(rec)
     pvd = bytearray(2048)
@@ -37,8 +52,10 @@ def _make_disc(tmp_path):
     user[16], user[20] = bytes(pvd), bytes(root)
     for i in range(0, len(prolog), 2048):
         user[FILE_LBA + i // 2048] = bytes(prolog[i:i + 2048])
+    for i in range(0, len(sel), 2048):
+        user[SEL_LBA + i // 2048] = sel[i:i + 2048].ljust(2048, b"\x00")
     raw = bytearray()
-    for lba in range(FILE_LBA + len(prolog) // 2048 + 2):
+    for lba in range(SEL_LBA + len(sel) // 2048 + 2):
         s = bytearray(2352)
         s[0:12] = cdsector.SYNC
         m, rem = divmod(lba + 150, 4500)
@@ -59,7 +76,8 @@ def _make_disc(tmp_path):
         track2_sha1=hashlib.sha1(t2.read_bytes()).hexdigest(),
         prolog_name="PROLOG.BIN", prolog_lba=FILE_LBA, prolog_size=len(prolog),
         title_region=(BLOCK_OFF, REGION_END),
-        title_region_sha1=hashlib.sha1(bytes(prolog[BLOCK_OFF:REGION_END])).hexdigest())
+        title_region_sha1=hashlib.sha1(bytes(prolog[BLOCK_OFF:REGION_END])).hexdigest(),
+        select1_name="SELECT1.BIN", select1_lba=SEL_LBA, select1_size=len(sel), select1_bundle=SEL_BUNDLE)
     return cue, profile, prolog
 
 
@@ -209,3 +227,101 @@ def test_manifest_records_spec_and_logo_hashes(tmp_path):
     assert m["title"]["spec_sha1"] == hashlib.sha1(spec.read_bytes()).hexdigest()
     assert m["title"]["logo_sha1"] == hashlib.sha1((tmp_path / "logo.png").read_bytes()).hexdigest()
     assert not m["title"]["spec"].startswith("/")
+
+
+def _select1_tables(tmp_path):
+    ents = yc.parse(_select1_file()[SEL_BUNDLE:SEL_BUNDLE + yc.length(_select1_file()[SEL_BUNDLE:])])
+    base = SEL_BUNDLE + 4 + 8 * len(ents)
+    tr = {"file": "SELECT1.BIN", "bundle_offset": hex(SEL_BUNDLE), "excluded": [], "entries": [
+        {"id": f"s.e{i}", "entry": i, "offset": hex(base + 256 * i), "size": [32, 16], "colr": "0x10",
+         "src_sha1": hashlib.sha1(e.data).hexdigest(), "ja": "あ", "ko": "가", "state": "needs_review",
+         "terms": [], "note": ""} for i, e in enumerate(ents)]}
+    lay = {"entries": [{"id": f"s.e{i}", "box": [0, 0, 32, 16], "allowed": [1, 2],
+                        "lines": [{"size": 12, "x": "center", "y": "center", "fill": 1, "outline": 2}]} for i in (0, 1)]}
+    (tmp_path / "s_tr.json").write_text(json.dumps(tr, ensure_ascii=False))
+    (tmp_path / "s_lay.json").write_text(json.dumps(lay))
+    return tmp_path / "s_tr.json", tmp_path / "s_lay.json"
+
+
+def test_build_applies_select1_labels_with_one_write_per_sector(tmp_path):
+    cue, profile, _ = _make_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    m = build.build(cue, tmp_path / "out", None, profile=profile, select1=(tr, lay))
+    sel = _select1_file()
+    raw = (tmp_path / "out" / m["track1"]).read_bytes()
+    new = b"".join(raw[(SEL_LBA + i) * 2352 + 16:(SEL_LBA + i) * 2352 + 2064] for i in range(2))[:len(sel)]
+    ents = yc.parse(new[SEL_BUNDLE:SEL_BUNDLE + yc.length(new[SEL_BUNDLE:])])
+    assert any(ents[0].data) and any(ents[1].data)
+    assert new[:SEL_BUNDLE] == sel[:SEL_BUNDLE]                       # palettes untouched
+    assert m["select1"]["sectors"] == [SEL_LBA]                        # both entries share sector 0
+    assert m["select1"]["entries"] == ["s.e0", "s.e1"]
+    assert m["distribution"] is False and m["select1"]["states"] == {"needs_review": 2}
+
+
+def test_select1_readback_rejects_corrupted_output(tmp_path, monkeypatch):
+    cue, profile, _ = _make_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    real_apply = build.WritePlan.apply
+
+    def apply_then_corrupt(self, out):
+        real_apply(self, out)
+        d = bytearray(out.read_bytes())
+        d[SEL_LBA * 2352 + 16 + SEL_BUNDLE + 4 + 16 + 40] ^= 0xFF   # inside entry 0 texture
+        sec = bytearray(d[SEL_LBA * 2352:(SEL_LBA + 1) * 2352])
+        d[SEL_LBA * 2352:(SEL_LBA + 1) * 2352] = cdsector.fix_mode1(sec)  # keep EDC valid: texture check must catch it
+        out.write_bytes(bytes(d))
+    monkeypatch.setattr(build.WritePlan, "apply", apply_then_corrupt)
+    with pytest.raises(build.BuildError, match="differs from the rendered label"):
+        build.build(cue, tmp_path / "out", None, profile=profile, select1=(tr, lay))
+    assert not (tmp_path / "out").exists()
+
+
+def test_file_writes_reject_overlapping_changes(tmp_path):
+    cue, profile, _ = _make_disc(tmp_path)
+    t1 = build._Track1(tmp_path / "t1.bin")
+    try:
+        plan = build.WritePlan(tmp_path / "t1.bin")
+        with pytest.raises(build.BuildError, match="overlap"):
+            build._file_writes(plan, t1, SEL_LBA, [(0x100, b"ab"), (0x101, b"cd")], "x")
+    finally:
+        t1.close()
+
+
+def test_file_writes_split_changes_across_sectors(tmp_path):
+    cue, profile, _ = _make_disc(tmp_path)
+    t1 = build._Track1(tmp_path / "t1.bin")
+    try:
+        plan = build.WritePlan(tmp_path / "t1.bin")
+        lbas = build._file_writes(plan, t1, FILE_LBA, [(2040, bytes(range(20)))], "x")
+    finally:
+        t1.close()
+    assert lbas == [FILE_LBA, FILE_LBA + 1]
+    plan.apply(tmp_path / "o.bin")
+    raw = (tmp_path / "o.bin").read_bytes()
+    got = raw[FILE_LBA * 2352 + 16 + 2040:FILE_LBA * 2352 + 16 + 2048] + raw[(FILE_LBA + 1) * 2352 + 16:(FILE_LBA + 1) * 2352 + 16 + 12]
+    assert got == bytes(range(20))
+
+
+def test_distribution_true_when_title_unchanged_and_all_labels_eligible(tmp_path):
+    cue, profile, _ = _make_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    t = json.loads(tr.read_text())
+    for e in t["entries"]:
+        e["state"] = "distribution_eligible"
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    gl = tmp_path / "glossary.json"
+    gl.write_text(json.dumps({"terms": []}))
+    m = build.build(cue, tmp_path / "out", None, profile=profile, select1=(tr, lay, gl))
+    assert m["distribution"] is True
+    assert len(m["select1"]["font_sha1"]) == 40
+
+
+def test_title_needs_approved_presentation_for_distribution(tmp_path):
+    cue, profile, _ = _make_disc(tmp_path)
+    spec = _spec(tmp_path)
+    m = build.build(cue, tmp_path / "out", spec, profile=profile)
+    assert m["distribution"] is False
+    d = json.loads(spec.read_text())
+    d["presentation"] = "approved"
+    spec.write_text(json.dumps(d))
+    assert build.build(cue, tmp_path / "out", spec, profile=profile)["distribution"] is True

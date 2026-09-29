@@ -45,8 +45,21 @@ def test_build_rejects_wrong_data_size():
         yc.build([yc.Entry(width=16, height=8, attr=0x0080, colr=0x2010, data=b"\x00" * 63)])
 
 
-def test_parse_rejects_non_4bpp_mode():
+def test_parse_rejects_undefined_colour_mode():
     raw = bytearray(yc.build(_sample()))
-    raw[8:10] = (0x0080 | (4 << 3)).to_bytes(2, "big")  # 8bpp colour mode in attr
+    raw[8:10] = (0x0080 | (6 << 3)).to_bytes(2, "big")
     with pytest.raises(yc.YcError):
         yc.parse(bytes(raw))
+
+
+def test_8bpp_and_16bpp_entry_sizes():
+    e8 = yc.Entry(width=8, height=2, attr=0x00A0, colr=0x200, data=bytes(16))      # mode 4
+    e16 = yc.Entry(width=8, height=1, attr=0x0080 | (5 << 3), colr=0, data=bytes(16))
+    raw = yc.build([e8, e16])
+    assert yc.parse(raw) == [e8, e16] and yc.length(raw) == len(raw)
+
+
+def test_length_ignores_trailing_padding():
+    raw = yc.build(_sample())
+    assert yc.length(raw + bytes(36)) == len(raw)
+    assert yc.parse((raw + bytes(36))[:yc.length(raw + bytes(36))]) == _sample()
