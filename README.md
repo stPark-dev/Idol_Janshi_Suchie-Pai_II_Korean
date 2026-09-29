@@ -28,7 +28,34 @@
 
 ## 현재 상태
 
-**v0.0 — 초기 조사 중.** 1번 디스크의 파일 구성과 화면 글자 종류를 확인했습니다([`docs/initial-survey.md`](docs/initial-survey.md)). 번역·그림 작업은 아직 시작하지 않았습니다.
+**v0.1 — 개발판.** 들어 있는 것:
+
+- 한글 타이틀 로고 (제공 로고 `title_logo.png`를 원래 스프라이트 3칸과 팔레트에 맞춰 넣음, 사람 확인 대기)
+- 제품 빌드 도구: LZSS 압축·해제(게임 해제 코드와 같은 형식), 스프라이트 묶음(Yc), ISO9660, 섹터 EDC/ECC, 쓰기 계획
+
+조사 기록은 [`docs/initial-survey.md`](docs/initial-survey.md)에 있습니다.
+
+## 준비물
+
+- Python 3.11 이상, [Pillow](https://pypi.org/project/Pillow/) 9.4 이상, pytest (테스트용)
+- 원본 1번 디스크 BIN/CUE (Redump `Idol Janshi Suchie-Pai II (Japan) (Disc 1)`). 트랙 SHA-1이 다르면 빌드가 거부합니다.
+  - Track 1: `90efa69e3b3f89503e356d6d6f5112ff8a541f1d`
+  - Track 2: `5328aad6e81dc43b59ccde73ada1f51c930be5e4`
+
+## 사용법
+
+```sh
+# 한글판 만들기 → out/ 에 BIN/CUE와 manifest.json
+python3 tools/khpatch.py build --source "/경로/Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
+
+# 대조군: 타이틀 그림은 그대로 두고 압축만 다시 한 디스크 (압축기 호환 확인용)
+python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original
+
+# 테스트
+python3 -m pytest -q tests
+```
+
+빌드는 원본 트랙 해시와 바꿀 영역의 원본 바이트를 확인한 뒤, 모든 변경을 섹터 단위 쓰기 계획으로 등록하고(원본 기대값 확인, 겹침 거부, 최종 차이 감사) 한 번에 적용합니다. 로고가 원래 스프라이트 칸 밖으로 나가거나 압축 결과가 원래 자리보다 크면 빌드가 실패합니다.
 
 ## 한글화 방향
 

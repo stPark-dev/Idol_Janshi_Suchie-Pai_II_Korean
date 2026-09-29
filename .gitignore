@@ -17,3 +17,5 @@ work/
 .pytest_cache/
 __pycache__/
 *.pyc
+.coverage
+*.partial

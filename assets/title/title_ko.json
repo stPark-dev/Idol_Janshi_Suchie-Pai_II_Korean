@@ -1,0 +1,161 @@
+{
+  "_about": "Korean title logo over the title Yc bundle (PROLOG.BIN 0x7900). Sprite rects, draw order and palettes observed at the title screen (VDP1 command table + VDP2 CRAM, docs/initial-survey.md 3.6). Part boxes are in title_logo.png pixels; parts are split by 4-connected colour components (the yellow subtitle vs the rest); 'at' is where the box's top-left lands on the 320x240 screen.",
+  "logo": "../../title_logo.png",
+  "canvas": [
+    320,
+    240
+  ],
+  "parts": [
+    {
+      "name": "subtitle 아이돌 작사",
+      "box": [
+        375,
+        12,
+        1203,
+        196
+      ],
+      "scale": 0.1304,
+      "at": [
+        34,
+        16
+      ],
+      "group": {
+        "rgb": [
+          [
+            200,
+            255
+          ],
+          [
+            150,
+            255
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "keep": true
+      }
+    },
+    {
+      "name": "main 스치파이♡2",
+      "box": [
+        59,
+        61,
+        2092,
+        724
+      ],
+      "scale": 0.131,
+      "at": [
+        24,
+        23
+      ],
+      "group": {
+        "rgb": [
+          [
+            200,
+            255
+          ],
+          [
+            150,
+            255
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "keep": false
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "name": "logo",
+      "entry": 0,
+      "rect": [
+        27,
+        31,
+        256,
+        96
+      ],
+      "palette": [
+        "0000",
+        "7eff",
+        "727f",
+        "725f",
+        "723f",
+        "761f",
+        "71fe",
+        "71de",
+        "69de",
+        "69de",
+        "5d7d",
+        "659e",
+        "553c",
+        "4459",
+        "3415",
+        "7fff"
+      ]
+    },
+    {
+      "name": "aidoru",
+      "entry": 2,
+      "rect": [
+        24,
+        16,
+        128,
+        24
+      ],
+      "palette": [
+        "0000",
+        "7fff",
+        "0c12",
+        "013d",
+        "033f",
+        "3b9f",
+        "49f5",
+        "66db",
+        "0400",
+        "1809",
+        "4097",
+        "549e",
+        "619f",
+        "6e7f",
+        "773f",
+        "7fff"
+      ]
+    },
+    {
+      "name": "II",
+      "entry": 1,
+      "rect": [
+        194,
+        23,
+        96,
+        80
+      ],
+      "palette": [
+        "0000",
+        "631f",
+        "4a5f",
+        "31bf",
+        "14bf",
+        "087d",
+        "005b",
+        "03e0",
+        "03e0",
+        "03e0",
+        "4e7f",
+        "39de",
+        "0017",
+        "03e0",
+        "03e0",
+        "7fff"
+      ]
+    }
+  ],
+  "blank_entries": [
+    5
+  ]
+}
