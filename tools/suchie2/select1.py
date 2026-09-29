@@ -77,7 +77,7 @@ def _apply_region(sid: str, tex: Texture, pal: list[int], region: dict, texts: l
             if clean["method"] == "clear":
                 label.clear_box(tex, cbox)
             elif clean["method"] == "rows":
-                label.clean_rows(tex, cbox, set(clean["text_idx"]))
+                label.clean_rows(tex, cbox, set(clean["text_idx"]), borrow_rows=clean.get("borrow_rows"))
             elif clean["method"] == "tile":
                 label.clean_tile(tex, cbox, set(clean["text_idx"]), tuple(clean["period"]))
             else:
@@ -95,11 +95,16 @@ def _unique(values, what: str) -> None:
         raise Select1Error(f"duplicate {what}: {dup}")
 
 
-def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], glossary: dict | None) -> None:
+def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], glossary: dict | None,
+                  file_name: str | None) -> None:
     items = tr["entries"]
     _unique([e["id"] for e in items], "translation id")
     _unique([e["entry"] for e in items], "translated entry number")
     _unique([s["id"] for s in lay["entries"]], "layout id")
+    _unique([e["entry"] for e in tr.get("excluded", [])], "excluded entry number")
+    bad = [e["entry"] for e in tr.get("excluded", []) if not 0 <= e["entry"] < len(ents)]
+    if bad:
+        raise Select1Error(f"excluded entries out of range 0..{len(ents) - 1}: {bad}")
     excluded = {e["entry"] for e in tr.get("excluded", [])} | {e["id"] for e in tr.get("excluded", [])}
     both = [e["id"] for e in items if e["entry"] in excluded or e["id"] in excluded]
     if both:
@@ -124,8 +129,13 @@ def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], gl
             raise Select1Error(f"{e['id']}: colr {e['colr']} differs from bundle {src.colr:#x}")
         if list(e["size"]) != [src.width, src.height]:
             raise Select1Error(f"{e['id']}: size {e['size']} differs from bundle {src.width}x{src.height}")
-        if int(e["offset"], 16) != offs[i]:
-            raise Select1Error(f"{e['id']}: offset {e['offset']} differs from bundle {offs[i]:#x}")
+        off = e["offset"]
+        if isinstance(off, dict):
+            if file_name not in off:
+                raise Select1Error(f"{e['id']}: no offset recorded for file {file_name}")
+            off = off[file_name]
+        if int(off, 16) != offs[i]:
+            raise Select1Error(f"{e['id']}: offset {off} differs from bundle {offs[i]:#x}")
         if e["state"] not in STATES:
             raise Select1Error(f"{e['id']}: unknown state {e['state']!r}")
         if terms is not None:
@@ -134,16 +144,20 @@ def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], gl
                     raise Select1Error(f"{e['id']}: unknown term {t}")
                 if e["state"] == "distribution_eligible" and terms[t] != "approved":
                     raise Select1Error(f"{e['id']}: eligible entry uses term {t} that is not approved")
+    classified = {e["entry"] for e in items} | {e["entry"] for e in tr.get("excluded", [])}
+    missing = sorted(set(range(len(ents))) - classified)
+    if missing:
+        raise Select1Error(f"unclassified bundle entries (neither translated nor excluded): {missing}")
 
 
 def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAULT_FONT,
-           glossary: Path | None = None) -> Result:
+           glossary: Path | None = None, file_name: str | None = None) -> Result:
     tr = json.loads(Path(translation).read_text())
     lay = json.loads(Path(layout).read_text())
     gl = json.loads(Path(glossary).read_text()) if glossary else None
     bundle = int(tr["bundle_offset"], 16)
     ents = entries(data, bundle)
-    _check_tables(tr, lay, ents, offsets(data, bundle), gl)
+    _check_tables(tr, lay, ents, offsets(data, bundle), gl, file_name)
     by_id = {e["id"]: e for e in tr["entries"]}
     res = Result()
     states = Counter()

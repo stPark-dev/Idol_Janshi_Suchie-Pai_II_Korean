@@ -179,3 +179,25 @@ def test_centring_accounts_for_weight():
                                         "fill": 1, "weight": 2}], pal)
     x0, y0, x1, y1 = im.getbbox()
     assert abs((x0 + x1) / 2 - 30) <= 1.5 and abs((y0 + y1) / 2 - 15) <= 1.5
+
+
+def test_clean_rows_can_borrow_only_listed_rows():
+    t = _tex(["dddd", "1221", "dddd"])
+    with pytest.raises(label.LabelError):
+        label.clean_rows(t, (0, 0, 4, 3), text_idx={1, 2})
+    label.clean_rows(t, (0, 0, 4, 3), text_idx={1, 2}, borrow_rows={1})
+    assert _rows(t) == ["dddd", "dddd", "dddd"]
+
+
+def test_clean_rows_unlisted_empty_row_still_fails():
+    t = _tex(["dddd", "1221", "2112", "dddd"])
+    with pytest.raises(label.LabelError, match="row 2"):
+        label.clean_rows(t, (0, 0, 4, 4), text_idx={1, 2}, borrow_rows={1})
+
+
+def test_clean_rows_borrow_tie_prefers_upper_row_and_all_empty_fails():
+    t = _tex(["aaaa", "1221", "bbbb"])
+    label.clean_rows(t, (0, 0, 4, 3), text_idx={1, 2}, borrow_rows={1})
+    assert _rows(t)[1] == "aaaa"
+    with pytest.raises(label.LabelError):
+        label.clean_rows(_tex(["1111", "2222"]), (0, 0, 4, 2), text_idx={1, 2}, borrow_rows={0, 1})

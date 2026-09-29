@@ -21,12 +21,19 @@ def main(argv=None) -> int:
                    help="'original' recompresses the untouched title bundle (codec control)")
     b.add_argument("--select1", choices=["ko", "original"], default="ko",
                    help="'original' leaves the menu sprite bundle SELECT1.BIN unchanged")
+    b.add_argument("--match", choices=["ko", "original"], default="ko",
+                   help="'original' leaves the match-screen UI in the 13 stage overlays unchanged")
     args = ap.parse_args(argv)
     spec = ROOT / "assets/title/title_ko.json" if args.title == "ko" else None
     sel = (ROOT / "translation/select1.json", ROOT / "assets/select1/layout.json",
            ROOT / "translation/glossary.json") if args.select1 == "ko" else None
+    jobs = [] if args.match == "original" else [
+        {"files": build.STAGE_FILES, "translation": ROOT / "translation/match.json",
+         "layout": ROOT / "assets/match/layout.json", "glossary": ROOT / "translation/glossary.json"},
+        {"files": build.STAGE_FILES, "translation": ROOT / "translation/match2.json",
+         "layout": ROOT / "assets/match/layout2.json", "glossary": ROOT / "translation/glossary.json"}]
     try:
-        m = build.build(args.source, args.out, spec, select1=sel)
+        m = build.build(args.source, args.out, spec, select1=sel, bundles=jobs)
     except build.BuildError as err:
         print(f"build failed: {err}", file=sys.stderr)
         return 1
@@ -34,6 +41,8 @@ def main(argv=None) -> int:
     if m["select1"]:
         print(f"  select1: {len(m['select1']['entries'])} labels, states {m['select1']['states']}, "
               f"sectors {len(m['select1']['sectors'])}")
+    if m["bundles"]:
+        print(f"  bundles: {len(m['bundles'])} file jobs, sectors {sum(len(b['sectors']) for b in m['bundles'])}")
     print(f"  distribution: {m['distribution']}")
     return 0
 

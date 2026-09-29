@@ -1,0 +1,144 @@
+{
+ "_about": "대국 화면 두 번째 묶음(0xcea20) 배치: おまかせモード 두 색 변형",
+ "font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+ "entries": [
+  {
+   "id": "match2.e113",
+   "box": [
+    3,
+    2,
+    45,
+    22
+   ],
+   "clean": {
+    "method": "rows",
+    "text_idx": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14,
+     15
+    ],
+    "borrow_rows": [
+     4
+    ]
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    11,
+    13
+   ],
+   "lines": [
+    {
+     "size": 9,
+     "x": 6,
+     "y": "center",
+     "area": [
+      3,
+      2,
+      45,
+      13
+     ],
+     "fill": 1,
+     "outline": 11,
+     "aa": false
+    },
+    {
+     "size": 9,
+     "x": "right",
+     "margin": 4,
+     "y": "center",
+     "area": [
+      3,
+      11,
+      45,
+      22
+     ],
+     "fill": 3,
+     "outline": 11,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "match2.e114",
+   "box": [
+    3,
+    2,
+    45,
+    22
+   ],
+   "clean": {
+    "method": "rows",
+    "text_idx": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14,
+     15
+    ],
+    "borrow_rows": []
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    11,
+    12
+   ],
+   "lines": [
+    {
+     "size": 9,
+     "x": 6,
+     "y": "center",
+     "area": [
+      3,
+      2,
+      45,
+      13
+     ],
+     "fill": 1,
+     "outline": 11,
+     "aa": false
+    },
+    {
+     "size": 9,
+     "x": "right",
+     "margin": 4,
+     "y": "center",
+     "area": [
+      3,
+      11,
+      45,
+      22
+     ],
+     "fill": 3,
+     "outline": 11,
+     "aa": false
+    }
+   ]
+  }
+ ]
+}

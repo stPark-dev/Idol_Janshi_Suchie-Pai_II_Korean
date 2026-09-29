@@ -8,7 +8,7 @@ import hashlib
 import json
 import re
 import shutil
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
 from PIL import Image
@@ -36,6 +36,7 @@ class SourceProfile:
     select1_lba: int | None = None
     select1_size: int | None = None
     select1_bundle: int | None = None  # SELECT1.BIN offset of the Yc bundle
+    files: dict = field(default_factory=dict)   # other patched files: name -> (lba, size)
 
 
 # Idol Janshi Suchie-Pai II (Japan) (Disc 1), T-5705G V1.001 (docs/initial-survey.md §1, §3.6)
@@ -46,7 +47,23 @@ JP_DISC1 = SourceProfile(
     title_region=(0x7900, 0xA600),
     title_region_sha1="22088bff3f7fc47c9596660b131d46c391bff82d",
     select1_name="SELECT1.BIN", select1_lba=14841, select1_size=442368, select1_bundle=0x2FC0,
+    files={  # stage overlays carrying the match-screen UI bundles (docs/initial-survey.md §3.9)
+        "ALICE.BIN": (260655, 1048576),
+        "TUKASA.BIN": (261167, 1048576),
+        "SANAE.BIN": (261679, 1048576),
+        "RUMI.BIN": (262191, 1048576),
+        "YUKI.BIN": (262703, 1048576),
+        "SIHO.BIN": (263215, 1048576),
+        "SESIL.BIN": (263727, 1048576),
+        "SESIL2.BIN": (264239, 1048576),
+        "HIMITU.BIN": (264751, 1048576),
+        "NAZO.BIN": (265263, 1048576),
+        "SECRET.BIN": (265775, 1048576),
+        "HIDDEN.BIN": (266287, 1048576),
+        "KAKUSHI.BIN": (266799, 1048576),
+    },
 )
+STAGE_FILES = list(JP_DISC1.files)
 
 
 def _sha1(path: Path) -> str:
@@ -199,70 +216,95 @@ def _outside(extents: list[tuple[int, int]], total: int) -> list[tuple[int, int]
     return out
 
 
-def _plan_select1(plan: WritePlan, t1: _Track1, profile: SourceProfile, select1) -> tuple[dict, list]:
-    if profile.select1_name is None:
-        raise BuildError("source profile has no SELECT1.BIN location")
-    lba, size = iso9660.find_file(t1.user, profile.select1_name)
-    if (lba, size) != (profile.select1_lba, profile.select1_size):
-        raise BuildError(f"{profile.select1_name} extent {lba}/{size} differs from profile")
-    data = _read_file_range(t1, lba, 0, size)
-    translation, layout = Path(select1[0]), Path(select1[1])
-    glossary = Path(select1[2]) if len(select1) > 2 and select1[2] else None
+def _file_extent(profile: SourceProfile, name: str) -> tuple[int, int]:
+    if name in profile.files:
+        return profile.files[name]
+    if name == profile.select1_name and profile.select1_lba is not None:
+        return profile.select1_lba, profile.select1_size
+    raise BuildError(f"{name} is not in the source profile")
+
+
+def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[dict, list]]:
+    """Render one translation/layout pair into every listed file (all protected checks run per
+    file). Returns (info, changes) per file; sector writes are registered later, once per file."""
+    translation, layout = Path(job["translation"]), Path(job["layout"])
+    glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
-    res = select1_mod.render(data, translation, layout, font=font, glossary=glossary)
-    ents = select1_mod.entries(data, profile.select1_bundle)
-    offsets, pos = [], profile.select1_bundle + 4 + 8 * len(ents)
-    for e in ents:
-        offsets.append(pos)
-        pos += len(e.data)
-    by_entry = {e["entry"]: e for e in json.loads(translation.read_text())["entries"]}
-    changes = []
-    for i, tex in sorted(res.textures.items()):
-        if int(by_entry[i]["offset"], 16) != offsets[i]:
-            raise BuildError(f"{by_entry[i]['id']}: offset differs from the bundle table")
-        if tex != ents[i].data:
-            changes.append((offsets[i], tex))
-    lbas = _file_writes(plan, t1, lba, changes, "select1")
-    info = {"lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
-            "changes": [[o, len(t)] for o, t in changes], "sectors": lbas,
-            "translation": _rel(translation), "translation_sha1": _sha1(translation),
-            "layout": _rel(layout), "layout_sha1": _sha1(layout),
-            "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
-            "font": font, "font_sha1": _sha1(Path(font))}
-    return info, changes
+    bundle = int(json.loads(translation.read_text())["bundle_offset"], 16)
+    if profile.select1_bundle is not None and profile.select1_name in job["files"] and bundle != profile.select1_bundle:
+        raise BuildError(f"{translation.name}: bundle offset {bundle:#x} differs from profile {profile.select1_bundle:#x}")
+    if len(set(job["files"])) != len(job["files"]):
+        raise BuildError(f"{translation.name}: a file is listed more than once in one job")
+    out = []
+    for name in job["files"]:
+        lba, size = _file_extent(profile, name)
+        found = iso9660.find_file(t1.user, name)
+        if found != (lba, size):
+            raise BuildError(f"{name} extent {found} differs from profile {(lba, size)}")
+        data = _read_file_range(t1, lba, 0, size)
+        ents = select1_mod.entries(data, bundle)
+        offsets = select1_mod.offsets(data, bundle)
+        res = select1_mod.render(data, translation, layout, font=font, glossary=glossary, file_name=name)
+        changes = [(offsets[i], tex) for i, tex in sorted(res.textures.items()) if tex != ents[i].data]
+        info = {"file": name, "lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
+                "changes": [[o, len(t)] for o, t in changes], "sectors": [],
+                "translation": _rel(translation), "translation_sha1": _sha1(translation),
+                "layout": _rel(layout), "layout_sha1": _sha1(layout),
+                "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
+                "font": font, "font_sha1": _sha1(Path(font))}
+        out.append((info, changes))
+    return out
 
 
-def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile, select1=None) -> dict:
+def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile,
+           select1=None, bundles=None, title: bool = True) -> dict:
     tr1, tr2 = _cue_tracks(source_cue)
     if _sha1(tr1) != profile.track1_sha1:
         raise BuildError(f"Track 1 SHA-1 mismatch: {tr1}")
     if _sha1(tr2) != profile.track2_sha1:
         raise BuildError(f"Track 2 SHA-1 mismatch: {tr2}")
+    if title_spec and not title:
+        raise BuildError("a title spec was given but the title bundle is disabled")
+    jobs = list(bundles or [])
+    if select1:
+        jobs.insert(0, {"files": [profile.select1_name or "SELECT1.BIN"], "translation": select1[0], "layout": select1[1],
+                        "glossary": select1[2] if len(select1) > 2 else None, "_select1": True})
     lo, hi = profile.title_region
-    if not 0 <= lo < hi <= profile.prolog_size:
-        raise BuildError(f"title region {lo:#x}-{hi:#x} outside {profile.prolog_name}")
     t1 = _Track1(tr1)
     try:
-        prolog_lba, size = iso9660.find_file(t1.user, profile.prolog_name)
-        if (prolog_lba, size) != (profile.prolog_lba, profile.prolog_size):
-            raise BuildError(f"{profile.prolog_name} extent {prolog_lba}/{size} differs from profile")
-        region = _read_file_range(t1, prolog_lba, lo, hi)
-        if hashlib.sha1(region).hexdigest() != profile.title_region_sha1:
-            raise BuildError("title region bytes differ from the supported source")
-        entries = yc.parse(lzss.decompress(region))
-        new_entries = compose_title(entries, title_spec) if title_spec else entries
-        bundle = yc.build(new_entries)
-        stream = lzss.compress(bundle)
-        if lzss.decompress(stream) != bundle or lzss.decompress(stream, stale=b"\xa5" * lzss.STALE_LEN) != bundle:
-            raise BuildError("recompressed title block does not round-trip")
-        if len(stream) > hi - lo:
-            raise BuildError(f"title block {len(stream)} bytes exceeds region {hi - lo}")
-        extents = [(prolog_lba, size)]
-        if select1:
-            extents.append((profile.select1_lba, profile.select1_size))
+        extents = [_file_extent(profile, n) for job in jobs for n in job["files"]]
+        if title:
+            if not 0 <= lo < hi <= profile.prolog_size:
+                raise BuildError(f"title region {lo:#x}-{hi:#x} outside {profile.prolog_name}")
+            prolog_lba, size = iso9660.find_file(t1.user, profile.prolog_name)
+            if (prolog_lba, size) != (profile.prolog_lba, profile.prolog_size):
+                raise BuildError(f"{profile.prolog_name} extent {prolog_lba}/{size} differs from profile")
+            extents.append((prolog_lba, size))
         plan = WritePlan(tr1, protected=_outside(extents, tr1.stat().st_size))
-        lbas = _file_writes(plan, t1, prolog_lba, [(lo, stream + bytes(hi - lo - len(stream)))], "title")
-        sel, sel_changes = _plan_select1(plan, t1, profile, select1) if select1 else (None, [])
+        if title:
+            region = _read_file_range(t1, prolog_lba, lo, hi)
+            if hashlib.sha1(region).hexdigest() != profile.title_region_sha1:
+                raise BuildError("title region bytes differ from the supported source")
+            entries = yc.parse(lzss.decompress(region))
+            new_entries = compose_title(entries, title_spec) if title_spec else entries
+            tbundle = yc.build(new_entries)
+            stream = lzss.compress(tbundle)
+            if lzss.decompress(stream) != tbundle or lzss.decompress(stream, stale=b"\xa5" * lzss.STALE_LEN) != tbundle:
+                raise BuildError("recompressed title block does not round-trip")
+            if len(stream) > hi - lo:
+                raise BuildError(f"title block {len(stream)} bytes exceeds region {hi - lo}")
+            lbas = _file_writes(plan, t1, prolog_lba, [(lo, stream + bytes(hi - lo - len(stream)))], "title")
+        results = [(job, _plan_bundle(t1, profile, job)) for job in jobs]
+        per_file: dict[str, list] = {}
+        for _, infos in results:
+            for info, changes in infos:
+                per_file.setdefault(info["file"], []).append((info, changes))
+        for name, items in per_file.items():
+            lba = items[0][0]["lba"]
+            sectors = _file_writes(plan, t1, lba, [c for _, ch in items for c in ch], name)
+            for info, ch in items:
+                touched = {lba + (o + k) // cdsector.USER for o, t in ch for k in (0, len(t) - 1)}
+                info["sectors"] = [x for x in sectors if min(touched, default=-1) <= x <= max(touched, default=-1)]
     finally:
         t1.close()
 
@@ -271,38 +313,45 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
     shutil.copyfile(tr2, out_dir / o2)
     if _sha1(out_dir / o2) != profile.track2_sha1:
         raise BuildError("Track 2 copy differs from source")
-    _verify_output(out_dir / o1, prolog_lba, lo, hi, stream, bundle, lbas)
-    if sel:
-        t = _Track1(out_dir / o1)
-        try:
-            for lba in sel["sectors"]:
-                raw = t.raw(lba)
-                if bytes(cdsector.fix_mode1(bytearray(raw))) != raw:
-                    raise BuildError(f"output LBA {lba}: EDC/ECC inconsistent")
-            for off, tex in sel_changes:
-                if _read_file_range(t, sel["lba"], off, off + len(tex)) != tex:
-                    raise BuildError(f"output SELECT1 texture at {off:#x} differs from the rendered label")
-        finally:
-            t.close()
+    if title:
+        _verify_output(out_dir / o1, prolog_lba, lo, hi, stream, tbundle, lbas)
+    t = _Track1(out_dir / o1)
+    try:
+        for _, per_file in results:
+            for info, changes in per_file:
+                for lba in info["sectors"]:
+                    raw = t.raw(lba)
+                    if bytes(cdsector.fix_mode1(bytearray(raw))) != raw:
+                        raise BuildError(f"output LBA {lba}: EDC/ECC inconsistent")
+                for off, tex in changes:
+                    if _read_file_range(t, info["lba"], off, off + len(tex)) != tex:
+                        raise BuildError(f"output {info['file']} texture at {off:#x} differs from the rendered label")
+    finally:
+        t.close()
     cue_name = f"{OUT_STEM}.cue"
     (out_dir / cue_name).write_text(
         f'FILE "{o1}" BINARY\n  TRACK 01 MODE1/2352\n    INDEX 01 00:00:00\n'
         f'FILE "{o2}" BINARY\n  TRACK 02 AUDIO\n    INDEX 00 00:00:00\n    INDEX 01 00:02:00\n')
-    title_info = {"mode": "ko" if title_spec else "original-recompressed",
-                  "region": [lo, hi], "stream_bytes": len(stream), "sectors": lbas}
-    if title_spec:
-        spec = json.loads(title_spec.read_text())
-        title_info.update(spec=_rel(title_spec), spec_sha1=_sha1(title_spec),
-                          logo_sha1=_sha1(title_spec.parent / spec["logo"]),
-                          presentation=spec.get("presentation", "needs_human_review"))
+    title_info = None
+    if title:
+        title_info = {"mode": "ko" if title_spec else "original-recompressed",
+                      "region": [lo, hi], "stream_bytes": len(stream), "sectors": lbas}
+        if title_spec:
+            spec = json.loads(title_spec.read_text())
+            title_info.update(spec=_rel(title_spec), spec_sha1=_sha1(title_spec),
+                              logo_sha1=_sha1(title_spec.parent / spec["logo"]),
+                              presentation=spec.get("presentation", "needs_human_review"))
     title_ok = title_spec is None or json.loads(title_spec.read_text()).get("presentation") == "approved"
+    infos = [info for _, per_file in results for info, _ in per_file]
+    sel = next((per_file[0][0] for job, per_file in results if job.get("_select1")), None)
     manifest = {
         "cue": cue_name, "track1": o1, "track2": o2,
-        "distribution": bool(title_ok and (sel is None or sel["distribution"])),
+        "distribution": bool(title_ok and all(i["distribution"] for i in infos)),
         "source": {"track1_sha1": profile.track1_sha1, "track2_sha1": profile.track2_sha1},
         "output": {"track1_sha1": _sha1(out_dir / o1), "track2_sha1": _sha1(out_dir / o2)},
         "title": title_info,
         "select1": sel,
+        "bundles": [i for i in infos if i is not sel],
         "profile": asdict(profile),
     }
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
@@ -310,7 +359,7 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
 
 
 def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile = None,
-          select1=None) -> dict:
+          select1=None, bundles=None, title: bool = True) -> dict:
     """Build into a fresh staging directory and replace out_dir only when every check passed."""
     profile = profile or JP_DISC1
     source_cue, out_dir = Path(source_cue), Path(out_dir)
@@ -320,7 +369,7 @@ def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: Sou
         shutil.rmtree(stage)
     stage.mkdir(parents=True)
     try:
-        manifest = _build(source_cue, stage, title_spec, profile, select1)
+        manifest = _build(source_cue, stage, title_spec, profile, select1, bundles, title)
     except BuildError:
         raise
     except (PlanError, ValueError, OSError, KeyError) as err:

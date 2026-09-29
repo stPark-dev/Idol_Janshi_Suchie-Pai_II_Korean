@@ -2,7 +2,9 @@
  "_about": "용어·표기 결정. state: approved(사람 승인) / proposed(초벌, 사람 확인 필요) / conflicting. 같은 원어라도 적용 범위가 다르면 별도 id.",
  "rules": {
   "japanese_names": "일본어 이름은 통용 표기 (つ=츠, 어두 か·た행 격음 등). 사람 결정: 프로젝트 소유자 2026-09-29 (표기 통일 답변). 이전 규칙(국립국어원 표기법)은 폐기",
-  "voice_actor_names": "성우 이름(歌:)도 통용 표기 (사람 결정): かないみか=카나이 미카, 吉田古奈美=요시다 코나미, 松本梨香=마츠모토 리카, 水谷優子=미즈타니 유코, 西原久美子=니시하라 쿠미코, 高橋美紀=타카하시 미키"
+  "voice_actor_names": "성우 이름(歌:)도 통용 표기 (사람 결정): かないみか=카나이 미카, 吉田古奈美=요시다 코나미, 松本梨香=마츠모토 리카, 水谷優子=미즈타니 유코, 西原久美子=니시하라 쿠미코, 高橋美紀=타카하시 미키",
+  "mahjong_terms": "마작 용어·역 이름은 국내 통용 표기(작혼식): 프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+  "tile_faces": "마작패 앞면(萬 등)은 원형 유지: 프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)"
  },
  "terms": [
   {
@@ -165,6 +167,627 @@
    "state": "approved",
    "approved_by": "프로젝트 소유자 2026-09-29 (메뉴 번역 확인 답변)",
    "note": "파트너 소개 '平和を愛する勇者' → '핑후를 사랑하는 용사'",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.立直",
+   "ja": "立直",
+   "ko": "리치",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.一発",
+   "ja": "一発",
+   "ko": "일발",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.門前清摸",
+   "ja": "門前清摸",
+   "ko": "멘젠쯔모",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.嶺上開花",
+   "ja": "嶺上開花",
+   "ko": "영상개화",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.海底撈月",
+   "ja": "海底撈月",
+   "ko": "해저로월",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.河底撈魚",
+   "ja": "河底撈魚",
+   "ko": "하저로어",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.断么九",
+   "ja": "断么九",
+   "ko": "탕야오",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.平和",
+   "ja": "平和",
+   "ko": "핑후",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.一盃口",
+   "ja": "一盃口",
+   "ko": "이페코",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.一気通貫",
+   "ja": "一気通貫",
+   "ko": "일기통관",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.三色同順",
+   "ja": "三色同順",
+   "ko": "삼색동순",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.全帯么",
+   "ja": "全帯么",
+   "ko": "찬타",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.七対子",
+   "ja": "七対子",
+   "ko": "치또이츠",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.Wリーチ",
+   "ja": "Wリーチ",
+   "ko": "더블 리치",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.混一色",
+   "ja": "混一色",
+   "ko": "혼일색",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.混老頭",
+   "ja": "混老頭",
+   "ko": "혼노두",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.対々和",
+   "ja": "対々和",
+   "ko": "또이또이",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.三暗刻",
+   "ja": "三暗刻",
+   "ko": "산안커",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.三槓子",
+   "ja": "三槓子",
+   "ko": "산깡쯔",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.三色同刻",
+   "ja": "三色同刻",
+   "ko": "삼색동각",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.三連刻",
+   "ja": "三連刻",
+   "ko": "삼연각",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.純全帯么",
+   "ja": "純全帯么",
+   "ko": "준찬타",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.一色三順",
+   "ja": "一色三順",
+   "ko": "일색삼순",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.清老頭",
+   "ja": "清老頭",
+   "ko": "청노두",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.二盃口",
+   "ja": "二盃口",
+   "ko": "량페코",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.小三元",
+   "ja": "小三元",
+   "ko": "소삼원",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.么九振切",
+   "ja": "么九振切",
+   "ko": "유국만관",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.清一色",
+   "ja": "清一色",
+   "ko": "청일색",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.天和",
+   "ja": "天和",
+   "ko": "천화",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.地和",
+   "ja": "地和",
+   "ko": "지화",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.人和",
+   "ja": "人和",
+   "ko": "인화",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.字一色",
+   "ja": "字一色",
+   "ko": "자일색",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.緑一色",
+   "ja": "緑一色",
+   "ko": "녹일색",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.大三元",
+   "ja": "大三元",
+   "ko": "대삼원",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.四喜和",
+   "ja": "四喜和",
+   "ko": "사희화",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.四暗刻",
+   "ja": "四暗刻",
+   "ko": "스안커",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.四槓子",
+   "ja": "四槓子",
+   "ko": "스깡쯔",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.国士無双",
+   "ja": "国士無双",
+   "ko": "국사무쌍",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.大車輪",
+   "ja": "大車輪",
+   "ko": "대차륜",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.十三不塔",
+   "ja": "十三不塔",
+   "ko": "십삼불탑",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.九連宝燈",
+   "ja": "九連宝燈",
+   "ko": "구련보등",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.ドラ",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "yaku.役牌",
+   "ja": "役牌",
+   "ko": "역패",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기(작혼식)",
+   "scope": "title"
+  },
+  {
+   "id": "call.pon",
+   "ja": "ポン",
+   "ko": "퐁",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "call.chi",
+   "ja": "チー",
+   "ko": "치",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "call.kan",
+   "ja": "カン",
+   "ko": "깡",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "call.riichi",
+   "ja": "リーチ",
+   "ko": "리치",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "call.ron",
+   "ja": "ロン",
+   "ko": "론",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "call.tsumo",
+   "ja": "ツモ",
+   "ko": "쯔모",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "call.ippatsu",
+   "ja": "一発",
+   "ko": "일발",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "decl.tenpai",
+   "ja": "てんぱい",
+   "ko": "텐파이",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "decl.noten",
+   "ja": "の〜てん",
+   "ko": "노~텐",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "decl.nagashi",
+   "ja": "流し満貫",
+   "ko": "유국만관",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "decl.suukaikan",
+   "ja": "四開槓流れ",
+   "ko": "사깡유국",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.hane",
+   "ja": "跳",
+   "ko": "하네",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "跳満 조합용 한 칸에 '하네' 두 음절 (사람 결정)",
+   "scope": "title"
+  },
+  {
+   "id": "score.bai",
+   "ja": "倍",
+   "ko": "배",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.kan",
+   "ja": "貫",
+   "ko": "관",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.san",
+   "ja": "三",
+   "ko": "삼",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.man",
+   "ja": "満",
+   "ko": "만",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.yaku",
+   "ja": "役",
+   "ko": "역",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "item.suchie_stick",
+   "ja": "スーチー棒",
+   "ko": "스치봉",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "item.hyper_eye",
+   "ja": "ハイパーアイ",
+   "ko": "하이퍼아이",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "칸이 좁아 9px (사람 결정)",
+   "scope": "title"
+  },
+  {
+   "id": "wind.east",
+   "ja": "東",
+   "ko": "동",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "wind.south",
+   "ja": "南",
+   "ko": "남",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "round.east",
+   "ja": "東場",
+   "ko": "동장",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.fu",
+   "ja": "符",
+   "ko": "부",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.han",
+   "ja": "飜",
+   "ko": "판",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "score.ten",
+   "ja": "点",
+   "ko": "점",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "국내 통용 표기",
+   "scope": "title"
+  },
+  {
+   "id": "ui.omakase",
+   "ja": "おまかせモード",
+   "ko": "자동 모드",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
+   "note": "사람 결정",
    "scope": "title"
   }
  ]

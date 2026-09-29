@@ -203,3 +203,37 @@ def test_eligible_entry_needs_approved_terms(tmp_path):
     tr.write_text(json.dumps(t, ensure_ascii=False))
     with pytest.raises(select1.Select1Error, match="unknown term"):
         select1.render(data, tr, lay, glossary=gl)
+
+
+def test_per_file_offsets_select_the_current_file(tmp_path):
+    data, off = _file()
+    real = select1.offsets(data, off)
+
+    def per_file(t):
+        for e in t["entries"]:
+            e["offset"] = {"A.BIN": hex(real[e["entry"]]), "B.BIN": "0x0"}
+    tr, lay = _mutate(tmp_path, data, off, per_file)
+    assert select1.render(data, tr, lay, file_name="A.BIN").textures
+    with pytest.raises(select1.Select1Error, match="offset"):
+        select1.render(data, tr, lay, file_name="B.BIN")
+    with pytest.raises(select1.Select1Error, match="offset"):
+        select1.render(data, tr, lay, file_name="C.BIN")
+
+
+def test_every_bundle_entry_must_be_classified(tmp_path):
+    data, off = _file()
+    tr, lay = _mutate(tmp_path, data, off, lambda t: t["entries"].pop(),
+                      lambda lj: lj["entries"].pop())
+    with pytest.raises(select1.Select1Error, match="unclassified"):
+        select1.render(data, tr, lay)
+
+
+@pytest.mark.parametrize("tr_fn,msg", [
+    (lambda t: t["excluded"].append({"id": "x.z", "entry": 99, "reason": "x"}), "range"),
+    (lambda t: t["excluded"].extend([{"id": "x.z1", "entry": 5, "reason": "x"}, {"id": "x.z2", "entry": 5, "reason": "x"}]), "duplicate"),
+])
+def test_rejects_bad_excluded_entries(tmp_path, tr_fn, msg):
+    data, off = _file()
+    tr, lay = _mutate(tmp_path, data, off, tr_fn)
+    with pytest.raises(select1.Select1Error, match=msg):
+        select1.render(data, tr, lay)

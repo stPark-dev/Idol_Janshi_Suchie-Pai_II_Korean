@@ -1,0 +1,4167 @@
+{
+ "_about": "대국 화면 UI 'Yc' 묶음 (스테이지 오버레이 13개 파일에 같은 내용, 파일 오프셋 0xa4a20). 파일 앞 0..0xa4a20 중 CRAM 이미지(뱅크 b = 오프셋 b*2). 보호: entry/offset/size/colr/src_sha1. '|' 색 구간, '\\n' 줄.",
+ "file": "RUMI.BIN",
+ "files": [
+  "ALICE.BIN",
+  "TUKASA.BIN",
+  "SANAE.BIN",
+  "RUMI.BIN",
+  "YUKI.BIN",
+  "SIHO.BIN",
+  "SESIL.BIN",
+  "SESIL2.BIN",
+  "HIMITU.BIN",
+  "NAZO.BIN",
+  "SECRET.BIN",
+  "HIDDEN.BIN",
+  "KAKUSHI.BIN"
+ ],
+ "bundle_offset": "0xa4a20",
+ "entries": [
+  {
+   "id": "match.e080",
+   "entry": 80,
+   "offset": "0xa887c",
+   "size": [
+    48,
+    32
+   ],
+   "colr": "0xa0",
+   "src_sha1": "46c56aaa7933c800486caeb22e874f6d3d7dd003",
+   "ja": "東場",
+   "ko": "동장",
+   "state": "needs_review",
+   "terms": [
+    "round.east"
+   ],
+   "note": "round 표시 명패의 윗부분. 아래 '一 ×' 칸은 보호"
+  },
+  {
+   "id": "match.e091",
+   "entry": 91,
+   "offset": "0xa8dfc",
+   "size": [
+    32,
+    24
+   ],
+   "colr": "0x90",
+   "src_sha1": "f27227d590da96f08359c5c39d0dde88c88fdcf5",
+   "ja": "東",
+   "ko": "동",
+   "state": "needs_review",
+   "terms": [
+    "wind.east"
+   ],
+   "note": "자풍 표시"
+  },
+  {
+   "id": "match.e092",
+   "entry": 92,
+   "offset": "0xa8f7c",
+   "size": [
+    32,
+    24
+   ],
+   "colr": "0x90",
+   "src_sha1": "534637c05401636a4766e59586886bad80d0512d",
+   "ja": "南",
+   "ko": "남",
+   "state": "needs_review",
+   "terms": [
+    "wind.south"
+   ],
+   "note": "자풍 표시"
+  },
+  {
+   "id": "match.e094",
+   "entry": 94,
+   "offset": "0xa955c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "87107028ac7ca97df8cddc48cc901e89306ad473",
+   "ja": "スーチーパイ",
+   "ko": "스치파이",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e095",
+   "entry": 95,
+   "offset": "0xa96dc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "4ef2980a9af1df54cb4b1b3a6716ab4686b76dea",
+   "ja": "スーチーユキ",
+   "ko": "스치 유키",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie",
+    "name.yuki"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e096",
+   "entry": 96,
+   "offset": "0xa985c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "1b0f38080896d35942b368edd1139a092d7d9d88",
+   "ja": "ありす",
+   "ko": "아리스",
+   "state": "needs_review",
+   "terms": [
+    "name.alice"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e097",
+   "entry": 97,
+   "offset": "0xa99dc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "9d5c6a5fe5f450546b5aaf0282e05b25ce458715",
+   "ja": "つかさ",
+   "ko": "츠카사",
+   "state": "needs_review",
+   "terms": [
+    "name.tsukasa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e098",
+   "entry": 98,
+   "offset": "0xa9b5c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "1b4e5e5513421943760e414f761f5fb6b72310e3",
+   "ja": "早苗",
+   "ko": "사나에",
+   "state": "needs_review",
+   "terms": [
+    "name.sanae"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e099",
+   "entry": 99,
+   "offset": "0xa9cdc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "1375bdb9fcc570903d4f698bbd2316fc5b08eb2b",
+   "ja": "留美",
+   "ko": "루미",
+   "state": "needs_review",
+   "terms": [
+    "name.rumi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e100",
+   "entry": 100,
+   "offset": "0xa9e5c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "014c5697dfb023bb1d1312905b638ad31b02ce99",
+   "ja": "佑紀",
+   "ko": "유키",
+   "state": "needs_review",
+   "terms": [
+    "name.yuki"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e101",
+   "entry": 101,
+   "offset": "0xa9fdc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "640a40051650b4219005ce7201f0e8188059e968",
+   "ja": "志穂",
+   "ko": "시호",
+   "state": "needs_review",
+   "terms": [
+    "name.shiho"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e102",
+   "entry": 102,
+   "offset": "0xaa15c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "8da331211505cf09077ec9d4cdd7f9fca430edb3",
+   "ja": "セシル",
+   "ko": "세실",
+   "state": "needs_review",
+   "terms": [
+    "name.cecil"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e103",
+   "entry": 103,
+   "offset": "0xaa2dc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "c60323ac8a2a72398023995c172ef8b73db7aec4",
+   "ja": "セシル",
+   "ko": "세실",
+   "state": "needs_review",
+   "terms": [
+    "name.cecil"
+   ],
+   "note": "빨간색 변형"
+  },
+  {
+   "id": "match.e104",
+   "entry": 104,
+   "offset": "0xaa45c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x80",
+   "src_sha1": "62286463fa2f5ae6df58bf7db16eb0f7546fc640",
+   "ja": "恭子",
+   "ko": "쿄코",
+   "state": "needs_review",
+   "terms": [
+    "name.kyoko"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e126",
+   "entry": 126,
+   "offset": "0xab2bc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "db10576647e4e3f9ca276044428ed2811d1a9e65",
+   "ja": "ポン",
+   "ko": "퐁",
+   "state": "needs_review",
+   "terms": [
+    "call.pon"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e127",
+   "entry": 127,
+   "offset": "0xab3bc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "7bb8c2661ee3f01707eee6b8ceee3949cb52f1da",
+   "ja": "チー",
+   "ko": "치",
+   "state": "needs_review",
+   "terms": [
+    "call.chi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e128",
+   "entry": 128,
+   "offset": "0xab4bc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "ca5d080f9a08fd7d983ff403b81030588c317197",
+   "ja": "カン",
+   "ko": "깡",
+   "state": "needs_review",
+   "terms": [
+    "call.kan"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e129",
+   "entry": 129,
+   "offset": "0xab5bc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "eac34ef9db5aa9ddf05ba210a652182dc9e6cbe6",
+   "ja": "リーチ",
+   "ko": "리치",
+   "state": "needs_review",
+   "terms": [
+    "call.riichi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e130",
+   "entry": 130,
+   "offset": "0xab6bc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "09ae412343694f98d30b9f250a35b8d492dd71b5",
+   "ja": "ロン",
+   "ko": "론",
+   "state": "needs_review",
+   "terms": [
+    "call.ron"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e131",
+   "entry": 131,
+   "offset": "0xab7bc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "fdc4b1a4ed42ea46b1779d45a497712bbf389899",
+   "ja": "ツモ",
+   "ko": "쯔모",
+   "state": "needs_review",
+   "terms": [
+    "call.tsumo"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e132",
+   "entry": 132,
+   "offset": "0xab8bc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "e24dd42d4ad4e2d9898e08e972798649f9181aa2",
+   "ja": "一発",
+   "ko": "일발",
+   "state": "needs_review",
+   "terms": [
+    "call.ippatsu"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e133",
+   "entry": 133,
+   "offset": "0xab9bc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "b4f08950fc0c69ceab62d4d4e4431ba11f0c0c61",
+   "ja": "スーチー棒",
+   "ko": "스치봉",
+   "state": "needs_review",
+   "terms": [
+    "item.suchie_stick",
+    "name.suchie"
+   ],
+   "note": "아이템 이름"
+  },
+  {
+   "id": "match.e134",
+   "entry": 134,
+   "offset": "0xabb3c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0xc0",
+   "src_sha1": "230577648cdcc621905970032577ac78637da428",
+   "ja": "ハイパーアイ",
+   "ko": "하이퍼아이",
+   "state": "needs_review",
+   "terms": [
+    "item.hyper_eye"
+   ],
+   "note": "아이템 이름. 42px 칸에 맞추려고 띄어쓰기를 빼고 9px로 그림 → 이름·크기 사람 판단"
+  },
+  {
+   "id": "match.e135",
+   "entry": 135,
+   "offset": "0xabcbc",
+   "size": [
+    144,
+    32
+   ],
+   "colr": "0xc0",
+   "src_sha1": "97db7c6a758bd957d5ecfbcf92d39a96e6032ac3",
+   "ja": "方向ボタン|で|組合せ|を|選んでね\n(|決定|は|Cボタン|)",
+   "ko": "방향 버튼|으로 |조합|을 |골라 줘\n(|결정|은 |C 버튼|)",
+   "state": "needs_review",
+   "terms": [],
+   "note": "색 구간은 배치에서"
+  },
+  {
+   "id": "match.e157",
+   "entry": 157,
+   "offset": "0xad0dc",
+   "size": [
+    96,
+    24
+   ],
+   "colr": "0xc0",
+   "src_sha1": "2a64c63f47e08a4d11bd7625c4801a5131b64a20",
+   "ja": "ちがうよ",
+   "ko": "아니야",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "match.e158",
+   "entry": 158,
+   "offset": "0xad55c",
+   "size": [
+    152,
+    48
+   ],
+   "colr": "0xe0",
+   "src_sha1": "2c1f2a6fec259f12e3c265f7eddc88c060d962d6",
+   "ja": "リーチ",
+   "ko": "리치",
+   "state": "needs_review",
+   "terms": [
+    "call.riichi"
+   ],
+   "note": "큰 선언"
+  },
+  {
+   "id": "match.e159",
+   "entry": 159,
+   "offset": "0xae39c",
+   "size": [
+    168,
+    40
+   ],
+   "colr": "0x100",
+   "src_sha1": "2cf91ad8fdd20f5ed02a40793570e336da1ea188",
+   "ja": "てんぱい",
+   "ko": "텐파이",
+   "state": "needs_review",
+   "terms": [
+    "decl.tenpai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e160",
+   "entry": 160,
+   "offset": "0xaf0bc",
+   "size": [
+    168,
+    40
+   ],
+   "colr": "0x100",
+   "src_sha1": "ae14c57e9fb5b6bfaa1c2b08da1e3a7e724597b3",
+   "ja": "の〜てん",
+   "ko": "노~텐",
+   "state": "needs_review",
+   "terms": [
+    "decl.noten"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e161",
+   "entry": 161,
+   "offset": "0xafddc",
+   "size": [
+    168,
+    40
+   ],
+   "colr": "0x100",
+   "src_sha1": "fc56a33c98f284d55e7e2bd4ae5f115806b67c38",
+   "ja": "流し満貫",
+   "ko": "유국만관",
+   "state": "needs_review",
+   "terms": [
+    "decl.nagashi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e162",
+   "entry": 162,
+   "offset": "0xb0afc",
+   "size": [
+    168,
+    40
+   ],
+   "colr": "0x100",
+   "src_sha1": "fc27e5fde7aec7aef50855bc692237546497a6d5",
+   "ja": "四開槓流れ",
+   "ko": "사깡유국",
+   "state": "needs_review",
+   "terms": [
+    "decl.suukaikan"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e163",
+   "entry": 163,
+   "offset": "0xb181c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x140",
+   "src_sha1": "f02f12364b743805aa37137b50e61a068657c20b",
+   "ja": "跳",
+   "ko": "하네",
+   "state": "needs_review",
+   "terms": [
+    "score.hane"
+   ],
+   "note": "跳満(하네만) 조합용 한 칸. 한 칸에 두 음절 → 사람 판단"
+  },
+  {
+   "id": "match.e164",
+   "entry": 164,
+   "offset": "0xb249c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x140",
+   "src_sha1": "0912f9f47c8c2c2fb48c2497d938c53dc8596186",
+   "ja": "倍",
+   "ko": "배",
+   "state": "needs_review",
+   "terms": [
+    "score.bai"
+   ],
+   "note": "倍満"
+  },
+  {
+   "id": "match.e165",
+   "entry": 165,
+   "offset": "0xb311c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x140",
+   "src_sha1": "1f0d62db7c69883da2e0341acc9efe87657cf157",
+   "ja": "貫",
+   "ko": "관",
+   "state": "needs_review",
+   "terms": [
+    "score.kan"
+   ],
+   "note": "満貫"
+  },
+  {
+   "id": "match.e166",
+   "entry": 166,
+   "offset": "0xb3d9c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x140",
+   "src_sha1": "293353417cb13bd06673494422116868d5fb494f",
+   "ja": "三",
+   "ko": "삼",
+   "state": "needs_review",
+   "terms": [
+    "score.san"
+   ],
+   "note": "三倍満"
+  },
+  {
+   "id": "match.e167",
+   "entry": 167,
+   "offset": "0xb4a1c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x140",
+   "src_sha1": "5b3af15c911fcf964bfaa302fef04fe09f2e6c7a",
+   "ja": "満",
+   "ko": "만",
+   "state": "needs_review",
+   "terms": [
+    "score.man"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e168",
+   "entry": 168,
+   "offset": "0xb569c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x140",
+   "src_sha1": "86e93ccce8d77941270794acccfe833d315819f2",
+   "ja": "役",
+   "ko": "역",
+   "state": "needs_review",
+   "terms": [
+    "score.yaku"
+   ],
+   "note": "役満"
+  },
+  {
+   "id": "match.e183",
+   "entry": 183,
+   "offset": "0xb711c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "fcb82cdb9c4ad0b2da450ff0c06a8e213834fd08",
+   "ja": "符",
+   "ko": "부",
+   "state": "needs_review",
+   "terms": [
+    "score.fu"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e184",
+   "entry": 184,
+   "offset": "0xb723c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "d196d8b09cd2dc23129e9be03d329585ee5bb7a0",
+   "ja": "飜",
+   "ko": "판",
+   "state": "needs_review",
+   "terms": [
+    "score.han"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e185",
+   "entry": 185,
+   "offset": "0xb735c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "d2a9316c1c020104c54d1383dc0dc2383d3697db",
+   "ja": "点",
+   "ko": "점",
+   "state": "needs_review",
+   "terms": [
+    "score.ten"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e187",
+   "entry": 187,
+   "offset": "0xb74fc",
+   "size": [
+    96,
+    32
+   ],
+   "colr": "0x150",
+   "src_sha1": "8bcb38092887eb56788874d40e448b83695d0c67",
+   "ja": "パネルマッチ",
+   "ko": "패널 매치",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "match.e190",
+   "entry": 190,
+   "offset": "0xb7c9c",
+   "size": [
+    104,
+    24
+   ],
+   "colr": "0x160",
+   "src_sha1": "b89e4204379cec0d80c185310abe34f903acb938",
+   "ja": "得点 |クリアー!",
+   "ko": "득점 |클리어!",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "match.e191",
+   "entry": 191,
+   "offset": "0xb817c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "a7cdd4d9238425fcd934a8d8cbb356608e366035",
+   "ja": "立直",
+   "ko": "리치",
+   "state": "needs_review",
+   "terms": [
+    "yaku.立直"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e192",
+   "entry": 192,
+   "offset": "0xb827c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "70203b5360f4fb67c34d0755b11f02b1fa2895d2",
+   "ja": "一発",
+   "ko": "일발",
+   "state": "needs_review",
+   "terms": [
+    "yaku.一発"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e193",
+   "entry": 193,
+   "offset": "0xb837c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "58c1c889875836606b6ccb44a9a14d708a321297",
+   "ja": "門前清摸",
+   "ko": "멘젠쯔모",
+   "state": "needs_review",
+   "terms": [
+    "yaku.門前清摸"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e194",
+   "entry": 194,
+   "offset": "0xb857c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "4344038418eb3fa571dad417ff7a642ff2943d8c",
+   "ja": "嶺上開花",
+   "ko": "영상개화",
+   "state": "needs_review",
+   "terms": [
+    "yaku.嶺上開花"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e195",
+   "entry": 195,
+   "offset": "0xb877c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "7decc3b96c1c51d76b2d7e4c44aea0a4884c621e",
+   "ja": "海底撈月",
+   "ko": "해저로월",
+   "state": "needs_review",
+   "terms": [
+    "yaku.海底撈月"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e196",
+   "entry": 196,
+   "offset": "0xb897c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "a51688296388b42ca6ab9c3b494ef204294f6f4a",
+   "ja": "河底撈魚",
+   "ko": "하저로어",
+   "state": "needs_review",
+   "terms": [
+    "yaku.河底撈魚"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e197",
+   "entry": 197,
+   "offset": "0xb8b7c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "2d3c34959e0d7c98b809807cc1da0bdb7019ebf4",
+   "ja": "断么九",
+   "ko": "탕야오",
+   "state": "needs_review",
+   "terms": [
+    "yaku.断么九"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e198",
+   "entry": 198,
+   "offset": "0xb8cfc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "f77162f643b84406e686bfe177d7caa839d6a903",
+   "ja": "平和",
+   "ko": "핑후",
+   "state": "needs_review",
+   "terms": [
+    "pun.pinfu",
+    "yaku.平和"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e199",
+   "entry": 199,
+   "offset": "0xb8dfc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "92f08237a22a3761cae6a6acc1a4dff76f696181",
+   "ja": "一盃口",
+   "ko": "이페코",
+   "state": "needs_review",
+   "terms": [
+    "yaku.一盃口"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e200",
+   "entry": 200,
+   "offset": "0xb8f7c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "4d7d79587a42e0260978d473230d9459b09ffacd",
+   "ja": "一気通貫",
+   "ko": "일기통관",
+   "state": "needs_review",
+   "terms": [
+    "yaku.一気通貫"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e201",
+   "entry": 201,
+   "offset": "0xb917c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "6c28956859ddfaaa27083c9283d9e7bf305218f6",
+   "ja": "三色同順",
+   "ko": "삼색동순",
+   "state": "needs_review",
+   "terms": [
+    "yaku.三色同順"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e202",
+   "entry": 202,
+   "offset": "0xb937c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "d6df305d308fdccdf3186d84e9b7177d99d13336",
+   "ja": "全帯么",
+   "ko": "찬타",
+   "state": "needs_review",
+   "terms": [
+    "yaku.全帯么"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e203",
+   "entry": 203,
+   "offset": "0xb94fc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "b6123cfa53608cfc1147b2f57c34618cc6c26a2b",
+   "ja": "七対子",
+   "ko": "치또이츠",
+   "state": "needs_review",
+   "terms": [
+    "yaku.七対子"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e204",
+   "entry": 204,
+   "offset": "0xb967c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "526e13e8e8122b584c834a4025e6624ab644a9c7",
+   "ja": "Wリーチ",
+   "ko": "더블 리치",
+   "state": "needs_review",
+   "terms": [
+    "yaku.Wリーチ"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e205",
+   "entry": 205,
+   "offset": "0xb987c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "dc7516f9c1120aaca36f3d05ff940ba46c8d3007",
+   "ja": "混一色",
+   "ko": "혼일색",
+   "state": "needs_review",
+   "terms": [
+    "yaku.混一色"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e206",
+   "entry": 206,
+   "offset": "0xb99fc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "84b22691ae6bf60c75eb790e638844b9321effd6",
+   "ja": "混老頭",
+   "ko": "혼노두",
+   "state": "needs_review",
+   "terms": [
+    "yaku.混老頭"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e207",
+   "entry": 207,
+   "offset": "0xb9b7c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "d1a79aedc2fc3d280090e1bad95ca5978bd960d6",
+   "ja": "対々和",
+   "ko": "또이또이",
+   "state": "needs_review",
+   "terms": [
+    "yaku.対々和"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e208",
+   "entry": 208,
+   "offset": "0xb9cfc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "7205ac1ab8c7bb40f35923d07f04e3a71abba9e4",
+   "ja": "三暗刻",
+   "ko": "산안커",
+   "state": "needs_review",
+   "terms": [
+    "yaku.三暗刻"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e209",
+   "entry": 209,
+   "offset": "0xb9e7c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "ac62e5fd243107f5a73559ab414e30ff0fdeaf61",
+   "ja": "三槓子",
+   "ko": "산깡쯔",
+   "state": "needs_review",
+   "terms": [
+    "yaku.三槓子"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e210",
+   "entry": 210,
+   "offset": "0xb9ffc",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "e29721ed0ba34cbd11f3b19608ffb08e9319c7c9",
+   "ja": "一気通貫",
+   "ko": "일기통관",
+   "state": "needs_review",
+   "terms": [
+    "yaku.一気通貫"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e211",
+   "entry": 211,
+   "offset": "0xba1fc",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "0ffdec315a3b7e5145b8603244d13bb691c36192",
+   "ja": "三色同順",
+   "ko": "삼색동순",
+   "state": "needs_review",
+   "terms": [
+    "yaku.三色同順"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e212",
+   "entry": 212,
+   "offset": "0xba3fc",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "572deef391b153b94af222ea281558c12ffd8460",
+   "ja": "三色同刻",
+   "ko": "삼색동각",
+   "state": "needs_review",
+   "terms": [
+    "yaku.三色同刻"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e213",
+   "entry": 213,
+   "offset": "0xba5fc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "0b4905a7252a14f95347f95675610c4afe9ce182",
+   "ja": "三連刻",
+   "ko": "삼연각",
+   "state": "needs_review",
+   "terms": [
+    "yaku.三連刻"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e214",
+   "entry": 214,
+   "offset": "0xba77c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "a7bc47ecab595945219d4fc4c4270fe2b893ffdf",
+   "ja": "純全帯么",
+   "ko": "준찬타",
+   "state": "needs_review",
+   "terms": [
+    "yaku.純全帯么"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e215",
+   "entry": 215,
+   "offset": "0xba97c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "42d913e2320ce3eeb1d720f06fe3c4c854f22d4f",
+   "ja": "全帯么",
+   "ko": "찬타",
+   "state": "needs_review",
+   "terms": [
+    "yaku.全帯么"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e216",
+   "entry": 216,
+   "offset": "0xbaafc",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "d1366c6b2934d3244e082593acf5a8b8677c0f06",
+   "ja": "一色三順",
+   "ko": "일색삼순",
+   "state": "needs_review",
+   "terms": [
+    "yaku.一色三順"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e217",
+   "entry": 217,
+   "offset": "0xbacfc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "122b22d9d5abdd85ad34b4f6dbd6dc90d4772611",
+   "ja": "混一色",
+   "ko": "혼일색",
+   "state": "needs_review",
+   "terms": [
+    "yaku.混一色"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e218",
+   "entry": 218,
+   "offset": "0xbae7c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "fcce7c7a29c68ac1e259fe6ba97d4bb0caaf48ce",
+   "ja": "清老頭",
+   "ko": "청노두",
+   "state": "needs_review",
+   "terms": [
+    "yaku.清老頭"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e219",
+   "entry": 219,
+   "offset": "0xbaffc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "48c15c0425ea07dfade54f67247ca8f5403bec73",
+   "ja": "二盃口",
+   "ko": "량페코",
+   "state": "needs_review",
+   "terms": [
+    "yaku.二盃口"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e220",
+   "entry": 220,
+   "offset": "0xbb17c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "2f23b8f1b6bad73b53d6c5f76eba8cf45b9a667e",
+   "ja": "純全帯么",
+   "ko": "준찬타",
+   "state": "needs_review",
+   "terms": [
+    "yaku.純全帯么"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e221",
+   "entry": 221,
+   "offset": "0xbb37c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "0892e31eb8ab9596c1360eace7ee960bec3345d9",
+   "ja": "小三元",
+   "ko": "소삼원",
+   "state": "needs_review",
+   "terms": [
+    "yaku.小三元"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e222",
+   "entry": 222,
+   "offset": "0xbb4fc",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "65b2e8f059a00f730c1a5be0b03e16e5500b7d49",
+   "ja": "么九振切",
+   "ko": "유국만관",
+   "state": "needs_review",
+   "terms": [
+    "yaku.么九振切"
+   ],
+   "note": "么九振切 = 끝패·자패만 버리는 역(流し満貫과 같은 역) → '유국만관' (사람 결정)"
+  },
+  {
+   "id": "match.e223",
+   "entry": 223,
+   "offset": "0xbb6fc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "7a0d450cceea103316c9e4ba6c2eed7ed9a6d570",
+   "ja": "清一色",
+   "ko": "청일색",
+   "state": "needs_review",
+   "terms": [
+    "yaku.清一色"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e224",
+   "entry": 224,
+   "offset": "0xbb87c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "dd04ddc9c5aa3aa00986250253e169dc5ade6f4a",
+   "ja": "清一色",
+   "ko": "청일색",
+   "state": "needs_review",
+   "terms": [
+    "yaku.清一色"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e225",
+   "entry": 225,
+   "offset": "0xbb9fc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "6f103cbeb15838d7164b82dcfd35569941d2ce64",
+   "ja": "天和",
+   "ko": "천화",
+   "state": "needs_review",
+   "terms": [
+    "yaku.天和"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e226",
+   "entry": 226,
+   "offset": "0xbbafc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "c4d56ad8f6664c24d20fb1f82afb13066d7daed4",
+   "ja": "地和",
+   "ko": "지화",
+   "state": "needs_review",
+   "terms": [
+    "yaku.地和"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e227",
+   "entry": 227,
+   "offset": "0xbbbfc",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "b5ab86dda28fd671416657d2b0f2cc8f3331c155",
+   "ja": "人和",
+   "ko": "인화",
+   "state": "needs_review",
+   "terms": [
+    "yaku.人和"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e228",
+   "entry": 228,
+   "offset": "0xbbcfc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "03ac5d255dfba32168bd1ae3bdb8148bebf5d63a",
+   "ja": "字一色",
+   "ko": "자일색",
+   "state": "needs_review",
+   "terms": [
+    "yaku.字一色"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e229",
+   "entry": 229,
+   "offset": "0xbbe7c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "54d00883c430ddad31315ed40971ed5ef6ee90db",
+   "ja": "緑一色",
+   "ko": "녹일색",
+   "state": "needs_review",
+   "terms": [
+    "yaku.緑一色"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e230",
+   "entry": 230,
+   "offset": "0xbbffc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "ed719253e4181985e17314635350e3f8b438116c",
+   "ja": "大三元",
+   "ko": "대삼원",
+   "state": "needs_review",
+   "terms": [
+    "yaku.大三元"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e231",
+   "entry": 231,
+   "offset": "0xbc17c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "acab046069b0c4f3f58a3b0c11bcbe78280504c1",
+   "ja": "四喜和",
+   "ko": "사희화",
+   "state": "needs_review",
+   "terms": [
+    "yaku.四喜和"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e232",
+   "entry": 232,
+   "offset": "0xbc2fc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "a5322041a0eba28e0bea974c1fffb56cc78600ec",
+   "ja": "四暗刻",
+   "ko": "스안커",
+   "state": "needs_review",
+   "terms": [
+    "yaku.四暗刻"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e233",
+   "entry": 233,
+   "offset": "0xbc47c",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "9665205bccd5bf09963d95902b1079fc8e9e56c4",
+   "ja": "四槓子",
+   "ko": "스깡쯔",
+   "state": "needs_review",
+   "terms": [
+    "yaku.四槓子"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e234",
+   "entry": 234,
+   "offset": "0xbc5fc",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "00aac21792522ddca8e154c7b961e8d64dd317e3",
+   "ja": "国士無双",
+   "ko": "국사무쌍",
+   "state": "needs_review",
+   "terms": [
+    "yaku.国士無双"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e235",
+   "entry": 235,
+   "offset": "0xbc7fc",
+   "size": [
+    48,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "abf933f224a165fffb2e1123d926ff16f490e597",
+   "ja": "大車輪",
+   "ko": "대차륜",
+   "state": "needs_review",
+   "terms": [
+    "yaku.大車輪"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e236",
+   "entry": 236,
+   "offset": "0xbc97c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "8e708a0847b264899ef9c468b5908c44c0b818a3",
+   "ja": "十三不塔",
+   "ko": "십삼불탑",
+   "state": "needs_review",
+   "terms": [
+    "yaku.十三不塔"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e237",
+   "entry": 237,
+   "offset": "0xbcb7c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "ffedfc2bf6850bf4be29f73e440132149c901ccb",
+   "ja": "九連宝燈",
+   "ko": "구련보등",
+   "state": "needs_review",
+   "terms": [
+    "yaku.九連宝燈"
+   ],
+   "note": "역 이름"
+  },
+  {
+   "id": "match.e238",
+   "entry": 238,
+   "offset": "0xbcd7c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "4bfc9fc8844a597f4a3c11c2516049fa17a91e72",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e239",
+   "entry": 239,
+   "offset": "0xbce7c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "3198147013d36b14dd619f82f41517b3308f82d9",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e240",
+   "entry": 240,
+   "offset": "0xbcf7c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "423b87a2b9358481e4eaf803660f19493b5d8845",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e241",
+   "entry": 241,
+   "offset": "0xbd07c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "b08ee2c2e21ec9e0be819ee4dee7b0f6c8c665f2",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e242",
+   "entry": 242,
+   "offset": "0xbd17c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "4bfc9fc8844a597f4a3c11c2516049fa17a91e72",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e243",
+   "entry": 243,
+   "offset": "0xbd27c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "3198147013d36b14dd619f82f41517b3308f82d9",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e244",
+   "entry": 244,
+   "offset": "0xbd37c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "423b87a2b9358481e4eaf803660f19493b5d8845",
+   "ja": "ドラ",
+   "ko": "도라",
+   "state": "needs_review",
+   "terms": [
+    "yaku.ドラ"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e245",
+   "entry": 245,
+   "offset": "0xbd47c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "dcdd3e6b8cda9e4f1fa4f99b755f6bdec9b39dbd",
+   "ja": "役牌",
+   "ko": "역패",
+   "state": "needs_review",
+   "terms": [
+    "yaku.役牌"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e246",
+   "entry": 246,
+   "offset": "0xbd57c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "099bc5df6e3b4f7a7cfdc8fa1811a2cf9be5f489",
+   "ja": "役牌",
+   "ko": "역패",
+   "state": "needs_review",
+   "terms": [
+    "yaku.役牌"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e247",
+   "entry": 247,
+   "offset": "0xbd67c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "db7f0e128c88798e9d763c987ef8b869408fe459",
+   "ja": "役牌",
+   "ko": "역패",
+   "state": "needs_review",
+   "terms": [
+    "yaku.役牌"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e248",
+   "entry": 248,
+   "offset": "0xbd77c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "d757cf82d56e9f2f8f5d3f23ae0b64dd81aca7ef",
+   "ja": "役牌",
+   "ko": "역패",
+   "state": "needs_review",
+   "terms": [
+    "yaku.役牌"
+   ],
+   "note": "색 변형"
+  },
+  {
+   "id": "match.e249",
+   "entry": 249,
+   "offset": "0xbd87c",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "c281f8070e25bee8946c84996e995590e17067e5",
+   "ja": "一色三順",
+   "ko": "일색삼순",
+   "state": "needs_review",
+   "terms": [
+    "yaku.一色三順"
+   ],
+   "note": ""
+  },
+  {
+   "id": "match.e282",
+   "entry": 282,
+   "offset": "0xc08fc",
+   "size": [
+    152,
+    40
+   ],
+   "colr": "0x140",
+   "src_sha1": "639449e2345d911a4a006b669cea023a507dbef3",
+   "ja": "交換したい牌を\n選んでね|♥",
+   "ko": "교환하고 싶은 패를\n골라 줘|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "match.e283",
+   "entry": 283,
+   "offset": "0xc14dc",
+   "size": [
+    144,
+    32
+   ],
+   "colr": "0xc0",
+   "src_sha1": "be12111b8b8384f290ec897192197906e8d63d0a",
+   "ja": "C|ボタン|で選び終わったら\nB|ボタン|を押してね",
+   "ko": "C |버튼|으로 다 고르면\nB |버튼|을 눌러 줘",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  }
+ ],
+ "excluded": [
+  {
+   "id": "match.e000",
+   "entry": 0,
+   "offset": "0xa535c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x50",
+   "src_sha1": "d178c4c121e32173ebd81302ff88a7230404041d",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e001",
+   "entry": 1,
+   "offset": "0xa547c",
+   "size": [
+    24,
+    32
+   ],
+   "colr": "0x40",
+   "src_sha1": "977d482452ed21557ea6b62409bff71b7e1b64d9",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e002",
+   "entry": 2,
+   "offset": "0xa55fc",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x40",
+   "src_sha1": "48b2808d66144795e56f0d4e3529b7b94b22765d",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e003",
+   "entry": 3,
+   "offset": "0xa571c",
+   "size": [
+    24,
+    40
+   ],
+   "colr": "0x40",
+   "src_sha1": "29c46216058f7152f2ccfd06434e7139e4f9c16a",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e004",
+   "entry": 4,
+   "offset": "0xa58fc",
+   "size": [
+    24,
+    32
+   ],
+   "colr": "0x40",
+   "src_sha1": "f9dea913af135127fb37e6671daf1fccf5daf471",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e005",
+   "entry": 5,
+   "offset": "0xa5a7c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x50",
+   "src_sha1": "3c8eadc5ef531285f2308187565c4be257ca5f35",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e006",
+   "entry": 6,
+   "offset": "0xa5b3c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x50",
+   "src_sha1": "11cd743b5f9fa31fb5413d49b0bef7e7244babed",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e007",
+   "entry": 7,
+   "offset": "0xa5bfc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x40",
+   "src_sha1": "1890b096703a403de3a5834b6ede714173c6b896",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e008",
+   "entry": 8,
+   "offset": "0xa5cbc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x50",
+   "src_sha1": "f8496b055b693ac00f13b519515dccb391acaf2b",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e009",
+   "entry": 9,
+   "offset": "0xa5d7c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x50",
+   "src_sha1": "0465fdf7bf0215b10d25eadc3954018164017cd1",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e010",
+   "entry": 10,
+   "offset": "0xa5dfc",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x50",
+   "src_sha1": "2c7b2385d44b3c9e8a26383fc38983c971c8f7a7",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e011",
+   "entry": 11,
+   "offset": "0xa5e3c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x40",
+   "src_sha1": "752b0fd8397f1df82860227fc5880dc32234c8f8",
+   "reason": "마작패 뒷면·옆면(글자 없음)"
+  },
+  {
+   "id": "match.e012",
+   "entry": 12,
+   "offset": "0xa5efc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "585e1c4ae832f606a100f88c282ce969826a45e6",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e013",
+   "entry": 13,
+   "offset": "0xa5fbc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "f5bb973f54ddd57eca396ea2ccbe33585cecc292",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e014",
+   "entry": 14,
+   "offset": "0xa607c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "f6575932e6ef0fcce5c6ce3034e203d740c1aadc",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e015",
+   "entry": 15,
+   "offset": "0xa613c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "3848e950c7f86cb996d33c3df2aa62fbb1f5292e",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e016",
+   "entry": 16,
+   "offset": "0xa61fc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "04ace9e927155495f8a649a9fae171d274497f10",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e017",
+   "entry": 17,
+   "offset": "0xa62bc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "49d1c41a255a95ac72bd207c53d3040ea3d0e5c8",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e018",
+   "entry": 18,
+   "offset": "0xa637c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "254367a89cdbda25d5c65869592da3e83ca06616",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e019",
+   "entry": 19,
+   "offset": "0xa643c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "a09bb0b9923e8133f5602404cd220f54642963b7",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e020",
+   "entry": 20,
+   "offset": "0xa64fc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "15fb0b14a512feeb4aa21cf3fd80813c74c65594",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e021",
+   "entry": 21,
+   "offset": "0xa65bc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "3b6e9a3237d239221e3d0eb03ccc78b2bb27aff6",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e022",
+   "entry": 22,
+   "offset": "0xa667c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "0012dd39b710e5db4db4df8e53f66a91c2bb205c",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e023",
+   "entry": 23,
+   "offset": "0xa673c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "59b8e2ba7f98bfb9d461d8f54e1bb9ad4c8d8a91",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e024",
+   "entry": 24,
+   "offset": "0xa67fc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "1178fb2b6594cbb206a6d72becd9decd11cb6b3b",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e025",
+   "entry": 25,
+   "offset": "0xa68bc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "9fdcf00ecbce0dfcaaa14358b2084601cbb8e84a",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e026",
+   "entry": 26,
+   "offset": "0xa697c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "568dd620f6640b1843ccc1d99c3a558338f83ab5",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e027",
+   "entry": 27,
+   "offset": "0xa6a3c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "3cc4403eb56c2ea6010de6ce2c175dc7a05e8915",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e028",
+   "entry": 28,
+   "offset": "0xa6afc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "153a9246c5636e8c72ba53b5926898223292b92a",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e029",
+   "entry": 29,
+   "offset": "0xa6bbc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x20",
+   "src_sha1": "6fa240dec2f31a009de00fc58d02255049b6088d",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e030",
+   "entry": 30,
+   "offset": "0xa6c7c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "8ace07afa738d41c47e959391a0d0ffd91990391",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e031",
+   "entry": 31,
+   "offset": "0xa6d3c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "4a31cf4fbace4a237b9ba9361aab789ad84d2f07",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e032",
+   "entry": 32,
+   "offset": "0xa6dfc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "1e86b9e192ba161e13abbbe9fa454ef0074da384",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e033",
+   "entry": 33,
+   "offset": "0xa6ebc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "c3043dd8a8e3e4f3f9201d1a5e0cde64ba8c1827",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e034",
+   "entry": 34,
+   "offset": "0xa6f7c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "0cf897086e1eafd002096409ea62efbc4b46ad89",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e035",
+   "entry": 35,
+   "offset": "0xa703c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "792fbf6ee1aeb56aa5d3f24b6b2b622349a5d42d",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e036",
+   "entry": 36,
+   "offset": "0xa70fc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "5972c0fe1738ae6fe94ebdfd7afd3564e02e0f8e",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e037",
+   "entry": 37,
+   "offset": "0xa71bc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "9711f6f0b42582916d3ca44d943e58afa50b3354",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e038",
+   "entry": 38,
+   "offset": "0xa727c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "f5860a6df41265fad05b965992d9a40eb32b00a1",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e039",
+   "entry": 39,
+   "offset": "0xa733c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "48ddace9fb03bf31783b5997f5f17c6bd81aab27",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e040",
+   "entry": 40,
+   "offset": "0xa73fc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "03bbb27b0e26f8e3112fc47e18440385d8de742f",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e041",
+   "entry": 41,
+   "offset": "0xa74bc",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "720cac7c3783b69ee8719618c48c015b13b3133f",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e042",
+   "entry": 42,
+   "offset": "0xa757c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "8fa61bbe0b5b2b8e776829aab2546d051d7af0b0",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e043",
+   "entry": 43,
+   "offset": "0xa763c",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x30",
+   "src_sha1": "de8a847bff8c343d69b853a215e6ee775ef2ef96",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e044",
+   "entry": 44,
+   "offset": "0xa765c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x30",
+   "src_sha1": "bed712f277aa0fe95fc1d52d47f251bc0c200c2a",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e045",
+   "entry": 45,
+   "offset": "0xa771c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "6d78e7dc64aae6e2ff91ae3a67d9a766ee5a522f",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e046",
+   "entry": 46,
+   "offset": "0xa77dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "ae4319a26b36bbe049e9ff36053ecb74d97b62a1",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e047",
+   "entry": 47,
+   "offset": "0xa785c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "88552a77d4a4872ff456e16c181879dc0eb70818",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e048",
+   "entry": 48,
+   "offset": "0xa78dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "cd9efc7bbe0085ae9e4166c7cfa0880f84525d5b",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e049",
+   "entry": 49,
+   "offset": "0xa795c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "4e7b0c9a8f9f53f5ff5054bf28c96c69b553b8d8",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e050",
+   "entry": 50,
+   "offset": "0xa79dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "43ec2f7a33628d57184997cd7d81c8114503fdac",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e051",
+   "entry": 51,
+   "offset": "0xa7a5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "9021011d30bc061e8755fc4a0e769497b6e4cd3c",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e052",
+   "entry": 52,
+   "offset": "0xa7adc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "195d6108f6392cd68ca930dba29557c71258762f",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e053",
+   "entry": 53,
+   "offset": "0xa7b5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "93f0d0e833c5a951c92a4761953441eead780dd5",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e054",
+   "entry": 54,
+   "offset": "0xa7bdc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "c5705b2446fbb6f8063ba9ecde05d241d52786fe",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e055",
+   "entry": 55,
+   "offset": "0xa7c5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "945092be6a815f2dbd72131f910cf908c3d037f2",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e056",
+   "entry": 56,
+   "offset": "0xa7cdc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "da1060743cf43ad755c6a94ab08fc6d2103a8241",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e057",
+   "entry": 57,
+   "offset": "0xa7d5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "84bb1072921fdb371048efe46e4fe42ef0af0c0d",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e058",
+   "entry": 58,
+   "offset": "0xa7ddc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "0f9838cb6780df05a04739db39e5b3a66460c9a0",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e059",
+   "entry": 59,
+   "offset": "0xa7e5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "b33b924964f72fbda4a0a3f7a508302f7bce7cbd",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e060",
+   "entry": 60,
+   "offset": "0xa7edc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "5cf43d92be2fd46b046cb175a7200947d75f4964",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e061",
+   "entry": 61,
+   "offset": "0xa7f5c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "96603ca52eea6df2a9a466b0f5afea276837fe4c",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e062",
+   "entry": 62,
+   "offset": "0xa7fdc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "70a28e00982a449f0aa28eec49b86cc203efca0e",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e063",
+   "entry": 63,
+   "offset": "0xa805c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x20",
+   "src_sha1": "9eb76063447e287da2a6eeb32e831c4962505426",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e064",
+   "entry": 64,
+   "offset": "0xa80dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "53ba8c8fa7764e323b0db29d626f08a175b99924",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e065",
+   "entry": 65,
+   "offset": "0xa815c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "b4c8b0ba40aab6fe8c3582c7bab6720c8b442032",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e066",
+   "entry": 66,
+   "offset": "0xa81dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "18a7c17f01df53b3a7ae973674df8d49b91ead66",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e067",
+   "entry": 67,
+   "offset": "0xa825c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "fae5e3b0ae113f86bd739e1ff3fe12effbe6e4a3",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e068",
+   "entry": 68,
+   "offset": "0xa82dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "5d422c137e7fab0884c3f891b539d0410bc564b8",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e069",
+   "entry": 69,
+   "offset": "0xa835c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "4757a18328564df40b1ad256fc76ecb4ca33422e",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e070",
+   "entry": 70,
+   "offset": "0xa83dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "a92a972a9a923e8c65be1bcdb2bbc6d5c535851b",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e071",
+   "entry": 71,
+   "offset": "0xa845c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "806b36bfa2ee99871bbf5974e250559701e16e27",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e072",
+   "entry": 72,
+   "offset": "0xa84dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "615b8072968bcec8677cde346553a7198fcad180",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e073",
+   "entry": 73,
+   "offset": "0xa855c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "1cc9bd09167beca9c625e9936f45c95edb5027ba",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e074",
+   "entry": 74,
+   "offset": "0xa85dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "ac04ce7eca7fc1c970c5fd91682a8c7a509d1198",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e075",
+   "entry": 75,
+   "offset": "0xa865c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "3bf1434f12df7960d86348ee14f86772666612ff",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e076",
+   "entry": 76,
+   "offset": "0xa86dc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "9d323920665ff84d286ca1b4dacaf8b371d50eec",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e077",
+   "entry": 77,
+   "offset": "0xa875c",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x30",
+   "src_sha1": "ec042187e5520c366cfaca946f9bcab64fc335e9",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e078",
+   "entry": 78,
+   "offset": "0xa877c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x30",
+   "src_sha1": "fbbd3ea9f59b2be277d72c97a1c277579d6f7b02",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e079",
+   "entry": 79,
+   "offset": "0xa87fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "64a716511db86e04ee3f51226bd0056fbb36baae",
+   "reason": "마작패 앞면: 원형 유지(한국 마작에서도 같은 패 그림 사용)"
+  },
+  {
+   "id": "match.e081",
+   "entry": 81,
+   "offset": "0xa8b7c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "41856d44cd97d10b9867fc39393b47673fe8d933",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e082",
+   "entry": 82,
+   "offset": "0xa8bbc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "4ec950151e514d7d5e2470172e8b4d024b1b555b",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e083",
+   "entry": 83,
+   "offset": "0xa8bfc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "41603bfce9e0a18abad6ee0a3f60a9fe364c8bb7",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e084",
+   "entry": 84,
+   "offset": "0xa8c3c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "121e758c0811549fd0d9becf0451474e16716a11",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e085",
+   "entry": 85,
+   "offset": "0xa8c7c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "b0f821486dc61a2e6c551f268fc11af607fbd0e0",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e086",
+   "entry": 86,
+   "offset": "0xa8cbc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "c232a9bd598509f7e8559fccbfb8f0f6ee867930",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e087",
+   "entry": 87,
+   "offset": "0xa8cfc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "8d6fc2cf1ab7bcde0b70ee308694f14cd4e10060",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e088",
+   "entry": 88,
+   "offset": "0xa8d3c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "803d88877226e054fcc384b3fd88e5796d7142b5",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e089",
+   "entry": 89,
+   "offset": "0xa8d7c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "e42fe615bea24d6f9f083288c288b1a2ace39942",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e090",
+   "entry": 90,
+   "offset": "0xa8dbc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "f2d6263a79586459eaf6414e48e629f879d4cf54",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e093",
+   "entry": 93,
+   "offset": "0xa90fc",
+   "size": [
+    56,
+    40
+   ],
+   "colr": "0x90",
+   "src_sha1": "8d975b93aee168d4740f7835112894db0d27f92a",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e105",
+   "entry": 105,
+   "offset": "0xaa5dc",
+   "size": [
+    24,
+    8
+   ],
+   "colr": "0x80",
+   "src_sha1": "a99be112da6c0e0fa00da27780d05d09460738aa",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e106",
+   "entry": 106,
+   "offset": "0xaa63c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "2d39e511d3ba66fc69409d1c045daeef01c4f968",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e107",
+   "entry": 107,
+   "offset": "0xaa67c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "b7c051334562db96e3551cd06907ce237ffdf45d",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e108",
+   "entry": 108,
+   "offset": "0xaa6bc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "8768e400759f25cb27de38662164efe841ce075b",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e109",
+   "entry": 109,
+   "offset": "0xaa6fc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "d1b1a7dcfc1dbc4c0667a46670907d8b3cdf9b05",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e110",
+   "entry": 110,
+   "offset": "0xaa73c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "905e6aad174c8d0565fb00ca087ba4c8fdae763d",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e111",
+   "entry": 111,
+   "offset": "0xaa77c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "7630d452fb54f750e06dea878222885bf285aedf",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e112",
+   "entry": 112,
+   "offset": "0xaa7bc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "2666a8aa927881d4c04ab54345e841c265f3bf98",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e113",
+   "entry": 113,
+   "offset": "0xaa7fc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "3e86879cef7db8b540bdba19917854f6fb6148eb",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e114",
+   "entry": 114,
+   "offset": "0xaa83c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "57350120b4618f0f73a30f65f063b917ecc4d3fb",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e115",
+   "entry": 115,
+   "offset": "0xaa87c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "f7efe0676dc2070c2e7ebfdcf6e2cf01a88adeac",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e116",
+   "entry": 116,
+   "offset": "0xaa8bc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x60",
+   "src_sha1": "1f6c6d804d8aa19925d476e94927cdaf0f955bfb",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e117",
+   "entry": 117,
+   "offset": "0xaa8fc",
+   "size": [
+    24,
+    16
+   ],
+   "colr": "0xb0",
+   "src_sha1": "078fd0662c4f1c0a1b74f9dfb12d73730a57d16d",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e118",
+   "entry": 118,
+   "offset": "0xaa9bc",
+   "size": [
+    24,
+    16
+   ],
+   "colr": "0xb0",
+   "src_sha1": "9ebd6a26ff828f95566746919e9cca6367318746",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e119",
+   "entry": 119,
+   "offset": "0xaaa7c",
+   "size": [
+    24,
+    16
+   ],
+   "colr": "0xb0",
+   "src_sha1": "ce55316b1e7b4c5068f60c44f2747c25f9ca5677",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e120",
+   "entry": 120,
+   "offset": "0xaab3c",
+   "size": [
+    24,
+    16
+   ],
+   "colr": "0xb0",
+   "src_sha1": "47a6c5b000ea635ca85b81b940fa125781eadb99",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e121",
+   "entry": 121,
+   "offset": "0xaabfc",
+   "size": [
+    96,
+    16
+   ],
+   "colr": "0x70",
+   "src_sha1": "75cd61e447725413d690525ed754dfe5528940fd",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e122",
+   "entry": 122,
+   "offset": "0xaaefc",
+   "size": [
+    48,
+    8
+   ],
+   "colr": "0x70",
+   "src_sha1": "0454e0bf0b0f3acf57d7eb7e8d89182023c4ce61",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e123",
+   "entry": 123,
+   "offset": "0xaafbc",
+   "size": [
+    8,
+    48
+   ],
+   "colr": "0xd0",
+   "src_sha1": "4f11d8a93ffb55f1dfa470e33ed81794d6ee25f4",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e124",
+   "entry": 124,
+   "offset": "0xab07c",
+   "size": [
+    16,
+    48
+   ],
+   "colr": "0xd0",
+   "src_sha1": "e8aaf152265c1f9947c00ca9e9e4448d1af0195d",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e125",
+   "entry": 125,
+   "offset": "0xab1fc",
+   "size": [
+    8,
+    48
+   ],
+   "colr": "0xd0",
+   "src_sha1": "e7115c034ea43b8dbaf9b9d1a8a02263ca19499f",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e136",
+   "entry": 136,
+   "offset": "0xac5bc",
+   "size": [
+    24,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "b8578e372c46afab8a75aa82bf0f770481175217",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e137",
+   "entry": 137,
+   "offset": "0xac61c",
+   "size": [
+    24,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "d784a55fa3f913d37cf7c8c0627ae845c8ec4170",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e138",
+   "entry": 138,
+   "offset": "0xac67c",
+   "size": [
+    8,
+    24
+   ],
+   "colr": "0x40",
+   "src_sha1": "d82b9d5135b4038e90d4f742c0010f3a506beee8",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e139",
+   "entry": 139,
+   "offset": "0xac6dc",
+   "size": [
+    24,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "2edd01141e172d902d0ad74e7b354fc1d953a127",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e140",
+   "entry": 140,
+   "offset": "0xac73c",
+   "size": [
+    24,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "d4e5a3bf3446624041ac458becfb489246b19b4e",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e141",
+   "entry": 141,
+   "offset": "0xac79c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x40",
+   "src_sha1": "d17ba722c015f68d8198163b00fb4634ddc51e58",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e142",
+   "entry": 142,
+   "offset": "0xac7dc",
+   "size": [
+    24,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "ec5f7233497d24578f7147886369ba9bf89a4996",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e143",
+   "entry": 143,
+   "offset": "0xac83c",
+   "size": [
+    24,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "1bfc3cd7c77d92c9f2b6f17f62d236cbf5f850ca",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e144",
+   "entry": 144,
+   "offset": "0xac89c",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "9f32bd2d1c509ee88d22df3ae275bc320302a38c",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e145",
+   "entry": 145,
+   "offset": "0xac8dc",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "6ef4639551bd6e1934e4e008e30cd64efa566970",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e146",
+   "entry": 146,
+   "offset": "0xac91c",
+   "size": [
+    8,
+    24
+   ],
+   "colr": "0x40",
+   "src_sha1": "54a1ba2f0099f1c17f7f8efc9a0fd6553c2b6263",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e147",
+   "entry": 147,
+   "offset": "0xac97c",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "f9c3651e9532409e6312bb0b333cfdcca0fe2eea",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e148",
+   "entry": 148,
+   "offset": "0xac9bc",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "a08a3b14e07911c546918e4d6cbd8a8e3ef8c837",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e149",
+   "entry": 149,
+   "offset": "0xac9fc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x40",
+   "src_sha1": "787b6d5b2aa6ab836b8221b1fe47467e21d15f72",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e150",
+   "entry": 150,
+   "offset": "0xaca3c",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "b299d94a91a603015ade5a1b04281be7c1b32c4a",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e151",
+   "entry": 151,
+   "offset": "0xaca7c",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x40",
+   "src_sha1": "9a29586c26b6937802431841783c004051e86484",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e152",
+   "entry": 152,
+   "offset": "0xacabc",
+   "size": [
+    8,
+    24
+   ],
+   "colr": "0x40",
+   "src_sha1": "678b3df3cd392fd3cc85f1742e8efd02b0128ce4",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e153",
+   "entry": 153,
+   "offset": "0xacb1c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x40",
+   "src_sha1": "94c6678922bd49d050ea99bb48df753f3c53fe2d",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e154",
+   "entry": 154,
+   "offset": "0xacb5c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x110",
+   "src_sha1": "79588310029b9eaf013460846aae42d29f3ff220",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e155",
+   "entry": 155,
+   "offset": "0xacc5c",
+   "size": [
+    56,
+    24
+   ],
+   "colr": "0xd0",
+   "src_sha1": "33e2bc2cda3478793668ad9376ef3b3be71b0e6c",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e156",
+   "entry": 156,
+   "offset": "0xacefc",
+   "size": [
+    40,
+    24
+   ],
+   "colr": "0xd0",
+   "src_sha1": "7ec391763e16390ad6a19a8d73822ec97aa21f0d",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e169",
+   "entry": 169,
+   "offset": "0xb631c",
+   "size": [
+    8,
+    32
+   ],
+   "colr": "0x170",
+   "src_sha1": "5eb12137d34a18c2fac378fc0840c9e0ab55bf09",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e170",
+   "entry": 170,
+   "offset": "0xb639c",
+   "size": [
+    16,
+    32
+   ],
+   "colr": "0x170",
+   "src_sha1": "3b76c933ae7b461484cdf721a886d3e0c2861167",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e171",
+   "entry": 171,
+   "offset": "0xb649c",
+   "size": [
+    8,
+    32
+   ],
+   "colr": "0x170",
+   "src_sha1": "1b1eecb63091bdfdda244bab2a7105a2edd51409",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e172",
+   "entry": 172,
+   "offset": "0xb651c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "bd0bb3b167d1a4c2719f0374937a2be322cae55e",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e173",
+   "entry": 173,
+   "offset": "0xb663c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "c248e933989f81c96f6f5b708dbd01895fb15e33",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e174",
+   "entry": 174,
+   "offset": "0xb675c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "cd693e32703e4ca49215cca9f0abf3547de6db38",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e175",
+   "entry": 175,
+   "offset": "0xb687c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "0c9e6a78cabe8deba9c401698419f06f4b3220da",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e176",
+   "entry": 176,
+   "offset": "0xb699c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "0919933b91ec1cecc73c75e06fccc7b27cf573ff",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e177",
+   "entry": 177,
+   "offset": "0xb6abc",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "4b05c0cbc7680a3a02e18abdf8a2184cfd9c1f39",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e178",
+   "entry": 178,
+   "offset": "0xb6bdc",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "1e256f5a5edede8e1d299fd777c806f0c1b94059",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e179",
+   "entry": 179,
+   "offset": "0xb6cfc",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "2b795571fa75d204f39ce6b61f15fee71ea94557",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e180",
+   "entry": 180,
+   "offset": "0xb6e1c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "7d382d3f6b2e825a2f843cc0c0318f25ec1f8296",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e181",
+   "entry": 181,
+   "offset": "0xb6f3c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "5b60878eb03acd088e4665ed85e3d7f44e74e16f",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e182",
+   "entry": 182,
+   "offset": "0xb705c",
+   "size": [
+    48,
+    8
+   ],
+   "colr": "0x70",
+   "src_sha1": "ff51b949e5fffa6701d65a60f4c0a3c90dd1be35",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e186",
+   "entry": 186,
+   "offset": "0xb747c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x170",
+   "src_sha1": "dcdda39b0a0b628062ced8998449682b67b218d8",
+   "reason": "기호"
+  },
+  {
+   "id": "match.e188",
+   "entry": 188,
+   "offset": "0xb7afc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x170",
+   "src_sha1": "5f32365e7b65f22d58c335acaf54be82eef6ab16",
+   "reason": "기호"
+  },
+  {
+   "id": "match.e189",
+   "entry": 189,
+   "offset": "0xb7b7c",
+   "size": [
+    24,
+    24
+   ],
+   "colr": "0x150",
+   "src_sha1": "202c2da792cb9722bbabdec378e66f30029b2ada",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e250",
+   "entry": 250,
+   "offset": "0xbda7c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "86c29ac985b751e8d31719346db1ab4d765e1fe9",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e251",
+   "entry": 251,
+   "offset": "0xbdafc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "81f7d47fb6a630d517fb71a5532ccd028fb40a66",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e252",
+   "entry": 252,
+   "offset": "0xbdb7c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "cb9d58989c32a12c673ecdfd11558f3b5f20c494",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e253",
+   "entry": 253,
+   "offset": "0xbdbfc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x180",
+   "src_sha1": "d777458042adfd2e407bc7e324673e3f6d66bdb5",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e254",
+   "entry": 254,
+   "offset": "0xbdc7c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "b7ad2a45047d05d3c1135927af980fa1337a3a0a",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e255",
+   "entry": 255,
+   "offset": "0xbdcfc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "4c188ddb45735fd4aca5745facd585be08255c31",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e256",
+   "entry": 256,
+   "offset": "0xbdd7c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "197089dcfde92f89e2297162ccab1b0e78c13df4",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e257",
+   "entry": 257,
+   "offset": "0xbddfc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "de849f6a53f66c94eb57c0791e590c05b17c0a37",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e258",
+   "entry": 258,
+   "offset": "0xbde7c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "e8bf9376507b1e1c61c6ae2e73828c70977f1a54",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e259",
+   "entry": 259,
+   "offset": "0xbdefc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "cb9d58989c32a12c673ecdfd11558f3b5f20c494",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e260",
+   "entry": 260,
+   "offset": "0xbdf7c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "99ec8cec4b958b3fd3665193103b4ab941a19176",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e261",
+   "entry": 261,
+   "offset": "0xbdffc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "58c88b21f762379a54b44ec393fe48da54322150",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e262",
+   "entry": 262,
+   "offset": "0xbe07c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "7c16f1fa684c8caa93282d623a143fed6792ae2e",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e263",
+   "entry": 263,
+   "offset": "0xbe0fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "1e29755e611292ba0b68a14050daf48dfb5901a2",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e264",
+   "entry": 264,
+   "offset": "0xbe17c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "d4524916bc1a4301378f43cfea80586bf4d84ae4",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e265",
+   "entry": 265,
+   "offset": "0xbe1fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x190",
+   "src_sha1": "8530c7bb61fb6754c1a978f159c0ee7df30ac1fd",
+   "reason": "숫자·기호"
+  },
+  {
+   "id": "match.e266",
+   "entry": 266,
+   "offset": "0xbe27c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "948a50014502945f5b6a8fa0259b06acc9998b0b",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e267",
+   "entry": 267,
+   "offset": "0xbe2fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "5154259d63456b9da658bed64e67887551177e67",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e268",
+   "entry": 268,
+   "offset": "0xbe37c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "72860b7f31c4b28f7eefcc1c590c47e8e69e9c66",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e269",
+   "entry": 269,
+   "offset": "0xbe3fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "abbb0b271e2b4810038fec2014e6560fa61f3bbd",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e270",
+   "entry": 270,
+   "offset": "0xbe47c",
+   "size": [
+    48,
+    32
+   ],
+   "colr": "0x120",
+   "src_sha1": "b9fbaaeee85dff3c475eaca6490434d2a1751f6f",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e271",
+   "entry": 271,
+   "offset": "0xbe77c",
+   "size": [
+    48,
+    40
+   ],
+   "colr": "0x120",
+   "src_sha1": "71ab99e4ea098de827d2384462f64124773b5499",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e272",
+   "entry": 272,
+   "offset": "0xbeb3c",
+   "size": [
+    48,
+    64
+   ],
+   "colr": "0x120",
+   "src_sha1": "dfd6bcf42deaf586ab026a7c5d68a941e31abddb",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e273",
+   "entry": 273,
+   "offset": "0xbf13c",
+   "size": [
+    48,
+    72
+   ],
+   "colr": "0x120",
+   "src_sha1": "710c5496b404619cd57bbb1e339ef91043a485ae",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e274",
+   "entry": 274,
+   "offset": "0xbf7fc",
+   "size": [
+    40,
+    80
+   ],
+   "colr": "0x120",
+   "src_sha1": "a0ebc2e3fa57638d8d813a2ff3a3cdccb28abb39",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e275",
+   "entry": 275,
+   "offset": "0xbfe3c",
+   "size": [
+    40,
+    80
+   ],
+   "colr": "0x120",
+   "src_sha1": "4329cae27835e7b4812019a048b34ef93334b042",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e276",
+   "entry": 276,
+   "offset": "0xc047c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "0ea6e6ad19be38e0c7ae51f256da8828d1d4b006",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e277",
+   "entry": 277,
+   "offset": "0xc04fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "76361ab4b243aa8dda1de11ef5ed718878c4fa32",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e278",
+   "entry": 278,
+   "offset": "0xc057c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "94958d615d2d5dbe5cbee3749e8a2368051d3c18",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e279",
+   "entry": 279,
+   "offset": "0xc05fc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "622e3a13f969faaae9c76869c854342e1db5c819",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e280",
+   "entry": 280,
+   "offset": "0xc067c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x130",
+   "src_sha1": "c62fd7046c94f4896c8852269d1f790eefbfe9c2",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e281",
+   "entry": 281,
+   "offset": "0xc06fc",
+   "size": [
+    64,
+    16
+   ],
+   "colr": "0x40",
+   "src_sha1": "7e0f342becd07ea85dc81398829906fd87c2149e",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e284",
+   "entry": 284,
+   "offset": "0xc1ddc",
+   "size": [
+    72,
+    72
+   ],
+   "colr": "0x150",
+   "src_sha1": "19f334f299e4ff2594542c23499e1048050961cf",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e285",
+   "entry": 285,
+   "offset": "0xc27fc",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x160",
+   "src_sha1": "778a89b0d5b26748b3fec039d1b3d33b2840440d",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e286",
+   "entry": 286,
+   "offset": "0xc281c",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x160",
+   "src_sha1": "3adddce825bb1255b8c9e08f551bf2de1501f977",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e287",
+   "entry": 287,
+   "offset": "0xc283c",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x160",
+   "src_sha1": "26a6d507657a442ab96e6d1d17d7936cf23c2357",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e288",
+   "entry": 288,
+   "offset": "0xc285c",
+   "size": [
+    8,
+    8
+   ],
+   "colr": "0x160",
+   "src_sha1": "445d7970521195b6c1188764cd52b891eeebc0fa",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e289",
+   "entry": 289,
+   "offset": "0xc287c",
+   "size": [
+    96,
+    8
+   ],
+   "colr": "0x160",
+   "src_sha1": "20c7cd254095f47932a274cce39ddbc80532bd15",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e290",
+   "entry": 290,
+   "offset": "0xc29fc",
+   "size": [
+    104,
+    16
+   ],
+   "colr": "0x160",
+   "src_sha1": "a2cb2e2685c3776525921c23bbbf4f6dc769cc8c",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  },
+  {
+   "id": "match.e291",
+   "entry": 291,
+   "offset": "0xc2d3c",
+   "size": [
+    160,
+    48
+   ],
+   "colr": "0x140",
+   "src_sha1": "b5f18e608072584ac17330cd99f2253325745812",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e292",
+   "entry": 292,
+   "offset": "0xc3c3c",
+   "size": [
+    56,
+    24
+   ],
+   "colr": "0x140",
+   "src_sha1": "af8a4ca3354463f99f5f8098504ffbb128470224",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e293",
+   "entry": 293,
+   "offset": "0xc3edc",
+   "size": [
+    40,
+    24
+   ],
+   "colr": "0x140",
+   "src_sha1": "597c40aec0b79712ed92f175eecc0438f59d0a4e",
+   "reason": "영어 유지"
+  },
+  {
+   "id": "match.e294",
+   "entry": 294,
+   "offset": "0xc40bc",
+   "size": [
+    80,
+    32
+   ],
+   "colr": "0x140",
+   "src_sha1": "4e17755c52ce2e5f0f081b8d8abc38d0e3adb54c",
+   "reason": "틀·막대·효과 그림(글자 없음)"
+  }
+ ]
+}

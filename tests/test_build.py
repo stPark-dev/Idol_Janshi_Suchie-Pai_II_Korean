@@ -325,3 +325,122 @@ def test_title_needs_approved_presentation_for_distribution(tmp_path):
     d["presentation"] = "approved"
     spec.write_text(json.dumps(d))
     assert build.build(cue, tmp_path / "out", spec, profile=profile)["distribution"] is True
+
+
+STG = [("STG1.BIN", 60), ("STG2.BIN", 70)]
+
+
+def _stage_disc(tmp_path):
+    """disc with two identical stage files carrying a CRAM head + Yc bundle"""
+    sel = _select1_file()
+    user = {}
+    root = bytearray(2048)
+    p = 0
+    for rec in [_dirrec(b"\x00", 20, 2048, 2), _dirrec(b"\x01", 20, 2048, 2)] + [
+            _dirrec(n.encode() + b";1", lba, len(sel)) for n, lba in STG]:
+        root[p:p + len(rec)] = rec
+        p += len(rec)
+    pvd = bytearray(2048)
+    pvd[0:6] = b"\x01CD001"
+    pvd[156:190] = _dirrec(b"\x00", 20, 2048, 2)
+    user[16], user[20] = bytes(pvd), bytes(root)
+    for _, lba in STG:
+        for i in range(0, len(sel), 2048):
+            user[lba + i // 2048] = sel[i:i + 2048].ljust(2048, b"\x00")
+    raw = bytearray()
+    for lba in range(80):
+        s = bytearray(2352)
+        s[0:12] = cdsector.SYNC
+        m, rem = divmod(lba + 150, 4500)
+        sec, fr = divmod(rem, 75)
+        s[12:15] = bytes(((v // 10) << 4) | (v % 10) for v in (m, sec, fr))
+        s[15] = 1
+        s[16:2064] = user.get(lba, bytes(2048))
+        raw += cdsector.fix_mode1(s)
+    (tmp_path / "t1.bin").write_bytes(bytes(raw))
+    (tmp_path / "t2.bin").write_bytes(b"\x00" * 2352 * 3)
+    cue = tmp_path / "src.cue"
+    cue.write_text('FILE "t1.bin" BINARY\n  TRACK 01 MODE1/2352\n    INDEX 01 00:00:00\n'
+                   'FILE "t2.bin" BINARY\n  TRACK 02 AUDIO\n    INDEX 00 00:00:00\n    INDEX 01 00:02:00\n')
+    profile = build.SourceProfile(
+        track1_sha1=hashlib.sha1(bytes(raw)).hexdigest(), track2_sha1=hashlib.sha1(b"\x00" * 2352 * 3).hexdigest(),
+        prolog_name="STG1.BIN", prolog_lba=60, prolog_size=len(sel), title_region=(0, 1), title_region_sha1="",
+        files={n: (lba, len(sel)) for n, lba in STG})
+    return cue, profile, sel
+
+
+def test_bundle_job_writes_every_listed_file(tmp_path):
+    cue, profile, sel = _stage_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    job = {"files": [n for n, _ in STG], "translation": tr, "layout": lay}
+    m = build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+    raw = (tmp_path / "out" / m["track1"]).read_bytes()
+    outs = []
+    for n, lba in STG:
+        new = b"".join(raw[(lba + i) * 2352 + 16:(lba + i) * 2352 + 2064] for i in range(2))[:len(sel)]
+        outs.append(new)
+        ents = yc.parse(new[SEL_BUNDLE:SEL_BUNDLE + yc.length(new[SEL_BUNDLE:])])
+        assert any(ents[0].data) and any(ents[1].data)
+    assert outs[0] == outs[1]
+    assert [b["file"] for b in m["bundles"]] == ["STG1.BIN", "STG2.BIN"]
+    assert m["distribution"] is False
+
+
+def test_bundle_job_rejects_file_not_in_profile(tmp_path):
+    cue, profile, _ = _stage_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    with pytest.raises(build.BuildError, match="profile"):
+        build.build(cue, tmp_path / "out", None, profile=profile,
+                    bundles=[{"files": ["NOPE.BIN"], "translation": tr, "layout": lay}], title=False)
+
+
+def test_two_jobs_on_one_file_share_sectors_without_false_overlap(tmp_path):
+    cue, profile, sel = _stage_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    t = json.loads(tr.read_text())
+    lj = json.loads(lay.read_text())
+    tr_a, tr_b = tmp_path / "a.json", tmp_path / "b.json"
+    la, lb = tmp_path / "la.json", tmp_path / "lb.json"
+    ea, eb = dict(t), dict(t)
+    ea["entries"], ea["excluded"] = [t["entries"][0]], [{"id": "z1", "entry": 1, "reason": "other job"}]
+    eb["entries"], eb["excluded"] = [t["entries"][1]], [{"id": "z0", "entry": 0, "reason": "other job"}]
+    tr_a.write_text(json.dumps(ea, ensure_ascii=False)); tr_b.write_text(json.dumps(eb, ensure_ascii=False))  # noqa: E702
+    la.write_text(json.dumps({"entries": [lj["entries"][0]]})); lb.write_text(json.dumps({"entries": [lj["entries"][1]]}))  # noqa: E702
+    jobs = [{"files": ["STG1.BIN"], "translation": tr_a, "layout": la},
+            {"files": ["STG1.BIN"], "translation": tr_b, "layout": lb}]
+    m = build.build(cue, tmp_path / "out", None, profile=profile, bundles=jobs, title=False)
+    raw = (tmp_path / "out" / m["track1"]).read_bytes()
+    new = b"".join(raw[(60 + i) * 2352 + 16:(60 + i) * 2352 + 2064] for i in range(2))[:len(sel)]
+    ents = yc.parse(new[SEL_BUNDLE:SEL_BUNDLE + yc.length(new[SEL_BUNDLE:])])
+    assert any(ents[0].data) and any(ents[1].data)
+
+
+def test_duplicate_file_in_one_job_is_rejected(tmp_path):
+    cue, profile, _ = _stage_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    with pytest.raises(build.BuildError, match="more than once"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN", "STG1.BIN"], "translation": tr, "layout": lay}])
+
+
+def test_title_spec_with_title_disabled_is_rejected(tmp_path):
+    cue, profile, _ = _stage_disc(tmp_path)
+    with pytest.raises(build.BuildError, match="title"):
+        build.build(cue, tmp_path / "out", _spec(tmp_path), profile=profile, title=False)
+
+
+def test_bundle_output_equals_render_and_leaves_other_sectors(tmp_path):
+    cue, profile, sel = _stage_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    m = build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN"], "translation": tr, "layout": lay}])
+    from suchie2 import select1
+    want = select1.render(sel, tr, lay, file_name="STG1.BIN").textures
+    raw = (tmp_path / "out" / m["track1"]).read_bytes()
+    src = (tmp_path / "t1.bin").read_bytes()
+    new = b"".join(raw[(60 + i) * 2352 + 16:(60 + i) * 2352 + 2064] for i in range(2))[:len(sel)]
+    ents = yc.parse(new[SEL_BUNDLE:SEL_BUNDLE + yc.length(new[SEL_BUNDLE:])])
+    assert {i: e.data for i, e in enumerate(ents)} == want
+    for lba in range(80):
+        if lba not in m["bundles"][0]["sectors"]:
+            assert raw[lba * 2352:(lba + 1) * 2352] == src[lba * 2352:(lba + 1) * 2352]

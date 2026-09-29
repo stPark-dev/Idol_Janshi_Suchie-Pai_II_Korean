@@ -32,13 +32,24 @@ def clear_box(tex: Texture, box) -> None:
         tex.set(x, y, 0)
 
 
-def clean_rows(tex: Texture, box, text_idx) -> None:
+def clean_rows(tex: Texture, box, text_idx, borrow_rows=None) -> None:
+    """A row with no background pixel is an error unless it is listed in borrow_rows; a listed
+    row takes the nearest row's dominant background index (ties: the upper row)."""
+    borrow_rows = set(borrow_rows or ())
     x0, y0, x1, y1 = box
+    fills = {}
     for y in range(y0, y1):
         bg = Counter(tex.pixel(x, y) for x in range(x0, x1) if tex.pixel(x, y) not in text_idx)
-        if not bg:
-            raise LabelError(f"row {y} of box {box} has no background pixel")
-        fill = bg.most_common(1)[0][0]
+        if bg:
+            fills[y] = bg.most_common(1)[0][0]
+    for y in range(y0, y1):
+        if y not in fills:
+            if y not in borrow_rows or not fills:
+                raise LabelError(f"row {y} of box {box} has no background pixel")
+            near = min(fills, key=lambda r: (abs(r - y), r))
+            fill = fills[near]
+        else:
+            fill = fills[y]
         for x in range(x0, x1):
             if tex.pixel(x, y) in text_idx:
                 tex.set(x, y, fill)
