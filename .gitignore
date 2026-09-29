@@ -1,0 +1,19 @@
+# 원본 디스크 이미지와 원본에서 만든 산출물은 절대 커밋하지 않는다
+*.7z
+*.zip
+*.bin
+*.cue
+*.iso
+*.img
+*.chd
+*.ccd
+*.sub
+*.mds
+*.mdf
+roms/
+out/
+# 분석·실행 부산물
+work/
+.pytest_cache/
+__pycache__/
+*.pyc
