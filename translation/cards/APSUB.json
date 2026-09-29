@@ -1,0 +1,144 @@
+{
+ "_about": "APSUB.BIN 캐릭터 소개 카드 Yc 묶음 (0x1000), CRAM 이미지 0x0. 5줄 = 이름/생일/나이/별자리/혈액형 (밀크 카드는 2줄).",
+ "file": "APSUB.BIN",
+ "files": [
+  "APSUB.BIN"
+ ],
+ "bundle_offset": "0x1000",
+ "palette_offset": "0x0",
+ "id_prefix": "cards.APSUB.",
+ "entries": [
+  {
+   "id": "cards.APSUB.e000",
+   "entry": 0,
+   "offset": "0x103c",
+   "size": [
+    256,
+    48
+   ],
+   "colr": "0x10",
+   "src_sha1": "1f739febbddc9e18312f8485bfc2cd5caf907f95",
+   "ja": "ただいま|セーブ中|です!\n今、電源を切ると|後悔|するわよ|♥",
+   "ko": "지금 |저장 중|이에요!\n지금 전원을 끄면 |후회|할 거야|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "7afe15184544895a8338cd995de3c7dac69806c1"
+  },
+  {
+   "id": "cards.APSUB.e001",
+   "entry": 1,
+   "offset": "0x283c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "f228430dca19a30c95d9a2f358ecf8540c58677c",
+   "ja": "さくらい みゆり 桜井 美優里\n6月27日生\n9才\nかに座\nB型",
+   "ko": "사쿠라이 미유리\n6월 27일생\n9세\n게자리\nB형",
+   "state": "needs_review",
+   "terms": [
+    "name.miyuri"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  },
+  {
+   "id": "cards.APSUB.e002",
+   "entry": 2,
+   "offset": "0x347c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "77c4a84c62bd928aaf3407d00793445453509893",
+   "ja": "あまの まい 天野 麻衣\n10月13日生\n18才\nてんびん座\nAB型",
+   "ko": "아마노 마이\n10월 13일생\n18세\n천칭자리\nAB형",
+   "state": "needs_review",
+   "terms": [
+    "name.mai"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  },
+  {
+   "id": "cards.APSUB.e003",
+   "entry": 3,
+   "offset": "0x40bc",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "8d6c512f4e27d1ad57777990b674f0ebfabeed89",
+   "ja": "にしの えりか 西野 絵利佳\n6月22日生\n23才\nかに座\nAB型",
+   "ko": "니시노 에리카\n6월 22일생\n23세\n게자리\nAB형",
+   "state": "needs_review",
+   "terms": [
+    "name.erika"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  },
+  {
+   "id": "cards.APSUB.e004",
+   "entry": 4,
+   "offset": "0x4cfc",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "00b4f1824c64dc1eca093a9d1b37179aec0133f6",
+   "ja": "なんじょう りえ 南條 理恵\n1月17日生\n23才\nやぎ座\nA型",
+   "ko": "난조 리에\n1월 17일생\n23세\n염소자리\nA형",
+   "state": "needs_review",
+   "terms": [
+    "name.rie"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  },
+  {
+   "id": "cards.APSUB.e005",
+   "entry": 5,
+   "offset": "0x593c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "12995c08566f131cbd4a51c832dff7f125963fe3",
+   "ja": "かわもと さゆり 河本 小百合\n7月29日生\n21才\nしし座\nB型",
+   "ko": "카와모토 사유리\n7월 29일생\n21세\n사자자리\nB형",
+   "state": "needs_review",
+   "terms": [
+    "name.sayuri"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  },
+  {
+   "id": "cards.APSUB.e006",
+   "entry": 6,
+   "offset": "0x657c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "8618b956b2aa21178661639b02b584e720ac1c9e",
+   "ja": "たちばな れいか 橘 麗華\n11月1日生\n24才\nさそり座\nB型",
+   "ko": "타치바나 레이카\n11월 1일생\n24세\n전갈자리\nB형",
+   "state": "needs_review",
+   "terms": [
+    "name.reika"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  }
+ ],
+ "excluded": []
+}

@@ -789,6 +789,96 @@
    "approved_by": "프로젝트 소유자 2026-09-29 (대국 화면 번역 확인 답변)",
    "note": "사람 결정",
    "scope": "title"
+  },
+  {
+   "id": "name.cecil_full",
+   "ja": "セシル・デリンジャー",
+   "ko": "세실 데린저",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.kyoko_full",
+   "ja": "御崎恭子",
+   "ko": "미사키 쿄코",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.shiho_full",
+   "ja": "片桐志穂",
+   "ko": "카타기리 시호",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.yuki_full",
+   "ja": "水野佑紀",
+   "ko": "미즈노 유키",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.miyuri",
+   "ja": "桜井美優里",
+   "ko": "사쿠라이 미유리",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.mai",
+   "ja": "天野麻衣",
+   "ko": "아마노 마이",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.erika",
+   "ja": "西野絵利佳",
+   "ko": "니시노 에리카",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.rie",
+   "ja": "南條理恵",
+   "ko": "난조 리에",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.sayuri",
+   "ja": "河本小百合",
+   "ko": "카와모토 사유리",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
+  },
+  {
+   "id": "name.reika",
+   "ja": "橘麗華",
+   "ko": "타치바나 레이카",
+   "state": "proposed",
+   "approved_by": "",
+   "note": "통용 표기 규칙 적용",
+   "scope": "title"
   }
  ]
 }

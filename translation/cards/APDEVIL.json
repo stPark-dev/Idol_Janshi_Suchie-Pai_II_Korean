@@ -1,0 +1,82 @@
+{
+ "_about": "APDEVIL.BIN 캐릭터 소개 카드 Yc 묶음 (0x51000), CRAM 이미지 0x50000. 5줄 = 이름/생일/나이/별자리/혈액형 (밀크 카드는 2줄).",
+ "file": "APDEVIL.BIN",
+ "files": [
+  "APDEVIL.BIN"
+ ],
+ "bundle_offset": "0x51000",
+ "palette_offset": "0x50000",
+ "id_prefix": "cards.APDEVIL.",
+ "entries": [
+  {
+   "id": "cards.APDEVIL.e000",
+   "entry": 0,
+   "offset": "0x5102c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x10",
+   "src_sha1": "fde6aaf86b555769b2f9a2e2c5d5e786b9e707c3",
+   "ja": "セシル・デリンジャー\n?生\n?才\n?座\n?型",
+   "ko": "세실 데린저\n?생\n?세\n?자리\n?형",
+   "state": "needs_review",
+   "terms": [
+    "name.cecil",
+    "name.cecil_full"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "cards.APDEVIL.e001",
+   "entry": 1,
+   "offset": "0x51c6c",
+   "size": [
+    320,
+    128
+   ],
+   "colr": "0x20",
+   "src_sha1": "98180783f28884f99b1e66a78f7444b4d011cd1b",
+   "reason": "캐릭터 그림"
+  },
+  {
+   "id": "cards.APDEVIL.e002",
+   "entry": 2,
+   "offset": "0x56c6c",
+   "size": [
+    320,
+    32
+   ],
+   "colr": "0x30",
+   "src_sha1": "2ccc9d5b57136650feed50fe86e22578d1585797",
+   "reason": "VS (영어)"
+  },
+  {
+   "id": "cards.APDEVIL.e003",
+   "entry": 3,
+   "offset": "0x5806c",
+   "size": [
+    72,
+    32
+   ],
+   "colr": "0x0",
+   "src_sha1": "896c0c16577f63562aa0071db5c93cd2370bcef9",
+   "reason": "눈·얼굴 그림(16bpp)"
+  },
+  {
+   "id": "cards.APDEVIL.e004",
+   "entry": 4,
+   "offset": "0x5926c",
+   "size": [
+    72,
+    32
+   ],
+   "colr": "0x0",
+   "src_sha1": "b74e922646e8f8de03cb52de2cec8bf93273abcb",
+   "reason": "눈·얼굴 그림(16bpp)"
+  }
+ ]
+}

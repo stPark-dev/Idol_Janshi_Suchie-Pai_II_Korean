@@ -34,7 +34,8 @@
    "terms": [
     "round.east"
    ],
-   "note": "round 표시 명패의 윗부분. 아래 '一 ×' 칸은 보호"
+   "note": "round 표시 명패의 윗부분. 아래 '一 ×' 칸은 보호",
+   "palette_sha1": "51a8a528238ce9ed2c485b62be54e7a2ce6dcff6"
   },
   {
    "id": "match.e091",
@@ -52,7 +53,8 @@
    "terms": [
     "wind.east"
    ],
-   "note": "자풍 표시"
+   "note": "자풍 표시",
+   "palette_sha1": "968582fc99994bdc829bb68c6197140ffd373bcf"
   },
   {
    "id": "match.e092",
@@ -70,7 +72,8 @@
    "terms": [
     "wind.south"
    ],
-   "note": "자풍 표시"
+   "note": "자풍 표시",
+   "palette_sha1": "968582fc99994bdc829bb68c6197140ffd373bcf"
   },
   {
    "id": "match.e094",
@@ -88,7 +91,8 @@
    "terms": [
     "name.suchie"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e095",
@@ -107,7 +111,8 @@
     "name.suchie",
     "name.yuki"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e096",
@@ -125,7 +130,8 @@
    "terms": [
     "name.alice"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e097",
@@ -143,7 +149,8 @@
    "terms": [
     "name.tsukasa"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e098",
@@ -161,7 +168,8 @@
    "terms": [
     "name.sanae"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e099",
@@ -179,7 +187,8 @@
    "terms": [
     "name.rumi"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e100",
@@ -197,7 +206,8 @@
    "terms": [
     "name.yuki"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e101",
@@ -215,7 +225,8 @@
    "terms": [
     "name.shiho"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e102",
@@ -233,7 +244,8 @@
    "terms": [
     "name.cecil"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e103",
@@ -251,7 +263,8 @@
    "terms": [
     "name.cecil"
    ],
-   "note": "빨간색 변형"
+   "note": "빨간색 변형",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e104",
@@ -269,7 +282,8 @@
    "terms": [
     "name.kyoko"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "a80164751a5cb58f3b71460fd84d05e9c0f63245"
   },
   {
    "id": "match.e126",
@@ -287,7 +301,8 @@
    "terms": [
     "call.pon"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e127",
@@ -305,7 +320,8 @@
    "terms": [
     "call.chi"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e128",
@@ -323,7 +339,8 @@
    "terms": [
     "call.kan"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e129",
@@ -341,7 +358,8 @@
    "terms": [
     "call.riichi"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e130",
@@ -359,7 +377,8 @@
    "terms": [
     "call.ron"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e131",
@@ -377,7 +396,8 @@
    "terms": [
     "call.tsumo"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e132",
@@ -395,7 +415,8 @@
    "terms": [
     "call.ippatsu"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e133",
@@ -414,7 +435,8 @@
     "item.suchie_stick",
     "name.suchie"
    ],
-   "note": "아이템 이름"
+   "note": "아이템 이름",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e134",
@@ -432,7 +454,8 @@
    "terms": [
     "item.hyper_eye"
    ],
-   "note": "아이템 이름. 42px 칸에 맞추려고 띄어쓰기를 빼고 9px로 그림 → 이름·크기 사람 판단"
+   "note": "아이템 이름. 42px 칸에 맞추려고 띄어쓰기를 빼고 9px로 그림 → 이름·크기 사람 판단",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e135",
@@ -448,7 +471,8 @@
    "ko": "방향 버튼|으로 |조합|을 |골라 줘\n(|결정|은 |C 버튼|)",
    "state": "needs_review",
    "terms": [],
-   "note": "색 구간은 배치에서"
+   "note": "색 구간은 배치에서",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e157",
@@ -464,7 +488,8 @@
    "ko": "아니야",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match.e158",
@@ -482,7 +507,8 @@
    "terms": [
     "call.riichi"
    ],
-   "note": "큰 선언"
+   "note": "큰 선언",
+   "palette_sha1": "a7aaafc1023699549e4215909f4ed9acf739bc13"
   },
   {
    "id": "match.e159",
@@ -500,7 +526,8 @@
    "terms": [
     "decl.tenpai"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "64f35d3cce7234ee5bec62cdcd413c8070bf1cc6"
   },
   {
    "id": "match.e160",
@@ -518,7 +545,8 @@
    "terms": [
     "decl.noten"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "64f35d3cce7234ee5bec62cdcd413c8070bf1cc6"
   },
   {
    "id": "match.e161",
@@ -536,7 +564,8 @@
    "terms": [
     "decl.nagashi"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "64f35d3cce7234ee5bec62cdcd413c8070bf1cc6"
   },
   {
    "id": "match.e162",
@@ -554,7 +583,8 @@
    "terms": [
     "decl.suukaikan"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "64f35d3cce7234ee5bec62cdcd413c8070bf1cc6"
   },
   {
    "id": "match.e163",
@@ -572,7 +602,8 @@
    "terms": [
     "score.hane"
    ],
-   "note": "跳満(하네만) 조합용 한 칸. 한 칸에 두 음절 → 사람 판단"
+   "note": "跳満(하네만) 조합용 한 칸. 한 칸에 두 음절 → 사람 판단",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
   },
   {
    "id": "match.e164",
@@ -590,7 +621,8 @@
    "terms": [
     "score.bai"
    ],
-   "note": "倍満"
+   "note": "倍満",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
   },
   {
    "id": "match.e165",
@@ -608,7 +640,8 @@
    "terms": [
     "score.kan"
    ],
-   "note": "満貫"
+   "note": "満貫",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
   },
   {
    "id": "match.e166",
@@ -626,7 +659,8 @@
    "terms": [
     "score.san"
    ],
-   "note": "三倍満"
+   "note": "三倍満",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
   },
   {
    "id": "match.e167",
@@ -644,7 +678,8 @@
    "terms": [
     "score.man"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
   },
   {
    "id": "match.e168",
@@ -662,7 +697,8 @@
    "terms": [
     "score.yaku"
    ],
-   "note": "役満"
+   "note": "役満",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
   },
   {
    "id": "match.e183",
@@ -680,7 +716,8 @@
    "terms": [
     "score.fu"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "e4f944bc74c3117ab3dd35b3fe8680467bfd2b7d"
   },
   {
    "id": "match.e184",
@@ -698,7 +735,8 @@
    "terms": [
     "score.han"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "e4f944bc74c3117ab3dd35b3fe8680467bfd2b7d"
   },
   {
    "id": "match.e185",
@@ -716,7 +754,8 @@
    "terms": [
     "score.ten"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "e4f944bc74c3117ab3dd35b3fe8680467bfd2b7d"
   },
   {
    "id": "match.e187",
@@ -732,7 +771,8 @@
    "ko": "패널 매치",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "e4f944bc74c3117ab3dd35b3fe8680467bfd2b7d"
   },
   {
    "id": "match.e190",
@@ -748,7 +788,8 @@
    "ko": "득점 |클리어!",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "41ff21243f37f9b4f6fcb3d9b4f9d8aca1fbe5e3"
   },
   {
    "id": "match.e191",
@@ -766,7 +807,8 @@
    "terms": [
     "yaku.立直"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e192",
@@ -784,7 +826,8 @@
    "terms": [
     "yaku.一発"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e193",
@@ -802,7 +845,8 @@
    "terms": [
     "yaku.門前清摸"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e194",
@@ -820,7 +864,8 @@
    "terms": [
     "yaku.嶺上開花"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e195",
@@ -838,7 +883,8 @@
    "terms": [
     "yaku.海底撈月"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e196",
@@ -856,7 +902,8 @@
    "terms": [
     "yaku.河底撈魚"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e197",
@@ -874,7 +921,8 @@
    "terms": [
     "yaku.断么九"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e198",
@@ -893,7 +941,8 @@
     "pun.pinfu",
     "yaku.平和"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e199",
@@ -911,7 +960,8 @@
    "terms": [
     "yaku.一盃口"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e200",
@@ -929,7 +979,8 @@
    "terms": [
     "yaku.一気通貫"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e201",
@@ -947,7 +998,8 @@
    "terms": [
     "yaku.三色同順"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e202",
@@ -965,7 +1017,8 @@
    "terms": [
     "yaku.全帯么"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e203",
@@ -983,7 +1036,8 @@
    "terms": [
     "yaku.七対子"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e204",
@@ -1001,7 +1055,8 @@
    "terms": [
     "yaku.Wリーチ"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e205",
@@ -1019,7 +1074,8 @@
    "terms": [
     "yaku.混一色"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e206",
@@ -1037,7 +1093,8 @@
    "terms": [
     "yaku.混老頭"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e207",
@@ -1055,7 +1112,8 @@
    "terms": [
     "yaku.対々和"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e208",
@@ -1073,7 +1131,8 @@
    "terms": [
     "yaku.三暗刻"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e209",
@@ -1091,7 +1150,8 @@
    "terms": [
     "yaku.三槓子"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e210",
@@ -1109,7 +1169,8 @@
    "terms": [
     "yaku.一気通貫"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e211",
@@ -1127,7 +1188,8 @@
    "terms": [
     "yaku.三色同順"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e212",
@@ -1145,7 +1207,8 @@
    "terms": [
     "yaku.三色同刻"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e213",
@@ -1163,7 +1226,8 @@
    "terms": [
     "yaku.三連刻"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e214",
@@ -1181,7 +1245,8 @@
    "terms": [
     "yaku.純全帯么"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e215",
@@ -1199,7 +1264,8 @@
    "terms": [
     "yaku.全帯么"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e216",
@@ -1217,7 +1283,8 @@
    "terms": [
     "yaku.一色三順"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e217",
@@ -1235,7 +1302,8 @@
    "terms": [
     "yaku.混一色"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e218",
@@ -1253,7 +1321,8 @@
    "terms": [
     "yaku.清老頭"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e219",
@@ -1271,7 +1340,8 @@
    "terms": [
     "yaku.二盃口"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e220",
@@ -1289,7 +1359,8 @@
    "terms": [
     "yaku.純全帯么"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e221",
@@ -1307,7 +1378,8 @@
    "terms": [
     "yaku.小三元"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e222",
@@ -1325,7 +1397,8 @@
    "terms": [
     "yaku.么九振切"
    ],
-   "note": "么九振切 = 끝패·자패만 버리는 역(流し満貫과 같은 역) → '유국만관' (사람 결정)"
+   "note": "么九振切 = 끝패·자패만 버리는 역(流し満貫과 같은 역) → '유국만관' (사람 결정)",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e223",
@@ -1343,7 +1416,8 @@
    "terms": [
     "yaku.清一色"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e224",
@@ -1361,7 +1435,8 @@
    "terms": [
     "yaku.清一色"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e225",
@@ -1379,7 +1454,8 @@
    "terms": [
     "yaku.天和"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e226",
@@ -1397,7 +1473,8 @@
    "terms": [
     "yaku.地和"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e227",
@@ -1415,7 +1492,8 @@
    "terms": [
     "yaku.人和"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e228",
@@ -1433,7 +1511,8 @@
    "terms": [
     "yaku.字一色"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e229",
@@ -1451,7 +1530,8 @@
    "terms": [
     "yaku.緑一色"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e230",
@@ -1469,7 +1549,8 @@
    "terms": [
     "yaku.大三元"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e231",
@@ -1487,7 +1568,8 @@
    "terms": [
     "yaku.四喜和"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e232",
@@ -1505,7 +1587,8 @@
    "terms": [
     "yaku.四暗刻"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e233",
@@ -1523,7 +1606,8 @@
    "terms": [
     "yaku.四槓子"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e234",
@@ -1541,7 +1625,8 @@
    "terms": [
     "yaku.国士無双"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e235",
@@ -1559,7 +1644,8 @@
    "terms": [
     "yaku.大車輪"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e236",
@@ -1577,7 +1663,8 @@
    "terms": [
     "yaku.十三不塔"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e237",
@@ -1595,7 +1682,8 @@
    "terms": [
     "yaku.九連宝燈"
    ],
-   "note": "역 이름"
+   "note": "역 이름",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e238",
@@ -1613,7 +1701,8 @@
    "terms": [
     "yaku.ドラ"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e239",
@@ -1631,7 +1720,8 @@
    "terms": [
     "yaku.ドラ"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e240",
@@ -1649,7 +1739,8 @@
    "terms": [
     "yaku.ドラ"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e241",
@@ -1667,7 +1758,8 @@
    "terms": [
     "yaku.ドラ"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e242",
@@ -1685,7 +1777,8 @@
    "terms": [
     "yaku.ドラ"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e243",
@@ -1703,7 +1796,8 @@
    "terms": [
     "yaku.ドラ"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e244",
@@ -1721,7 +1815,8 @@
    "terms": [
     "yaku.ドラ"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "29b7d4e2b90b448a4654df94e2d2001e7261c27e"
   },
   {
    "id": "match.e245",
@@ -1739,7 +1834,8 @@
    "terms": [
     "yaku.役牌"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e246",
@@ -1757,7 +1853,8 @@
    "terms": [
     "yaku.役牌"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e247",
@@ -1775,7 +1872,8 @@
    "terms": [
     "yaku.役牌"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e248",
@@ -1793,7 +1891,8 @@
    "terms": [
     "yaku.役牌"
    ],
-   "note": "색 변형"
+   "note": "색 변형",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e249",
@@ -1811,7 +1910,8 @@
    "terms": [
     "yaku.一色三順"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "854eef0adcf37ae1c525d9199d119fed8721dbe6"
   },
   {
    "id": "match.e282",
@@ -1827,7 +1927,8 @@
    "ko": "교환하고 싶은 패를\n골라 줘|♥",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
   },
   {
    "id": "match.e283",
@@ -1843,7 +1944,8 @@
    "ko": "C |버튼|으로 다 고르면\nB |버튼|을 눌러 줘",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   }
  ],
  "excluded": [

@@ -23,6 +23,8 @@ def main(argv=None) -> int:
                    help="'original' leaves the menu sprite bundle SELECT1.BIN unchanged")
     b.add_argument("--match", choices=["ko", "original"], default="ko",
                    help="'original' leaves the match-screen UI in the 13 stage overlays unchanged")
+    b.add_argument("--cards", choices=["ko", "original"], default="ko",
+                   help="'original' leaves the opponent introduction cards (AP*.BIN) unchanged")
     args = ap.parse_args(argv)
     spec = ROOT / "assets/title/title_ko.json" if args.title == "ko" else None
     sel = (ROOT / "translation/select1.json", ROOT / "assets/select1/layout.json",
@@ -32,6 +34,10 @@ def main(argv=None) -> int:
          "layout": ROOT / "assets/match/layout.json", "glossary": ROOT / "translation/glossary.json"},
         {"files": build.STAGE_FILES, "translation": ROOT / "translation/match2.json",
          "layout": ROOT / "assets/match/layout2.json", "glossary": ROOT / "translation/glossary.json"}]
+    if args.cards == "ko":
+        jobs += [{"files": [f], "translation": ROOT / f"translation/cards/{f[:-4]}.json",
+                  "layout": ROOT / "assets/cards/layout.json", "glossary": ROOT / "translation/glossary.json"}
+                 for f in build.CARD_FILES]
     try:
         m = build.build(args.source, args.out, spec, select1=sel, bundles=jobs)
     except build.BuildError as err:

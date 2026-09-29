@@ -1,0 +1,81 @@
+{
+ "_about": "APTSUKA.BIN 캐릭터 소개 카드 Yc 묶음 (0x51000), CRAM 이미지 0x50000. 5줄 = 이름/생일/나이/별자리/혈액형 (밀크 카드는 2줄).",
+ "file": "APTSUKA.BIN",
+ "files": [
+  "APTSUKA.BIN"
+ ],
+ "bundle_offset": "0x51000",
+ "palette_offset": "0x50000",
+ "id_prefix": "cards.APTSUKA.",
+ "entries": [
+  {
+   "id": "cards.APTSUKA.e000",
+   "entry": 0,
+   "offset": "0x5102c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x10",
+   "src_sha1": "a3fc805decd124fcb02a948a8f1417fce597f371",
+   "ja": "いちもんじ つかさ 一文字 つかさ\n12月16日生\n21才\nいて座\nB型",
+   "ko": "이치몬지 츠카사\n12월 16일생\n21세\n사수자리\nB형",
+   "state": "needs_review",
+   "terms": [
+    "name.tsukasa"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "cards.APTSUKA.e001",
+   "entry": 1,
+   "offset": "0x51c6c",
+   "size": [
+    320,
+    128
+   ],
+   "colr": "0x20",
+   "src_sha1": "f59889f744caa8121f747c83b50651a669925ef0",
+   "reason": "캐릭터 그림"
+  },
+  {
+   "id": "cards.APTSUKA.e002",
+   "entry": 2,
+   "offset": "0x56c6c",
+   "size": [
+    320,
+    32
+   ],
+   "colr": "0x30",
+   "src_sha1": "2ccc9d5b57136650feed50fe86e22578d1585797",
+   "reason": "VS (영어)"
+  },
+  {
+   "id": "cards.APTSUKA.e003",
+   "entry": 3,
+   "offset": "0x5806c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x0",
+   "src_sha1": "8a4e8d9ceaa8e68fadfda65d5545f3112a2a697d",
+   "reason": "눈·얼굴 그림(16bpp)"
+  },
+  {
+   "id": "cards.APTSUKA.e004",
+   "entry": 4,
+   "offset": "0x5906c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x0",
+   "src_sha1": "847567e26142f5ec7dfe01359f72352a3001413b",
+   "reason": "눈·얼굴 그림(16bpp)"
+  }
+ ]
+}

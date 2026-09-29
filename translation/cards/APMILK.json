@@ -1,0 +1,81 @@
+{
+ "_about": "APMILK.BIN 캐릭터 소개 카드 Yc 묶음 (0x51000), CRAM 이미지 0x50000. 5줄 = 이름/생일/나이/별자리/혈액형 (밀크 카드는 2줄).",
+ "file": "APMILK.BIN",
+ "files": [
+  "APMILK.BIN"
+ ],
+ "bundle_offset": "0x51000",
+ "palette_offset": "0x50000",
+ "id_prefix": "cards.APMILK.",
+ "entries": [
+  {
+   "id": "cards.APMILK.e000",
+   "entry": 0,
+   "offset": "0x5102c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x10",
+   "src_sha1": "4dee4344b9a6dad1d7e83000dda2cdb4b8c3a9be",
+   "ja": "みるく\nペット の うさぎ",
+   "ko": "밀크\n애완 토끼",
+   "state": "needs_review",
+   "terms": [
+    "name.milk"
+   ],
+   "note": "",
+   "palette_sha1": "fa42052d2a985f7a7d77d92c3f47412db5ac8fc5"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "cards.APMILK.e001",
+   "entry": 1,
+   "offset": "0x51c6c",
+   "size": [
+    320,
+    128
+   ],
+   "colr": "0x20",
+   "src_sha1": "23d8e18969acbb1982ebca9f5d6a68661267c179",
+   "reason": "캐릭터 그림"
+  },
+  {
+   "id": "cards.APMILK.e002",
+   "entry": 2,
+   "offset": "0x56c6c",
+   "size": [
+    320,
+    32
+   ],
+   "colr": "0x30",
+   "src_sha1": "c79b45d068f027182094ec9c17dc9ad94058446b",
+   "reason": "VS (영어)"
+  },
+  {
+   "id": "cards.APMILK.e003",
+   "entry": 3,
+   "offset": "0x5806c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x0",
+   "src_sha1": "7dfd50309ca42a80d7b0fa39cda34074c8377201",
+   "reason": "눈·얼굴 그림(16bpp)"
+  },
+  {
+   "id": "cards.APMILK.e004",
+   "entry": 4,
+   "offset": "0x5846c",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x0",
+   "src_sha1": "3590a74448649c93619c678bafb159df1891fd57",
+   "reason": "눈·얼굴 그림(16bpp)"
+  }
+ ]
+}

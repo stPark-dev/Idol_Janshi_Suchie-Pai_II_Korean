@@ -30,9 +30,17 @@ class Result:
     ids: list[str] = field(default_factory=list)
 
 
-def palette(data: bytes, colr: int) -> list[int]:
-    base = colr & 0x7F0
-    return [int.from_bytes(data[(base + k) * 2:(base + k) * 2 + 2], "big") for k in range(16)]
+def palette_bytes(data: bytes, colr: int, cram_offset: int = 0) -> bytes:
+    """The 32 bytes of colr's 16-colour bank in a CRAM image stored at cram_offset in the file."""
+    start = cram_offset + (colr & 0x7F0) * 2
+    if cram_offset < 0 or start + 32 > len(data):
+        raise Select1Error(f"palette_offset {cram_offset:#x}: bank {colr & 0x7F0:#x} lies outside the file")
+    return data[start:start + 32]
+
+
+def palette(data: bytes, colr: int, cram_offset: int = 0) -> list[int]:
+    raw = palette_bytes(data, colr, cram_offset)
+    return [int.from_bytes(raw[k * 2:k * 2 + 2], "big") for k in range(16)]
 
 
 def entries(data: bytes, bundle_offset: int) -> list[yc.Entry]:
@@ -96,7 +104,7 @@ def _unique(values, what: str) -> None:
 
 
 def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], glossary: dict | None,
-                  file_name: str | None) -> None:
+                  file_name: str | None, data: bytes = b"", cram: int = 0) -> None:
     items = tr["entries"]
     _unique([e["id"] for e in items], "translation id")
     _unique([e["entry"] for e in items], "translated entry number")
@@ -136,6 +144,9 @@ def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], gl
             off = off[file_name]
         if int(off, 16) != offs[i]:
             raise Select1Error(f"{e['id']}: offset {off} differs from bundle {offs[i]:#x}")
+        pal = palette_bytes(data, src.colr, cram)
+        if "palette_sha1" in e and hashlib.sha1(pal).hexdigest() != e["palette_sha1"]:
+            raise Select1Error(f"{e['id']}: palette bank {src.colr & 0x7F0:#x} differs from the translation baseline")
         if e["state"] not in STATES:
             raise Select1Error(f"{e['id']}: unknown state {e['state']!r}")
         if terms is not None:
@@ -154,14 +165,42 @@ def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAU
            glossary: Path | None = None, file_name: str | None = None) -> Result:
     tr = json.loads(Path(translation).read_text())
     lay = json.loads(Path(layout).read_text())
+    prefix = tr.get("id_prefix")
+    if prefix is not None and not prefix.endswith("."):
+        raise Select1Error(f"id_prefix {prefix!r} must end with '.'")
+    if prefix:
+        lay = {**lay, "entries": [s for s in lay["entries"] if s["id"].startswith(prefix)]}
+        if any(not e["id"].startswith(prefix) for e in tr["entries"]):
+            raise Select1Error(f"translation ids must start with id_prefix {prefix!r}")
     gl = json.loads(Path(glossary).read_text()) if glossary else None
     bundle = int(tr["bundle_offset"], 16)
     ents = entries(data, bundle)
-    _check_tables(tr, lay, ents, offsets(data, bundle), gl, file_name)
+    cram = int(tr.get("palette_offset", "0x0"), 16)
+    _check_tables(tr, lay, ents, offsets(data, bundle), gl, file_name, data, cram)
     by_id = {e["id"]: e for e in tr["entries"]}
+    templates = lay.get("templates", {})
     res = Result()
     states = Counter()
     for spec in lay["entries"]:
+        if "use" in spec:
+            if spec["use"] not in templates:
+                raise Select1Error(f"{spec['id']}: unknown layout template {spec['use']!r}")
+            tpl = templates[spec["use"]]
+            if "regions" in tpl and ({"lines", "box"} & set(spec)):
+                raise Select1Error(f"{spec['id']}: template {spec['use']!r} uses regions; entry cannot add lines/box")
+            spec = {**tpl, **{k: v for k, v in spec.items() if k not in ("use", "line_overrides")},
+                    "line_overrides": spec.get("line_overrides", {})}
+        if "regions" in spec and ({"lines", "box"} & set(spec)):
+            raise Select1Error(f"{spec['id']}: a spec has either regions or box/lines, not both")
+        if spec.get("line_overrides"):
+            if "lines" not in spec:
+                raise Select1Error(f"{spec['id']}: line_overrides needs a box/lines spec")
+            lines = [dict(ln) for ln in spec["lines"]]
+            for k, over in spec["line_overrides"].items():
+                if not (isinstance(k, str) and k.isdigit() and str(int(k)) == k and int(k) < len(lines)):
+                    raise Select1Error(f"{spec['id']}: bad line_overrides index {k!r}")
+                lines[int(k)].update(over)
+            spec = {**spec, "lines": lines}
         t = by_id[spec["id"]]
         i = t["entry"]
         src = ents[i]
@@ -174,7 +213,7 @@ def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAU
             for b in range(a + 1, len(regions)):
                 if _overlap(regions[a]["box"], regions[b]["box"]):
                     raise Select1Error(f"{spec['id']}: regions {a} and {b} overlap")
-        pal = palette(data, src.colr)
+        pal = palette(data, src.colr, cram)
         tex = Texture(src.width, src.height, bytearray(src.data))
         k = 0
         for region in regions:

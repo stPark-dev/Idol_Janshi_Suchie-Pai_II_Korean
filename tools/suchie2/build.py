@@ -61,9 +61,25 @@ JP_DISC1 = SourceProfile(
         "SECRET.BIN": (265775, 1048576),
         "HIDDEN.BIN": (266287, 1048576),
         "KAKUSHI.BIN": (266799, 1048576),
+        # opponent introduction cards and the save notice (docs/initial-survey.md §3.10)
+        "APALICE.BIN": (21042, 393216),
+        "APDEVIL.BIN": (26293, 393216),
+        "APKYOKO.BIN": (26485, 393216),
+        "APMILK.BIN": (24852, 393216),
+        "APRUMI.BIN": (24660, 393216),
+        "APSANAE.BIN": (23599, 393216),
+        "APSECIL.BIN": (26101, 393216),
+        "APSHIHO.BIN": (25909, 393216),
+        "APSUB.BIN": (27652, 32768),
+        "APTSUKA.BIN": (22279, 393216),
+        "APYUKI.BIN": (25717, 393216),
     },
 )
-STAGE_FILES = list(JP_DISC1.files)
+STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "SIHO.BIN", "SESIL.BIN",
+               "SESIL2.BIN", "HIMITU.BIN", "NAZO.BIN", "SECRET.BIN", "HIDDEN.BIN", "KAKUSHI.BIN"]
+CARD_FILES = ["APALICE.BIN", "APDEVIL.BIN", "APKYOKO.BIN", "APMILK.BIN", "APRUMI.BIN", "APSANAE.BIN",
+              "APSECIL.BIN", "APSHIHO.BIN", "APSUB.BIN", "APTSUKA.BIN", "APYUKI.BIN"]
+assert sorted(STAGE_FILES + CARD_FILES) == sorted(JP_DISC1.files)
 
 
 def _sha1(path: Path) -> str:
@@ -230,7 +246,10 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
     translation, layout = Path(job["translation"]), Path(job["layout"])
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
-    bundle = int(json.loads(translation.read_text())["bundle_offset"], 16)
+    tdoc = json.loads(translation.read_text())
+    bundle = int(tdoc["bundle_offset"], 16)
+    if "files" in tdoc and sorted(tdoc["files"]) != sorted(job["files"]):
+        raise BuildError(f"{translation.name}: job files {job['files']} differ from the table's files {tdoc['files']}")
     if profile.select1_bundle is not None and profile.select1_name in job["files"] and bundle != profile.select1_bundle:
         raise BuildError(f"{translation.name}: bundle offset {bundle:#x} differs from profile {profile.select1_bundle:#x}")
     if len(set(job["files"])) != len(job["files"]):

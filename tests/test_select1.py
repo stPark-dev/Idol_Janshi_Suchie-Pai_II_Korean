@@ -237,3 +237,111 @@ def test_rejects_bad_excluded_entries(tmp_path, tr_fn, msg):
     tr, lay = _mutate(tmp_path, data, off, tr_fn)
     with pytest.raises(select1.Select1Error, match=msg):
         select1.render(data, tr, lay)
+
+
+def test_layout_templates_are_merged_and_entries_override(tmp_path):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    lj = json.loads(lay.read_text())
+    lj["templates"] = {"band": {k: v for k, v in lj["entries"][1].items() if k != "id"}}
+    lj["entries"][1] = {"id": "x.e1", "use": "band"}
+    lay.write_text(json.dumps(lj))
+    a = select1.render(data, tr, lay).textures[1]
+    lj["entries"][1] = {"id": "x.e1", "use": "band", "allowed": [2, 3]}
+    lay.write_text(json.dumps(lj))
+    b = select1.render(data, tr, lay).textures[1]
+    px = lambda d: {(v >> 4) for v in d} | {(v & 15) for v in d}  # noqa: E731
+    assert 1 in px(a) and 1 not in px(b)
+    lj["entries"][1] = {"id": "x.e1", "use": "nope"}
+    lay.write_text(json.dumps(lj))
+    with pytest.raises(select1.Select1Error, match="template"):
+        select1.render(data, tr, lay)
+
+
+def test_palette_offset_reads_cram_image_elsewhere(tmp_path):
+    data, off = _file()
+    moved = bytes(0x40) + data[:0x40] + data[0x40:]          # CRAM image now at 0x40, bundle at 0x80
+    tr, lay = _tables(tmp_path, moved[0x40:], off)             # tables built from the same bundle bytes
+    t = json.loads(tr.read_text())
+    t["bundle_offset"] = hex(off + 0x40)
+    t["palette_offset"] = "0x40"
+    for e in t["entries"]:
+        e["offset"] = hex(int(e["offset"], 16) + 0x40)
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    assert select1.render(moved, tr, lay).textures == select1.render(data, *_tables(tmp_path, data, off)).textures
+
+
+def test_id_prefix_lets_several_tables_share_one_layout(tmp_path):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    lj = json.loads(lay.read_text())
+    lj["entries"].append({"id": "other.e0", "box": [0, 0, 1, 1], "allowed": [1], "lines": []})
+    lay.write_text(json.dumps(lj))
+    with pytest.raises(select1.Select1Error, match="unknown"):
+        select1.render(data, tr, lay)
+    t = json.loads(tr.read_text())
+    t["id_prefix"] = "x."
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    assert set(select1.render(data, tr, lay).textures) == {0, 1}
+    lj["entries"].pop(0)                                   # an x.* layout missing is still an error
+    lay.write_text(json.dumps(lj))
+    with pytest.raises(select1.Select1Error, match="no layout"):
+        select1.render(data, tr, lay)
+
+
+def test_line_overrides_change_one_line_of_a_template(tmp_path):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    lj = json.loads(lay.read_text())
+    lj["templates"] = {"band": {k: v for k, v in lj["entries"][1].items() if k != "id"}}
+    lj["entries"][1] = {"id": "x.e1", "use": "band", "line_overrides": {"0": {"size": 20}}}
+    lay.write_text(json.dumps(lj))
+    with pytest.raises(select1.Select1Error, match="does not fit"):   # 20px cannot fit a 16px texture
+        select1.render(data, tr, lay)
+    lj["entries"][1]["line_overrides"] = {"5": {"size": 8}}
+    lay.write_text(json.dumps(lj))
+    with pytest.raises(select1.Select1Error, match="line_overrides"):
+        select1.render(data, tr, lay)
+
+
+@pytest.mark.parametrize("off,msg", [("0x100000", "palette_offset"), ("-0x10", "palette_offset")])
+def test_palette_offset_must_hold_a_cram_image(tmp_path, off, msg):
+    data, o = _file()
+    tr, lay = _mutate(tmp_path, data, o, lambda t: t.update(palette_offset=off))
+    with pytest.raises(select1.Select1Error, match=msg):
+        select1.render(data, tr, lay)
+
+
+def test_palette_sha1_is_a_protected_field(tmp_path):
+    data, o = _file()
+    good = hashlib.sha1(select1.palette_bytes(data, 0x10, 0)).hexdigest()
+    tr, lay = _mutate(tmp_path, data, o, lambda t: [e.update(palette_sha1=good) for e in t["entries"]])
+    assert select1.render(data, tr, lay).textures
+    tr, lay = _mutate(tmp_path, data, o, lambda t: [e.update(palette_sha1="0" * 40) for e in t["entries"]])
+    with pytest.raises(select1.Select1Error, match="palette"):
+        select1.render(data, tr, lay)
+
+
+@pytest.mark.parametrize("entry,msg", [
+    ({"id": "x.e1", "use": "reg", "line_overrides": {"0": {"size": 8}}}, "line_overrides"),
+    ({"id": "x.e1", "use": "reg", "lines": [{"size": 8, "x": 0, "y": 0, "fill": 1}]}, "regions"),
+    ({"id": "x.e1", "use": "band", "line_overrides": {"a": {}}}, "line_overrides"),
+    ({"id": "x.e1", "use": "band", "line_overrides": {"00": {}}}, "line_overrides"),
+])
+def test_template_merge_rejects_ambiguous_specs(tmp_path, entry, msg):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    lj = json.loads(lay.read_text())
+    band = {k: v for k, v in lj["entries"][1].items() if k != "id"}
+    lj["templates"] = {"band": band, "reg": {"regions": [band]}}
+    lj["entries"][1] = entry
+    lay.write_text(json.dumps(lj))
+    with pytest.raises(select1.Select1Error, match=msg):
+        select1.render(data, tr, lay)
+
+
+def test_id_prefix_must_end_with_a_dot(tmp_path):
+    data, off = _file()
+    tr, lay = _mutate(tmp_path, data, off, lambda t: t.update(id_prefix="x"))
+    with pytest.raises(select1.Select1Error, match="id_prefix"):
+        select1.render(data, tr, lay)

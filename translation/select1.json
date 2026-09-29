@@ -19,7 +19,8 @@
    "terms": [
     "diff.easy"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "f56de43f5704b16103ccd7267897fce998405d5d"
   },
   {
    "id": "select1.e001",
@@ -37,7 +38,8 @@
    "terms": [
     "diff.normal"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "f56de43f5704b16103ccd7267897fce998405d5d"
   },
   {
    "id": "select1.e002",
@@ -55,7 +57,8 @@
    "terms": [
     "diff.hard"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "f56de43f5704b16103ccd7267897fce998405d5d"
   },
   {
    "id": "select1.e005",
@@ -73,7 +76,8 @@
    "terms": [
     "ui.menu"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "09fbb5654062d727efecd1c3dcd462e7c7c538b1"
   },
   {
    "id": "select1.e008",
@@ -91,7 +95,8 @@
    "terms": [
     "ui.select"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "4e8bf56ddce0d64b1ffbc0efd2d2cc558f77a2ba"
   },
   {
    "id": "select1.e009",
@@ -109,7 +114,8 @@
    "terms": [
     "ui.select"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "20cd92c888a50429b3ca7bd2c6cd4f57b74ab245"
   },
   {
    "id": "select1.e010",
@@ -125,7 +131,8 @@
    "ko": "사운드 테스트",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "665e20713b57eec3323585771314691b4e6d6301"
   },
   {
    "id": "select1.e011",
@@ -143,7 +150,8 @@
    "terms": [
     "ui.select"
    ],
-   "note": "메뉴 버튼"
+   "note": "메뉴 버튼",
+   "palette_sha1": "3918f67719625459c6dae9204d388336ca95b6a5"
   },
   {
    "id": "select1.e012",
@@ -161,7 +169,8 @@
    "terms": [
     "ui.select"
    ],
-   "note": "스테이지 선택 화면 제목(색만 다름)"
+   "note": "스테이지 선택 화면 제목(색만 다름)",
+   "palette_sha1": "7a288a734afc34cfbf982c3abafed8cb87e9384e"
   },
   {
    "id": "select1.e013",
@@ -179,7 +188,8 @@
    "terms": [
     "name.alice"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "66cdf50e4dbadc100abf42185769a46fd65e7c2d"
   },
   {
    "id": "select1.e014",
@@ -197,7 +207,8 @@
    "terms": [
     "name.tsukasa"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "eb8632ea25b7402ee1917bad7e7f3fa8d31cbb6e"
   },
   {
    "id": "select1.e015",
@@ -215,7 +226,8 @@
    "terms": [
     "name.sanae"
    ],
-   "note": "성 읽기 まきえだ: pixiv 백과사전"
+   "note": "성 읽기 まきえだ: pixiv 백과사전",
+   "palette_sha1": "be26c94971f0443e00fa714e316fde4e7620d66a"
   },
   {
    "id": "select1.e016",
@@ -233,7 +245,8 @@
    "terms": [
     "name.milk"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "172ff6584c77cc0edf93feaaf803455a3bdd0adc"
   },
   {
    "id": "select1.e017",
@@ -249,7 +262,8 @@
    "ko": "도라를 |좋아하는\n소녀",
    "state": "needs_review",
    "terms": [],
-   "note": "ドラ=마작 도라. 색 구간 3개"
+   "note": "ドラ=마작 도라. 색 구간 3개",
+   "palette_sha1": "884abd447deea3d75f7fca8ded40e42f0966117e"
   },
   {
    "id": "select1.e018",
@@ -267,7 +281,8 @@
    "terms": [
     "pun.pinfu"
    ],
-   "note": "平和=마작 역 핑후 말장난. 사람 결정: '핑후를 사랑하는 용사'"
+   "note": "平和=마작 역 핑후 말장난. 사람 결정: '핑후를 사랑하는 용사'",
+   "palette_sha1": "884abd447deea3d75f7fca8ded40e42f0966117e"
   },
   {
    "id": "select1.e019",
@@ -283,7 +298,8 @@
    "ko": "안커 |계열이\n특기인 아이",
    "state": "needs_review",
    "terms": [],
-   "note": "アンコ=안커(암각). 색 구간은 원문과 같게 나눔"
+   "note": "アンコ=안커(암각). 색 구간은 원문과 같게 나눔",
+   "palette_sha1": "884abd447deea3d75f7fca8ded40e42f0966117e"
   },
   {
    "id": "select1.e020",
@@ -299,7 +315,8 @@
    "ko": "일색을 |좋아하는\n토끼",
    "state": "needs_review",
    "terms": [],
-   "note": "染め=일색(혼일색·청일색). ウサちゃん 어감 → 사람 판단"
+   "note": "染め=일색(혼일색·청일색). ウサちゃん 어감 → 사람 판단",
+   "palette_sha1": "884abd447deea3d75f7fca8ded40e42f0966117e"
   },
   {
    "id": "select1.e021",
@@ -315,7 +332,8 @@
    "ko": "테마곡\nNG집",
    "state": "needs_review",
    "terms": [],
-   "note": "명패 2개"
+   "note": "명패 2개",
+   "palette_sha1": "6b2c8677b5a8f9b06152d4bfe24b322ad0011ba4"
   },
   {
    "id": "select1.e022",
@@ -331,7 +349,8 @@
    "ko": "아이우에 oh my god\n― 눈물은 바람에 ―\n노래: 카나이 미카",
    "state": "needs_review",
    "terms": [],
-   "note": "곡 제목 번역 방침 → 사람 판단"
+   "note": "곡 제목 번역 방침 → 사람 판단",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e023",
@@ -347,7 +366,8 @@
    "ko": "순정 LOVE 게임\n노래: 요시다 코나미",
    "state": "needs_review",
    "terms": [],
-   "note": "遊戯에 ゲーム 루비. 루비 생략안"
+   "note": "遊戯에 ゲーム 루비. 루비 생략안",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e024",
@@ -363,7 +383,8 @@
    "ko": "여신은 쇼트!\n오는 사람 막지 않아\n노래: 마츠모토 리카",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e025",
@@ -379,7 +400,8 @@
    "ko": "Please change me now\n노래: 미즈타니 유코",
    "state": "needs_review",
    "terms": [],
-   "note": "영어 제목 유지"
+   "note": "영어 제목 유지",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e026",
@@ -395,7 +417,8 @@
    "ko": "젤리 발바닥 먀~먀\n노래: 니시하라 쿠미코",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e027",
@@ -411,7 +434,8 @@
    "ko": "입술의 fortune\n노래: 타카하시 미키",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e028",
@@ -429,7 +453,8 @@
    "terms": [
     "name.suchie"
    ],
-   "note": "再見 = 중국어 작별 인사, 루비 ツァイツェン"
+   "note": "再見 = 중국어 작별 인사, 루비 ツァイツェン",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e049",
@@ -445,7 +470,8 @@
    "ko": "미소녀 작사~",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e050",
@@ -461,7 +487,8 @@
    "ko": "프레젠티드~",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e051",
@@ -477,7 +504,8 @@
    "ko": "토끼가 말했다~",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e052",
@@ -493,7 +521,8 @@
    "ko": "번쩍번쩍과 수수수수~",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e053",
@@ -509,7 +538,8 @@
    "ko": "괜찮으시다면~",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e054",
@@ -525,7 +555,8 @@
    "ko": "지쳐 있는 거지~",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e055",
@@ -541,7 +572,8 @@
    "ko": "메키시토(?)",
    "state": "needs_review",
    "terms": [],
-   "note": "ZZG.AIF: 퀴즈 오답 NG('ブブー', '국 이름', '답은 뉴델리'). 제목은 틀린 대답을 그대로 옮긴 것으로 보여 음역 유지"
+   "note": "ZZG.AIF: 퀴즈 오답 NG('ブブー', '국 이름', '답은 뉴델리'). 제목은 틀린 대답을 그대로 옮긴 것으로 보여 음역 유지",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e056",
@@ -557,7 +589,8 @@
    "ko": "마법으로 뇌가… 어라?",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e057",
@@ -573,7 +606,8 @@
    "ko": "방위군 제1화",
    "state": "needs_review",
    "terms": [],
-   "note": "ぼーえーぐん=防衛軍"
+   "note": "ぼーえーぐん=防衛軍",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e058",
@@ -589,7 +623,8 @@
    "ko": "방위군 제2화",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e059",
@@ -605,7 +640,8 @@
    "ko": "방위군 제3화",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e060",
@@ -621,7 +657,8 @@
    "ko": "방위군 최종회",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e061",
@@ -637,7 +674,8 @@
    "ko": "프레젠티드~",
    "state": "needs_review",
    "terms": [],
-   "note": "50과 같은 말, 표기만 히라가나/가타카나"
+   "note": "50과 같은 말, 표기만 히라가나/가타카나",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e062",
@@ -653,7 +691,8 @@
    "ko": "우선은! 소 안심의~",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e063",
@@ -669,7 +708,8 @@
    "ko": "거리 불빛(창문…입니다)",
    "state": "needs_review",
    "terms": [],
-   "note": "칸 너비 144px(12px 글꼴)에 맞추려고 '거리의 불빛(창문의…입니다)'를 줄임 → 사람 확인"
+   "note": "칸 너비 144px(12px 글꼴)에 맞추려고 '거리의 불빛(창문의…입니다)'를 줄임 → 사람 확인",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e064",
@@ -685,7 +725,8 @@
    "ko": "페코페코피냥으로",
    "state": "needs_review",
    "terms": [],
-   "note": "NG집 16번 = ZZP.AIF (NG집 16개와 ZZA~ZZP 16개의 순서 대응을 음성 받아쓰기로 확인). 성우가 토끼 말투('~ぴょん')의 뜻 없는 말놀이 대사 'つまりぽんぽこがぺこぺこぴーにゃんで…'를 꼬여서 반복하는 장면이라, 사람 지시('인게임 흐름을 보고 번역')에 따라 들리는 소리를 살려 음역"
+   "note": "NG집 16번 = ZZP.AIF (NG집 16개와 ZZA~ZZP 16개의 순서 대응을 음성 받아쓰기로 확인). 성우가 토끼 말투('~ぴょん')의 뜻 없는 말놀이 대사 'つまりぽんぽこがぺこぺこぴーにゃんで…'를 꼬여서 반복하는 장면이라, 사람 지시('인게임 흐름을 보고 번역')에 따라 들리는 소리를 살려 음역",
+   "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
   },
   {
    "id": "select1.e072",
@@ -703,7 +744,8 @@
    "terms": [
     "ui.choose"
    ],
-   "note": "방향키 아이콘 버튼"
+   "note": "방향키 아이콘 버튼",
+   "palette_sha1": "5cdf0f36e2e2014b9cefa2bb1907baacadb06c2f"
   },
   {
    "id": "select1.e073",
@@ -721,7 +763,8 @@
    "terms": [
     "ui.choose"
    ],
-   "note": "십자 아이콘 버튼"
+   "note": "십자 아이콘 버튼",
+   "palette_sha1": "5cdf0f36e2e2014b9cefa2bb1907baacadb06c2f"
   },
   {
    "id": "select1.e074",
@@ -737,7 +780,8 @@
    "ko": "결정",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "c21ed4f63c59e4581ad25363549c0d629241a6aa"
   },
   {
    "id": "select1.e075",
@@ -753,7 +797,8 @@
    "ko": "연주",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "c21ed4f63c59e4581ad25363549c0d629241a6aa"
   },
   {
    "id": "select1.e076",
@@ -771,7 +816,8 @@
    "terms": [
     "ui.menu"
    ],
-   "note": "B 버튼"
+   "note": "B 버튼",
+   "palette_sha1": "c21ed4f63c59e4581ad25363549c0d629241a6aa"
   },
   {
    "id": "select1.e077",
@@ -787,7 +833,8 @@
    "ko": "중지",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "c21ed4f63c59e4581ad25363549c0d629241a6aa"
   },
   {
    "id": "select1.e093",
@@ -807,7 +854,8 @@
     "name.cecil",
     "name.yuki"
    ],
-   "note": "패널. VS는 유지. 줄 순서 = 배치 영역 순서(라벨 L1~L4, R5~R7, 이름 L4, R5~R7)"
+   "note": "패널. VS는 유지. 줄 순서 = 배치 영역 순서(라벨 L1~L4, R5~R7, 이름 L4, R5~R7)",
+   "palette_sha1": "0cb237df30ab3fe3c5596bb3daa8df2c1cf01825"
   },
   {
    "id": "select1.e094",
@@ -830,7 +878,8 @@
     "name.tsukasa",
     "ui.omake"
    ],
-   "note": "패널. VS는 유지. 줄 순서 = 배치 영역 순서(라벨 L1~L3, R4~R5, 이름 L1~L3, R4~R5, おまけ)"
+   "note": "패널. VS는 유지. 줄 순서 = 배치 영역 순서(라벨 L1~L3, R4~R5, 이름 L1~L3, R4~R5, おまけ)",
+   "palette_sha1": "0cb237df30ab3fe3c5596bb3daa8df2c1cf01825"
   },
   {
    "id": "select1.e095",
@@ -848,7 +897,8 @@
    "terms": [
     "name.alice"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "0cb237df30ab3fe3c5596bb3daa8df2c1cf01825"
   },
   {
    "id": "select1.e096",
@@ -866,7 +916,8 @@
    "terms": [
     "name.tsukasa"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "0cb237df30ab3fe3c5596bb3daa8df2c1cf01825"
   },
   {
    "id": "select1.e097",
@@ -884,7 +935,8 @@
    "terms": [
     "name.sanae"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "0cb237df30ab3fe3c5596bb3daa8df2c1cf01825"
   },
   {
    "id": "select1.e098",
@@ -902,7 +954,8 @@
    "terms": [
     "name.rumi"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "0cb237df30ab3fe3c5596bb3daa8df2c1cf01825"
   },
   {
    "id": "select1.e099",
@@ -918,7 +971,8 @@
    "ko": "진짜 엔딩을\n보지 않으면",
    "state": "needs_review",
    "terms": [],
-   "note": "100과 한 문장. 한국어는 칸마다 두 줄로 나눠 경계에 걸치는 줄이 없게 함"
+   "note": "100과 한 문장. 한국어는 칸마다 두 줄로 나눠 경계에 걸치는 줄이 없게 함",
+   "palette_sha1": "3b675b2fb002e8a079b9b6dc3a1299cebd36ecd5"
   },
   {
    "id": "select1.e100",
@@ -936,7 +990,8 @@
    "terms": [
     "ui.select"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "3b675b2fb002e8a079b9b6dc3a1299cebd36ecd5"
   },
   {
    "id": "select1.e101",
@@ -952,7 +1007,8 @@
    "ko": "전원 클리어\n하면…!?",
    "state": "needs_review",
    "terms": [],
-   "note": ""
+   "note": "",
+   "palette_sha1": "1faa82af90e3294f99d4faf773427938c9150260"
   },
   {
    "id": "select1.e102",
@@ -971,7 +1027,8 @@
     "name.suchie",
     "name.yuki"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "19141721649e34e448663372fbda05f999782cfd"
   },
   {
    "id": "select1.e138",
@@ -990,7 +1047,8 @@
     "name.suchie",
     "ui.omake"
    ],
-   "note": ""
+   "note": "",
+   "palette_sha1": "0634fddcf3464dea7fba38df21a3056324bdc809"
   }
  ],
  "excluded": [

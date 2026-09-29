@@ -1,0 +1,81 @@
+{
+ "_about": "APSANAE.BIN 캐릭터 소개 카드 Yc 묶음 (0x51000), CRAM 이미지 0x50000. 5줄 = 이름/생일/나이/별자리/혈액형 (밀크 카드는 2줄).",
+ "file": "APSANAE.BIN",
+ "files": [
+  "APSANAE.BIN"
+ ],
+ "bundle_offset": "0x51000",
+ "palette_offset": "0x50000",
+ "id_prefix": "cards.APSANAE.",
+ "entries": [
+  {
+   "id": "cards.APSANAE.e000",
+   "entry": 0,
+   "offset": "0x5102c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x10",
+   "src_sha1": "dc5cf765a4c8627367222e491b40c1387e5c2f0f",
+   "ja": "まきえだ さなえ 槙枝 早苗\n6月25日生\n23才\nかに座\nAB型(RH-)",
+   "ko": "마키에다 사나에\n6월 25일생\n23세\n게자리\nAB형(RH-)",
+   "state": "needs_review",
+   "terms": [
+    "name.sanae"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "7b144d018ba26949f2bbbd0f8fafbd414ae6a2ab"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "cards.APSANAE.e001",
+   "entry": 1,
+   "offset": "0x51c6c",
+   "size": [
+    320,
+    128
+   ],
+   "colr": "0x20",
+   "src_sha1": "693d3c0fd7e82fbe4a49c612877fd7fd6761ebb5",
+   "reason": "캐릭터 그림"
+  },
+  {
+   "id": "cards.APSANAE.e002",
+   "entry": 2,
+   "offset": "0x56c6c",
+   "size": [
+    320,
+    32
+   ],
+   "colr": "0x30",
+   "src_sha1": "2ccc9d5b57136650feed50fe86e22578d1585797",
+   "reason": "VS (영어)"
+  },
+  {
+   "id": "cards.APSANAE.e003",
+   "entry": 3,
+   "offset": "0x5806c",
+   "size": [
+    64,
+    24
+   ],
+   "colr": "0x0",
+   "src_sha1": "22615cc47be251917e746cf65510e2390cca6cd9",
+   "reason": "눈·얼굴 그림(16bpp)"
+  },
+  {
+   "id": "cards.APSANAE.e004",
+   "entry": 4,
+   "offset": "0x58c6c",
+   "size": [
+    64,
+    24
+   ],
+   "colr": "0x0",
+   "src_sha1": "d5ecbb14789ad1f673cb97f40aa909049f415e58",
+   "reason": "눈·얼굴 그림(16bpp)"
+  }
+ ]
+}

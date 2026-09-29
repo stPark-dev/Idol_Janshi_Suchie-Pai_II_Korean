@@ -48,7 +48,8 @@
    "terms": [
     "ui.omakase"
    ],
-   "note": "おまかせ=맡김(자동 진행). 색 변형 2종"
+   "note": "おまかせ=맡김(자동 진행). 색 변형 2종",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   },
   {
    "id": "match2.e114",
@@ -80,7 +81,8 @@
    "terms": [
     "ui.omakase"
    ],
-   "note": "おまかせ=맡김(자동 진행). 색 변형 2종"
+   "note": "おまかせ=맡김(자동 진행). 색 변형 2종",
+   "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
   }
  ],
  "excluded": [

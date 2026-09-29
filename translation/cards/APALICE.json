@@ -1,0 +1,81 @@
+{
+ "_about": "APALICE.BIN 캐릭터 소개 카드 Yc 묶음 (0x51000), CRAM 이미지 0x50000. 5줄 = 이름/생일/나이/별자리/혈액형 (밀크 카드는 2줄).",
+ "file": "APALICE.BIN",
+ "files": [
+  "APALICE.BIN"
+ ],
+ "bundle_offset": "0x51000",
+ "palette_offset": "0x50000",
+ "id_prefix": "cards.APALICE.",
+ "entries": [
+  {
+   "id": "cards.APALICE.e000",
+   "entry": 0,
+   "offset": "0x5102c",
+   "size": [
+    112,
+    56
+   ],
+   "colr": "0x10",
+   "src_sha1": "1b823ecc8aab7f9399b08764f2c8f7446ab7781e",
+   "ja": "しのはら 篠原 ありす\n1月28日生\n16才\nみずがめ座\nO型",
+   "ko": "시노하라 아리스\n1월 28일생\n16세\n물병자리\nO형",
+   "state": "needs_review",
+   "terms": [
+    "name.alice"
+   ],
+   "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
+   "palette_sha1": "fa42052d2a985f7a7d77d92c3f47412db5ac8fc5"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "cards.APALICE.e001",
+   "entry": 1,
+   "offset": "0x51c6c",
+   "size": [
+    320,
+    128
+   ],
+   "colr": "0x20",
+   "src_sha1": "7dc959956050ea61f6f81d4e273b733520b3f1ac",
+   "reason": "캐릭터 그림"
+  },
+  {
+   "id": "cards.APALICE.e002",
+   "entry": 2,
+   "offset": "0x56c6c",
+   "size": [
+    320,
+    32
+   ],
+   "colr": "0x30",
+   "src_sha1": "2ccc9d5b57136650feed50fe86e22578d1585797",
+   "reason": "VS (영어)"
+  },
+  {
+   "id": "cards.APALICE.e003",
+   "entry": 3,
+   "offset": "0x5806c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x0",
+   "src_sha1": "5a65066a7bae64c07ad78a8351fed093db76a4de",
+   "reason": "눈·얼굴 그림(16bpp)"
+  },
+  {
+   "id": "cards.APALICE.e004",
+   "entry": 4,
+   "offset": "0x5906c",
+   "size": [
+    64,
+    32
+   ],
+   "colr": "0x0",
+   "src_sha1": "868e333d9f7219a2e8cb339b3030fb39e817ecb6",
+   "reason": "눈·얼굴 그림(16bpp)"
+  }
+ ]
+}

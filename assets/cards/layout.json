@@ -1,0 +1,469 @@
+{
+ "_about": "캐릭터 소개 카드 배치 (AP*.BIN 11개가 같이 씀; 번역 표의 id_prefix로 나눔). card = 이름/생일/나이/별자리/혈액형, pet = 밀크 카드, save = 저장 안내. 모든 줄은 픽셀 모드(aa false). 이름 줄 크기는 칸에 들어가는 최대값(line_overrides).",
+ "font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+ "templates": {
+  "card": {
+   "box": [
+    0,
+    0,
+    112,
+    56
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 14,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      2,
+      112,
+      28
+     ],
+     "fill": {
+      "v": [
+       4,
+       3,
+       2,
+       1
+      ]
+     },
+     "outline": 14,
+     "aa": false
+    },
+    {
+     "size": 11,
+     "x": 6,
+     "y": "center",
+     "area": [
+      0,
+      28,
+      112,
+      41
+     ],
+     "fill": 8,
+     "outline": 14,
+     "aa": false
+    },
+    {
+     "size": 11,
+     "x": "right",
+     "margin": 8,
+     "y": "center",
+     "area": [
+      0,
+      28,
+      112,
+      41
+     ],
+     "fill": 8,
+     "outline": 14,
+     "aa": false
+    },
+    {
+     "size": 11,
+     "x": "right",
+     "margin": 4,
+     "y": "center",
+     "area": [
+      0,
+      41,
+      74,
+      55
+     ],
+     "fill": 10,
+     "outline": 14,
+     "aa": false
+    },
+    {
+     "size": 11,
+     "x": "center",
+     "y": "center",
+     "area": [
+      76,
+      41,
+      112,
+      55
+     ],
+     "fill": 12,
+     "outline": 14,
+     "aa": false
+    }
+   ]
+  },
+  "pet": {
+   "box": [
+    0,
+    0,
+    112,
+    56
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 18,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      8,
+      112,
+      34
+     ],
+     "fill": {
+      "v": [
+       4,
+       3,
+       2,
+       1
+      ]
+     },
+     "outline": 14,
+     "aa": false
+    },
+    {
+     "size": 11,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      36,
+      112,
+      52
+     ],
+     "fill": 10,
+     "outline": 14,
+     "aa": false
+    }
+   ]
+  },
+  "save": {
+   "box": [
+    0,
+    0,
+    256,
+    48
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 16,
+     "x": 2,
+     "y": "center",
+     "area": [
+      0,
+      0,
+      256,
+      24
+     ],
+     "fill": [
+      {
+       "v": [
+        3,
+        4
+       ]
+      },
+      {
+       "v": [
+        5,
+        6
+       ]
+      },
+      {
+       "v": [
+        3,
+        4
+       ]
+      }
+     ],
+     "outline": 2,
+     "shadow": {
+      "idx": 15,
+      "dx": 1,
+      "dy": 1
+     },
+     "aa": false
+    },
+    {
+     "size": 16,
+     "x": "right",
+     "margin": 8,
+     "y": "center",
+     "area": [
+      0,
+      24,
+      256,
+      48
+     ],
+     "fill": [
+      {
+       "v": [
+        3,
+        4
+       ]
+      },
+      {
+       "v": [
+        11,
+        12
+       ]
+      },
+      {
+       "v": [
+        3,
+        4
+       ]
+      },
+      {
+       "v": [
+        7,
+        8
+       ]
+      }
+     ],
+     "outline": 2,
+     "shadow": {
+      "idx": 15,
+      "dx": 1,
+      "dy": 1
+     },
+     "aa": false
+    }
+   ]
+  }
+ },
+ "entries": [
+  {
+   "id": "cards.APALICE.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 16
+    }
+   }
+  },
+  {
+   "id": "cards.APDEVIL.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APKYOKO.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APMILK.e000",
+   "use": "pet",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APRUMI.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APRUMI.e007",
+   "use": "pet",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APSANAE.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 17
+    },
+    "3": {
+     "area": [
+      0,
+      41,
+      40,
+      55
+     ]
+    },
+    "4": {
+     "size": 10,
+     "area": [
+      42,
+      41,
+      112,
+      55
+     ]
+    }
+   }
+  },
+  {
+   "id": "cards.APSECIL.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APSHIHO.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APSUB.e000",
+   "use": "save"
+  },
+  {
+   "id": "cards.APSUB.e001",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 17
+    }
+   }
+  },
+  {
+   "id": "cards.APSUB.e002",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APSUB.e003",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APSUB.e004",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  },
+  {
+   "id": "cards.APSUB.e005",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 17
+    }
+   }
+  },
+  {
+   "id": "cards.APSUB.e006",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 16
+    }
+   }
+  },
+  {
+   "id": "cards.APTSUKA.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 16
+    }
+   }
+  },
+  {
+   "id": "cards.APYUKI.e000",
+   "use": "card",
+   "line_overrides": {
+    "0": {
+     "size": 18
+    }
+   }
+  }
+ ]
+}
