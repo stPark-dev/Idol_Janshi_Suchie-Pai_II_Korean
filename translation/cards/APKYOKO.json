@@ -19,11 +19,12 @@
    "colr": "0x10",
    "src_sha1": "b53384924a47d070ea4934d01a393165041fe756",
    "ja": "みさき きょうこ 御崎 恭子\n11月24日生\n18才\nいて座\nA型",
-   "ko": "미사키 쿄코\n11월 24일생\n18세\n사수자리\nA형",
+   "ko": "미사키 쿄코\n11월 24일생\n18세\n궁수자리\nA형",
    "state": "needs_review",
    "terms": [
     "name.kyoko",
-    "name.kyoko_full"
+    "name.kyoko_full",
+    "zodiac.sagittarius"
    ],
    "note": "원문 첫 줄의 가나는 후리가나(한국어 카드에서는 지움)",
    "palette_sha1": "fa42052d2a985f7a7d77d92c3f47412db5ac8fc5"

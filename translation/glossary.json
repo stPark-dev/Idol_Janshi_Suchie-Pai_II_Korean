@@ -83,8 +83,8 @@
    "id": "name.alice",
    "ja": "篠原ありす",
    "ko": "시노하라 아리스",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용 (이름 자체는 사람 확인 전)",
    "scope": "title"
   },
@@ -101,8 +101,8 @@
    "id": "name.sanae",
    "ja": "槙枝早苗",
    "ko": "마키에다 사나에",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성 읽기 まきえだ (pixiv 백과사전)",
    "scope": "title"
   },
@@ -110,8 +110,8 @@
    "id": "name.rumi",
    "ja": "佐々木留美",
    "ko": "사사키 루미",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "",
    "scope": "title"
   },
@@ -794,8 +794,8 @@
    "id": "name.cecil_full",
    "ja": "セシル・デリンジャー",
    "ko": "세실 데린저",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -803,8 +803,8 @@
    "id": "name.kyoko_full",
    "ja": "御崎恭子",
    "ko": "미사키 쿄코",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -812,8 +812,8 @@
    "id": "name.shiho_full",
    "ja": "片桐志穂",
    "ko": "카타기리 시호",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -821,8 +821,8 @@
    "id": "name.yuki_full",
    "ja": "水野佑紀",
    "ko": "미즈노 유키",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -830,8 +830,8 @@
    "id": "name.miyuri",
    "ja": "桜井美優里",
    "ko": "사쿠라이 미유리",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -839,8 +839,8 @@
    "id": "name.mai",
    "ja": "天野麻衣",
    "ko": "아마노 마이",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -848,8 +848,8 @@
    "id": "name.erika",
    "ja": "西野絵利佳",
    "ko": "니시노 에리카",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -857,8 +857,8 @@
    "id": "name.rie",
    "ja": "南條理恵",
    "ko": "난조 리에",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -866,8 +866,8 @@
    "id": "name.sayuri",
    "ja": "河本小百合",
    "ko": "카와모토 사유리",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -875,8 +875,8 @@
    "id": "name.reika",
    "ja": "橘麗華",
    "ko": "타치바나 레이카",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "통용 표기 규칙 적용",
    "scope": "title"
   },
@@ -884,8 +884,8 @@
    "id": "term.ankou",
    "ja": "暗刻(アンコ)",
    "ko": "안커",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "마작 용어 통용 표기(작혼식, 산안커와 같은 계열)",
    "scope": "opening"
   },
@@ -893,8 +893,8 @@
    "id": "term.kazehai",
    "ja": "風牌(フウパイ)",
    "ko": "풍패",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "마작 용어 통용 표기",
    "scope": "opening"
   },
@@ -902,8 +902,8 @@
    "id": "term.jihai",
    "ja": "字牌(ジハイ)",
    "ko": "자패",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "마작 용어 통용 표기",
    "scope": "opening"
   },
@@ -937,28 +937,28 @@
   {
    "id": "epithet.bridge",
    "ja": "ブリッジ",
-   "ko": "브릿지",
-   "state": "proposed",
-   "approved_by": "",
-   "note": "오프닝 별명 (유키). 뜻(카드 게임/체조 자세)은 인게임에서 미확인",
+   "ko": "브리지",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
+   "note": "ブリッジ = 작품 안에서 일기통관(一気通貫) 쌓기를 가리키는 별칭. 원문의 독특한 표현을 살려 음역(일기통관으로 바꾸지 않음). 표기는 브릿지가 아닌 브리지",
    "scope": "opening"
   },
   {
    "id": "ui.koto",
    "ja": "〜こと…",
-   "ko": "〜라 불리는…",
-   "state": "proposed",
-   "approved_by": "",
-   "note": "오프닝 별명 뒤 연결어 (별명 → 본명)",
+   "ko": "일명 「〜」",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
+   "note": "N1こと N2 = 'N1이라는 별명의 N2'(동격). '라 불리는'은 번역투, '본명'은 뜻이 강해 쓰지 않음. 조사 문제도 없음",
    "scope": "opening"
   },
   {
    "id": "ui.cv",
    "ja": "声",
-   "ko": "성우",
-   "state": "proposed",
-   "approved_by": "",
-   "note": "오프닝 이름표의 성우 표시. 대안: CV",
+   "ko": "CV",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
+   "note": "声 → CV (칸이 좁고 게임·애니 UI에서 익숙)",
    "scope": "opening"
   },
   {
@@ -966,7 +966,7 @@
    "ja": "吉田古奈美",
    "ko": "요시다 코나미",
    "state": "approved",
-   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -974,8 +974,8 @@
    "id": "va.hiramatsu",
    "ja": "平松晶子",
    "ko": "히라마츠 아키코",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -984,7 +984,7 @@
    "ja": "西原久美子",
    "ko": "니시하라 쿠미코",
    "state": "approved",
-   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -992,8 +992,8 @@
    "id": "va.fukami",
    "ja": "深見梨加",
    "ko": "후카미 리카",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1002,7 +1002,7 @@
    "ja": "松本梨香",
    "ko": "마츠모토 리카",
    "state": "approved",
-   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1010,8 +1010,8 @@
    "id": "va.korogi",
    "ja": "こおろぎさとみ",
    "ko": "코오로기 사토미",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1020,7 +1020,7 @@
    "ja": "水谷優子",
    "ko": "미즈타니 유코",
    "state": "approved",
-   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1028,8 +1028,8 @@
    "id": "va.tominaga",
    "ja": "冨永みーな",
    "ko": "토미나가 미나",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1038,7 +1038,7 @@
    "ja": "高橋美紀",
    "ko": "타카하시 미키",
    "state": "approved",
-   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1046,8 +1046,8 @@
    "id": "va.yajima",
    "ja": "矢島晶子",
    "ko": "야지마 아키코",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1055,8 +1055,8 @@
    "id": "va.orikasa",
    "ja": "折笠愛",
    "ko": "오리카사 아이",
-   "state": "proposed",
-   "approved_by": "",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
   },
@@ -1065,9 +1065,18 @@
    "ja": "かないみか",
    "ko": "카나이 미카",
    "state": "approved",
-   "approved_by": "glossary rules.voice_actor_names (사람 결정)",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "성우 이름 통용 표기",
    "scope": "opening"
+  },
+  {
+   "id": "zodiac.sagittarius",
+   "ja": "いて座",
+   "ko": "궁수자리",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
+   "note": "천문 표준 명칭(한국천문연구원). 사수자리 대신",
+   "scope": "cards"
   }
  ]
 }
