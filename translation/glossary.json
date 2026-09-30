@@ -1086,6 +1086,24 @@
    "approved_by": "프로젝트 소유자 제공 표지·로고 표기",
    "note": "제목 앞부분",
    "scope": "title"
+  },
+  {
+   "id": "ui.new_game",
+   "ja": "最初から始める",
+   "ko": "처음부터 시작",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (타이틀 선택지 확인 답변)",
+   "note": "타이틀 선택지",
+   "scope": "title"
+  },
+  {
+   "id": "ui.continue",
+   "ja": "続きから始める",
+   "ko": "이어서 시작",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 2026-09-30 (타이틀 선택지 확인 답변)",
+   "note": "타이틀 선택지",
+   "scope": "title"
   }
  ]
 }

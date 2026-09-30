@@ -664,3 +664,105 @@ def test_packed_table_cannot_be_used_by_a_file_job(tmp_path):
     with pytest.raises(build.BuildError, match="packed table"):
         build.build(cue, tmp_path / "out", None, profile=profile, title=False,
                     bundles=[{"files": ["STG1.BIN"], "translation": job["translation"], "layout": job["layout"]}])
+
+
+# --- labels drawn into the title block (e.g. 最初から/続きから), palette from a read-only file ---
+def _title_label_tables(tmp_path, entry=0, **over):
+    ents = _entries()
+    pos = [4 + 8 * len(ents)]
+    for e in ents[:-1]:
+        pos.append(pos[-1] + len(e.data))
+    e = ents[entry]
+    tr = {"packed": "title", "bundle_offset": "0x0", "palette_file": "PAL.BIN", "palette_offset": "0x0",
+          "entries": [{"id": f"tl.e{entry}", "entry": entry, "offset": hex(pos[entry]), "size": [e.width, e.height],
+                       "colr": hex(e.colr), "src_sha1": hashlib.sha1(e.data).hexdigest(), "ja": "あ", "ko": "가",
+                       "state": "needs_review", "terms": [], "note": "",
+                       "palette_sha1": hashlib.sha1(_pal_file()[0x20:0x40]).hexdigest()}],
+          "excluded": [{"id": f"tl.x{i}", "entry": i, "reason": "other"} for i in range(len(ents)) if i != entry]}
+    tr.update(over)
+    lay = {"entries": [{"id": f"tl.e{entry}", "box": [0, 0, e.width, e.height], "clean": {"method": "clear"},
+                        "allowed": [1, 2], "lines": [{"size": 8, "x": "center", "y": "center", "fill": 1, "aa": False}]}]}
+    (tmp_path / "ttr.json").write_text(json.dumps(tr, ensure_ascii=False))
+    (tmp_path / "tlay.json").write_text(json.dumps(lay, ensure_ascii=False))
+    return (tmp_path / "ttr.json", tmp_path / "tlay.json", None)
+
+
+def test_title_labels_are_drawn_into_the_title_block(tmp_path):
+    cue, profile, prolog = _packed_disc(tmp_path)
+    labels = _title_label_tables(tmp_path)
+    m = build.build(cue, tmp_path / "out", None, profile=profile, title_labels=labels)
+    new = _read_prolog(tmp_path / "out" / m["track1"], FILE_LBA, len(prolog))
+    from suchie2 import select1
+    want = select1.render(yc.build(_entries()), labels[0], labels[1], palette_data=_pal_file()).textures
+    ents = yc.parse(_decode_at(new, BLOCK_OFF)[0])
+    assert ents[0].data == want[0] and any(ents[0].data) and ents[0].data != _entries()[0].data
+    assert ents[1] == _entries()[1]
+    assert m["title"]["labels"]["entries"] == ["tl.e0"] and m["title"]["labels"]["states"] == {"needs_review": 1}
+    assert m["title"]["mode"] == "labels-only"
+    assert m["distribution"] is False
+
+
+def test_title_labels_cannot_redraw_an_entry_the_logo_spec_owns(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    with pytest.raises(build.BuildError, match="owned by the logo spec"):
+        build.build(cue, tmp_path / "out", _spec(tmp_path), profile=profile, title_labels=_title_label_tables(tmp_path))
+
+
+def test_title_labels_need_the_title_block(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    with pytest.raises(build.BuildError, match="title bundle is disabled"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False, title_labels=_title_label_tables(tmp_path))
+
+
+@pytest.mark.parametrize("over,msg", [({"packed": "opening"}, "packed"), ({"palette_file": "NOPE.BIN"}, "palette_file")])
+def test_title_label_table_must_be_a_title_table(tmp_path, over, msg):
+    cue, profile, _ = _packed_disc(tmp_path)
+    with pytest.raises(build.BuildError, match=msg):
+        build.build(cue, tmp_path / "out", None, profile=profile, title_labels=_title_label_tables(tmp_path, **over))
+
+
+def _spec_on_entry1(tmp_path, presentation="approved"):
+    logo = Image.new("RGBA", (8, 8), (0, 0, 0, 0))
+    for x in range(2, 6):
+        logo.putpixel((x, 3), (255, 0, 0, 255))
+    logo.save(tmp_path / "logo1.png")
+    spec = {"logo": "logo1.png", "parts": [{"name": "all", "box": [0, 0, 8, 8], "scale": 1.0, "at": [0, 0]}],
+            "canvas": [320, 240], "sprites": [{"name": "tm", "entry": 1, "rect": [0, 0, 8, 8],
+                                               "palette": ["0000", "001f"] + ["0000"] * 14}],
+            "blank_entries": [], "presentation": presentation}
+    (tmp_path / "title1.json").write_text(json.dumps(spec))
+    return tmp_path / "title1.json"
+
+
+@pytest.mark.parametrize("state,dist", [("distribution_eligible", True), ("needs_review", False)])
+def test_logo_spec_and_title_labels_share_the_block(tmp_path, state, dist):
+    cue, profile, prolog = _packed_disc(tmp_path)
+    labels = _title_label_tables(tmp_path)
+    t = json.loads(labels[0].read_text())
+    t["entries"][0]["state"] = state
+    labels[0].write_text(json.dumps(t, ensure_ascii=False))
+    spec = _spec_on_entry1(tmp_path)
+    m = build.build(cue, tmp_path / "out", spec, profile=profile, title_labels=labels)
+    new = _read_prolog(tmp_path / "out" / m["track1"], FILE_LBA, len(prolog))
+    ents = yc.parse(_decode_at(new, BLOCK_OFF)[0])
+    from suchie2 import select1
+    assert ents[0].data == select1.render(yc.build(_entries()), labels[0], labels[1], palette_data=_pal_file()).textures[0]
+    assert ents[1].data == build.compose_title(_entries(), spec)[1].data
+    assert m["title"]["mode"] == "ko" and m["distribution"] is dist
+
+
+def test_title_label_source_mismatch_fails_and_leaves_no_output(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    labels = _title_label_tables(tmp_path)
+    t = json.loads(labels[0].read_text())
+    t["entries"][0]["src_sha1"] = "0" * 40
+    labels[0].write_text(json.dumps(t, ensure_ascii=False))
+    with pytest.raises(build.BuildError, match="translation baseline"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title_labels=labels)
+    assert not (tmp_path / "out").exists()
+
+
+def test_empty_title_labels_are_not_silently_ignored(tmp_path):
+    cue, profile, _ = _packed_disc(tmp_path)
+    with pytest.raises(build.BuildError, match="title_labels"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title_labels=())

@@ -1,0 +1,93 @@
+{
+ "_about": "타이틀 선택지 판(136x48, 줄무늬 바탕 E/F, 왼쪽 커서 색 2는 그대로). 글자 색 7 + 테두리 9, 픽셀 모드. 줄마다 바탕은 같은 줄의 우세 색으로 복원.",
+ "font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+ "entries": [
+  {
+   "id": "title.e09",
+   "regions": [
+    {
+     "box": [
+      24,
+      6,
+      132,
+      23
+     ],
+     "clean": {
+      "method": "rows",
+      "text_idx": [
+       7,
+       8,
+       9,
+       10
+      ]
+     },
+     "allowed": [
+      7,
+      8,
+      9,
+      10,
+      14,
+      15
+     ],
+     "lines": [
+      {
+       "size": 12,
+       "x": "center",
+       "y": "center",
+       "area": [
+        24,
+        6,
+        132,
+        23
+       ],
+       "fill": 7,
+       "outline": 9,
+       "aa": false
+      }
+     ]
+    },
+    {
+     "box": [
+      24,
+      24,
+      132,
+      42
+     ],
+     "clean": {
+      "method": "rows",
+      "text_idx": [
+       7,
+       8,
+       9,
+       10
+      ]
+     },
+     "allowed": [
+      7,
+      8,
+      9,
+      10,
+      14,
+      15
+     ],
+     "lines": [
+      {
+       "size": 12,
+       "x": "center",
+       "y": "center",
+       "area": [
+        24,
+        24,
+        132,
+        42
+       ],
+       "fill": 7,
+       "outline": 9,
+       "aa": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -80,7 +80,7 @@ JP_DISC1 = SourceProfile(
     # opening character-intro name plates (docs/initial-survey.md §3.11)
     packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
             "opening": ("PROLOG.BIN", 0x3C00, 0x7900, "ab1dd22d24cf71013f7f7cce22b55a0bae0c75a1")},
-    read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening (banks 0x60/0x70/0x80)
+    read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening and title (banks 0x50/0x60/0x70/0x80)
 )
 STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "SIHO.BIN", "SESIL.BIN",
                "SESIL2.BIN", "HIMITU.BIN", "NAZO.BIN", "SECRET.BIN", "HIDDEN.BIN", "KAKUSHI.BIN"]
@@ -308,10 +308,11 @@ def _recompress(bundle: bytes, room: int, what: str) -> bytes:
     return stream
 
 
-def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict) -> tuple[dict, list, bytes, bytes]:
-    """Render one translation/layout pair into an LZSS-compressed Yc block of the profile and
-    recompress it into the same region. Returns (info, changes, stream, rebuilt bundle)."""
-    name = job["packed"]
+def _render_block_labels(t1: _Track1, profile: SourceProfile, job: dict, name: str, bundle: bytes,
+                         fname: str) -> tuple[bytes, dict]:
+    """Draw a label table into a decoded Yc block. The table must name this block (`packed`),
+    index the decoded block (bundle_offset 0x0) and pin its palette from a read-only profile file.
+    Returns (rebuilt bundle, provenance info)."""
     translation, layout = Path(job["translation"]), Path(job["layout"])
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
@@ -324,6 +325,27 @@ def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict) -> tuple[dict, 
     if "palette_offset" not in tdoc or unpinned:
         raise BuildError(f"{translation.name}: packed tables need palette_offset and every entry's palette_sha1 "
                          f"(missing: {unpinned})")
+    pf = tdoc.get("palette_file")
+    if pf not in profile.read_only:
+        raise BuildError(f"{translation.name}: palette_file {pf!r} is not a read-only file of the profile")
+    pal_data = _checked_file(t1, profile.read_only[pf], pf)
+    ents = yc.parse(bundle)
+    res = select1_mod.render(bundle, translation, layout, font=font, glossary=glossary, file_name=fname,
+                             palette_data=pal_data)
+    new = yc.build([yc.Entry(e.width, e.height, e.attr, e.colr, res.textures.get(i, e.data)) for i, e in enumerate(ents)])
+    info = {"entries": res.ids, "states": res.states, "distribution": res.distribution,
+            "palette_file": pf, "palette_file_sha1": hashlib.sha1(pal_data).hexdigest(),
+            "translation": _rel(translation), "translation_sha1": _sha1(translation),
+            "layout": _rel(layout), "layout_sha1": _sha1(layout),
+            "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
+            "font": font, "font_sha1": _sha1(Path(font))}
+    return new, info
+
+
+def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict) -> tuple[dict, list, bytes, bytes]:
+    """Render one translation/layout pair into an LZSS-compressed Yc block of the profile and
+    recompress it into the same region. Returns (info, changes, stream, rebuilt bundle)."""
+    name = job["packed"]
     fname, lo, hi, region_sha1 = profile.packed[name]
     lba, size = _packed_extent(profile, fname)
     if not 0 <= lo < hi <= size:
@@ -333,28 +355,15 @@ def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict) -> tuple[dict, 
         raise BuildError(f"{name}: region bytes differ from the supported source")
     if any(region[4 + int.from_bytes(region[:4], "big"):]):
         raise BuildError(f"{name}: region tail after the source stream is not zero padding")
-    bundle = lzss.decompress(region)
-    ents = yc.parse(bundle)
-    pf = tdoc.get("palette_file")
-    if pf not in profile.read_only:
-        raise BuildError(f"{translation.name}: palette_file {pf!r} is not a read-only file of the profile")
-    pal_data = _checked_file(t1, profile.read_only[pf], pf)
-    res = select1_mod.render(bundle, translation, layout, font=font, glossary=glossary, file_name=fname,
-                             palette_data=pal_data)
-    new = yc.build([yc.Entry(e.width, e.height, e.attr, e.colr, res.textures.get(i, e.data)) for i, e in enumerate(ents)])
+    new, labels = _render_block_labels(t1, profile, job, name, lzss.decompress(region), fname)
     stream = _recompress(new, hi - lo, name)
     info = {"packed": name, "file": fname, "lba": lba, "region": [lo, hi], "stream_bytes": len(stream),
-            "entries": res.ids, "states": res.states, "distribution": res.distribution, "sectors": [],
-            "palette_file": pf, "palette_file_sha1": hashlib.sha1(pal_data).hexdigest(),
-            "translation": _rel(translation), "translation_sha1": _sha1(translation),
-            "layout": _rel(layout), "layout_sha1": _sha1(layout),
-            "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
-            "font": font, "font_sha1": _sha1(Path(font))}
+            "sectors": [], **labels}
     return info, [(lo, stream + bytes(hi - lo - len(stream)))], stream, new
 
 
 def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile,
-           select1=None, bundles=None, title: bool = True) -> dict:
+           select1=None, bundles=None, title: bool = True, title_labels=None) -> dict:
     tr1, tr2 = _cue_tracks(source_cue)
     if _sha1(tr1) != profile.track1_sha1:
         raise BuildError(f"Track 1 SHA-1 mismatch: {tr1}")
@@ -362,6 +371,10 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
         raise BuildError(f"Track 2 SHA-1 mismatch: {tr2}")
     if title_spec and not title:
         raise BuildError("a title spec was given but the title bundle is disabled")
+    if title_labels is not None and len(title_labels) < 2:
+        raise BuildError("title_labels needs (translation, layout[, glossary])")
+    if title_labels is not None and not title:
+        raise BuildError("title labels were given but the title bundle is disabled")
     jobs = [j for j in (bundles or []) if "packed" not in j]
     packed_jobs = [j for j in (bundles or []) if "packed" in j]
     if any("files" in j for j in packed_jobs):
@@ -377,6 +390,7 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
         jobs.insert(0, {"files": [profile.select1_name or "SELECT1.BIN"], "translation": select1[0], "layout": select1[1],
                         "glossary": select1[2] if len(select1) > 2 else None, "_select1": True})
     lo, hi = profile.title_region
+    label_info = None
     t1 = _Track1(tr1)
     try:
         extents = [_file_extent(profile, n) for job in jobs for n in job["files"]]
@@ -402,6 +416,16 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
             entries = yc.parse(lzss.decompress(region))
             new_entries = compose_title(entries, title_spec) if title_spec else entries
             tbundle = yc.build(new_entries)
+            if title_labels is not None:
+                job = {"translation": title_labels[0], "layout": title_labels[1],
+                       "glossary": title_labels[2] if len(title_labels) > 2 else None}
+                if title_spec:
+                    spec = json.loads(title_spec.read_text())
+                    owned = {sp["entry"] for sp in spec["sprites"]} | set(spec.get("blank_entries", []))
+                    drawn = {e["entry"] for e in json.loads(Path(job["translation"]).read_text())["entries"]}
+                    if owned & drawn:
+                        raise BuildError(f"title labels redraw entries {sorted(owned & drawn)} owned by the logo spec")
+                tbundle, label_info = _render_block_labels(t1, profile, job, "title", tbundle, profile.prolog_name)
             stream = _recompress(tbundle, hi - lo, "title")
         results = [(job, _plan_bundle(t1, profile, job)) for job in jobs]
         packed = [_plan_packed(t1, profile, job) for job in packed_jobs]
@@ -453,14 +477,17 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
         f'FILE "{o2}" BINARY\n  TRACK 02 AUDIO\n    INDEX 00 00:00:00\n    INDEX 01 00:02:00\n')
     title_info = None
     if title:
-        title_info = {"mode": "ko" if title_spec else "original-recompressed",
+        title_info = {"mode": "ko" if title_spec else ("labels-only" if label_info else "original-recompressed"),
                       "region": [lo, hi], "stream_bytes": len(stream), "sectors": lbas}
         if title_spec:
             spec = json.loads(title_spec.read_text())
             title_info.update(spec=_rel(title_spec), spec_sha1=_sha1(title_spec),
                               logo_sha1=_sha1(title_spec.parent / spec["logo"]),
                               presentation=spec.get("presentation", "needs_human_review"))
+        title_info["labels"] = label_info
     title_ok = title_spec is None or json.loads(title_spec.read_text()).get("presentation") == "approved"
+    if label_info is not None and not label_info["distribution"]:
+        title_ok = False
     infos = [info for _, per_file in results for info, _ in per_file]
     sel = next((per_file[0][0] for job, per_file in results if job.get("_select1")), None)
     manifest = {
@@ -478,7 +505,7 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
 
 
 def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile = None,
-          select1=None, bundles=None, title: bool = True) -> dict:
+          select1=None, bundles=None, title: bool = True, title_labels=None) -> dict:
     """Build into a fresh staging directory and replace out_dir only when every check passed."""
     profile = profile or JP_DISC1
     source_cue, out_dir = Path(source_cue), Path(out_dir)
@@ -488,7 +515,7 @@ def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: Sou
         shutil.rmtree(stage)
     stage.mkdir(parents=True)
     try:
-        manifest = _build(source_cue, stage, title_spec, profile, select1, bundles, title)
+        manifest = _build(source_cue, stage, title_spec, profile, select1, bundles, title, title_labels)
     except BuildError:
         raise
     except (PlanError, ValueError, OSError, KeyError) as err:

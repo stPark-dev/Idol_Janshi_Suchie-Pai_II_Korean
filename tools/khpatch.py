@@ -18,7 +18,7 @@ def main(argv=None) -> int:
     b.add_argument("--source", required=True, type=Path, help="original Disc 1 .cue")
     b.add_argument("--out", type=Path, default=ROOT / "out")
     b.add_argument("--title", choices=["ko", "original"], default="ko",
-                   help="'original' recompresses the untouched title bundle (codec control)")
+                   help="'original' recompresses the untouched title bundle (logo and 最初から/続きから, codec control)")
     b.add_argument("--select1", choices=["ko", "original"], default="ko",
                    help="'original' leaves the menu sprite bundle SELECT1.BIN unchanged")
     b.add_argument("--match", choices=["ko", "original"], default="ko",
@@ -46,7 +46,9 @@ def main(argv=None) -> int:
         jobs.append({"packed": "opening", "translation": ROOT / "translation/opening.json",
                      "layout": ROOT / "assets/opening/layout.json", "glossary": ROOT / "translation/glossary.json"})
     try:
-        m = build.build(args.source, args.out, spec, select1=sel, bundles=jobs)
+        labels = (ROOT / "translation/title_labels.json", ROOT / "assets/title/labels_layout.json",
+                  ROOT / "translation/glossary.json") if args.title == "ko" else None
+        m = build.build(args.source, args.out, spec, select1=sel, bundles=jobs, title_labels=labels)
     except build.BuildError as err:
         print(f"build failed: {err}", file=sys.stderr)
         return 1

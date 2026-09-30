@@ -1,0 +1,152 @@
+{
+ "_about": "타이틀 Yc 묶음(PROLOG.BIN 0x7900 LZSS 블록) 안의 글자 그림 중 로고 사양(assets/title/title_ko.json)이 다루지 않는 것. 오프셋은 압축 해제 결과 기준. 팔레트는 OPENING1.BIN 0x56800 뱅크 0x50.",
+ "packed": "title",
+ "bundle_offset": "0x0",
+ "palette_file": "OPENING1.BIN",
+ "palette_offset": "0x56800",
+ "id_prefix": "title.",
+ "entries": [
+  {
+   "id": "title.e09",
+   "entry": 9,
+   "offset": "0x6f3c",
+   "size": [
+    136,
+    48
+   ],
+   "colr": "0x2050",
+   "src_sha1": "10e01a700fa75a3e74986689faf57aa68e63dbf7",
+   "ja": "最初から始める\n続きから始める",
+   "ko": "처음부터 시작\n이어서 시작",
+   "state": "needs_review",
+   "terms": [
+    "ui.new_game",
+    "ui.continue"
+   ],
+   "note": "저장 데이터(이어하기)가 있을 때 Start 뒤에 나오는 선택지로 추정 — 화면 표시 미확인. 팔레트(뱅크 0x50)는 타이틀 화면 세이브 스테이트 CRAM과 같음을 확인",
+   "palette_sha1": "20d65b2e0c0d49f58d5109d7fae0d58236481fe2"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "title.e00",
+   "entry": 0,
+   "offset": "0x5c",
+   "size": [
+    256,
+    96
+   ],
+   "colr": "0x2010",
+   "src_sha1": "dea5b8c0a264e74519204037515700071bd37d1f",
+   "reason": "로고 (title_ko.json)"
+  },
+  {
+   "id": "title.e01",
+   "entry": 1,
+   "offset": "0x305c",
+   "size": [
+    96,
+    80
+   ],
+   "colr": "0x2020",
+   "src_sha1": "b8ecb299835b69619c6f510368b725119fc985b0",
+   "reason": "Ⅱ (title_ko.json)"
+  },
+  {
+   "id": "title.e02",
+   "entry": 2,
+   "offset": "0x3f5c",
+   "size": [
+    128,
+    24
+   ],
+   "colr": "0x2030",
+   "src_sha1": "c777fe449deaee24858b5f876990f9500fb4cfa5",
+   "reason": "アイドル雀士 (title_ko.json)"
+  },
+  {
+   "id": "title.e03",
+   "entry": 3,
+   "offset": "0x455c",
+   "size": [
+    128,
+    8
+   ],
+   "colr": "0x2040",
+   "src_sha1": "4ab4e0d36f0b1e468b66b33920927bcc9955a0a9",
+   "reason": "저작권 표기 (영어)"
+  },
+  {
+   "id": "title.e04",
+   "entry": 4,
+   "offset": "0x475c",
+   "size": [
+    152,
+    8
+   ],
+   "colr": "0x2040",
+   "src_sha1": "0f9d180dcdaa2c77fea1c1c823d75a8dda853f26",
+   "reason": "저작권 표기 (영어)"
+  },
+  {
+   "id": "title.e05",
+   "entry": 5,
+   "offset": "0x49bc",
+   "size": [
+    16,
+    8
+   ],
+   "colr": "0x2040",
+   "src_sha1": "54dc3abcab6e6984010a1fae97bb57d5692ff9f6",
+   "reason": "TM (title_ko.json에서 비움)"
+  },
+  {
+   "id": "title.e06",
+   "entry": 6,
+   "offset": "0x49fc",
+   "size": [
+    112,
+    112
+   ],
+   "colr": "0x2080",
+   "src_sha1": "b479343b2217c63eb6207dfc7d71dbcf132ca036",
+   "reason": "하트 그림"
+  },
+  {
+   "id": "title.e07",
+   "entry": 7,
+   "offset": "0x627c",
+   "size": [
+    136,
+    24
+   ],
+   "colr": "0x2050",
+   "src_sha1": "c982a3c5bdf6323aeb79b359557398599075195d",
+   "reason": "PRESS START (영어)"
+  },
+  {
+   "id": "title.e08",
+   "entry": 8,
+   "offset": "0x68dc",
+   "size": [
+    136,
+    24
+   ],
+   "colr": "0x2050",
+   "src_sha1": "e74ee0aa7f45130db82502e13855055cc1622f0d",
+   "reason": "PRESS START (영어, 다른 색)"
+  },
+  {
+   "id": "title.e10",
+   "entry": 10,
+   "offset": "0x7bfc",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x2050",
+   "src_sha1": "c4b6ec80262690cc3f04bfafaf690aeb0295229a",
+   "reason": "별 그림"
+  }
+ ]
+}

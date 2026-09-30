@@ -35,7 +35,8 @@ def test_card_tables_and_shared_layout_agree():
 
 def test_every_table_protects_its_palettes_and_references_known_terms():
     for p in [ROOT / "translation/select1.json", ROOT / "translation/match.json", ROOT / "translation/match2.json",
-              ROOT / "translation/opening.json", ROOT / "translation/letters.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
+              ROOT / "translation/opening.json", ROOT / "translation/letters.json",
+              ROOT / "translation/title_labels.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
         t = _load(p)
         for e in t["entries"]:
             assert len(e.get("palette_sha1", "")) == 40, (p.name, e["id"])
@@ -84,3 +85,13 @@ def test_letters_table_covers_the_whole_block_and_blank_slots_are_explained():
         assert "\n" not in e["ko"] and "|" not in e["ko"], e["id"]
         if e["ko"] == "":
             assert "빈칸" in e["note"], e["id"]          # an intentionally empty slot must say so
+
+
+def test_title_labels_avoid_the_logo_spec_entries():
+    t = _load(ROOT / "translation/title_labels.json")
+    spec = _load(ROOT / "assets/title/title_ko.json")
+    owned = {sp["entry"] for sp in spec["sprites"]} | set(spec["blank_entries"])
+    assert t["packed"] == "title" and t["palette_file"] in build.JP_DISC1.read_only
+    assert not owned & {e["entry"] for e in t["entries"]}
+    title_entries = 11                      # the real title Yc block (docs/initial-survey.md 3.6)
+    assert sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]]) == list(range(title_entries))
