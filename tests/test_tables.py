@@ -36,7 +36,7 @@ def test_card_tables_and_shared_layout_agree():
 def test_every_table_protects_its_palettes_and_references_known_terms():
     for p in [ROOT / "translation/select1.json", ROOT / "translation/match.json", ROOT / "translation/match2.json",
               ROOT / "translation/opening.json", ROOT / "translation/letters.json",
-              ROOT / "translation/title_labels.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
+              ROOT / "translation/title_labels.json", ROOT / "translation/boot_notice.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
         t = _load(p)
         for e in t["entries"]:
             assert len(e.get("palette_sha1", "")) == 40, (p.name, e["id"])
@@ -95,3 +95,12 @@ def test_title_labels_avoid_the_logo_spec_entries():
     assert not owned & {e["entry"] for e in t["entries"]}
     title_entries = 11                      # the real title Yc block (docs/initial-survey.md 3.6)
     assert sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]]) == list(range(title_entries))
+
+
+def test_boot_notice_table_covers_its_block():
+    t = _load(ROOT / "translation/boot_notice.json")
+    layout = _load(ROOT / "assets/boot/layout.json")
+    assert t["packed"] in build.JP_DISC1.packed and build.JP_DISC1.packed[t["packed"]][4] == "rle16"
+    assert t["palette_file"] == build.JP_DISC1.packed[t["packed"]][0]       # CRAM image in the same file
+    assert sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]]) == list(range(8))
+    assert sorted(e["id"] for e in layout["entries"]) == sorted(e["id"] for e in t["entries"])

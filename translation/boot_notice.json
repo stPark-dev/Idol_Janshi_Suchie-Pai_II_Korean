@@ -1,0 +1,135 @@
+{
+ "_about": "첫 부팅(저장 데이터 없음) 안내 화면. BACKRAM.BIN 0x17000 워드 RLE Yc 묶음(8항목, 오프셋은 압축 해제 결과 기준). 팔레트는 같은 파일 0x1000 CRAM 이미지.",
+ "packed": "boot_notice",
+ "bundle_offset": "0x0",
+ "palette_file": "BACKRAM.BIN",
+ "palette_offset": "0x1000",
+ "id_prefix": "boot.",
+ "entries": [
+  {
+   "id": "boot.e2",
+   "entry": 2,
+   "offset": "0x12c44",
+   "size": [
+    72,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "08cee392762e113dc04274f5989e4ca1bd7e01fb",
+   "ja": "では早速、",
+   "ko": "그럼 바로,",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
+  },
+  {
+   "id": "boot.e3",
+   "entry": 3,
+   "offset": "0x12e84",
+   "size": [
+    104,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "60310c257c78a05e991815df3221f0cf80a7e097",
+   "ja": "本体RAM内に",
+   "ko": "본체 RAM|에",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
+  },
+  {
+   "id": "boot.e4",
+   "entry": 4,
+   "offset": "0x13364",
+   "size": [
+    184,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "5b7caf191732e310f705e33845c7d664165e60b1",
+   "ja": "スーチーパイⅡのデータを",
+   "ko": "스치파이2| |데이터|를",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": "",
+   "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
+  },
+  {
+   "id": "boot.e5",
+   "entry": 5,
+   "offset": "0x13c04",
+   "size": [
+    96,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "7cb81052cf0678739b54fceecc7e84bd52a1eafb",
+   "ja": "用意するね!!",
+   "ko": "준비할게!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
+  },
+  {
+   "id": "boot.e6",
+   "entry": 6,
+   "offset": "0x14084",
+   "size": [
+    208,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "cb4d859a11a2f1fac4b5aa56d5bc3e9bd26fc53d",
+   "ja": "必要容量は たったの1なの♥",
+   "ko": "필요한 용량|은 겨우 |1|이야|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "boot.e0",
+   "entry": 0,
+   "offset": "0x44",
+   "size": [
+    160,
+    240
+   ],
+   "colr": "0x100",
+   "src_sha1": "4a877c4328db342bc698b784656ec95ab3f85c2a",
+   "reason": "배경 그림 왼쪽"
+  },
+  {
+   "id": "boot.e1",
+   "entry": 1,
+   "offset": "0x9644",
+   "size": [
+    160,
+    240
+   ],
+   "colr": "0x100",
+   "src_sha1": "7f037ca1a69d9740bf1d94d2fd23ff40612f75b5",
+   "reason": "배경 그림 오른쪽"
+  },
+  {
+   "id": "boot.e7",
+   "entry": 7,
+   "offset": "0x14a44",
+   "size": [
+    152,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "d8a702fbb84198b3ba99925c05e0c56e4322a010",
+   "reason": "PRESS START (영어)"
+  }
+ ]
+}

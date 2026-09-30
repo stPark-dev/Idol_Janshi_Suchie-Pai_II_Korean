@@ -766,3 +766,128 @@ def test_empty_title_labels_are_not_silently_ignored(tmp_path):
     cue, profile, _ = _packed_disc(tmp_path)
     with pytest.raises(build.BuildError, match="title_labels"):
         build.build(cue, tmp_path / "out", None, profile=profile, title_labels=())
+
+
+# --- word-RLE ("rle16") Yc block inside a profile file, palette from the same file ---
+RB_LBA, RB_LO, RB_HI = 30, 0x800, 0x1800
+
+
+def _rle_disc(tmp_path, tail=b""):
+    from suchie2 import rle16
+    f = bytearray(0x2000)
+    f[0:0x40] = _pal_file()                                  # CRAM image at 0x0 (bank 0x10 at 0x20)
+    blk = rle16.compress(_packed_bundle())
+    f[RB_LO:RB_LO + len(blk)] = blk
+    f[RB_LO + len(blk):RB_LO + len(blk) + len(tail)] = tail
+    user = {}
+    root = bytearray(2048)
+    p = 0
+    for rec in [_dirrec(b"\x00", 20, 2048, 2), _dirrec(b"\x01", 20, 2048, 2),
+                _dirrec(b"BACK.BIN;1", RB_LBA, len(f))]:
+        root[p:p + len(rec)] = rec
+        p += len(rec)
+    pvd = bytearray(2048)
+    pvd[0:6] = b"\x01CD001"
+    pvd[156:190] = _dirrec(b"\x00", 20, 2048, 2)
+    user[16], user[20] = bytes(pvd), bytes(root)
+    for i in range(0, len(f), 2048):
+        user[RB_LBA + i // 2048] = bytes(f[i:i + 2048])
+    raw = bytearray()
+    for lba in range(RB_LBA + 6):
+        s = bytearray(2352)
+        s[0:12] = cdsector.SYNC
+        m, rem = divmod(lba + 150, 4500)
+        sec, fr = divmod(rem, 75)
+        s[12:15] = bytes(((v // 10) << 4) | (v % 10) for v in (m, sec, fr))
+        s[15] = 1
+        s[16:2064] = user.get(lba, bytes(2048))
+        raw += cdsector.fix_mode1(s)
+    (tmp_path / "t1.bin").write_bytes(bytes(raw))
+    (tmp_path / "t2.bin").write_bytes(b"\x00" * 2352 * 3)
+    cue = tmp_path / "src.cue"
+    cue.write_text('FILE "t1.bin" BINARY\n  TRACK 01 MODE1/2352\n    INDEX 01 00:00:00\n'
+                   'FILE "t2.bin" BINARY\n  TRACK 02 AUDIO\n    INDEX 00 00:00:00\n    INDEX 01 00:02:00\n')
+    profile = build.SourceProfile(
+        track1_sha1=hashlib.sha1(bytes(raw)).hexdigest(), track2_sha1=hashlib.sha1(b"\x00" * 2352 * 3).hexdigest(),
+        prolog_name="PROLOG.BIN", prolog_lba=0, prolog_size=0, title_region=(0, 1), title_region_sha1="",
+        files={"BACK.BIN": (RB_LBA, len(f))},
+        packed={"boot": ("BACK.BIN", RB_LO, RB_HI, hashlib.sha1(bytes(f[RB_LO:RB_HI])).hexdigest(), "rle16")})
+    return cue, profile, bytes(f)
+
+
+def _rle_job(tmp_path, **over):
+    job = _packed_tables(tmp_path, packed="boot", palette_file="BACK.BIN", **over)
+    return {**job, "packed": "boot"}
+
+
+def test_rle16_block_is_rewritten_in_place(tmp_path):
+    from suchie2 import rle16, select1
+    cue, profile, src = _rle_disc(tmp_path)
+    job = _rle_job(tmp_path)
+    m = build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+    new = _read_prolog(tmp_path / "out" / m["track1"], RB_LBA, len(src))
+    bundle, used = rle16.decompress(new[RB_LO:RB_HI])
+    want = select1.render(_packed_bundle(), job["translation"], job["layout"], palette_data=src).textures
+    assert {i: e.data for i, e in enumerate(yc.parse(bundle))} == want
+    assert not any(new[RB_LO + used:RB_HI]) and new[:RB_LO] == src[:RB_LO] and new[RB_HI:] == src[RB_HI:]
+    assert m["bundles"][0]["codec"] == "rle16" and m["bundles"][0]["stream_bytes"] == used
+
+
+def test_rle16_region_tail_must_be_zero(tmp_path):
+    cue, profile, _ = _rle_disc(tmp_path, tail=b"\x01")
+    with pytest.raises(build.BuildError, match="padding"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[_rle_job(tmp_path)], title=False)
+
+
+@pytest.mark.parametrize("pal_off,ok", [(RB_LO - 0x30, False),      # bank 0x10 -> RB_LO-0x10 .. RB_LO+0x10
+                                         (RB_HI - 0x30, False),      # bank starts inside the region (RB_HI-0x10)
+                                         (RB_HI - 0x20, True),       # bank starts exactly at RB_HI
+                                         (RB_LO - 0x40, True)])      # bank ends exactly at RB_LO
+def test_palette_in_the_same_file_must_lie_outside_the_rewritten_region(tmp_path, pal_off, ok):
+    cue, profile, src = _rle_disc(tmp_path)
+    job = _rle_job(tmp_path, palette_offset=hex(pal_off))
+    t = json.loads(job["translation"].read_text())
+    for e in t["entries"]:
+        e["palette_sha1"] = hashlib.sha1(src[pal_off + 0x20:pal_off + 0x40]).hexdigest()
+    job["translation"].write_text(json.dumps(t, ensure_ascii=False))
+    if ok:
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+    else:
+        with pytest.raises(build.BuildError, match="palette"):
+            build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_palette_must_not_lie_in_another_block_rewritten_in_the_same_file(tmp_path):
+    from suchie2 import rle16
+    cue, profile, src = _rle_disc(tmp_path)
+    # a second packed block over the CRAM image at 0x0 (it holds no valid stream, but the check comes first)
+    two = build.SourceProfile(**{**profile.__dict__, "packed": {**profile.packed,
+                                 "pal": ("BACK.BIN", 0x0, 0x800, hashlib.sha1(src[:0x800]).hexdigest(), "rle16")}})
+    job2 = {**_rle_job(tmp_path), "packed": "boot"}
+    with pytest.raises(build.BuildError, match="palette"):
+        build.build(cue, tmp_path / "out", None, profile=two, title=False,
+                    bundles=[job2, {"packed": "pal", "translation": job2["translation"], "layout": job2["layout"]}])
+
+
+def test_rle16_readback_rejects_corrupted_output(tmp_path, monkeypatch):
+    cue, profile, _ = _rle_disc(tmp_path)
+    job = _rle_job(tmp_path)
+    real = build.WritePlan.apply
+
+    def corrupt(self, path):
+        real(self, path)
+        data = bytearray(path.read_bytes())
+        off = RB_LO + 0x10                                     # inside the stream (file offset)
+        data[(RB_LBA + off // 2048) * 2352 + 16 + off % 2048] ^= 0xFF
+        path.write_bytes(bytes(data))
+    monkeypatch.setattr(build.WritePlan, "apply", corrupt)
+    with pytest.raises(build.BuildError):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_unknown_codec_is_rejected(tmp_path):
+    cue, profile, src = _rle_disc(tmp_path)
+    fname, lo, hi, sha, _ = profile.packed["boot"]
+    bad = build.SourceProfile(**{**profile.__dict__, "packed": {"boot": (fname, lo, hi, sha, "zip")}})
+    with pytest.raises(build.BuildError, match="codec"):
+        build.build(cue, tmp_path / "out", None, profile=bad, bundles=[_rle_job(tmp_path)], title=False)

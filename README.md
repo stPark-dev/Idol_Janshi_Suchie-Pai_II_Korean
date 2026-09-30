@@ -35,9 +35,10 @@
 - 대국 화면 그림 글자 104개 (스테이지 오버레이 13개: 이름·버튼·안내·선언·역 이름 등, 초벌 번역·검수 대기)
 - 상대 소개 카드 17개와 저장 안내 1개 (`AP*.BIN` 11개, 초벌 번역·검수 대기)
 - 오프닝(데모) 캐릭터 소개 이름표 46개 (`PROLOG.BIN` 압축 블록: 별명·이름·성우, 초벌 번역·검수 대기)
+- 첫 부팅 안내 화면 5줄 (`BACKRAM.BIN` 워드 RLE 압축 블록, 초벌 번역·검수 대기)
 - 타이틀 선택지 「最初から／続きから」 → "처음부터 시작 / 이어서 시작" (표기 승인, 화면 표시는 미확인)
 - 오프닝 큰 글자 「アイドル雀士スーチーパイⅡ」 → "아이돌 작사 스치파이 2" (`PROLOG.BIN` 압축 블록, 남는 칸 2개는 하트 장식)
-- 제품 빌드 도구: LZSS 압축·해제(게임 해제 코드와 같은 형식), 스프라이트 묶음(Yc), ISO9660, 섹터 EDC/ECC, 쓰기 계획, 그림 글자 렌더러
+- 제품 빌드 도구: LZSS·워드 RLE 압축·해제(게임 해제 방식과 같은 형식), 스프라이트 묶음(Yc), ISO9660, 섹터 EDC/ECC, 쓰기 계획, 그림 글자 렌더러
 
 ## 번역 데이터
 
@@ -50,6 +51,7 @@
 | [`translation/opening.json`](translation/opening.json) | 오프닝 캐릭터 소개 이름표 46개와 제외 항목 1개 |
 | [`translation/letters.json`](translation/letters.json) | 오프닝 큰 글자 12칸 |
 | [`translation/title_labels.json`](translation/title_labels.json) | 타이틀 선택지 1개와 제외 항목 10개 |
+| [`translation/boot_notice.json`](translation/boot_notice.json) | 첫 부팅 안내 5줄과 제외 항목 3개 |
 | [`assets/select1/layout.json`](assets/select1/layout.json), [`assets/match/`](assets/match/), [`assets/cards/`](assets/cards/), [`assets/opening/`](assets/opening/) | 그림 글자 배치 (편집 영역, 배경 복원 방식, 글자 크기·색 번호) |
 
 번역문 규칙: `\n`은 줄바꿈, `|`는 글자 색 구간 경계. 상태는 `needs_review` → `needs_human_review` → `distribution_eligible`. 모든 항목이 `distribution_eligible`이 되고 타이틀 로고가 승인되기 전까지 빌드 결과는 `distribution: false`입니다.
@@ -71,7 +73,7 @@
 python3 tools/khpatch.py build --source "/경로/Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
 
 # 대조군: 타이틀 그림은 그대로 두고 압축만 다시 한 디스크 (압축기 호환 확인용)
-python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original
+python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original
 
 # 테스트
 python3 -m pytest -q tests

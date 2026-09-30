@@ -1,0 +1,270 @@
+{
+ "_about": "부팅 안내 글자 줄. 원래처럼 낱말별 채움 색(초록 4, 주황 6, 분홍 8, 파랑 10, 보라 12), 크림색 테두리 2, 남색 그림자 15(오른쪽 아래 1px). 픽셀 모드, 크기는 칸에 들어가는 최대값.",
+ "font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+ "entries": [
+  {
+   "id": "boot.e2",
+   "box": [
+    0,
+    0,
+    72,
+    16
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 12,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      0,
+      72,
+      14
+     ],
+     "fill": 4,
+     "outline": 2,
+     "shadow": {
+      "idx": 15,
+      "dx": 1,
+      "dy": 1
+     },
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "boot.e3",
+   "box": [
+    0,
+    0,
+    104,
+    24
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 16,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      0,
+      104,
+      22
+     ],
+     "fill": [
+      6,
+      4
+     ],
+     "outline": 2,
+     "shadow": {
+      "idx": 15,
+      "dx": 1,
+      "dy": 1
+     },
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "boot.e4",
+   "box": [
+    0,
+    0,
+    184,
+    24
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 16,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      0,
+      184,
+      22
+     ],
+     "fill": [
+      10,
+      4,
+      12,
+      4
+     ],
+     "outline": 2,
+     "shadow": {
+      "idx": 15,
+      "dx": 1,
+      "dy": 1
+     },
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "boot.e5",
+   "box": [
+    0,
+    0,
+    96,
+    24
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 16,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      0,
+      96,
+      22
+     ],
+     "fill": 4,
+     "outline": 2,
+     "shadow": {
+      "idx": 15,
+      "dx": 1,
+      "dy": 1
+     },
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "boot.e6",
+   "box": [
+    0,
+    0,
+    208,
+    24
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 16,
+     "x": "center",
+     "y": "center",
+     "area": [
+      0,
+      0,
+      208,
+      22
+     ],
+     "fill": [
+      10,
+      4,
+      6,
+      4,
+      8
+     ],
+     "outline": 2,
+     "shadow": {
+      "idx": 15,
+      "dx": 1,
+      "dy": 1
+     },
+     "aa": false
+    }
+   ]
+  }
+ ]
+}

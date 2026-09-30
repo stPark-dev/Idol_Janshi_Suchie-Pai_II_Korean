@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import cdsector, iso9660, lzss, select1 as select1_mod, title, yc
+from . import cdsector, iso9660, lzss, rle16, select1 as select1_mod, title, yc
 from .writeplan import PlanError, WritePlan
 
 OUT_STEM = "Idol Janshi Suchie-Pai II (Korean) (Disc 1)"
@@ -38,7 +38,7 @@ class SourceProfile:
     select1_size: int | None = None
     select1_bundle: int | None = None  # SELECT1.BIN offset of the Yc bundle
     files: dict = field(default_factory=dict)   # other patched files: name -> (lba, size)
-    packed: dict = field(default_factory=dict)  # compressed Yc blocks: name -> (file, lo, hi, region_sha1)
+    packed: dict = field(default_factory=dict)  # compressed Yc blocks: name -> (file, lo, hi, region_sha1[, codec])
     read_only: dict = field(default_factory=dict)  # files read (e.g. CRAM images) but never written
 
 
@@ -76,17 +76,20 @@ JP_DISC1 = SourceProfile(
         "APSUB.BIN": (27652, 32768),
         "APTSUKA.BIN": (22279, 393216),
         "APYUKI.BIN": (25717, 393216),
+        # boot notice screens (word-RLE Yc blocks, docs/initial-survey.md 3.15)
+        "BACKRAM.BIN": (259889, 430080),
     },
     # opening character-intro name plates (docs/initial-survey.md §3.11)
     packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
-            "opening": ("PROLOG.BIN", 0x3C00, 0x7900, "ab1dd22d24cf71013f7f7cce22b55a0bae0c75a1")},
+            "opening": ("PROLOG.BIN", 0x3C00, 0x7900, "ab1dd22d24cf71013f7f7cce22b55a0bae0c75a1"),
+            "boot_notice": ("BACKRAM.BIN", 0x17000, 0x27000, "50db63e7caff6b638684d6175481c0b9d084d75f", "rle16")},
     read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening and title (banks 0x50/0x60/0x70/0x80)
 )
 STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "SIHO.BIN", "SESIL.BIN",
                "SESIL2.BIN", "HIMITU.BIN", "NAZO.BIN", "SECRET.BIN", "HIDDEN.BIN", "KAKUSHI.BIN"]
 CARD_FILES = ["APALICE.BIN", "APDEVIL.BIN", "APKYOKO.BIN", "APMILK.BIN", "APRUMI.BIN", "APSANAE.BIN",
               "APSECIL.BIN", "APSHIHO.BIN", "APSUB.BIN", "APTSUKA.BIN", "APYUKI.BIN"]
-assert sorted(STAGE_FILES + CARD_FILES) == sorted(JP_DISC1.files)
+assert sorted(STAGE_FILES + CARD_FILES + ["BACKRAM.BIN"]) == sorted(JP_DISC1.files)
 
 
 def _sha1(path: Path) -> str:
@@ -209,7 +212,7 @@ def _rel(path: Path) -> str:
 
 
 def _verify_output(track1: Path, prolog_lba: int, lo: int, hi: int, stream: bytes, bundle: bytes, lbas: list[int],
-                   what: str = "title") -> None:
+                   what: str = "title", codec: str = "lzss") -> None:
     t = _Track1(track1)
     try:
         for lba in lbas:
@@ -221,9 +224,8 @@ def _verify_output(track1: Path, prolog_lba: int, lo: int, hi: int, stream: byte
         t.close()
     if got[:len(stream)] != stream or any(got[len(stream):]):
         raise BuildError(f"output {what} region differs from the planned stream + zero padding")
-    for stale in (None, b"\xa5" * lzss.STALE_LEN):
-        if lzss.decompress(got[:len(stream)], stale=stale) != bundle:
-            raise BuildError(f"output {what} block does not decode to the built bundle")
+    if not CODECS[codec]["decodes_to"](got[:len(stream)], bundle):
+        raise BuildError(f"output {what} block does not decode to the built bundle")
 
 
 def _outside(extents: list[tuple[int, int]], total: int) -> list[tuple[int, int]]:
@@ -299,6 +301,15 @@ def _checked_file(t1: _Track1, extent: tuple[int, int], name: str) -> bytes:
     return _read_file_range(t1, extent[0], 0, extent[1])
 
 
+def _rle16_recompress(bundle: bytes, room: int, what: str) -> bytes:
+    stream = rle16.compress(bundle)
+    if rle16.decompress(stream) != (bundle, len(stream)):
+        raise BuildError(f"recompressed {what} block does not round-trip")
+    if len(stream) > room:
+        raise BuildError(f"{what} block {len(stream)} bytes exceeds region {room}")
+    return stream
+
+
 def _recompress(bundle: bytes, room: int, what: str) -> bytes:
     stream = lzss.compress(bundle)
     if lzss.decompress(stream) != bundle or lzss.decompress(stream, stale=b"\xa5" * lzss.STALE_LEN) != bundle:
@@ -309,10 +320,11 @@ def _recompress(bundle: bytes, room: int, what: str) -> bytes:
 
 
 def _render_block_labels(t1: _Track1, profile: SourceProfile, job: dict, name: str, bundle: bytes,
-                         fname: str) -> tuple[bytes, dict]:
+                         fname: str, rewritten: list[tuple[int, int]] | None = None) -> tuple[bytes, dict]:
     """Draw a label table into a decoded Yc block. The table must name this block (`packed`),
-    index the decoded block (bundle_offset 0x0) and pin its palette from a read-only profile file.
-    Returns (rebuilt bundle, provenance info)."""
+    index the decoded block (bundle_offset 0x0) and pin its palette, read from the source: either a
+    read-only profile file, or the block's own file when no palette bank lies in any region this
+    build rewrites in that file (`rewritten`). Returns (rebuilt bundle, provenance info)."""
     translation, layout = Path(job["translation"]), Path(job["layout"])
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
@@ -326,9 +338,17 @@ def _render_block_labels(t1: _Track1, profile: SourceProfile, job: dict, name: s
         raise BuildError(f"{translation.name}: packed tables need palette_offset and every entry's palette_sha1 "
                          f"(missing: {unpinned})")
     pf = tdoc.get("palette_file")
-    if pf not in profile.read_only:
+    if pf == fname and rewritten is not None:
+        # CRAM image in the block's own file: read from the source; it must not lie in the rewritten region
+        pal_lo = int(tdoc["palette_offset"], 16)
+        banks = {pal_lo + (int(e["colr"], 16) & 0x7F0) * 2 for e in tdoc["entries"]}
+        if any(b < hi and lo < b + 32 for b in banks for lo, hi in rewritten):
+            raise BuildError(f"{translation.name}: a palette bank at {sorted(map(hex, banks))} overlaps the rewritten region")
+        pal_data = _checked_file(t1, _packed_extent(profile, fname), fname)
+    elif pf in profile.read_only:
+        pal_data = _checked_file(t1, profile.read_only[pf], pf)
+    else:
         raise BuildError(f"{translation.name}: palette_file {pf!r} is not a read-only file of the profile")
-    pal_data = _checked_file(t1, profile.read_only[pf], pf)
     ents = yc.parse(bundle)
     res = select1_mod.render(bundle, translation, layout, font=font, glossary=glossary, file_name=fname,
                              palette_data=pal_data)
@@ -342,22 +362,48 @@ def _render_block_labels(t1: _Track1, profile: SourceProfile, job: dict, name: s
     return new, info
 
 
-def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict) -> tuple[dict, list, bytes, bytes]:
-    """Render one translation/layout pair into an LZSS-compressed Yc block of the profile and
-    recompress it into the same region. Returns (info, changes, stream, rebuilt bundle)."""
+CODECS = {
+    # stream_len: bytes of the source region taken by the stream; decode: region -> Yc bundle
+    "lzss": {"stream_len": lambda region: 4 + int.from_bytes(region[:4], "big"),
+             "decode": lambda region: lzss.decompress(region),
+             "encode": lambda bundle, room, what: _recompress(bundle, room, what),
+             "decodes_to": lambda got, bundle: all(lzss.decompress(got, stale=st) == bundle
+                                                   for st in (None, b"\xa5" * lzss.STALE_LEN))},
+    "rle16": {"stream_len": lambda region: rle16.decompress(region)[1],
+              "decode": lambda region: rle16.decompress(region)[0],
+              "encode": lambda bundle, room, what: _rle16_recompress(bundle, room, what),
+              "decodes_to": lambda got, bundle: rle16.decompress(got) == (bundle, len(got))},
+}
+
+
+def _packed_entry(profile: SourceProfile, name: str) -> tuple[str, int, int, str, str]:
+    fname, lo, hi, region_sha1, *rest = profile.packed[name]
+    codec = rest[0] if rest else "lzss"
+    if codec not in CODECS:
+        raise BuildError(f"{name}: unknown codec {codec!r}")
+    return fname, lo, hi, region_sha1, codec
+
+
+def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict,
+                 writes: list[tuple[str, int, int]]) -> tuple[dict, list, bytes, bytes]:
+    """Render one translation/layout pair into a compressed Yc block of the profile (codec per
+    profile entry) and recompress it into the same region. `writes` = every (file, lo, hi) region
+    this build rewrites. Returns (info, changes, stream, rebuilt bundle)."""
     name = job["packed"]
-    fname, lo, hi, region_sha1 = profile.packed[name]
+    fname, lo, hi, region_sha1, codec = _packed_entry(profile, name)
     lba, size = _packed_extent(profile, fname)
     if not 0 <= lo < hi <= size:
         raise BuildError(f"{name}: region {lo:#x}-{hi:#x} outside {fname}")
     region = _checked_file(t1, (lba, size), fname)[lo:hi]
     if hashlib.sha1(region).hexdigest() != region_sha1:
         raise BuildError(f"{name}: region bytes differ from the supported source")
-    if any(region[4 + int.from_bytes(region[:4], "big"):]):
+    c = CODECS[codec]
+    if any(region[c["stream_len"](region):]):
         raise BuildError(f"{name}: region tail after the source stream is not zero padding")
-    new, labels = _render_block_labels(t1, profile, job, name, lzss.decompress(region), fname)
-    stream = _recompress(new, hi - lo, name)
-    info = {"packed": name, "file": fname, "lba": lba, "region": [lo, hi], "stream_bytes": len(stream),
+    new, labels = _render_block_labels(t1, profile, job, name, c["decode"](region), fname,
+                                       rewritten=[(a, b) for f, a, b in writes if f == fname])
+    stream = c["encode"](new, hi - lo, name)
+    info = {"packed": name, "codec": codec, "file": fname, "lba": lba, "region": [lo, hi], "stream_bytes": len(stream),
             "sectors": [], **labels}
     return info, [(lo, stream + bytes(hi - lo - len(stream)))], stream, new
 
@@ -428,7 +474,8 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
                 tbundle, label_info = _render_block_labels(t1, profile, job, "title", tbundle, profile.prolog_name)
             stream = _recompress(tbundle, hi - lo, "title")
         results = [(job, _plan_bundle(t1, profile, job)) for job in jobs]
-        packed = [_plan_packed(t1, profile, job) for job in packed_jobs]
+        writes = [(f, a, b) for f, a, b, _ in regions]
+        packed = [_plan_packed(t1, profile, job, writes) for job in packed_jobs]
         results += [(job, [(info, changes)]) for job, (info, changes, _, _) in zip(packed_jobs, packed)]
         per_file: dict[str, list] = {}
         title_slot = {"file": profile.prolog_name, "lba": prolog_lba} if title else None
@@ -457,7 +504,8 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
     if title:
         _verify_output(out_dir / o1, prolog_lba, lo, hi, stream, tbundle, lbas)
     for info, _, pstream, bundle in packed:
-        _verify_output(out_dir / o1, info["lba"], *info["region"], pstream, bundle, info["sectors"], what=info["packed"])
+        _verify_output(out_dir / o1, info["lba"], *info["region"], pstream, bundle, info["sectors"],
+                       what=info["packed"], codec=info["codec"])
     t = _Track1(out_dir / o1)
     try:
         for _, per_file in results:

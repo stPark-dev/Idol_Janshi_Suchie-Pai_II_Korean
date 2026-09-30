@@ -27,6 +27,8 @@ def main(argv=None) -> int:
                    help="'original' leaves the opponent introduction cards (AP*.BIN) unchanged")
     b.add_argument("--opening", choices=["ko", "original"], default="ko",
                    help="'original' leaves the opening big letters and name plates (PROLOG.BIN LZSS blocks) unchanged")
+    b.add_argument("--boot", choices=["ko", "original"], default="ko",
+                   help="'original' leaves the first-boot notice (BACKRAM.BIN word-RLE block) unchanged")
     args = ap.parse_args(argv)
     spec = ROOT / "assets/title/title_ko.json" if args.title == "ko" else None
     sel = (ROOT / "translation/select1.json", ROOT / "assets/select1/layout.json",
@@ -45,6 +47,9 @@ def main(argv=None) -> int:
                      "layout": ROOT / "assets/opening/letters_layout.json", "glossary": ROOT / "translation/glossary.json"})
         jobs.append({"packed": "opening", "translation": ROOT / "translation/opening.json",
                      "layout": ROOT / "assets/opening/layout.json", "glossary": ROOT / "translation/glossary.json"})
+    if args.boot == "ko":
+        jobs.append({"packed": "boot_notice", "translation": ROOT / "translation/boot_notice.json",
+                     "layout": ROOT / "assets/boot/layout.json", "glossary": ROOT / "translation/glossary.json"})
     try:
         labels = (ROOT / "translation/title_labels.json", ROOT / "assets/title/labels_layout.json",
                   ROOT / "translation/glossary.json") if args.title == "ko" else None
