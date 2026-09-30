@@ -1077,6 +1077,15 @@
    "approved_by": "프로젝트 소유자 2026-09-30 (오프닝·카드 표기 확인 답변)",
    "note": "천문 표준 명칭(한국천문연구원). 사수자리 대신",
    "scope": "cards"
+  },
+  {
+   "id": "title.idol_janshi",
+   "ja": "アイドル雀士",
+   "ko": "아이돌 작사",
+   "state": "approved",
+   "approved_by": "프로젝트 소유자 제공 표지·로고 표기",
+   "note": "제목 앞부분",
+   "scope": "title"
   }
  ]
 }

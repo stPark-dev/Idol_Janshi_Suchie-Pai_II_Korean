@@ -35,7 +35,7 @@ def test_card_tables_and_shared_layout_agree():
 
 def test_every_table_protects_its_palettes_and_references_known_terms():
     for p in [ROOT / "translation/select1.json", ROOT / "translation/match.json", ROOT / "translation/match2.json",
-              ROOT / "translation/opening.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
+              ROOT / "translation/opening.json", ROOT / "translation/letters.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
         t = _load(p)
         for e in t["entries"]:
             assert len(e.get("palette_sha1", "")) == 40, (p.name, e["id"])
@@ -71,3 +71,16 @@ def test_opening_text_stays_inside_each_line_area():
                            box=ln["area"])
     x0, _, x1, _ = layout["templates"]["voice"]["lines"][0]["area"]
     assert x0 >= 14 and x1 <= 98              # frame x 42..126: between the Korean label and ')'
+
+
+def test_letters_table_covers_the_whole_block_and_blank_slots_are_explained():
+    t = _load(ROOT / "translation/letters.json")
+    layout = _load(ROOT / "assets/opening/letters_layout.json")
+    assert t["packed"] == "letters" and t["packed"] in build.JP_DISC1.packed
+    assert t["palette_file"] in build.JP_DISC1.read_only
+    assert sorted(e["entry"] for e in t["entries"]) == list(range(12)) and not t["excluded"]
+    assert sorted(e["id"] for e in layout["entries"]) == sorted(e["id"] for e in t["entries"])
+    for e in t["entries"]:
+        assert "\n" not in e["ko"] and "|" not in e["ko"], e["id"]
+        if e["ko"] == "":
+            assert "빈칸" in e["note"], e["id"]          # an intentionally empty slot must say so

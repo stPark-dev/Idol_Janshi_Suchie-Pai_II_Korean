@@ -144,6 +144,8 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
         outline = full.filter(ImageFilter.MaxFilter(3)) if ol is not None else None
         shape = outline or full
         if shape.getbbox() is None:
+            if text:
+                raise LabelError(f"text {text!r} draws nothing visible; use \"\" for an intentionally empty line")
             continue
         moved = None
         if "shadow" in ln:

@@ -78,8 +78,9 @@ JP_DISC1 = SourceProfile(
         "APYUKI.BIN": (25717, 393216),
     },
     # opening character-intro name plates (docs/initial-survey.md §3.11)
-    packed={"opening": ("PROLOG.BIN", 0x3C00, 0x7900, "ab1dd22d24cf71013f7f7cce22b55a0bae0c75a1")},
-    read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening (banks 0x60/0x70)
+    packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
+            "opening": ("PROLOG.BIN", 0x3C00, 0x7900, "ab1dd22d24cf71013f7f7cce22b55a0bae0c75a1")},
+    read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening (banks 0x60/0x70/0x80)
 )
 STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "SIHO.BIN", "SESIL.BIN",
                "SESIL2.BIN", "HIMITU.BIN", "NAZO.BIN", "SECRET.BIN", "HIDDEN.BIN", "KAKUSHI.BIN"]

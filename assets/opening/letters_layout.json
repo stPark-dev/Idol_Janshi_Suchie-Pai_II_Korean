@@ -1,0 +1,306 @@
+{
+ "_about": "큰 글자 마스크 배치. 칸마다 글자 하나를 칸에 들어가는 최대 크기로, 원래처럼 굵게(weight 6, 획이 빽빽한 '돌'만 3) 색 1로 채움. 픽셀 모드. 빈칸(ko \"\")의 크기는 한 글자를 넣을 때의 값.",
+ "font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+ "entries": [
+  {
+   "id": "letters.e00",
+   "box": [
+    0,
+    0,
+    144,
+    144
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 148,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e01",
+   "box": [
+    0,
+    0,
+    144,
+    152
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 160,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e02",
+   "box": [
+    0,
+    0,
+    128,
+    152
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 142,
+     "weight": 3,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e03",
+   "box": [
+    0,
+    0,
+    152,
+    144
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 176,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e04",
+   "box": [
+    0,
+    0,
+    152,
+    144
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 140,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e05",
+   "box": [
+    0,
+    0,
+    152,
+    144
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 150,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e06",
+   "box": [
+    0,
+    0,
+    152,
+    144
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 164,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e07",
+   "box": [
+    0,
+    0,
+    120,
+    88
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 102,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e08",
+   "box": [
+    0,
+    0,
+    168,
+    152
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 158,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e09",
+   "box": [
+    0,
+    0,
+    168,
+    160
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 170,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e10",
+   "box": [
+    0,
+    0,
+    144,
+    152
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 160,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "letters.e11",
+   "box": [
+    0,
+    0,
+    120,
+    144
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1
+   ],
+   "lines": [
+    {
+     "size": 182,
+     "weight": 6,
+     "x": "center",
+     "y": "center",
+     "fill": 1,
+     "aa": false
+    }
+   ]
+  }
+ ]
+}

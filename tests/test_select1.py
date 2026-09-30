@@ -355,3 +355,18 @@ def test_palette_data_reads_banks_from_another_file(tmp_path):
     with pytest.raises(select1.Select1Error, match="palette"):
         select1.render(blank, tr, lay, palette_data=bytes(0x10))   # bank 0x10 outside a 16-byte image
     assert select1.render(blank, tr, lay, palette_data=bytes(PAL)).textures == want
+
+
+def test_empty_ko_with_clear_gives_transparent_texture(tmp_path):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    t = json.loads(tr.read_text())
+    t["entries"][1]["ko"] = ""
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    lj = json.loads(lay.read_text())
+    lj["entries"][1]["clean"] = {"method": "clear"}
+    lay.write_text(json.dumps(lj))
+    res = select1.render(data, tr, lay)
+    assert 1 in res.textures and "x.e1" in res.ids          # written, not skipped
+    assert set(res.textures[1]) == {0}
+    assert res.states == {"needs_review": 2}

@@ -217,3 +217,12 @@ def test_render_lines_outline_per_segment():
         label.render_lines((60, 20), [{"text": "가|나", "size": 14, "x": 2, "y": 2, "fill": 4, "outline": [1]}], pal)
     with pytest.raises(label.LabelError, match="outline"):
         label.render_lines((60, 20), [{"text": "가|나", "size": 14, "x": 2, "y": 2, "fill": 4, "outline": [1, None]}], pal)
+
+
+def test_render_lines_empty_text_draws_nothing_but_blank_looking_text_is_rejected():
+    pal = [0, 0x7FFF] + [0] * 14
+    line = {"size": 12, "weight": 6, "x": "center", "y": "center", "fill": 1, "aa": False}
+    assert label.render_lines((32, 16), [{**line, "text": ""}], pal).getbbox() is None
+    for text in (" ", "　", "​"):
+        with pytest.raises(label.LabelError, match="nothing visible"):
+            label.render_lines((32, 16), [{**line, "text": text}], pal)

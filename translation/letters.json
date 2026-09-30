@@ -1,0 +1,233 @@
+{
+ "_about": "오프닝의 큰 글자 「アイドル雀士スーチーパイⅡ」. PROLOG.BIN 0x0 LZSS 블록 안 Yc 12항목(오프셋은 압축 해제 결과 기준). 스프라이트는 흰 글자 모양 마스크(색 1)이고 글자 안의 캐릭터 그림은 뒤쪽 VDP2 층이 비쳐 보이는 것. 팔레트는 OPENING1.BIN 0x56800 뱅크 0x80.",
+ "packed": "letters",
+ "bundle_offset": "0x0",
+ "palette_file": "OPENING1.BIN",
+ "palette_offset": "0x56800",
+ "id_prefix": "letters.",
+ "entries": [
+  {
+   "id": "letters.e00",
+   "entry": 0,
+   "offset": "0x64",
+   "size": [
+    144,
+    144
+   ],
+   "colr": "0x80",
+   "src_sha1": "87f0d2b43a03bd6982692f145b1159640e1a8251",
+   "ja": "ア",
+   "ko": "아",
+   "state": "needs_review",
+   "terms": [
+    "title.idol_janshi"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e01",
+   "entry": 1,
+   "offset": "0x28e4",
+   "size": [
+    144,
+    152
+   ],
+   "colr": "0x80",
+   "src_sha1": "e03f48841857dd5f650f011904089b2b714f1fa7",
+   "ja": "イ",
+   "ko": "이",
+   "state": "needs_review",
+   "terms": [
+    "title.idol_janshi"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e02",
+   "entry": 2,
+   "offset": "0x53a4",
+   "size": [
+    128,
+    152
+   ],
+   "colr": "0x80",
+   "src_sha1": "7a7e6005989cb180c9b033b1c15cd4fe73f11a9a",
+   "ja": "ド",
+   "ko": "돌",
+   "state": "needs_review",
+   "terms": [
+    "title.idol_janshi"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e03",
+   "entry": 3,
+   "offset": "0x79a4",
+   "size": [
+    152,
+    144
+   ],
+   "colr": "0x80",
+   "src_sha1": "9b26e910be9e655fa297479163752560c1beb950",
+   "ja": "ル",
+   "ko": "♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "장식: 한글 '아이돌 작사 스치파이 2'는 10글자라 남는 칸에 하트(사람 결정 2026-09-30, 빈 박자 대신) (ル)",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e04",
+   "entry": 4,
+   "offset": "0xa464",
+   "size": [
+    152,
+    144
+   ],
+   "colr": "0x80",
+   "src_sha1": "9ca51f4a87b0505c45907cd4d402b3ee5358a754",
+   "ja": "雀",
+   "ko": "작",
+   "state": "needs_review",
+   "terms": [
+    "title.idol_janshi"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e05",
+   "entry": 5,
+   "offset": "0xcf24",
+   "size": [
+    152,
+    144
+   ],
+   "colr": "0x80",
+   "src_sha1": "8ef64be77b590abb7599386ea7ea2f6c13229066",
+   "ja": "士",
+   "ko": "사",
+   "state": "needs_review",
+   "terms": [
+    "title.idol_janshi"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e06",
+   "entry": 6,
+   "offset": "0xf9e4",
+   "size": [
+    152,
+    144
+   ],
+   "colr": "0x80",
+   "src_sha1": "e7818dede3fa1dfa9c58199776cacd1afadfeaa7",
+   "ja": "ス",
+   "ko": "스",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e07",
+   "entry": 7,
+   "offset": "0x124a4",
+   "size": [
+    120,
+    88
+   ],
+   "colr": "0x80",
+   "src_sha1": "63f6986deb7fe735554eb7cd57f25dd32e52eb40",
+   "ja": "ー",
+   "ko": "♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "장식: 한글 '아이돌 작사 스치파이 2'는 10글자라 남는 칸에 하트(사람 결정 2026-09-30, 빈 박자 대신) (ー, 같은 스프라이트가 두 번 쓰임)",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e08",
+   "entry": 8,
+   "offset": "0x13944",
+   "size": [
+    168,
+    152
+   ],
+   "colr": "0x80",
+   "src_sha1": "46e1d836eb41646e43f26091880b7265ec85f7b9",
+   "ja": "チ",
+   "ko": "치",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e09",
+   "entry": 9,
+   "offset": "0x16b24",
+   "size": [
+    168,
+    160
+   ],
+   "colr": "0x80",
+   "src_sha1": "0f216d0d6e2d368f7d81cc27961af77522faa420",
+   "ja": "パ",
+   "ko": "파",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e10",
+   "entry": 10,
+   "offset": "0x19fa4",
+   "size": [
+    144,
+    152
+   ],
+   "colr": "0x80",
+   "src_sha1": "58771202623cb89db1239865688a26d3dbe388d8",
+   "ja": "イ",
+   "ko": "이",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  },
+  {
+   "id": "letters.e11",
+   "entry": 11,
+   "offset": "0x1ca64",
+   "size": [
+    120,
+    144
+   ],
+   "colr": "0x80",
+   "src_sha1": "af9419f23c9ac4f4babb178835adb68f2502f171",
+   "ja": "Ⅱ",
+   "ko": "2",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
+  }
+ ],
+ "excluded": []
+}
