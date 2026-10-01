@@ -1,0 +1,422 @@
+{
+ "_about": "보너스 화면. 큰 한자 6개는 assets/match/layout.json의 같은 그림 배치를 복사. 보너스는 초록 12 + 노랑 테두리 10, '획득!!'은 파란 그라데이션 9→5 + 노랑 테두리 1.",
+ "font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+ "entries": [
+  {
+   "id": "maxgrp.e02",
+   "box": [
+    0,
+    0,
+    80,
+    80
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 43,
+     "x": "center",
+     "y": "center",
+     "fill": {
+      "v": [
+       7,
+       5,
+       3,
+       1,
+       3,
+       5,
+       7
+      ]
+     },
+     "outline": 13,
+     "shadow": {
+      "idx": 15,
+      "dx": 2,
+      "dy": 2
+     },
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "maxgrp.e03",
+   "box": [
+    0,
+    0,
+    80,
+    80
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 60,
+     "x": "center",
+     "y": "center",
+     "fill": {
+      "v": [
+       7,
+       5,
+       3,
+       1,
+       3,
+       5,
+       7
+      ]
+     },
+     "outline": 13,
+     "shadow": {
+      "idx": 15,
+      "dx": 2,
+      "dy": 2
+     },
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "maxgrp.e04",
+   "box": [
+    0,
+    0,
+    80,
+    80
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 60,
+     "x": "center",
+     "y": "center",
+     "fill": {
+      "v": [
+       7,
+       5,
+       3,
+       1,
+       3,
+       5,
+       7
+      ]
+     },
+     "outline": 13,
+     "shadow": {
+      "idx": 15,
+      "dx": 2,
+      "dy": 2
+     },
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "maxgrp.e05",
+   "box": [
+    0,
+    0,
+    80,
+    80
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 60,
+     "x": "center",
+     "y": "center",
+     "fill": {
+      "v": [
+       7,
+       5,
+       3,
+       1,
+       3,
+       5,
+       7
+      ]
+     },
+     "outline": 13,
+     "shadow": {
+      "idx": 15,
+      "dx": 2,
+      "dy": 2
+     },
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "maxgrp.e06",
+   "box": [
+    0,
+    0,
+    80,
+    80
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 60,
+     "x": "center",
+     "y": "center",
+     "fill": {
+      "v": [
+       7,
+       5,
+       3,
+       1,
+       3,
+       5,
+       7
+      ]
+     },
+     "outline": 13,
+     "shadow": {
+      "idx": 15,
+      "dx": 2,
+      "dy": 2
+     },
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "maxgrp.e07",
+   "box": [
+    0,
+    0,
+    80,
+    80
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 60,
+     "x": "center",
+     "y": "center",
+     "fill": {
+      "v": [
+       7,
+       5,
+       3,
+       1,
+       3,
+       5,
+       7
+      ]
+     },
+     "outline": 13,
+     "shadow": {
+      "idx": 15,
+      "dx": 2,
+      "dy": 2
+     },
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "maxgrp.e08",
+   "box": [
+    0,
+    0,
+    144,
+    32
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 32,
+     "x": "center",
+     "y": "center",
+     "fill": 12,
+     "outline": 10,
+     "aa": false
+    }
+   ]
+  },
+  {
+   "id": "maxgrp.e16",
+   "box": [
+    103,
+    0,
+    184,
+    32
+   ],
+   "clean": {
+    "method": "clear"
+   },
+   "allowed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "lines": [
+    {
+     "size": 31,
+     "x": "center",
+     "y": "center",
+     "area": [
+      103,
+      0,
+      184,
+      32
+     ],
+     "fill": {
+      "v": [
+       9,
+       8,
+       7,
+       6,
+       5
+      ]
+     },
+     "outline": 1,
+     "aa": false
+    }
+   ]
+  }
+ ]
+}

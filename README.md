@@ -36,6 +36,7 @@
 - 상대 소개 카드 17개와 저장 안내 1개 (`AP*.BIN` 11개, 초벌 번역·검수 대기)
 - 오프닝(데모) 캐릭터 소개 이름표 46개 (`PROLOG.BIN` 압축 블록: 별명·이름·성우, 초벌 번역·검수 대기)
 - 패널 매치(보너스 게임) 세로 안내문 92줄 (`PMATCH.BIN`, 초벌 번역·검수 대기, 그림 위 글자 32항목은 아직)
+- 대국 보너스 화면 「満貫ボーナス / POINT獲得!!」 (`MAXGRP1/2/3.BIN`, 초벌 번역·검수 대기)
 - 첫 부팅 안내 화면 5줄 (`BACKRAM.BIN` 워드 RLE 압축 블록, 초벌 번역·검수 대기)
 - 타이틀 선택지 「最初から／続きから」 → "처음부터 시작 / 이어서 시작" (표기 승인, 화면 표시는 미확인)
 - 오프닝 큰 글자 「アイドル雀士スーチーパイⅡ」 → "아이돌 작사 스치파이 2" (`PROLOG.BIN` 압축 블록, 남는 칸 2개는 하트 장식)
@@ -53,6 +54,7 @@
 | [`translation/letters.json`](translation/letters.json) | 오프닝 큰 글자 12칸 |
 | [`translation/title_labels.json`](translation/title_labels.json) | 타이틀 선택지 1개와 제외 항목 10개 |
 | [`translation/boot_notice.json`](translation/boot_notice.json) | 첫 부팅 안내 5줄과 제외 항목 3개 |
+| [`translation/maxgrp.json`](translation/maxgrp.json) | 대국 보너스 화면 8개, 미번역 로고 2항목, 제외 28개 |
 | [`translation/panel.json`](translation/panel.json) | 패널 매치 안내문 92줄·남은 횟수 칸, 미번역 그림 글자 32항목(`untranslated`), 제외 80개 |
 | [`assets/select1/layout.json`](assets/select1/layout.json), [`assets/match/`](assets/match/), [`assets/cards/`](assets/cards/), [`assets/opening/`](assets/opening/) | 그림 글자 배치 (편집 영역, 배경 복원 방식, 글자 크기·색 번호) |
 
@@ -75,7 +77,7 @@
 python3 tools/khpatch.py build --source "/경로/Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
 
 # 대조군: 타이틀 그림은 그대로 두고 압축만 다시 한 디스크 (압축기 호환 확인용)
-python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original
+python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original --bonus original
 
 # 테스트
 python3 -m pytest -q tests

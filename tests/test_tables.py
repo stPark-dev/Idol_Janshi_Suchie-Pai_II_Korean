@@ -37,7 +37,7 @@ def test_every_table_protects_its_palettes_and_references_known_terms():
     for p in [ROOT / "translation/select1.json", ROOT / "translation/match.json", ROOT / "translation/match2.json",
               ROOT / "translation/opening.json", ROOT / "translation/letters.json",
               ROOT / "translation/title_labels.json", ROOT / "translation/boot_notice.json",
-              ROOT / "translation/panel.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
+              ROOT / "translation/panel.json", ROOT / "translation/maxgrp.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
         t = _load(p)
         for e in t["entries"]:
             assert len(e.get("palette_sha1", "")) == 40, (p.name, e["id"])
@@ -118,3 +118,13 @@ def test_panel_table_classifies_every_entry_and_pending_ones_are_marked():
     for e in t["entries"]:
         if e["state"] == "untranslated":
             assert e["ko"] == "" and "다음 단계" in e["note"], e["id"]
+
+
+def test_maxgrp_kanji_reuse_the_match_screen_translation():
+    t = _load(ROOT / "translation/maxgrp.json")
+    m = {e["src_sha1"]: e for e in _load(ROOT / "translation/match.json")["entries"]}
+    assert t["files"] == ["MAXGRP1.BIN", "MAXGRP2.BIN", "MAXGRP3.BIN"]
+    assert all(f in build.JP_DISC1.files for f in t["files"])
+    assert sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]]) == list(range(38))
+    shared = [e for e in t["entries"] if e["src_sha1"] in m]
+    assert len(shared) == 6 and all(e["ko"] == m[e["src_sha1"]]["ko"] for e in shared)

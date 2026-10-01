@@ -1,0 +1,340 @@
+{
+ "_about": "대국 보너스 화면(満貫ボーナス 등) MAXGRP1/2/3.BIN 0x5000 비압축 Yc 38항목(세 파일이 배경 37번만 다름), CRAM 0x0.",
+ "file": "MAXGRP1.BIN",
+ "files": [
+  "MAXGRP1.BIN",
+  "MAXGRP2.BIN",
+  "MAXGRP3.BIN"
+ ],
+ "bundle_offset": "0x5000",
+ "palette_offset": "0x0",
+ "id_prefix": "maxgrp.",
+ "entries": [
+  {
+   "id": "maxgrp.e02",
+   "entry": 2,
+   "offset": "0x7434",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x10",
+   "src_sha1": "f02f12364b743805aa37137b50e61a068657c20b",
+   "ja": "跳",
+   "ko": "하네",
+   "state": "needs_review",
+   "terms": [
+    "score.hane"
+   ],
+   "note": "대국 화면 match.e163와 같은 그림·팔레트, 같은 번역·배치",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
+  },
+  {
+   "id": "maxgrp.e03",
+   "entry": 3,
+   "offset": "0x80b4",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x10",
+   "src_sha1": "0912f9f47c8c2c2fb48c2497d938c53dc8596186",
+   "ja": "倍",
+   "ko": "배",
+   "state": "needs_review",
+   "terms": [
+    "score.bai"
+   ],
+   "note": "대국 화면 match.e164와 같은 그림·팔레트, 같은 번역·배치",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
+  },
+  {
+   "id": "maxgrp.e04",
+   "entry": 4,
+   "offset": "0x8d34",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x10",
+   "src_sha1": "1f0d62db7c69883da2e0341acc9efe87657cf157",
+   "ja": "貫",
+   "ko": "관",
+   "state": "needs_review",
+   "terms": [
+    "score.kan"
+   ],
+   "note": "대국 화면 match.e165와 같은 그림·팔레트, 같은 번역·배치",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
+  },
+  {
+   "id": "maxgrp.e05",
+   "entry": 5,
+   "offset": "0x99b4",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x10",
+   "src_sha1": "293353417cb13bd06673494422116868d5fb494f",
+   "ja": "三",
+   "ko": "삼",
+   "state": "needs_review",
+   "terms": [
+    "score.san"
+   ],
+   "note": "대국 화면 match.e166와 같은 그림·팔레트, 같은 번역·배치",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
+  },
+  {
+   "id": "maxgrp.e06",
+   "entry": 6,
+   "offset": "0xa634",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x10",
+   "src_sha1": "5b3af15c911fcf964bfaa302fef04fe09f2e6c7a",
+   "ja": "満",
+   "ko": "만",
+   "state": "needs_review",
+   "terms": [
+    "score.man"
+   ],
+   "note": "대국 화면 match.e167와 같은 그림·팔레트, 같은 번역·배치",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
+  },
+  {
+   "id": "maxgrp.e07",
+   "entry": 7,
+   "offset": "0xb2b4",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x10",
+   "src_sha1": "86e93ccce8d77941270794acccfe833d315819f2",
+   "ja": "役",
+   "ko": "역",
+   "state": "needs_review",
+   "terms": [
+    "score.yaku"
+   ],
+   "note": "대국 화면 match.e168와 같은 그림·팔레트, 같은 번역·배치",
+   "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
+  },
+  {
+   "id": "maxgrp.e08",
+   "entry": 8,
+   "offset": "0xbf34",
+   "size": [
+    144,
+    32
+   ],
+   "colr": "0x20",
+   "src_sha1": "51c45f54a481879b02626003c77e5088a700a976",
+   "ja": "ボーナス",
+   "ko": "보너스",
+   "state": "needs_review",
+   "terms": [
+    "ui.omake"
+   ],
+   "note": "",
+   "palette_sha1": "2e0dcf4dd187f2316a1d1ba590ea27318a460fbb"
+  },
+  {
+   "id": "maxgrp.e16",
+   "entry": 16,
+   "offset": "0xd2b4",
+   "size": [
+    184,
+    32
+   ],
+   "colr": "0x20",
+   "src_sha1": "25f332f5527a6c93077affd165d1e3b433773a1b",
+   "ja": "POINT獲得!!",
+   "ko": "획득!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "앞의 'POINT'(영어) 그림은 그대로, '獲得!!' 자리만 바꿈. 앞에 숫자 스프라이트가 붙어 'n POINT 획득!!'",
+   "palette_sha1": "2e0dcf4dd187f2316a1d1ba590ea27318a460fbb"
+  },
+  {
+   "id": "maxgrp.e17",
+   "entry": 17,
+   "offset": "0xde34",
+   "size": [
+    208,
+    40
+   ],
+   "colr": "0x30",
+   "src_sha1": "0f6d4b707ccf7e3ccd8315f600275359cde6ea81",
+   "ja": "変身ポイントMAX!! 로고 앞부분",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(패널 매치 193·194와 같은 로고)",
+   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
+  },
+  {
+   "id": "maxgrp.e18",
+   "entry": 18,
+   "offset": "0xee74",
+   "size": [
+    72,
+    64
+   ],
+   "colr": "0x30",
+   "src_sha1": "15b66aa4d3dc27d6446b266b5345b1cbae54e4e1",
+   "ja": "変身ポイントMAX!! 로고 뒷부분",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(패널 매치 193·194와 같은 로고)",
+   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "maxgrp.e00",
+   "entry": 0,
+   "reason": "CHANGE 게이지 (영어)"
+  },
+  {
+   "id": "maxgrp.e01",
+   "entry": 1,
+   "reason": "HELPER (영어)"
+  },
+  {
+   "id": "maxgrp.e09",
+   "entry": 9,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e10",
+   "entry": 10,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e11",
+   "entry": 11,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e12",
+   "entry": 12,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e13",
+   "entry": 13,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e14",
+   "entry": 14,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e15",
+   "entry": 15,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e19",
+   "entry": 19,
+   "reason": "틀 그림"
+  },
+  {
+   "id": "maxgrp.e20",
+   "entry": 20,
+   "reason": "틀 그림"
+  },
+  {
+   "id": "maxgrp.e21",
+   "entry": 21,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e22",
+   "entry": 22,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e23",
+   "entry": 23,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e24",
+   "entry": 24,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e25",
+   "entry": 25,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e26",
+   "entry": 26,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e27",
+   "entry": 27,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e28",
+   "entry": 28,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e29",
+   "entry": 29,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e30",
+   "entry": 30,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e31",
+   "entry": 31,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e32",
+   "entry": 32,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e33",
+   "entry": 33,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e34",
+   "entry": 34,
+   "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e35",
+   "entry": 35,
+   "reason": "캐릭터 그림"
+  },
+  {
+   "id": "maxgrp.e36",
+   "entry": 36,
+   "reason": "캐릭터 그림"
+  },
+  {
+   "id": "maxgrp.e37",
+   "entry": 37,
+   "reason": "배경 그림 (파일마다 다름)"
+  }
+ ]
+}
