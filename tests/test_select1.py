@@ -421,3 +421,45 @@ def test_untranslated_entries_are_strict(tmp_path, keep_layout, ko, msg):
         lj = json.loads(lay.read_text()); lj["entries"] = [lj["entries"][0]]; lay.write_text(json.dumps(lj))
     with pytest.raises(select1.Select1Error, match=msg):
         select1.render(data, tr, lay)
+
+
+def test_8bpp_entries_render_with_a_256_colour_bank(tmp_path):
+    cram = bytearray(0x400)                                   # 512 entries; bank 0x100 = entries 0x100..0x1FF
+    cram[0x200 + 2:0x200 + 4] = (0x7FFF).to_bytes(2, "big")   # idx 1 white
+    cram[0x200 + 400:0x200 + 402] = (0x001F).to_bytes(2, "big")   # idx 200 red
+    art = yc.Entry(32, 16, 0x00A0, 0x100, bytes([50]) * 512)  # mode 4 (8bpp), background idx 50
+    data = bytes(cram) + yc.build([art])
+    tr, lay = _tables(tmp_path, data, 0x400)
+    t = json.loads(tr.read_text()); t["entries"] = t["entries"][:1]; tr.write_text(json.dumps(t, ensure_ascii=False))
+    lay.write_text(json.dumps({"entries": [{"id": "x.e0", "box": [0, 0, 32, 16], "allowed": [1, 200],
+                                            "lines": [{"size": 12, "x": "center", "y": 1, "fill": 1, "outline": 200}]}]}))
+    tex = select1.render(data, tr, lay).textures[0]
+    assert len(tex) == 512 and set(tex) <= {50, 1, 200} and {1, 200} <= set(tex)
+    assert select1.palette(data, 0x100, colours=256)[200] == 0x001F and len(select1.palette(data, 0x100, colours=256)) == 256
+
+
+@pytest.mark.parametrize("colr,n,start", [(0x130, 256, 0x100), (0x1C5, 128, 0x180), (0x1C5, 64, 0x1C0), (0x1C5, 16, 0x1C0)])
+def test_bank_alignment_per_colour_mode(colr, n, start):
+    assert select1.bank_span(colr, n) == (start, n)
+    cram = bytes(range(256)) * 16
+    assert select1.palette_bytes(cram, colr, colours=n) == cram[start * 2:start * 2 + 2 * n]
+    with pytest.raises(select1.Select1Error):
+        select1.palette_bytes(cram, colr, colours=48)
+
+
+def test_8bpp_translated_entries_reject_lut_and_out_of_bank_pixels(tmp_path):
+    cram = bytes(0x400)
+    lut = yc.Entry(8, 2, 0x0088, 0x100, bytes(8))             # mode 1 (LUT)
+    data = cram + yc.build([lut])
+    tr, lay = _tables(tmp_path, data, 0x400)
+    t = json.loads(tr.read_text()); t["entries"] = t["entries"][:1]; tr.write_text(json.dumps(t, ensure_ascii=False))
+    lay.write_text(json.dumps({"entries": [{"id": "x.e0", "box": [0, 0, 8, 2], "allowed": [1], "lines": []}]}))
+    with pytest.raises(select1.Select1Error, match="not a CRAM bank"):
+        select1.render(data, tr, lay)
+    m2 = yc.Entry(8, 2, 0x0090, 0x40, bytes([0x41]) * 16)      # mode 2 (64 colours) with a high-bit pixel
+    data = cram + yc.build([m2])
+    tr, lay = _tables(tmp_path, data, 0x400)
+    t = json.loads(tr.read_text()); t["entries"] = t["entries"][:1]; tr.write_text(json.dumps(t, ensure_ascii=False))
+    lay.write_text(json.dumps({"entries": [{"id": "x.e0", "box": [0, 0, 8, 2], "allowed": [1], "lines": []}]}))
+    with pytest.raises(select1.Select1Error, match="outside its 64-colour bank"):
+        select1.render(data, tr, lay)

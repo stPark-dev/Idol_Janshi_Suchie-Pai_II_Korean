@@ -348,9 +348,14 @@ def _render_block_labels(t1: _Track1, profile: SourceProfile, job: dict, name: s
     if pf == fname and rewritten is not None:
         # CRAM image in the block's own file: read from the source; it must not lie in the rewritten region
         pal_lo = int(tdoc["palette_offset"], 16)
-        banks = {pal_lo + (int(e["colr"], 16) & 0x7F0) * 2 for e in tdoc["entries"]}
-        if any(b < hi and lo < b + 32 for b in banks for lo, hi in rewritten):
-            raise BuildError(f"{translation.name}: a palette bank at {sorted(map(hex, banks))} overlaps the rewritten region")
+        src_ents = yc.parse(bundle)
+        spans = set()
+        for e in tdoc["entries"]:
+            mode = (src_ents[e["entry"]].attr >> 3) & 7 if e["entry"] < len(src_ents) else 0
+            bank, n = select1_mod.bank_span(int(e["colr"], 16), select1_mod.COLOURS.get(mode, 16))
+            spans.add((pal_lo + bank * 2, 2 * n))
+        if any(b < hi and lo < b + n for b, n in spans for lo, hi in rewritten):
+            raise BuildError(f"{translation.name}: a palette bank at {sorted(hex(b) for b, _ in spans)} overlaps the rewritten region")
         pal_data = _checked_file(t1, _packed_extent(profile, fname), fname)
     elif pf in profile.read_only:
         pal_data = _checked_file(t1, profile.read_only[pf], pf)

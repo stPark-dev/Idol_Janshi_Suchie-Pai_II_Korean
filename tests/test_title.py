@@ -1,3 +1,4 @@
+import pytest
 from PIL import Image
 
 from suchie2 import title
@@ -100,3 +101,19 @@ def test_equal_error_tie_goes_to_first_listed_sprite():
     sprites = [title.Sprite("a", (0, 0, 8, 2), same), title.Sprite("b", (0, 0, 8, 2), same)]
     out = title.assign(_canvas({(1, 1): (255, 0, 0, 255)}), sprites)
     assert out["a"].pixel(1, 1) == 1 and out["b"].pixel(1, 1) == 0
+
+
+def test_texture_8bpp_pixels():
+    from suchie2.title import Texture
+    t = Texture(4, 2, bytearray(range(8)), bpp=8)
+    assert t.pixel(3, 1) == 7
+    t.set(0, 1, 200)
+    assert t.data[4] == 200 and t.pixel(0, 1) == 200
+
+
+def test_texture_rejects_bad_depth_or_size():
+    from suchie2.title import Texture
+    with pytest.raises(ValueError):
+        Texture(4, 2, bytearray(8), bpp=16)
+    with pytest.raises(ValueError):
+        Texture(4, 2, bytearray(3))

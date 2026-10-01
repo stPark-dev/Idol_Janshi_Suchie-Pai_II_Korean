@@ -1,4 +1,4 @@
-"""Replace the text inside one 4bpp sprite texture while keeping its frame and palette.
+"""Replace the text inside one sprite texture (4bpp or 8bpp CRAM-bank) while keeping its frame and palette.
 
 1. Clean plate: text pixels inside the editable box are replaced by background, either the
    dominant non-text index of the same row (banded fills) or the nearest non-text pixel one
@@ -160,6 +160,12 @@ def _vertical_masks(ln, segs, fills, font, big, pad, area):
     return list(zip(masks, fills))
 
 
+def _cut(mask, big) -> bool:
+    """True when a segment's ink is gone or touches the padded canvas edge (part of it was cropped)."""
+    b = mask.getbbox()
+    return b is None or b[0] == 0 or b[1] == 0 or b[2] == big[0] or b[3] == big[1]
+
+
 def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> Image.Image:
     """lines: [{text, size, x ('center'|'right'|int), y ('center'|int), area ([x0,y0,x1,y1] used
     for centring, default whole canvas), fill (idx, {"v": [idx, ...]} vertical gradient over the
@@ -168,7 +174,8 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
     shadow ({idx, dx, dy},
     optional), vertical (True = top-to-bottom cells inside area, y 'top'|'center'|offset, optional
     step = cell height)}]. Everything drawn (glyph, stroke, outline, shadow) must lie inside box
-    (default the whole canvas); otherwise LabelError, never silent clipping."""
+    (default the whole canvas); otherwise LabelError, never silent clipping. shear (optional): italic
+    slant around the area's vertical centre, x offset per pixel above it (negative leans left)."""
     w, h = size
     bx0, by0, bx1, by1 = box or (0, 0, w, h)
     pad = 4 + max([ln.get("weight", 0) + 1 + max(abs(ln.get("shadow", {}).get("dx", 0)),
@@ -202,6 +209,17 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
                         stroke_width=weight, stroke_fill=255)
                 masks.append((m, fi))
                 cx += font.getlength(seg)
+        segs_drawn = [seg.strip() != "" for seg in segs]
+        inked = [m.getbbox() is not None for m, _ in masks]
+        if any(inked) and any(d and _cut(m, big) for (m, _), d in zip(masks, segs_drawn)):
+            raise LabelError(f"text {text!r} does not fit: it runs off the canvas (a segment is cropped or missing)")
+        if ln.get("shear"):                    # italic: rows above the area centre move right
+            k = float(ln["shear"])
+            cy = (ay0 + ay1) / 2 + pad
+            rs = Image.NEAREST if not ln.get("aa", True) else Image.BILINEAR
+            masks = [(m.transform(big, Image.AFFINE, (1, k, -k * cy, 0, 1, 0), resample=rs), fi) for m, fi in masks]
+            if any(inked) and any(d and _cut(m, big) for (m, _), d in zip(masks, segs_drawn)):
+                raise LabelError(f"sheared text {text!r} does not fit: it runs off the canvas")
         full = Image.new("L", big, 0)
         for m, _ in masks:
             full = ImageChops.lighter(full, m)

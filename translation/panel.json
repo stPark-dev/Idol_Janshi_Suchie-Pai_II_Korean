@@ -1587,6 +1587,23 @@
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
   },
   {
+   "id": "panel.e193",
+   "entry": 193,
+   "offset": "0x465ac",
+   "size": [
+    208,
+    40
+   ],
+   "colr": "0x70",
+   "src_sha1": "0f6d4b707ccf7e3ccd8315f600275359cde6ea81",
+   "ja": "変身ポイント(MAX!!)",
+   "ko": "변신포인트",
+   "state": "needs_review",
+   "terms": [],
+   "note": "変身ポイント 자리(x 0~170)만 '변신포인트'로, 'M'부터는 원래 그림. 원래처럼 세로 그라데이션 6→1 두 번 + 보라 테두리 12",
+   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
+  },
+  {
    "id": "panel.e003",
    "entry": 3,
    "offset": "0x696c",
@@ -1604,40 +1621,6 @@
    "palette_sha1": "89ff7d725512784a266a68c11b84fad9430cf01f"
   },
   {
-   "id": "panel.e038",
-   "entry": 38,
-   "offset": "0xf20c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x100",
-   "src_sha1": "bc9d0586fb2bfff2d11e2c512d0daaf7ea9f1ad1",
-   "ja": "스치스틱 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
-  },
-  {
-   "id": "panel.e043",
-   "entry": 43,
-   "offset": "0x12f4c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "04b0f5105f5bdde4b31f3e4cd9fbea1e8d39f0ae",
-   "ja": "스페셜 소환(召喚) 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
    "id": "panel.e044",
    "entry": 44,
    "offset": "0x13b8c",
@@ -1647,216 +1630,14 @@
    ],
    "colr": "0x300",
    "src_sha1": "c1a5f693b43027e6456d2be1431fb538f94488d4",
-   "ja": "하이퍼아이 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
-  },
-  {
-   "id": "panel.e045",
-   "entry": 45,
-   "offset": "0x147cc",
-   "size": [
-    56,
-    56
+   "ja": "ハイパー\nアイ",
+   "ko": "하이퍼\n아이",
+   "state": "needs_review",
+   "terms": [
+    "item.hyper_eye"
    ],
-   "colr": "0x300",
-   "src_sha1": "92b7e41573e647744f11b8575303daeda8edd0f5",
-   "ja": "せっかん 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
-  },
-  {
-   "id": "panel.e046",
-   "entry": 46,
-   "offset": "0x1540c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "045405d6a901b9b7400d3af5a735ff7829665227",
-   "ja": "イベント 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
-   "id": "panel.e064",
-   "entry": 64,
-   "offset": "0x196ec",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x100",
-   "src_sha1": "22fa6635a7f718813feb1ba693618c4c1393e6fa",
-   "ja": "스치스틱 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
-  },
-  {
-   "id": "panel.e065",
-   "entry": 65,
-   "offset": "0x1a32c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x100",
-   "src_sha1": "82b3b46eba7339ebf1e42a09619ae45d986cbe6f",
-   "ja": "스치스틱 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
-  },
-  {
-   "id": "panel.e066",
-   "entry": 66,
-   "offset": "0x1af6c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x100",
-   "src_sha1": "25f37e190d41aa66c48410067c28244198602cc8",
-   "ja": "스치스틱 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
-  },
-  {
-   "id": "panel.e077",
-   "entry": 77,
-   "offset": "0x2362c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "ab7b3f20445f65efdbaa46d5c324412084c531d4",
-   "ja": "必殺 Helper 패널(전환 중)",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
-   "id": "panel.e078",
-   "entry": 78,
-   "offset": "0x2426c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "f965151a0a7f6e232b79e773216b04c07073d80c",
-   "ja": "必殺 Helper 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
-   "id": "panel.e079",
-   "entry": 79,
-   "offset": "0x24eac",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "e5bd23e5d745af258b048e33dab0d423357b4c2d",
-   "ja": "必殺 Helper 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
-   "id": "panel.e080",
-   "entry": 80,
-   "offset": "0x25aec",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "1e3a37b6f395ca045aec37c44cc5d4520b20e276",
-   "ja": "스페셜 소환 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
-   "id": "panel.e081",
-   "entry": 81,
-   "offset": "0x2672c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "63cc573060422ac5b38fdcd7718970be767bbf82",
-   "ja": "스페셜 소환 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
-   "id": "panel.e082",
-   "entry": 82,
-   "offset": "0x2736c",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "f02e23c8aacac145c4b623cf6a55798b97ee5c93",
-   "ja": "스페셜 소환 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
-  },
-  {
-   "id": "panel.e083",
-   "entry": 83,
-   "offset": "0x27fac",
-   "size": [
-    56,
-    56
-   ],
-   "colr": "0x200",
-   "src_sha1": "11d21db8c88c51584cc54492ff0710ba444d8dcf",
-   "ja": "스페셜 소환 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+   "note": "하이퍼아이 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
    "id": "panel.e084",
@@ -1868,12 +1649,14 @@
    ],
    "colr": "0x300",
    "src_sha1": "f7734aaad1f75ad5db763239eea3ab512b92c3d6",
-   "ja": "하이퍼아이 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+   "ja": "ハイパー\nアイ",
+   "ko": "하이퍼\n아이",
+   "state": "needs_review",
+   "terms": [
+    "item.hyper_eye"
+   ],
+   "note": "하이퍼아이 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
    "id": "panel.e085",
@@ -1885,12 +1668,14 @@
    ],
    "colr": "0x300",
    "src_sha1": "134e71a356a3ad50513c4ec9d08e5f234fbc12ea",
-   "ja": "하이퍼아이 패널",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+   "ja": "ハイパー\nアイ",
+   "ko": "하이퍼\n아이",
+   "state": "needs_review",
+   "terms": [
+    "item.hyper_eye"
+   ],
+   "note": "하이퍼아이 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
    "id": "panel.e086",
@@ -1902,12 +1687,201 @@
    ],
    "colr": "0x300",
    "src_sha1": "d45668d6aabae9d5e40f6a157c1e6ad3ac7363f3",
-   "ja": "하이퍼아이 패널",
-   "ko": "",
-   "state": "untranslated",
+   "ja": "ハイパー\nアイ",
+   "ko": "하이퍼\n아이",
+   "state": "needs_review",
+   "terms": [
+    "item.hyper_eye"
+   ],
+   "note": "하이퍼아이 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
+  },
+  {
+   "id": "panel.e038",
+   "entry": 38,
+   "offset": "0xf20c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "bc9d0586fb2bfff2d11e2c512d0daaf7ea9f1ad1",
+   "ja": "スーチー\nスティック",
+   "ko": "스치\n스틱",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+   "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
+  },
+  {
+   "id": "panel.e064",
+   "entry": 64,
+   "offset": "0x196ec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "22fa6635a7f718813feb1ba693618c4c1393e6fa",
+   "ja": "スーチー\nスティック",
+   "ko": "스치\n스틱",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
+  },
+  {
+   "id": "panel.e065",
+   "entry": 65,
+   "offset": "0x1a32c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "82b3b46eba7339ebf1e42a09619ae45d986cbe6f",
+   "ja": "スーチー\nスティック",
+   "ko": "스치\n스틱",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
+  },
+  {
+   "id": "panel.e066",
+   "entry": 66,
+   "offset": "0x1af6c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "25f37e190d41aa66c48410067c28244198602cc8",
+   "ja": "スーチー\nスティック",
+   "ko": "스치\n스틱",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
+  },
+  {
+   "id": "panel.e043",
+   "entry": 43,
+   "offset": "0x12f4c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "04b0f5105f5bdde4b31f3e4cd9fbea1e8d39f0ae",
+   "ja": "召喚",
+   "ko": "소 환",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
+  },
+  {
+   "id": "panel.e080",
+   "entry": 80,
+   "offset": "0x25aec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "1e3a37b6f395ca045aec37c44cc5d4520b20e276",
+   "ja": "召喚",
+   "ko": "소 환",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
+  },
+  {
+   "id": "panel.e081",
+   "entry": 81,
+   "offset": "0x2672c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "63cc573060422ac5b38fdcd7718970be767bbf82",
+   "ja": "召喚",
+   "ko": "소 환",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
+  },
+  {
+   "id": "panel.e082",
+   "entry": 82,
+   "offset": "0x2736c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "f02e23c8aacac145c4b623cf6a55798b97ee5c93",
+   "ja": "召喚",
+   "ko": "소 환",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
+  },
+  {
+   "id": "panel.e083",
+   "entry": 83,
+   "offset": "0x27fac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "11d21db8c88c51584cc54492ff0710ba444d8dcf",
+   "ja": "召喚",
+   "ko": "소 환",
+   "state": "needs_review",
+   "terms": [],
+   "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
+  },
+  {
+   "id": "panel.e046",
+   "entry": 46,
+   "offset": "0x1540c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "045405d6a901b9b7400d3af5a735ff7829665227",
+   "ja": "イベント",
+   "ko": "이벤트",
+   "state": "needs_review",
+   "terms": [],
+   "note": "이벤트 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
+  },
+  {
+   "id": "panel.e045",
+   "entry": 45,
+   "offset": "0x147cc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "92b7e41573e647744f11b8575303daeda8edd0f5",
+   "ja": "せっかん",
+   "ko": "응징",
+   "state": "needs_review",
+   "terms": [],
+   "note": "응징(せっかん) 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
    "id": "panel.e087",
@@ -1919,12 +1893,12 @@
    ],
    "colr": "0x300",
    "src_sha1": "8eb77d4929dba76ad5d372c01fb6c6f4b8375baa",
-   "ja": "せっかん 패널",
-   "ko": "",
-   "state": "untranslated",
+   "ja": "せっかん",
+   "ko": "응징",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+   "note": "응징(せっかん) 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
    "id": "panel.e088",
@@ -1936,12 +1910,12 @@
    ],
    "colr": "0x300",
    "src_sha1": "185e3b52056d673ab74aecd62bacb432f9e0c4ff",
-   "ja": "せっかん 패널",
-   "ko": "",
-   "state": "untranslated",
+   "ja": "せっかん",
+   "ko": "응징",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+   "note": "응징(せっかん) 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
    "id": "panel.e089",
@@ -1953,12 +1927,12 @@
    ],
    "colr": "0x300",
    "src_sha1": "10cdcaa3453627ecbd87b97d908168c746635054",
-   "ja": "せっかん 패널",
-   "ko": "",
-   "state": "untranslated",
+   "ja": "せっかん\nファイヤー",
+   "ko": "응징\n파이어",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+   "note": "파이어 응징 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
    "id": "panel.e090",
@@ -1970,46 +1944,63 @@
    ],
    "colr": "0x300",
    "src_sha1": "cab6b0ad0aa6b1964cf808363213b7c9b6bcfdd6",
-   "ja": "せっかん 패널",
-   "ko": "",
-   "state": "untranslated",
+   "ja": "せっかん\nファイヤー",
+   "ko": "응징\n파이어",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+   "note": "파이어 응징 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
   {
-   "id": "panel.e193",
-   "entry": 193,
-   "offset": "0x465ac",
+   "id": "panel.e077",
+   "entry": 77,
+   "offset": "0x2362c",
    "size": [
-    208,
-    40
+    56,
+    56
    ],
-   "colr": "0x70",
-   "src_sha1": "0f6d4b707ccf7e3ccd8315f600275359cde6ea81",
-   "ja": "変身ポイントMAX!! 로고 앞부분",
-   "ko": "",
-   "state": "untranslated",
+   "colr": "0x200",
+   "src_sha1": "ab7b3f20445f65efdbaa46d5c324412084c531d4",
+   "ja": "必殺!!",
+   "ko": "필살!!",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
+   "note": "필살 헬퍼 패널 (Helper는 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
   },
   {
-   "id": "panel.e194",
-   "entry": 194,
-   "offset": "0x475ec",
+   "id": "panel.e078",
+   "entry": 78,
+   "offset": "0x2426c",
    "size": [
-    72,
-    64
+    56,
+    56
    ],
-   "colr": "0x70",
-   "src_sha1": "15b66aa4d3dc27d6446b266b5345b1cbae54e4e1",
-   "ja": "変身ポイントMAX!! 로고 뒷부분",
-   "ko": "",
-   "state": "untranslated",
+   "colr": "0x200",
+   "src_sha1": "f965151a0a7f6e232b79e773216b04c07073d80c",
+   "ja": "必殺!!",
+   "ko": "필살!!",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
+   "note": "필살 헬퍼 패널 (Helper는 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
+  },
+  {
+   "id": "panel.e079",
+   "entry": 79,
+   "offset": "0x24eac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "e5bd23e5d745af258b048e33dab0d423357b4c2d",
+   "ja": "必殺!!",
+   "ko": "필살!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "필살 헬퍼 패널 (Helper는 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
+   "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
   },
   {
    "id": "panel.e197",
@@ -2026,7 +2017,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+   "palette_sha1": "d681e9d52cddd3a0622c71da10dfd2d7903c04c1"
   },
   {
    "id": "panel.e198",
@@ -2043,7 +2034,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+   "palette_sha1": "d681e9d52cddd3a0622c71da10dfd2d7903c04c1"
   },
   {
    "id": "panel.e199",
@@ -2060,7 +2051,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+   "palette_sha1": "d681e9d52cddd3a0622c71da10dfd2d7903c04c1"
   },
   {
    "id": "panel.e200",
@@ -2077,7 +2068,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+   "palette_sha1": "d681e9d52cddd3a0622c71da10dfd2d7903c04c1"
   },
   {
    "id": "panel.e201",
@@ -2094,7 +2085,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+   "palette_sha1": "95441f9ad73e20d0da9257db23c345be17fb4345"
   },
   {
    "id": "panel.e202",
@@ -2111,7 +2102,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+   "palette_sha1": "95441f9ad73e20d0da9257db23c345be17fb4345"
   },
   {
    "id": "panel.e203",
@@ -2128,7 +2119,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+   "palette_sha1": "95441f9ad73e20d0da9257db23c345be17fb4345"
   },
   {
    "id": "panel.e204",
@@ -2145,7 +2136,7 @@
    "state": "untranslated",
    "terms": [],
    "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
-   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+   "palette_sha1": "95441f9ad73e20d0da9257db23c345be17fb4345"
   }
  ],
  "excluded": [
@@ -3084,6 +3075,18 @@
    "colr": "0x100",
    "src_sha1": "74904f39102d7c426582b18805dba93a698d3433",
    "reason": "숫자"
+  },
+  {
+   "id": "panel.e194",
+   "entry": 194,
+   "offset": "0x475ec",
+   "size": [
+    72,
+    64
+   ],
+   "colr": "0x70",
+   "src_sha1": "15b66aa4d3dc27d6446b266b5345b1cbae54e4e1",
+   "reason": "MAX!! 로고 뒷부분 (영어)"
   },
   {
    "id": "panel.e195",

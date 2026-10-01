@@ -170,28 +170,11 @@
    ],
    "colr": "0x30",
    "src_sha1": "0f6d4b707ccf7e3ccd8315f600275359cde6ea81",
-   "ja": "変身ポイントMAX!! 로고 앞부분",
-   "ko": "",
-   "state": "untranslated",
+   "ja": "変身ポイント(MAX!!)",
+   "ko": "변신포인트",
+   "state": "needs_review",
    "terms": [],
-   "note": "그림 위 글자 — 다음 단계(패널 매치 193·194와 같은 로고)",
-   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
-  },
-  {
-   "id": "maxgrp.e18",
-   "entry": 18,
-   "offset": "0xee74",
-   "size": [
-    72,
-    64
-   ],
-   "colr": "0x30",
-   "src_sha1": "15b66aa4d3dc27d6446b266b5345b1cbae54e4e1",
-   "ja": "変身ポイントMAX!! 로고 뒷부분",
-   "ko": "",
-   "state": "untranslated",
-   "terms": [],
-   "note": "그림 위 글자 — 다음 단계(패널 매치 193·194와 같은 로고)",
+   "note": "変身ポイント 자리(x 0~170)만 '변신포인트'로, 'M'부터는 원래 그림. 원래처럼 세로 그라데이션 6→1 두 번 + 보라 테두리 12 (패널 매치 193과 같은 그림)",
    "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
   }
  ],
@@ -240,6 +223,11 @@
    "id": "maxgrp.e15",
    "entry": 15,
    "reason": "숫자"
+  },
+  {
+   "id": "maxgrp.e18",
+   "entry": 18,
+   "reason": "MAX!! 로고 뒷부분 (영어)"
   },
   {
    "id": "maxgrp.e19",

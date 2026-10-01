@@ -29,12 +29,25 @@ class Texture:
     width: int
     height: int
     data: bytearray
+    bpp: int = 4                     # 4 (two pixels per byte) or 8 (one index per byte)
+
+    def __post_init__(self):
+        if self.bpp not in (4, 8):
+            raise ValueError(f"texture depth must be 4 or 8 bits, not {self.bpp}")
+        if len(self.data) != self.width * self.height * self.bpp // 8:
+            raise ValueError(f"{self.width}x{self.height} {self.bpp}bpp texture needs "
+                             f"{self.width * self.height * self.bpp // 8} bytes, got {len(self.data)}")
 
     def pixel(self, x: int, y: int) -> int:
+        if self.bpp == 8:
+            return self.data[y * self.width + x]
         b = self.data[(y * self.width + x) // 2]
         return b >> 4 if x % 2 == 0 else b & 0x0F
 
     def set(self, x: int, y: int, v: int) -> None:
+        if self.bpp == 8:
+            self.data[y * self.width + x] = v
+            return
         i = (y * self.width + x) // 2
         if x % 2 == 0:
             self.data[i] = (self.data[i] & 0x0F) | (v << 4)

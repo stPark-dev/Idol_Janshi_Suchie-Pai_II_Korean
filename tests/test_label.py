@@ -303,3 +303,32 @@ def test_vertical_space_is_half_a_cell_and_outline_hearts_render():
     layer = label.render_lines((16, 128), [_vline("해냈어|♥", fill=[1, 2], outline=[3, 4])], pal)
     cols = {layer.getpixel((x, y))[:3] for x in range(16) for y in range(128) if layer.getpixel((x, y))[3] == 255}
     assert {(255, 0, 0), (0, 0, 255)} <= cols
+
+
+def test_shear_slants_glyphs_to_the_right_and_still_checks_the_box():
+    pal = [0, 0x7FFF] + [0] * 14
+    line = {"text": "ㅣ", "size": 30, "x": "center", "y": "center", "fill": 1, "aa": False}
+    up = label.render_lines((60, 40), [line], pal)
+    sl = label.render_lines((60, 40), [{**line, "shear": 0.3}], pal)
+    top = lambda im: min(x for x in range(60) for y in range(8, 12) if im.getpixel((x, y))[3])
+    bottom = lambda im: min(x for x in range(60) for y in range(28, 32) if im.getpixel((x, y))[3])
+    assert top(up) == bottom(up) and top(sl) - bottom(sl) >= 4        # top leans right
+    with pytest.raises(label.LabelError, match="does not fit"):
+        label.render_lines((60, 40), [{**line, "shear": 3.0}], pal)
+
+
+@pytest.mark.parametrize("canvas,line", [((60, 40), {"text": "ㅣ|ㅣ", "size": 14, "x": 46, "y": 24, "fill": [1, 2], "shear": 1.0}),
+                                         ((80, 40), {"text": "ㅣ|          ㅣ", "size": 10, "x": 0, "y": 28, "fill": [1, 2], "shear": 2}),
+                                         ((60, 40), {"text": "ㅣ|ㅣ", "size": 14, "x": 52, "y": 24, "fill": [1, 2]})],
+                         ids=["shear-pulls-cut-ink-in", "shear-pushes-segment-out", "segment-drawn-off-canvas"])
+def test_no_segment_is_silently_cut_by_the_canvas(canvas, line):
+    pal = [0, 0x7FFF, 0x001F] + [0] * 13
+    with pytest.raises(label.LabelError):
+        label.render_lines(canvas, [{**line, "aa": False}], pal)
+
+
+def test_clean_rows_on_8bpp_textures_with_high_indices():
+    from suchie2.title import Texture
+    t = Texture(4, 2, bytearray([50, 181, 204, 50, 60, 60, 204, 60]), bpp=8)
+    label.clean_rows(t, (0, 0, 4, 2), {181, 204})
+    assert list(t.data) == [50, 50, 50, 50, 60, 60, 60, 60]

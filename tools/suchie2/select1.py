@@ -30,17 +30,35 @@ class Result:
     ids: list[str] = field(default_factory=list)
 
 
-def palette_bytes(data: bytes, colr: int, cram_offset: int = 0) -> bytes:
-    """The 32 bytes of colr's 16-colour bank in a CRAM image stored at cram_offset in the file."""
-    start = cram_offset + (colr & 0x7F0) * 2
-    if cram_offset < 0 or start + 32 > len(data):
-        raise Select1Error(f"palette_offset {cram_offset:#x}: bank {colr & 0x7F0:#x} lies outside the file")
-    return data[start:start + 32]
+COLOURS = {0: 16, 2: 64, 3: 128, 4: 256}     # VDP1 colour mode -> CRAM bank size (mode 1 = LUT, 5 = RGB)
 
 
-def palette(data: bytes, colr: int, cram_offset: int = 0) -> list[int]:
-    raw = palette_bytes(data, colr, cram_offset)
-    return [int.from_bytes(raw[k * 2:k * 2 + 2], "big") for k in range(16)]
+def bank_span(colr: int, colours: int = 16) -> tuple[int, int]:
+    """(first CRAM entry, number of entries) of colr's bank; the bank is aligned to its size."""
+    if colours not in COLOURS.values():
+        raise Select1Error(f"a CRAM bank has 16, 64, 128 or 256 colours, not {colours}")
+    return colr & 0x7FF & ~(colours - 1), colours
+
+
+def palette_bytes(data: bytes, colr: int, cram_offset: int = 0, colours: int = 16) -> bytes:
+    """colr's CRAM bank (16 colours for 4bpp, 64/128/256 for the 8bpp modes) in a CRAM image at cram_offset."""
+    bank, n = bank_span(colr, colours)
+    start = cram_offset + bank * 2
+    if cram_offset < 0 or start + 2 * n > len(data):
+        raise Select1Error(f"palette_offset {cram_offset:#x}: bank {bank:#x} lies outside the file")
+    return data[start:start + 2 * n]
+
+
+def palette(data: bytes, colr: int, cram_offset: int = 0, colours: int = 16) -> list[int]:
+    raw = palette_bytes(data, colr, cram_offset, colours)
+    return [int.from_bytes(raw[k * 2:k * 2 + 2], "big") for k in range(len(raw) // 2)]
+
+
+def colours_of(e: yc.Entry) -> int:
+    mode = (e.attr >> 3) & 7
+    if mode not in COLOURS:
+        raise Select1Error(f"colour mode {mode} has no CRAM bank to draw with")
+    return COLOURS[mode]
 
 
 def entries(data: bytes, bundle_offset: int) -> list[yc.Entry]:
@@ -74,8 +92,8 @@ def _overlap(a, b) -> bool:
 
 def _apply_region(sid: str, tex: Texture, pal: list[int], region: dict, texts: list[str], font: str) -> None:
     box = _check_box(sid, region["box"], tex.width, tex.height)
-    if not set(region["allowed"]) <= set(range(1, 16)) or not region["allowed"]:
-        raise Select1Error(f"{sid}: allowed indices must be a non-empty subset of 1..15")
+    if not set(region["allowed"]) <= set(range(1, len(pal))) or not region["allowed"]:
+        raise Select1Error(f"{sid}: allowed indices must be a non-empty subset of 1..{len(pal) - 1}")
     clean = region.get("clean")
     try:
         if clean:
@@ -135,8 +153,9 @@ def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], gl
         if not 0 <= i < len(ents):
             raise Select1Error(f"{e['id']}: entry {i} out of range 0..{len(ents) - 1}")
         src = ents[i]
-        if (src.attr >> 3) & 7 != 0 and e["state"] != "untranslated":   # only redrawn entries must be 4bpp
-            raise Select1Error(f"{e['id']}: colour mode {(src.attr >> 3) & 7} is not a 4bpp CRAM bank")
+        mode = (src.attr >> 3) & 7
+        if mode not in COLOURS and e["state"] != "untranslated":       # only redrawn entries need a CRAM bank
+            raise Select1Error(f"{e['id']}: colour mode {mode} is not a CRAM bank (4bpp/8bpp palette)")
         if hashlib.sha1(src.data).hexdigest() != e["src_sha1"]:
             raise Select1Error(f"{e['id']}: source texture differs from the translation baseline")
         if int(e["colr"], 16) != src.colr:
@@ -150,9 +169,14 @@ def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], gl
             off = off[file_name]
         if int(off, 16) != offs[i]:
             raise Select1Error(f"{e['id']}: offset {off} differs from bundle {offs[i]:#x}")
-        pal = palette_bytes(data, src.colr, cram)
+        if e["state"] != "untranslated" or "palette_sha1" in e:      # pending art is not drawn with it
+            pal = palette_bytes(data, src.colr, cram, colours=COLOURS.get(mode, 16))
         if "palette_sha1" in e and hashlib.sha1(pal).hexdigest() != e["palette_sha1"]:
-            raise Select1Error(f"{e['id']}: palette bank {src.colr & 0x7F0:#x} differs from the translation baseline")
+            bank = bank_span(src.colr, COLOURS.get(mode, 16))[0]
+            raise Select1Error(f"{e['id']}: palette bank {bank:#x} differs from the translation baseline")
+        n = COLOURS.get(mode, 16)
+        if e["state"] != "untranslated" and n in (64, 128) and max(src.data) >= n:
+            raise Select1Error(f"{e['id']}: pixel value {max(src.data)} lies outside its {n}-colour bank")
         if e["state"] not in STATES:
             raise Select1Error(f"{e['id']}: unknown state {e['state']!r}")
         if terms is not None:
@@ -221,8 +245,9 @@ def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAU
             for b in range(a + 1, len(regions)):
                 if _overlap(regions[a]["box"], regions[b]["box"]):
                     raise Select1Error(f"{spec['id']}: regions {a} and {b} overlap")
-        pal = palette(pal_src, src.colr, cram)
-        tex = Texture(src.width, src.height, bytearray(src.data))
+        n = colours_of(src)
+        pal = palette(pal_src, src.colr, cram, colours=n)
+        tex = Texture(src.width, src.height, bytearray(src.data), bpp=4 if n == 16 else 8)
         k = 0
         for region in regions:
             _apply_region(spec["id"], tex, pal, region, texts[k:k + len(region["lines"])], font)
