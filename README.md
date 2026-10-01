@@ -35,7 +35,7 @@
 - 대국 화면 그림 글자 104개 (스테이지 오버레이 13개: 이름·버튼·안내·선언·역 이름 등, 초벌 번역·검수 대기)
 - 상대 소개 카드 17개와 저장 안내 1개 (`AP*.BIN` 11개, 초벌 번역·검수 대기)
 - 오프닝(데모) 캐릭터 소개 이름표 46개 (`PROLOG.BIN` 압축 블록: 별명·이름·성우, 초벌 번역·검수 대기)
-- 패널 매치(보너스 게임) 세로 안내문 92줄·그림 패널 23장·로고 (`PMATCH.BIN`, 초벌 번역·검수 대기, 룰렛 8장은 아직)
+- 패널 매치(보너스 게임) 세로 안내문 92줄·그림 패널 23장·로고·룰렛 두 바퀴 (`PMATCH.BIN`, 초벌 번역·검수 대기)
 - 대국 보너스 화면 「満貫ボーナス / POINT獲得!!」 (`MAXGRP1/2/3.BIN`, 초벌 번역·검수 대기)
 - 첫 부팅 안내 화면 5줄 (`BACKRAM.BIN` 워드 RLE 압축 블록, 초벌 번역·검수 대기)
 - 타이틀 선택지 「最初から／続きから」 → "처음부터 시작 / 이어서 시작" (표기 승인, 화면 표시는 미확인)
@@ -55,7 +55,8 @@
 | [`translation/title_labels.json`](translation/title_labels.json) | 타이틀 선택지 1개와 제외 항목 10개 |
 | [`translation/boot_notice.json`](translation/boot_notice.json) | 첫 부팅 안내 5줄과 제외 항목 3개 |
 | [`translation/maxgrp.json`](translation/maxgrp.json) | 대국 보너스 화면 9개, 제외 29개 |
-| [`translation/panel.json`](translation/panel.json) | 패널 매치 안내문 92줄·남은 횟수 칸·그림 패널 23장·로고, 미번역 룰렛 8장(`untranslated`), 제외 81개 |
+| [`translation/panel.json`](translation/panel.json) | 패널 매치 안내문 92줄·남은 횟수 칸·그림 패널 23장·로고, 제외 89개(룰렛 8장은 `roulette.json`으로) |
+| [`translation/roulette.json`](translation/roulette.json) | 패널 매치 룰렛 칸 글자 6개(두 바퀴 공통, 128×128 네 장에 걸친 256색 그림) |
 | [`assets/select1/layout.json`](assets/select1/layout.json), [`assets/match/`](assets/match/), [`assets/cards/`](assets/cards/), [`assets/opening/`](assets/opening/) | 그림 글자 배치 (편집 영역, 배경 복원 방식, 글자 크기·색 번호) |
 
 번역문 규칙: `\n`은 줄바꿈, `|`는 글자 색 구간 경계. 상태는 `needs_review` → `needs_human_review` → `distribution_eligible`. 모든 항목이 `distribution_eligible`이 되고 타이틀 로고가 승인되기 전까지 빌드 결과는 `distribution: false`입니다.

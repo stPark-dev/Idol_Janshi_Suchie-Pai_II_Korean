@@ -30,7 +30,7 @@ def main(argv=None) -> int:
     b.add_argument("--boot", choices=["ko", "original"], default="ko",
                    help="'original' leaves the first-boot notice (BACKRAM.BIN word-RLE block) unchanged")
     b.add_argument("--panel", choices=["ko", "original"], default="ko",
-                   help="'original' leaves the panel match bonus game (PMATCH.BIN) unchanged")
+                   help="'original' leaves the panel match bonus game (PMATCH.BIN, roulette included) unchanged")
     b.add_argument("--bonus", choices=["ko", "original"], default="ko",
                    help="'original' leaves the big-win bonus screens (MAXGRP1/2/3.BIN) unchanged")
     args = ap.parse_args(argv)
@@ -54,6 +54,8 @@ def main(argv=None) -> int:
     if args.panel == "ko":
         jobs.append({"files": ["PMATCH.BIN"], "translation": ROOT / "translation/panel.json",
                      "layout": ROOT / "assets/panel/layout.json", "glossary": ROOT / "translation/glossary.json"})
+        jobs.append({"files": ["PMATCH.BIN"], "translation": ROOT / "translation/roulette.json",
+                     "layout": ROOT / "assets/roulette/layout.json", "glossary": ROOT / "translation/glossary.json"})
     if args.bonus == "ko":
         jobs.append({"files": build.BONUS_FILES, "translation": ROOT / "translation/maxgrp.json",
                      "layout": ROOT / "assets/maxgrp/layout.json", "glossary": ROOT / "translation/glossary.json"})

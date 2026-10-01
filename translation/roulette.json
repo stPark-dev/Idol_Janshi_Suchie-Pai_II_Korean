@@ -1,0 +1,96 @@
+{
+ "_about": "패널 매치 룰렛(PMATCH.BIN 0x6000 Yc 묶음, CRAM 이미지 0x0). 바퀴 하나 = 256x256 256색 그림을 128x128 네 항목(TL, TR, BL, BR)에 나눠 담음. 바퀴 B는 A를 -45도 돌린 배치. 번역은 칸 단위(두 바퀴 공통), CHANGE 3Pts/5Pts 칸은 그대로 둠. ko의 '|'는 색 구간.",
+ "file": "PMATCH.BIN",
+ "files": [
+  "PMATCH.BIN"
+ ],
+ "bundle_offset": "0x6000",
+ "palette_offset": "0x0",
+ "id_prefix": "roulette.",
+ "wheels": [
+  {
+   "name": "A",
+   "entries": [
+    197,
+    198,
+    200,
+    199
+   ],
+   "colr": "0x400",
+   "src_sha1": [
+    "87786a5a7c91c085ac2e4401ae08d8cfd61ed1f5",
+    "18d5057a19ab8ed8af15772647393811697ec025",
+    "5c383d542c605726509313562a80becede5d6b27",
+    "3de7d0862c57396f3068048ef2f087f6c3102f49"
+   ],
+   "palette_sha1": "d681e9d52cddd3a0622c71da10dfd2d7903c04c1"
+  },
+  {
+   "name": "B",
+   "entries": [
+    201,
+    202,
+    204,
+    203
+   ],
+   "colr": "0x500",
+   "src_sha1": [
+    "41f9db11ed616c1f2f5279f276fa4e126c301e85",
+    "449fe918a09a37ca3c7067626eeaecb1073cd8a5",
+    "1105bceed08934cb2963b04078465ee55e8cca0e",
+    "2b96371d814de9a48a6cab62860521e7f7173587"
+   ],
+   "palette_sha1": "95441f9ad73e20d0da9257db23c345be17fb4345"
+  }
+ ],
+ "entries": [
+  {
+   "id": "roulette.cursor_panic",
+   "ja": "カーソル\nぱにっく!",
+   "ko": "커서\n패닉!",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "roulette.reset",
+   "ja": "リセット",
+   "ko": "리셋",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "roulette.service",
+   "ja": "サービス",
+   "ko": "서비스",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "roulette.panel_clear",
+   "ja": "ぱねる\nくりあー",
+   "ko": "패널\n클리어",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "roulette.miss",
+   "ja": "スカ",
+   "ko": "꽝",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "roulette.shuffle",
+   "ja": "シャッフル",
+   "ko": "셔|플",
+   "state": "needs_review",
+   "terms": [],
+   "note": ""
+  }
+ ]
+}

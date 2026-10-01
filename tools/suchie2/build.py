@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import cdsector, iso9660, lzss, rle16, select1 as select1_mod, title, yc
+from . import cdsector, iso9660, lzss, rle16, select1 as select1_mod, title, wheel as wheel_mod, yc
 from .writeplan import PlanError, WritePlan
 
 OUT_STEM = "Idol Janshi Suchie-Pai II (Korean) (Disc 1)"
@@ -289,7 +289,8 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
         data = _read_file_range(t1, lba, 0, size)
         ents = select1_mod.entries(data, bundle)
         offsets = select1_mod.offsets(data, bundle)
-        res = select1_mod.render(data, translation, layout, font=font, glossary=glossary, file_name=name)
+        render = wheel_mod.render if "wheels" in tdoc else select1_mod.render     # roulette: one picture over 4 entries
+        res = render(data, translation, layout, font=font, glossary=glossary, file_name=name)
         changes = [(offsets[i], tex) for i, tex in sorted(res.textures.items()) if tex != ents[i].data]
         info = {"file": name, "lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
                 "changes": [[o, len(t)] for o, t in changes], "sectors": [],

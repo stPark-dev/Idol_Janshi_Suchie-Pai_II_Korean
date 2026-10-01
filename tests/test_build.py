@@ -891,3 +891,27 @@ def test_unknown_codec_is_rejected(tmp_path):
     bad = build.SourceProfile(**{**profile.__dict__, "packed": {"boot": (fname, lo, hi, sha, "zip")}})
     with pytest.raises(build.BuildError, match="codec"):
         build.build(cue, tmp_path / "out", None, profile=bad, bundles=[_rle_job(tmp_path)], title=False)
+
+
+def test_wheel_table_is_rendered_by_the_wheel_module(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    tr, lay = _select1_tables(tmp_path)
+    t = json.loads(tr.read_text())
+    t["wheels"] = []
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    ents = yc.parse(sel[SEL_BUNDLE:SEL_BUNDLE + yc.length(sel[SEL_BUNDLE:])])
+    seen = []
+
+    def fake(data, translation, layout, font, glossary, file_name):
+        seen.append(file_name)
+        return build.select1_mod.Result(textures={1: bytes([0x12]) * len(ents[1].data)}, states={"needs_review": 1},
+                                        ids=["w.x"])
+    monkeypatch.setattr(build.wheel_mod, "render", fake)
+    monkeypatch.setattr(build.select1_mod, "render", lambda *a, **k: pytest.fail("wheel table sent to select1"))
+    m = build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN"], "translation": tr, "layout": lay}])
+    raw = (tmp_path / "out" / m["track1"]).read_bytes()
+    new = b"".join(raw[(60 + i) * 2352 + 16:(60 + i) * 2352 + 2064] for i in range(2))[:len(sel)]
+    out = yc.parse(new[SEL_BUNDLE:SEL_BUNDLE + yc.length(new[SEL_BUNDLE:])])
+    assert seen == ["STG1.BIN"] and out[1].data == bytes([0x12]) * len(ents[1].data) and out[0].data == ents[0].data
+    assert m["bundles"][0]["entries"] == ["w.x"]

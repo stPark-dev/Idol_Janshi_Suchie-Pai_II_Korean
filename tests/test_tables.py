@@ -128,3 +128,22 @@ def test_maxgrp_kanji_reuse_the_match_screen_translation():
     assert sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]]) == list(range(38))
     shared = [e for e in t["entries"] if e["src_sha1"] in m]
     assert len(shared) == 6 and all(e["ko"] == m[e["src_sha1"]]["ko"] for e in shared)
+
+
+def test_roulette_owns_exactly_the_wheel_entries_the_panel_table_hands_over():
+    t = _load(ROOT / "translation/roulette.json")
+    lay = _load(ROOT / "assets/roulette/layout.json")
+    panel = _load(ROOT / "translation/panel.json")
+    handed = {e["entry"] for e in panel["excluded"] if "roulette.json" in e["reason"]}
+    wheel_entries = [i for w in t["wheels"] for i in w["entries"]]
+    assert sorted(wheel_entries) == sorted(handed) == list(range(197, 205))
+    srcs = {e["entry"]: e["src_sha1"] for e in panel["excluded"]}
+    for w in t["wheels"]:
+        assert [srcs[i] for i in w["entries"]] == w["src_sha1"] and len(w["palette_sha1"]) == 40
+    assert sorted(lay["wheels"]) == sorted(w["name"] for w in t["wheels"])
+    assert t["files"] == ["PMATCH.BIN"]
+    specs = {s["id"]: s for s in lay["entries"]}
+    for e in t["entries"]:
+        assert set(e["terms"]) <= GLOSSARY, e["id"]
+        if e["state"] != "untranslated":
+            assert e["ko"].count("\n") + 1 == len(specs[e["id"]]["lines"]), e["id"]

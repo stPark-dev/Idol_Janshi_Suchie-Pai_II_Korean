@@ -1,0 +1,197 @@
+{
+ "_about": "룰렛 칸 글자. 각도는 바퀴 A 기준(동쪽 0도, 반시계), 칸이 아래(270도)를 볼 때 바로 읽히고 첫 줄이 중심 쪽. 글자는 r 범위를 줄 수만큼 나눈 띠의 가운데. 색은 두 바퀴 팔레트에 모두 있는 [r,g,b]만.",
+ "font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+ "wheels": {
+  "A": {
+   "rotation": 0
+  },
+  "B": {
+   "rotation": -45
+  }
+ },
+ "clean": {
+  "r0": 50,
+  "r1": 106,
+  "rim": 117,
+  "half": 20.5,
+  "dmax": 110
+ },
+ "ink": {
+  "r0": 48,
+  "r1": 114,
+  "half": 21.5
+ },
+ "entries": [
+  {
+   "id": "roulette.cursor_panic",
+   "angle": 0,
+   "r": [
+    62,
+    110
+   ],
+   "lines": [
+    {
+     "size": 17,
+     "fill": [
+      255,
+      247,
+      0
+     ],
+     "outline": [
+      0,
+      115,
+      140
+     ]
+    },
+    {
+     "size": 17,
+     "fill": [
+      255,
+      247,
+      0
+     ],
+     "outline": [
+      0,
+      115,
+      140
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roulette.reset",
+   "angle": 90,
+   "r": [
+    62,
+    110
+   ],
+   "lines": [
+    {
+     "size": 24,
+     "fill": [
+      49,
+      239,
+      156
+     ],
+     "outline": [
+      41,
+      41,
+      66
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roulette.service",
+   "angle": 135,
+   "r": [
+    62,
+    110
+   ],
+   "lines": [
+    {
+     "size": 22,
+     "fill": [
+      140,
+      255,
+      255
+     ],
+     "outline": [
+      41,
+      41,
+      66
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roulette.panel_clear",
+   "angle": 180,
+   "r": [
+    62,
+    110
+   ],
+   "lines": [
+    {
+     "size": 17,
+     "fill": [
+      255,
+      247,
+      0
+     ],
+     "outline": [
+      189,
+      8,
+      90
+     ]
+    },
+    {
+     "size": 17,
+     "fill": [
+      255,
+      247,
+      0
+     ],
+     "outline": [
+      189,
+      8,
+      90
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roulette.miss",
+   "angle": 225,
+   "r": [
+    62,
+    110
+   ],
+   "lines": [
+    {
+     "size": 30,
+     "fill": [
+      255,
+      255,
+      247
+     ],
+     "outline": [
+      99,
+      99,
+      99
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roulette.shuffle",
+   "angle": 315,
+   "r": [
+    62,
+    110
+   ],
+   "lines": [
+    {
+     "size": 26,
+     "fill": [
+      [
+       206,
+       255,
+       255
+      ],
+      [
+       255,
+       41,
+       16
+      ]
+     ],
+     "outline": [
+      33,
+      33,
+      33
+     ]
+    }
+   ]
+  }
+ ]
+}
