@@ -370,3 +370,54 @@ def test_empty_ko_with_clear_gives_transparent_texture(tmp_path):
     assert 1 in res.textures and "x.e1" in res.ids          # written, not skipped
     assert set(res.textures[1]) == {0}
     assert res.states == {"needs_review": 2}
+
+
+def test_untranslated_entries_need_no_layout_but_block_distribution(tmp_path):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    t = json.loads(tr.read_text())
+    t["entries"][1]["state"] = "untranslated"
+    t["entries"][1]["ko"] = ""
+    for e in t["entries"]:
+        if e is not t["entries"][1]:
+            e["state"] = "distribution_eligible"
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    lj = json.loads(lay.read_text())
+    lj["entries"] = [lj["entries"][0]]                    # no layout for the untranslated entry
+    lay.write_text(json.dumps(lj))
+    res = select1.render(data, tr, lay)
+    assert set(res.textures) == {0}                       # untranslated texture left as it is
+    assert res.states == {"distribution_eligible": 1, "untranslated": 1} and res.distribution is False
+    t["entries"][1]["state"] = "needs_review"             # a translated entry without layout is still an error
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    with pytest.raises(select1.Select1Error, match="no layout"):
+        select1.render(data, tr, lay)
+
+
+def test_untranslated_entries_skip_only_the_render_checks(tmp_path):
+    plain = yc.Entry(32, 16, 0x0080, 0x10, bytes(256))
+    art = yc.Entry(8, 2, 0x00A0, 0x100, bytes(range(16)))           # 8bpp: cannot be redrawn, can stay pending
+    data = bytes(PAL) + bytes(0x200) + yc.build([plain, art])
+    tr, lay = _tables(tmp_path, data, 0x240)
+    t = json.loads(tr.read_text())
+    t["entries"][1].update(state="untranslated", ko="")
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    lj = json.loads(lay.read_text()); lj["entries"] = [lj["entries"][0]]; lay.write_text(json.dumps(lj))
+    assert select1.render(data, tr, lay).states == {"needs_review": 1, "untranslated": 1}
+    t["entries"][1]["src_sha1"] = "0" * 40                          # protected fields still checked
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    with pytest.raises(select1.Select1Error, match="baseline"):
+        select1.render(data, tr, lay)
+
+
+@pytest.mark.parametrize("keep_layout,ko,msg", [(True, "", "must not have a layout"), (False, "다", "must be empty")])
+def test_untranslated_entries_are_strict(tmp_path, keep_layout, ko, msg):
+    data, off = _file()
+    tr, lay = _tables(tmp_path, data, off)
+    t = json.loads(tr.read_text())
+    t["entries"][1].update(state="untranslated", ko=ko)
+    tr.write_text(json.dumps(t, ensure_ascii=False))
+    if not keep_layout:
+        lj = json.loads(lay.read_text()); lj["entries"] = [lj["entries"][0]]; lay.write_text(json.dumps(lj))
+    with pytest.raises(select1.Select1Error, match=msg):
+        select1.render(data, tr, lay)

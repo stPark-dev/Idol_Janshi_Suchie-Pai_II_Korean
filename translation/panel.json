@@ -1,0 +1,3113 @@
+{
+ "_about": "패널 매치(보너스 게임) PMATCH.BIN 0x6000 비압축 Yc 묶음(205항목), CRAM 이미지 0x0. 101~192는 세로 안내문 띠(16x128, 두 띠가 한 문장). 그림 위 글자 패널·로고·룰렛은 untranslated(다음 단계).",
+ "file": "PMATCH.BIN",
+ "files": [
+  "PMATCH.BIN"
+ ],
+ "bundle_offset": "0x6000",
+ "palette_offset": "0x0",
+ "id_prefix": "panel.",
+ "entries": [
+  {
+   "id": "panel.e101",
+   "entry": 101,
+   "offset": "0x2f5ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "127c3f0214f5d867aa67fd6b6c35d980627437a4",
+   "ja": "ボーナスゲーム!!",
+   "ko": "보너스게임!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e102",
+   "entry": 102,
+   "offset": "0x2f9ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "3c463177cb9353d54d9909765cc4301db36339b2",
+   "ja": "パネルマッチ!!",
+   "ko": "패널매치!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e103",
+   "entry": 103,
+   "offset": "0x2fdac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "399d59c238b7f77edd113dbed0226e553810cb8e",
+   "ja": "ルールはおなじみ",
+   "ko": "규칙은 익숙한",
+   "state": "needs_review",
+   "terms": [],
+   "note": "神経衰弱(카드 짝 맞추기 놀이) → '짝맞추기'로 의역",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e104",
+   "entry": 104,
+   "offset": "0x301ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "44b8e53a3ff8282c8eb9a72aa841f9265976861b",
+   "ja": "神経衰弱で〜す♥",
+   "ko": "짝맞추기예요|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e105",
+   "entry": 105,
+   "offset": "0x305ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "0210696c9c164f8eb4e6921dc4e094bcafb8eff1",
+   "ja": "パネルを揃えて",
+   "ko": "패널을 맞춰서",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e106",
+   "entry": 106,
+   "offset": "0x309ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "11bf3eb64b99b94cf9a940d89a2492f76a003c7f",
+   "ja": "狙えアイテム!",
+   "ko": "아이템을 노려!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e107",
+   "entry": 107,
+   "offset": "0x30dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "4fa95cac95163af1fa56e1a8c0442f253588dcf0",
+   "ja": "カーソルで選んで",
+   "ko": "커서로 골라서",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e108",
+   "entry": 108,
+   "offset": "0x311ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "571b3f89de8a1533c758985f09a496ff0be1d9e4",
+   "ja": "Ⓒを押してね♥",
+   "ko": "를 눌러 줘|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "원래 Ⓒ 버튼 그림(위쪽)은 그대로 두고 그 아래에 '를 눌러 줘♥'",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e109",
+   "entry": 109,
+   "offset": "0x315ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "640abef3d971f1c30d0d9c1a7f06266c60e9b493",
+   "ja": "ポイント溜めると",
+   "ko": "포인트를 모으면",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e110",
+   "entry": 110,
+   "offset": "0x319ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "022bbde1dd0c88e7b9113368c24aab0904201444",
+   "ja": "仲間の変身よっ!!",
+   "ko": "동료가 변신!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e111",
+   "entry": 111,
+   "offset": "0x31dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "c6726a8397805d51f76950b65ef3758519df538e",
+   "ja": "慌てず急がず",
+   "ko": "서두르지 말고",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e112",
+   "entry": 112,
+   "offset": "0x321ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "970a2d8defac876209cb9e1ecf1667c5397658e0",
+   "ja": "正確にめくろう♥",
+   "ko": "정확히 뒤집자|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e113",
+   "entry": 113,
+   "offset": "0x325ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "6f9c65edc4c317bdf9423244d77a921eb961f4f8",
+   "ja": "各キャラごとに",
+   "ko": "캐릭터마다",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e114",
+   "entry": 114,
+   "offset": "0x329ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "4864c04c79b6ab5cbe55ee2e038145389f0ff051",
+   "ja": "パターンがあるの",
+   "ko": "패턴이 있어",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e115",
+   "entry": 115,
+   "offset": "0x32dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "3f1643ae5103e5cbb6e2e51fe0b9d7a7c49bf799",
+   "ja": "ありすちゃんのは",
+   "ko": "아리스의 패널은",
+   "state": "needs_review",
+   "terms": [
+    "name.alice"
+   ],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e116",
+   "entry": 116,
+   "offset": "0x331ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "d20e79888ca2305dfb87deba33ab9913444531b1",
+   "ja": "お隣りが多いよっ",
+   "ko": "옆칸이 많아!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e117",
+   "entry": 117,
+   "offset": "0x335ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "e5199393e53e0255f0d073dbaea1de83abb0f95e",
+   "ja": "倍の16パターンで",
+   "ko": "두 배인 16패턴에",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e118",
+   "entry": 118,
+   "offset": "0x339ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "7902450502ce099e1b7a63b33b238b3e283379e0",
+   "ja": "反転ナシだって!",
+   "ko": "반전은 없대!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e119",
+   "entry": 119,
+   "offset": "0x33dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "4c070ccb9ede9cd9d7c968996c090b5e680d6690",
+   "ja": "つかささんは",
+   "ko": "츠카사 씨는",
+   "state": "needs_review",
+   "terms": [
+    "name.tsukasa"
+   ],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e120",
+   "entry": 120,
+   "offset": "0x341ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "8005e9853e1ae5042b04d201704d826360ce15c9",
+   "ja": "対称パネルね♥",
+   "ko": "대칭 패널이야|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e121",
+   "entry": 121,
+   "offset": "0x345ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "79f6164c06dda41e8db00bcb2e3870f8191ffc78",
+   "ja": "8種類のパターン",
+   "ko": "8종류의 패턴",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e122",
+   "entry": 122,
+   "offset": "0x349ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "c9b37cd9e321ac98047308e6c4dd8201f675a352",
+   "ja": "+上下反転ね♥",
+   "ko": "+상하 반전|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e123",
+   "entry": 123,
+   "offset": "0x34dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "b9f913ceca63cbb172d84cc234181f8f349c273c",
+   "ja": "早苗さんのパネル",
+   "ko": "사나에 씨 패널",
+   "state": "needs_review",
+   "terms": [
+    "name.sanae"
+   ],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e124",
+   "entry": 124,
+   "offset": "0x351ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "c1255dddbe792d0cab6183759a8ea1a056360ec8",
+   "ja": "はナナメが基本",
+   "ko": "은 대각선이 기본",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e125",
+   "entry": 125,
+   "offset": "0x355ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "79f6164c06dda41e8db00bcb2e3870f8191ffc78",
+   "ja": "8種類のパターン",
+   "ko": "8종류의 패턴",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e126",
+   "entry": 126,
+   "offset": "0x359ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "f90de89a061dc5f1d856f39c6063d9b8907c38b1",
+   "ja": "+左右反転よっ",
+   "ko": "+좌우 반전!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e127",
+   "entry": 127,
+   "offset": "0x35dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "37820ebc1fae81f6a57a9af03d4e6195e31c37d5",
+   "ja": "留美さんパネルは",
+   "ko": "루미 씨 패널은",
+   "state": "needs_review",
+   "terms": [
+    "name.rumi"
+   ],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e128",
+   "entry": 128,
+   "offset": "0x361ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "8b0fc7b82e2cbcc82a88a09d83cde129a8fc05f8",
+   "ja": "1コとびパターン",
+   "ko": "한 칸 건너뛰기",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e129",
+   "entry": 129,
+   "offset": "0x365ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "79f6164c06dda41e8db00bcb2e3870f8191ffc78",
+   "ja": "8種類のパターン",
+   "ko": "8종류의 패턴",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e130",
+   "entry": 130,
+   "offset": "0x369ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "76586b867e78becebe111fd646399e4ccc622db7",
+   "ja": "+点対称がある",
+   "ko": "+점대칭이 있어",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e131",
+   "entry": 131,
+   "offset": "0x36dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "d3e9940a2cd8aa916554a6cfff122d972bdeb3a9",
+   "ja": "いろんなパターン",
+   "ko": "여러 패턴의",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e132",
+   "entry": 132,
+   "offset": "0x371ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "ff0fe56f0d5a70c534d716535fe6fbd2af490048",
+   "ja": "複合タイプなの…",
+   "ko": "복합 타입이야…",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e133",
+   "entry": 133,
+   "offset": "0x375ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "f210448f60cea333f68e989863a11e69fec2b589",
+   "ja": "難易度アップ!!",
+   "ko": "난이도 업!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e134",
+   "entry": 134,
+   "offset": "0x379ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "b2ddcb3b756720774a74082934310699937f3ac8",
+   "ja": "ちょっとランダム",
+   "ko": "조금 랜덤",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e135",
+   "entry": 135,
+   "offset": "0x37dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "3096aaab4babec7987c2da6668d332b049164d60",
+   "ja": "さらに難かしく!!",
+   "ko": "더 어렵게!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e136",
+   "entry": 136,
+   "offset": "0x381ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "c927dce93a45c545dac7fbe774bee2245d749ab9",
+   "ja": "かなりランダム!!",
+   "ko": "꽤 랜덤!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e137",
+   "entry": 137,
+   "offset": "0x385ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "202bc7c283f17d0e438224cb8d431acef7d34868",
+   "ja": "パターン数などは",
+   "ko": "패턴 수 같은 건",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e138",
+   "entry": 138,
+   "offset": "0x389ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "05603577c84f09bbccd5758bb349ecf59e15e657",
+   "ja": "ヒ・ミ・ツ!!",
+   "ko": "비·밀!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e139",
+   "entry": 139,
+   "offset": "0x38dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "6ac97a614b899c78080af4982821c22d209c4922",
+   "ja": "コンティニューも",
+   "ko": "컨티뉴해도",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e140",
+   "entry": 140,
+   "offset": "0x391ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "8d5b2bedf6b02c69ee18d784e8aaa25242e16557",
+   "ja": "意味ナイよ・・・",
+   "ko": "소용없어…",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e141",
+   "entry": 141,
+   "offset": "0x395ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "66ed463a66db16598c76946d58e6e9fd700b09f9",
+   "ja": "注意!! セシルの",
+   "ko": "주의!! 세실의",
+   "state": "needs_review",
+   "terms": [
+    "name.cecil"
+   ],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e142",
+   "entry": 142,
+   "offset": "0x399ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "88ffed3348c747a2670e03334456e5638d9d1ceb",
+   "ja": "リセット攻撃っ!!",
+   "ko": "리셋 공격!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e143",
+   "entry": 143,
+   "offset": "0x39dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "06365673a0c77c86d0e9113b0d8d434b31b61c13",
+   "ja": "惜っし〜い!",
+   "ko": "아까워라!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e144",
+   "entry": 144,
+   "offset": "0x3a1ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "ecc6120c0a7521ad71b2929200e10ad52b0bebfd",
+   "ja": "次はがんばって♥",
+   "ko": "다음엔 힘내|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e145",
+   "entry": 145,
+   "offset": "0x3a5ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "e8acc1547a055ffd670a132049bc9be10a970f16",
+   "ja": "記憶力で勝負!!",
+   "ko": "기억력 승부!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e146",
+   "entry": 146,
+   "offset": "0x3a9ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "d989e14d96f65da25fcb21b1b6a4f9801bf1a279",
+   "ja": "よ〜く考えてね♥",
+   "ko": "잘 생각해 봐|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e147",
+   "entry": 147,
+   "offset": "0x3adac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "1e62d237980fff07c303408234fc35f4e5047148",
+   "ja": "残念!!でも失敗は",
+   "ko": "아쉽다!! 실패는",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e148",
+   "entry": 148,
+   "offset": "0x3b1ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "304be04a94b63f862aafde6c32ea0227f4972906",
+   "ja": "成功のモトだよ♥",
+   "ko": "성공의 어머니|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e149",
+   "entry": 149,
+   "offset": "0x3b5ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "cef9a727462da4139a4eb3f7186ae16d20296d8b",
+   "ja": "間違えてもズバリ",
+   "ko": "틀려도 콕 짚어",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e150",
+   "entry": 150,
+   "offset": "0x3b9ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "e4cfedbf0d2dad285e8ba5f86740ca7fde2216f1",
+   "ja": "記憶しなくちゃ!!",
+   "ko": "기억해야 해!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e151",
+   "entry": 151,
+   "offset": "0x3bdac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "b36cb352049dd82dfd30efad065d8bb95fb56dc1",
+   "ja": "スーチースティック",
+   "ko": "스치스틱",
+   "state": "needs_review",
+   "terms": [
+    "name.suchie"
+   ],
+   "note": "スーチースティック: 일발 리치봉 아이템 (대국 화면의 スーチー棒 = 스치봉과는 별개 이름)",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e152",
+   "entry": 152,
+   "offset": "0x3c1ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "afbdb69d594891047410855bb1d0705105ac51b5",
+   "ja": "一発リーチ棒よ!!",
+   "ko": "일발 리치봉!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e153",
+   "entry": 153,
+   "offset": "0x3c5ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "d78fe9ce3531f12faaed21cd6b5c9f88f04276a8",
+   "ja": "ハイパーアイ!",
+   "ko": "하이퍼아이!",
+   "state": "needs_review",
+   "terms": [
+    "item.hyper_eye"
+   ],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e154",
+   "entry": 154,
+   "offset": "0x3c9ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "7713c5fece7e8b7435d8191e4f38789d0fa5686c",
+   "ja": "敵の手牌が見える",
+   "ko": "적의 패가 보여",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e155",
+   "entry": 155,
+   "offset": "0x3cdac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "da87a6a1774dbd3ba0e2f29c89d03e04461009c8",
+   "ja": "スペシャル召喚!!",
+   "ko": "스페셜 소환!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e156",
+   "entry": 156,
+   "offset": "0x3d1ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "8f7221097475210a7c22dfc7910791848fe43595",
+   "ja": "ツミコミ牌交換!",
+   "ko": "쌓은 패 교환!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "ツミコミ(積み込み) = 패 쌓기 속임수",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e157",
+   "entry": 157,
+   "offset": "0x3d5ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "f8b76d1515062f50e88d7643eb29240e9d70e4aa",
+   "ja": "ファイヤーせっかん",
+   "ko": "파이어 응징",
+   "state": "needs_review",
+   "terms": [],
+   "note": "せっかん(折檻) = 혼내기·응징",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e158",
+   "entry": 158,
+   "offset": "0x3d9ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "edde2948265c44e80250c70adefb9046d07b449b",
+   "ja": "敵の当り牌炎上!!",
+   "ko": "적 대기패 활활!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e159",
+   "entry": 159,
+   "offset": "0x3ddac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "d37cd67cc6654f33facbfe2b7275dcd36462bd3e",
+   "ja": "必殺!ヘルパー!!",
+   "ko": "필살! 헬퍼!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e160",
+   "entry": 160,
+   "offset": "0x3e1ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "94a9418f67b5911cd48da1d3c96695ca22824ea5",
+   "ja": "仲間の支援攻撃!!",
+   "ko": "동료 지원 공격!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e161",
+   "entry": 161,
+   "offset": "0x3e5ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "ce49755aee334badf143f8c0856b6004cfda99b4",
+   "ja": "イベントパネル!!",
+   "ko": "이벤트 패널!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e162",
+   "entry": 162,
+   "offset": "0x3e9ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "55cfb79de11a096d5a9a5783f0e0e56dade1a83a",
+   "ja": "何が起こるかな?",
+   "ko": "무슨 일이 날까?",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e163",
+   "entry": 163,
+   "offset": "0x3edac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "3385551696cafbae4ab0c4475bb4ff5afe363d12",
+   "ja": "パネルクリアー!",
+   "ko": "패널 클리어!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e164",
+   "entry": 164,
+   "offset": "0x3f1ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "ea4645f50136135aff70d0f781e907159a457e07",
+   "ja": "とりあえず次の面",
+   "ko": "일단 다음 판으로",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e165",
+   "entry": 165,
+   "offset": "0x3f5ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "a1787e7efb22b635ddc1f2c089a82055edbae861",
+   "ja": "スカ",
+   "ko": "꽝",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e166",
+   "entry": 166,
+   "offset": "0x3f9ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "8a5ef84482ff358394741cee800345c53a8f4a41",
+   "ja": "・・・ハズレ・・・",
+   "ko": "…꽝이야…",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e167",
+   "entry": 167,
+   "offset": "0x3fdac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "71bdc0a39806bd73fda2cac8ec8b294d231de4d6",
+   "ja": "リセット!!",
+   "ko": "리셋!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e168",
+   "entry": 168,
+   "offset": "0x401ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "a5c7343515be3d85c19a8d221e57d21b257dd138",
+   "ja": "ふりだしに戻る!!",
+   "ko": "처음으로 돌아가!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e169",
+   "entry": 169,
+   "offset": "0x405ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "daae07450b1e04dfe482b086d358d8f88dfec403",
+   "ja": "シャッフル!!",
+   "ko": "셔플!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e170",
+   "entry": 170,
+   "offset": "0x409ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "88e4280e243f4cae9388c1ca87b702c0f803b0f9",
+   "ja": "恐怖!!パネル移動",
+   "ko": "공포!! 패널 이동",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e171",
+   "entry": 171,
+   "offset": "0x40dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "9d22c13d2a9b5ac8ecbb9e7b252597809dfdada7",
+   "ja": "カーソルパニック",
+   "ko": "커서 패닉",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e172",
+   "entry": 172,
+   "offset": "0x411ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "2c44635df31d62bd09a6862e0e9501a570cb8c89",
+   "ja": "もう止まらない!!",
+   "ko": "이제 못 멈춰!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e173",
+   "entry": 173,
+   "offset": "0x415ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "7ebbe0605ff077de638e88bb04f91f6150bb75ff",
+   "ja": "サービス!!",
+   "ko": "서비스!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e174",
+   "entry": 174,
+   "offset": "0x419ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "a84f8c6c347ff3ed46c061fc32258d13232b0751",
+   "ja": "ちょっとだけよ♥",
+   "ko": "조금만이야|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e175",
+   "entry": 175,
+   "offset": "0x41dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "43b97928e6217afc633a0bba65d36ddc042ed6ed",
+   "ja": "3ポイント!!",
+   "ko": "3포인트!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e176",
+   "entry": 176,
+   "offset": "0x421ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "ba06ac506cc0c41302d39ca470236040a92299cc",
+   "ja": "ナイス!得点よ!!",
+   "ko": "나이스! 득점!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e177",
+   "entry": 177,
+   "offset": "0x425ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x50",
+   "src_sha1": "552f1d8402acf239e9dc42bf593296c00d4c4d0b",
+   "ja": "5ポイント!!",
+   "ko": "5포인트!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
+  },
+  {
+   "id": "panel.e178",
+   "entry": 178,
+   "offset": "0x429ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "f4603a6cf9e6efebdcd293bb4f9dd840345a7668",
+   "ja": "やったぁ!!大当り",
+   "ko": "해냈다!! 대박",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e179",
+   "entry": 179,
+   "offset": "0x42dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "2d7344bdd3780adb50dcb25b2f8b6411fd90559a",
+   "ja": "ポイント溜めて",
+   "ko": "포인트 모아서",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e180",
+   "entry": 180,
+   "offset": "0x431ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "6191c7e72713ee958519a086cc46f7774161f2ca",
+   "ja": "仲間が変身!",
+   "ko": "동료가 변신!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e181",
+   "entry": 181,
+   "offset": "0x435ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "8496807dea6b3750cd65ba351213e4d9680f835a",
+   "ja": "クリアーした人",
+   "ko": "클리어한 사람",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e182",
+   "entry": 182,
+   "offset": "0x439ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "f9bc2b77e4da2e44ac0f41844963c64b2a02fe81",
+   "ja": "から華麗に変身よ",
+   "ko": "부터 화려한 변신",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e183",
+   "entry": 183,
+   "offset": "0x43dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "126a76caece1390122c2a2580644ad48a199289f",
+   "ja": "真のエンディング",
+   "ko": "진정한 엔딩",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e184",
+   "entry": 184,
+   "offset": "0x441ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "cb27b9c0b3f4d77bf34c8e63bf6178da4ffafb2a",
+   "ja": "に一歩接近ね!",
+   "ko": "에 한 발짝 더!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e185",
+   "entry": 185,
+   "offset": "0x445ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "f1cf8853f673f5ebdc0bbffba39bb7ee671c6c86",
+   "ja": "ポイント8点で",
+   "ko": "포인트 8점이면",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e186",
+   "entry": 186,
+   "offset": "0x449ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "e1be3b5c87e9a7164316581cf2ab82c09545b74a",
+   "ja": "ヘルパー獲得よ♥",
+   "ko": "헬퍼 획득이야|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e187",
+   "entry": 187,
+   "offset": "0x44dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "7a4a69b4510411cc58997c37679038f33a0121cd",
+   "ja": "お・し・ま・い!!",
+   "ko": "끝·이·야!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e188",
+   "entry": 188,
+   "offset": "0x451ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "127d3780314110eacbcf79ed9fb27926fd87a4a8",
+   "ja": "またね♥",
+   "ko": "또 봐|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e189",
+   "entry": 189,
+   "offset": "0x455ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "42e48453939b9aa8c33c993c5d28f0768a632073",
+   "ja": "召喚アイテムを",
+   "ko": "소환 아이템을",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e190",
+   "entry": 190,
+   "offset": "0x459ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "56bc50d41b037cdc6d2dcc764c7d2246cc8cdf42",
+   "ja": "使うわよ!!",
+   "ko": "쓸 거야!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e191",
+   "entry": 191,
+   "offset": "0x45dac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "49d3e593c114f04bab8f98984ee84b85fb99a275",
+   "ja": "パネルクリアー!!",
+   "ko": "패널 클리어!!",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e192",
+   "entry": 192,
+   "offset": "0x461ac",
+   "size": [
+    16,
+    128
+   ],
+   "colr": "0x60",
+   "src_sha1": "56e35d5e8cd390f38b4331e0035861f00bc472e3",
+   "ja": "やったね♥",
+   "ko": "해냈어|♥",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
+  },
+  {
+   "id": "panel.e003",
+   "entry": 3,
+   "offset": "0x696c",
+   "size": [
+    40,
+    168
+   ],
+   "colr": "0x30",
+   "src_sha1": "11dca29ff612868436ee8d7a51270675eec726af",
+   "ja": "あと\n回",
+   "ko": "남은\n회",
+   "state": "needs_review",
+   "terms": [],
+   "note": "남은 횟수 칸: 위 'あと' → '남은', 아래 작은 '回' 네모 → '회' (숫자는 따로 그리는 스프라이트)",
+   "palette_sha1": "89ff7d725512784a266a68c11b84fad9430cf01f"
+  },
+  {
+   "id": "panel.e038",
+   "entry": 38,
+   "offset": "0xf20c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "bc9d0586fb2bfff2d11e2c512d0daaf7ea9f1ad1",
+   "ja": "스치스틱 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
+  },
+  {
+   "id": "panel.e043",
+   "entry": 43,
+   "offset": "0x12f4c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "04b0f5105f5bdde4b31f3e4cd9fbea1e8d39f0ae",
+   "ja": "스페셜 소환(召喚) 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e044",
+   "entry": 44,
+   "offset": "0x13b8c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "c1a5f693b43027e6456d2be1431fb538f94488d4",
+   "ja": "하이퍼아이 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e045",
+   "entry": 45,
+   "offset": "0x147cc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "92b7e41573e647744f11b8575303daeda8edd0f5",
+   "ja": "せっかん 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e046",
+   "entry": 46,
+   "offset": "0x1540c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "045405d6a901b9b7400d3af5a735ff7829665227",
+   "ja": "イベント 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e064",
+   "entry": 64,
+   "offset": "0x196ec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "22fa6635a7f718813feb1ba693618c4c1393e6fa",
+   "ja": "스치스틱 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
+  },
+  {
+   "id": "panel.e065",
+   "entry": 65,
+   "offset": "0x1a32c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "82b3b46eba7339ebf1e42a09619ae45d986cbe6f",
+   "ja": "스치스틱 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
+  },
+  {
+   "id": "panel.e066",
+   "entry": 66,
+   "offset": "0x1af6c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x100",
+   "src_sha1": "25f37e190d41aa66c48410067c28244198602cc8",
+   "ja": "스치스틱 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7a9d1885521c929d11c91e66444a76109a888cf6"
+  },
+  {
+   "id": "panel.e077",
+   "entry": 77,
+   "offset": "0x2362c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "ab7b3f20445f65efdbaa46d5c324412084c531d4",
+   "ja": "必殺 Helper 패널(전환 중)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e078",
+   "entry": 78,
+   "offset": "0x2426c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "f965151a0a7f6e232b79e773216b04c07073d80c",
+   "ja": "必殺 Helper 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e079",
+   "entry": 79,
+   "offset": "0x24eac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "e5bd23e5d745af258b048e33dab0d423357b4c2d",
+   "ja": "必殺 Helper 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e080",
+   "entry": 80,
+   "offset": "0x25aec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "1e3a37b6f395ca045aec37c44cc5d4520b20e276",
+   "ja": "스페셜 소환 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e081",
+   "entry": 81,
+   "offset": "0x2672c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "63cc573060422ac5b38fdcd7718970be767bbf82",
+   "ja": "스페셜 소환 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e082",
+   "entry": 82,
+   "offset": "0x2736c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "f02e23c8aacac145c4b623cf6a55798b97ee5c93",
+   "ja": "스페셜 소환 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e083",
+   "entry": 83,
+   "offset": "0x27fac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "11d21db8c88c51584cc54492ff0710ba444d8dcf",
+   "ja": "스페셜 소환 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "1c470ec1c49c695562eeeb054d6bf59e2b9bc5b9"
+  },
+  {
+   "id": "panel.e084",
+   "entry": 84,
+   "offset": "0x28bec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "f7734aaad1f75ad5db763239eea3ab512b92c3d6",
+   "ja": "하이퍼아이 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e085",
+   "entry": 85,
+   "offset": "0x2982c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "134e71a356a3ad50513c4ec9d08e5f234fbc12ea",
+   "ja": "하이퍼아이 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e086",
+   "entry": 86,
+   "offset": "0x2a46c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "d45668d6aabae9d5e40f6a157c1e6ad3ac7363f3",
+   "ja": "하이퍼아이 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e087",
+   "entry": 87,
+   "offset": "0x2b0ac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "8eb77d4929dba76ad5d372c01fb6c6f4b8375baa",
+   "ja": "せっかん 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e088",
+   "entry": 88,
+   "offset": "0x2bcec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "185e3b52056d673ab74aecd62bacb432f9e0c4ff",
+   "ja": "せっかん 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e089",
+   "entry": 89,
+   "offset": "0x2c92c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "10cdcaa3453627ecbd87b97d908168c746635054",
+   "ja": "せっかん 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e090",
+   "entry": 90,
+   "offset": "0x2d56c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x300",
+   "src_sha1": "cab6b0ad0aa6b1964cf808363213b7c9b6bcfdd6",
+   "ja": "せっかん 패널",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "c88d199b1748a7b2cdd6b2c382eddaa546f8e3b3"
+  },
+  {
+   "id": "panel.e193",
+   "entry": 193,
+   "offset": "0x465ac",
+   "size": [
+    208,
+    40
+   ],
+   "colr": "0x70",
+   "src_sha1": "0f6d4b707ccf7e3ccd8315f600275359cde6ea81",
+   "ja": "変身ポイントMAX!! 로고 앞부분",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
+  },
+  {
+   "id": "panel.e194",
+   "entry": 194,
+   "offset": "0x475ec",
+   "size": [
+    72,
+    64
+   ],
+   "colr": "0x70",
+   "src_sha1": "15b66aa4d3dc27d6446b266b5345b1cbae54e4e1",
+   "ja": "変身ポイントMAX!! 로고 뒷부분",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
+  },
+  {
+   "id": "panel.e197",
+   "entry": 197,
+   "offset": "0x497ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x400",
+   "src_sha1": "87786a5a7c91c085ac2e4401ae08d8cfd61ed1f5",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+  },
+  {
+   "id": "panel.e198",
+   "entry": 198,
+   "offset": "0x4d7ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x400",
+   "src_sha1": "18d5057a19ab8ed8af15772647393811697ec025",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+  },
+  {
+   "id": "panel.e199",
+   "entry": 199,
+   "offset": "0x517ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x400",
+   "src_sha1": "3de7d0862c57396f3068048ef2f087f6c3102f49",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+  },
+  {
+   "id": "panel.e200",
+   "entry": 200,
+   "offset": "0x557ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x400",
+   "src_sha1": "5c383d542c605726509313562a80becede5d6b27",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "7ef3bde3e9c52a5137cd4d0e6e1108ae7748a8d9"
+  },
+  {
+   "id": "panel.e201",
+   "entry": 201,
+   "offset": "0x597ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x500",
+   "src_sha1": "41f9db11ed616c1f2f5279f276fa4e126c301e85",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+  },
+  {
+   "id": "panel.e202",
+   "entry": 202,
+   "offset": "0x5d7ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x500",
+   "src_sha1": "449fe918a09a37ca3c7067626eeaecb1073cd8a5",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+  },
+  {
+   "id": "panel.e203",
+   "entry": 203,
+   "offset": "0x617ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x500",
+   "src_sha1": "2b96371d814de9a48a6cab62860521e7f7173587",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+  },
+  {
+   "id": "panel.e204",
+   "entry": 204,
+   "offset": "0x657ec",
+   "size": [
+    128,
+    128
+   ],
+   "colr": "0x500",
+   "src_sha1": "1105bceed08934cb2963b04078465ee55e8cca0e",
+   "ja": "룰렛(그림 위 글자: リセット·シャッフル 등)",
+   "ko": "",
+   "state": "untranslated",
+   "terms": [],
+   "note": "그림 위 글자 — 다음 단계(그림 글자 다시 그리기)",
+   "palette_sha1": "fe0989af8f6742b795bfbdc654cdb7d5d5d08fc5"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "panel.e000",
+   "entry": 0,
+   "offset": "0x666c",
+   "size": [
+    40,
+    8
+   ],
+   "colr": "0x10",
+   "src_sha1": "a77be3d98f03e5b717d68e0b1a86674d94a7980a",
+   "reason": "틀·막대 그림"
+  },
+  {
+   "id": "panel.e001",
+   "entry": 1,
+   "offset": "0x670c",
+   "size": [
+    16,
+    56
+   ],
+   "colr": "0x10",
+   "src_sha1": "e656949d4418f8cbbbeb8938e3c5a373762c6245",
+   "reason": "틀·막대 그림"
+  },
+  {
+   "id": "panel.e002",
+   "entry": 2,
+   "offset": "0x68cc",
+   "size": [
+    40,
+    8
+   ],
+   "colr": "0x20",
+   "src_sha1": "7943aedf24be37cea2dc971caf05a608b188f4b1",
+   "reason": "틀·막대 그림"
+  },
+  {
+   "id": "panel.e004",
+   "entry": 4,
+   "offset": "0x768c",
+   "size": [
+    40,
+    48
+   ],
+   "colr": "0x100",
+   "src_sha1": "0ab101f5035ee06c8b51f545f2b40a85ef3f0fa7",
+   "reason": "CHANGE 게이지 (영어)"
+  },
+  {
+   "id": "panel.e005",
+   "entry": 5,
+   "offset": "0x7e0c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "a9524824abc3ec2967b3cb5a2b026d5ccf047acd",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e006",
+   "entry": 6,
+   "offset": "0x7e8c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "f4d68ffa2158df9080911dda7938874a9159ed80",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e007",
+   "entry": 7,
+   "offset": "0x7f0c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "37e34952ca6f132828d66e4a335774649a5f482f",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e008",
+   "entry": 8,
+   "offset": "0x7f8c",
+   "size": [
+    16,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "0cc778f1e3be003daefcb60187f7087650988e10",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e009",
+   "entry": 9,
+   "offset": "0x800c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "cb9ea305c9131da02b9df9b7e4dfc3b25088394d",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e010",
+   "entry": 10,
+   "offset": "0x804c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "f26c0ec9bf3b25a02e0dbfc2cc73e8997250e29e",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e011",
+   "entry": 11,
+   "offset": "0x808c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "6540c040d6c49ef891cb3b10fd6e283931eaca06",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e012",
+   "entry": 12,
+   "offset": "0x80cc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "92f327ae79ff39e0ebc0d2e95374b2c05b5e4569",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e013",
+   "entry": 13,
+   "offset": "0x810c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "2e620523e0588241fa82cec71a3608b63812cceb",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e014",
+   "entry": 14,
+   "offset": "0x814c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "96919acec7ef5994ed12fceddada454a1399ccc9",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e015",
+   "entry": 15,
+   "offset": "0x818c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "5e377cf75b9eee25b0a406c28013077847410b1b",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e016",
+   "entry": 16,
+   "offset": "0x81cc",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "6481fa600ca781f3b2db928f4ec4eb3f4c2fa996",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e017",
+   "entry": 17,
+   "offset": "0x820c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "58081401f366e8ce1d0f96eab0a7b8b551607bae",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e018",
+   "entry": 18,
+   "offset": "0x824c",
+   "size": [
+    8,
+    16
+   ],
+   "colr": "0x10",
+   "src_sha1": "925493a27a6084abe012d1273f16e0e196aa61cb",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e019",
+   "entry": 19,
+   "offset": "0x828c",
+   "size": [
+    40,
+    8
+   ],
+   "colr": "0x100",
+   "src_sha1": "78c14be4e22225ef64d50b5fc12a203a57b427a0",
+   "reason": "HELPER (영어)"
+  },
+  {
+   "id": "panel.e020",
+   "entry": 20,
+   "offset": "0x83cc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "1eadb1b680c097e03629331fb14705d26c9edaa9",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e021",
+   "entry": 21,
+   "offset": "0x89ec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "360456a4d5ee3ca4a2478e266ebc31a4019102f7",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e022",
+   "entry": 22,
+   "offset": "0x900c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "d85233d3064d989ce668c1b7ee7f90122580c8f7",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e023",
+   "entry": 23,
+   "offset": "0x962c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "68953ccd3e8b5474ff2c3c4cb0ff4411bc21aa56",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e024",
+   "entry": 24,
+   "offset": "0x9c4c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "3346736ba7215e0b4019d0761c197a3142ec0d7f",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e025",
+   "entry": 25,
+   "offset": "0xa26c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "cd359c96f4684bc3e5ff158d8d70718cbf8b27a1",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e026",
+   "entry": 26,
+   "offset": "0xa88c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "e310570a309976057d0e01dc2a5db2550f1e4a60",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e027",
+   "entry": 27,
+   "offset": "0xaeac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "0ca90fea1be8f85d70ce93947a712b44ef5f9e05",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e028",
+   "entry": 28,
+   "offset": "0xb4cc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "812b7dbbd6d8ee71b6e4d2fc9f1deea9c1079633",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e029",
+   "entry": 29,
+   "offset": "0xbaec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "714136ffc2d92bcf35d2e3b4b42b5e7ceb3b6527",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e030",
+   "entry": 30,
+   "offset": "0xc10c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "bf7dddbaf013ddf0f0e7b9b826e28a62f94a6555",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e031",
+   "entry": 31,
+   "offset": "0xc72c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "197be24cce3254e79ae7c304df41b9d167a42a11",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e032",
+   "entry": 32,
+   "offset": "0xcd4c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "4c85d7f73985446ea8a9e1cb876ec9f50fc192a8",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e033",
+   "entry": 33,
+   "offset": "0xd36c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "346b4a6d52fcb86e9ca088c86aeb0d5e46cf9100",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e034",
+   "entry": 34,
+   "offset": "0xd98c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "5bae45c04c5cd0a6492a02f2b7a6af61e7a64d1e",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e035",
+   "entry": 35,
+   "offset": "0xdfac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "c540f9aea009589d41f4e9cdd4817c907398bc6d",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e036",
+   "entry": 36,
+   "offset": "0xe5cc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "353542f1c8c149d6dca95f56a9c083959f50f272",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e037",
+   "entry": 37,
+   "offset": "0xebec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x20",
+   "src_sha1": "62d33616f673f86f29f1bd8e528e56d9ae7cc6ae",
+   "reason": "알파벳 패널 A~R"
+  },
+  {
+   "id": "panel.e039",
+   "entry": 39,
+   "offset": "0xfe4c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "07ef0f171de3aefb9a586a05cd997a0d54a0b282",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e040",
+   "entry": 40,
+   "offset": "0x10a8c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "bd4ac7c0770ce8aaae8976acaf31165a683ad9ef",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e041",
+   "entry": 41,
+   "offset": "0x116cc",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "2ec261e9583d7964199919e2d9e6d25359910d8e",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e042",
+   "entry": 42,
+   "offset": "0x1230c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "a76fd992e1402d410bf1ee96158c2a49a06ede4f",
+   "reason": "Helper 패널 (영어)"
+  },
+  {
+   "id": "panel.e047",
+   "entry": 47,
+   "offset": "0x1604c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x40",
+   "src_sha1": "ffdfe02de7177d32f8ed26f1ced83f5f7e4688d0",
+   "reason": "틀·막대 그림"
+  },
+  {
+   "id": "panel.e048",
+   "entry": 48,
+   "offset": "0x1666c",
+   "size": [
+    80,
+    96
+   ],
+   "colr": "0x100",
+   "src_sha1": "a4097695878912da4a710e1ce0feeb52a34e16be",
+   "reason": "CHANGE 게이지 (영어)"
+  },
+  {
+   "id": "panel.e049",
+   "entry": 49,
+   "offset": "0x1846c",
+   "size": [
+    32,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "1565a008dbb1c768c902c9a061ee43454c96295c",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e050",
+   "entry": 50,
+   "offset": "0x185ec",
+   "size": [
+    32,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "7b47d19154813c1efc5aa4046570768cd0c01b2f",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e051",
+   "entry": 51,
+   "offset": "0x1876c",
+   "size": [
+    32,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "9e3c5d3f1e6dbd92a09b732a139fb523d7801073",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e052",
+   "entry": 52,
+   "offset": "0x188ec",
+   "size": [
+    32,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "2592543cd753a3dcbe9f000af4af28d5f74ad0d7",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e053",
+   "entry": 53,
+   "offset": "0x18a6c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "211f5aeb5991c211ca9ac4550275b8e625eebbe6",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e054",
+   "entry": 54,
+   "offset": "0x18b2c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "8f43348874a56e3062800c88a8581bac049f5cf2",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e055",
+   "entry": 55,
+   "offset": "0x18bec",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "ce740aabf7a6894e14849f19524dd6bd937e7ccb",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e056",
+   "entry": 56,
+   "offset": "0x18cac",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "f77b7bb31d473f9f9a73e3a0875f0ff7448afc8f",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e057",
+   "entry": 57,
+   "offset": "0x18d6c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "a6e38ae38237d7fb179fc26a05ef06a4fd7a9afd",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e058",
+   "entry": 58,
+   "offset": "0x18e2c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "17a218e1bb4f5ee16c7c750e1faf5a2b5b5e9744",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e059",
+   "entry": 59,
+   "offset": "0x18eec",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "c20ec3a06e82e070106bd2dd273d17d7c701129f",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e060",
+   "entry": 60,
+   "offset": "0x18fac",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "8b800a7d190529a635b741620a8baaacbda7f9d1",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e061",
+   "entry": 61,
+   "offset": "0x1906c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "1fdab733f7b097acdc63003943f2dd4e19543ad6",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e062",
+   "entry": 62,
+   "offset": "0x1912c",
+   "size": [
+    16,
+    24
+   ],
+   "colr": "0x10",
+   "src_sha1": "6110881b31e0bfe4fb65fd65ee2f1d5062809683",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e063",
+   "entry": 63,
+   "offset": "0x191ec",
+   "size": [
+    80,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "b40e6b611ccb23d40caa0041e0ee41864dabba52",
+   "reason": "HELPER (영어)"
+  },
+  {
+   "id": "panel.e067",
+   "entry": 67,
+   "offset": "0x1bbac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "3794f2bc5275f9fd9333f30d99a3cfff1a0d3ffb",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e068",
+   "entry": 68,
+   "offset": "0x1c7ec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "65171eee6011cdb5f6100eb6b7caa04563bde73a",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e069",
+   "entry": 69,
+   "offset": "0x1d42c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "b49f2006b360cc28e8d0784d936fd64f1c4125dc",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e070",
+   "entry": 70,
+   "offset": "0x1e06c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "1fe0e76849913a30f087dc17b3e1892e5dec75d2",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e071",
+   "entry": 71,
+   "offset": "0x1ecac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "d352cb3628871861422ee9f6dbad35a13d91d003",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e072",
+   "entry": 72,
+   "offset": "0x1f8ec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "206b3288c4ceca0a74ccb6e19627ec17af5fbc71",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e073",
+   "entry": 73,
+   "offset": "0x2052c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "79a882beb1411795644b152933e514a28ae8dce7",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e074",
+   "entry": 74,
+   "offset": "0x2116c",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "a2629169662d9f3c0eaee41d15371ad89a4f0b21",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e075",
+   "entry": 75,
+   "offset": "0x21dac",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "f4ece393401ccf2b0394d4def42ac92e3766e970",
+   "reason": "CHANGE 포인트 패널 (영어)"
+  },
+  {
+   "id": "panel.e076",
+   "entry": 76,
+   "offset": "0x229ec",
+   "size": [
+    56,
+    56
+   ],
+   "colr": "0x200",
+   "src_sha1": "d764ec4f57aafae563abad78ab3d55f14b2a779b",
+   "reason": "Helper 패널 (영어)"
+  },
+  {
+   "id": "panel.e091",
+   "entry": 91,
+   "offset": "0x2e1ac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "8f9f4657b94c2fbe6fc5dc62ca8fc0e43d8fbcdb",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e092",
+   "entry": 92,
+   "offset": "0x2e3ac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "a76773114b68abec563cafe84241b4563b4994fe",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e093",
+   "entry": 93,
+   "offset": "0x2e5ac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "c95bb4cb5d37db59ba0522e641c6513f7abade57",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e094",
+   "entry": 94,
+   "offset": "0x2e7ac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "ba48fb76618a56bbf3b469d5fbc13552602b1bf1",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e095",
+   "entry": 95,
+   "offset": "0x2e9ac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "c64379ed754793c747c702a5c8f450c6fe759a0c",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e096",
+   "entry": 96,
+   "offset": "0x2ebac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "dda11d13f2c70f474650ccb8de6bf243b3aa546e",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e097",
+   "entry": 97,
+   "offset": "0x2edac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "fa72dc2bc00be779ce9be6219ce97acc692480b5",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e098",
+   "entry": 98,
+   "offset": "0x2efac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "3b1921b5859d21ba36e916eac87d8b1ad600446d",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e099",
+   "entry": 99,
+   "offset": "0x2f1ac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "2914f4f4c25eec7a81e7ce626b6f99f695d6f30d",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e100",
+   "entry": 100,
+   "offset": "0x2f3ac",
+   "size": [
+    32,
+    16
+   ],
+   "colr": "0x100",
+   "src_sha1": "74904f39102d7c426582b18805dba93a698d3433",
+   "reason": "숫자"
+  },
+  {
+   "id": "panel.e195",
+   "entry": 195,
+   "offset": "0x47eec",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x80",
+   "src_sha1": "897a88f446f36279ea3a6b398e835170fa63133e",
+   "reason": "틀·막대 그림"
+  },
+  {
+   "id": "panel.e196",
+   "entry": 196,
+   "offset": "0x48b6c",
+   "size": [
+    80,
+    80
+   ],
+   "colr": "0x90",
+   "src_sha1": "897a88f446f36279ea3a6b398e835170fa63133e",
+   "reason": "틀·막대 그림"
+  }
+ ]
+}

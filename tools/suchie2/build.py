@@ -78,6 +78,8 @@ JP_DISC1 = SourceProfile(
         "APYUKI.BIN": (25717, 393216),
         # boot notice screens (word-RLE Yc blocks, docs/initial-survey.md 3.15)
         "BACKRAM.BIN": (259889, 430080),
+        # panel match bonus game (uncompressed Yc @0x6000, docs/initial-survey.md 3.16)
+        "PMATCH.BIN": (389, 442368),
     },
     # opening character-intro name plates (docs/initial-survey.md §3.11)
     packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
@@ -89,7 +91,7 @@ STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "
                "SESIL2.BIN", "HIMITU.BIN", "NAZO.BIN", "SECRET.BIN", "HIDDEN.BIN", "KAKUSHI.BIN"]
 CARD_FILES = ["APALICE.BIN", "APDEVIL.BIN", "APKYOKO.BIN", "APMILK.BIN", "APRUMI.BIN", "APSANAE.BIN",
               "APSECIL.BIN", "APSHIHO.BIN", "APSUB.BIN", "APTSUKA.BIN", "APYUKI.BIN"]
-assert sorted(STAGE_FILES + CARD_FILES + ["BACKRAM.BIN"]) == sorted(JP_DISC1.files)
+assert sorted(STAGE_FILES + CARD_FILES + ["BACKRAM.BIN", "PMATCH.BIN"]) == sorted(JP_DISC1.files)
 
 
 def _sha1(path: Path) -> str:

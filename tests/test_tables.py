@@ -36,7 +36,8 @@ def test_card_tables_and_shared_layout_agree():
 def test_every_table_protects_its_palettes_and_references_known_terms():
     for p in [ROOT / "translation/select1.json", ROOT / "translation/match.json", ROOT / "translation/match2.json",
               ROOT / "translation/opening.json", ROOT / "translation/letters.json",
-              ROOT / "translation/title_labels.json", ROOT / "translation/boot_notice.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
+              ROOT / "translation/title_labels.json", ROOT / "translation/boot_notice.json",
+              ROOT / "translation/panel.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
         t = _load(p)
         for e in t["entries"]:
             assert len(e.get("palette_sha1", "")) == 40, (p.name, e["id"])
@@ -104,3 +105,16 @@ def test_boot_notice_table_covers_its_block():
     assert t["palette_file"] == build.JP_DISC1.packed[t["packed"]][0]       # CRAM image in the same file
     assert sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]]) == list(range(8))
     assert sorted(e["id"] for e in layout["entries"]) == sorted(e["id"] for e in t["entries"])
+
+
+def test_panel_table_classifies_every_entry_and_pending_ones_are_marked():
+    t = _load(ROOT / "translation/panel.json")
+    layout = _load(ROOT / "assets/panel/layout.json")
+    assert t["files"] == ["PMATCH.BIN"] and "PMATCH.BIN" in build.JP_DISC1.files
+    entries = sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]])
+    assert entries == list(range(205))
+    translated = {e["id"] for e in t["entries"] if e["state"] != "untranslated"}
+    assert sorted(s["id"] for s in layout["entries"]) == sorted(translated)
+    for e in t["entries"]:
+        if e["state"] == "untranslated":
+            assert e["ko"] == "" and "다음 단계" in e["note"], e["id"]

@@ -7,6 +7,7 @@
 3. The layer is composited over the cleaned pixels inside the box and quantised back to the
    sprite's palette. Pixels outside the box are never written.
 """
+import re
 from collections import Counter
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
@@ -97,14 +98,77 @@ def _fill_image(size, pal, fill, mask) -> Image.Image:
     return Image.new("RGBA", size, _colour(pal, fill))
 
 
+_CELL = re.compile(r"\d\d|!!|!\?|\?!| |.")
+_UPRIGHT = set("…〜ー")              # drawn turned 90 degrees in vertical text
+
+
+def _glyph(t, font, size, weight, aa):
+    g = Image.new("L", (size * 3, size * 3), 0)
+    gd = ImageDraw.Draw(g)
+    if not aa:
+        gd.fontmode = "1"
+    gd.text((size, size), t, font=font, fill=255, stroke_width=weight, stroke_fill=255)
+    box = g.getbbox()
+    return g.crop(box) if box else None
+
+
+def _vertical_masks(ln, segs, fills, font, big, pad, area):
+    """Top-to-bottom layout: one cell per character; two digits or '!!'/'!?' share a cell (side by
+    side, squeezed horizontally when they do not fit the column), '…'/'ー'/'〜' are turned upright, a
+    space is half a cell. Every cell must leave ink inside its own cell height and the column must end
+    inside the area; anything else is a LabelError. Returns [(mask, fill)] per segment."""
+    size, weight, aa = ln["size"], ln.get("weight", 0), ln.get("aa", True)
+    step = ln.get("step", size + 1)
+    ax0, ay0, ax1, ay1 = area
+    width = ax1 - ax0
+    cells = [(k, t) for k, seg in enumerate(segs) for t in _CELL.findall(seg)]
+    height = sum(step // 2 if t == " " else step for _, t in cells)
+    if ln["y"] == "center":
+        y = ay0 + (ay1 - ay0 - height) / 2
+    elif ln["y"] == "top" or isinstance(ln["y"], int):
+        y = ay0 + (0 if ln["y"] == "top" else ln["y"])
+    else:
+        raise LabelError(f"vertical y must be 'top', 'center' or an offset, got {ln['y']!r}")
+    if y + height > ay1:
+        raise LabelError(f"vertical text {ln['text']!r} runs past the area ({y + height:.0f} > {ay1})")
+    masks = [Image.new("L", big, 0) for _ in segs]
+    for k, t in cells:
+        if t == " ":
+            y += step // 2
+            continue
+        g = _glyph(t, font, size, weight, aa)
+        if g is None:
+            raise LabelError(f"cell {t!r} of {ln['text']!r} draws nothing")
+        if t in _UPRIGHT:
+            g = g.rotate(-90, expand=True)
+        if g.width > width - 2:
+            if len(t) == 1 and t not in _UPRIGHT:
+                raise LabelError(f"cell {t!r} of {ln['text']!r} is wider than the column ({g.width} > {width - 2})")
+            if width - 2 < 1:
+                raise LabelError(f"column of width {width} is too narrow for {t!r}")
+            g = g.resize((width - 2, g.height), Image.LANCZOS if aa else Image.NEAREST)   # tate-chu-yoko
+        if g.height > step:
+            raise LabelError(f"cell {t!r} of {ln['text']!r} is taller than its cell ({g.height} > {step})")
+        px = round(ax0 + (width - g.width) / 2) + pad
+        py = round(y + (step - g.height) / 2) + pad
+        cell = Image.new("L", big, 0)
+        cell.paste(g, (px, py), g)
+        if cell.getbbox() is None:
+            raise LabelError(f"cell {t!r} of {ln['text']!r} falls outside the canvas")
+        masks[k] = ImageChops.lighter(masks[k], cell)
+        y += step
+    return list(zip(masks, fills))
+
+
 def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> Image.Image:
     """lines: [{text, size, x ('center'|'right'|int), y ('center'|int), area ([x0,y0,x1,y1] used
     for centring, default whole canvas), fill (idx, {"v": [idx, ...]} vertical gradient over the
     line, or a list of those per '|' segment), weight (extra stroke px, optional), aa (False =
     no antialiasing, crisp pixel glyphs), outline (idx or a list per '|' segment, optional),
     shadow ({idx, dx, dy},
-    optional)}]. Everything drawn (glyph, stroke, outline, shadow) must lie inside box (default
-    the whole canvas); otherwise LabelError, never silent clipping."""
+    optional), vertical (True = top-to-bottom cells inside area, y 'top'|'center'|offset, optional
+    step = cell height)}]. Everything drawn (glyph, stroke, outline, shadow) must lie inside box
+    (default the whole canvas); otherwise LabelError, never silent clipping."""
     w, h = size
     bx0, by0, bx1, by1 = box or (0, 0, w, h)
     pad = 4 + max([ln.get("weight", 0) + 1 + max(abs(ln.get("shadow", {}).get("dx", 0)),
@@ -120,21 +184,24 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
             raise LabelError(f"{len(segs)} colour segments but {len(fills)} fill colours: {ln['text']!r}")
         text = "".join(segs)
         ax0, ay0, ax1, ay1 = ln.get("area", (0, 0, w, h))
-        tb = ImageDraw.Draw(Image.new("L", (1, 1))).textbbox((0, 0), text, font=font, stroke_width=weight)
-        x = {"center": ax0 + (ax1 - ax0 - (tb[2] - tb[0])) / 2 - tb[0],
-             "right": ax1 - ln.get("margin", 0) - tb[2]}.get(ln["x"], ln["x"])
-        y = ay0 + (ay1 - ay0 - (tb[3] - tb[1])) / 2 - tb[1] if ln["y"] == "center" else ln["y"]
-        masks = []
-        cx = x
-        for seg, fi in zip(segs, fills):
-            m = Image.new("L", big, 0)
-            dr = ImageDraw.Draw(m)
-            if not ln.get("aa", True):
-                dr.fontmode = "1"
-            dr.text((round(cx) + pad, round(y) + pad), seg, font=font, fill=255,
-                    stroke_width=weight, stroke_fill=255)
-            masks.append((m, fi))
-            cx += font.getlength(seg)
+        if ln.get("vertical"):
+            masks = _vertical_masks(ln, segs, fills, font, big, pad, (ax0, ay0, ax1, ay1))
+        else:
+            tb = ImageDraw.Draw(Image.new("L", (1, 1))).textbbox((0, 0), text, font=font, stroke_width=weight)
+            x = {"center": ax0 + (ax1 - ax0 - (tb[2] - tb[0])) / 2 - tb[0],
+                 "right": ax1 - ln.get("margin", 0) - tb[2]}.get(ln["x"], ln["x"])
+            y = ay0 + (ay1 - ay0 - (tb[3] - tb[1])) / 2 - tb[1] if ln["y"] == "center" else ln["y"]
+            masks = []
+            cx = x
+            for seg, fi in zip(segs, fills):
+                m = Image.new("L", big, 0)
+                dr = ImageDraw.Draw(m)
+                if not ln.get("aa", True):
+                    dr.fontmode = "1"
+                dr.text((round(cx) + pad, round(y) + pad), seg, font=font, fill=255,
+                        stroke_width=weight, stroke_fill=255)
+                masks.append((m, fi))
+                cx += font.getlength(seg)
         full = Image.new("L", big, 0)
         for m, _ in masks:
             full = ImageChops.lighter(full, m)

@@ -121,15 +121,21 @@ def _check_tables(tr: dict, lay: dict, ents: list[yc.Entry], offs: list[int], gl
     lay_ids = {s["id"] for s in lay["entries"]}
     if lay_ids - ids:
         raise Select1Error(f"layout refers to unknown translation id {sorted(lay_ids - ids)}")
-    if ids - lay_ids:
-        raise Select1Error(f"translated entries with no layout: {sorted(ids - lay_ids)}")
+    pending = {e["id"] for e in items if e["state"] == "untranslated"}
+    if pending & lay_ids:     # a layout would clean (wipe) the source art; 8bpp art would be garbled
+        raise Select1Error(f"untranslated entries must not have a layout: {sorted(pending & lay_ids)}")
+    filled = [e["id"] for e in items if e["state"] == "untranslated" and e["ko"]]
+    if filled:
+        raise Select1Error(f"ko must be empty for untranslated entries (set a review state instead): {filled}")
+    if ids - lay_ids - pending:
+        raise Select1Error(f"translated entries with no layout: {sorted(ids - lay_ids - pending)}")
     terms = {t["id"]: t["state"] for t in glossary["terms"]} if glossary else None
     for e in items:
         i = e["entry"]
         if not 0 <= i < len(ents):
             raise Select1Error(f"{e['id']}: entry {i} out of range 0..{len(ents) - 1}")
         src = ents[i]
-        if (src.attr >> 3) & 7 != 0:
+        if (src.attr >> 3) & 7 != 0 and e["state"] != "untranslated":   # only redrawn entries must be 4bpp
             raise Select1Error(f"{e['id']}: colour mode {(src.attr >> 3) & 7} is not a 4bpp CRAM bank")
         if hashlib.sha1(src.data).hexdigest() != e["src_sha1"]:
             raise Select1Error(f"{e['id']}: source texture differs from the translation baseline")
@@ -224,6 +230,9 @@ def render(data: bytes, translation: Path, layout: Path, font: str = label.DEFAU
         res.textures[i] = bytes(tex.data)
         res.ids.append(spec["id"])
         states[t["state"]] += 1
+    for t in tr["entries"]:                       # untranslated entries keep their source texture
+        if t["state"] == "untranslated" and t["id"] not in res.ids:
+            states["untranslated"] += 1
     res.states = dict(states)
     res.distribution = bool(states) and set(states) == {"distribution_eligible"}
     return res

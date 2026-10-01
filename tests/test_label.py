@@ -226,3 +226,80 @@ def test_render_lines_empty_text_draws_nothing_but_blank_looking_text_is_rejecte
     for text in (" ", "　", "​"):
         with pytest.raises(label.LabelError, match="nothing visible"):
             label.render_lines((32, 16), [{**line, "text": text}], pal)
+
+
+def _vline(text, **over):
+    return {"text": text, "size": 13, "x": "center", "y": "top", "area": [0, 0, 16, 128], "fill": 1,
+            "vertical": True, "aa": False, **over}
+
+
+def test_vertical_text_stacks_glyphs_top_to_bottom():
+    pal = [0, 0x7FFF] + [0] * 14
+    one = label.render_lines((16, 128), [_vline("가")], pal).getbbox()
+    three = label.render_lines((16, 128), [_vline("가나다")], pal).getbbox()
+    assert three[2] - three[0] <= 16 and (three[3] - three[1]) > 2.5 * (one[3] - one[1])
+
+
+def test_vertical_pairs_of_digits_and_marks_share_one_cell():
+    pal = [0, 0x7FFF] + [0] * 14
+    a = label.render_lines((16, 128), [_vline("가16가")], pal).getbbox()
+    b = label.render_lines((16, 128), [_vline("가가가")], pal).getbbox()
+    c = label.render_lines((16, 128), [_vline("가!!")], pal).getbbox()
+    d = label.render_lines((16, 128), [_vline("가가")], pal).getbbox()
+    assert abs((a[3] - a[1]) - (b[3] - b[1])) <= 3 and (c[3] - c[1]) <= (d[3] - d[1]) + 1
+
+
+def test_vertical_segments_colour_their_own_cells_and_overflow_fails():
+    pal = [0, 0x001F, 0x7C00] + [0] * 13
+    layer = label.render_lines((16, 128), [_vline("가|나", fill=[1, 2])], pal)
+    px = layer.load()
+    top = {px[x, y][:3] for x in range(16) for y in range(0, 14) if px[x, y][3] == 255}
+    low = {px[x, y][:3] for x in range(16) for y in range(15, 30) if px[x, y][3] == 255}
+    assert (255, 0, 0) in top and (0, 0, 255) in low and (0, 0, 255) not in top
+    with pytest.raises(label.LabelError, match="does not fit|runs past"):
+        label.render_lines((16, 128), [_vline("가나다라마바사아자차카")], pal)
+
+
+def test_vertical_marks_keep_full_height_and_ellipsis_turns_upright():
+    pal = [0, 0x7FFF] + [0] * 14
+    bang = label.render_lines((16, 128), [_vline("!!")], pal).getbbox()
+    one = label.render_lines((16, 128), [_vline("!")], pal).getbbox()
+    assert (bang[3] - bang[1]) >= (one[3] - one[1]) - 1           # not shrunk
+    dots = label.render_lines((16, 128), [_vline("…")], pal).getbbox()
+    assert (dots[3] - dots[1]) > (dots[2] - dots[0])               # upright: taller than wide
+
+
+def test_vertical_two_digit_cell_keeps_glyph_height():
+    pal = [0, 0x7FFF] + [0] * 14
+    two = label.render_lines((16, 128), [_vline("16")], pal).getbbox()
+    one = label.render_lines((16, 128), [_vline("1")], pal).getbbox()
+    assert two[2] - two[0] <= 16 and (two[3] - two[1]) >= (one[3] - one[1]) - 1
+
+
+@pytest.mark.parametrize("line", [dict(text="가나다라", step=40),                    # last cell beyond the canvas
+                                  dict(text="가나다라마바사아   자"),
+                                  dict(text="가나다라마바사아", area=[0, 0, 16, 100]),  # runs past the area
+                                  dict(text="가나다", step=8, y=4)],                   # glyphs taller than a cell
+                         ids=["off-canvas", "spaces", "past-area", "overlap"])
+def test_vertical_never_drops_or_overlaps_cells_silently(line):
+    pal = [0, 0x7FFF] + [0] * 14
+    with pytest.raises(label.LabelError):
+        label.render_lines((16, 128), [_vline(**line)], pal)
+
+
+def test_vertical_narrow_column_is_a_label_error_and_ascii_dash_stays():
+    pal = [0, 0x7FFF] + [0] * 14
+    with pytest.raises(label.LabelError):
+        label.render_lines((16, 128), [_vline("16", area=[0, 0, 2, 128])], pal)
+    dash = label.render_lines((16, 128), [_vline("-")], pal).getbbox()
+    assert (dash[2] - dash[0]) >= (dash[3] - dash[1])               # ASCII '-' is not turned upright
+
+
+def test_vertical_space_is_half_a_cell_and_outline_hearts_render():
+    pal = [0, 0x7FFF, 0x001F, 0x03E0, 0x7C00] + [0] * 11
+    a = label.render_lines((16, 128), [_vline("가 가")], pal).getbbox()
+    b = label.render_lines((16, 128), [_vline("가가")], pal).getbbox()
+    assert 4 <= (a[3] - a[1]) - (b[3] - b[1]) <= 9
+    layer = label.render_lines((16, 128), [_vline("해냈어|♥", fill=[1, 2], outline=[3, 4])], pal)
+    cols = {layer.getpixel((x, y))[:3] for x in range(16) for y in range(128) if layer.getpixel((x, y))[3] == 255}
+    assert {(255, 0, 0), (0, 0, 255)} <= cols
