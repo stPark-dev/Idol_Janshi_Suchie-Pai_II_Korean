@@ -2,6 +2,8 @@
 import json
 from pathlib import Path
 
+import pytest
+
 from suchie2 import build
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,7 +39,8 @@ def test_every_table_protects_its_palettes_and_references_known_terms():
     for p in [ROOT / "translation/select1.json", ROOT / "translation/match.json", ROOT / "translation/match2.json",
               ROOT / "translation/opening.json", ROOT / "translation/letters.json",
               ROOT / "translation/title_labels.json", ROOT / "translation/boot_notice.json",
-              ROOT / "translation/panel.json", ROOT / "translation/maxgrp.json", *sorted((ROOT / "translation/cards").glob("*.json"))]:
+              ROOT / "translation/panel.json", ROOT / "translation/maxgrp.json",
+              *[ROOT / f"translation/{n}.json" for n in ("boot_unready", "boot_ram", "boot_savefail")], *sorted((ROOT / "translation/cards").glob("*.json"))]:
         t = _load(p)
         for e in t["entries"]:
             assert len(e.get("palette_sha1", "")) == 40, (p.name, e["id"])
@@ -147,3 +150,67 @@ def test_roulette_owns_exactly_the_wheel_entries_the_panel_table_hands_over():
         assert set(e["terms"]) <= GLOSSARY, e["id"]
         if e["state"] != "untranslated":
             assert e["ko"].count("\n") + 1 == len(specs[e["id"]]["lines"]), e["id"]
+
+
+NOTICE_TABLES = {"boot_unready": (0x4000, "0x0", 3), "boot_ram": (0x27000, "0x2000", 7),
+                 "boot_savefail": (0x46000, "0x3000", 6)}
+
+
+def test_backram_blocks_tile_the_file_without_overlap():
+    blocks = sorted((lo, hi) for f, lo, hi, *_ in build.JP_DISC1.packed.values() if f == "BACKRAM.BIN")
+    assert blocks == [(0x4000, 0x17000), (0x17000, 0x27000), (0x27000, 0x46000), (0x46000, 0x69000)]
+    assert build.JP_DISC1.files["BACKRAM.BIN"][1] == 0x69000
+
+
+def test_other_boot_notice_tables_cover_their_blocks():
+    layout = _load(ROOT / "assets/boot/notices_layout.json")
+    lay_ids = []
+    for name, (lo, pal, n) in NOTICE_TABLES.items():
+        t = _load(ROOT / f"translation/{name}.json")
+        f, plo, _, _, codec = build.JP_DISC1.packed[name]
+        assert t["packed"] == name and (f, plo, codec) == ("BACKRAM.BIN", lo, "rle16")
+        assert t["palette_file"] == "BACKRAM.BIN" and t["palette_offset"] == pal
+        assert sorted([e["entry"] for e in t["entries"]] + [e["entry"] for e in t["excluded"]]) == list(range(n))
+        for e in t["entries"]:
+            assert e["ko"].count("\n") + 1 == sum(len(r["lines"]) for r in
+                                                  next(s for s in layout["entries"] if s["id"] == e["id"])["regions"])
+            assert set(e["terms"]) <= GLOSSARY and len(e["palette_sha1"]) == 40
+        lay_ids += [e["id"] for e in t["entries"]]
+    assert sorted(s["id"] for s in layout["entries"]) == sorted(lay_ids)
+
+
+BACKRAM = ROOT / "work/disc1/fs/BACKRAM.BIN"
+
+
+def _kept_pieces():
+    """(table, id, region box, kept pixels {(x, y)}) for every region that leaves art left of its clean box"""
+    from suchie2 import rle16, yc
+    data = BACKRAM.read_bytes()
+    layout = {s["id"]: s for s in _load(ROOT / "assets/boot/notices_layout.json")["entries"]}
+    for name, (lo, _, _) in NOTICE_TABLES.items():
+        ents = yc.parse(rle16.decompress(data[lo:])[0])
+        for e in _load(ROOT / f"translation/{name}.json")["entries"]:
+            src = ents[e["entry"]]
+            px = lambda x, y: (src.data[(y * src.width + x) // 2] >> (4 if x % 2 == 0 else 0)) & 15  # noqa: E731
+            cleans = [r["clean"]["box"] for r in layout[e["id"]]["regions"]]
+            left = {(x, y) for y in range(src.height) for x in range(src.width)
+                    if px(x, y) and not any(c[0] <= x < c[2] and c[1] <= y < c[3] for c in cleans)}
+            for r in layout[e["id"]]["regions"]:
+                b = r["box"]
+                piece = {(x, y) for x, y in left if b[1] <= y < b[3]}
+                if r["clean"]["box"][0] > 0 or piece:
+                    yield name, e["id"], b, piece, px
+
+
+@pytest.mark.skipif(not BACKRAM.exists(), reason="needs the extracted source file")
+def test_only_whole_button_art_survives_the_notice_cleaning():
+    pieces = {}
+    for name, sid, b, piece, px in _kept_pieces():
+        assert piece, f"{sid}: region {b} keeps art but none is there"
+        x0, y0 = min(x for x, _ in piece), min(y for _, y in piece)
+        pieces.setdefault(max(x for x, _ in piece), []).append(
+            (sid, frozenset((x - x0, y - y0, px(x, y)) for x, y in piece)))
+    for right, group in pieces.items():
+        shapes = {s for _, s in group}
+        assert len(shapes) == 1 or right < 110, f"art ending at x={right} differs between {[i for i, _ in group]}"
+    assert len(pieces[150]) == 3 and len(pieces[82]) == 5      # ⒶⒷⒸ+START on three screens, (Ⓒ on five

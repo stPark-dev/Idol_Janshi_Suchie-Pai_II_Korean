@@ -37,7 +37,7 @@
 - 오프닝(데모) 캐릭터 소개 이름표 46개 (`PROLOG.BIN` 압축 블록: 별명·이름·성우, 초벌 번역·검수 대기)
 - 패널 매치(보너스 게임) 세로 안내문 92줄·그림 패널 23장·로고·룰렛 두 바퀴 (`PMATCH.BIN`, 초벌 번역·검수 대기)
 - 대국 보너스 화면 「満貫ボーナス / POINT獲得!!」 (`MAXGRP1/2/3.BIN`, 초벌 번역·검수 대기)
-- 첫 부팅 안내 화면 5줄 (`BACKRAM.BIN` 워드 RLE 압축 블록, 초벌 번역·검수 대기)
+- 첫 부팅 안내 화면 5줄과 백업 RAM 안내 화면 8장(준비 안 됨·용량 부족·기록 손상·저장 실패) (`BACKRAM.BIN` 워드 RLE 압축 블록 4개, 초벌 번역·검수 대기)
 - 타이틀 선택지 「最初から／続きから」 → "처음부터 시작 / 이어서 시작" (표기 승인, 화면 표시는 미확인)
 - 오프닝 큰 글자 「アイドル雀士スーチーパイⅡ」 → "아이돌 작사 스치파이 2" (`PROLOG.BIN` 압축 블록, 남는 칸 2개는 하트 장식)
 - 제품 빌드 도구: LZSS·워드 RLE 압축·해제(게임 해제 방식과 같은 형식), 스프라이트 묶음(Yc), ISO9660, 섹터 EDC/ECC, 쓰기 계획, 그림 글자 렌더러
@@ -54,6 +54,7 @@
 | [`translation/letters.json`](translation/letters.json) | 오프닝 큰 글자 12칸 |
 | [`translation/title_labels.json`](translation/title_labels.json) | 타이틀 선택지 1개와 제외 항목 10개 |
 | [`translation/boot_notice.json`](translation/boot_notice.json) | 첫 부팅 안내 5줄과 제외 항목 3개 |
+| [`translation/boot_unready.json`](translation/boot_unready.json), [`boot_ram.json`](translation/boot_ram.json), [`boot_savefail.json`](translation/boot_savefail.json) | 백업 RAM 안내 화면 8장(전체 화면 글자 그림, 배치 `assets/boot/notices_layout.json`) |
 | [`translation/maxgrp.json`](translation/maxgrp.json) | 대국 보너스 화면 9개, 제외 29개 |
 | [`translation/panel.json`](translation/panel.json) | 패널 매치 안내문 92줄·남은 횟수 칸·그림 패널 23장·로고, 제외 89개(룰렛 8장은 `roulette.json`으로) |
 | [`translation/roulette.json`](translation/roulette.json) | 패널 매치 룰렛 칸 글자 6개(두 바퀴 공통, 128×128 네 장에 걸친 256색 그림) |

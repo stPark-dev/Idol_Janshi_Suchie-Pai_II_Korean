@@ -1,0 +1,53 @@
+{
+ "_about": "BACKRAM.BIN 0x4000 워드 RLE Yc 묶음(3항목, 오프셋은 압축 해제 결과 기준) — 부팅/저장 안내 중 백업 준비 안 됨. 전체 화면 320x240 4bpp 글자 그림, 팔레트는 같은 파일 0x0 CRAM 이미지.",
+ "packed": "boot_unready",
+ "bundle_offset": "0x0",
+ "palette_file": "BACKRAM.BIN",
+ "palette_offset": "0x0",
+ "id_prefix": "unready.",
+ "entries": [
+  {
+   "id": "unready.e2",
+   "entry": 2,
+   "offset": "0x12c1c",
+   "size": [
+    320,
+    240
+   ],
+   "colr": "0x10",
+   "src_sha1": "50f648e07515643a032bd4457e81744ffc8fb437",
+   "ja": "あれ？本体RAMの\nバックアップの準備が\n出来ていないみたいですよ。\nこんな時は、セガサターン本体の\n保存データ管理画面で\n全ての記録を消してから\nゲームを始めてね！\nⒶⒷⒸ+STARTで\nマルチプレイヤー画面へ…。",
+   "ko": "어라? |본체 RAM|의\n백업 준비|가\n안 되어 있는 것 같아요.\n이럴 때는 |세가새턴 본체|의\n저장 데이터 관리 화면|에서\n모든 |기록|을 지우고 나서\n게임을 시작해 줘!\n로\n멀티플레이어 화면|으로….",
+   "state": "needs_review",
+   "terms": [],
+   "note": "",
+   "palette_sha1": "b26ea12e001a9bb46f37534d04d248e643d59626"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "unready.e0",
+   "entry": 0,
+   "offset": "0x1c",
+   "size": [
+    160,
+    240
+   ],
+   "colr": "0x100",
+   "src_sha1": "96bc049884c51bcb0be6e8e0d2da68ddaa22a3bc",
+   "reason": "배경 그림"
+  },
+  {
+   "id": "unready.e1",
+   "entry": 1,
+   "offset": "0x961c",
+   "size": [
+    160,
+    240
+   ],
+   "colr": "0x100",
+   "src_sha1": "cc4dcc49d5b152ab5fc55e01b56bc9a01cc12a02",
+   "reason": "배경 그림"
+  }
+ ]
+}

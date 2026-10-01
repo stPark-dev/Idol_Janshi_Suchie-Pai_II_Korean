@@ -62,6 +62,8 @@ def main(argv=None) -> int:
     if args.boot == "ko":
         jobs.append({"packed": "boot_notice", "translation": ROOT / "translation/boot_notice.json",
                      "layout": ROOT / "assets/boot/layout.json", "glossary": ROOT / "translation/glossary.json"})
+        jobs += [{"packed": n, "translation": ROOT / f"translation/{n}.json", "layout": ROOT / "assets/boot/notices_layout.json",
+                  "glossary": ROOT / "translation/glossary.json"} for n in ("boot_unready", "boot_ram", "boot_savefail")]
     try:
         labels = (ROOT / "translation/title_labels.json", ROOT / "assets/title/labels_layout.json",
                   ROOT / "translation/glossary.json") if args.title == "ko" else None

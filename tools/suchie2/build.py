@@ -88,7 +88,11 @@ JP_DISC1 = SourceProfile(
     # opening character-intro name plates (docs/initial-survey.md §3.11)
     packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
             "opening": ("PROLOG.BIN", 0x3C00, 0x7900, "ab1dd22d24cf71013f7f7cce22b55a0bae0c75a1"),
-            "boot_notice": ("BACKRAM.BIN", 0x17000, 0x27000, "50db63e7caff6b638684d6175481c0b9d084d75f", "rle16")},
+            "boot_notice": ("BACKRAM.BIN", 0x17000, 0x27000, "50db63e7caff6b638684d6175481c0b9d084d75f", "rle16"),
+            # other BACKRAM.BIN notices (§3.15): backup not ready / RAM full or record broken / save failed
+            "boot_unready": ("BACKRAM.BIN", 0x4000, 0x17000, "b37ce8c78d053a3d61ad96f49fc26c853dad1b43", "rle16"),
+            "boot_ram": ("BACKRAM.BIN", 0x27000, 0x46000, "8de2c4aa3dfc8f10732228217d161504808a84f3", "rle16"),
+            "boot_savefail": ("BACKRAM.BIN", 0x46000, 0x69000, "dc44631071bb9de1e1bc14ba3733cae09cff2d19", "rle16")},
     read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening and title (banks 0x50/0x60/0x70/0x80)
 )
 STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "SIHO.BIN", "SESIL.BIN",
