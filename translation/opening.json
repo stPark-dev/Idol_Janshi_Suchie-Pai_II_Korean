@@ -18,7 +18,7 @@
    "src_sha1": "ab566e7849549cb1aae540f933520e6ba99f6bd2",
    "ja": "アンコのマイ こと…",
    "ko": "일명 |「안커의 마이」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "term.ankou",
     "name.mai",
@@ -39,7 +39,7 @@
    "src_sha1": "17baab466aa03363c604b99b712381bc96ee1ab7",
    "ja": "フウパイのエリカ こと…",
    "ko": "일명 |「풍패의 에리카」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "term.kazehai",
     "name.erika",
@@ -60,7 +60,7 @@
    "src_sha1": "45e4b75b65f1f4c45d9edb54e450c249982efc10",
    "ja": "イーペーコーのサユリ こと…",
    "ko": "일명 |「이페코의 사유리」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.一盃口",
     "name.sayuri",
@@ -81,7 +81,7 @@
    "src_sha1": "b1f5cb3c2cedd9d13ec5e5cd59d21130e731cb0d",
    "ja": "ジハイのリエ こと…",
    "ko": "일명 |「자패의 리에」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "term.jihai",
     "name.rie",
@@ -102,7 +102,7 @@
    "src_sha1": "c1a64626bc594fb4ab2f3534feac6ef80ec21ab9",
    "ja": "最強の雀士",
    "ko": "최강의 작사",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
@@ -119,7 +119,7 @@
    "src_sha1": "122fcf5c01f6b6655d2ee1215ae1f2380b91aafa",
    "ja": "病弱な少女",
    "ko": "병약한 소녀",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
@@ -136,7 +136,7 @@
    "src_sha1": "fa33bf9ea939c9b23bbe7177d12b6fc0c8d4387e",
    "ja": "ピーチパイ こと…",
    "ko": "일명 |「피치파이」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "epithet.peach",
     "ui.koto"
@@ -156,7 +156,7 @@
    "src_sha1": "e16f62dfbc0494b33079b2cf67fca6fc8acc9312",
    "ja": "チェリーパイ こと…",
    "ko": "일명 |「체리파이」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "epithet.cherry",
     "ui.koto"
@@ -176,7 +176,7 @@
    "src_sha1": "859c3a7758ac2bc344614c4c56b5e1d294832ce0",
    "ja": "レモンパイ こと…",
    "ko": "일명 |「레몬파이」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "epithet.lemon",
     "ui.koto"
@@ -196,7 +196,7 @@
    "src_sha1": "5e8aec0f692b960ff56a4f2e21a0d17434aea998",
    "ja": "チャンタのルミ こと…",
    "ko": "일명 |「찬타의 루미」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.全帯么",
     "name.rumi",
@@ -217,7 +217,7 @@
    "src_sha1": "f5454398409881495862b658f1ed9175300d3520",
    "ja": "ブリッジのユキ こと…",
    "ko": "일명 |「브리지의 유키」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "epithet.bridge",
     "name.yuki",
@@ -238,7 +238,7 @@
    "src_sha1": "3f62fb0bdc6fa894130f9c53ee23458deb79ed34",
    "ja": "ペットのうさぎ?",
    "ko": "애완 토끼?",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
@@ -255,7 +255,7 @@
    "src_sha1": "4befbddc97226131f68d3668e6d42c1138fb03bb",
    "ja": "ドラのシホ こと…",
    "ko": "일명 |「도라의 시호」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ",
     "name.shiho",
@@ -275,8 +275,8 @@
    "colr": "0x60",
    "src_sha1": "aa27bf3342e87374e7e1bb3745a5c51d66377174",
    "ja": "ナゾのシスター",
-   "ko": "수수께끼의 시스터",
-   "state": "needs_review",
+   "ko": "수수께끼의 수녀",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "656783608cd1a062fc26a8ebf69e18d2def11345"
@@ -293,7 +293,7 @@
    "src_sha1": "b26d0ccbad3f01b596073c678f41fafaa8f5333f",
    "ja": "スーチーパイ こと…",
    "ko": "일명 |「스치파이」",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie",
     "ui.koto"
@@ -313,7 +313,7 @@
    "src_sha1": "e02bcc89f0ed1fc18ef379ce3ed39465005214d3",
    "ja": "天野麻衣",
    "ko": "아마노 마이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.mai"
    ],
@@ -332,7 +332,7 @@
    "src_sha1": "1bf08e4d8b3ac5f74ae6f3c39a2d760f2dd221b4",
    "ja": "西野絵利佳",
    "ko": "니시노 에리카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.erika"
    ],
@@ -351,7 +351,7 @@
    "src_sha1": "be93f2d51eeb4142e0a1fa4cf57f4b9bd3322903",
    "ja": "河本小百合",
    "ko": "카와모토 사유리",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.sayuri"
    ],
@@ -370,7 +370,7 @@
    "src_sha1": "917a33292f63f6cc948b48d4e219a19b1d5abdf6",
    "ja": "南條理恵",
    "ko": "난조 리에",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.rie"
    ],
@@ -389,7 +389,7 @@
    "src_sha1": "b368ce8eddbbc499ffc72897ab982e937b5bdd0e",
    "ja": "橘麗華",
    "ko": "타치바나 레이카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.reika"
    ],
@@ -408,7 +408,7 @@
    "src_sha1": "4b32439ce711b934e520d9e255a59041f3744076",
    "ja": "桜井美優里",
    "ko": "사쿠라이 미유리",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.miyuri"
    ],
@@ -427,7 +427,7 @@
    "src_sha1": "31ead35e68bbf02527cbda66800ce6ce511d808e",
    "ja": "篠原ありす",
    "ko": "시노하라 아리스",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.alice"
    ],
@@ -446,7 +446,7 @@
    "src_sha1": "ff981068fc2c2655a88448842b5263cde600034c",
    "ja": "槙枝早苗",
    "ko": "마키에다 사나에",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.sanae"
    ],
@@ -465,7 +465,7 @@
    "src_sha1": "c8f0e129db8415fbacfc478712a1e183df937a4f",
    "ja": "一文字つかさ",
    "ko": "이치몬지 츠카사",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.tsukasa"
    ],
@@ -484,7 +484,7 @@
    "src_sha1": "5c3e08dd684992e7d4666d8e981c63e4fe690e65",
    "ja": "佐々木留美",
    "ko": "사사키 루미",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.rumi"
    ],
@@ -503,7 +503,7 @@
    "src_sha1": "d2cdae685fc50e52f78614df1e5ea235a88ea1b7",
    "ja": "水野佑紀",
    "ko": "미즈노 유키",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.yuki_full"
    ],
@@ -522,7 +522,7 @@
    "src_sha1": "fb46674578a38cffc76e4d0a9f89dbcacba717a5",
    "ja": "みるく",
    "ko": "밀크",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.milk"
    ],
@@ -541,7 +541,7 @@
    "src_sha1": "5b1d8e628ce606f9dd4d66dead86dce7b0e4b803",
    "ja": "片桐志穂",
    "ko": "카타기리 시호",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.shiho_full"
    ],
@@ -560,7 +560,7 @@
    "src_sha1": "f1a87c76b3a3a5151da96cd56e5da1144f98f988",
    "ja": "セシル・デリンジャー",
    "ko": "세실 데린저",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.cecil_full"
    ],
@@ -579,7 +579,7 @@
    "src_sha1": "b75f3d563db6b2e1863eb0ab4fa3a69eaac8ea73",
    "ja": "御崎恭子",
    "ko": "미사키 쿄코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.kyoko_full"
    ],
@@ -598,7 +598,7 @@
    "src_sha1": "6c5a805d597e5f5702df6bbdea5ea596f8e2c1aa",
    "ja": "吉田古奈美",
    "ko": "요시다 코나미",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.yoshida"
    ],
@@ -617,7 +617,7 @@
    "src_sha1": "f7fc463987b21ca8f103ad843f07e8d3856ad502",
    "ja": "平松晶子",
    "ko": "히라마츠 아키코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.hiramatsu"
    ],
@@ -636,7 +636,7 @@
    "src_sha1": "f945f7b5a590b35d4de35e8811c92fb5133a7dfb",
    "ja": "西原久美子",
    "ko": "니시하라 쿠미코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.nishihara"
    ],
@@ -655,7 +655,7 @@
    "src_sha1": "e28d884d582d60430f5ec793b785af015f76c377",
    "ja": "深見梨加",
    "ko": "후카미 리카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.fukami"
    ],
@@ -674,7 +674,7 @@
    "src_sha1": "35ad16579040443478587dd069ab95a07f1257cd",
    "ja": "松本梨香",
    "ko": "마츠모토 리카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.matsumoto"
    ],
@@ -693,7 +693,7 @@
    "src_sha1": "b584d6403b8eecd4b8faa2a23fd05a8cb53ac716",
    "ja": "こおろぎさとみ",
    "ko": "코오로기 사토미",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.korogi"
    ],
@@ -712,7 +712,7 @@
    "src_sha1": "6c5a805d597e5f5702df6bbdea5ea596f8e2c1aa",
    "ja": "吉田古奈美",
    "ko": "요시다 코나미",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.yoshida"
    ],
@@ -731,7 +731,7 @@
    "src_sha1": "0e0c705e416d82e4da4bc618e92650ab6cb71d3a",
    "ja": "水谷優子",
    "ko": "미즈타니 유코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.mizutani"
    ],
@@ -750,7 +750,7 @@
    "src_sha1": "35ad16579040443478587dd069ab95a07f1257cd",
    "ja": "松本梨香",
    "ko": "마츠모토 리카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.matsumoto"
    ],
@@ -769,7 +769,7 @@
    "src_sha1": "8683731dbc13f386983741f57ac856ff2c71a40e",
    "ja": "冨永みーな",
    "ko": "토미나가 미나",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.tominaga"
    ],
@@ -788,7 +788,7 @@
    "src_sha1": "6b354567e73412716ce7f3111c130b88a24ed9a0",
    "ja": "高橋美紀",
    "ko": "타카하시 미키",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.takahashi"
    ],
@@ -807,7 +807,7 @@
    "src_sha1": "f945f7b5a590b35d4de35e8811c92fb5133a7dfb",
    "ja": "西原久美子",
    "ko": "니시하라 쿠미코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.nishihara"
    ],
@@ -826,7 +826,7 @@
    "src_sha1": "7be28134a0ca2baca1ff060b9571f1581de316cc",
    "ja": "矢島晶子",
    "ko": "야지마 아키코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.yajima"
    ],
@@ -845,7 +845,7 @@
    "src_sha1": "851d9731387f1978e1821153d10b1351d3491ca2",
    "ja": "折笠愛",
    "ko": "오리카사 아이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.orikasa"
    ],
@@ -864,7 +864,7 @@
    "src_sha1": "56a3a843fa053d758368ca948420e2782190067c",
    "ja": "かないみか",
    "ko": "카나이 미카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "va.kanai"
    ],
@@ -883,7 +883,7 @@
    "src_sha1": "912cbcefe02d47b882f1dd42f49323aa93f636a8",
    "ja": "( 声 )",
    "ko": "CV",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.cv"
    ],

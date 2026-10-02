@@ -15,7 +15,7 @@
    "src_sha1": "1511781b7964820db6db09b81b4bbefb14f8e44b",
    "ja": "イージー",
    "ko": "쉬움",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "diff.easy"
    ],
@@ -34,7 +34,7 @@
    "src_sha1": "b259146c1c0af2df8916ef3e506479d15f75e169",
    "ja": "ノーマル",
    "ko": "보통",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "diff.normal"
    ],
@@ -53,7 +53,7 @@
    "src_sha1": "42fb6803294351d733d8a02b1b6df555d5da1044",
    "ja": "ハード",
    "ko": "어려움",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "diff.hard"
    ],
@@ -72,7 +72,7 @@
    "src_sha1": "ee7f9b5504b243af22aa5a4128817e622ce049fa",
    "ja": "メニュー",
    "ko": "메뉴",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.menu"
    ],
@@ -91,7 +91,7 @@
    "src_sha1": "9aec53376b42a2745f89220a4bb0133cf26b4b96",
    "ja": "パートナーセレクト",
    "ko": "파트너 선택",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.select"
    ],
@@ -110,7 +110,7 @@
    "src_sha1": "274a360c3ddf6348e1ba1493d496af52103cb87e",
    "ja": "難易度セレクト",
    "ko": "난이도 선택",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.select"
    ],
@@ -129,7 +129,7 @@
    "src_sha1": "fd592e02f280f58961bc9c4d7b9663ba33e6af48",
    "ja": "サウンドテスト",
    "ko": "사운드 테스트",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "665e20713b57eec3323585771314691b4e6d6301"
@@ -146,7 +146,7 @@
    "src_sha1": "74a7f294de849f88be1648ab4369c61ed23bffc3",
    "ja": "ステージセレクト",
    "ko": "스테이지 선택",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.select"
    ],
@@ -165,7 +165,7 @@
    "src_sha1": "74a7f294de849f88be1648ab4369c61ed23bffc3",
    "ja": "ステージセレクト",
    "ko": "스테이지 선택",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.select"
    ],
@@ -184,7 +184,7 @@
    "src_sha1": "4488c60062f4efd0cbce384e08a8ab22e5ef8cab",
    "ja": "篠原\nありす",
    "ko": "시노하라\n아리스",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.alice"
    ],
@@ -203,7 +203,7 @@
    "src_sha1": "9bb4603bbba680f2558ae096c2cdab0bc157c616",
    "ja": "一文字\nつかさ",
    "ko": "이치몬지\n츠카사",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.tsukasa"
    ],
@@ -222,7 +222,7 @@
    "src_sha1": "3111d177d8a721a2fadc215bce7fe7169a408959",
    "ja": "槙枝\n早苗",
    "ko": "마키에다\n사나에",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.sanae"
    ],
@@ -241,7 +241,7 @@
    "src_sha1": "96c62f4584bf4dd016502af7f76ddb95622f7b17",
    "ja": "みるく",
    "ko": "밀크",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.milk"
    ],
@@ -260,7 +260,7 @@
    "src_sha1": "02e422b6be0e314a1952f0213f6c03169e0c0e85",
    "ja": "ドラ|好きな\n女の子",
    "ko": "도라를 |좋아하는\n소녀",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "ドラ=마작 도라. 색 구간 3개",
    "palette_sha1": "884abd447deea3d75f7fca8ded40e42f0966117e"
@@ -277,7 +277,7 @@
    "src_sha1": "325735b25240a11a5d2458c2e53d2593f7edf0e5",
    "ja": "平和を|愛する\n勇者",
    "ko": "핑후를 |사랑하는\n용사",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "pun.pinfu"
    ],
@@ -295,8 +295,8 @@
    "colr": "0xc0",
    "src_sha1": "0c699d7be15144ef0973f38d3603c787556150e0",
    "ja": "アンコ|系が\n得意な子",
-   "ko": "안커 |계열이\n특기인 아이",
-   "state": "needs_review",
+   "ko": "안커 |계열을\n잘하는 아이",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "アンコ=안커(암각). 색 구간은 원문과 같게 나눔",
    "palette_sha1": "884abd447deea3d75f7fca8ded40e42f0966117e"
@@ -313,7 +313,7 @@
    "src_sha1": "2ddbe1f81b3dc0f5f69229c6f044b62e563c591f",
    "ja": "染め|好き\nウサちゃん",
    "ko": "일색을 |좋아하는\n토끼",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "染め=일색(혼일색·청일색). ウサちゃん 어감 → 사람 판단",
    "palette_sha1": "884abd447deea3d75f7fca8ded40e42f0966117e"
@@ -330,7 +330,7 @@
    "src_sha1": "f8b86e342ae6940c1a84e29e9fca1091a50a3f70",
    "ja": "テーマ曲\nNG集",
    "ko": "테마곡\nNG집",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "명패 2개",
    "palette_sha1": "6b2c8677b5a8f9b06152d4bfe24b322ad0011ba4"
@@ -347,7 +347,7 @@
    "src_sha1": "506714192d43a9e06fc7fe10ac728d4c1f74e40b",
    "ja": "あいうえ oh my god\n― 涙は風に ―\n歌:かないみか",
    "ko": "아이우에 oh my god\n― 눈물은 바람에 ―\n노래: 카나이 미카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "곡 제목 번역 방침 → 사람 판단",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -364,7 +364,7 @@
    "src_sha1": "fc21141d12cdf70dc1eb93ad5f9cbb48e62ef23e",
    "ja": "純情LOVE遊戯(ゲーム)\n歌:吉田古奈美",
    "ko": "순정 LOVE 게임\n노래: 요시다 코나미",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "遊戯에 ゲーム 루비. 루비 생략안",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -381,7 +381,7 @@
    "src_sha1": "330cb11d727d9c496332948714dbf06f6c6ec8cb",
    "ja": "女神はショート!\n来る者拒まず\n歌:松本梨香",
    "ko": "여신은 쇼트!\n오는 사람 막지 않아\n노래: 마츠모토 리카",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -398,7 +398,7 @@
    "src_sha1": "17cb08146ce756f5f85473f3fc2f94ccef1b1047",
    "ja": "Please change me now\n歌:水谷優子",
    "ko": "Please change me now\n노래: 미즈타니 유코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "영어 제목 유지",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -414,8 +414,8 @@
    "colr": "0xe0",
    "src_sha1": "789ddd64f0aed38b363f77ac51b9e30d0071e3ba",
    "ja": "肉球みゃーみゃ\n歌:西原久美子",
-   "ko": "젤리 발바닥 먀~먀\n노래: 니시하라 쿠미코",
-   "state": "needs_review",
+   "ko": "발바닥 젤리 먀~먀\n노래: 니시하라 쿠미코",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -432,7 +432,7 @@
    "src_sha1": "464cb84bfea8d42bb71495b37675a467d2b272c2",
    "ja": "くちびるのfortune\n歌:高橋美紀",
    "ko": "입술의 fortune\n노래: 타카하시 미키",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -448,8 +448,8 @@
    "colr": "0xe0",
    "src_sha1": "f292b4cf7f67c22d410ebba5253c9f2537133e18",
    "ja": "再見(ツァイツェン)\n歌:スーチー合唱隊|♥",
-   "ko": "짜이젠\n노래: 스치 합창대|♥",
-   "state": "needs_review",
+   "ko": "짜이찌엔\n노래: 스치 합창대|♥",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie"
    ],
@@ -468,7 +468,7 @@
    "src_sha1": "239fdc613053bbf1fdcd75035909d67c563bfcc6",
    "ja": "美少女じゃんし〜",
    "ko": "미소녀 작사~",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -485,7 +485,7 @@
    "src_sha1": "f2f7c23d5b3f5caf2d952c9dd61a6de8221c5922",
    "ja": "ぷれぜんてっど〜",
    "ko": "프레젠티드~",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -502,7 +502,7 @@
    "src_sha1": "ea811f0f39c5549ae572d5692f525ab126a60a1b",
    "ja": "ウサギがしゃべった〜",
    "ko": "토끼가 말했다~",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -519,7 +519,7 @@
    "src_sha1": "40f2322bd20776922610dbe83e20340396fb65b6",
    "ja": "ハデハデとジミジミ〜",
    "ko": "번쩍번쩍과 수수수수~",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -536,7 +536,7 @@
    "src_sha1": "ae04a1afe878ca3c14674a48d44c2f975aea830d",
    "ja": "よろしかったら〜",
    "ko": "괜찮으시다면~",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -552,8 +552,8 @@
    "colr": "0xe0",
    "src_sha1": "c479e2763092dbcc83272185ac05857b6407d953",
    "ja": "疲れているのよね〜",
-   "ko": "지쳐 있는 거지~",
-   "state": "needs_review",
+   "ko": "나 지쳤나 봐~",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -570,7 +570,7 @@
    "src_sha1": "b23e9fabdcf2497c59d71a81e09f90d5157016a2",
    "ja": "メキシト(？)",
    "ko": "메키시토(?)",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "ZZG.AIF: 퀴즈 오답 NG('ブブー', '국 이름', '답은 뉴델리'). 제목은 틀린 대답을 그대로 옮긴 것으로 보여 음역 유지",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -586,8 +586,8 @@
    "colr": "0xe0",
    "src_sha1": "b507a46bde13fcc50e5f3fa8999e73d5a0b8b902",
    "ja": "魔法で脳みそ…あれ？",
-   "ko": "마법으로 뇌가… 어라?",
-   "state": "needs_review",
+   "ko": "마법으로 뇌를… 어라?",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -604,7 +604,7 @@
    "src_sha1": "8b1d6d7930cb357ed76bc5d4ee00cdb4d1e6fe18",
    "ja": "ぼーえーぐん　第一話",
    "ko": "방위군 제1화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "ぼーえーぐん=防衛軍",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -621,7 +621,7 @@
    "src_sha1": "94084564af8fb2829a8660d097d8c493eba5c93c",
    "ja": "ぼーえーぐん　第二話",
    "ko": "방위군 제2화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -638,7 +638,7 @@
    "src_sha1": "4914459badd11b8494acbc10345fc82fabf70fa5",
    "ja": "ぼーえーぐん　第三話",
    "ko": "방위군 제3화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -655,7 +655,7 @@
    "src_sha1": "94f475727da92c7a823ba84b5d0b40b0e4f778ec",
    "ja": "ぼーえーぐん　最終回",
    "ko": "방위군 최종회",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -672,7 +672,7 @@
    "src_sha1": "cbd2ef8b2cd14958f0ec356061bfe39d721220d1",
    "ja": "プレゼンテッド〜",
    "ko": "프레젠티드~",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "50과 같은 말, 표기만 히라가나/가타카나",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -689,7 +689,7 @@
    "src_sha1": "72cafed9b51e7cdb730c236083f965d6baaff469",
    "ja": "まずは！牛フィレの〜",
    "ko": "우선은! 소 안심의~",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -706,7 +706,7 @@
    "src_sha1": "881bc48cebe064464298b797e53bfea11d176afc",
    "ja": "街の灯り(窓の…です)",
    "ko": "거리 불빛(창문…입니다)",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "칸 너비 144px(12px 글꼴)에 맞추려고 '거리의 불빛(창문의…입니다)'를 줄임 → 사람 확인",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -723,7 +723,7 @@
    "src_sha1": "78a52c4a099a0ec534c0114f86b2d048d75e646e",
    "ja": "ぺこぺこピーにゃんで",
    "ko": "페코페코피냥으로",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "NG집 16번 = ZZP.AIF (NG집 16개와 ZZA~ZZP 16개의 순서 대응을 음성 받아쓰기로 확인). 성우가 토끼 말투('~ぴょん')의 뜻 없는 말놀이 대사 'つまりぽんぽこがぺこぺこぴーにゃんで…'를 꼬여서 반복하는 장면이라, 사람 지시('인게임 흐름을 보고 번역')에 따라 들리는 소리를 살려 음역",
    "palette_sha1": "fd84a38dc395c76a1d6194576202d513bdc5d526"
@@ -740,7 +740,7 @@
    "src_sha1": "c94ddf153623495212b7fd8d48d4ddcdaa5bf120",
    "ja": "選ぶ",
    "ko": "선택",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.choose"
    ],
@@ -759,7 +759,7 @@
    "src_sha1": "aa485661bd8086908aa0622c2e1844f8d39624fc",
    "ja": "選ぶ",
    "ko": "선택",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.choose"
    ],
@@ -778,7 +778,7 @@
    "src_sha1": "bad5d6a1ec10c18e63d54754c9525f3eb903f819",
    "ja": "決定",
    "ko": "결정",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c21ed4f63c59e4581ad25363549c0d629241a6aa"
@@ -795,7 +795,7 @@
    "src_sha1": "a7ebb2303f6ec76040ab02c05d13bc2ad72b4932",
    "ja": "演奏",
    "ko": "연주",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c21ed4f63c59e4581ad25363549c0d629241a6aa"
@@ -812,7 +812,7 @@
    "src_sha1": "47cc90fb14c255e31f9a2b105d69386ac7a86ace",
    "ja": "メニュー",
    "ko": "메뉴",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.menu"
    ],
@@ -831,7 +831,7 @@
    "src_sha1": "828e4b0a2e24e265e2b0160ab9751a5be38e853b",
    "ja": "中止",
    "ko": "중지",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c21ed4f63c59e4581ad25363549c0d629241a6aa"
@@ -848,7 +848,7 @@
    "src_sha1": "9a64f09a82bda6d65f4af56854e7dc69dd38cfd0",
    "ja": "ステージ 1\nステージ 2\nステージ 3\nステージ 4\nステージ 5\nステージ 6\nステージ 7\n佑紀\n志穂\nセシル\nセシル",
    "ko": "스테이지 1\n스테이지 2\n스테이지 3\n스테이지 4\n스테이지 5\n스테이지 6\n스테이지 7\n유키\n시호\n세실\n세실",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.shiho",
     "name.cecil",
@@ -869,7 +869,7 @@
    "src_sha1": "e3da4bf89425bbab327cc6646c19b92bc6cfddc1",
    "ja": "ステージ 1\nステージ 2\nステージ 3\nステージ 4\nステージ 5\n早苗\n留美\nつかさ\nありす\n恭子\nおまけ",
    "ko": "스테이지 1\n스테이지 2\n스테이지 3\n스테이지 4\n스테이지 5\n사나에\n루미\n츠카사\n아리스\n쿄코\n보너스",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.sanae",
     "name.alice",
@@ -893,7 +893,7 @@
    "src_sha1": "8d5e6c16341030db0e75ef560fa4d88618faf83e",
    "ja": "ありす",
    "ko": "아리스",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.alice"
    ],
@@ -912,7 +912,7 @@
    "src_sha1": "06e702f73873a178d030fe39572f5d2688231852",
    "ja": "つかさ",
    "ko": "츠카사",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.tsukasa"
    ],
@@ -931,7 +931,7 @@
    "src_sha1": "e0d0a0d55f88dfbf962b4ac80397470454b93c7b",
    "ja": "早苗",
    "ko": "사나에",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.sanae"
    ],
@@ -950,7 +950,7 @@
    "src_sha1": "76d6b06bb3e5d2adc151f69cb194deff095f4dbf",
    "ja": "留美",
    "ko": "루미",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.rumi"
    ],
@@ -969,7 +969,7 @@
    "src_sha1": "94f7c14281d20c8f1ec7ef05a0a392cc47e07575",
    "ja": "真の エンディング を\n見ないと",
    "ko": "진짜 엔딩을\n보지 않으면",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "100과 한 문장. 한국어는 칸마다 두 줄로 나눠 경계에 걸치는 줄이 없게 함",
    "palette_sha1": "3b675b2fb002e8a079b9b6dc3a1299cebd36ecd5"
@@ -986,7 +986,7 @@
    "src_sha1": "6c42315a8d1f09d75bdcfabbfa512995c2025fa5",
    "ja": "ステージ セレクト\nできません",
    "ko": "스테이지 선택을\n할 수 없습니다",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.select"
    ],
@@ -1005,7 +1005,7 @@
    "src_sha1": "bf1e5ee8b15de243a65ad3684153edc01dbc4022",
    "ja": "全員クリアー\nすると…!?",
    "ko": "전원 클리어\n하면…!?",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "1faa82af90e3294f99d4faf773427938c9150260"
@@ -1022,7 +1022,7 @@
    "src_sha1": "9345da12c4ac2c1578d66c40d1b16065a00e00bf",
    "ja": "スーチー\nユキ|♥",
    "ko": "스치\n유키|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie",
     "name.yuki"
@@ -1042,7 +1042,7 @@
    "src_sha1": "08a7b7584c0c844fcdae3cf85d0e3e85ce847973",
    "ja": "スーチーパイおまけ劇場",
    "ko": "스치파이 보너스 극장",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie",
     "ui.omake"

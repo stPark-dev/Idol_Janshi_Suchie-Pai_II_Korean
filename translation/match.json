@@ -30,7 +30,7 @@
    "src_sha1": "46c56aaa7933c800486caeb22e874f6d3d7dd003",
    "ja": "東場",
    "ko": "동장",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "round.east"
    ],
@@ -49,7 +49,7 @@
    "src_sha1": "f27227d590da96f08359c5c39d0dde88c88fdcf5",
    "ja": "東",
    "ko": "동",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "wind.east"
    ],
@@ -68,7 +68,7 @@
    "src_sha1": "534637c05401636a4766e59586886bad80d0512d",
    "ja": "南",
    "ko": "남",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "wind.south"
    ],
@@ -87,7 +87,7 @@
    "src_sha1": "87107028ac7ca97df8cddc48cc901e89306ad473",
    "ja": "スーチーパイ",
    "ko": "스치파이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie"
    ],
@@ -105,8 +105,8 @@
    "colr": "0x80",
    "src_sha1": "4ef2980a9af1df54cb4b1b3a6716ab4686b76dea",
    "ja": "スーチーユキ",
-   "ko": "스치 유키",
-   "state": "needs_review",
+   "ko": "스치유키",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie",
     "name.yuki"
@@ -126,7 +126,7 @@
    "src_sha1": "1b0f38080896d35942b368edd1139a092d7d9d88",
    "ja": "ありす",
    "ko": "아리스",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.alice"
    ],
@@ -145,7 +145,7 @@
    "src_sha1": "9d5c6a5fe5f450546b5aaf0282e05b25ce458715",
    "ja": "つかさ",
    "ko": "츠카사",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.tsukasa"
    ],
@@ -164,7 +164,7 @@
    "src_sha1": "1b4e5e5513421943760e414f761f5fb6b72310e3",
    "ja": "早苗",
    "ko": "사나에",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.sanae"
    ],
@@ -183,7 +183,7 @@
    "src_sha1": "1375bdb9fcc570903d4f698bbd2316fc5b08eb2b",
    "ja": "留美",
    "ko": "루미",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.rumi"
    ],
@@ -202,7 +202,7 @@
    "src_sha1": "014c5697dfb023bb1d1312905b638ad31b02ce99",
    "ja": "佑紀",
    "ko": "유키",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.yuki"
    ],
@@ -221,7 +221,7 @@
    "src_sha1": "640a40051650b4219005ce7201f0e8188059e968",
    "ja": "志穂",
    "ko": "시호",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.shiho"
    ],
@@ -240,7 +240,7 @@
    "src_sha1": "8da331211505cf09077ec9d4cdd7f9fca430edb3",
    "ja": "セシル",
    "ko": "세실",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.cecil"
    ],
@@ -259,7 +259,7 @@
    "src_sha1": "c60323ac8a2a72398023995c172ef8b73db7aec4",
    "ja": "セシル",
    "ko": "세실",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.cecil"
    ],
@@ -278,7 +278,7 @@
    "src_sha1": "62286463fa2f5ae6df58bf7db16eb0f7546fc640",
    "ja": "恭子",
    "ko": "쿄코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.kyoko"
    ],
@@ -297,7 +297,7 @@
    "src_sha1": "db10576647e4e3f9ca276044428ed2811d1a9e65",
    "ja": "ポン",
    "ko": "퐁",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.pon"
    ],
@@ -316,7 +316,7 @@
    "src_sha1": "7bb8c2661ee3f01707eee6b8ceee3949cb52f1da",
    "ja": "チー",
    "ko": "치",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.chi"
    ],
@@ -335,7 +335,7 @@
    "src_sha1": "ca5d080f9a08fd7d983ff403b81030588c317197",
    "ja": "カン",
    "ko": "깡",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.kan"
    ],
@@ -354,7 +354,7 @@
    "src_sha1": "eac34ef9db5aa9ddf05ba210a652182dc9e6cbe6",
    "ja": "リーチ",
    "ko": "리치",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.riichi"
    ],
@@ -373,7 +373,7 @@
    "src_sha1": "09ae412343694f98d30b9f250a35b8d492dd71b5",
    "ja": "ロン",
    "ko": "론",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.ron"
    ],
@@ -392,7 +392,7 @@
    "src_sha1": "fdc4b1a4ed42ea46b1779d45a497712bbf389899",
    "ja": "ツモ",
    "ko": "쯔모",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.tsumo"
    ],
@@ -411,7 +411,7 @@
    "src_sha1": "e24dd42d4ad4e2d9898e08e972798649f9181aa2",
    "ja": "一発",
    "ko": "일발",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.ippatsu"
    ],
@@ -430,7 +430,7 @@
    "src_sha1": "b4f08950fc0c69ceab62d4d4e4431ba11f0c0c61",
    "ja": "スーチー棒",
    "ko": "스치봉",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "item.suchie_stick",
     "name.suchie"
@@ -450,7 +450,7 @@
    "src_sha1": "230577648cdcc621905970032577ac78637da428",
    "ja": "ハイパーアイ",
    "ko": "하이퍼아이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "item.hyper_eye"
    ],
@@ -469,7 +469,7 @@
    "src_sha1": "97db7c6a758bd957d5ecfbcf92d39a96e6032ac3",
    "ja": "方向ボタン|で|組合せ|を|選んでね\n(|決定|は|Cボタン|)",
    "ko": "방향 버튼|으로 |조합|을 |골라 줘\n(|결정|은 |C 버튼|)",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "색 구간은 배치에서",
    "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
@@ -486,7 +486,7 @@
    "src_sha1": "2a64c63f47e08a4d11bd7625c4801a5131b64a20",
    "ja": "ちがうよ",
    "ko": "아니야",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"
@@ -503,7 +503,7 @@
    "src_sha1": "2c1f2a6fec259f12e3c265f7eddc88c060d962d6",
    "ja": "リーチ",
    "ko": "리치",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "call.riichi"
    ],
@@ -522,7 +522,7 @@
    "src_sha1": "2cf91ad8fdd20f5ed02a40793570e336da1ea188",
    "ja": "てんぱい",
    "ko": "텐파이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "decl.tenpai"
    ],
@@ -541,7 +541,7 @@
    "src_sha1": "ae14c57e9fb5b6bfaa1c2b08da1e3a7e724597b3",
    "ja": "の〜てん",
    "ko": "노~텐",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "decl.noten"
    ],
@@ -560,7 +560,7 @@
    "src_sha1": "fc56a33c98f284d55e7e2bd4ae5f115806b67c38",
    "ja": "流し満貫",
    "ko": "유국만관",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "decl.nagashi"
    ],
@@ -579,7 +579,7 @@
    "src_sha1": "fc27e5fde7aec7aef50855bc692237546497a6d5",
    "ja": "四開槓流れ",
    "ko": "사깡유국",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "decl.suukaikan"
    ],
@@ -598,7 +598,7 @@
    "src_sha1": "f02f12364b743805aa37137b50e61a068657c20b",
    "ja": "跳",
    "ko": "하네",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.hane"
    ],
@@ -617,7 +617,7 @@
    "src_sha1": "0912f9f47c8c2c2fb48c2497d938c53dc8596186",
    "ja": "倍",
    "ko": "배",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.bai"
    ],
@@ -636,7 +636,7 @@
    "src_sha1": "1f0d62db7c69883da2e0341acc9efe87657cf157",
    "ja": "貫",
    "ko": "관",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.kan"
    ],
@@ -655,7 +655,7 @@
    "src_sha1": "293353417cb13bd06673494422116868d5fb494f",
    "ja": "三",
    "ko": "삼",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.san"
    ],
@@ -674,7 +674,7 @@
    "src_sha1": "5b3af15c911fcf964bfaa302fef04fe09f2e6c7a",
    "ja": "満",
    "ko": "만",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.man"
    ],
@@ -693,7 +693,7 @@
    "src_sha1": "86e93ccce8d77941270794acccfe833d315819f2",
    "ja": "役",
    "ko": "역",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.yaku"
    ],
@@ -712,7 +712,7 @@
    "src_sha1": "fcb82cdb9c4ad0b2da450ff0c06a8e213834fd08",
    "ja": "符",
    "ko": "부",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.fu"
    ],
@@ -731,7 +731,7 @@
    "src_sha1": "d196d8b09cd2dc23129e9be03d329585ee5bb7a0",
    "ja": "飜",
    "ko": "판",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.han"
    ],
@@ -750,7 +750,7 @@
    "src_sha1": "d2a9316c1c020104c54d1383dc0dc2383d3697db",
    "ja": "点",
    "ko": "점",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.ten"
    ],
@@ -769,7 +769,7 @@
    "src_sha1": "8bcb38092887eb56788874d40e448b83695d0c67",
    "ja": "パネルマッチ",
    "ko": "패널 매치",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "e4f944bc74c3117ab3dd35b3fe8680467bfd2b7d"
@@ -786,7 +786,7 @@
    "src_sha1": "b89e4204379cec0d80c185310abe34f903acb938",
    "ja": "得点 |クリアー!",
    "ko": "득점 |클리어!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "41ff21243f37f9b4f6fcb3d9b4f9d8aca1fbe5e3"
@@ -803,7 +803,7 @@
    "src_sha1": "a7cdd4d9238425fcd934a8d8cbb356608e366035",
    "ja": "立直",
    "ko": "리치",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.立直"
    ],
@@ -822,7 +822,7 @@
    "src_sha1": "70203b5360f4fb67c34d0755b11f02b1fa2895d2",
    "ja": "一発",
    "ko": "일발",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.一発"
    ],
@@ -841,7 +841,7 @@
    "src_sha1": "58c1c889875836606b6ccb44a9a14d708a321297",
    "ja": "門前清摸",
    "ko": "멘젠쯔모",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.門前清摸"
    ],
@@ -860,7 +860,7 @@
    "src_sha1": "4344038418eb3fa571dad417ff7a642ff2943d8c",
    "ja": "嶺上開花",
    "ko": "영상개화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.嶺上開花"
    ],
@@ -879,7 +879,7 @@
    "src_sha1": "7decc3b96c1c51d76b2d7e4c44aea0a4884c621e",
    "ja": "海底撈月",
    "ko": "해저로월",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.海底撈月"
    ],
@@ -898,7 +898,7 @@
    "src_sha1": "a51688296388b42ca6ab9c3b494ef204294f6f4a",
    "ja": "河底撈魚",
    "ko": "하저로어",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.河底撈魚"
    ],
@@ -917,7 +917,7 @@
    "src_sha1": "2d3c34959e0d7c98b809807cc1da0bdb7019ebf4",
    "ja": "断么九",
    "ko": "탕야오",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.断么九"
    ],
@@ -936,7 +936,7 @@
    "src_sha1": "f77162f643b84406e686bfe177d7caa839d6a903",
    "ja": "平和",
    "ko": "핑후",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "pun.pinfu",
     "yaku.平和"
@@ -956,7 +956,7 @@
    "src_sha1": "92f08237a22a3761cae6a6acc1a4dff76f696181",
    "ja": "一盃口",
    "ko": "이페코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.一盃口"
    ],
@@ -975,7 +975,7 @@
    "src_sha1": "4d7d79587a42e0260978d473230d9459b09ffacd",
    "ja": "一気通貫",
    "ko": "일기통관",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.一気通貫"
    ],
@@ -994,7 +994,7 @@
    "src_sha1": "6c28956859ddfaaa27083c9283d9e7bf305218f6",
    "ja": "三色同順",
    "ko": "삼색동순",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.三色同順"
    ],
@@ -1013,7 +1013,7 @@
    "src_sha1": "d6df305d308fdccdf3186d84e9b7177d99d13336",
    "ja": "全帯么",
    "ko": "찬타",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.全帯么"
    ],
@@ -1032,7 +1032,7 @@
    "src_sha1": "b6123cfa53608cfc1147b2f57c34618cc6c26a2b",
    "ja": "七対子",
    "ko": "치또이츠",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.七対子"
    ],
@@ -1051,7 +1051,7 @@
    "src_sha1": "526e13e8e8122b584c834a4025e6624ab644a9c7",
    "ja": "Wリーチ",
    "ko": "더블 리치",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.Wリーチ"
    ],
@@ -1070,7 +1070,7 @@
    "src_sha1": "dc7516f9c1120aaca36f3d05ff940ba46c8d3007",
    "ja": "混一色",
    "ko": "혼일색",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.混一色"
    ],
@@ -1089,7 +1089,7 @@
    "src_sha1": "84b22691ae6bf60c75eb790e638844b9321effd6",
    "ja": "混老頭",
    "ko": "혼노두",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.混老頭"
    ],
@@ -1108,7 +1108,7 @@
    "src_sha1": "d1a79aedc2fc3d280090e1bad95ca5978bd960d6",
    "ja": "対々和",
    "ko": "또이또이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.対々和"
    ],
@@ -1127,7 +1127,7 @@
    "src_sha1": "7205ac1ab8c7bb40f35923d07f04e3a71abba9e4",
    "ja": "三暗刻",
    "ko": "산안커",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.三暗刻"
    ],
@@ -1146,7 +1146,7 @@
    "src_sha1": "ac62e5fd243107f5a73559ab414e30ff0fdeaf61",
    "ja": "三槓子",
    "ko": "산깡쯔",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.三槓子"
    ],
@@ -1165,7 +1165,7 @@
    "src_sha1": "e29721ed0ba34cbd11f3b19608ffb08e9319c7c9",
    "ja": "一気通貫",
    "ko": "일기통관",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.一気通貫"
    ],
@@ -1184,7 +1184,7 @@
    "src_sha1": "0ffdec315a3b7e5145b8603244d13bb691c36192",
    "ja": "三色同順",
    "ko": "삼색동순",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.三色同順"
    ],
@@ -1203,7 +1203,7 @@
    "src_sha1": "572deef391b153b94af222ea281558c12ffd8460",
    "ja": "三色同刻",
    "ko": "삼색동각",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.三色同刻"
    ],
@@ -1222,7 +1222,7 @@
    "src_sha1": "0b4905a7252a14f95347f95675610c4afe9ce182",
    "ja": "三連刻",
    "ko": "삼연각",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.三連刻"
    ],
@@ -1241,7 +1241,7 @@
    "src_sha1": "a7bc47ecab595945219d4fc4c4270fe2b893ffdf",
    "ja": "純全帯么",
    "ko": "준찬타",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.純全帯么"
    ],
@@ -1260,7 +1260,7 @@
    "src_sha1": "42d913e2320ce3eeb1d720f06fe3c4c854f22d4f",
    "ja": "全帯么",
    "ko": "찬타",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.全帯么"
    ],
@@ -1279,7 +1279,7 @@
    "src_sha1": "d1366c6b2934d3244e082593acf5a8b8677c0f06",
    "ja": "一色三順",
    "ko": "일색삼순",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.一色三順"
    ],
@@ -1298,7 +1298,7 @@
    "src_sha1": "122b22d9d5abdd85ad34b4f6dbd6dc90d4772611",
    "ja": "混一色",
    "ko": "혼일색",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.混一色"
    ],
@@ -1317,7 +1317,7 @@
    "src_sha1": "fcce7c7a29c68ac1e259fe6ba97d4bb0caaf48ce",
    "ja": "清老頭",
    "ko": "청노두",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.清老頭"
    ],
@@ -1336,7 +1336,7 @@
    "src_sha1": "48c15c0425ea07dfade54f67247ca8f5403bec73",
    "ja": "二盃口",
    "ko": "량페코",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.二盃口"
    ],
@@ -1355,7 +1355,7 @@
    "src_sha1": "2f23b8f1b6bad73b53d6c5f76eba8cf45b9a667e",
    "ja": "純全帯么",
    "ko": "준찬타",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.純全帯么"
    ],
@@ -1374,7 +1374,7 @@
    "src_sha1": "0892e31eb8ab9596c1360eace7ee960bec3345d9",
    "ja": "小三元",
    "ko": "소삼원",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.小三元"
    ],
@@ -1393,7 +1393,7 @@
    "src_sha1": "65b2e8f059a00f730c1a5be0b03e16e5500b7d49",
    "ja": "么九振切",
    "ko": "유국만관",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.么九振切"
    ],
@@ -1412,7 +1412,7 @@
    "src_sha1": "7a0d450cceea103316c9e4ba6c2eed7ed9a6d570",
    "ja": "清一色",
    "ko": "청일색",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.清一色"
    ],
@@ -1431,7 +1431,7 @@
    "src_sha1": "dd04ddc9c5aa3aa00986250253e169dc5ade6f4a",
    "ja": "清一色",
    "ko": "청일색",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.清一色"
    ],
@@ -1450,7 +1450,7 @@
    "src_sha1": "6f103cbeb15838d7164b82dcfd35569941d2ce64",
    "ja": "天和",
    "ko": "천화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.天和"
    ],
@@ -1469,7 +1469,7 @@
    "src_sha1": "c4d56ad8f6664c24d20fb1f82afb13066d7daed4",
    "ja": "地和",
    "ko": "지화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.地和"
    ],
@@ -1488,7 +1488,7 @@
    "src_sha1": "b5ab86dda28fd671416657d2b0f2cc8f3331c155",
    "ja": "人和",
    "ko": "인화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.人和"
    ],
@@ -1507,7 +1507,7 @@
    "src_sha1": "03ac5d255dfba32168bd1ae3bdb8148bebf5d63a",
    "ja": "字一色",
    "ko": "자일색",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.字一色"
    ],
@@ -1526,7 +1526,7 @@
    "src_sha1": "54d00883c430ddad31315ed40971ed5ef6ee90db",
    "ja": "緑一色",
    "ko": "녹일색",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.緑一色"
    ],
@@ -1545,7 +1545,7 @@
    "src_sha1": "ed719253e4181985e17314635350e3f8b438116c",
    "ja": "大三元",
    "ko": "대삼원",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.大三元"
    ],
@@ -1564,7 +1564,7 @@
    "src_sha1": "acab046069b0c4f3f58a3b0c11bcbe78280504c1",
    "ja": "四喜和",
    "ko": "사희화",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.四喜和"
    ],
@@ -1583,7 +1583,7 @@
    "src_sha1": "a5322041a0eba28e0bea974c1fffb56cc78600ec",
    "ja": "四暗刻",
    "ko": "스안커",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.四暗刻"
    ],
@@ -1602,7 +1602,7 @@
    "src_sha1": "9665205bccd5bf09963d95902b1079fc8e9e56c4",
    "ja": "四槓子",
    "ko": "스깡쯔",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.四槓子"
    ],
@@ -1621,7 +1621,7 @@
    "src_sha1": "00aac21792522ddca8e154c7b961e8d64dd317e3",
    "ja": "国士無双",
    "ko": "국사무쌍",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.国士無双"
    ],
@@ -1640,7 +1640,7 @@
    "src_sha1": "abf933f224a165fffb2e1123d926ff16f490e597",
    "ja": "大車輪",
    "ko": "대차륜",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.大車輪"
    ],
@@ -1659,7 +1659,7 @@
    "src_sha1": "8e708a0847b264899ef9c468b5908c44c0b818a3",
    "ja": "十三不塔",
    "ko": "십삼불탑",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.十三不塔"
    ],
@@ -1678,7 +1678,7 @@
    "src_sha1": "ffedfc2bf6850bf4be29f73e440132149c901ccb",
    "ja": "九連宝燈",
    "ko": "구련보등",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.九連宝燈"
    ],
@@ -1697,7 +1697,7 @@
    "src_sha1": "4bfc9fc8844a597f4a3c11c2516049fa17a91e72",
    "ja": "ドラ",
    "ko": "도라",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ"
    ],
@@ -1716,7 +1716,7 @@
    "src_sha1": "3198147013d36b14dd619f82f41517b3308f82d9",
    "ja": "ドラ",
    "ko": "도라",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ"
    ],
@@ -1735,7 +1735,7 @@
    "src_sha1": "423b87a2b9358481e4eaf803660f19493b5d8845",
    "ja": "ドラ",
    "ko": "도라",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ"
    ],
@@ -1754,7 +1754,7 @@
    "src_sha1": "b08ee2c2e21ec9e0be819ee4dee7b0f6c8c665f2",
    "ja": "ドラ",
    "ko": "도라",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ"
    ],
@@ -1773,7 +1773,7 @@
    "src_sha1": "4bfc9fc8844a597f4a3c11c2516049fa17a91e72",
    "ja": "ドラ",
    "ko": "도라",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ"
    ],
@@ -1792,7 +1792,7 @@
    "src_sha1": "3198147013d36b14dd619f82f41517b3308f82d9",
    "ja": "ドラ",
    "ko": "도라",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ"
    ],
@@ -1811,7 +1811,7 @@
    "src_sha1": "423b87a2b9358481e4eaf803660f19493b5d8845",
    "ja": "ドラ",
    "ko": "도라",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.ドラ"
    ],
@@ -1830,7 +1830,7 @@
    "src_sha1": "dcdd3e6b8cda9e4f1fa4f99b755f6bdec9b39dbd",
    "ja": "役牌",
    "ko": "역패",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.役牌"
    ],
@@ -1849,7 +1849,7 @@
    "src_sha1": "099bc5df6e3b4f7a7cfdc8fa1811a2cf9be5f489",
    "ja": "役牌",
    "ko": "역패",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.役牌"
    ],
@@ -1868,7 +1868,7 @@
    "src_sha1": "db7f0e128c88798e9d763c987ef8b869408fe459",
    "ja": "役牌",
    "ko": "역패",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.役牌"
    ],
@@ -1887,7 +1887,7 @@
    "src_sha1": "d757cf82d56e9f2f8f5d3f23ae0b64dd81aca7ef",
    "ja": "役牌",
    "ko": "역패",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.役牌"
    ],
@@ -1906,7 +1906,7 @@
    "src_sha1": "c281f8070e25bee8946c84996e995590e17067e5",
    "ja": "一色三順",
    "ko": "일색삼순",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "yaku.一色三順"
    ],
@@ -1924,8 +1924,8 @@
    "colr": "0x140",
    "src_sha1": "639449e2345d911a4a006b669cea023a507dbef3",
    "ja": "交換したい牌を\n選んでね|♥",
-   "ko": "교환하고 싶은 패를\n골라 줘|♥",
-   "state": "needs_review",
+   "ko": "바꾸고 싶은 패를\n골라 줘|♥",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "e051819d1f63037a0639aea586350c31a50d7c50"
@@ -1942,7 +1942,7 @@
    "src_sha1": "be12111b8b8384f290ec897192197906e8d63d0a",
    "ja": "C|ボタン|で選び終わったら\nB|ボタン|を押してね",
    "ko": "C |버튼|으로 다 고르면\nB |버튼|을 눌러 줘",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "4a717d2e35aa25a84f2e9aa9520eb3c6de345e3c"

@@ -22,7 +22,7 @@
    "src_sha1": "f02f12364b743805aa37137b50e61a068657c20b",
    "ja": "跳",
    "ko": "하네",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.hane"
    ],
@@ -41,7 +41,7 @@
    "src_sha1": "0912f9f47c8c2c2fb48c2497d938c53dc8596186",
    "ja": "倍",
    "ko": "배",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.bai"
    ],
@@ -60,7 +60,7 @@
    "src_sha1": "1f0d62db7c69883da2e0341acc9efe87657cf157",
    "ja": "貫",
    "ko": "관",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.kan"
    ],
@@ -79,7 +79,7 @@
    "src_sha1": "293353417cb13bd06673494422116868d5fb494f",
    "ja": "三",
    "ko": "삼",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.san"
    ],
@@ -98,7 +98,7 @@
    "src_sha1": "5b3af15c911fcf964bfaa302fef04fe09f2e6c7a",
    "ja": "満",
    "ko": "만",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.man"
    ],
@@ -117,7 +117,7 @@
    "src_sha1": "86e93ccce8d77941270794acccfe833d315819f2",
    "ja": "役",
    "ko": "역",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "score.yaku"
    ],
@@ -136,10 +136,8 @@
    "src_sha1": "51c45f54a481879b02626003c77e5088a700a976",
    "ja": "ボーナス",
    "ko": "보너스",
-   "state": "needs_review",
-   "terms": [
-    "ui.omake"
-   ],
+   "state": "distribution_eligible",
+   "terms": [],
    "note": "",
    "palette_sha1": "2e0dcf4dd187f2316a1d1ba590ea27318a460fbb"
   },
@@ -155,7 +153,7 @@
    "src_sha1": "25f332f5527a6c93077affd165d1e3b433773a1b",
    "ja": "POINT獲得!!",
    "ko": "획득!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "앞의 'POINT'(영어) 그림은 그대로, '獲得!!' 자리만 바꿈. 앞에 숫자 스프라이트가 붙어 'n POINT 획득!!'",
    "palette_sha1": "2e0dcf4dd187f2316a1d1ba590ea27318a460fbb"
@@ -172,7 +170,7 @@
    "src_sha1": "0f6d4b707ccf7e3ccd8315f600275359cde6ea81",
    "ja": "変身ポイント(MAX!!)",
    "ko": "변신포인트",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "変身ポイント 자리(x 0~170)만 '변신포인트'로, 'M'부터는 원래 그림. 원래처럼 세로 그라데이션 6→1 두 번 + 보라 테두리 12 (패널 매치 193과 같은 그림)",
    "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"

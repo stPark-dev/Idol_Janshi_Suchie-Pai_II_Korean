@@ -19,8 +19,8 @@
    "colr": "0x50",
    "src_sha1": "127c3f0214f5d867aa67fd6b6c35d980627437a4",
    "ja": "ボーナスゲーム!!",
-   "ko": "보너스게임!!",
-   "state": "needs_review",
+   "ko": "보너스 게임!!",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -36,8 +36,8 @@
    "colr": "0x60",
    "src_sha1": "3c463177cb9353d54d9909765cc4301db36339b2",
    "ja": "パネルマッチ!!",
-   "ko": "패널매치!!",
-   "state": "needs_review",
+   "ko": "패널 매치!!",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -54,7 +54,7 @@
    "src_sha1": "399d59c238b7f77edd113dbed0226e553810cb8e",
    "ja": "ルールはおなじみ",
    "ko": "규칙은 익숙한",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "神経衰弱(카드 짝 맞추기 놀이) → '짝맞추기'로 의역",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -71,7 +71,7 @@
    "src_sha1": "44b8e53a3ff8282c8eb9a72aa841f9265976861b",
    "ja": "神経衰弱で〜す♥",
    "ko": "짝맞추기예요|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -88,7 +88,7 @@
    "src_sha1": "0210696c9c164f8eb4e6921dc4e094bcafb8eff1",
    "ja": "パネルを揃えて",
    "ko": "패널을 맞춰서",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -105,7 +105,7 @@
    "src_sha1": "11bf3eb64b99b94cf9a940d89a2492f76a003c7f",
    "ja": "狙えアイテム!",
    "ko": "아이템을 노려!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -122,7 +122,7 @@
    "src_sha1": "4fa95cac95163af1fa56e1a8c0442f253588dcf0",
    "ja": "カーソルで選んで",
    "ko": "커서로 골라서",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -139,7 +139,7 @@
    "src_sha1": "571b3f89de8a1533c758985f09a496ff0be1d9e4",
    "ja": "Ⓒを押してね♥",
    "ko": "를 눌러 줘|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "원래 Ⓒ 버튼 그림(위쪽)은 그대로 두고 그 아래에 '를 눌러 줘♥'",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -156,7 +156,7 @@
    "src_sha1": "640abef3d971f1c30d0d9c1a7f06266c60e9b493",
    "ja": "ポイント溜めると",
    "ko": "포인트를 모으면",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -173,7 +173,7 @@
    "src_sha1": "022bbde1dd0c88e7b9113368c24aab0904201444",
    "ja": "仲間の変身よっ!!",
    "ko": "동료가 변신!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -190,7 +190,7 @@
    "src_sha1": "c6726a8397805d51f76950b65ef3758519df538e",
    "ja": "慌てず急がず",
    "ko": "서두르지 말고",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -207,7 +207,7 @@
    "src_sha1": "970a2d8defac876209cb9e1ecf1667c5397658e0",
    "ja": "正確にめくろう♥",
    "ko": "정확히 뒤집자|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -224,7 +224,7 @@
    "src_sha1": "6f9c65edc4c317bdf9423244d77a921eb961f4f8",
    "ja": "各キャラごとに",
    "ko": "캐릭터마다",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -241,7 +241,7 @@
    "src_sha1": "4864c04c79b6ab5cbe55ee2e038145389f0ff051",
    "ja": "パターンがあるの",
    "ko": "패턴이 있어",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -257,8 +257,8 @@
    "colr": "0x60",
    "src_sha1": "3f1643ae5103e5cbb6e2e51fe0b9d7a7c49bf799",
    "ja": "ありすちゃんのは",
-   "ko": "아리스의 패널은",
-   "state": "needs_review",
+   "ko": "아리스 패널은",
+   "state": "distribution_eligible",
    "terms": [
     "name.alice"
    ],
@@ -276,8 +276,8 @@
    "colr": "0x60",
    "src_sha1": "d20e79888ca2305dfb87deba33ab9913444531b1",
    "ja": "お隣りが多いよっ",
-   "ko": "옆칸이 많아!",
-   "state": "needs_review",
+   "ko": "옆 칸이 많아!",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -294,7 +294,7 @@
    "src_sha1": "e5199393e53e0255f0d073dbaea1de83abb0f95e",
    "ja": "倍の16パターンで",
    "ko": "두 배인 16패턴에",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -311,7 +311,7 @@
    "src_sha1": "7902450502ce099e1b7a63b33b238b3e283379e0",
    "ja": "反転ナシだって!",
    "ko": "반전은 없대!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -328,7 +328,7 @@
    "src_sha1": "4c070ccb9ede9cd9d7c968996c090b5e680d6690",
    "ja": "つかささんは",
    "ko": "츠카사 씨는",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.tsukasa"
    ],
@@ -347,7 +347,7 @@
    "src_sha1": "8005e9853e1ae5042b04d201704d826360ce15c9",
    "ja": "対称パネルね♥",
    "ko": "대칭 패널이야|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -364,7 +364,7 @@
    "src_sha1": "79f6164c06dda41e8db00bcb2e3870f8191ffc78",
    "ja": "8種類のパターン",
    "ko": "8종류의 패턴",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -381,7 +381,7 @@
    "src_sha1": "c9b37cd9e321ac98047308e6c4dd8201f675a352",
    "ja": "+上下反転ね♥",
    "ko": "+상하 반전|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -398,7 +398,7 @@
    "src_sha1": "b9f913ceca63cbb172d84cc234181f8f349c273c",
    "ja": "早苗さんのパネル",
    "ko": "사나에 씨 패널",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.sanae"
    ],
@@ -417,7 +417,7 @@
    "src_sha1": "c1255dddbe792d0cab6183759a8ea1a056360ec8",
    "ja": "はナナメが基本",
    "ko": "은 대각선이 기본",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -434,7 +434,7 @@
    "src_sha1": "79f6164c06dda41e8db00bcb2e3870f8191ffc78",
    "ja": "8種類のパターン",
    "ko": "8종류의 패턴",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -451,7 +451,7 @@
    "src_sha1": "f90de89a061dc5f1d856f39c6063d9b8907c38b1",
    "ja": "+左右反転よっ",
    "ko": "+좌우 반전!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -468,7 +468,7 @@
    "src_sha1": "37820ebc1fae81f6a57a9af03d4e6195e31c37d5",
    "ja": "留美さんパネルは",
    "ko": "루미 씨 패널은",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.rumi"
    ],
@@ -487,7 +487,7 @@
    "src_sha1": "8b0fc7b82e2cbcc82a88a09d83cde129a8fc05f8",
    "ja": "1コとびパターン",
    "ko": "한 칸 건너뛰기",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -504,7 +504,7 @@
    "src_sha1": "79f6164c06dda41e8db00bcb2e3870f8191ffc78",
    "ja": "8種類のパターン",
    "ko": "8종류의 패턴",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -521,7 +521,7 @@
    "src_sha1": "76586b867e78becebe111fd646399e4ccc622db7",
    "ja": "+点対称がある",
    "ko": "+점대칭이 있어",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -538,7 +538,7 @@
    "src_sha1": "d3e9940a2cd8aa916554a6cfff122d972bdeb3a9",
    "ja": "いろんなパターン",
    "ko": "여러 패턴의",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -555,7 +555,7 @@
    "src_sha1": "ff0fe56f0d5a70c534d716535fe6fbd2af490048",
    "ja": "複合タイプなの…",
    "ko": "복합 타입이야…",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -572,7 +572,7 @@
    "src_sha1": "f210448f60cea333f68e989863a11e69fec2b589",
    "ja": "難易度アップ!!",
    "ko": "난이도 업!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -589,7 +589,7 @@
    "src_sha1": "b2ddcb3b756720774a74082934310699937f3ac8",
    "ja": "ちょっとランダム",
    "ko": "조금 랜덤",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -606,7 +606,7 @@
    "src_sha1": "3096aaab4babec7987c2da6668d332b049164d60",
    "ja": "さらに難かしく!!",
    "ko": "더 어렵게!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -623,7 +623,7 @@
    "src_sha1": "c927dce93a45c545dac7fbe774bee2245d749ab9",
    "ja": "かなりランダム!!",
    "ko": "꽤 랜덤!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -640,7 +640,7 @@
    "src_sha1": "202bc7c283f17d0e438224cb8d431acef7d34868",
    "ja": "パターン数などは",
    "ko": "패턴 수 같은 건",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -657,7 +657,7 @@
    "src_sha1": "05603577c84f09bbccd5758bb349ecf59e15e657",
    "ja": "ヒ・ミ・ツ!!",
    "ko": "비·밀!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -674,7 +674,7 @@
    "src_sha1": "6ac97a614b899c78080af4982821c22d209c4922",
    "ja": "コンティニューも",
    "ko": "컨티뉴해도",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -691,7 +691,7 @@
    "src_sha1": "8d5b2bedf6b02c69ee18d784e8aaa25242e16557",
    "ja": "意味ナイよ・・・",
    "ko": "소용없어…",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -708,7 +708,7 @@
    "src_sha1": "66ed463a66db16598c76946d58e6e9fd700b09f9",
    "ja": "注意!! セシルの",
    "ko": "주의!! 세실의",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.cecil"
    ],
@@ -727,7 +727,7 @@
    "src_sha1": "88ffed3348c747a2670e03334456e5638d9d1ceb",
    "ja": "リセット攻撃っ!!",
    "ko": "리셋 공격!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -744,7 +744,7 @@
    "src_sha1": "06365673a0c77c86d0e9113b0d8d434b31b61c13",
    "ja": "惜っし〜い!",
    "ko": "아까워라!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -761,7 +761,7 @@
    "src_sha1": "ecc6120c0a7521ad71b2929200e10ad52b0bebfd",
    "ja": "次はがんばって♥",
    "ko": "다음엔 힘내|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -778,7 +778,7 @@
    "src_sha1": "e8acc1547a055ffd670a132049bc9be10a970f16",
    "ja": "記憶力で勝負!!",
    "ko": "기억력 승부!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -795,7 +795,7 @@
    "src_sha1": "d989e14d96f65da25fcb21b1b6a4f9801bf1a279",
    "ja": "よ〜く考えてね♥",
    "ko": "잘 생각해 봐|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -812,7 +812,7 @@
    "src_sha1": "1e62d237980fff07c303408234fc35f4e5047148",
    "ja": "残念!!でも失敗は",
    "ko": "아쉽다!! 실패는",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -829,7 +829,7 @@
    "src_sha1": "304be04a94b63f862aafde6c32ea0227f4972906",
    "ja": "成功のモトだよ♥",
    "ko": "성공의 어머니|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -845,8 +845,8 @@
    "colr": "0x50",
    "src_sha1": "cef9a727462da4139a4eb3f7186ae16d20296d8b",
    "ja": "間違えてもズバリ",
-   "ko": "틀려도 콕 짚어",
-   "state": "needs_review",
+   "ko": "틀려도 똑똑히",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -863,7 +863,7 @@
    "src_sha1": "e4cfedbf0d2dad285e8ba5f86740ca7fde2216f1",
    "ja": "記憶しなくちゃ!!",
    "ko": "기억해야 해!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -880,9 +880,10 @@
    "src_sha1": "b36cb352049dd82dfd30efad065d8bb95fb56dc1",
    "ja": "スーチースティック",
    "ko": "스치스틱",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
-    "name.suchie"
+    "name.suchie",
+    "item.suchie_stick_panel"
    ],
    "note": "スーチースティック: 일발 리치봉 아이템 (대국 화면의 スーチー棒 = 스치봉과는 별개 이름)",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -899,7 +900,7 @@
    "src_sha1": "afbdb69d594891047410855bb1d0705105ac51b5",
    "ja": "一発リーチ棒よ!!",
    "ko": "일발 리치봉!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -916,7 +917,7 @@
    "src_sha1": "d78fe9ce3531f12faaed21cd6b5c9f88f04276a8",
    "ja": "ハイパーアイ!",
    "ko": "하이퍼아이!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "item.hyper_eye"
    ],
@@ -935,7 +936,7 @@
    "src_sha1": "7713c5fece7e8b7435d8191e4f38789d0fa5686c",
    "ja": "敵の手牌が見える",
    "ko": "적의 패가 보여",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -952,7 +953,7 @@
    "src_sha1": "da87a6a1774dbd3ba0e2f29c89d03e04461009c8",
    "ja": "スペシャル召喚!!",
    "ko": "스페셜 소환!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -968,8 +969,8 @@
    "colr": "0x60",
    "src_sha1": "8f7221097475210a7c22dfc7910791848fe43595",
    "ja": "ツミコミ牌交換!",
-   "ko": "쌓은 패 교환!",
-   "state": "needs_review",
+   "ko": "패 바꿔치기!",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "ツミコミ(積み込み) = 패 쌓기 속임수",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -986,8 +987,10 @@
    "src_sha1": "f8b76d1515062f50e88d7643eb29240e9d70e4aa",
    "ja": "ファイヤーせっかん",
    "ko": "파이어 응징",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "panel.sekkan"
+   ],
    "note": "せっかん(折檻) = 혼내기·응징",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
   },
@@ -1003,7 +1006,7 @@
    "src_sha1": "edde2948265c44e80250c70adefb9046d07b449b",
    "ja": "敵の当り牌炎上!!",
    "ko": "적 대기패 활활!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1020,7 +1023,7 @@
    "src_sha1": "d37cd67cc6654f33facbfe2b7275dcd36462bd3e",
    "ja": "必殺!ヘルパー!!",
    "ko": "필살! 헬퍼!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1037,7 +1040,7 @@
    "src_sha1": "94a9418f67b5911cd48da1d3c96695ca22824ea5",
    "ja": "仲間の支援攻撃!!",
    "ko": "동료 지원 공격!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1054,7 +1057,7 @@
    "src_sha1": "ce49755aee334badf143f8c0856b6004cfda99b4",
    "ja": "イベントパネル!!",
    "ko": "이벤트 패널!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1070,8 +1073,8 @@
    "colr": "0x60",
    "src_sha1": "55cfb79de11a096d5a9a5783f0e0e56dade1a83a",
    "ja": "何が起こるかな?",
-   "ko": "무슨 일이 날까?",
-   "state": "needs_review",
+   "ko": "무슨 일이 생길까?",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1088,7 +1091,7 @@
    "src_sha1": "3385551696cafbae4ab0c4475bb4ff5afe363d12",
    "ja": "パネルクリアー!",
    "ko": "패널 클리어!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1105,7 +1108,7 @@
    "src_sha1": "ea4645f50136135aff70d0f781e907159a457e07",
    "ja": "とりあえず次の面",
    "ko": "일단 다음 판으로",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1122,7 +1125,7 @@
    "src_sha1": "a1787e7efb22b635ddc1f2c089a82055edbae861",
    "ja": "スカ",
    "ko": "꽝",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1139,7 +1142,7 @@
    "src_sha1": "8a5ef84482ff358394741cee800345c53a8f4a41",
    "ja": "・・・ハズレ・・・",
    "ko": "…꽝이야…",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1156,7 +1159,7 @@
    "src_sha1": "71bdc0a39806bd73fda2cac8ec8b294d231de4d6",
    "ja": "リセット!!",
    "ko": "리셋!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1172,8 +1175,8 @@
    "colr": "0x60",
    "src_sha1": "a5c7343515be3d85c19a8d221e57d21b257dd138",
    "ja": "ふりだしに戻る!!",
-   "ko": "처음으로 돌아가!!",
-   "state": "needs_review",
+   "ko": "처음으로 돌아감!!",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1190,7 +1193,7 @@
    "src_sha1": "daae07450b1e04dfe482b086d358d8f88dfec403",
    "ja": "シャッフル!!",
    "ko": "셔플!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1207,7 +1210,7 @@
    "src_sha1": "88e4280e243f4cae9388c1ca87b702c0f803b0f9",
    "ja": "恐怖!!パネル移動",
    "ko": "공포!! 패널 이동",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1224,7 +1227,7 @@
    "src_sha1": "9d22c13d2a9b5ac8ecbb9e7b252597809dfdada7",
    "ja": "カーソルパニック",
    "ko": "커서 패닉",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1241,7 +1244,7 @@
    "src_sha1": "2c44635df31d62bd09a6862e0e9501a570cb8c89",
    "ja": "もう止まらない!!",
    "ko": "이제 못 멈춰!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1258,7 +1261,7 @@
    "src_sha1": "7ebbe0605ff077de638e88bb04f91f6150bb75ff",
    "ja": "サービス!!",
    "ko": "서비스!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1275,7 +1278,7 @@
    "src_sha1": "a84f8c6c347ff3ed46c061fc32258d13232b0751",
    "ja": "ちょっとだけよ♥",
    "ko": "조금만이야|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1292,7 +1295,7 @@
    "src_sha1": "43b97928e6217afc633a0bba65d36ddc042ed6ed",
    "ja": "3ポイント!!",
    "ko": "3포인트!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1309,7 +1312,7 @@
    "src_sha1": "ba06ac506cc0c41302d39ca470236040a92299cc",
    "ja": "ナイス!得点よ!!",
    "ko": "나이스! 득점!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1326,7 +1329,7 @@
    "src_sha1": "552f1d8402acf239e9dc42bf593296c00d4c4d0b",
    "ja": "5ポイント!!",
    "ko": "5포인트!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "c57fac7c4f17abf059cd1e034815838ea9efc63f"
@@ -1343,7 +1346,7 @@
    "src_sha1": "f4603a6cf9e6efebdcd293bb4f9dd840345a7668",
    "ja": "やったぁ!!大当り",
    "ko": "해냈다!! 대박",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1360,7 +1363,7 @@
    "src_sha1": "2d7344bdd3780adb50dcb25b2f8b6411fd90559a",
    "ja": "ポイント溜めて",
    "ko": "포인트 모아서",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1377,7 +1380,7 @@
    "src_sha1": "6191c7e72713ee958519a086cc46f7774161f2ca",
    "ja": "仲間が変身!",
    "ko": "동료가 변신!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1394,7 +1397,7 @@
    "src_sha1": "8496807dea6b3750cd65ba351213e4d9680f835a",
    "ja": "クリアーした人",
    "ko": "클리어한 사람",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1411,7 +1414,7 @@
    "src_sha1": "f9bc2b77e4da2e44ac0f41844963c64b2a02fe81",
    "ja": "から華麗に変身よ",
    "ko": "부터 화려한 변신",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1428,7 +1431,7 @@
    "src_sha1": "126a76caece1390122c2a2580644ad48a199289f",
    "ja": "真のエンディング",
    "ko": "진정한 엔딩",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1445,7 +1448,7 @@
    "src_sha1": "cb27b9c0b3f4d77bf34c8e63bf6178da4ffafb2a",
    "ja": "に一歩接近ね!",
    "ko": "에 한 발짝 더!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1462,7 +1465,7 @@
    "src_sha1": "f1cf8853f673f5ebdc0bbffba39bb7ee671c6c86",
    "ja": "ポイント8点で",
    "ko": "포인트 8점이면",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1479,7 +1482,7 @@
    "src_sha1": "e1be3b5c87e9a7164316581cf2ab82c09545b74a",
    "ja": "ヘルパー獲得よ♥",
    "ko": "헬퍼 획득이야|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1496,7 +1499,7 @@
    "src_sha1": "7a4a69b4510411cc58997c37679038f33a0121cd",
    "ja": "お・し・ま・い!!",
    "ko": "끝·이·야!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1513,7 +1516,7 @@
    "src_sha1": "127d3780314110eacbcf79ed9fb27926fd87a4a8",
    "ja": "またね♥",
    "ko": "또 봐|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1530,7 +1533,7 @@
    "src_sha1": "42e48453939b9aa8c33c993c5d28f0768a632073",
    "ja": "召喚アイテムを",
    "ko": "소환 아이템을",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1547,7 +1550,7 @@
    "src_sha1": "56bc50d41b037cdc6d2dcc764c7d2246cc8cdf42",
    "ja": "使うわよ!!",
    "ko": "쓸 거야!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1564,7 +1567,7 @@
    "src_sha1": "49d3e593c114f04bab8f98984ee84b85fb99a275",
    "ja": "パネルクリアー!!",
    "ko": "패널 클리어!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1581,7 +1584,7 @@
    "src_sha1": "56e35d5e8cd390f38b4331e0035861f00bc472e3",
    "ja": "やったね♥",
    "ko": "해냈어|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "9130e1a428999c10430a3fb1e8aefce66a84b349"
@@ -1598,7 +1601,7 @@
    "src_sha1": "0f6d4b707ccf7e3ccd8315f600275359cde6ea81",
    "ja": "変身ポイント(MAX!!)",
    "ko": "변신포인트",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "変身ポイント 자리(x 0~170)만 '변신포인트'로, 'M'부터는 원래 그림. 원래처럼 세로 그라데이션 6→1 두 번 + 보라 테두리 12",
    "palette_sha1": "814ddd46a7e699ba815410aaa314fff917fda498"
@@ -1615,7 +1618,7 @@
    "src_sha1": "11dca29ff612868436ee8d7a51270675eec726af",
    "ja": "あと\n回",
    "ko": "남은\n회",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "남은 횟수 칸: 위 'あと' → '남은', 아래 작은 '回' 네모 → '회' (숫자는 따로 그리는 스프라이트)",
    "palette_sha1": "89ff7d725512784a266a68c11b84fad9430cf01f"
@@ -1632,7 +1635,7 @@
    "src_sha1": "c1a5f693b43027e6456d2be1431fb538f94488d4",
    "ja": "ハイパー\nアイ",
    "ko": "하이퍼\n아이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "item.hyper_eye"
    ],
@@ -1651,7 +1654,7 @@
    "src_sha1": "f7734aaad1f75ad5db763239eea3ab512b92c3d6",
    "ja": "ハイパー\nアイ",
    "ko": "하이퍼\n아이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "item.hyper_eye"
    ],
@@ -1670,7 +1673,7 @@
    "src_sha1": "134e71a356a3ad50513c4ec9d08e5f234fbc12ea",
    "ja": "ハイパー\nアイ",
    "ko": "하이퍼\n아이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "item.hyper_eye"
    ],
@@ -1689,7 +1692,7 @@
    "src_sha1": "d45668d6aabae9d5e40f6a157c1e6ad3ac7363f3",
    "ja": "ハイパー\nアイ",
    "ko": "하이퍼\n아이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "item.hyper_eye"
    ],
@@ -1708,8 +1711,10 @@
    "src_sha1": "bc9d0586fb2bfff2d11e2c512d0daaf7ea9f1ad1",
    "ja": "スーチー\nスティック",
    "ko": "스치\n스틱",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "item.suchie_stick_panel"
+   ],
    "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
   },
@@ -1725,8 +1730,10 @@
    "src_sha1": "22fa6635a7f718813feb1ba693618c4c1393e6fa",
    "ja": "スーチー\nスティック",
    "ko": "스치\n스틱",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "item.suchie_stick_panel"
+   ],
    "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
   },
@@ -1742,8 +1749,10 @@
    "src_sha1": "82b3b46eba7339ebf1e42a09619ae45d986cbe6f",
    "ja": "スーチー\nスティック",
    "ko": "스치\n스틱",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "item.suchie_stick_panel"
+   ],
    "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
   },
@@ -1759,8 +1768,10 @@
    "src_sha1": "25f37e190d41aa66c48410067c28244198602cc8",
    "ja": "スーチー\nスティック",
    "ko": "스치\n스틱",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "item.suchie_stick_panel"
+   ],
    "note": "스치스틱 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "6fbb60c5b64e104ab398f877f5e6a9f292327709"
   },
@@ -1776,7 +1787,7 @@
    "src_sha1": "04b0f5105f5bdde4b31f3e4cd9fbea1e8d39f0ae",
    "ja": "召喚",
    "ko": "소 환",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1793,7 +1804,7 @@
    "src_sha1": "1e3a37b6f395ca045aec37c44cc5d4520b20e276",
    "ja": "召喚",
    "ko": "소 환",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1810,7 +1821,7 @@
    "src_sha1": "63cc573060422ac5b38fdcd7718970be767bbf82",
    "ja": "召喚",
    "ko": "소 환",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1827,7 +1838,7 @@
    "src_sha1": "f02e23c8aacac145c4b623cf6a55798b97ee5c93",
    "ja": "召喚",
    "ko": "소 환",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1844,7 +1855,7 @@
    "src_sha1": "11d21db8c88c51584cc54492ff0710ba444d8dcf",
    "ja": "召喚",
    "ko": "소 환",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "스페셜 소환 패널 (Special은 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1861,7 +1872,7 @@
    "src_sha1": "045405d6a901b9b7400d3af5a735ff7829665227",
    "ja": "イベント",
    "ko": "이벤트",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "이벤트 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1878,8 +1889,10 @@
    "src_sha1": "92b7e41573e647744f11b8575303daeda8edd0f5",
    "ja": "せっかん",
    "ko": "응징",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "panel.sekkan"
+   ],
    "note": "응징(せっかん) 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
@@ -1895,8 +1908,10 @@
    "src_sha1": "8eb77d4929dba76ad5d372c01fb6c6f4b8375baa",
    "ja": "せっかん",
    "ko": "응징",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "panel.sekkan"
+   ],
    "note": "응징(せっかん) 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
@@ -1912,8 +1927,10 @@
    "src_sha1": "185e3b52056d673ab74aecd62bacb432f9e0c4ff",
    "ja": "せっかん",
    "ko": "응징",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "panel.sekkan"
+   ],
    "note": "응징(せっかん) 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
@@ -1929,8 +1946,10 @@
    "src_sha1": "10cdcaa3453627ecbd87b97d908168c746635054",
    "ja": "せっかん\nファイヤー",
    "ko": "응징\n파이어",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "panel.sekkan"
+   ],
    "note": "파이어 응징 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
@@ -1946,8 +1965,10 @@
    "src_sha1": "cab6b0ad0aa6b1964cf808363213b7c9b6bcfdd6",
    "ja": "せっかん\nファイヤー",
    "ko": "응징\n파이어",
-   "state": "needs_review",
-   "terms": [],
+   "state": "distribution_eligible",
+   "terms": [
+    "panel.sekkan"
+   ],
    "note": "파이어 응징 패널 — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "8112b8501b24852462281d5c2f58860989fc37be"
   },
@@ -1963,7 +1984,7 @@
    "src_sha1": "ab7b3f20445f65efdbaa46d5c324412084c531d4",
    "ja": "必殺!!",
    "ko": "필살!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "필살 헬퍼 패널 (Helper는 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1980,7 +2001,7 @@
    "src_sha1": "f965151a0a7f6e232b79e773216b04c07073d80c",
    "ja": "必殺!!",
    "ko": "필살!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "필살 헬퍼 패널 (Helper는 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"
@@ -1997,7 +2018,7 @@
    "src_sha1": "e5bd23e5d745af258b048e33dab0d423357b4c2d",
    "ja": "必殺!!",
    "ko": "필살!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "필살 헬퍼 패널 (Helper는 영어라 그대로) — 글자 자리는 같은 줄 주변 색으로 지우고 다시 씀",
    "palette_sha1": "89b343765ddb1e42b4e7057744c1f91956a0efa0"

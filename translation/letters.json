@@ -18,7 +18,7 @@
    "src_sha1": "87f0d2b43a03bd6982692f145b1159640e1a8251",
    "ja": "ア",
    "ko": "아",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "title.idol_janshi"
    ],
@@ -37,7 +37,7 @@
    "src_sha1": "e03f48841857dd5f650f011904089b2b714f1fa7",
    "ja": "イ",
    "ko": "이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "title.idol_janshi"
    ],
@@ -56,7 +56,7 @@
    "src_sha1": "7a7e6005989cb180c9b033b1c15cd4fe73f11a9a",
    "ja": "ド",
    "ko": "돌",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "title.idol_janshi"
    ],
@@ -75,7 +75,7 @@
    "src_sha1": "9b26e910be9e655fa297479163752560c1beb950",
    "ja": "ル",
    "ko": "♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "장식: 한글 '아이돌 작사 스치파이 2'는 10글자라 남는 칸에 하트(사람 결정 2026-09-30, 빈 박자 대신) (ル)",
    "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
@@ -92,7 +92,7 @@
    "src_sha1": "9ca51f4a87b0505c45907cd4d402b3ee5358a754",
    "ja": "雀",
    "ko": "작",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "title.idol_janshi"
    ],
@@ -111,7 +111,7 @@
    "src_sha1": "8ef64be77b590abb7599386ea7ea2f6c13229066",
    "ja": "士",
    "ko": "사",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "title.idol_janshi"
    ],
@@ -130,7 +130,7 @@
    "src_sha1": "e7818dede3fa1dfa9c58199776cacd1afadfeaa7",
    "ja": "ス",
    "ko": "스",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie"
    ],
@@ -149,7 +149,7 @@
    "src_sha1": "63f6986deb7fe735554eb7cd57f25dd32e52eb40",
    "ja": "ー",
    "ko": "♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "장식: 한글 '아이돌 작사 스치파이 2'는 10글자라 남는 칸에 하트(사람 결정 2026-09-30, 빈 박자 대신) (ー, 같은 스프라이트가 두 번 쓰임)",
    "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"
@@ -166,7 +166,7 @@
    "src_sha1": "46e1d836eb41646e43f26091880b7265ec85f7b9",
    "ja": "チ",
    "ko": "치",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie"
    ],
@@ -185,7 +185,7 @@
    "src_sha1": "0f216d0d6e2d368f7d81cc27961af77522faa420",
    "ja": "パ",
    "ko": "파",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie"
    ],
@@ -204,7 +204,7 @@
    "src_sha1": "58771202623cb89db1239865688a26d3dbe388d8",
    "ja": "イ",
    "ko": "이",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie"
    ],
@@ -223,7 +223,7 @@
    "src_sha1": "af9419f23c9ac4f4babb178835adb68f2502f171",
    "ja": "Ⅱ",
    "ko": "2",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "61c844fce7d0ab740b006f3e83ab2f159e0f62ec"

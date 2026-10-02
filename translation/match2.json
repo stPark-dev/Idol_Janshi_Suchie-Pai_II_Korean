@@ -44,7 +44,7 @@
    "src_sha1": "1e82c8c30df0d2ea827040b068cb05fa4008e8b4",
    "ja": "おまかせ\nモード",
    "ko": "자동\n모드",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.omakase"
    ],
@@ -77,7 +77,7 @@
    "src_sha1": "11d4fbc54d6717caf931c3d38ecdbb955353ca95",
    "ja": "おまかせ\nモード",
    "ko": "자동\n모드",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.omakase"
    ],

@@ -18,7 +18,7 @@
    "src_sha1": "08cee392762e113dc04274f5989e4ca1bd7e01fb",
    "ja": "では早速、",
    "ko": "그럼 바로,",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
@@ -35,7 +35,7 @@
    "src_sha1": "60310c257c78a05e991815df3221f0cf80a7e097",
    "ja": "本体RAM内に",
    "ko": "본체 RAM|에",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
@@ -52,7 +52,7 @@
    "src_sha1": "5b7caf191732e310f705e33845c7d664165e60b1",
    "ja": "スーチーパイⅡのデータを",
    "ko": "스치파이2| |데이터|를",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.suchie"
    ],
@@ -71,7 +71,7 @@
    "src_sha1": "7cb81052cf0678739b54fceecc7e84bd52a1eafb",
    "ja": "用意するね!!",
    "ko": "준비할게!!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"
@@ -88,7 +88,7 @@
    "src_sha1": "cb4d859a11a2f1fac4b5aa56d5bc3e9bd26fc53d",
    "ja": "必要容量は たったの1なの♥",
    "ko": "필요한 용량|은 겨우 |1|이야|♥",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": "",
    "palette_sha1": "de1d31005aed0ea0a4ce99eb5be75f54480feac8"

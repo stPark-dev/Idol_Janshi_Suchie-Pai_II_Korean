@@ -20,7 +20,7 @@
    "src_sha1": "42a2fa44998028f5122e65b346bf13265187bda5",
    "ja": "ささき るみ 佐々木 留美\n9月10日生\n20才\nおとめ座\nO型",
    "ko": "사사키 루미\n9월 10일생\n20세\n처녀자리\nO형",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.rumi"
    ],
@@ -39,7 +39,7 @@
    "src_sha1": "4dee4344b9a6dad1d7e83000dda2cdb4b8c3a9be",
    "ja": "みるく\nペット の うさぎ",
    "ko": "밀크\n애완 토끼",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "name.milk"
    ],

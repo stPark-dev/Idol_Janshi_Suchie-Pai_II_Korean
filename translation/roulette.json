@@ -48,7 +48,7 @@
    "id": "roulette.cursor_panic",
    "ja": "カーソル\nぱにっく!",
    "ko": "커서\n패닉!",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": ""
   },
@@ -56,7 +56,7 @@
    "id": "roulette.reset",
    "ja": "リセット",
    "ko": "리셋",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": ""
   },
@@ -64,7 +64,7 @@
    "id": "roulette.service",
    "ja": "サービス",
    "ko": "서비스",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": ""
   },
@@ -72,7 +72,7 @@
    "id": "roulette.panel_clear",
    "ja": "ぱねる\nくりあー",
    "ko": "패널\n클리어",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": ""
   },
@@ -80,7 +80,7 @@
    "id": "roulette.miss",
    "ja": "スカ",
    "ko": "꽝",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": ""
   },
@@ -88,7 +88,7 @@
    "id": "roulette.shuffle",
    "ja": "シャッフル",
    "ko": "셔|플",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [],
    "note": ""
   }

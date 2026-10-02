@@ -18,7 +18,7 @@
    "src_sha1": "10e01a700fa75a3e74986689faf57aa68e63dbf7",
    "ja": "最初から始める\n続きから始める",
    "ko": "처음부터 시작\n이어서 시작",
-   "state": "needs_review",
+   "state": "distribution_eligible",
    "terms": [
     "ui.new_game",
     "ui.continue"
