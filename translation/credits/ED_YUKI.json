@@ -1,0 +1,1442 @@
+{
+ "_about": "엔딩 크레딧 롤(ED_YUKI.DAT 청크 32~66, 152x128 4bpp 35장을 세로로 이은 그림). 줄마다 한 항목, 원래 줄 순서. 이름은 영어판 크레딧(ENDT)의 로마자를 근거로 한 통용 표기. 팔레트는 ED_ALIS.DAT의 CRAM 뱅크(롤 다섯 벌이 같은 색 번호 역할을 씀).",
+ "file": "ED_YUKI.DAT",
+ "chunks": [
+  32,
+  66
+ ],
+ "picture": [
+  152,
+  128,
+  "0x80"
+ ],
+ "palette_file": "ED_ALIS.DAT",
+ "palette_offset": "0x51ab4",
+ "colr": "0xb00",
+ "palette_sha1": "de3d24503cd87be84307c21a6420560ffab0c850",
+ "src_sha1": [
+  "e25cbdd27a04db8deadd056ef758b57f8d531cd0",
+  "a29dec2784cbb094995cc15031cca7e3c854344b",
+  "fbe7172afd7d85cc81c2c96d101087b3ae54cae9",
+  "2b5879a1c37a9692eebda9a95bd7f5a5c713725c",
+  "97cd70140716730c91e0c7a0ca9aceda7cd7410d",
+  "23e39b23ba4f489b8305345645f693fb8d43bff7",
+  "bdc60af33972f67ea680b94effa437568cc7d5ab",
+  "6d6b0dc9fd76cab94d556866316b4ba7130f9abd",
+  "c37a5be698b778a57f97889f383badc6a2c29555",
+  "096e6d5b510603bbc4ab8a914e6639536a6eac83",
+  "23ba6ad28b6c11229f6128a1988f96d8ae30c7dd",
+  "b458705f0bc550634b9b47022840741b6212610a",
+  "36bb9f0ec5c790e2d15dacddf026abfc1c4965bb",
+  "e953a192fc4022e783c44d8ffa880847c1c0018b",
+  "52916cac28d79101e5f07adf4db1a51dfc95bc26",
+  "345102246172e19284767c22884b2b3d80b89ffd",
+  "35345db060190904a812c9d85f4a3fbb8651fea8",
+  "058e9edef7fb986b94f70ebd34d02836016a7ff8",
+  "427a6587f8153ede880761384224b9eb93c66e9f",
+  "b30b447505717d11755d795e4cc1b06107873c69",
+  "7f0a84ee7170aa5b6b9b464f72ddd1e908714a5e",
+  "3c459d4c17e24519be7269b2f827fab528450f46",
+  "847b9d822ae38993bead68d1c82313786d8b2a16",
+  "70b03c690af070ffa60067fe6ae139097c19e112",
+  "2a305598e668298576081e8e0859128365cbe239",
+  "a597a73797974cc99b1dd9d9f220c432df4b415f",
+  "39b2c86fff30f3cb567bcdbdc580ac1be61bfcc1",
+  "a0ad330c40af3ff51dc3f09a16723e7de90087be",
+  "9446eca7bb3efbe277c8557c1df28643b7f69ac4",
+  "832a6abb1887838fd19ee321c19f2278778b8744",
+  "6a7955be92bb5a408635a97515b4a682fe58e840",
+  "abff034e21d9c53c3668b5133a2a3b2d3a70c58a",
+  "e1d3e58b39d869795a6cf11004f15944c552b821",
+  "7f8ebf9a8ff2e3ad4d371c5707d3e3ba788a50bd",
+  "51a24c3c1446b5e618d64a5b760d89f005986501"
+ ],
+ "id_prefix": "credits.yuki.",
+ "entries": [
+  {
+   "id": "credits.yuki.l001",
+   "ja": "キャスト",
+   "ko": "캐스트",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l002",
+   "ja": "スーチーパイ(キョウコ)",
+   "ko": "스치파이 (쿄코)",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l003",
+   "ja": "かない みか",
+   "ko": "카나이 미카",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.kanai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l004",
+   "ja": "ピーチパイ(ありす)",
+   "ko": "피치파이 (아리스)",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l005",
+   "ja": "マイ",
+   "ko": "마이",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l006",
+   "ja": "吉田 古奈美",
+   "ko": "요시다 코나미",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.yoshida"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l007",
+   "ja": "レモンパイ(つかさ)",
+   "ko": "레몬파이 (츠카사)",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l008",
+   "ja": "レイカ",
+   "ko": "레이카",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l009",
+   "ja": "松本 梨香",
+   "ko": "마츠모토 리카",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.matsumoto"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l010",
+   "ja": "チェリーパイ(さなえ)",
+   "ko": "체리파이 (사나에)",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l011",
+   "ja": "水谷 優子",
+   "ko": "미즈타니 유코",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.mizutani"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l012",
+   "ja": "ミルキーパイ(みるく)",
+   "ko": "밀키파이 (밀크)",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l013",
+   "ja": "サユリ",
+   "ko": "사유리",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l014",
+   "ja": "西原 久美子",
+   "ko": "니시하라 쿠미코",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.nishihara"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l015",
+   "ja": "ユキ",
+   "ko": "유키",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l016",
+   "ja": "高橋 美紀",
+   "ko": "타카하시 미키",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.takahashi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l017",
+   "ja": "ルミ",
+   "ko": "루미",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l018",
+   "ja": "冨永 みーな",
+   "ko": "토미나가 미나",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.tominaga"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l019",
+   "ja": "シホ",
+   "ko": "시호",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l020",
+   "ja": "矢島 晶子",
+   "ko": "야지마 아키코",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.yajima"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l021",
+   "ja": "セシル",
+   "ko": "세실",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l022",
+   "ja": "折笠 愛",
+   "ko": "오리카사 아이",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.orikasa"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l023",
+   "ja": "ミユリ",
+   "ko": "미유리",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l024",
+   "ja": "こおろぎさとみ",
+   "ko": "코오로기 사토미",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.korogi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l025",
+   "ja": "エリカ",
+   "ko": "에리카",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l026",
+   "ja": "平松 晶子",
+   "ko": "히라마츠 아키코",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.hiramatsu"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l027",
+   "ja": "リエ",
+   "ko": "리에",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l028",
+   "ja": "深見 梨加",
+   "ko": "후카미 리카",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.fukami"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l029",
+   "ja": "スタッフ",
+   "ko": "스태프",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l030",
+   "ja": "キャラクターデザイン",
+   "ko": "캐릭터 디자인",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l031",
+   "ja": "絵コンテ・原画",
+   "ko": "콘티·원화",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l032",
+   "ja": "園田 健一",
+   "ko": "소노다 켄이치",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l033",
+   "ja": "アニメーション",
+   "ko": "애니메이션",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l034",
+   "ja": "絵コンテ",
+   "ko": "콘티",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l035",
+   "ja": "鶴巻 和哉",
+   "ko": "츠루마키 카즈야",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l036",
+   "ja": "本田 雄",
+   "ko": "혼다 타케시",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l037",
+   "ja": "アニメーション作画監修",
+   "ko": "애니메이션 작화 감수",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l038",
+   "ja": "園田 健一",
+   "ko": "소노다 켄이치",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l039",
+   "ja": "アニメーション作画監督",
+   "ko": "애니메이션 작화 감독",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l040",
+   "ja": "坂寄 隆好",
+   "ko": "사카요리 타카요시",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l041",
+   "ja": "アニメーション原画",
+   "ko": "애니메이션 원화",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l042",
+   "ja": "坂寄 隆好",
+   "ko": "사카요리 타카요시",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l043",
+   "ja": "佐藤 大樹",
+   "ko": "사토 타이키",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l044",
+   "ja": "勝倉 隆三郎",
+   "ko": "카츠쿠라 류자부로",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l045",
+   "ja": "本田 雄",
+   "ko": "혼다 타케시",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l046",
+   "ja": "アニメーション動画",
+   "ko": "애니메이션 동화",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l047",
+   "ja": "き ちゃん",
+   "ko": "키 짱",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l048",
+   "ja": "おい・もっちゃん",
+   "ko": "오이·못짱",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l049",
+   "ja": "プン さん",
+   "ko": "푼 상",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l050",
+   "ja": "プログラム",
+   "ko": "프로그램",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l051",
+   "ja": "メイン システム",
+   "ko": "메인 시스템",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l052",
+   "ja": "アニメ再生ツール・演出",
+   "ko": "애니 재생 툴·연출",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l053",
+   "ja": "田村 純一",
+   "ko": "타무라 준이치",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l054",
+   "ja": "メイン ゲーム",
+   "ko": "메인 게임",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l055",
+   "ja": "麻雀思考・メインOP",
+   "ko": "마작 AI·메인 OP",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l056",
+   "ja": "尾澤 一史",
+   "ko": "오자와 카즈후미",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l057",
+   "ja": "ミユリの部屋・ED",
+   "ko": "미유리의 방·ED",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l058",
+   "ja": "秋山 望",
+   "ko": "아키야마 노조무",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l059",
+   "ja": "声優インタビュー・OP",
+   "ko": "성우 인터뷰·OP",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l060",
+   "ja": "清水 保治",
+   "ko": "시미즈 야스하루",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l061",
+   "ja": "ロパクデータ作成・変換",
+   "ko": "립싱크 데이터 작성·변환",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l062",
+   "ja": "立山 豪",
+   "ko": "타테야마 히이즈",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l063",
+   "ja": "ロパクデータ作成",
+   "ko": "립싱크 데이터 작성",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l064",
+   "ja": "清水 剛史",
+   "ko": "시미즈 타케시",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l065",
+   "ja": "グラフィック",
+   "ko": "그래픽",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l066",
+   "ja": "SDキャラ・ゲーム画面作成",
+   "ko": "SD 캐릭터·게임 화면 제작",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l067",
+   "ja": "ロパク監督・文字職人",
+   "ko": "립싱크 감독·글자 장인",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l068",
+   "ja": "高橋 将人(タカハシ)",
+   "ko": "타카하시 마사히토",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": "원문 옆 작은 「(タカハシ)」 표시는 롤 크기에서 읽히지 않고 자리도 없어 뺌"
+  },
+  {
+   "id": "credits.yuki.l069",
+   "ja": "背景美術監督",
+   "ko": "배경 미술 감독",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l070",
+   "ja": "山本 栄吾",
+   "ko": "야마모토 에이고",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l071",
+   "ja": "背景美術",
+   "ko": "배경 미술",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l072",
+   "ja": "長谷川 浩司",
+   "ko": "하세가와 코지",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l073",
+   "ja": "進行管理",
+   "ko": "진행 관리",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l074",
+   "ja": "キャラクターCG監修",
+   "ko": "캐릭터 CG 감수",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l075",
+   "ja": "宮崎 幸",
+   "ko": "미야자키 아키라",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l076",
+   "ja": "ビデオ キャプチャー",
+   "ko": "비디오 캡처",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l077",
+   "ja": "キャラCG作成・背景美術",
+   "ko": "캐릭터 CG 제작·배경 미술",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l078",
+   "ja": "星 昌和",
+   "ko": "호시 마사카즈",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l079",
+   "ja": "キャラクターCG作成",
+   "ko": "캐릭터 CG 제작",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l080",
+   "ja": "井上 昌二郎",
+   "ko": "이노우에 쇼지로",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l081",
+   "ja": "キャラクターCG作成",
+   "ko": "캐릭터 CG 제작",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l083",
+   "ja": "キャラクターCG作成",
+   "ko": "캐릭터 CG 제작",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l084",
+   "ja": "リュウノスケ",
+   "ko": "류노스케",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l085",
+   "ja": "キャラクターCG作成",
+   "ko": "캐릭터 CG 제작",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l087",
+   "ja": "CG作成・ロパクアシスト",
+   "ko": "CG 제작·립싱크 보조",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l088",
+   "ja": "鈴木 康文",
+   "ko": "스즈키 야스후미",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l089",
+   "ja": "CG作成・ロパクアシスト",
+   "ko": "CG 제작·립싱크 보조",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l090",
+   "ja": "藤本 K",
+   "ko": "후지모토 K",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l091",
+   "ja": "キャラクターCG作成",
+   "ko": "캐릭터 CG 제작",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l092",
+   "ja": "石崎 正和",
+   "ko": "이시자키 마사카즈",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l093",
+   "ja": "サウンド",
+   "ko": "사운드",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l094",
+   "ja": "作曲&SQ・楽器&SE制作",
+   "ko": "작곡&SQ·악기&SE 제작",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l095",
+   "ja": "ボイスデータ編集&MIX",
+   "ko": "보이스 데이터 편집&MIX",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l096",
+   "ja": "サウンドデータ総監修",
+   "ko": "사운드 데이터 총감수",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l097",
+   "ja": "西村\"あにぃ〜\"達也",
+   "ko": "니시무라 \"아니~\" 타츠야",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l098",
+   "ja": "テーマ曲",
+   "ko": "주제가",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l099",
+   "ja": "オープニング",
+   "ko": "오프닝",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l100",
+   "ja": "あいうえohmygod",
+   "ko": "아이우에 oh my god",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l101",
+   "ja": "ー涙は風にー",
+   "ko": "― 눈물은 바람에 ―",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l102a",
+   "ja": "作詞",
+   "ko": "작사",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l102b",
+   "ja": "アイリーン",
+   "ko": "아이린",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l103a",
+   "ja": "作・編曲",
+   "ko": "작·편곡",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l104a",
+   "ja": "歌",
+   "ko": "노래",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l104b",
+   "ja": "かない みか",
+   "ko": "카나이 미카",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.kanai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l105",
+   "ja": "エンディング",
+   "ko": "엔딩",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l106",
+   "ja": "再見",
+   "ko": "짜이찌엔",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l107a",
+   "ja": "作詞",
+   "ko": "작사",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l107b",
+   "ja": "アイリーン",
+   "ko": "아이린",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l108a",
+   "ja": "作・編曲",
+   "ko": "작·편곡",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l109a",
+   "ja": "歌",
+   "ko": "노래",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l109b",
+   "ja": "かない みか",
+   "ko": "카나이 미카",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.kanai"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l110",
+   "ja": "吉田 古奈美",
+   "ko": "요시다 코나미",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.yoshida"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l111",
+   "ja": "松本 梨香",
+   "ko": "마츠모토 리카",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.matsumoto"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l112",
+   "ja": "水谷 優子",
+   "ko": "미즈타니 유코",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.mizutani"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l113",
+   "ja": "西原 久美子",
+   "ko": "니시하라 쿠미코",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.nishihara"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l114",
+   "ja": "高橋 美紀",
+   "ko": "타카하시 미키",
+   "state": "distribution_eligible",
+   "terms": [
+    "va.takahashi"
+   ],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l115",
+   "ja": "協力",
+   "ko": "협력",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l116",
+   "ja": "(有)タイムベース",
+   "ko": "(유)타임 베이스",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l117",
+   "ja": "松原 健夫",
+   "ko": "마츠바라 타케오",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l118",
+   "ja": "レコーディング",
+   "ko": "레코딩",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l119",
+   "ja": "彩レコーディングスタジオ",
+   "ko": "아야 레코딩 스튜디오",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l120",
+   "ja": "ムービー",
+   "ko": "무비",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l121",
+   "ja": "声優インタビュー撮影",
+   "ko": "성우 인터뷰 촬영",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l122",
+   "ja": "株式会社 原宿ビデオセンター",
+   "ko": "(주)하라주쿠 비디오 센터",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l123",
+   "ja": "ディレクター",
+   "ko": "디렉터",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l124",
+   "ja": "後藤 泰通",
+   "ko": "고토 야스미치",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l125",
+   "ja": "マネージメント",
+   "ko": "매니지먼트",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l126",
+   "ja": "志賀 弘一",
+   "ko": "시가 코이치",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l127",
+   "ja": "撮影",
+   "ko": "촬영",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l128",
+   "ja": "高樹町スタジオ",
+   "ko": "타카기초 스튜디오",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l129",
+   "ja": "音声",
+   "ko": "음성",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l130",
+   "ja": "録音",
+   "ko": "녹음",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l131",
+   "ja": "セントラル録音株式会社",
+   "ko": "센트럴 녹음(주)",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l132",
+   "ja": "星野 敏昭",
+   "ko": "호시노 토시아키",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l133",
+   "ja": "録音アシスタント",
+   "ko": "녹음 어시스턴트",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l134",
+   "ja": "矢野 さとし",
+   "ko": "야노 사토시",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l135",
+   "ja": "協力",
+   "ko": "협력",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l136",
+   "ja": "アーツビジョン",
+   "ko": "아츠 비전",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l137",
+   "ja": "大橋巨泉事務所",
+   "ko": "오하시 쿄센 사무소",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l138",
+   "ja": "劇団21世紀FOX",
+   "ko": "극단 21세기 FOX",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l139",
+   "ja": "賢プロダクション",
+   "ko": "켄 프로덕션",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l140",
+   "ja": "サン・ミュージック",
+   "ko": "선 뮤직",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l141",
+   "ja": "円人舎プロダクション",
+   "ko": "오진샤 프로덕션",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l142",
+   "ja": "ぷろだくしょん バオバブ",
+   "ko": "프로덕션 바오밥",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l143",
+   "ja": "キャスティング協力",
+   "ko": "캐스팅 협력",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l144",
+   "ja": "賢プロダクション",
+   "ko": "켄 프로덕션",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l145",
+   "ja": "石原 竜太",
+   "ko": "이시하라 류타",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l146",
+   "ja": "協力",
+   "ko": "협력",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l147",
+   "ja": "アーケード版",
+   "ko": "아케이드판",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l148",
+   "ja": "スーチーパイⅡスタッフ",
+   "ko": "스치파이2 스태프",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l149",
+   "ja": "将無音",
+   "ko": "마사무네",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l150",
+   "ja": "大谷 肇",
+   "ko": "오타니 하지메",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l151",
+   "ja": "志村 安啓",
+   "ko": "시무라 야스요시",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l152",
+   "ja": "森田かちさと",
+   "ko": "모리타 카치사토",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l153",
+   "ja": "水谷 卓郎",
+   "ko": "미즈타니 타쿠로",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l155",
+   "ja": "企画",
+   "ko": "기획",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l156",
+   "ja": "企画アシスタント",
+   "ko": "기획 어시스턴트",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l157",
+   "ja": "販促フォロー",
+   "ko": "판촉 지원",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l158",
+   "ja": "奈良 友人",
+   "ko": "나라 유토",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l159",
+   "ja": "企画補佐・ロパクリーダー",
+   "ko": "기획 보조·립싱크 리더",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l160",
+   "ja": "笹原 太郎",
+   "ko": "사사하라 타로",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l161",
+   "ja": "企画",
+   "ko": "기획",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l162",
+   "ja": "荒井 正広",
+   "ko": "아라이 마사히로",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l163",
+   "ja": "企画・監督",
+   "ko": "기획·감독",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "credits.yuki.l164",
+   "ja": "風穴 尚紀",
+   "ko": "카자아나 타카노리",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  }
+ ],
+ "excluded": [
+  {
+   "id": "credits.yuki.l082",
+   "ja": "SUGI",
+   "reason": "로마자·영어 그대로(원래 그림 유지)"
+  },
+  {
+   "id": "credits.yuki.l086",
+   "ja": "OSAMU",
+   "reason": "로마자·영어 그대로(원래 그림 유지)"
+  },
+  {
+   "id": "credits.yuki.l103b",
+   "ja": "NORITAKA",
+   "reason": "로마자 이름 그대로(원래 그림 유지)"
+  },
+  {
+   "id": "credits.yuki.l108b",
+   "ja": "NORITAKA",
+   "reason": "로마자 이름 그대로(원래 그림 유지)"
+  },
+  {
+   "id": "credits.yuki.l154",
+   "ja": "JALECO R&D3",
+   "reason": "로마자·영어 그대로(원래 그림 유지)"
+  }
+ ]
+}

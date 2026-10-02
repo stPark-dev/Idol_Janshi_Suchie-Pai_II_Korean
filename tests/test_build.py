@@ -915,3 +915,64 @@ def test_wheel_table_is_rendered_by_the_wheel_module(tmp_path, monkeypatch):
     out = yc.parse(new[SEL_BUNDLE:SEL_BUNDLE + yc.length(new[SEL_BUNDLE:])])
     assert seen == ["STG1.BIN"] and out[1].data == bytes([0x12]) * len(ents[1].data) and out[0].data == ents[0].data
     assert m["bundles"][0]["entries"] == ["w.x"]
+
+
+def test_credit_roll_table_is_rendered_by_the_credits_module(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    profile = build.SourceProfile(**{**profile.__dict__, "read_only": {"STG2.BIN": profile.files["STG2.BIN"]},
+                                     "files": {"STG1.BIN": profile.files["STG1.BIN"]}})
+    tr, lay = tmp_path / "cr.json", tmp_path / "crl.json"
+    tr.write_text(json.dumps({"file": "STG1.BIN", "chunks": [0, 0], "palette_file": "STG2.BIN", "entries": []}))
+    lay.write_text(json.dumps({"regions": []}))
+    seen = []
+    new = bytes([0x5A]) * 100 + sel[100:]
+
+    def fake(data, translation, layout, font, glossary, file_name, palette_data):
+        seen.append((file_name, len(data), palette_data == sel))
+        return new, build.select1_mod.Result(states={"needs_review": 1}, ids=["credits.l001"])
+    monkeypatch.setattr(build.credits_mod, "render", fake)
+    monkeypatch.setattr(build.select1_mod, "render", lambda *a, **k: pytest.fail("roll table sent to select1"))
+    m = build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN"], "translation": tr, "layout": lay}])
+    raw = (tmp_path / "out" / m["track1"]).read_bytes()
+    out = b"".join(raw[(60 + i) * 2352 + 16:(60 + i) * 2352 + 2064] for i in range(2))[:len(sel)]
+    assert seen == [("STG1.BIN", len(sel), True)] and out == new
+    assert m["bundles"][0]["entries"] == ["credits.l001"] and m["bundles"][0]["palette_file"] == "STG2.BIN"
+
+
+def test_credit_roll_palette_must_be_a_read_only_profile_file(tmp_path):
+    cue, profile, _ = _stage_disc(tmp_path)
+    tr, lay = tmp_path / "cr.json", tmp_path / "crl.json"
+    tr.write_text(json.dumps({"file": "STG1.BIN", "chunks": [0, 0], "palette_file": "NOPE.DAT", "entries": []}))
+    lay.write_text(json.dumps({"regions": []}))
+    with pytest.raises(build.BuildError, match="read-only"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN"], "translation": tr, "layout": lay}])
+
+
+def _roll_job(tmp_path, profile, **tdoc):
+    tr, lay = tmp_path / "cr.json", tmp_path / "crl.json"
+    tr.write_text(json.dumps({"file": "STG1.BIN", "chunks": [0, 0], "palette_file": "STG2.BIN", "entries": [], **tdoc}))
+    lay.write_text(json.dumps({"regions": []}))
+    return {"files": ["STG1.BIN"], "translation": tr, "layout": lay}
+
+
+def test_roll_table_must_name_the_job_file(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    profile = build.SourceProfile(**{**profile.__dict__, "read_only": {"STG2.BIN": profile.files["STG2.BIN"]}})
+    monkeypatch.setattr(build.credits_mod, "render", lambda *a, **k: pytest.fail("rendered a mismatched table"))
+    with pytest.raises(build.BuildError, match="file"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[_roll_job(tmp_path, profile, file="STG2.BIN")])
+
+
+def test_roll_must_not_rewrite_its_own_palette_bank(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    profile = build.SourceProfile(**{**profile.__dict__, "read_only": {"STG1.BIN": profile.files["STG1.BIN"]}})
+    job = _roll_job(tmp_path, profile, palette_file="STG1.BIN", palette_offset="0x0", colr="0x10")
+    bad = bytearray(sel)
+    bad[0x22] ^= 0xFF                                     # inside bank 0x10 of the CRAM image at 0x0
+    monkeypatch.setattr(build.credits_mod, "render",
+                        lambda *a, **k: (bytes(bad), build.select1_mod.Result(states={"needs_review": 1})))
+    with pytest.raises(build.BuildError, match="palette"):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False, bundles=[job])

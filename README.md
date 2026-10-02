@@ -28,16 +28,17 @@
 
 ## 현재 상태
 
-**v0.5 — 개발판** (검수 전 번역이 들어 있어 배포용 아님). 들어 있는 것:
+**v1.0 — 1차 배포판** (그림 글자 전부 검수·승인, 빌드가 배포 가능으로 판정. 대사 음성 자막은 넣지 않음 — `docs/initial-survey.md` 5절). 들어 있는 것:
 
-- 한글 타이틀 로고 (제공 로고 `title_logo.png`를 원래 스프라이트 3칸과 팔레트에 맞춰 넣음, 사람 확인 대기)
-- 메뉴 그림 글자 58개 (`SELECT1.BIN`: 메뉴·난이도·파트너 선택·사운드 테스트·스테이지 선택, 초벌 번역·검수 대기)
-- 대국 화면 그림 글자 104개 (스테이지 오버레이 13개: 이름·버튼·안내·선언·역 이름 등, 초벌 번역·검수 대기)
-- 상대 소개 카드 17개와 저장 안내 1개 (`AP*.BIN` 11개, 초벌 번역·검수 대기)
-- 오프닝(데모) 캐릭터 소개 이름표 46개 (`PROLOG.BIN` 압축 블록: 별명·이름·성우, 초벌 번역·검수 대기)
-- 패널 매치(보너스 게임) 세로 안내문 92줄·그림 패널 23장·로고·룰렛 두 바퀴 (`PMATCH.BIN`, 초벌 번역·검수 대기)
-- 대국 보너스 화면 「満貫ボーナス / POINT獲得!!」 (`MAXGRP1/2/3.BIN`, 초벌 번역·검수 대기)
-- 첫 부팅 안내 화면 5줄과 백업 RAM 안내 화면 8장(준비 안 됨·용량 부족·기록 손상·저장 실패) (`BACKRAM.BIN` 워드 RLE 압축 블록 4개, 초벌 번역·검수 대기)
+- 한글 타이틀 로고 (제공 로고 `title_logo.png`를 원래 스프라이트 3칸과 팔레트에 맞춰 넣음, 승인)
+- 메뉴 그림 글자 58개 (`SELECT1.BIN`: 메뉴·난이도·파트너 선택·사운드 테스트·스테이지 선택)
+- 대국 화면 그림 글자 104개 (스테이지 오버레이 13개: 이름·버튼·안내·선언·역 이름 등)
+- 상대 소개 카드 17개와 저장 안내 1개 (`AP*.BIN` 11개)
+- 오프닝(데모) 캐릭터 소개 이름표 46개 (`PROLOG.BIN` 압축 블록: 별명·이름·성우)
+- 패널 매치(보너스 게임) 세로 안내문 92줄·그림 패널 23장·로고·룰렛 두 바퀴 (`PMATCH.BIN`)
+- 대국 보너스 화면 「満貫ボーナス / POINT獲得!!」 (`MAXGRP1/2/3.BIN`)
+- 엔딩 크레딧 롤 다섯 벌(`ENDY`, `ED_*.DAT`)
+- 첫 부팅 안내 화면 5줄과 백업 RAM 안내 화면 8장(준비 안 됨·용량 부족·기록 손상·저장 실패) (`BACKRAM.BIN` 워드 RLE 압축 블록 4개)
 - 타이틀 선택지 「最初から／続きから」 → "처음부터 시작 / 이어서 시작" (표기 승인, 화면 표시는 미확인)
 - 오프닝 큰 글자 「アイドル雀士スーチーパイⅡ」 → "아이돌 작사 스치파이 2" (`PROLOG.BIN` 압축 블록, 남는 칸 2개는 하트 장식)
 - 제품 빌드 도구: LZSS·워드 RLE 압축·해제(게임 해제 방식과 같은 형식), 스프라이트 묶음(Yc), ISO9660, 섹터 EDC/ECC, 쓰기 계획, 그림 글자 렌더러
@@ -53,6 +54,7 @@
 | [`translation/opening.json`](translation/opening.json) | 오프닝 캐릭터 소개 이름표 46개와 제외 항목 1개 |
 | [`translation/letters.json`](translation/letters.json) | 오프닝 큰 글자 12칸 |
 | [`translation/title_labels.json`](translation/title_labels.json) | 타이틀 선택지 1개와 제외 항목 10개 |
+| [`translation/credits/`](translation/credits/) | 엔딩 크레딧 롤 다섯 벌(줄마다 한 항목, 배치 `assets/ending/`) |
 | [`translation/boot_notice.json`](translation/boot_notice.json) | 첫 부팅 안내 5줄과 제외 항목 3개 |
 | [`translation/boot_unready.json`](translation/boot_unready.json), [`boot_ram.json`](translation/boot_ram.json), [`boot_savefail.json`](translation/boot_savefail.json) | 백업 RAM 안내 화면 8장(전체 화면 글자 그림, 배치 `assets/boot/notices_layout.json`) |
 | [`translation/maxgrp.json`](translation/maxgrp.json) | 대국 보너스 화면 9개, 제외 29개 |
@@ -79,7 +81,7 @@
 python3 tools/khpatch.py build --source "/경로/Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
 
 # 대조군: 타이틀 그림은 그대로 두고 압축만 다시 한 디스크 (압축기 호환 확인용)
-python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original --bonus original
+python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original --bonus original --ending original
 
 # 테스트
 python3 -m pytest -q tests
@@ -128,4 +130,4 @@ python3 -m pytest -q tests
 - 원작 게임의 권리는 쟈레코와 각 권리자에게 있습니다. 합법적으로 가진 원본에만 적용하세요.
 - 나눔스퀘어라운드는 SIL Open Font License입니다(저장소에 포함하지 않고 시스템 글꼴을 사용).
 - 번역 표의 `ja` 필드에는 그림 글자에서 옮겨 적은 원문 문자열이 들어 있습니다(재삽입·검수에 필요).
-- `cd_ko.png`(한글판 표지)와 `title_logo.png`(한글 로고)는 프로젝트 소유자가 만든 이미지이며, 원작 캐릭터 그림과 로고 디자인을 바탕으로 합니다. 배포 전에 이용 권리를 확인해야 합니다.
+- `cd_ko.png`(한글판 표지)와 `title_logo.png`(한글 로고)는 프로젝트 소유자가 만든 이미지이며, 원작 캐릭터 그림과 로고 디자인을 바탕으로 합니다. 배포에 쓸 이용 권리는 프로젝트 소유자가 확인함(2026-10-02).

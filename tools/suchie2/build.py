@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import cdsector, iso9660, lzss, rle16, select1 as select1_mod, title, wheel as wheel_mod, yc
+from . import cdsector, credits as credits_mod, iso9660, lzss, rle16, select1 as select1_mod, title, wheel as wheel_mod, yc
 from .writeplan import PlanError, WritePlan
 
 OUT_STEM = "Idol Janshi Suchie-Pai II (Korean) (Disc 1)"
@@ -84,6 +84,9 @@ JP_DISC1 = SourceProfile(
         "MAXGRP1.BIN": (2213, 286720),
         "MAXGRP2.BIN": (2400, 204800),
         "MAXGRP3.BIN": (2580, 331776),
+        # ending chunk files with a Japanese credit roll each (§3.20)
+        "ENDY": (269989, 741060), "ED_MILK.DAT": (268417, 212260), "ED_YUKI.DAT": (268521, 240712),
+        "ED_SANAE.DAT": (269381, 394836), "ED_ALIS.DAT": (269574, 343308),
     },
     # opening character-intro name plates (docs/initial-survey.md §3.11)
     packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
@@ -93,14 +96,17 @@ JP_DISC1 = SourceProfile(
             "boot_unready": ("BACKRAM.BIN", 0x4000, 0x17000, "b37ce8c78d053a3d61ad96f49fc26c853dad1b43", "rle16"),
             "boot_ram": ("BACKRAM.BIN", 0x27000, 0x46000, "8de2c4aa3dfc8f10732228217d161504808a84f3", "rle16"),
             "boot_savefail": ("BACKRAM.BIN", 0x46000, 0x69000, "dc44631071bb9de1e1bc14ba3733cae09cff2d19", "rle16")},
-    read_only={"OPENING1.BIN": (267390, 1001728)},   # CRAM image of the opening and title (banks 0x50/0x60/0x70/0x80)
+    read_only={"OPENING1.BIN": (267390, 1001728),   # CRAM image of the opening and title (banks 0x50/0x60/0x70/0x80)
+               # source copy of a written file: the credit rolls' CRAM bank (§3.20); _plan_roll keeps it unchanged
+               "ED_ALIS.DAT": (269574, 343308)},   # CRAM image of the opening and title (banks 0x50/0x60/0x70/0x80)
 )
 STAGE_FILES = ["ALICE.BIN", "TUKASA.BIN", "SANAE.BIN", "RUMI.BIN", "YUKI.BIN", "SIHO.BIN", "SESIL.BIN",
                "SESIL2.BIN", "HIMITU.BIN", "NAZO.BIN", "SECRET.BIN", "HIDDEN.BIN", "KAKUSHI.BIN"]
 CARD_FILES = ["APALICE.BIN", "APDEVIL.BIN", "APKYOKO.BIN", "APMILK.BIN", "APRUMI.BIN", "APSANAE.BIN",
               "APSECIL.BIN", "APSHIHO.BIN", "APSUB.BIN", "APTSUKA.BIN", "APYUKI.BIN"]
 BONUS_FILES = ["MAXGRP1.BIN", "MAXGRP2.BIN", "MAXGRP3.BIN"]
-assert sorted(STAGE_FILES + CARD_FILES + BONUS_FILES + ["BACKRAM.BIN", "PMATCH.BIN"]) == sorted(JP_DISC1.files)
+ROLL_FILES = ["ENDY", "ED_ALIS.DAT", "ED_MILK.DAT", "ED_SANAE.DAT", "ED_YUKI.DAT"]
+assert sorted(STAGE_FILES + CARD_FILES + BONUS_FILES + ROLL_FILES + ["BACKRAM.BIN", "PMATCH.BIN"]) == sorted(JP_DISC1.files)
 
 
 def _sha1(path: Path) -> str:
@@ -275,6 +281,8 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
     tdoc = json.loads(translation.read_text())
+    if "chunks" in tdoc:
+        return _plan_roll(t1, profile, job, tdoc, font)
     if "packed" in tdoc or "palette_file" in tdoc:
         raise BuildError(f"{translation.name}: packed table used in a file job")
     bundle = int(tdoc["bundle_offset"], 16)
@@ -298,6 +306,42 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
         changes = [(offsets[i], tex) for i, tex in sorted(res.textures.items()) if tex != ents[i].data]
         info = {"file": name, "lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
                 "changes": [[o, len(t)] for o, t in changes], "sectors": [],
+                "translation": _rel(translation), "translation_sha1": _sha1(translation),
+                "layout": _rel(layout), "layout_sha1": _sha1(layout),
+                "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
+                "font": font, "font_sha1": _sha1(Path(font))}
+        out.append((info, changes))
+    return out
+
+
+def _plan_roll(t1: _Track1, profile: SourceProfile, job: dict, tdoc: dict, font: str) -> list[tuple[dict, list]]:
+    """Credit roll in a chunk file (credits.py): the whole file is rebuilt at its original size;
+    the palette comes from a read-only profile file."""
+    translation, layout = Path(job["translation"]), Path(job["layout"])
+    glossary = Path(job["glossary"]) if job.get("glossary") else None
+    if job["files"] != [tdoc.get("file")]:
+        raise BuildError(f"{translation.name}: table is for file {tdoc.get('file')!r}, job lists {job['files']}")
+    pf = tdoc.get("palette_file")
+    if pf not in profile.read_only:
+        raise BuildError(f"{translation.name}: palette_file {pf!r} is not a read-only file of the profile")
+    pal_data = _checked_file(t1, profile.read_only[pf], pf)       # always the source bytes
+    out = []
+    for name in job["files"]:
+        lba, size = _file_extent(profile, name)
+        data = _checked_file(t1, (lba, size), name)
+        new, res = credits_mod.render(data, translation, layout, font=font, glossary=glossary, file_name=name,
+                                      palette_data=pal_data)
+        if len(new) != len(data):
+            raise BuildError(f"{name}: rebuilt roll file changed size {len(data)} -> {len(new)}")
+        if pf == name:          # the palette lives in the file being rewritten: its bank must stay as it was
+            bank, n = select1_mod.bank_span(int(tdoc["colr"], 16))
+            lo = int(tdoc["palette_offset"], 16) + 2 * bank
+            if new[lo:lo + 2 * n] != data[lo:lo + 2 * n]:
+                raise BuildError(f"{name}: rewriting the roll changes its own palette bank at {lo:#x}")
+        changes = [(0, new)] if new != data else []
+        info = {"file": name, "lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
+                "changes": [[o, len(t)] for o, t in changes], "sectors": [],
+                "palette_file": pf, "palette_file_sha1": hashlib.sha1(pal_data).hexdigest(),
                 "translation": _rel(translation), "translation_sha1": _sha1(translation),
                 "layout": _rel(layout), "layout_sha1": _sha1(layout),
                 "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,

@@ -214,3 +214,21 @@ def test_only_whole_button_art_survives_the_notice_cleaning():
         shapes = {s for _, s in group}
         assert len(shapes) == 1 or right < 110, f"art ending at x={right} differs between {[i for i, _ in group]}"
     assert len(pieces[150]) == 3 and len(pieces[82]) == 5      # ⒶⒷⒸ+START on three screens, (Ⓒ on five
+
+
+@pytest.mark.parametrize("roll", build.ROLL_FILES)
+def test_credit_roll_table_and_layout_agree(roll):
+    t = _load(ROOT / f"translation/credits/{roll.split('.')[0]}.json")
+    lay = _load(ROOT / f"assets/ending/{roll.split('.')[0]}.json")
+    assert t["file"] == roll
+    assert t["file"] in build.JP_DISC1.files and t["palette_file"] in build.JP_DISC1.read_only
+    assert len(t["src_sha1"]) == t["chunks"][1] - t["chunks"][0] + 1
+    ids = [e["id"] for e in t["entries"]]
+    placed = [i for r in lay["regions"] for i in r["ids"]]
+    assert sorted(placed) == sorted(ids) and len(set(ids)) == len(ids)
+    assert not {e["id"] for e in t["excluded"]} & set(ids)
+    by_id = {e["id"]: e for e in t["entries"]}
+    for r in lay["regions"]:
+        assert sum(by_id[i]["ko"].count("\n") + 1 for i in r["ids"]) == len(r["lines"])
+    for e in t["entries"]:
+        assert set(e["terms"]) <= GLOSSARY, e["id"]
