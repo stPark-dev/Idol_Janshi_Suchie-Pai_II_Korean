@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import cdsector, credits as credits_mod, iso9660, lzss, rle16, select1 as select1_mod, title, wheel as wheel_mod, yc
+from . import cdsector, chunkpics as chunkpics_mod, credits as credits_mod, iso9660, lzss, rle16, select1 as select1_mod, title, wheel as wheel_mod, yc
 from .writeplan import PlanError, WritePlan
 
 OUT_STEM = "Idol Janshi Suchie-Pai II (Korean) (Disc 1)"
@@ -87,6 +87,7 @@ JP_DISC1 = SourceProfile(
         # ending chunk files with a Japanese credit roll each (§3.20)
         "ENDY": (269989, 741060), "ED_MILK.DAT": (268417, 212260), "ED_YUKI.DAT": (268521, 240712),
         "ED_SANAE.DAT": (269381, 394836), "ED_ALIS.DAT": (269574, 343308),
+        "CLEAR.DAT": (269742, 120240),  # pictures after an ending: save notice, hints (chunk file, §3.21)
     },
     # opening character-intro name plates (docs/initial-survey.md §3.11)
     packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
@@ -106,7 +107,7 @@ CARD_FILES = ["APALICE.BIN", "APDEVIL.BIN", "APKYOKO.BIN", "APMILK.BIN", "APRUMI
               "APSECIL.BIN", "APSHIHO.BIN", "APSUB.BIN", "APTSUKA.BIN", "APYUKI.BIN"]
 BONUS_FILES = ["MAXGRP1.BIN", "MAXGRP2.BIN", "MAXGRP3.BIN"]
 ROLL_FILES = ["ENDY", "ED_ALIS.DAT", "ED_MILK.DAT", "ED_SANAE.DAT", "ED_YUKI.DAT"]
-assert sorted(STAGE_FILES + CARD_FILES + BONUS_FILES + ROLL_FILES + ["BACKRAM.BIN", "PMATCH.BIN"]) == sorted(JP_DISC1.files)
+assert sorted(STAGE_FILES + CARD_FILES + BONUS_FILES + ROLL_FILES + ["BACKRAM.BIN", "PMATCH.BIN", "CLEAR.DAT"]) == sorted(JP_DISC1.files)
 
 
 def _sha1(path: Path) -> str:
@@ -281,7 +282,7 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
     tdoc = json.loads(translation.read_text())
-    if "chunks" in tdoc:
+    if "chunks" in tdoc or tdoc.get("picture_chunks"):
         return _plan_roll(t1, profile, job, tdoc, font)
     if "packed" in tdoc or "palette_file" in tdoc:
         raise BuildError(f"{translation.name}: packed table used in a file job")
@@ -315,25 +316,31 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
 
 
 def _plan_roll(t1: _Track1, profile: SourceProfile, job: dict, tdoc: dict, font: str) -> list[tuple[dict, list]]:
-    """Credit roll in a chunk file (credits.py): the whole file is rebuilt at its original size;
-    the palette comes from a read-only profile file."""
+    """Pictures in a chunk file: a credit roll (credits.py, palette from a read-only profile file)
+    or single pictures (chunkpics.py, palette indices only). The whole file is rebuilt at its size."""
     translation, layout = Path(job["translation"]), Path(job["layout"])
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     if job["files"] != [tdoc.get("file")]:
         raise BuildError(f"{translation.name}: table is for file {tdoc.get('file')!r}, job lists {job['files']}")
-    pf = tdoc.get("palette_file")
-    if pf not in profile.read_only:
-        raise BuildError(f"{translation.name}: palette_file {pf!r} is not a read-only file of the profile")
-    pal_data = _checked_file(t1, profile.read_only[pf], pf)       # always the source bytes
+    if "chunks" in tdoc and tdoc.get("picture_chunks"):
+        raise BuildError(f"{translation.name}: table is both a credit roll (chunks) and picture chunks")
+    roll = "chunks" in tdoc
+    if not roll and {"palette_file", "palette_offset", "colr"} & set(tdoc):
+        raise BuildError(f"{translation.name}: picture-chunk tables draw palette indices only; remove the palette fields")
+    pf, pal_data = tdoc.get("palette_file"), None
+    if roll:
+        if pf not in profile.read_only:
+            raise BuildError(f"{translation.name}: palette_file {pf!r} is not a read-only file of the profile")
+        pal_data = _checked_file(t1, profile.read_only[pf], pf)   # always the source bytes
     out = []
     for name in job["files"]:
         lba, size = _file_extent(profile, name)
         data = _checked_file(t1, (lba, size), name)
-        new, res = credits_mod.render(data, translation, layout, font=font, glossary=glossary, file_name=name,
-                                      palette_data=pal_data)
+        render = credits_mod.render if roll else chunkpics_mod.render
+        new, res = render(data, translation, layout, font=font, glossary=glossary, file_name=name, palette_data=pal_data)
         if len(new) != len(data):
             raise BuildError(f"{name}: rebuilt roll file changed size {len(data)} -> {len(new)}")
-        if pf == name:          # the palette lives in the file being rewritten: its bank must stay as it was
+        if roll and pf == name:   # the palette lives in the file being rewritten: its bank must stay as it was
             bank, n = select1_mod.bank_span(int(tdoc["colr"], 16))
             lo = int(tdoc["palette_offset"], 16) + 2 * bank
             if new[lo:lo + 2 * n] != data[lo:lo + 2 * n]:
@@ -341,7 +348,7 @@ def _plan_roll(t1: _Track1, profile: SourceProfile, job: dict, tdoc: dict, font:
         changes = [(0, new)] if new != data else []
         info = {"file": name, "lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
                 "changes": [[o, len(t)] for o, t in changes], "sectors": [],
-                "palette_file": pf, "palette_file_sha1": hashlib.sha1(pal_data).hexdigest(),
+                "palette_file": pf, "palette_file_sha1": hashlib.sha1(pal_data).hexdigest() if pal_data is not None else None,
                 "translation": _rel(translation), "translation_sha1": _sha1(translation),
                 "layout": _rel(layout), "layout_sha1": _sha1(layout),
                 "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,

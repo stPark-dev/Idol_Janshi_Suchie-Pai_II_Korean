@@ -232,3 +232,32 @@ def test_credit_roll_table_and_layout_agree(roll):
         assert sum(by_id[i]["ko"].count("\n") + 1 for i in r["ids"]) == len(r["lines"])
     for e in t["entries"]:
         assert set(e["terms"]) <= GLOSSARY, e["id"]
+
+
+def test_clear_screen_table_and_layout_agree():
+    t = _load(ROOT / "translation/clear.json")
+    lay = _load(ROOT / "assets/ending/clear.json")
+    assert t["file"] in build.JP_DISC1.files and t["picture_chunks"] is True
+    ids = [e["id"] for e in t["entries"]]
+    assert sorted(s["id"] for s in lay["entries"]) == sorted(ids)
+    assert not {e["chunk"] for e in t["entries"]} & {e["chunk"] for e in t["excluded"]}
+    specs = {s["id"]: s for s in lay["entries"]}
+    for e in t["entries"]:
+        assert e["ko"].count("\n") + 1 == len(specs[e["id"]]["lines"]), e["id"]
+        assert set(e["terms"]) <= GLOSSARY
+
+
+@pytest.mark.skipif(not (ROOT / "work/disc1/fs_end/CLEAR.DAT").exists(), reason="needs the extracted CLEAR.DAT")
+def test_every_4bpp_picture_of_clear_dat_is_classified():
+    from suchie2 import chunked, lzss
+    t = _load(ROOT / "translation/clear.json")
+    listed = {e["chunk"] for e in t["entries"]} | {e["chunk"] for e in t["excluded"]}
+    pics = set()
+    for k, c in enumerate(chunked.parse((ROOT / "work/disc1/fs_end/CLEAR.DAT").read_bytes())):
+        try:
+            _, _, attr, _ = chunked.picture(lzss.decompress(c.stream))
+        except chunked.ChunkError:
+            continue
+        if (attr >> 3) & 7 == 0:
+            pics.add(k)
+    assert pics == listed

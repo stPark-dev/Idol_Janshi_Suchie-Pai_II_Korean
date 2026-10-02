@@ -1,0 +1,236 @@
+{
+ "_about": "엔딩 뒤 화면(CLEAR.DAT 청크 파일): 저장 안내·「おつかれさまでした」·패스워드 힌트·비밀 커맨드 안내 글자 그림. 그림마다 한 항목(chunk = 청크 번호). 팔레트 없이 색 번호 역할만 씀. ko의 '|'는 글자마다 바뀌는 채움색 구간.",
+ "file": "CLEAR.DAT",
+ "picture_chunks": true,
+ "id_prefix": "clear.",
+ "entries": [
+  {
+   "id": "clear.c04",
+   "chunk": 4,
+   "size": [
+    168,
+    24
+   ],
+   "src_sha1": "8c5afb07bc05138906fc5426268025f0b5a24994",
+   "ja": "ただいまセーブ中です!",
+   "ko": "지|금| |저|장| |중|이|야|!",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c05",
+   "chunk": 5,
+   "size": [
+    120,
+    24
+   ],
+   "src_sha1": "2e27050673e2b6957946c84e41cc8a2e98923589",
+   "ja": "今、電源を切ると",
+   "ko": "지|금| |전|원|을| |끄|면",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c06",
+   "chunk": 6,
+   "size": [
+    120,
+    24
+   ],
+   "src_sha1": "a573866f182ae3ba6238f7b2cbd8d9c0a30189d9",
+   "ja": "後で 泣くわよ♥",
+   "ko": "나|중|에| |울|걸|♥",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c07",
+   "chunk": 7,
+   "size": [
+    176,
+    24
+   ],
+   "src_sha1": "22840680f86896b3646db76ab4e0c5723b5f357b",
+   "ja": "死ぬほど 後悔するわよ♥",
+   "ko": "죽|도|록| |후|회|할|걸|♥",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c09",
+   "chunk": 9,
+   "size": [
+    248,
+    32
+   ],
+   "src_sha1": "9a4ad74279a7e0edeb79614a9ae047f49c29b3b0",
+   "ja": "おつかれさまでした♥",
+   "ko": "수|고|하|셨|습|니|다|♥",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c10",
+   "chunk": 10,
+   "size": [
+    216,
+    48
+   ],
+   "src_sha1": "41ef6de694525a1fc2dcc26cfbc8fb0e0748869c",
+   "ja": "4人全部のヒントを合わせると\nパスワードが完成するわよ!",
+   "ko": "4|명|의| |힌|트|를| |모|두| |합|치|면\n패|스|워|드|가| |완|성|돼|!",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c11",
+   "chunk": 11,
+   "size": [
+    64,
+    24
+   ],
+   "src_sha1": "5cedfb304bdf9422a71dc399ff32755d1247aeb5",
+   "ja": "ヒント(",
+   "ko": "힌|트|(",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c16",
+   "chunk": 16,
+   "size": [
+    208,
+    64
+   ],
+   "src_sha1": "dea13cbb41bf776a05f5aeb7aadb3316f75d32ed",
+   "ja": "最初にZYXの順に\nボタンを押します",
+   "ko": "먼|저| |Z| |Y| |X| |순|서|로\n버|튼|을| |누|릅|니|다",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c17",
+   "chunk": 17,
+   "size": [
+    208,
+    64
+   ],
+   "src_sha1": "b67a146b3a6d6a102d44dc79eedbd935b490304c",
+   "ja": "ヒント(1)の入力に続けて\nRボタンを押します",
+   "ko": "힌|트|(|1|)|을| |입|력|한| |다|음\nR| |버|튼|을| |누|릅|니|다",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c18",
+   "chunk": 18,
+   "size": [
+    208,
+    64
+   ],
+   "src_sha1": "3f0870f41bc8f6808958c79762f3d04fc9412e72",
+   "ja": "最後にAB スタートの順に\nボタンを押します",
+   "ko": "마|지|막|으|로| |A| |B| |스|타|트| |순|서|로\n버|튼|을| |누|릅|니|다",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c19",
+   "chunk": 19,
+   "size": [
+    208,
+    64
+   ],
+   "src_sha1": "6bba59c42c8390d10f566845f9cc769e26abcb04",
+   "ja": "パスワードはタイトル画面で\nLボタンを押しながら入力",
+   "ko": "패|스|워|드|는| |타|이|틀| |화|면|에|서\nL| |버|튼|을| |누|른| |채| |입|력",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c20",
+   "chunk": 20,
+   "size": [
+    240,
+    48
+   ],
+   "src_sha1": "d211de5cc8b024cbeab1b2be3cfb53bbd7f37aca",
+   "ja": "次からは タイトル画面で\n方向ボタンの上を押しながら",
+   "ko": "다|음|부|터|는| |타|이|틀| |화|면|에|서\n방|향| |버|튼| |위|쪽|을| |누|른| |채",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c21",
+   "chunk": 21,
+   "size": [
+    160,
+    24
+   ],
+   "src_sha1": "75d3944d75c9faa428ca74e7a6dcc6fdb33da6fb",
+   "ja": "Z Y X R A B C スタート",
+   "ko": "Z| |Y| |X| |R| |A| |B| |C| |스|타|트",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  },
+  {
+   "id": "clear.c22",
+   "chunk": 22,
+   "size": [
+    200,
+    48
+   ],
+   "src_sha1": "65938ae1007fba04ec2fb221467edd38e55fda43",
+   "ja": "の順にボタンを押して\nゲームを始めてみてね♥",
+   "ko": "순|서|로| |버|튼|을| |눌|러|서\n게|임|을| |시|작|해| |봐|♥",
+   "state": "distribution_eligible",
+   "terms": [],
+   "note": ""
+  }
+ ],
+ "excluded": [
+  {
+   "id": "clear.c08",
+   "chunk": 8,
+   "src_sha1": "2fb5c273411155aa8db7ea59fc21f37e11ab3381",
+   "reason": "HAPPY END♥ (영어)"
+  },
+  {
+   "id": "clear.c12",
+   "chunk": 12,
+   "src_sha1": "8de6f89da4679a2b808a0a7008011c8af87b19a9",
+   "reason": "1) 숫자"
+  },
+  {
+   "id": "clear.c13",
+   "chunk": 13,
+   "src_sha1": "fcca6725687a01dd79881bf394dc965daff301c6",
+   "reason": "2) 숫자"
+  },
+  {
+   "id": "clear.c14",
+   "chunk": 14,
+   "src_sha1": "b1f018a04af264c941795f804f012e7aed72f15c",
+   "reason": "3) 숫자"
+  },
+  {
+   "id": "clear.c15",
+   "chunk": 15,
+   "src_sha1": "785ff50e792a5b499cbadc04e899240e515eac36",
+   "reason": "4) 숫자"
+  }
+ ]
+}

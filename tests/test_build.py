@@ -976,3 +976,40 @@ def test_roll_must_not_rewrite_its_own_palette_bank(tmp_path, monkeypatch):
                         lambda *a, **k: (bytes(bad), build.select1_mod.Result(states={"needs_review": 1})))
     with pytest.raises(build.BuildError, match="palette"):
         build.build(cue, tmp_path / "out", None, profile=profile, title=False, bundles=[job])
+
+
+def test_picture_chunk_table_is_rendered_by_chunkpics_without_a_palette(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    tr, lay = tmp_path / "cp.json", tmp_path / "cpl.json"
+    tr.write_text(json.dumps({"file": "STG1.BIN", "picture_chunks": True, "entries": []}))
+    lay.write_text(json.dumps({"entries": []}))
+    new = bytes([0x33]) * 64 + sel[64:]
+    seen = []
+
+    def fake(data, translation, layout, font, glossary, file_name, palette_data):
+        seen.append((file_name, palette_data))
+        return new, build.select1_mod.Result(states={"needs_review": 1}, ids=["clear.c4"])
+    monkeypatch.setattr(build.chunkpics_mod, "render", fake)
+    monkeypatch.setattr(build.credits_mod, "render", lambda *a, **k: pytest.fail("picture table sent to credits"))
+    m = build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN"], "translation": tr, "layout": lay}])
+    raw = (tmp_path / "out" / m["track1"]).read_bytes()
+    out = b"".join(raw[(60 + i) * 2352 + 16:(60 + i) * 2352 + 2064] for i in range(2))[:len(sel)]
+    assert seen == [("STG1.BIN", None)] and out == new and m["bundles"][0]["entries"] == ["clear.c4"]
+
+
+@pytest.mark.parametrize("tdoc, msg", [
+    ({"chunks": [0, 0], "picture_chunks": True, "palette_file": "STG2.BIN"}, "both"),
+    ({"picture_chunks": True, "palette_file": "STG2.BIN"}, "palette"),
+])
+def test_ambiguous_chunk_tables_are_rejected(tmp_path, monkeypatch, tdoc, msg):
+    cue, profile, _ = _stage_disc(tmp_path)
+    profile = build.SourceProfile(**{**profile.__dict__, "read_only": {"STG2.BIN": profile.files["STG2.BIN"]}})
+    monkeypatch.setattr(build.chunkpics_mod, "render", lambda *a, **k: pytest.fail("rendered an ambiguous table"))
+    monkeypatch.setattr(build.credits_mod, "render", lambda *a, **k: pytest.fail("rendered an ambiguous table"))
+    tr, lay = tmp_path / "x.json", tmp_path / "xl.json"
+    tr.write_text(json.dumps({"file": "STG1.BIN", "entries": [], **tdoc}))
+    lay.write_text(json.dumps({"entries": [], "regions": []}))
+    with pytest.raises(build.BuildError, match=msg):
+        build.build(cue, tmp_path / "out", None, profile=profile, title=False,
+                    bundles=[{"files": ["STG1.BIN"], "translation": tr, "layout": lay}])

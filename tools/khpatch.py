@@ -32,7 +32,7 @@ def main(argv=None) -> int:
     b.add_argument("--panel", choices=["ko", "original"], default="ko",
                    help="'original' leaves the panel match bonus game (PMATCH.BIN, roulette included) unchanged")
     b.add_argument("--ending", choices=["ko", "original"], default="ko",
-                   help="'original' leaves the ending credit rolls (ENDY, ED_*.DAT) unchanged")
+                   help="'original' leaves the ending credit rolls (ENDY, ED_*.DAT) and the after-ending screens (CLEAR.DAT) unchanged")
     b.add_argument("--bonus", choices=["ko", "original"], default="ko",
                    help="'original' leaves the big-win bonus screens (MAXGRP1/2/3.BIN) unchanged")
     args = ap.parse_args(argv)
@@ -65,6 +65,8 @@ def main(argv=None) -> int:
         jobs += [{"files": [f], "translation": ROOT / f"translation/credits/{f.split('.')[0]}.json",
                   "layout": ROOT / f"assets/ending/{f.split('.')[0]}.json", "glossary": ROOT / "translation/glossary.json"}
                  for f in build.ROLL_FILES]
+        jobs.append({"files": ["CLEAR.DAT"], "translation": ROOT / "translation/clear.json",
+                     "layout": ROOT / "assets/ending/clear.json", "glossary": ROOT / "translation/glossary.json"})
     if args.boot == "ko":
         jobs.append({"packed": "boot_notice", "translation": ROOT / "translation/boot_notice.json",
                      "layout": ROOT / "assets/boot/layout.json", "glossary": ROOT / "translation/glossary.json"})
