@@ -1,0 +1,16 @@
+{
+ "voice": "YOP1.AIF",
+ "scene": "유키 등장 — 게임 시작",
+ "duration": 1.18,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.08,
+   "end": 0.94,
+   "speaker": "유키",
+   "ja": "ゲームスタート!",
+   "ko": "게임 스타트!",
+   "status": "needs_human_review"
+  }
+ ]
+}

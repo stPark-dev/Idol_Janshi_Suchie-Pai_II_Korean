@@ -1,0 +1,68 @@
+{
+ "voice": "H71B.AIF",
+ "scene": "벌칙 장면 — 유키 2번째, B: 벗는 애니메이션",
+ "duration": 16.56,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.66,
+   "speaker": "유키",
+   "ja": "はぁ、ドキドキしちゃうよ。",
+   "ko": "하아, 두근거려.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.52,
+   "end": 5.22,
+   "speaker": "유키",
+   "ja": "じゃ、見せてあげる。",
+   "ko": "그럼 보여 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.76,
+   "end": 7.02,
+   "speaker": "유키",
+   "ja": "じゃじゃーん。",
+   "ko": "짜잔!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.2,
+   "end": 8.22,
+   "speaker": "유키",
+   "ja": "残念でした。",
+   "ko": "아쉽지롱!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.96,
+   "end": 11.96,
+   "speaker": "유키",
+   "ja": "え、ニプレスも取るの?",
+   "ko": "어, 니플 패치도 떼라고?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: え、ニープレスも取るの?"
+  },
+  {
+   "start": 12.36,
+   "end": 14.18,
+   "speaker": "유키",
+   "ja": "しょうがないなぁ。",
+   "ko": "어쩔 수 없네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.34,
+   "end": 15.54,
+   "speaker": "유키",
+   "ja": "んー、見せちゃう。",
+   "ko": "으응, 보여 줄게!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: んー、見せちゃ。 (VAD 받아쓰기: 見せちゃう)"
+  }
+ ]
+}

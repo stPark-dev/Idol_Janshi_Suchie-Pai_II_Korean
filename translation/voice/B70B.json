@@ -1,0 +1,48 @@
+{
+ "voice": "B70B.AIF",
+ "scene": "벌칙 장면 — 아리스(피치파이) 1번째, B: 벗는 애니메이션",
+ "duration": 11.5,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 3.2,
+   "speaker": "아리스",
+   "ja": "んー、恥ずかしいのにー。",
+   "ko": "으음, 부끄러운데…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.84,
+   "end": 5.8,
+   "speaker": "아리스",
+   "ja": "しょうがないなー。",
+   "ko": "어쩔 수 없네요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.0,
+   "end": 7.5,
+   "speaker": "아리스",
+   "ja": "ドキドキ。",
+   "ko": "두근두근.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.94,
+   "end": 8.6,
+   "speaker": "아리스",
+   "ja": "もう。",
+   "ko": "정말…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.04,
+   "end": 10.68,
+   "speaker": "아리스",
+   "ja": "はい!",
+   "ko": "자, 여기요!",
+   "status": "needs_human_review"
+  }
+ ]
+}

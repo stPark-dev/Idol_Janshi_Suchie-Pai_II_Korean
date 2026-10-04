@@ -33,6 +33,8 @@ def main(argv=None) -> int:
                    help="'original' leaves the panel match bonus game (PMATCH.BIN, roulette included) unchanged")
     b.add_argument("--ending", choices=["ko", "original"], default="ko",
                    help="'original' leaves the ending credit rolls (ENDY, ED_*.DAT) and the after-ending screens (CLEAR.DAT) unchanged")
+    b.add_argument("--subtitles", choices=["ko", "original"], default="ko",
+                   help="'original' leaves out the voice subtitles (executable stub, SUB.BIN, SUBDAT.BIN)")
     b.add_argument("--bonus", choices=["ko", "original"], default="ko",
                    help="'original' leaves the big-win bonus screens (MAXGRP1/2/3.BIN) unchanged")
     args = ap.parse_args(argv)
@@ -75,7 +77,9 @@ def main(argv=None) -> int:
     try:
         labels = (ROOT / "translation/title_labels.json", ROOT / "assets/title/labels_layout.json",
                   ROOT / "translation/glossary.json") if args.title == "ko" else None
-        m = build.build(args.source, args.out, spec, select1=sel, bundles=jobs, title_labels=labels)
+        subs = {"code": ROOT / "assets/subtitle/SUB.BIN", "scenes": ROOT / "assets/subtitle/scenes.json",
+                "voices": ROOT / "translation/voice"} if args.subtitles == "ko" else None
+        m = build.build(args.source, args.out, spec, select1=sel, bundles=jobs, title_labels=labels, subtitles=subs)
     except build.BuildError as err:
         print(f"build failed: {err}", file=sys.stderr)
         return 1
@@ -85,6 +89,10 @@ def main(argv=None) -> int:
               f"sectors {len(m['select1']['sectors'])}")
     if m["bundles"]:
         print(f"  bundles: {len(m['bundles'])} file jobs, sectors {sum(len(b['sectors']) for b in m['bundles'])}")
+    if m.get("subtitles"):
+        st = m["subtitles"]
+        print(f"  subtitles: {len(st['groups'])} groups, {st['lines']} lines {st['status']}, "
+              f"SUBDAT {st['subdat_bytes']} bytes")
     print(f"  distribution: {m['distribution']}")
     return 0
 

@@ -1,0 +1,164 @@
+{
+ "voice": "STC013.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 13번째, 상대 시호(누군가에게 조종당함)",
+ "duration": 66.51,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.68,
+   "end": 5.6,
+   "speaker": "시호",
+   "ja": "あら、スーチーパイさん、そしてチェリーパイさん",
+   "ko": "어머, 스치파이 씨, 그리고 체리파이 씨.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.98,
+   "end": 8.32,
+   "speaker": "시호",
+   "ja": "嬉しいわ、来てくださって",
+   "ko": "와 주셔서 기뻐요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.22,
+   "end": 11.42,
+   "speaker": "체리파이",
+   "ja": "おい、シホさん、シホさん!",
+   "ko": "어이, 시호 씨! 시호 씨!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.56,
+   "end": 17.04,
+   "speaker": "체리파이",
+   "ja": "ダメだ、意識がねえ。誰かに操られてやがる",
+   "ko": "글렀어, 의식이 없어. 누가 조종하고 있군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.8,
+   "end": 22.82,
+   "speaker": "스치파이",
+   "ja": "チェリー、あんたシホさんのこと知ってたのね。道理で不思議に思ってたのよ",
+   "ko": "체리, 너 시호 씨를 알고 있었구나. 어쩐지 이상하다 했어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.24,
+   "end": 26.5,
+   "speaker": "스치파이",
+   "ja": "なんであんたみたいなのが私たちに付き合ってんだろうって",
+   "ko": "너 같은 애가 왜 우리랑 어울리나 하고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.98,
+   "end": 28.92,
+   "speaker": "체리파이",
+   "ja": "シホさんには借りがあってな",
+   "ko": "시호 씨한텐 빚이 있거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.66,
+   "end": 32.38,
+   "speaker": "체리파이",
+   "ja": "私にじゃなくてサナエの方にだけどね",
+   "ko": "나 말고 사나에 쪽에 말이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 33.02,
+   "end": 37.8,
+   "speaker": "체리파이",
+   "ja": "シホさんの左眉の上に小指ぐらいの小さな傷がある",
+   "ko": "시호 씨 왼쪽 눈썹 위에 새끼손가락만 한 작은 흉터가 있어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 38.38,
+   "end": 42.04,
+   "speaker": "체리파이",
+   "ja": "レイカ様に叱られてたサナエをかばってできた傷だ",
+   "ko": "레이카 님한테 혼나던 사나에를 감싸다 생긴 상처다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 43.44,
+   "end": 44.94,
+   "speaker": "스치파이",
+   "ja": "そう、そんなことがあったの",
+   "ko": "그래, 그런 일이 있었구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 45.68,
+   "end": 47.76,
+   "speaker": "스치파이",
+   "ja": "でもそれでレイカの方を恨まずに",
+   "ko": "그런데 그걸로 레이카를 원망하지 않고",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.76,
+   "end": 51.16,
+   "speaker": "스치파이",
+   "ja": "自分で悩みを抱え込んじゃうっていうのがサナエさんらしいわね",
+   "ko": "혼자 고민을 끌어안는 게 사나에 씨답네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.58,
+   "end": 51.94,
+   "speaker": "?",
+   "ja": "うん",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.5,
+   "end": 55.1,
+   "speaker": "스치파이",
+   "ja": "チェリー、あんたも結構正直者ね",
+   "ko": "체리, 너도 꽤 솔직하구나.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ジェリー、あんたも結構正真者ね"
+  },
+  {
+   "start": 55.76,
+   "end": 57.08,
+   "speaker": "체리파이",
+   "ja": "だからなんだってんだ",
+   "ko": "그래서 뭐 어쩌라고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 57.08,
+   "end": 59.92,
+   "speaker": "스치파이",
+   "ja": "はいはい、慌てない慌てない",
+   "ko": "네네, 서두르지 마, 서두르지 마.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 59.92,
+   "end": 62.98,
+   "speaker": "스치파이",
+   "ja": "まずは志穂さんの目を覚ましてあげるのが先決よ",
+   "ko": "우선 시호 씨 정신부터 차리게 해 주는 게 먼저야.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: まずは司法さんの目を覚ましてあげるのが先決よ"
+  },
+  {
+   "start": 63.78,
+   "end": 66.08,
+   "speaker": "스치파이",
+   "ja": "そう、こんな時は麻雀勝負が一番ね",
+   "ko": "그래, 이럴 땐 마작 승부가 최고지.",
+   "status": "needs_human_review"
+  }
+ ]
+}

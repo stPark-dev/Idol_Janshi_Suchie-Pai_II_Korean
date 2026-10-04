@@ -1,0 +1,123 @@
+{
+ "voice": "STP019.AIF",
+ "scene": "대국 전 대화 — 피치파이(아리스) 19번째 장면, 세실을 이긴 뒤",
+ "duration": 52.99,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.66,
+   "end": 5.0,
+   "speaker": "밀크",
+   "ja": "ふぇーい、やったぴょん!悪魔をやっつけたぴょーん!",
+   "ko": "야호~ 해냈다뿅! 악마를 물리쳤다뿅~!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: フェイ!やってぴょん!悪魔をやっつけてぴょん!"
+  },
+  {
+   "start": 5.22,
+   "end": 7.78,
+   "speaker": "쿄코",
+   "ja": "ピーチ、あいつの言ってたこと…",
+   "ko": "피치, 그 녀석이 했던 말…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.68,
+   "end": 13.04,
+   "speaker": "아리스",
+   "ja": "セシルは…セシルは私たちを試してたんだと思う",
+   "ko": "세실은… 세실은 저희를 시험한 것 같아요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.52,
+   "end": 15.72,
+   "speaker": "아리스",
+   "ja": "私一人だったら絶対勝てなかった",
+   "ko": "저 혼자였다면 절대 못 이겼을 거예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.56,
+   "end": 20.54,
+   "speaker": "아리스",
+   "ja": "少なくとも心の中では勝負する前から負けてた",
+   "ko": "적어도 마음속으로는 승부하기 전부터 지고 있었어요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.48,
+   "end": 25.08,
+   "speaker": "쿄코",
+   "ja": "あんたこれからどうする気?しっぽ巻いて魔界に帰る?",
+   "ko": "너 이제 어쩔 거야? 꼬리 말고 마계로 돌아갈래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 25.2,
+   "end": 28.36,
+   "speaker": "아리스",
+   "ja": "魔界じゃなくて精霊界にあるピーチ王国です!",
+   "ko": "마계가 아니라 정령계에 있는 피치 왕국이에요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.78,
+   "end": 31.4,
+   "speaker": "아리스",
+   "ja": "それに、まだ帰ったりしません",
+   "ko": "게다가 아직 안 돌아가요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.62,
+   "end": 34.4,
+   "speaker": "아리스",
+   "ja": "私、まだ夢を叶えてないわ",
+   "ko": "저는 아직 꿈을 이루지 못했어요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 34.6,
+   "end": 38.4,
+   "speaker": "아리스",
+   "ja": "私の夢はみんなを幸せにすることなんだから",
+   "ko": "제 꿈은 모두를 행복하게 하는 거니까요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 38.6,
+   "end": 43.7,
+   "speaker": "아리스",
+   "ja": "999人が不幸なら、999人全員を幸せにするわ",
+   "ko": "999명이 불행하다면 999명 모두를 행복하게 할 거예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.14,
+   "end": 46.98,
+   "speaker": "아리스",
+   "ja": "それが私のたった一つの夢よ",
+   "ko": "그게 제 단 하나의 꿈이에요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.24,
+   "end": 49.78,
+   "speaker": "쿄코",
+   "ja": "へー、ずいぶん成長したじゃない",
+   "ko": "흐응~ 꽤 성장했잖아?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.96,
+   "end": 52.58,
+   "speaker": "아리스",
+   "ja": "そ、それは言わないで",
+   "ko": "그, 그 얘긴 하지 마세요.",
+   "status": "needs_human_review",
+   "note": "「成長」은 STP011의 「성장을 안 했네(말하는 것도 몸매도)」를 받는 농담으로 보임"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "voice": "STL008.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 8번째, 루미에게 이긴 뒤 (밀크 합류)",
+ "duration": 20.72,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.02,
+   "end": 4.0,
+   "speaker": "루미",
+   "ja": "なんか、あたしって脱がされ損な気がするわ",
+   "ko": "왠지 나만 괜히 벗겨진 것 같아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.0,
+   "end": 4.96,
+   "speaker": "쿄코",
+   "ja": "まあまあ",
+   "ko": "자자.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.84,
+   "end": 8.6,
+   "speaker": "쿄코",
+   "ja": "じゃ、損のついでにこのウサギをもらっていくわね",
+   "ko": "그럼 손해 본 김에 이 토끼도 데려갈게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.6,
+   "end": 11.86,
+   "speaker": "츠카사",
+   "ja": "おい、ウサギなんか仲間にしてどうすんだよ",
+   "ko": "야, 토끼 따위를 동료로 삼아서 뭐 하게?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.86,
+   "end": 13.38,
+   "speaker": "츠카사",
+   "ja": "手品でもやんのか?",
+   "ko": "마술이라도 하려고?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.52,
+   "end": 14.74,
+   "speaker": "밀크",
+   "ja": "ばかものが",
+   "ko": "어리석은 것!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: かにゃありゃかものが (VAD) / かなりやかものが (VAD 없음) / 2차 검수: 두 받아쓰기 모두 뭉개져 있어 「ばかものが」는 추정. 들어 보고 확인 필요"
+  },
+  {
+   "start": 14.74,
+   "end": 18.28,
+   "speaker": "밀크",
+   "ja": "あたしはこう見えても、あんたよりはよっぽど頼りになるぴょん",
+   "ko": "나는 이래 봬도 너보다 훨씬 믿음직하다뿅.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: あたしはこう見えてもあんたの役割は頼りになるぴょん"
+  },
+  {
+   "start": 18.28,
+   "end": 20.34,
+   "speaker": "쿄코",
+   "ja": "じゃ、気が向いたら協力してよね",
+   "ko": "그럼 내키면 협력해 줘.",
+   "status": "needs_human_review"
+  }
+ ]
+}

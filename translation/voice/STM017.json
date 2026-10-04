@@ -1,0 +1,78 @@
+{
+ "voice": "STM017.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 17번째, 유키·사유리",
+ "duration": 19.34,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.96,
+   "end": 2.02,
+   "speaker": "밀크",
+   "ja": "いただきだぴょん",
+   "ko": "내 거다뿅!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.02,
+   "end": 3.96,
+   "speaker": "사유리(추정)",
+   "ja": "なにすんのよ",
+   "ko": "뭐 하는 거야!",
+   "status": "needs_review",
+   "note": "2차 검수: 화자 불확실(사유리 추정, 유키일 수도)"
+  },
+  {
+   "start": 4.38,
+   "end": 6.94,
+   "speaker": "밀크",
+   "ja": "ユキちゃん、セーラー服ありがとぴょん",
+   "ko": "유키, 세일러복 고맙다뿅.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ユキちゃんシーラー服ありがぴょん"
+  },
+  {
+   "start": 6.94,
+   "end": 9.52,
+   "speaker": "밀크",
+   "ja": "お礼にあたしのうさぎ服あげるから着てみろみゃ",
+   "ko": "답례로 내 토끼 옷 줄 테니까 입어 봐라먀.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: オレンジあたしのうさぎ服あげるから着てみろみゃ"
+  },
+  {
+   "start": 9.96,
+   "end": 10.9,
+   "speaker": "유키",
+   "ja": "え?",
+   "ko": "어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.98,
+   "end": 13.06,
+   "speaker": "사유리",
+   "ja": "それあたしのですよ、あたしの",
+   "ko": "그거 제 거예요, 제 거!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.04,
+   "end": 16.68,
+   "speaker": "쿄코",
+   "ja": "まったくミルクったら何やってんのよ",
+   "ko": "정말, 밀크는 뭘 하는 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.06,
+   "end": 18.66,
+   "speaker": "쿄코(추정)",
+   "ja": "さゆりさんも災難ですね",
+   "ko": "사유리 씨도 참 운이 없네요.",
+   "status": "needs_review",
+   "note": "2차 검수: 화자 불확실: 「ですね」 존댓말이라 쿄코가 아닐 수도(유키?)"
+  }
+ ]
+}

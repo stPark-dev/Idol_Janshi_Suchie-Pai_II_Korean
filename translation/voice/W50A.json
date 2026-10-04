@@ -1,0 +1,32 @@
+{
+ "voice": "W50A.AIF",
+ "scene": "만관 보너스 화면 — 변신 게이지 MAX, 밀키파이",
+ "duration": 4.29,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.04,
+   "speaker": "스치파이",
+   "ja": "変身ゲージMAX!",
+   "ko": "변신 게이지 MAX!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 1.12,
+   "end": 2.4,
+   "speaker": "스치파이",
+   "ja": "出番よ!ミルク!",
+   "ko": "네 차례야, 밀크!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.56,
+   "end": 3.82,
+   "speaker": "밀크",
+   "ja": "みんみみみゃーん!",
+   "ko": "",
+   "status": "needs_human_review"
+  }
+ ]
+}

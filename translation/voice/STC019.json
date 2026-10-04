@@ -1,0 +1,108 @@
+{
+ "voice": "STC019.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 19번째, 세실이 떠난 뒤 (작별)",
+ "duration": 36.03,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.92,
+   "end": 3.62,
+   "speaker": "스치파이",
+   "ja": "あー、言いたいことだけ言って消えないでよ",
+   "ko": "아~ 할 말만 하고 사라지지 마!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.62,
+   "end": 6.6,
+   "speaker": "스치파이",
+   "ja": "何も言い返せないじゃないの、それじゃあ",
+   "ko": "그럼 아무 말도 못 받아치잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.4,
+   "end": 9.18,
+   "speaker": "?(츠카사 추정)",
+   "ja": "お前これからどうすんの",
+   "ko": "너 이제 어떡할 거야?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.76,
+   "end": 12.58,
+   "speaker": "체리파이",
+   "ja": "私はレイカ様の屋敷に戻るよ",
+   "ko": "나는 레이카 님 저택으로 돌아갈 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.58,
+   "end": 15.3,
+   "speaker": "?(츠카사 추정)",
+   "ja": "よしなよ、きっといじめられるよ",
+   "ko": "관둬, 분명 괴롭힘당할 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.86,
+   "end": 19.84,
+   "speaker": "체리파이",
+   "ja": "あははは、しょうがないだろ",
+   "ko": "아하하, 어쩔 수 없잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.84,
+   "end": 21.94,
+   "speaker": "체리파이",
+   "ja": "私が悪いんだからな",
+   "ko": "내가 잘못했으니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.94,
+   "end": 24.48,
+   "speaker": "밀크",
+   "ja": "じゃあまたサナエに会えるみゃ",
+   "ko": "그럼 또 사나에를 만날 수 있겠다먀.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: はいじゃあまた社内で会えるみゃ"
+  },
+  {
+   "start": 24.48,
+   "end": 27.38,
+   "speaker": "밀크",
+   "ja": "お前ともたまーになら遊んでやってもいいみゃ",
+   "ko": "너하고도 가끔은 놀아 줘도 된다먀.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: お前ともたまーにならーってやってもいいみゃ"
+  },
+  {
+   "start": 28.42,
+   "end": 29.2,
+   "speaker": "체리파이",
+   "ja": "ありがとうよ",
+   "ko": "고맙다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.0,
+   "end": 32.62,
+   "speaker": "체리파이",
+   "ja": "お前らに会えてよかったよ",
+   "ko": "너희를 만나서 좋았어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 33.64,
+   "end": 35.72,
+   "speaker": "스치파이",
+   "ja": "ま、とりあえず一件落着ね",
+   "ko": "뭐, 아무튼 일단락이네.",
+   "status": "needs_human_review"
+  }
+ ]
+}

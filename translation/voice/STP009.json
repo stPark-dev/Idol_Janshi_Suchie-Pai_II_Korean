@@ -1,0 +1,144 @@
+{
+ "voice": "STP009.AIF",
+ "scene": "대국 전 대화 — 피치파이(아리스) 9번째 장면, 레이카의 혼잣말 (대국 없이 물러남)",
+ "duration": 70.25,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.64,
+   "end": 5.22,
+   "speaker": "레이카",
+   "ja": "はあ、最近忙しいからデートもお預けね",
+   "ko": "하아, 요즘 바빠서 데이트도 미뤄야겠네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.12,
+   "end": 9.44,
+   "speaker": "레이카",
+   "ja": "シホちゃんとかもここんとこ構ってあげてないから",
+   "ko": "시호도 요즘 통 챙겨 주지 못했으니",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.98,
+   "end": 12.06,
+   "speaker": "레이카",
+   "ja": "寂しい思いさせてないかしら",
+   "ko": "외로워하고 있진 않을까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.16,
+   "end": 16.62,
+   "speaker": "레이카",
+   "ja": "うーん、なんか切なくなってきちゃった",
+   "ko": "음, 왠지 애틋해지네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.02,
+   "end": 19.96,
+   "speaker": "레이카",
+   "ja": "目を閉じると思い浮かぶわ",
+   "ko": "눈을 감으면 떠올라.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.12,
+   "end": 23.58,
+   "speaker": "레이카",
+   "ja": "あの長くてサラサラの髪も",
+   "ko": "그 길고 찰랑찰랑한 머리카락도",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.44,
+   "end": 28.78,
+   "speaker": "레이카",
+   "ja": "私への熱い思いを訴える深い琥珀色の瞳",
+   "ko": "나를 향한 뜨거운 마음을 호소하는 깊은 호박색 눈동자,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.44,
+   "end": 31.82,
+   "speaker": "레이카",
+   "ja": "甘い吐息を漏らす小さな唇",
+   "ko": "달콤한 숨결을 흘리는 작은 입술,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.44,
+   "end": 34.08,
+   "speaker": "레이카",
+   "ja": "白く滑らかな肌",
+   "ko": "하얗고 매끄러운 살결,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.4,
+   "end": 38.14,
+   "speaker": "레이카",
+   "ja": "ちょっと小さめの二つの膨らみ",
+   "ko": "조금 작은 두 봉우리…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.68,
+   "end": 43.14,
+   "speaker": "레이카",
+   "ja": "いつもそこが弱いって私にお願いに来るの",
+   "ko": "늘 거기가 약하다며 나한테 부탁하러 오지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 45.4,
+   "end": 47.28,
+   "speaker": "레이카",
+   "ja": "もう仕事どころじゃないわ",
+   "ko": "이젠 일이 손에 안 잡혀.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.94,
+   "end": 52.46,
+   "speaker": "레이카",
+   "ja": "誰か可愛い女の子とイチャイチャラブラブしたい",
+   "ko": "누구든 귀여운 여자애랑 알콩달콩 꽁냥꽁냥하고 싶어!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 55.02,
+   "end": 59.14,
+   "speaker": "아리스",
+   "ja": "な、なんか、とてつもなく身の危険を感じるんですけど",
+   "ko": "왜, 왠지 엄청나게 신변의 위협이 느껴지는데요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 60.28,
+   "end": 64.4,
+   "speaker": "쿄코",
+   "ja": "そ、そうね、今出てったら確実に押し倒されそうだし",
+   "ko": "그, 그러게. 지금 나가면 확실히 덮쳐질 것 같고",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.45,
+   "end": 66.42,
+   "speaker": "쿄코",
+   "ja": "このまま帰っちゃいましょうか",
+   "ko": "이대로 돌아가 버릴까?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 67.33,
+   "end": 69.5,
+   "speaker": "아리스",
+   "ja": "そうですね、退却!",
+   "ko": "그래요, 후퇴!",
+   "status": "needs_human_review"
+  }
+ ]
+}

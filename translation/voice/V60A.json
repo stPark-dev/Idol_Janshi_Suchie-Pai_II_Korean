@@ -1,0 +1,16 @@
+{
+ "voice": "V60A.AIF",
+ "scene": "필살기·소환 연출 — 스페셜 소환",
+ "duration": 2.82,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.18,
+   "end": 0.96,
+   "speaker": "스치파이",
+   "ja": "スペシャル召喚!",
+   "ko": "스페셜 소환!",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "voice": "STC001.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 1번째, 상대 츠카사(레몬파이)",
+ "duration": 56.41,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.56,
+   "end": 4.18,
+   "speaker": "츠카사",
+   "ja": "おい!ここいらは民間人立ち入り禁止だ!",
+   "ko": "어이! 이 근방은 민간인 출입 금지다!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.54,
+   "end": 5.66,
+   "speaker": "츠카사",
+   "ja": "とっとと帰んな!",
+   "ko": "썩 돌아가!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.98,
+   "end": 10.6,
+   "speaker": "체리파이",
+   "ja": "おー!ずいぶん感じがいいね!",
+   "ko": "오~! 꽤 마음에 드는데!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.56,
+   "end": 12.96,
+   "speaker": "츠카사",
+   "ja": "なんだおめえその格好!",
+   "ko": "뭐야, 너 그 꼬락서니는!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.68,
+   "end": 14.82,
+   "speaker": "츠카사",
+   "ja": "頭平気か?",
+   "ko": "머리는 괜찮냐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.28,
+   "end": 19.72,
+   "speaker": "체리파이",
+   "ja": "ははーん、その喋り口も気に入ったね",
+   "ko": "하하~ 그 말투도 마음에 드는걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.72,
+   "end": 21.7,
+   "speaker": "체리파이",
+   "ja": "ワクワクしてくるよ",
+   "ko": "두근두근해지는데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.98,
+   "end": 25.98,
+   "speaker": "츠카사",
+   "ja": "ほー、どうやらこの俺に喧嘩売ってるようだな",
+   "ko": "호오, 아무래도 나한테 싸움을 거는 모양이군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.44,
+   "end": 28.86,
+   "speaker": "츠카사",
+   "ja": "いいぜ、どっからでもかかってきな!",
+   "ko": "좋아, 어디서든 덤벼 봐!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.86,
+   "end": 30.9,
+   "speaker": "체리파이",
+   "ja": "まあそう焦るなよ",
+   "ko": "뭐, 그렇게 서두르지 마.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.3,
+   "end": 33.98,
+   "speaker": "체리파이",
+   "ja": "取っ組み合いやっても負ける気はしないけどさ",
+   "ko": "맞붙어 싸워도 질 것 같진 않지만.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 特組合やっても負ける気はしないけどさ"
+  },
+  {
+   "start": 33.98,
+   "end": 36.3,
+   "speaker": "체리파이",
+   "ja": "あんたみたいなタイプは",
+   "ko": "너 같은 타입은",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.42,
+   "end": 40.86,
+   "speaker": "체리파이",
+   "ja": "精神的にいたぶってやるのがお姉さんの趣味なんだよ",
+   "ko": "정신적으로 괴롭혀 주는 게 이 언니 취미거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.34,
+   "end": 44.38,
+   "speaker": "츠카사",
+   "ja": "けっ、てめえの趣味なんか知ったこっちゃねえがな",
+   "ko": "흥, 네 취미 따윈 알 바 아니다만.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: きってめえの趣味なんか知ったこっちゃねえがな"
+  },
+  {
+   "start": 44.38,
+   "end": 49.2,
+   "speaker": "츠카사",
+   "ja": "この一文字つかさ、売られた喧嘩は必ず買うってのが信条なんだ",
+   "ko": "이 이치몬지 츠카사, 걸어온 싸움은 반드시 받는 게 신조다.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: この一文字つかさ売られた喧嘩は必ず買うってのが心情なんだ"
+  },
+  {
+   "start": 49.66,
+   "end": 52.16,
+   "speaker": "츠카사",
+   "ja": "おめえの好きな方法で勝負してやるぜ",
+   "ko": "네가 좋아하는 방법으로 승부해 주지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.16,
+   "end": 53.92,
+   "speaker": "스치파이",
+   "ja": "じゃ、麻雀勝負ね",
+   "ko": "그럼 마작으로 승부야!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: じゃラージャー勝負ね"
+  },
+  {
+   "start": 55.16,
+   "end": 56.06,
+   "speaker": "츠카사",
+   "ja": "誰、こいつ",
+   "ko": "누구야, 얘.",
+   "status": "needs_human_review"
+  }
+ ]
+}

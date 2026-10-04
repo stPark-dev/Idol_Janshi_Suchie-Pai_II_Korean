@@ -1,0 +1,97 @@
+{
+ "voice": "STC002.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 2번째, 츠카사에게 이긴 뒤 (사나에로 돌아옴)",
+ "duration": 44.51,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.7,
+   "end": 5.48,
+   "speaker": "츠카사",
+   "ja": "くそー!よりによってこんな憎たらしい奴に負けちまうとは",
+   "ko": "젠장! 하필 이렇게 얄미운 녀석한테 지다니.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.16,
+   "end": 9.12,
+   "speaker": "츠카사",
+   "ja": "一文字つかさ、一生の不覚だぜ",
+   "ko": "이치몬지 츠카사, 일생일대의 불찰이다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.82,
+   "end": 14.28,
+   "speaker": "츠카사",
+   "ja": "だが、負けは負けだ!見るなり焼くなり好きにしやがれ!",
+   "ko": "하지만 진 건 진 거다! 보든 굽든 맘대로 해라!",
+   "status": "needs_human_review",
+   "note": "「煮るなり焼くなり」를 「見るなり」로 비튼 말장난"
+  },
+  {
+   "start": 15.98,
+   "end": 18.94,
+   "speaker": "사나에",
+   "ja": "ど、どうなさったんですかその格好は",
+   "ko": "어, 어떻게 된 거예요, 그 차림은?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.66,
+   "end": 22.66,
+   "speaker": "사나에",
+   "ja": "それにここは一体どこなんですか",
+   "ko": "게다가 여긴 대체 어디예요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.14,
+   "end": 25.4,
+   "speaker": "사나에",
+   "ja": "おまけにあなた方は一体",
+   "ko": "거기다 여러분은 대체…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.42,
+   "end": 28.7,
+   "speaker": "츠카사",
+   "ja": "あれ?さっきのコウモリ女は?",
+   "ko": "어라? 아까 그 박쥐 여자는?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.1,
+   "end": 32.9,
+   "speaker": "스치파이",
+   "ja": "ほらサナエさん、屋敷に戻らないとレイカにどやされるわよ",
+   "ko": "자, 사나에 씨, 저택에 안 돌아가면 레이카한테 혼나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 33.38,
+   "end": 36.86,
+   "speaker": "사나에",
+   "ja": "あら、いけない。私、失礼いたします",
+   "ko": "어머, 큰일이네. 저는 이만 실례하겠습니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 37.88,
+   "end": 42.8,
+   "speaker": "스치파이",
+   "ja": "つかささん、コウモリ女が気になるんだったらそれとなく後をついてくるといいわ",
+   "ko": "츠카사 씨, 박쥐 여자가 궁금하면 슬쩍 따라와 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.8,
+   "end": 43.9,
+   "speaker": "스치파이",
+   "ja": "じゃあお先に",
+   "ko": "그럼 먼저 갈게.",
+   "status": "needs_human_review"
+  }
+ ]
+}

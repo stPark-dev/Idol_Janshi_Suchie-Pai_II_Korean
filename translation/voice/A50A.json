@@ -1,0 +1,50 @@
+{
+ "voice": "A50A.AIF",
+ "scene": "파트너 소개 — 츠카사(레몬파이), 스치파이의 소개",
+ "duration": 18.76,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 3.38,
+   "speaker": "스치파이",
+   "ja": "彼女は一文字つかささん。見ての通り軍人さんよ。",
+   "ko": "이치몬지 츠카사 씨. 보다시피 군인이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.9,
+   "end": 6.9,
+   "speaker": "스치파이",
+   "ja": "実は彼女の体、ほとんどが機械なの。",
+   "ko": "사실 그녀의 몸은 거의 다 기계야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.26,
+   "end": 10.2,
+   "speaker": "스치파이",
+   "ja": "なんでも作戦中の事故で死にかけたんだけど、",
+   "ko": "작전 중 사고로 죽을 뻔했는데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.34,
+   "end": 13.88,
+   "speaker": "스치파이",
+   "ja": "国家予算でサイボーグ手術を受け、一命を取り留めたそうよ。",
+   "ko": "나랏돈으로 사이보그 수술을 받아 목숨을 건졌대.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.88,
+   "end": 18.38,
+   "speaker": "스치파이",
+   "ja": "まあ、そうして命と引き換えに自由を失ったって寸法ね。",
+   "ko": "뭐, 그렇게 목숨과 맞바꿔 자유를 잃었다는 거지.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: まあ、そうして命と機械に自由を失ったって寸法ね。"
+  }
+ ]
+}

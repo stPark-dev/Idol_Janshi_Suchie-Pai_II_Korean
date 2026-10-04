@@ -1,0 +1,72 @@
+{
+ "voice": "STL005.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 5번째, 사나에에게 이긴 뒤",
+ "duration": 29.63,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.32,
+   "end": 3.12,
+   "speaker": "사나에",
+   "ja": "も、申し訳ありません",
+   "ko": "죄, 죄송합니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.56,
+   "end": 9.46,
+   "speaker": "사나에",
+   "ja": "私の実力ではレイカ様が戻るまで間が持ちませんでした",
+   "ko": "제 실력으로는 레이카 님이 돌아오실 때까지 버티지 못했어요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.36,
+   "end": 14.2,
+   "speaker": "쿄코",
+   "ja": "いいのよ。私たちの目的はレイカじゃなくてチェリーなんだから",
+   "ko": "괜찮아. 우리 목적은 레이카가 아니라 체리니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.78,
+   "end": 16.14,
+   "speaker": "사나에",
+   "ja": "チェリーさんですか?",
+   "ko": "체리 씨요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.9,
+   "end": 21.0,
+   "speaker": "쿄코",
+   "ja": "どうせ私たちが帰った後、サナエさんレイカにお仕置きされちゃうんでしょ",
+   "ko": "어차피 우리가 가고 나면 사나에 씨, 레이카한테 벌 받겠지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.44,
+   "end": 24.38,
+   "speaker": "쿄코",
+   "ja": "ひょっとしたらその時チェリーのこと思い出すかもね",
+   "ko": "어쩌면 그때 체리를 떠올릴지도 몰라.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.84,
+   "end": 27.68,
+   "speaker": "쿄코",
+   "ja": "そしたら私たちと合流するように伝えといてね",
+   "ko": "그러면 우리랑 합류하라고 전해 줘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 27.68,
+   "end": 29.4,
+   "speaker": "쿄코",
+   "ja": "ストレス解消になるわよって",
+   "ko": "스트레스 풀린다고.",
+   "status": "needs_human_review"
+  }
+ ]
+}

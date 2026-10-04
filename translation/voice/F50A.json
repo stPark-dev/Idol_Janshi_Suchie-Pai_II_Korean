@@ -1,0 +1,32 @@
+{
+ "voice": "F50A.AIF",
+ "scene": "파트너 소개 — 밀크(밀키파이), 스치파이의 소개",
+ "duration": 9.79,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.4,
+   "speaker": "스치파이",
+   "ja": "とってもラブリーな白ウサギのミルクちゃん。",
+   "ko": "아주 러블리한 흰 토끼 밀크.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.64,
+   "end": 4.5,
+   "speaker": "스치파이",
+   "ja": "でも外見に騙されちゃダメよ。",
+   "ko": "하지만 겉모습에 속으면 안 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.0,
+   "end": 9.54,
+   "speaker": "스치파이",
+   "ja": "なんてったって彼女は宇宙人、もとい宇宙ウサギなんですから。",
+   "ko": "뭐니 뭐니 해도 이 아이는 외계인, 아니 우주 토끼니까.",
+   "status": "needs_human_review"
+  }
+ ]
+}

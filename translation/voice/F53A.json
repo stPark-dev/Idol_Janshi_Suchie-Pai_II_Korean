@@ -1,0 +1,34 @@
+{
+ "voice": "F53A.AIF",
+ "scene": "파트너 소개 — 밀키파이 필살기 설명",
+ "duration": 8.73,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.86,
+   "speaker": "스치파이",
+   "ja": "必殺技はミルキーシャワー",
+   "ko": "필살기는 밀키 샤워.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.4,
+   "end": 5.56,
+   "speaker": "스치파이",
+   "ja": "リーチしてない時のカンには全てカンドラが付くのよ",
+   "ko": "리치 안 했을 때 깡에는 전부 깡도라가 붙어.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: リーチしてない時の缶には全てカンドラが付くのよ"
+  },
+  {
+   "start": 5.92,
+   "end": 8.4,
+   "speaker": "스치파이",
+   "ja": "上手く上がれば高得点間違いなしね",
+   "ko": "잘 화료하면 고득점은 따 놓은 당상이지.",
+   "status": "needs_human_review"
+  }
+ ]
+}

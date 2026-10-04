@@ -1,0 +1,26 @@
+{
+ "voice": "V70B.AIF",
+ "scene": "벌칙 장면 — 쿄코(스치파이), B: 애니메이션",
+ "duration": 4.14,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 0.98,
+   "speaker": "스치파이",
+   "ja": "あ、ダメ!",
+   "ko": "아, 안 돼!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 1.22,
+   "end": 3.64,
+   "speaker": "스치파이",
+   "ja": "ここまで!エッチなんだから",
+   "ko": "여기까지! 정말 엉큼하다니까.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ここまでエッチなんだから (끊어 읽기를 문맥으로 정함)"
+  }
+ ]
+}

@@ -7,14 +7,27 @@
 3. The layer is composited over the cleaned pixels inside the box and quantised back to the
    sprite's palette. Pixels outside the box are never written.
 """
+import os
 import re
 from collections import Counter
+from pathlib import Path
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 from .title import ALPHA_CUTOFF, Texture, rgb555
 
-DEFAULT_FONT = "/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf"
+# Debian/Ubuntu fonts-nanum-extra; elsewhere (Windows) the same file under work/fonts/
+_FONT_CANDIDATES = ["/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf",
+                    str(Path(__file__).resolve().parents[2] / "work" / "fonts" / "NanumSquareRoundEB.ttf")]
+DEFAULT_FONT = next((p for p in _FONT_CANDIDATES if os.path.isfile(p)), _FONT_CANDIDATES[0])
+
+
+def resolve_font(path: str) -> str:
+    """A layout's font path, or the same file name under work/fonts/ when that path is missing."""
+    if os.path.isfile(path):
+        return path
+    local = Path(_FONT_CANDIDATES[1]).parent / Path(path).name
+    return str(local) if local.is_file() else path
 
 
 class LabelError(ValueError):
@@ -183,7 +196,7 @@ def render_lines(size, lines, pal, font_path: str = DEFAULT_FONT, box=None) -> I
     big = (w + 2 * pad, h + 2 * pad)
     layer = Image.new("RGBA", big, (0, 0, 0, 0))
     for ln in lines:
-        font = ImageFont.truetype(font_path, ln["size"])
+        font = ImageFont.truetype(resolve_font(font_path), ln["size"])
         weight = ln.get("weight", 0)
         segs = ln["text"].split("|")
         fills = ln["fill"] if isinstance(ln["fill"], list) else [ln["fill"]] * len(segs)

@@ -1,0 +1,432 @@
+{
+ "voice": "YKM010.AIF",
+ "scene": "대국 전 대화 — 유키 10번째, 상대 아리스(노래 대회가 인트로 퀴즈로), 밀크·츠카사 동석",
+ "duration": 112.62,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.66,
+   "end": 4.9,
+   "speaker": "유키",
+   "ja": "うさぎ うさぎ 何見て跳ねる",
+   "ko": "토끼야 토끼야, 뭘 보고 뛰니",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: うさき うさき なにみて はねる (동요 「うさぎ」)"
+  },
+  {
+   "start": 5.5,
+   "end": 11.4,
+   "speaker": "유키",
+   "ja": "十五夜お月さま 見て跳ねる",
+   "ko": "보름달 달님 보고 뛰지",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: じゅうごや おずきさま みて はねる"
+  },
+  {
+   "start": 11.54,
+   "end": 12.56,
+   "speaker": "모두",
+   "ja": "イエーイ!",
+   "ko": "예이!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.9,
+   "end": 14.24,
+   "speaker": "아리스",
+   "ja": "楽しそうねー!",
+   "ko": "즐거워 보이네요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.6,
+   "end": 17.4,
+   "speaker": "밀크",
+   "ja": "おう! アリスだぴょん! アリスも歌え歌え!",
+   "ko": "오! 아리스다뿅! 아리스도 불러라 불러!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.58,
+   "end": 21.4,
+   "speaker": "유키",
+   "ja": "そうよ! アイドルじゃない! 歌って歌って! ヒューヒュー!",
+   "ko": "맞아! 아이돌이잖아! 불러 줘 불러 줘! 휘익휘익!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.76,
+   "end": 25.08,
+   "speaker": "아리스",
+   "ja": "えー! わたしなんてまだたまごですよ!",
+   "ko": "어머! 저는 아직 햇병아리인걸요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 25.54,
+   "end": 28.4,
+   "speaker": "아리스",
+   "ja": "でも、うれしいから歌っちゃおうかなー!",
+   "ko": "그래도 기쁘니까 불러 볼까요~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.4,
+   "end": 29.8,
+   "speaker": "유키",
+   "ja": "待ってましたー!",
+   "ko": "기다렸어~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.3,
+   "end": 31.92,
+   "speaker": "츠카사",
+   "ja": "L-O-V-E",
+   "ko": "L-O-V-E",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.92,
+   "end": 33.16,
+   "speaker": "유키",
+   "ja": "アリスー!",
+   "ko": "아리스~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 33.56,
+   "end": 34.94,
+   "speaker": "밀크",
+   "ja": "アリスみゃー!",
+   "ko": "아리스먀~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.82,
+   "end": 38.4,
+   "speaker": "아리스",
+   "ja": "じゃあリクエストにお答えしてー!",
+   "ko": "그럼 신청에 응해서~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 38.48,
+   "end": 42.34,
+   "speaker": "아리스",
+   "ja": "だるまさん だるまさん にらめっこしましょ",
+   "ko": "달마 씨, 달마 씨, 눈싸움해요~",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ドールマソン ドールマソン / にらめっこしましょう (동요 「だるまさん」)"
+  },
+  {
+   "start": 42.34,
+   "end": 43.44,
+   "speaker": "유키",
+   "ja": "カーン!",
+   "ko": "땡!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: たーん! (VAD: かーん!) 노래자랑 탈락 종소리 흉내로 봄"
+  },
+  {
+   "start": 43.48,
+   "end": 44.6,
+   "speaker": "유키",
+   "ja": "だめだめー!",
+   "ko": "안 돼 안 돼~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.86,
+   "end": 46.55,
+   "speaker": "유키",
+   "ja": "それのどこが歌なのよ",
+   "ko": "그게 어디가 노래야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 46.55,
+   "end": 47.44,
+   "speaker": "아리스",
+   "ja": "いったーい",
+   "ko": "아야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.44,
+   "end": 49.14,
+   "speaker": "밀크",
+   "ja": "なんだかわかんないみゃー",
+   "ko": "뭐가 뭔지 모르겠다먀~",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: にゃんにゃんがわかんないみゃー"
+  },
+  {
+   "start": 49.14,
+   "end": 50.1,
+   "speaker": "아리스",
+   "ja": "うーん…",
+   "ko": "으음…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.1,
+   "end": 53.1,
+   "speaker": "아리스",
+   "ja": "じゃあ2曲目いくわよー!",
+   "ko": "그럼 두 번째 곡 갑니다~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 53.26,
+   "end": 55.08,
+   "speaker": "유키",
+   "ja": "カーン! カーン!",
+   "ko": "땡! 땡!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: たーん! / たーん!"
+  },
+  {
+   "start": 55.2,
+   "end": 56.32,
+   "speaker": "유키",
+   "ja": "それもダサいわ",
+   "ko": "그것도 촌스러워.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.32,
+   "end": 57.74,
+   "speaker": "밀크",
+   "ja": "今のなんでみゃー!",
+   "ko": "방금 건 왜냐먀~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 57.74,
+   "end": 58.9,
+   "speaker": "유키",
+   "ja": "か、だから",
+   "ko": "\"카\"니까…",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: かーだから"
+  },
+  {
+   "start": 59.5,
+   "end": 61.18,
+   "speaker": "유키",
+   "ja": "カタツムリの歌でしょ!",
+   "ko": "달팽이 노래지!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 62.2,
+   "end": 63.12,
+   "speaker": "아리스",
+   "ja": "残念でした",
+   "ko": "아쉽게도~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 63.12,
+   "end": 64.12,
+   "speaker": "아리스",
+   "ja": "答えは",
+   "ko": "정답은",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.12,
+   "end": 67.36,
+   "speaker": "아리스",
+   "ja": "かーごーめー かーごーめー",
+   "ko": "가고메~ 가고메~",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: かーがーめーかーがーめー (동요 「かごめかごめ」)"
+  },
+  {
+   "start": 67.36,
+   "end": 68.64,
+   "speaker": "아리스",
+   "ja": "でしたー!",
+   "ko": "였습니다~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 68.68,
+   "end": 70.72,
+   "speaker": "유키",
+   "ja": "うー、悔しいー",
+   "ko": "으~ 분해~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 71.24,
+   "end": 75.48,
+   "speaker": "유키",
+   "ja": "そういえばカタツムリは「でんでんむしむしカタツムリ」だったわ",
+   "ko": "그러고 보니 달팽이 노래는 \"덴덴무시무시\"로 시작했지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 75.48,
+   "end": 76.7,
+   "speaker": "아리스",
+   "ja": "さあ、次いってみよう!",
+   "ko": "자, 다음 가 볼까요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 77.0,
+   "end": 78.06,
+   "speaker": "아리스",
+   "ja": "じゃあいくわよ!",
+   "ko": "그럼 갑니다!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 78.26,
+   "end": 78.88,
+   "speaker": "아리스",
+   "ja": "ゆー",
+   "ko": "유~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 78.88,
+   "end": 79.66,
+   "speaker": "유키",
+   "ja": "はーい!",
+   "ko": "저요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 80.14,
+   "end": 82.8,
+   "speaker": "아리스",
+   "ja": "これはユキちゃんが歌わなくちゃ嘘よねー",
+   "ko": "이건 유키가 불러야 제맛이죠~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 82.8,
+   "end": 83.9,
+   "speaker": "아리스",
+   "ja": "答えは",
+   "ko": "정답은",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 84.46,
+   "end": 88.4,
+   "speaker": "유키",
+   "ja": "雪やこんこ あられやこんこ",
+   "ko": "눈아 펑펑, 싸락눈아 펑펑",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ゆーきーやこんこ あられやこんこ (동요 「雪」)"
+  },
+  {
+   "start": 88.4,
+   "end": 92.36,
+   "speaker": "유키",
+   "ja": "降っても降っても まだ降りやまぬ",
+   "ko": "내려도 내려도 그치지 않네",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 92.36,
+   "end": 96.0,
+   "speaker": "유키",
+   "ja": "犬は喜び 庭駆けまわり",
+   "ko": "강아지는 신나서 마당을 뛰놀고",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: べしゃぎべやろこぴに べかきまわり"
+  },
+  {
+   "start": 96.0,
+   "end": 98.64,
+   "speaker": "유키",
+   "ja": "猫はこたつで丸く…",
+   "ko": "고양이는 코타츠에서 동그랗게…",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ねーこはこたつでまるく"
+  },
+  {
+   "start": 98.64,
+   "end": 99.88,
+   "speaker": "아리스",
+   "ja": "ちょっとストップ!",
+   "ko": "잠깐 스톱!",
+   "status": "needs_review",
+   "note": "2차 검수: 화자 불확실(아리스 추정, 츠카사·유키일 수도). 화자에 따라 말투가 달라짐"
+  },
+  {
+   "start": 100.22,
+   "end": 102.58,
+   "speaker": "아리스",
+   "ja": "いつの間にかイントロクイズになってるわ",
+   "ko": "어느새 인트로 퀴즈가 돼 버렸어요.",
+   "status": "needs_review",
+   "note": "2차 검수: 화자 불확실(42와 같은 사람)"
+  },
+  {
+   "start": 103.04,
+   "end": 103.7,
+   "speaker": "유키",
+   "ja": "あれ?",
+   "ko": "어라?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 104.08,
+   "end": 105.92,
+   "speaker": "유키",
+   "ja": "じゃあ何してたんだっけ?",
+   "ko": "그럼 뭐 하던 중이었더라?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 106.16,
+   "end": 107.36,
+   "speaker": "밀크",
+   "ja": "麻雀でみゃ!",
+   "ko": "마작이다먀!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 107.7,
+   "end": 108.48,
+   "speaker": "유키",
+   "ja": "そうだっけ?",
+   "ko": "그랬나?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 108.82,
+   "end": 109.58,
+   "speaker": "유키",
+   "ja": "まあいっか",
+   "ko": "뭐, 됐어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 109.58,
+   "end": 111.96,
+   "speaker": "유키",
+   "ja": "そんじゃアリスちゃん、勝負開始よ!",
+   "ko": "그럼 아리스, 승부 시작이야!",
+   "status": "needs_human_review"
+  }
+ ]
+}

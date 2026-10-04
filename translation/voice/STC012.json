@@ -1,0 +1,292 @@
+{
+ "voice": "STC012.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 12번째, 리에와 만남",
+ "duration": 122.44,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.62,
+   "end": 5.18,
+   "speaker": "리에",
+   "ja": "あら、この子ひょっとしてレイカのとこのメイドさんじゃない?",
+   "ko": "어머, 이 애 혹시 레이카네 메이드 아냐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.06,
+   "end": 9.34,
+   "speaker": "사나에",
+   "ja": "あ、そうです。サナエと申します",
+   "ko": "아, 네. 사나에라고 합니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.0,
+   "end": 12.78,
+   "speaker": "사나에",
+   "ja": "でもよく覚えてらっしゃいましたね",
+   "ko": "그런데 용케 기억하셨네요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.78,
+   "end": 15.7,
+   "speaker": "스치파이",
+   "ja": "リエさんはそういうとこ抜け目ないもんね",
+   "ko": "리에 씨는 그런 데 빈틈이 없잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.74,
+   "end": 17.26,
+   "speaker": "리에",
+   "ja": "ま、失礼ね",
+   "ko": "어머, 실례네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.28,
+   "end": 21.78,
+   "speaker": "리에",
+   "ja": "でも正直、あいつんとこであなたを見かけた時は",
+   "ko": "하지만 솔직히 그 녀석 집에서 너를 봤을 땐",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.78,
+   "end": 24.46,
+   "speaker": "리에",
+   "ja": "いい趣味してるなって思ったわ",
+   "ko": "취향 한번 좋다고 생각했어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.46,
+   "end": 27.34,
+   "speaker": "스치파이",
+   "ja": "別に趣味で雇ってるわけじゃないでしょうが",
+   "ko": "딱히 취향으로 고용한 건 아니잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 27.84,
+   "end": 32.76,
+   "speaker": "리에",
+   "ja": "ねえあなた、お掃除の後、床を指でツーとかされて",
+   "ko": "있잖아, 청소 끝나고 바닥을 손가락으로 쓱 훑으면서",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.76,
+   "end": 34.78,
+   "speaker": "리에",
+   "ja": "これで掃除したと言えるの",
+   "ko": "\"이걸로 청소했다고 할 수 있어?\"",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 34.78,
+   "end": 38.56,
+   "speaker": "리에",
+   "ja": "さあ罰としてお前の舌で綺麗にしな、とか",
+   "ko": "\"자, 벌로 네 혀로 깨끗이 해\"라든가",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.78,
+   "end": 42.58,
+   "speaker": "리에",
+   "ja": "おや、指輪が一つ足りないわね",
+   "ko": "\"어머, 반지가 하나 모자라네.\"",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 43.18,
+   "end": 47.34,
+   "speaker": "리에",
+   "ja": "疑うわけじゃないが、今ここで着てるもんを脱いでもらえるかい",
+   "ko": "\"의심하는 건 아니지만, 여기서 입은 걸 벗어 주겠니?\"",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.34,
+   "end": 49.04,
+   "speaker": "리에",
+   "ja": "とかされたことない?",
+   "ko": "…같은 일 당한 적 없어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.38,
+   "end": 53.34,
+   "speaker": "스치파이",
+   "ja": "リエさんたら、その手の小説じゃないんですから",
+   "ko": "리에 씨도 참, 그런 소설도 아니고.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 森江さんたらその手の小説じゃないんですから"
+  },
+  {
+   "start": 53.34,
+   "end": 55.52,
+   "speaker": "스치파이",
+   "ja": "そんなことあるわけないじゃないね",
+   "ko": "그런 일이 있을 리가 없잖아, 그치?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.02,
+   "end": 57.9,
+   "speaker": "사나에",
+   "ja": "はあ、まあ",
+   "ko": "하아, 뭐…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 58.0,
+   "end": 63.16,
+   "speaker": "사나에",
+   "ja": "私が悪いんですし、仕方ない時もありますよね",
+   "ko": "제가 잘못한 거니까 어쩔 수 없을 때도 있죠.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 63.16,
+   "end": 65.08,
+   "speaker": "스치파이",
+   "ja": "お、おいおい",
+   "ko": "어, 어이어이.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: お、おえおえ"
+  },
+  {
+   "start": 66.48,
+   "end": 72.62,
+   "speaker": "리에",
+   "ja": "まあお屋敷に閉じこもってご主人様面してるなんていうのは私の趣味じゃないけどね",
+   "ko": "뭐, 저택에 틀어박혀 주인 행세하는 건 내 취향이 아니지만.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 74.18,
+   "end": 77.68,
+   "speaker": "리에",
+   "ja": "でもさなえちゃんみたいなメイドさんに囲まれて",
+   "ko": "사나에 같은 메이드들한테 둘러싸여",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 77.7,
+   "end": 80.9,
+   "speaker": "리에",
+   "ja": "暮らす生活も悪くないと思えてくるわ",
+   "ko": "사는 것도 나쁘지 않겠다 싶어지네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 80.9,
+   "end": 82.4,
+   "speaker": "스치파이",
+   "ja": "あ、あのさ",
+   "ko": "저, 저기 말이야,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 82.42,
+   "end": 87.02,
+   "speaker": "스치파이",
+   "ja": "レイカさんちって秘密の地下室とか謎の隠し部屋とかあるの?",
+   "ko": "레이카 씨네 집엔 비밀 지하실이나 숨겨진 방 같은 거 있어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 87.36,
+   "end": 90.2,
+   "speaker": "사나에",
+   "ja": "ま、なんでご存じなんですか?",
+   "ko": "어머, 어떻게 아세요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 90.58,
+   "end": 92.22,
+   "speaker": "스치파이",
+   "ja": "だ、まいったな",
+   "ko": "이, 이거 참 곤란하네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 93.0,
+   "end": 96.96,
+   "speaker": "리에",
+   "ja": "さなえさん、レイカにいじめられたらあたしのとこにいらっしゃい",
+   "ko": "사나에 씨, 레이카한테 괴롭힘당하면 나한테 와.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 96.96,
+   "end": 99.56,
+   "speaker": "리에",
+   "ja": "あたし流に慰めてあげるわよ",
+   "ko": "내 방식대로 위로해 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 99.56,
+   "end": 101.78,
+   "speaker": "스치파이",
+   "ja": "だめよ、きっといじめられるわ",
+   "ko": "안 돼, 분명 거기서도 괴롭힘당할 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 102.26,
+   "end": 102.66,
+   "speaker": "사나에",
+   "ja": "はあ",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 103.14,
+   "end": 107.66,
+   "speaker": "리에",
+   "ja": "それと恭子ちゃん、その手の小説にやけに詳しいみたいだけど",
+   "ko": "그리고 쿄코, 그런 소설에 꽤 빠삭한 것 같던데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 108.08,
+   "end": 110.38,
+   "speaker": "리에",
+   "ja": "あんまり深みにはまっちゃだめよ",
+   "ko": "너무 깊이 빠지면 안 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 110.38,
+   "end": 114.3,
+   "speaker": "스치파이",
+   "ja": "いや、厳しい。こりゃヤブヘビだったみたいね",
+   "ko": "아이고, 따끔하네. 괜히 긁어 부스럼이었나 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 114.54,
+   "end": 116.84,
+   "speaker": "사나에",
+   "ja": "あ、置いてかないでください",
+   "ko": "아, 두고 가지 마세요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 117.86,
+   "end": 122.06,
+   "speaker": "리에",
+   "ja": "うふふ、レイカのやつ、ちょっと羨ましいぞ",
+   "ko": "우후후, 레이카 녀석, 좀 부러운걸.",
+   "status": "needs_human_review"
+  }
+ ]
+}

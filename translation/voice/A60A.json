@@ -1,0 +1,18 @@
+{
+ "voice": "A60A.AIF",
+ "scene": "필살기·소환 연출 — 레몬파이 필살기",
+ "duration": 4.37,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.46,
+   "end": 1.74,
+   "speaker": "레몬파이(츠카사)",
+   "ja": "ライトニングブレード!",
+   "ko": "라이트닝 블레이드!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: レイドリングフラワー / ライトニング"
+  }
+ ]
+}

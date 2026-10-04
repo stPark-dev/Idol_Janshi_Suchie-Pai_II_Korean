@@ -1,0 +1,153 @@
+{
+ "voice": "STL007.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 7번째, 상대 루미",
+ "duration": 59.26,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.22,
+   "end": 3.9,
+   "speaker": "루미",
+   "ja": "あ、誰その人?ひょっとして彼氏?",
+   "ko": "어, 그 사람 누구야? 혹시 남자 친구?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.9,
+   "end": 4.88,
+   "speaker": "쿄코",
+   "ja": "あちゃー",
+   "ko": "아이고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.4,
+   "end": 7.9,
+   "speaker": "츠카사",
+   "ja": "おいあんた、眼鏡変えたほうがいいんじゃねえのか?",
+   "ko": "야, 당신 안경 바꾸는 게 좋지 않겠어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.54,
+   "end": 10.7,
+   "speaker": "쿄코",
+   "ja": "まあまあ、抑えて抑えて",
+   "ko": "자자, 진정해, 진정해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.2,
+   "end": 15.8,
+   "speaker": "쿄코",
+   "ja": "ルミさん、彼女は見かけも言動も決して女っぽいとは言えないけど",
+   "ko": "루미 씨, 얘는 겉모습도 언행도 결코 여자답다곤 못 하지만",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.8,
+   "end": 18.46,
+   "speaker": "쿄코",
+   "ja": "生物学的には一応女なのよ",
+   "ko": "생물학적으로는 일단 여자야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.86,
+   "end": 22.92,
+   "speaker": "쿄코",
+   "ja": "そしてレモン、ルミさんは決して目が悪いからじゃなくて",
+   "ko": "그리고 레몬, 루미 씨는 결코 눈이 나빠서가 아니라",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.92,
+   "end": 25.86,
+   "speaker": "쿄코",
+   "ja": "単におっちょこちょいの早とちりさんなだけなのよ",
+   "ko": "그냥 덜렁대고 지레짐작을 잘할 뿐이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 25.86,
+   "end": 28.84,
+   "speaker": "쿄코",
+   "ja": "二人とも、そこんとこ理解してちょうだいね",
+   "ko": "둘 다 그 점을 이해해 줘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.84,
+   "end": 31.54,
+   "speaker": "루미",
+   "ja": "ちっともフォローになってないって",
+   "ko": "하나도 감싸 주는 게 아니잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.6,
+   "end": 35.64,
+   "speaker": "츠카사",
+   "ja": "生物学を持ち出してまで女扱いしてほしくねえよ",
+   "ko": "생물학까지 들먹이면서 여자 취급받고 싶진 않다고!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.66,
+   "end": 39.0,
+   "speaker": "쿄코",
+   "ja": "まあまあ、二人ともそうすねないすねない",
+   "ko": "자자, 둘 다 그렇게 삐치지 마.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.02,
+   "end": 43.7,
+   "speaker": "츠카사",
+   "ja": "なあ、あんたもひどいと思うだろ。性格悪いよな、こいつ",
+   "ko": "이봐, 당신도 너무하다고 생각하지? 이 녀석 성격 나쁘지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.12,
+   "end": 47.48,
+   "speaker": "루미",
+   "ja": "そうね、ちょっとお仕置きが必要かもしれないわね",
+   "ko": "그러게, 벌 좀 줘야 할지도 모르겠네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.48,
+   "end": 48.64,
+   "speaker": "쿄코",
+   "ja": "あら、どうしたの",
+   "ko": "어머, 왜 그래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 48.64,
+   "end": 53.64,
+   "speaker": "루미",
+   "ja": "よーし、麻雀勝負よ。こちらの彼氏のためにも一肌脱ごうじゃない",
+   "ko": "좋아, 마작 승부야! 이쪽 남자 친구를 위해서라도 발 벗고 나서 주지.",
+   "status": "needs_human_review",
+   "note": "一肌脱ぐ(한몫 거들다/살갗을 벗다) 말장난을 '발 벗고 나서다'로 옮김"
+  },
+  {
+   "start": 53.64,
+   "end": 56.84,
+   "speaker": "츠카사",
+   "ja": "だから彼氏じゃないって言ってるのに",
+   "ko": "그러니까 남자 친구 아니라니까!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.84,
+   "end": 58.9,
+   "speaker": "츠카사",
+   "ja": "やっぱ二人とも嫌いだ",
+   "ko": "역시 둘 다 싫어.",
+   "status": "needs_human_review"
+  }
+ ]
+}

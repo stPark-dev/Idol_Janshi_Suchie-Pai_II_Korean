@@ -1,0 +1,58 @@
+{
+ "voice": "STP016.AIF",
+ "scene": "대국 전 대화 — 피치파이(아리스) 16번째 장면, 세실 (마지막 대국 뒤)",
+ "duration": 18.54,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.72,
+   "end": 2.4,
+   "speaker": "세실",
+   "ja": "おめでとう、プリンセス",
+   "ko": "축하한다, 프린세스.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.78,
+   "end": 4.4,
+   "speaker": "세실",
+   "ja": "だが勘違いするな",
+   "ko": "하지만 착각하지 마라.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.48,
+   "end": 7.4,
+   "speaker": "세실",
+   "ja": "お前たちは単に麻雀に勝っただけだ",
+   "ko": "너희는 그저 마작에서 이겼을 뿐이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.5,
+   "end": 13.3,
+   "speaker": "세실",
+   "ja": "魔法という名のえこひいきで人々を幸せにすることなど、果たしてできるのか",
+   "ko": "마법이라는 이름의 편애로 사람들을 행복하게 하는 게 과연 가능할까?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 魔法という名のエクヒーキで人々を幸せにすることなど、果たしてできるのか"
+  },
+  {
+   "start": 14.34,
+   "end": 16.5,
+   "speaker": "세실",
+   "ja": "本当の勝負はこれからだぜ",
+   "ko": "진짜 승부는 이제부터다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.3,
+   "end": 18.18,
+   "speaker": "세실",
+   "ja": "また会おう!",
+   "ko": "또 보자!",
+   "status": "needs_human_review"
+  }
+ ]
+}

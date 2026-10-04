@@ -1,0 +1,24 @@
+{
+ "voice": "H71A.AIF",
+ "scene": "벌칙 장면 — 유키 2번째, A: 패배 직후",
+ "duration": 4.19,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.8,
+   "speaker": "유키",
+   "ja": "ねえ、ここまでじゃダメかな?",
+   "ko": "있잖아, 여기까지면 안 될까?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.68,
+   "end": 3.48,
+   "speaker": "유키",
+   "ja": "うーん…",
+   "ko": "",
+   "status": "needs_human_review"
+  }
+ ]
+}

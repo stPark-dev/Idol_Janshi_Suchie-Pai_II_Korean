@@ -1,0 +1,40 @@
+{
+ "voice": "V74A.AIF",
+ "scene": "쿄코(스치파이) 장면 4",
+ "duration": 11.5,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 0.66,
+   "speaker": "스치파이",
+   "ja": "ん?",
+   "ko": "응?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.12,
+   "end": 3.9,
+   "speaker": "스치파이",
+   "ja": "さあ、あー",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.06,
+   "end": 7.44,
+   "speaker": "스치파이",
+   "ja": "ちょっと、いや、あ、いやー",
+   "ko": "잠깐, 싫어! 아, 안 돼!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.0,
+   "end": 11.0,
+   "speaker": "스치파이",
+   "ja": "な、なんなのよ、もう",
+   "ko": "뭐, 뭐야 대체, 정말!",
+   "status": "needs_human_review"
+  }
+ ]
+}

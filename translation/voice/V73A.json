@@ -1,0 +1,40 @@
+{
+ "voice": "V73A.AIF",
+ "scene": "쿄코(스치파이) 장면 3",
+ "duration": 11.36,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 0.74,
+   "speaker": "스치파이",
+   "ja": "え?",
+   "ko": "어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.56,
+   "end": 5.08,
+   "speaker": "스치파이",
+   "ja": "あ、あー、そんなー",
+   "ko": "아, 아… 그럴 수가~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.8,
+   "end": 7.12,
+   "speaker": "스치파이",
+   "ja": "あ、あー",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.52,
+   "end": 10.8,
+   "speaker": "스치파이",
+   "ja": "なんでこうなっちゃうわけ?",
+   "ko": "왜 이렇게 되는 건데?",
+   "status": "needs_human_review"
+  }
+ ]
+}

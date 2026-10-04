@@ -1,0 +1,16 @@
+{
+ "voice": "B73A.AIF",
+ "scene": "벌칙 장면 — 아리스(피치파이) 4번째, A: 패배 직후",
+ "duration": 2.0,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.34,
+   "speaker": "아리스",
+   "ja": "これじゃダメなんですか?",
+   "ko": "이걸로는 안 되나요?",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -28,7 +28,11 @@
 
 ## 현재 상태
 
-**v1.0 — 1차 배포판** (그림 글자 전부 검수·승인, 빌드가 배포 가능으로 판정. 대사 음성 자막은 넣지 않음 — `docs/initial-survey.md` 5절). 들어 있는 것:
+**v1.0 — 1차 배포판** (그림 글자 전부 검수·승인, 빌드가 배포 가능으로 판정).
+
+**음성 자막 — 개발 중** (2026-10-04 시작, [`docs/voice-subtitles.md`](docs/voice-subtitles.md)): 대국 전 대화 94개, 벌칙·파트너 소개·변신·오프닝 등 장면 음성 100개, 모두 2,078줄. 음성 인식 받아쓰기 → 초벌 → 독립 2차 검수까지 마쳤고(2,044줄 `needs_human_review`, 34줄 보류), 사람 검수 전이라 자막을 넣은 빌드는 `distribution: false`입니다. 자막은 대사가 들리는 순간에 맞춰 화면 아래에 최대 두 줄로 나옵니다. 오프닝, 파트너 소개·변신, 1·2스테이지 대국 전 대화, 루미 벌칙 장면에서 화면 표시를 확인했습니다.
+
+v1.0에 들어 있는 것:
 
 - 한글 타이틀 로고 (제공 로고 `title_logo.png`를 원래 스프라이트 3칸과 팔레트에 맞춰 넣음, 승인)
 - 메뉴 그림 글자 58개 (`SELECT1.BIN`: 메뉴·난이도·파트너 선택·사운드 테스트·스테이지 선택)
@@ -56,6 +60,7 @@
 | [`translation/title_labels.json`](translation/title_labels.json) | 타이틀 선택지 1개와 제외 항목 10개 |
 | [`translation/credits/`](translation/credits/) | 엔딩 크레딧 롤 다섯 벌(줄마다 한 항목, 배치 `assets/ending/`) |
 | [`translation/clear.json`](translation/clear.json) | 엔딩 뒤 화면 글자 그림 14장(`CLEAR.DAT`) |
+| [`translation/voice/`](translation/voice/) | 음성 자막: 음성 파일마다 한 개(시작·끝 초, 말한 사람, 일본어, 한국어, 상태). 그룹·촉발 파일은 [`assets/subtitle/scenes.json`](assets/subtitle/scenes.json) |
 | [`translation/boot_notice.json`](translation/boot_notice.json) | 첫 부팅 안내 5줄과 제외 항목 3개 |
 | [`translation/boot_unready.json`](translation/boot_unready.json), [`boot_ram.json`](translation/boot_ram.json), [`boot_savefail.json`](translation/boot_savefail.json) | 백업 RAM 안내 화면 8장(전체 화면 글자 그림, 배치 `assets/boot/notices_layout.json`) |
 | [`translation/maxgrp.json`](translation/maxgrp.json) | 대국 보너스 화면 9개, 제외 29개 |
@@ -69,7 +74,8 @@
 
 ## 준비물
 
-- Python 3.11 이상, [Pillow](https://pypi.org/project/Pillow/) 9.4 이상, pytest (테스트용)
+- Python 3.11 이상, [Pillow](https://pypi.org/project/Pillow/) 9.4 이상(raqm 글자 배치 포함 — Windows에서는 WSL에서 빌드), pytest (테스트용)
+- 자막 코드 `assets/subtitle/SUB.BIN`을 다시 만들 때만: 빅엔디언 SH 크로스 gcc(`apt install gcc-sh4-linux-gnu`) 후 `sh tools/subtitle/build.sh`
 - 나눔스퀘어라운드 ExtraBold (`/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf`, 데비안 `fonts-nanum-extra`)
 - 원본 1번 디스크 BIN/CUE (Redump `Idol Janshi Suchie-Pai II (Japan) (Disc 1)`). 트랙 SHA-1이 다르면 빌드가 거부합니다.
   - Track 1: `90efa69e3b3f89503e356d6d6f5112ff8a541f1d`
@@ -82,7 +88,7 @@
 python3 tools/khpatch.py build --source "/경로/Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
 
 # 대조군: 타이틀 그림은 그대로 두고 압축만 다시 한 디스크 (압축기 호환 확인용)
-python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original --bonus original --ending original
+python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original --bonus original --ending original --subtitles original
 
 # 테스트
 python3 -m pytest -q tests
@@ -97,7 +103,7 @@ python3 -m pytest -q tests
 조사 결과 이 게임의 대화는 **자막 없이 음성으로만** 나오고, 화면의 일본어는 대부분 그림 글자입니다([`docs/initial-survey.md`](docs/initial-survey.md)). 그래서 아래 순서로 진행합니다.
 
 1. **1번 디스크(본편)의 그림 글자 먼저.** 타이틀 로고(제공된 `title_logo.png`), 메뉴, 파트너 선택, 상대 소개 카드, 대국 화면 표시, 역(役) 이름, 결과·엔딩 화면 글자를 한글 그림으로 바꿉니다.
-2. **자막은 그다음에 판단합니다.** 한 장면에 한국어 자막을 넣는 시험(PoC)으로 비용을 잰 뒤, 전체 대사에 자막을 넣을지 정합니다. 원문 대본이 디스크에 없어서 자막을 넣으려면 음성 받아쓰기부터 해야 합니다.
+2. **그다음 음성 자막.** 원문 대본이 디스크에 없어서 음성 인식(Whisper)으로 받아쓴 뒤 번역합니다. 대국 중 짧은 호출(퐁·리치 등)은 넣지 않습니다(사람 결정 2026-10-04).
 3. **2번 디스크(오마케)는 본편이 끝난 뒤** 글자가 있는 부분을 조사해서 범위를 정합니다.
 4. **음성은 원어(일본어) 그대로** 둡니다.
 5. 영어로 된 그림 글자와 회사 로고는 그대로 둡니다.

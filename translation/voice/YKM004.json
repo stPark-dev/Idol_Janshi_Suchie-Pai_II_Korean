@@ -1,0 +1,278 @@
+{
+ "voice": "YKM004.AIF",
+ "scene": "대국 전 대화 — 유키 4번째, 상대 루미(펫 길들이기 상담)",
+ "duration": 123.2,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.46,
+   "end": 7.08,
+   "speaker": "유키",
+   "ja": "あの、ルミさんを人生の大先輩と見込んで、教えてほしいことがあるんですけど",
+   "ko": "저기, 루미 씨를 인생의 대선배로 믿고 여쭤볼 게 있는데요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.08,
+   "end": 11.78,
+   "speaker": "루미",
+   "ja": "「大」を強調しなくていいわよ、「大」を。まだ二十歳なんだから",
+   "ko": "\"대\" 자는 강조 안 해도 돼, \"대\" 자는! 아직 스무 살이거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.08,
+   "end": 16.7,
+   "speaker": "유키",
+   "ja": "あの、ペットの飼われ方ってご存知かなって",
+   "ko": "저기, 펫으로 길러지는 법을 아시나 해서요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.38,
+   "end": 22.86,
+   "speaker": "루미",
+   "ja": "なんだ、そんなこと。もちろん知ってるわよ。ルミちゃんに任せなさい",
+   "ko": "뭐야, 그런 거? 당연히 알지. 루미 언니한테 맡겨.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.56,
+   "end": 27.0,
+   "speaker": "루미",
+   "ja": "まずペットを飼う上で一番重要なのはしつけよね",
+   "ko": "우선 펫을 기를 때 제일 중요한 건 훈육이지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 27.0,
+   "end": 29.7,
+   "speaker": "루미",
+   "ja": "いわゆる飴とムチってやつよ",
+   "ko": "이른바 당근과 채찍이라는 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.0,
+   "end": 35.28,
+   "speaker": "유키",
+   "ja": "む、ムチですか? ま、まぁちょっとだけ覚悟はしてたんですけど",
+   "ko": "채, 채찍이요? 뭐, 뭐어 조금은 각오했지만요.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: む、無知ですか?ま、まぁちょっとだけ覚悟はしてたんですけど"
+  },
+  {
+   "start": 35.28,
+   "end": 40.16,
+   "speaker": "루미",
+   "ja": "で、一番最初に仕込まなきゃなんないのは、やっぱり糞のしつけかな",
+   "ko": "그리고 맨 처음 가르쳐야 하는 건 역시 똥 가리기려나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 40.16,
+   "end": 43.74,
+   "speaker": "유키",
+   "ja": "ふ、糞って、その、うんちですか?",
+   "ko": "똥, 똥이라면 그, 응가 말이에요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.6,
+   "end": 47.66,
+   "speaker": "루미",
+   "ja": "そう、部屋の中にペット用のおトイレを用意して",
+   "ko": "그래, 방 안에 펫용 화장실을 마련해서",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.66,
+   "end": 51.18,
+   "speaker": "유키",
+   "ja": "えぇー! 部屋の中でうんちするんですかー?",
+   "ko": "에에! 방 안에서 응가를 하는 거예요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.36,
+   "end": 52.8,
+   "speaker": "유키",
+   "ja": "うそー",
+   "ko": "말도 안 돼!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.88,
+   "end": 58.06,
+   "speaker": "루미",
+   "ja": "今時は当然よ。外で好き勝手されたらご近所に迷惑でしょうが",
+   "ko": "요즘은 당연하지. 밖에서 아무 데나 싸면 이웃한테 민폐잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 58.06,
+   "end": 61.52,
+   "speaker": "유키",
+   "ja": "ああ、運命って残酷なのね",
+   "ko": "아아, 운명이란 잔혹하구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 61.52,
+   "end": 66.7,
+   "speaker": "루미",
+   "ja": "まあね、餌に気をつければそれほど臭くないし",
+   "ko": "뭐, 먹이만 신경 쓰면 그렇게 냄새도 안 나고",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: おばねえ餌に気をつければそれほど臭くないし"
+  },
+  {
+   "start": 66.7,
+   "end": 68.96,
+   "speaker": "루미",
+   "ja": "見慣れちゃえば可愛いもんよ",
+   "ko": "보다 보면 귀여운 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 68.96,
+   "end": 74.34,
+   "speaker": "유키",
+   "ja": "え、それってひょっとして、その、出したのをわざわざ見るんですか",
+   "ko": "에, 그건 혹시… 그, 싼 걸 일부러 본다는 거예요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 74.34,
+   "end": 77.5,
+   "speaker": "루미",
+   "ja": "もちろん。ペットの健康状態を知るには",
+   "ko": "물론이지. 펫의 건강 상태를 알려면",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 77.5,
+   "end": 80.54,
+   "speaker": "루미",
+   "ja": "それが一番なんだから、我慢しなくちゃ",
+   "ko": "그게 제일이니까 참아야지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 80.54,
+   "end": 84.68,
+   "speaker": "유키",
+   "ja": "ああ、わかったわよ。我慢してみせるわよ",
+   "ko": "아아, 알았어! 참고 말 거야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 85.18,
+   "end": 88.32,
+   "speaker": "유키",
+   "ja": "ユキの大好きな人のためなら何だってできるもん",
+   "ko": "유키가 정말 좋아하는 사람을 위해서라면 뭐든 할 수 있어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 88.32,
+   "end": 90.2,
+   "speaker": "루미",
+   "ja": "そうそう、その意気よ",
+   "ko": "그래그래, 바로 그 기세야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 90.7,
+   "end": 94.62,
+   "speaker": "루미",
+   "ja": "でもまあ、この私でさえミルクを飼ってるうちにすぐに慣れちゃったんだから",
+   "ko": "하긴 나조차 밀크를 기르다 보니 금방 익숙해졌으니까",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 94.62,
+   "end": 97.0,
+   "speaker": "루미",
+   "ja": "それほど大したことじゃないと思うけどね",
+   "ko": "그렇게 대단한 일은 아닐 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 98.04,
+   "end": 98.9,
+   "speaker": "유키",
+   "ja": "え?",
+   "ko": "어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 99.92,
+   "end": 101.44,
+   "speaker": "유키",
+   "ja": "ちょっと待って、おばさん",
+   "ko": "잠깐만, 아줌마.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 101.44,
+   "end": 105.18,
+   "speaker": "유키",
+   "ja": "じゃあ今までの話って、うさぎの話だったわけ?",
+   "ko": "그럼 지금까지 한 얘기가 토끼 얘기였던 거야?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 105.38,
+   "end": 109.34,
+   "speaker": "루미",
+   "ja": "え? 犬でも猫でも大して違わないと思うけど",
+   "ko": "어? 개든 고양이든 별 차이 없을 텐데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 109.34,
+   "end": 112.78,
+   "speaker": "유키",
+   "ja": "あーん! 乙女心をもてあそんで!",
+   "ko": "아앙! 소녀의 마음을 갖고 놀다니!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: あーん!乙女心を持って遊んで!"
+  },
+  {
+   "start": 113.14,
+   "end": 114.12,
+   "speaker": "유키",
+   "ja": "許せないわ!",
+   "ko": "용서 못 해!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 114.68,
+   "end": 117.56,
+   "speaker": "유키",
+   "ja": "こうなったら麻雀でボコボコにしてやるんだから",
+   "ko": "이렇게 된 이상 마작으로 묵사발을 내 줄 테야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 117.56,
+   "end": 119.02,
+   "speaker": "유키",
+   "ja": "さあ、勝負よ",
+   "ko": "자, 승부야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 119.02,
+   "end": 122.64,
+   "speaker": "루미",
+   "ja": "な、なに? 何と勘違いしてたのよ、あんた",
+   "ko": "뭐, 뭐야? 대체 뭘 착각한 거야, 너?",
+   "status": "needs_human_review"
+  }
+ ]
+}

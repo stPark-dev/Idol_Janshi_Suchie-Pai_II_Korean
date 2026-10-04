@@ -1,0 +1,24 @@
+{
+ "voice": "T70C.AIF",
+ "scene": "벌칙 장면 — 시호, C: 마무리 (정신을 차림)",
+ "duration": 6.8,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.2,
+   "speaker": "시호",
+   "ja": "え、ああ、ああー!",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.48,
+   "end": 6.12,
+   "speaker": "시호",
+   "ja": "わ、わたくし、いったいどうしていたんですか?",
+   "ko": "저, 저는 대체 어떻게 된 거죠?",
+   "status": "needs_human_review"
+  }
+ ]
+}

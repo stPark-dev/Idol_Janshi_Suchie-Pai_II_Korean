@@ -1,0 +1,16 @@
+{
+ "voice": "D51A.AIF",
+ "scene": "파트너 변신 — 체리파이 변신 외침",
+ "duration": 9.39,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 6.54,
+   "end": 8.94,
+   "speaker": "체리파이(사나에)",
+   "ja": "チェリーパイ見参",
+   "ko": "체리파이 등장!",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "voice": "YKM003.AIF",
+ "scene": "대국 전 대화 — 유키 3번째, 상대 리에(루미의 행방을 묻다)",
+ "duration": 174.2,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.0,
+   "end": 4.44,
+   "speaker": "유키",
+   "ja": "もう、ルミおばさんてば病院にいないんだもんな",
+   "ko": "정말, 루미 아줌마는 병원에 없잖아.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: もうルミおばさんてば病院にいないだもんな"
+  },
+  {
+   "start": 6.02,
+   "end": 9.6,
+   "speaker": "유키",
+   "ja": "でも情報通のリエさんなら、きっと居場所をつかんでるはずよね",
+   "ko": "그래도 소식통인 리에 씨라면 분명 있는 곳을 알 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.66,
+   "end": 13.48,
+   "speaker": "유키",
+   "ja": "リエさんてば可愛い女の子に目がないから",
+   "ko": "리에 씨는 귀여운 여자애라면 사족을 못 쓰니까",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.48,
+   "end": 17.26,
+   "speaker": "유키",
+   "ja": "ここは一つ、ユキのお色気作戦で攻略しちゃおうっと",
+   "ko": "여기선 유키의 색기 작전으로 공략해야지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.5,
+   "end": 22.64,
+   "speaker": "리에",
+   "ja": "悪いわね、お待たせしちゃって。ちょっと仕事のキリが悪くてね",
+   "ko": "미안해, 기다리게 해서. 일이 애매하게 걸려 있어서 말이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.52,
+   "end": 25.94,
+   "speaker": "유키",
+   "ja": "ああ、会いたかったわ、お姉さま",
+   "ko": "아아, 보고 싶었어, 언니~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.6,
+   "end": 27.3,
+   "speaker": "리에",
+   "ja": "は?",
+   "ko": "뭐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 27.46,
+   "end": 32.36,
+   "speaker": "유키",
+   "ja": "ユキ、お姉さまのこと大大大好き",
+   "ko": "유키는 언니가 정말정말정말 좋아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.36,
+   "end": 36.06,
+   "speaker": "유키",
+   "ja": "だからユキのお願いを聞いてほしいの",
+   "ko": "그러니까 유키 부탁 좀 들어줘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.06,
+   "end": 40.78,
+   "speaker": "리에",
+   "ja": "ちょ、ちょっとユキちゃん。それひょっとして私をくどいてるつもりなの?",
+   "ko": "자, 잠깐 유키. 그거 혹시 날 꼬시는 거니?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 40.78,
+   "end": 43.78,
+   "speaker": "리에",
+   "ja": "だったらもうちょっとなんとかしてほしいわね",
+   "ko": "그럴 거면 좀 더 제대로 해 줬으면 좋겠는데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 43.78,
+   "end": 48.68,
+   "speaker": "유키",
+   "ja": "え、なんとかって言われたって、ユキわかんないもん",
+   "ko": "에, 제대로 하라고 해도 유키는 모르겠는걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 49.34,
+   "end": 50.3,
+   "speaker": "리에",
+   "ja": "しょうがないわね",
+   "ko": "어쩔 수 없네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.62,
+   "end": 55.08,
+   "speaker": "리에",
+   "ja": "じゃあちょっと例を見せるから、いい?",
+   "ko": "그럼 예를 좀 보여 줄게. 잘 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.44,
+   "end": 59.74,
+   "speaker": "리에",
+   "ja": "リエさん、ユキ、昨日夢を見たの",
+   "ko": "리에 씨, 유키 어제 꿈을 꿨어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 60.28,
+   "end": 63.24,
+   "speaker": "리에",
+   "ja": "リエさんと愛し合ってる、いけない夢",
+   "ko": "리에 씨랑 사랑을 나누는 발칙한 꿈.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.24,
+   "end": 66.42,
+   "speaker": "리에",
+   "ja": "夢の中でリエさんに抱かれながら",
+   "ko": "꿈속에서 리에 씨 품에 안겨서",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 66.42,
+   "end": 69.16,
+   "speaker": "리에",
+   "ja": "ユキ、一つだけお願いを言ってみたんだけど",
+   "ko": "유키가 딱 하나 부탁을 해 봤는데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 70.12,
+   "end": 72.9,
+   "speaker": "리에",
+   "ja": "リエさんはただ微笑んでいるだけだったの",
+   "ko": "리에 씨는 그저 미소만 짓고 있었어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 73.64,
+   "end": 75.98,
+   "speaker": "리에",
+   "ja": "現実のリエさんはどうなのかな",
+   "ko": "현실의 리에 씨는 어떨까?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 76.76,
+   "end": 78.3,
+   "speaker": "리에",
+   "ja": "ねえ?",
+   "ko": "응?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 78.58,
+   "end": 81.7,
+   "speaker": "리에",
+   "ja": "…とか言ってお願いを切り出すの。どう?",
+   "ko": "…이러면서 부탁을 꺼내는 거야. 어때?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 82.24,
+   "end": 85.76,
+   "speaker": "유키",
+   "ja": "わー、なんか聞いててドキドキしちゃった",
+   "ko": "와아, 듣기만 해도 두근두근했어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 86.38,
+   "end": 88.38,
+   "speaker": "유키",
+   "ja": "でも、ユキにできるかな",
+   "ko": "그래도 유키가 할 수 있을까?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 90.4,
+   "end": 91.56,
+   "speaker": "유키",
+   "ja": "うん、えーっと",
+   "ko": "응, 그러니까…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 92.62,
+   "end": 96.1,
+   "speaker": "유키",
+   "ja": "リエさん、ユキ、昨日夢を見たの",
+   "ko": "리에 씨, 유키 어제 꿈을 꿨어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 96.58,
+   "end": 99.1,
+   "speaker": "유키",
+   "ja": "リエさんと愛し合っているいけない夢よ",
+   "ko": "리에 씨랑 사랑을 나누는 발칙한 꿈이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 99.1,
+   "end": 103.24,
+   "speaker": "리에",
+   "ja": "今の「いけない夢よ」ってとこ、あっさり言いすぎてるわね",
+   "ko": "방금 '발칙한 꿈이야' 부분, 너무 싱겁게 말했어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 103.24,
+   "end": 105.8,
+   "speaker": "리에",
+   "ja": "もっと含みを持たせてやってみて",
+   "ko": "좀 더 의미심장하게 해 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 105.8,
+   "end": 110.28,
+   "speaker": "유키",
+   "ja": "はい。えー、リエさんと愛し合ってる",
+   "ko": "네. 음, 리에 씨랑 사랑을 나누는",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 110.28,
+   "end": 112.18,
+   "speaker": "유키",
+   "ja": "いけない夢よ",
+   "ko": "발칙한 꿈이야…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 112.94,
+   "end": 117.46,
+   "speaker": "유키",
+   "ja": "夢の中でユキは、リエさんに一つだけお願いをするんだけど",
+   "ko": "꿈속에서 유키는 리에 씨한테 딱 하나 부탁을 하는데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 118.1,
+   "end": 122.16,
+   "speaker": "유키",
+   "ja": "リエさんはただ笑っているだけで、聞いてくれなかったの",
+   "ko": "리에 씨는 웃기만 하고 들어주지 않았어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 122.16,
+   "end": 126.04,
+   "speaker": "리에",
+   "ja": "うーん、まあ、いい線いってるわね。はい、続けて",
+   "ko": "음, 뭐, 꽤 괜찮네. 자, 계속해.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: うーんまあ / イーサン言ってるわね / はい続けて"
+  },
+  {
+   "start": 126.04,
+   "end": 127.02,
+   "speaker": "유키",
+   "ja": "あ、はい",
+   "ko": "아, 네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 128.74,
+   "end": 131.3,
+   "speaker": "유키",
+   "ja": "現実のリエさんはどうなのかな",
+   "ko": "현실의 리에 씨는 어떨까?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 132.38,
+   "end": 136.16,
+   "speaker": "유키",
+   "ja": "ねえリエさん、ルミさんって今どこにいるのか教えて",
+   "ko": "있잖아 리에 씨, 루미 씨가 지금 어디 있는지 알려 줘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 136.16,
+   "end": 138.84,
+   "speaker": "리에",
+   "ja": "はあ? それがお願い?",
+   "ko": "뭐? 그게 부탁이야?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 138.84,
+   "end": 141.55,
+   "speaker": "리에",
+   "ja": "あんたね、そんなこと聞くのに",
+   "ko": "너 말이야, 그런 걸 묻는 데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 141.55,
+   "end": 144.98,
+   "speaker": "리에",
+   "ja": "いちいちもったいぶった言い方しなくてもいいの",
+   "ko": "일일이 뜸 들이는 말투 안 써도 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 146.2,
+   "end": 150.66,
+   "speaker": "리에",
+   "ja": "ルミちゃんなら今うさぎ連れて、その辺を散歩してるわよ。もう",
+   "ko": "루미라면 지금 토끼 데리고 이 근처 산책 중이야. 참 나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 151.94,
+   "end": 155.34,
+   "speaker": "유키",
+   "ja": "えー、どうして? 一体どこがまずかったのかしら",
+   "ko": "에~ 왜? 대체 뭐가 문제였던 걸까?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: えー、どうして一体どこが難かったのかしら"
+  },
+  {
+   "start": 155.76,
+   "end": 157.88,
+   "speaker": "리에",
+   "ja": "要はムードの問題なんだけど",
+   "ko": "요는 분위기 문제인데 말이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 158.72,
+   "end": 164.44,
+   "speaker": "리에",
+   "ja": "ま、私のペットになってくれたら、その辺のニュアンスをみっちり仕込んであげられるんだけどね",
+   "ko": "뭐, 내 펫이 되어 준다면 그런 뉘앙스를 단단히 가르쳐 줄 수 있는데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 165.44,
+   "end": 168.42,
+   "speaker": "리에",
+   "ja": "でも今日はこれでおしまい。さあ、仕事仕事",
+   "ko": "하지만 오늘은 여기까지. 자, 일하자 일.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 169.38,
+   "end": 173.66,
+   "speaker": "유키",
+   "ja": "も、目的は達成されたのに、なんか虚しいわ",
+   "ko": "모, 목적은 이뤘는데 왠지 허무해.",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "voice": "Q71A.AIF",
+ "scene": "벌칙 장면 — 루미 2번째, A: 패배 직후",
+ "duration": 2.39,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.02,
+   "speaker": "루미",
+   "ja": "しゃあない、仲間になってやるか",
+   "ko": "어쩔 수 없지, 한편이 되어 줄까.",
+   "status": "needs_human_review"
+  }
+ ]
+}

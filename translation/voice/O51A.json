@@ -1,0 +1,16 @@
+{
+ "voice": "O51A.AIF",
+ "scene": "세실 장면",
+ "duration": 8.88,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 2.19,
+   "end": 2.95,
+   "speaker": "세실",
+   "ja": "うううう…",
+   "ko": "",
+   "status": "needs_human_review"
+  }
+ ]
+}

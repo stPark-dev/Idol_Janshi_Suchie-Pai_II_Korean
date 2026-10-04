@@ -1,0 +1,1419 @@
+{
+ "_about": "자막 그룹: 같은 장면의 음성들과, 게임이 그 장면을 시작하며 읽는 파일(촉발 파일). 그룹은 촉발 파일을 읽을 때 함께 읽힌다(장면 도중 CD 읽기는 장면을 멈춤). 생성: work/mkscenes.py (실행 파일의 표·인라인 문자열과 진단 기록).",
+ "excluded": {
+  "in_match_calls": "X00~X40 (파트너·상대 대국 중 호출), V00~V29, Y* (역 이름), W00~W46 (메뉴 안내·패널 매치 호출)",
+  "no_trigger_found": "W60~W74, P60A, P61A, V61A, V62A: 시스템 음성(컨티뉴·게임 오버 등), 장면 파일 없이 재생",
+  "ng_collection": "ZZA~ZZP: 사운드 테스트 NG집 (나중에 판단)"
+ },
+ "groups": [
+  {
+   "id": "STP001",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 1번째",
+   "voices": [
+    "STP001.AIF"
+   ],
+   "triggers": [
+    "P000.MTS"
+   ]
+  },
+  {
+   "id": "STP002",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 2번째",
+   "voices": [
+    "STP002.AIF"
+   ],
+   "triggers": [
+    "P001.MTS"
+   ]
+  },
+  {
+   "id": "STP003",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 3번째",
+   "voices": [
+    "STP003.AIF"
+   ],
+   "triggers": [
+    "P002.MTS"
+   ]
+  },
+  {
+   "id": "STP004",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 4번째",
+   "voices": [
+    "STP004.AIF"
+   ],
+   "triggers": [
+    "P003.MTS"
+   ]
+  },
+  {
+   "id": "STP005",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 5번째",
+   "voices": [
+    "STP005.AIF"
+   ],
+   "triggers": [
+    "P004.MTS"
+   ]
+  },
+  {
+   "id": "STP006",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 6번째",
+   "voices": [
+    "STP006.AIF"
+   ],
+   "triggers": [
+    "P005.MTS"
+   ]
+  },
+  {
+   "id": "STP007",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 7번째",
+   "voices": [
+    "STP007.AIF"
+   ],
+   "triggers": [
+    "P006.MTS"
+   ]
+  },
+  {
+   "id": "STP008",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 8번째",
+   "voices": [
+    "STP008.AIF"
+   ],
+   "triggers": [
+    "P007.MTS"
+   ]
+  },
+  {
+   "id": "STP009",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 9번째",
+   "voices": [
+    "STP009.AIF"
+   ],
+   "triggers": [
+    "P008.MTS"
+   ]
+  },
+  {
+   "id": "STP010",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 10번째",
+   "voices": [
+    "STP010.AIF"
+   ],
+   "triggers": [
+    "P009.MTS"
+   ]
+  },
+  {
+   "id": "STP011",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 11번째",
+   "voices": [
+    "STP011.AIF"
+   ],
+   "triggers": [
+    "P010.MTS"
+   ]
+  },
+  {
+   "id": "STP012",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 12번째",
+   "voices": [
+    "STP012.AIF"
+   ],
+   "triggers": [
+    "P011.MTS"
+   ]
+  },
+  {
+   "id": "STP013",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 13번째",
+   "voices": [
+    "STP013.AIF"
+   ],
+   "triggers": [
+    "P012.MTS"
+   ]
+  },
+  {
+   "id": "STP014",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 14번째",
+   "voices": [
+    "STP014.AIF"
+   ],
+   "triggers": [
+    "P013.MTS"
+   ]
+  },
+  {
+   "id": "STP015",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 15번째",
+   "voices": [
+    "STP015.AIF"
+   ],
+   "triggers": [
+    "P014.MTS"
+   ]
+  },
+  {
+   "id": "STP016",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 16번째",
+   "voices": [
+    "STP016.AIF"
+   ],
+   "triggers": [
+    "P015.MTS"
+   ]
+  },
+  {
+   "id": "STP017",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 17번째",
+   "voices": [
+    "STP017.AIF"
+   ],
+   "triggers": [
+    "P016.MTS"
+   ]
+  },
+  {
+   "id": "STP018",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 18번째",
+   "voices": [
+    "STP018.AIF"
+   ],
+   "triggers": [
+    "P017.MTS"
+   ]
+  },
+  {
+   "id": "STP019",
+   "scene": "대국 전 대화 — 파트너 피치파이(아리스), 19번째",
+   "voices": [
+    "STP019.AIF"
+   ],
+   "triggers": [
+    "P018.MTS"
+   ]
+  },
+  {
+   "id": "STL001",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 1번째",
+   "voices": [
+    "STL001.AIF"
+   ],
+   "triggers": [
+    "P020.MTS"
+   ]
+  },
+  {
+   "id": "STL002",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 2번째",
+   "voices": [
+    "STL002.AIF"
+   ],
+   "triggers": [
+    "P021.MTS"
+   ]
+  },
+  {
+   "id": "STL003",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 3번째",
+   "voices": [
+    "STL003.AIF"
+   ],
+   "triggers": [
+    "P022.MTS"
+   ]
+  },
+  {
+   "id": "STL004",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 4번째",
+   "voices": [
+    "STL004.AIF"
+   ],
+   "triggers": [
+    "P023.MTS"
+   ]
+  },
+  {
+   "id": "STL005",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 5번째",
+   "voices": [
+    "STL005.AIF"
+   ],
+   "triggers": [
+    "P024.MTS"
+   ]
+  },
+  {
+   "id": "STL006",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 6번째",
+   "voices": [
+    "STL006.AIF"
+   ],
+   "triggers": [
+    "P025.MTS"
+   ]
+  },
+  {
+   "id": "STL007",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 7번째",
+   "voices": [
+    "STL007.AIF"
+   ],
+   "triggers": [
+    "P026.MTS"
+   ]
+  },
+  {
+   "id": "STL008",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 8번째",
+   "voices": [
+    "STL008.AIF"
+   ],
+   "triggers": [
+    "P027.MTS"
+   ]
+  },
+  {
+   "id": "STL009",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 9번째",
+   "voices": [
+    "STL009.AIF"
+   ],
+   "triggers": [
+    "P028.MTS"
+   ]
+  },
+  {
+   "id": "STL010",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 10번째",
+   "voices": [
+    "STL010.AIF"
+   ],
+   "triggers": [
+    "P029.MTS"
+   ]
+  },
+  {
+   "id": "STL011",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 11번째",
+   "voices": [
+    "STL011.AIF"
+   ],
+   "triggers": [
+    "P030.MTS"
+   ]
+  },
+  {
+   "id": "STL012",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 12번째",
+   "voices": [
+    "STL012.AIF"
+   ],
+   "triggers": [
+    "P031.MTS"
+   ]
+  },
+  {
+   "id": "STL013",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 13번째",
+   "voices": [
+    "STL013.AIF"
+   ],
+   "triggers": [
+    "P032.MTS"
+   ]
+  },
+  {
+   "id": "STL014",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 14번째",
+   "voices": [
+    "STL014.AIF"
+   ],
+   "triggers": [
+    "P033.MTS"
+   ]
+  },
+  {
+   "id": "STL015",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 15번째",
+   "voices": [
+    "STL015.AIF"
+   ],
+   "triggers": [
+    "P034.MTS"
+   ]
+  },
+  {
+   "id": "STL016",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 16번째",
+   "voices": [
+    "STL016.AIF"
+   ],
+   "triggers": [
+    "P035.MTS"
+   ]
+  },
+  {
+   "id": "STL017",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 17번째",
+   "voices": [
+    "STL017.AIF"
+   ],
+   "triggers": [
+    "P036.MTS"
+   ]
+  },
+  {
+   "id": "STL018",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 18번째",
+   "voices": [
+    "STL018.AIF"
+   ],
+   "triggers": [
+    "P037.MTS"
+   ]
+  },
+  {
+   "id": "STL019",
+   "scene": "대국 전 대화 — 파트너 레몬파이(츠카사), 19번째",
+   "voices": [
+    "STL019.AIF"
+   ],
+   "triggers": [
+    "P038.MTS"
+   ]
+  },
+  {
+   "id": "STC001",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 1번째",
+   "voices": [
+    "STC001.AIF"
+   ],
+   "triggers": [
+    "P040.MTS"
+   ]
+  },
+  {
+   "id": "STC002",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 2번째",
+   "voices": [
+    "STC002.AIF"
+   ],
+   "triggers": [
+    "P041.MTS"
+   ]
+  },
+  {
+   "id": "STC003",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 3번째",
+   "voices": [
+    "STC003.AIF"
+   ],
+   "triggers": [
+    "P042.MTS"
+   ]
+  },
+  {
+   "id": "STC004",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 4번째",
+   "voices": [
+    "STC004.AIF"
+   ],
+   "triggers": [
+    "P043.MTS"
+   ]
+  },
+  {
+   "id": "STC005",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 5번째",
+   "voices": [
+    "STC005.AIF"
+   ],
+   "triggers": [
+    "P044.MTS"
+   ]
+  },
+  {
+   "id": "STC006",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 6번째",
+   "voices": [
+    "STC006.AIF"
+   ],
+   "triggers": [
+    "P045.MTS"
+   ]
+  },
+  {
+   "id": "STC007",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 7번째",
+   "voices": [
+    "STC007.AIF"
+   ],
+   "triggers": [
+    "P046.MTS"
+   ]
+  },
+  {
+   "id": "STC008",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 8번째",
+   "voices": [
+    "STC008.AIF"
+   ],
+   "triggers": [
+    "P047.MTS"
+   ]
+  },
+  {
+   "id": "STC009",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 9번째",
+   "voices": [
+    "STC009.AIF"
+   ],
+   "triggers": [
+    "P048.MTS"
+   ]
+  },
+  {
+   "id": "STC010",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 10번째",
+   "voices": [
+    "STC010.AIF"
+   ],
+   "triggers": [
+    "P049.MTS"
+   ]
+  },
+  {
+   "id": "STC011",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 11번째",
+   "voices": [
+    "STC011.AIF"
+   ],
+   "triggers": [
+    "P050.MTS"
+   ]
+  },
+  {
+   "id": "STC012",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 12번째",
+   "voices": [
+    "STC012.AIF"
+   ],
+   "triggers": [
+    "P051.MTS"
+   ]
+  },
+  {
+   "id": "STC013",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 13번째",
+   "voices": [
+    "STC013.AIF"
+   ],
+   "triggers": [
+    "P052.MTS"
+   ]
+  },
+  {
+   "id": "STC014",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 14번째",
+   "voices": [
+    "STC014.AIF"
+   ],
+   "triggers": [
+    "P053.MTS"
+   ]
+  },
+  {
+   "id": "STC015",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 15번째",
+   "voices": [
+    "STC015.AIF"
+   ],
+   "triggers": [
+    "P054.MTS"
+   ]
+  },
+  {
+   "id": "STC016",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 16번째",
+   "voices": [
+    "STC016.AIF"
+   ],
+   "triggers": [
+    "P055.MTS"
+   ]
+  },
+  {
+   "id": "STC017",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 17번째",
+   "voices": [
+    "STC017.AIF"
+   ],
+   "triggers": [
+    "P056.MTS"
+   ]
+  },
+  {
+   "id": "STC018",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 18번째",
+   "voices": [
+    "STC018.AIF"
+   ],
+   "triggers": [
+    "P057.MTS"
+   ]
+  },
+  {
+   "id": "STC019",
+   "scene": "대국 전 대화 — 파트너 체리파이(사나에), 19번째",
+   "voices": [
+    "STC019.AIF"
+   ],
+   "triggers": [
+    "P058.MTS"
+   ]
+  },
+  {
+   "id": "STM001",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 1번째",
+   "voices": [
+    "STM001.AIF"
+   ],
+   "triggers": [
+    "P060.MTS"
+   ]
+  },
+  {
+   "id": "STM002",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 2번째",
+   "voices": [
+    "STM002.AIF"
+   ],
+   "triggers": [
+    "P061.MTS"
+   ]
+  },
+  {
+   "id": "STM003",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 3번째",
+   "voices": [
+    "STM003.AIF"
+   ],
+   "triggers": [
+    "P062.MTS"
+   ]
+  },
+  {
+   "id": "STM004",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 4번째",
+   "voices": [
+    "STM004.AIF"
+   ],
+   "triggers": [
+    "P063.MTS"
+   ]
+  },
+  {
+   "id": "STM005",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 5번째",
+   "voices": [
+    "STM005.AIF"
+   ],
+   "triggers": [
+    "P064.MTS"
+   ]
+  },
+  {
+   "id": "STM006",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 6번째",
+   "voices": [
+    "STM006.AIF"
+   ],
+   "triggers": [
+    "P065.MTS"
+   ]
+  },
+  {
+   "id": "STM007",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 7번째",
+   "voices": [
+    "STM007.AIF"
+   ],
+   "triggers": [
+    "P066.MTS"
+   ]
+  },
+  {
+   "id": "STM008",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 8번째",
+   "voices": [
+    "STM008.AIF"
+   ],
+   "triggers": [
+    "P067.MTS"
+   ]
+  },
+  {
+   "id": "STM009",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 9번째",
+   "voices": [
+    "STM009.AIF"
+   ],
+   "triggers": [
+    "P068.MTS"
+   ]
+  },
+  {
+   "id": "STM010",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 10번째",
+   "voices": [
+    "STM010.AIF"
+   ],
+   "triggers": [
+    "P069.MTS"
+   ]
+  },
+  {
+   "id": "STM011",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 11번째",
+   "voices": [
+    "STM011.AIF"
+   ],
+   "triggers": [
+    "P070.MTS"
+   ]
+  },
+  {
+   "id": "STM012",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 12번째",
+   "voices": [
+    "STM012.AIF"
+   ],
+   "triggers": [
+    "P071.MTS"
+   ]
+  },
+  {
+   "id": "STM013",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 13번째",
+   "voices": [
+    "STM013.AIF"
+   ],
+   "triggers": [
+    "P072.MTS"
+   ]
+  },
+  {
+   "id": "STM014",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 14번째",
+   "voices": [
+    "STM014.AIF"
+   ],
+   "triggers": [
+    "P073.MTS"
+   ]
+  },
+  {
+   "id": "STM015",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 15번째",
+   "voices": [
+    "STM015.AIF"
+   ],
+   "triggers": [
+    "P074.MTS"
+   ]
+  },
+  {
+   "id": "STM016",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 16번째",
+   "voices": [
+    "STM016.AIF"
+   ],
+   "triggers": [
+    "P075.MTS"
+   ]
+  },
+  {
+   "id": "STM017",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 17번째",
+   "voices": [
+    "STM017.AIF"
+   ],
+   "triggers": [
+    "P076.MTS"
+   ]
+  },
+  {
+   "id": "STM018",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 18번째",
+   "voices": [
+    "STM018.AIF"
+   ],
+   "triggers": [
+    "P077.MTS"
+   ]
+  },
+  {
+   "id": "STM019",
+   "scene": "대국 전 대화 — 파트너 밀키파이(밀크), 19번째",
+   "voices": [
+    "STM019.AIF"
+   ],
+   "triggers": [
+    "P078.MTS"
+   ]
+  },
+  {
+   "id": "YKM001",
+   "scene": "대국 전 대화 — 파트너 유키, 1번째",
+   "voices": [
+    "YKM001.AIF"
+   ],
+   "triggers": [
+    "P080.MTS"
+   ]
+  },
+  {
+   "id": "YKM002",
+   "scene": "대국 전 대화 — 파트너 유키, 2번째",
+   "voices": [
+    "YKM002.AIF"
+   ],
+   "triggers": [
+    "P081.MTS"
+   ]
+  },
+  {
+   "id": "YKM003",
+   "scene": "대국 전 대화 — 파트너 유키, 3번째",
+   "voices": [
+    "YKM003.AIF"
+   ],
+   "triggers": [
+    "P082.MTS"
+   ]
+  },
+  {
+   "id": "YKM004",
+   "scene": "대국 전 대화 — 파트너 유키, 4번째",
+   "voices": [
+    "YKM004.AIF"
+   ],
+   "triggers": [
+    "P083.MTS"
+   ]
+  },
+  {
+   "id": "YKM005",
+   "scene": "대국 전 대화 — 파트너 유키, 5번째",
+   "voices": [
+    "YKM005.AIF"
+   ],
+   "triggers": [
+    "P084.MTS"
+   ]
+  },
+  {
+   "id": "YKM006",
+   "scene": "대국 전 대화 — 파트너 유키, 6번째",
+   "voices": [
+    "YKM006.AIF"
+   ],
+   "triggers": [
+    "P085.MTS"
+   ]
+  },
+  {
+   "id": "YKM007",
+   "scene": "대국 전 대화 — 파트너 유키, 7번째",
+   "voices": [
+    "YKM007.AIF"
+   ],
+   "triggers": [
+    "P086.MTS"
+   ]
+  },
+  {
+   "id": "YKM008",
+   "scene": "대국 전 대화 — 파트너 유키, 8번째",
+   "voices": [
+    "YKM008.AIF"
+   ],
+   "triggers": [
+    "P087.MTS"
+   ]
+  },
+  {
+   "id": "YKM009",
+   "scene": "대국 전 대화 — 파트너 유키, 9번째",
+   "voices": [
+    "YKM009.AIF"
+   ],
+   "triggers": [
+    "P088.MTS"
+   ]
+  },
+  {
+   "id": "YKM010",
+   "scene": "대국 전 대화 — 파트너 유키, 10번째",
+   "voices": [
+    "YKM010.AIF"
+   ],
+   "triggers": [
+    "P089.MTS"
+   ]
+  },
+  {
+   "id": "YKM011",
+   "scene": "대국 전 대화 — 파트너 유키, 11번째",
+   "voices": [
+    "YKM011.AIF"
+   ],
+   "triggers": [
+    "P090.MTS"
+   ]
+  },
+  {
+   "id": "YKM012",
+   "scene": "대국 전 대화 — 파트너 유키, 12번째",
+   "voices": [
+    "YKM012.AIF"
+   ],
+   "triggers": [
+    "P091.MTS"
+   ]
+  },
+  {
+   "id": "YKM013",
+   "scene": "대국 전 대화 — 파트너 유키, 13번째",
+   "voices": [
+    "YKM013.AIF"
+   ],
+   "triggers": [
+    "P092.MTS"
+   ]
+  },
+  {
+   "id": "YKM014",
+   "scene": "대국 전 대화 — 파트너 유키, 14번째",
+   "voices": [
+    "YKM014.AIF"
+   ],
+   "triggers": [
+    "P093.MTS"
+   ]
+  },
+  {
+   "id": "YKM015",
+   "scene": "대국 전 대화 — 파트너 유키, 15번째",
+   "voices": [
+    "YKM015.AIF"
+   ],
+   "triggers": [
+    "P094.MTS"
+   ]
+  },
+  {
+   "id": "YKM016",
+   "scene": "대국 전 대화 — 파트너 유키, 16번째",
+   "voices": [
+    "YKM016.AIF"
+   ],
+   "triggers": [
+    "P095.MTS"
+   ]
+  },
+  {
+   "id": "YKM017",
+   "scene": "대국 전 대화 — 파트너 유키, 17번째",
+   "voices": [
+    "YKM017.AIF"
+   ],
+   "triggers": [
+    "P096.MTS"
+   ]
+  },
+  {
+   "id": "YKM018",
+   "scene": "대국 전 대화 — 파트너 유키, 18번째",
+   "voices": [
+    "YKM018.AIF"
+   ],
+   "triggers": [
+    "P097.MTS"
+   ]
+  },
+  {
+   "id": "PEN_B70",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "B70A.AIF",
+    "B70B.AIF",
+    "B70_73C.AIF"
+   ],
+   "triggers": [
+    "DTAL01.BIN",
+    "DTAL11.MSX",
+    "DTAL2A.MSX"
+   ]
+  },
+  {
+   "id": "PEN_B71",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "B71A.AIF",
+    "B71B.AIF",
+    "B70_73C.AIF"
+   ],
+   "triggers": [
+    "DTAL02.BIN",
+    "DTAL12.MSX",
+    "DTAL2A.MSX"
+   ]
+  },
+  {
+   "id": "PEN_B72",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "B72A.AIF",
+    "B72B.AIF",
+    "B70_73C.AIF"
+   ],
+   "triggers": [
+    "DTAL03.BIN",
+    "DTAL13.MSX",
+    "DTAL2A.MSX"
+   ]
+  },
+  {
+   "id": "PEN_B73",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "B73A.AIF",
+    "B73B.AIF",
+    "B70_73C.AIF"
+   ],
+   "triggers": [
+    "DTAL04.BIN",
+    "DTAL14.MSX",
+    "DTAL2A.MSX"
+   ]
+  },
+  {
+   "id": "PEN_A70",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "A70A.AIF",
+    "A70B.AIF",
+    "A70C.AIF"
+   ],
+   "triggers": [
+    "DTTK00.BIN",
+    "DTTK1A.MSX",
+    "DTTK20.MSX"
+   ]
+  },
+  {
+   "id": "PEN_A71",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "A71A.AIF",
+    "A71B.AIF",
+    "A71C.AIF"
+   ],
+   "triggers": [
+    "DTTK02.BIN",
+    "DTTK1A.MSX",
+    "DTTK22.MSX"
+   ]
+  },
+  {
+   "id": "PEN_A72",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "A72A.AIF",
+    "A72B.AIF",
+    "A72C.AIF"
+   ],
+   "triggers": [
+    "DTTK03.BIN",
+    "DTTK1A.MSX",
+    "DTTK23.MSX"
+   ]
+  },
+  {
+   "id": "PEN_A73",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "A73A.AIF",
+    "A73B.AIF",
+    "A73C.AIF"
+   ],
+   "triggers": [
+    "DTTK04.BIN",
+    "DTTK1A.MSX",
+    "DTTK24.MSX"
+   ]
+  },
+  {
+   "id": "PEN_D70",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "D70A.AIF",
+    "D70B.AIF",
+    "D70C.AIF"
+   ],
+   "triggers": [
+    "DTSN00.BIN",
+    "DTSN1A.MSX",
+    "DTSN20.MSX"
+   ]
+  },
+  {
+   "id": "PEN_D71",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "D71A.AIF",
+    "D71B.AIF",
+    "D71C.AIF"
+   ],
+   "triggers": [
+    "DTSN01.BIN",
+    "DTSN1A.MSX",
+    "DTSN21.MSX"
+   ]
+  },
+  {
+   "id": "PEN_D72",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "D72A.AIF",
+    "D72B.AIF",
+    "D72C.AIF"
+   ],
+   "triggers": [
+    "DTSN03.BIN",
+    "DTSN1A.MSX",
+    "DTSN23.MSX"
+   ]
+  },
+  {
+   "id": "PEN_D73",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "D73A.AIF",
+    "D73B.AIF",
+    "D73C.AIF"
+   ],
+   "triggers": [
+    "DTSN04.BIN",
+    "DTSN1A.MSX",
+    "DTSN24.MSX"
+   ]
+  },
+  {
+   "id": "PEN_Q70",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "Q70A.AIF",
+    "Q70B.AIF"
+   ],
+   "triggers": [
+    "DTRM00.BIN",
+    "DTRM10.MSX"
+   ]
+  },
+  {
+   "id": "PEN_Q71",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "Q71A.AIF",
+    "Q71B.AIF"
+   ],
+   "triggers": [
+    "DTRM01.BIN",
+    "DTRM11.MSX"
+   ]
+  },
+  {
+   "id": "PEN_Q72",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "Q72A.AIF",
+    "Q72B.AIF"
+   ],
+   "triggers": [
+    "DTRM02.BIN",
+    "DTRM12.MSX"
+   ]
+  },
+  {
+   "id": "PEN_Q73",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "Q73A.AIF",
+    "Q73B.AIF"
+   ],
+   "triggers": [
+    "DTRM04.BIN",
+    "DTRM14.MSX"
+   ]
+  },
+  {
+   "id": "PEN_H70",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "H70A.AIF",
+    "H70B.AIF",
+    "H70C.AIF"
+   ],
+   "triggers": [
+    "DTYK00.BIN",
+    "DTYK10.MSX",
+    "DTYK20.MSX"
+   ]
+  },
+  {
+   "id": "PEN_H71",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "H71A.AIF",
+    "H71B.AIF",
+    "H71C.AIF"
+   ],
+   "triggers": [
+    "DTYK01.BIN",
+    "DTYK11.MSX",
+    "DTYK21.MSX"
+   ]
+  },
+  {
+   "id": "PEN_H72",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "H72A.AIF",
+    "H72B.AIF",
+    "H72C.AIF"
+   ],
+   "triggers": [
+    "DTYK02.BIN",
+    "DTYK12.MSX",
+    "DTYK22.MSX"
+   ]
+  },
+  {
+   "id": "PEN_H73",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "H73A.AIF",
+    "H73B.AIF",
+    "H73C.AIF"
+   ],
+   "triggers": [
+    "DTYK03.BIN",
+    "DTYK13.MSX",
+    "DTYK23.MSX"
+   ]
+  },
+  {
+   "id": "PEN_T70",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "T70A.AIF",
+    "T70B.AIF",
+    "T70C.AIF"
+   ],
+   "triggers": [
+    "DTSH0A.BIN",
+    "DTSH1A.MSX",
+    "DTSH2A.MSX"
+   ]
+  },
+  {
+   "id": "PEN_V70",
+   "scene": "벌칙 장면 (A: 패배 직후, B: 애니메이션, C: 마무리)",
+   "voices": [
+    "V70A.AIF",
+    "V70B.AIF"
+   ],
+   "triggers": [
+    "DTKY0A.BIN",
+    "DTKY1A.MSX"
+   ]
+  },
+  {
+   "id": "INTRO_B",
+   "scene": "파트너 소개·변신 — 아리스/피치파이",
+   "voices": [
+    "B50A.AIF",
+    "B51A.AIF",
+    "B52A.AIF",
+    "B53A.AIF",
+    "B54A.AIF"
+   ],
+   "triggers": [
+    "APALICE.BIN",
+    "SPALICE2.BIN",
+    "SPALICE.BIN",
+    "SPALICE.MSX",
+    "STPEACH.MTF"
+   ]
+  },
+  {
+   "id": "INTRO_A",
+   "scene": "파트너 소개·변신 — 츠카사/레몬파이",
+   "voices": [
+    "A50A.AIF",
+    "A51A.AIF",
+    "A51B.AIF",
+    "A52A.AIF",
+    "A53A.AIF",
+    "A54A.AIF"
+   ],
+   "triggers": [
+    "APTSUKA.BIN",
+    "SPTSUK2A.BIN",
+    "SPTSUKAA.BIN",
+    "SPTSUK20.MSX",
+    "SPTSUKA0.MSX",
+    "STLEMON.MTF"
+   ]
+  },
+  {
+   "id": "INTRO_D",
+   "scene": "파트너 소개·변신 — 사나에/체리파이",
+   "voices": [
+    "D50A.AIF",
+    "D51A.AIF",
+    "D52A.AIF",
+    "D53A.AIF",
+    "D54A.AIF"
+   ],
+   "triggers": [
+    "APSANAE.BIN",
+    "SPSANAEB.SPL",
+    "SPSANAEB.SPR",
+    "SPSANAE.MSX",
+    "STCHERY.MTF"
+   ]
+  },
+  {
+   "id": "INTRO_F",
+   "scene": "파트너 소개·변신 — 밀크/밀키파이",
+   "voices": [
+    "F50A.AIF",
+    "F51A.AIF",
+    "F52A.AIF",
+    "F53A.AIF",
+    "F54A.AIF"
+   ],
+   "triggers": [
+    "APMILK.BIN",
+    "SPMILK.BIN",
+    "STMILKY.MTF"
+   ]
+  },
+  {
+   "id": "OPENING",
+   "scene": "오프닝(프롤로그)",
+   "voices": [
+    "PR1A.AIF",
+    "PR2A.AIF",
+    "V51A.AIF"
+   ],
+   "triggers": [
+    "PROLOG.BIN"
+   ]
+  },
+  {
+   "id": "SPSANA2",
+   "scene": "체리파이 흑화 변신",
+   "voices": [
+    "D51A.AIF"
+   ],
+   "triggers": [
+    "SPSANA2B.SPL",
+    "SPSANA2B.SPR",
+    "SPSANA2.MSX"
+   ]
+  },
+  {
+   "id": "SECIL",
+   "scene": "세실 장면",
+   "voices": [
+    "O51A.AIF"
+   ],
+   "triggers": [
+    "DTSECILB.SPR",
+    "DTSECIL.MSX"
+   ]
+  },
+  {
+   "id": "KYOKO2",
+   "scene": "쿄코(스치파이) 장면",
+   "voices": [
+    "V71A.AIF",
+    "V72A.AIF",
+    "V73A.AIF",
+    "V74A.AIF"
+   ],
+   "triggers": [
+    "DTKYOK21.BIN",
+    "DTKYOK22.BIN",
+    "DTKYOK23.BIN",
+    "DTKYOK24.BIN"
+   ]
+  },
+  {
+   "id": "SPECIAL",
+   "scene": "필살기·소환 연출",
+   "voices": [
+    "V63A.AIF",
+    "V60A.AIF",
+    "V60B.AIF",
+    "E60A.AIF",
+    "C60A.AIF",
+    "G60A.AIF",
+    "A60A.AIF"
+   ],
+   "triggers": [
+    "SS.MSX",
+    "HSSANAE.MSX",
+    "HSALICE.MSX",
+    "HSMILK.MSX",
+    "HSTSUKA.MSX"
+   ]
+  },
+  {
+   "id": "BONUS",
+   "scene": "만관 보너스 화면",
+   "voices": [
+    "W47A.AIF",
+    "W48A.AIF",
+    "W49A.AIF",
+    "W50A.AIF"
+   ],
+   "triggers": [
+    "MAXSUTIE.MTF",
+    "MAXAL.MTF",
+    "MAXTK.MTF",
+    "MAXSN.MTF",
+    "MAXML.MTF"
+   ]
+  },
+  {
+   "id": "YUKIOP",
+   "scene": "유키 등장",
+   "voices": [
+    "YOP0.AIF",
+    "YOP1.AIF"
+   ],
+   "triggers": [
+    "YUKIOP.BIN"
+   ]
+  }
+ ]
+}

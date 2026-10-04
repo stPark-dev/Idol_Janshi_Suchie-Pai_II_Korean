@@ -1,0 +1,32 @@
+{
+ "voice": "D71B.AIF",
+ "scene": "벌칙 장면 — 사나에(체리파이) 2번째, B: 벗는 애니메이션",
+ "duration": 18.98,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 3.08,
+   "end": 6.3,
+   "speaker": "사나에",
+   "ja": "誰にも見せるなと言われてるんですが",
+   "ko": "아무에게도 보이지 말라고 하셨는데…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.0,
+   "end": 13.12,
+   "speaker": "사나에",
+   "ja": "あ、いやー",
+   "ko": "아, 안 돼!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.7,
+   "end": 18.36,
+   "speaker": "사나에",
+   "ja": "はー、レイカ様、すみません",
+   "ko": "하아… 레이카 님, 죄송해요.",
+   "status": "needs_human_review"
+  }
+ ]
+}

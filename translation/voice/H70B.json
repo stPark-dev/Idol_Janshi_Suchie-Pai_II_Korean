@@ -1,0 +1,50 @@
+{
+ "voice": "H70B.AIF",
+ "scene": "벌칙 장면 — 유키 1번째, B: 벗는 애니메이션",
+ "duration": 16.56,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.72,
+   "speaker": "유키",
+   "ja": "へー、これが限界だよ",
+   "ko": "헤헤, 여기까지가 한계야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.34,
+   "end": 5.22,
+   "speaker": "유키",
+   "ja": "どうしても見たいなら",
+   "ko": "그래도 꼭 보고 싶다면…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.22,
+   "end": 8.24,
+   "speaker": "유키",
+   "ja": "はーい、MA18です",
+   "ko": "짜잔, MA-18이에요!",
+   "status": "needs_human_review",
+   "note": "참고: MA-18 = 당시 세가새턴 심의 등급(18세 이상 권장). 등급 마크로 가린 장면으로 봄"
+  },
+  {
+   "start": 9.9,
+   "end": 12.18,
+   "speaker": "유키",
+   "ja": "え?X指定だったの?",
+   "ko": "어? X등급이었어?",
+   "status": "needs_human_review",
+   "note": "참고: X指定 = 세가새턴 심의의 성인 전용 등급"
+  },
+  {
+   "start": 13.06,
+   "end": 15.9,
+   "speaker": "유키",
+   "ja": "剥がすときがちょっと快感なの",
+   "ko": "뗄 때가 살짝 짜릿하거든.",
+   "status": "needs_human_review"
+  }
+ ]
+}

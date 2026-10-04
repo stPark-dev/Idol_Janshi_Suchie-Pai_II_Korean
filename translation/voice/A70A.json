@@ -1,0 +1,16 @@
+{
+ "voice": "A70A.AIF",
+ "scene": "벌칙 장면 — 츠카사(레몬파이) 1번째, A: 패배 직후",
+ "duration": 2.47,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.14,
+   "speaker": "츠카사",
+   "ja": "俺も一応女だしな",
+   "ko": "나도 일단은 여자니까 말이야.",
+   "status": "needs_human_review"
+  }
+ ]
+}

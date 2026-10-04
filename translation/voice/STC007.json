@@ -1,0 +1,290 @@
+{
+ "voice": "STC007.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 7번째, 상대 루미",
+ "duration": 115.71,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 2.16,
+   "end": 6.78,
+   "speaker": "루미",
+   "ja": "というわけで、私これからこの子を病院に連れてかなきゃならないのよ",
+   "ko": "그런 고로, 나 지금 이 애를 병원에 데려가야 하거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.3,
+   "end": 12.34,
+   "speaker": "루미",
+   "ja": "なんか風邪こじらせて、バセドウ病と椎間板ヘルニアを併発しちゃったみたいなのよね",
+   "ko": "감기가 덧나서 바제도병이랑 허리 디스크가 같이 왔나 봐.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: なんか風邪こじらせてバセドウ病と追患バンヘルニアを併発しちゃったみたいなのよね / 2차 검수: 椎間板ヘルニア를 구어 '허리 디스크'로"
+  },
+  {
+   "start": 12.34,
+   "end": 13.58,
+   "speaker": "루미",
+   "ja": "それじゃあまたね",
+   "ko": "그럼 또 봐~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.82,
+   "end": 15.56,
+   "speaker": "체리파이",
+   "ja": "待ちな",
+   "ko": "기다려.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.16,
+   "end": 17.92,
+   "speaker": "체리파이",
+   "ja": "まだ何にも言ってないだろ",
+   "ko": "아직 아무 말도 안 했잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.92,
+   "end": 21.94,
+   "speaker": "루미",
+   "ja": "こ、これはきっと麻雀勝負に振られるパターンだわ",
+   "ko": "이, 이건 분명 마작 승부를 걸어오는 패턴이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.54,
+   "end": 25.78,
+   "speaker": "루미",
+   "ja": "いい加減嫁入り前の体を人前に晒すってのもね",
+   "ko": "시집도 안 간 몸을 남 앞에 드러내는 것도 이제 좀…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.48,
+   "end": 30.4,
+   "speaker": "루미",
+   "ja": "いや別に見せられないようなプロポーションってわけじゃないんだけど",
+   "ko": "아니, 딱히 못 보여 줄 몸매라는 건 아니지만.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.76,
+   "end": 32.46,
+   "speaker": "루미",
+   "ja": "ってなことを考えているうちにも",
+   "ko": "…같은 생각을 하는 사이에도",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.46,
+   "end": 36.0,
+   "speaker": "루미",
+   "ja": "事態は脱出不可能な状況まで追い詰められているような気が",
+   "ko": "사태는 탈출 불가능한 상황까지 몰리고 있는 것 같은…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 37.22,
+   "end": 40.88,
+   "speaker": "체리파이",
+   "ja": "あの野郎どこで油売ってやがんだか",
+   "ko": "그 녀석, 어디서 농땡이 치고 있는 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.76,
+   "end": 46.12,
+   "speaker": "루미",
+   "ja": "でも今ならダッシュでトンズラこいちゃえばなんとかなるかしら",
+   "ko": "그래도 지금 전력으로 튀면 어떻게든 되려나?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 46.84,
+   "end": 50.72,
+   "speaker": "루미",
+   "ja": "いやダメね、この人見るからに危なそうな感じだし",
+   "ko": "아냐, 안 돼. 이 사람 딱 봐도 위험해 보이고",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.72,
+   "end": 53.1,
+   "speaker": "루미",
+   "ja": "しかもムチ持ってるじゃないの",
+   "ko": "게다가 채찍까지 들고 있잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 53.5,
+   "end": 58.54,
+   "speaker": "루미",
+   "ja": "まさかこの私の美しい肌に傷でもつけようってんじゃないでしょうね",
+   "ko": "설마 내 아름다운 피부에 상처라도 내려는 건 아니겠지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 59.59,
+   "end": 64.12,
+   "speaker": "루미",
+   "ja": "あー、こんなカットジーンズ履いて太もも見せつけたりするから狙われちゃうのかしら",
+   "ko": "아~ 이런 컷오프 청바지 입고 허벅지를 드러내니까 노려지는 건가?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.56,
+   "end": 68.1,
+   "speaker": "루미",
+   "ja": "そりゃこっちだってわざわざ見せてるわけだから",
+   "ko": "하긴 나도 일부러 보여 주는 거니까",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 68.48,
+   "end": 70.46,
+   "speaker": "루미",
+   "ja": "まるっきり無視されても困るけど",
+   "ko": "완전히 무시당해도 곤란하지만.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 71.32,
+   "end": 73.84,
+   "speaker": "루미",
+   "ja": "あーもう、何を考えてるの私ったら",
+   "ko": "아, 정말! 무슨 생각을 하는 거야, 나도 참.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 73.84,
+   "end": 76.08,
+   "speaker": "스치파이",
+   "ja": "あ、チェリー、ごめんごめん",
+   "ko": "아, 체리, 미안미안.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 76.53,
+   "end": 79.77,
+   "speaker": "루미",
+   "ja": "あー、とうとうイカサマ娘まで現れちゃったじゃないの",
+   "ko": "아~ 결국 사기꾼 아가씨까지 나타났잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 79.78,
+   "end": 84.28,
+   "speaker": "루미",
+   "ja": "ああ、ルミちゃんの運命も風前の灯火状態だわ",
+   "ko": "아아, 루미의 운명도 바람 앞의 등불이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 85.04,
+   "end": 85.44,
+   "speaker": "루미",
+   "ja": "ん?",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 86.72,
+   "end": 89.06,
+   "speaker": "루미",
+   "ja": "でも、要は負けなきゃいいわけよね",
+   "ko": "그래도 결국 안 지면 되는 거잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 89.58,
+   "end": 92.6,
+   "speaker": "루미",
+   "ja": "そうすれば恥ずかしい思いもしなくて済むんだわ",
+   "ko": "그러면 창피한 꼴도 안 당해도 되고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 93.12,
+   "end": 95.86,
+   "speaker": "루미",
+   "ja": "なんだ、勝てばいいんじゃない、勝てば",
+   "ko": "뭐야, 이기면 되잖아, 이기면.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 95.86,
+   "end": 98.58,
+   "speaker": "루미",
+   "ja": "こんな単純なことで悩んでたなんて",
+   "ko": "이렇게 단순한 걸로 고민했다니.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 98.58,
+   "end": 100.94,
+   "speaker": "루미",
+   "ja": "私のおばかさん",
+   "ko": "나도 참 바보라니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 100.94,
+   "end": 102.18,
+   "speaker": "루미",
+   "ja": "よーし",
+   "ko": "좋아~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 102.92,
+   "end": 104.66,
+   "speaker": "체리파이",
+   "ja": "大丈夫なのか、こいつ",
+   "ko": "괜찮은 거냐, 얘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 105.4,
+   "end": 106.2,
+   "speaker": "스치파이",
+   "ja": "いやー",
+   "ko": "글쎄~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 106.2,
+   "end": 108.54,
+   "speaker": "루미",
+   "ja": "わかったわ、麻雀で勝負よ",
+   "ko": "좋아, 마작으로 승부야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 108.54,
+   "end": 110.88,
+   "speaker": "스치파이",
+   "ja": "あれ?もう勝負挑んじゃったの?",
+   "ko": "어라? 벌써 승부를 걸었어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 111.5,
+   "end": 112.18,
+   "speaker": "체리파이",
+   "ja": "別に",
+   "ko": "딱히.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 112.18,
+   "end": 115.44,
+   "speaker": "스치파이",
+   "ja": "え?そうなの?こういうこともあるのね",
+   "ko": "어? 그래? 이런 일도 다 있네.",
+   "status": "needs_human_review"
+  }
+ ]
+}

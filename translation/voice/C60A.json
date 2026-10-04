@@ -1,0 +1,18 @@
+{
+ "voice": "C60A.AIF",
+ "scene": "필살기·소환 연출 — 피치파이 필살기",
+ "duration": 7.04,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.26,
+   "speaker": "피치파이(아리스)",
+   "ja": "ピンキッシュフローレア!",
+   "ko": "핑키시 플로레아!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: フィッシュフローディア (VAD 쪽은 ご視聴ありがとうございました 환각)"
+  }
+ ]
+}

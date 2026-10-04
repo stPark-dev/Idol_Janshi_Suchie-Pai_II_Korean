@@ -1,0 +1,124 @@
+{
+ "voice": "STC017.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 17번째, 에필로그 (쿄코 내레이션, 레이카와 사나에)",
+ "duration": 52.79,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.72,
+   "end": 4.48,
+   "speaker": "스치파이(내레이션)",
+   "ja": "でもサナエさんにとっての悲劇はこれが始まりだったのです",
+   "ko": "하지만 사나에 씨의 비극은 이제부터가 시작이었습니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.02,
+   "end": 5.58,
+   "speaker": "사나에",
+   "ja": "はっ",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.04,
+   "end": 10.44,
+   "speaker": "사나에",
+   "ja": "はー、許してください、もうしません",
+   "ko": "하아, 용서해 주세요, 다신 안 그럴게요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.56,
+   "end": 16.72,
+   "speaker": "레이카",
+   "ja": "使いも満足にできない上に、こんな時間までどこをほっつき歩いてたんだい",
+   "ko": "심부름도 제대로 못 하는 주제에 이 시간까지 어딜 쏘다닌 거니?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 使いも満足にできない上にこんな時間までどこを突き歩いてたんだい"
+  },
+  {
+   "start": 16.72,
+   "end": 18.94,
+   "speaker": "사나에",
+   "ja": "はっ、うー、すいません",
+   "ko": "흑, 으으, 죄송해요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.48,
+   "end": 23.08,
+   "speaker": "사나에",
+   "ja": "全く自分でもよくわかんないんです",
+   "ko": "저도 정말 잘 모르겠어요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.6,
+   "end": 26.0,
+   "speaker": "레이카",
+   "ja": "はー、面白い冗談だね",
+   "ko": "허, 재미있는 농담이구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.3,
+   "end": 30.02,
+   "speaker": "사나에",
+   "ja": "本当に覚えてないんです",
+   "ko": "정말 기억이 안 나요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.36,
+   "end": 34.98,
+   "speaker": "스치파이(내레이션)",
+   "ja": "チェリーが過去にどんなことをしでかしたのか",
+   "ko": "체리가 과거에 무슨 일을 저질렀는지,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 34.98,
+   "end": 38.36,
+   "speaker": "스치파이(내레이션)",
+   "ja": "なぜ今はメイドのサナエさんとして生活しているのか",
+   "ko": "왜 지금은 메이드 사나에 씨로 살고 있는지,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 38.76,
+   "end": 40.86,
+   "speaker": "스치파이(내레이션)",
+   "ja": "そんなことを詮索するつもりはありません",
+   "ko": "그런 걸 캐물을 생각은 없습니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.38,
+   "end": 45.18,
+   "speaker": "스치파이(내레이션)",
+   "ja": "私は今のサナエさんが、今のチェリーが大好きです",
+   "ko": "저는 지금의 사나에 씨가, 지금의 체리가 정말 좋아요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 45.62,
+   "end": 47.64,
+   "speaker": "스치파이(내레이션)",
+   "ja": "だって面白いんだもん",
+   "ko": "왜냐면 재미있으니까!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.64,
+   "end": 48.6,
+   "speaker": "스치파이(내레이션)",
+   "ja": "ラストだよ",
+   "ko": "이걸로 끝!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기 그대로(ラストだよ). 뜻·실재 여부 불확실, 들어 보고 확인 필요 / 2차 검수: 「ラストだよ」 실재·화자 불확실. 들어 보고 확인 필요"
+  }
+ ]
+}

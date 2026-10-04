@@ -1,0 +1,26 @@
+{
+ "voice": "W49A.AIF",
+ "scene": "만관 보너스 화면 — 변신 게이지 MAX, 체리파이",
+ "duration": 6.36,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.58,
+   "speaker": "스치파이",
+   "ja": "変身ゲージMAX、チェリー、やっちゃって。",
+   "ko": "변신 게이지 MAX! 체리, 해치워!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 変身ゲージマックス、シェリー、やっちゃって。"
+  },
+  {
+   "start": 3.4,
+   "end": 5.36,
+   "speaker": "사나에",
+   "ja": "なんかよくわかりませんが。",
+   "ko": "뭔지 잘 모르겠지만요…",
+   "status": "needs_human_review"
+  }
+ ]
+}

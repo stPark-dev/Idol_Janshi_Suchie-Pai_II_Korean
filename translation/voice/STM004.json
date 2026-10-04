@@ -1,0 +1,174 @@
+{
+ "voice": "STM004.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 4번째, 상대 츠카사",
+ "duration": 58.42,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.72,
+   "end": 4.08,
+   "speaker": "츠카사",
+   "ja": "ちっくしょー、外出許可もろくすっぽ出ねえ",
+   "ko": "젠장, 외출 허가도 제대로 안 나오고.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ちっくしょー外出許可もろくすっぽでね"
+  },
+  {
+   "start": 4.68,
+   "end": 7.06,
+   "speaker": "츠카사",
+   "ja": "どうせ俺は歩くトップシークレットだよ",
+   "ko": "어차피 난 걸어 다니는 일급 기밀이라고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.72,
+   "end": 12.84,
+   "speaker": "츠카사",
+   "ja": "しっかし外見だけで俺の秘密を見破れる奴がいたらお目にかかりてえぜ",
+   "ko": "근데 겉모습만 보고 내 비밀을 알아챌 놈이 있으면 얼굴 좀 보고 싶군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.32,
+   "end": 14.78,
+   "speaker": "쿄코",
+   "ja": "ほい、サイボーグ女",
+   "ko": "어이, 사이보그 여자.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.92,
+   "end": 18.28,
+   "speaker": "츠카사",
+   "ja": "誰だてめえ、どこでそれを",
+   "ko": "누구냐, 넌! 그걸 어디서…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.62,
+   "end": 19.3,
+   "speaker": "쿄코",
+   "ja": "私",
+   "ko": "나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.33,
+   "end": 23.94,
+   "speaker": "츠카사",
+   "ja": "あ、てめえ…てめえがあちこちでペラペラ喋ってんだな、てめえが",
+   "ko": "아, 너… 여기저기 나불나불 떠들고 다니는 게 너였구나!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.94,
+   "end": 25.66,
+   "speaker": "밀크",
+   "ja": "ねえねえ、空飛べる?空",
+   "ko": "있잖아, 하늘 날 수 있어? 하늘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.22,
+   "end": 29.54,
+   "speaker": "츠카사",
+   "ja": "そういうことは軍事機密なんでな、ノーコメントだ",
+   "ko": "그런 건 군사 기밀이라서 말이지. 노코멘트다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.54,
+   "end": 33.48,
+   "speaker": "쿄코",
+   "ja": "飛べるわ!つかさウィングはマッハ10で富士山も一飛びよ!",
+   "ko": "날 수 있어! 츠카사 윙은 마하 10, 후지산도 단숨에 넘어!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 33.9,
+   "end": 35.82,
+   "speaker": "밀크",
+   "ja": "おー!じゃあ目からビームは?",
+   "ko": "오오! 그럼 눈에서 빔은?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: おー!じゃめからビームは?"
+  },
+  {
+   "start": 35.96,
+   "end": 36.84,
+   "speaker": "츠카사",
+   "ja": "ノーコメント!",
+   "ko": "노코멘트!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.98,
+   "end": 40.34,
+   "speaker": "쿄코",
+   "ja": "出る出る!つかさビームは3000万度の熱光線!",
+   "ko": "나와 나와! 츠카사 빔은 3000만 도의 열광선!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 40.72,
+   "end": 41.7,
+   "speaker": "밀크",
+   "ja": "人参食べる?",
+   "ko": "당근 먹어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.7,
+   "end": 42.54,
+   "speaker": "쿄코",
+   "ja": "たまにね!",
+   "ko": "가끔!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.82,
+   "end": 45.7,
+   "speaker": "쿄코",
+   "ja": "つかさ胃袋はすべての物質を元素まで分解よ!",
+   "ko": "츠카사 위장은 모든 물질을 원소까지 분해해!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 46.1,
+   "end": 46.66,
+   "speaker": "밀크",
+   "ja": "麻雀は?",
+   "ko": "마작은?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: まじゃは?"
+  },
+  {
+   "start": 46.8,
+   "end": 50.72,
+   "speaker": "쿄코",
+   "ja": "めっちゃ弱いわ!つかさ頭脳は亀よりもとろいのよ!",
+   "ko": "완전 약해! 츠카사 두뇌는 거북이보다 느리거든!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.36,
+   "end": 55.26,
+   "speaker": "츠카사",
+   "ja": "そうだよな!こんだけコケにされちゃ黙ってらんねえよな!",
+   "ko": "그래, 이렇게까지 무시당하면 가만있을 순 없지!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.04,
+   "end": 58.08,
+   "speaker": "츠카사",
+   "ja": "かかってきな!勝負してやるぜ!",
+   "ko": "덤벼라! 승부해 주마!",
+   "status": "needs_human_review"
+  }
+ ]
+}

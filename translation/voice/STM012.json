@@ -1,0 +1,266 @@
+{
+ "voice": "STM012.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 12번째, 미유리",
+ "duration": 98.48,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.66,
+   "end": 5.16,
+   "speaker": "쿄코",
+   "ja": "うーん、結構調子いいわね。仲間も増えて嬉しいでしょ、ミルク",
+   "ko": "음~ 꽤 순조롭네. 동료도 늘어서 기쁘지, 밀크?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.16,
+   "end": 9.6,
+   "speaker": "밀크",
+   "ja": "このあたしをお前ら変態地球人と一緒くたにしないでほしいみゃ",
+   "ko": "이 몸을 너희 변태 지구인이랑 한통속 취급하지 마라먀.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: このアティシアお前ら変態地球人と一緒くたにしないでほしいみゃ"
+  },
+  {
+   "start": 9.6,
+   "end": 11.02,
+   "speaker": "쿄코",
+   "ja": "なにその言い草",
+   "ko": "말하는 것 좀 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.6,
+   "end": 12.94,
+   "speaker": "쿄코",
+   "ja": "あ、誰か来たわよ",
+   "ko": "아, 누가 온다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.88,
+   "end": 15.16,
+   "speaker": "쿄코",
+   "ja": "あら、みゆりちゃん",
+   "ko": "어머, 미유리잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.16,
+   "end": 18.4,
+   "speaker": "미유리",
+   "ja": "わー、うさぎさんだ、かわいいな",
+   "ko": "와아, 토끼다! 귀엽다~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.4,
+   "end": 21.28,
+   "speaker": "미유리",
+   "ja": "名前なんていうのかな",
+   "ko": "이름이 뭘까?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.86,
+   "end": 22.3,
+   "speaker": "밀크",
+   "ja": "みゃ",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.3,
+   "end": 24.44,
+   "speaker": "쿄코",
+   "ja": "ミルクっていうのよ",
+   "ko": "밀크라고 해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.44,
+   "end": 25.78,
+   "speaker": "미유리",
+   "ja": "すごーい",
+   "ko": "우와~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.36,
+   "end": 28.92,
+   "speaker": "미유리",
+   "ja": "恭子さん、うさぎさんとお話できるの?",
+   "ko": "쿄코 씨, 토끼랑 얘기할 수 있어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.58,
+   "end": 33.12,
+   "speaker": "미유리",
+   "ja": "みゆりも一度でいいからうさぎさんとお話ししてみたいな",
+   "ko": "미유리도 한 번만이라도 토끼랑 얘기해 보고 싶다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 33.96,
+   "end": 39.46,
+   "speaker": "쿄코",
+   "ja": "そうね、みゆりちゃんが心を込めてお話しすれば答えてくれるかもね",
+   "ko": "그래, 미유리가 마음을 담아 말을 걸면 대답해 줄지도 몰라.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 40.7,
+   "end": 44.18,
+   "speaker": "미유리",
+   "ja": "あの、うさぎさん、あのね",
+   "ko": "저기, 토끼야, 있잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.18,
+   "end": 47.14,
+   "speaker": "미유리",
+   "ja": "みゆりどうしても聞きたいことがあるの",
+   "ko": "미유리 꼭 물어보고 싶은 게 있어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.8,
+   "end": 50.74,
+   "speaker": "미유리",
+   "ja": "みゆりは動物さんたちがとっても好きなんだけど",
+   "ko": "미유리는 동물들을 정말 좋아하는데,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.74,
+   "end": 53.46,
+   "speaker": "미유리",
+   "ja": "動物さんたちはみゆりたち人間のことを",
+   "ko": "동물들은 미유리 같은 인간을",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 53.46,
+   "end": 56.64,
+   "speaker": "미유리",
+   "ja": "どう思っているのか教えてほしいの",
+   "ko": "어떻게 생각하는지 알려 줬으면 해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 58.22,
+   "end": 59.64,
+   "speaker": "쿄코",
+   "ja": "どうしたの、ミルク",
+   "ko": "왜 그래, 밀크?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 60.14,
+   "end": 64.28,
+   "speaker": "밀크",
+   "ja": "あたしは人間のことお友達だと思ってるみゃ",
+   "ko": "나는 인간을 친구라고 생각한다먀.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.8,
+   "end": 67.68,
+   "speaker": "미유리",
+   "ja": "はぁ、うさぎさんが喋った",
+   "ko": "와아, 토끼가 말했어!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 67.68,
+   "end": 69.92,
+   "speaker": "미유리",
+   "ja": "ね、今喋ったよね",
+   "ko": "그치, 방금 말했지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 69.92,
+   "end": 73.6,
+   "speaker": "쿄코",
+   "ja": "そうね、みゆりちゃんの気持ちが通じたのかもね",
+   "ko": "그러네, 미유리 마음이 통했나 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 73.6,
+   "end": 77.58,
+   "speaker": "미유리",
+   "ja": "ありがとう恭子さん、みゆりとっても安心したよ",
+   "ko": "고마워 쿄코 씨, 미유리 정말 안심했어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 78.26,
+   "end": 80.42,
+   "speaker": "미유리",
+   "ja": "じゃあまた会おうね、うさぎさん",
+   "ko": "그럼 또 만나, 토끼야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 80.88,
+   "end": 81.34,
+   "speaker": "밀크",
+   "ja": "みゃ",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 83.1,
+   "end": 85.88,
+   "speaker": "쿄코",
+   "ja": "へぇ、あんなこと言ってたくせにね",
+   "ko": "흐응, 그런 소리 하더니.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 85.88,
+   "end": 87.94,
+   "speaker": "쿄코",
+   "ja": "ちょっと見直したかな",
+   "ko": "좀 다시 봤는걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 88.14,
+   "end": 89.88,
+   "speaker": "밀크",
+   "ja": "勘違いしてほしくないみゃ!",
+   "ko": "착각하지 마라먀!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 89.96,
+   "end": 91.98,
+   "speaker": "밀크",
+   "ja": "人間は友達だと思ってるみゃが",
+   "ko": "인간은 친구라고 생각하지만,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 91.98,
+   "end": 94.58,
+   "speaker": "밀크",
+   "ja": "お前ら麻雀軍団は人間だと思ってないみゃ!",
+   "ko": "너희 마작 군단은 인간으로 안 본다먀!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 94.62,
+   "end": 97.08,
+   "speaker": "쿄코",
+   "ja": "素直じゃないわねー",
+   "ko": "솔직하지 못하긴~",
+   "status": "needs_human_review"
+  }
+ ]
+}

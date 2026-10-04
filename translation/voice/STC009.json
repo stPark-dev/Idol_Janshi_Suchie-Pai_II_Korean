@@ -1,0 +1,266 @@
+{
+ "voice": "STC009.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 9번째, 마이의 버섯 파이 가게",
+ "duration": 110.01,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.58,
+   "end": 1.68,
+   "speaker": "마이",
+   "ja": "いらっしゃいませ!",
+   "ko": "어서 오세요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.0,
+   "end": 4.48,
+   "speaker": "마이",
+   "ja": "当店自慢のきのこパイはいかがですか?",
+   "ko": "저희 가게의 자랑, 버섯 파이 어떠세요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.9,
+   "end": 7.12,
+   "speaker": "마이",
+   "ja": "よろしかったら味見だけでもどうぞ!",
+   "ko": "괜찮으시면 맛만이라도 보세요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.02,
+   "end": 13.12,
+   "speaker": "사나에",
+   "ja": "素朴な味わいですね",
+   "ko": "소박한 맛이네요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.68,
+   "end": 18.84,
+   "speaker": "사나에",
+   "ja": "これ、なんてきのこなんですか?",
+   "ko": "이거 무슨 버섯이에요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.46,
+   "end": 22.58,
+   "speaker": "마이",
+   "ja": "えーっと、たぶん、まつたけだと思うわ",
+   "ko": "음~ 아마 송이버섯일 거예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.58,
+   "end": 26.62,
+   "speaker": "스치파이",
+   "ja": "ちょっと舞ちゃん、たぶんってどういうこと?たぶんって",
+   "ko": "잠깐, 마이. \"아마\"라니 무슨 소리야? \"아마\"라니!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.62,
+   "end": 29.68,
+   "speaker": "마이",
+   "ja": "実はお店の横に生えてたんです",
+   "ko": "실은 가게 옆에 나 있던 거예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.68,
+   "end": 31.98,
+   "speaker": "마이",
+   "ja": "ちょっとカラフルな色してたけど",
+   "ko": "색깔이 좀 알록달록하긴 했는데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.98,
+   "end": 34.44,
+   "speaker": "마이",
+   "ja": "形からしてこれはマツタケかなと",
+   "ko": "모양을 보니 송이버섯이겠다 싶어서요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 38.04,
+   "end": 39.44,
+   "speaker": "스치파이",
+   "ja": "カラフルな…",
+   "ko": "알록달록…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.06,
+   "end": 42.62,
+   "speaker": "스치파이",
+   "ja": "ちょっとやばいんじゃない",
+   "ko": "좀 위험한 거 아냐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.62,
+   "end": 43.36,
+   "speaker": "마이",
+   "ja": "そうですね",
+   "ko": "그러게요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.62,
+   "end": 47.42,
+   "speaker": "마이",
+   "ja": "やっぱ自分で食べなくて正解でしたね",
+   "ko": "역시 제가 안 먹길 잘했네요.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: やっぱ自分で食べたって正解でしたね"
+  },
+  {
+   "start": 47.42,
+   "end": 49.14,
+   "speaker": "스치파이",
+   "ja": "そういう問題じゃないんじゃない",
+   "ko": "그게 문제가 아니잖아!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.8,
+   "end": 53.32,
+   "speaker": "사나에",
+   "ja": "おかしかった",
+   "ko": "",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "웃음소리로 추정 (받아쓰기 おかしかった)"
+  },
+  {
+   "start": 54.42,
+   "end": 54.9,
+   "speaker": "스치파이",
+   "ja": "え?",
+   "ko": "어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 55.7,
+   "end": 58.8,
+   "speaker": "사나에",
+   "ja": "私って結構笑い上戸なんですよね",
+   "ko": "제가 원래 웃음이 많은 편이거든요.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 私って結構笑い情報なんですよね"
+  },
+  {
+   "start": 59.56,
+   "end": 63.9,
+   "speaker": "사나에",
+   "ja": "もう笑い出すとなかなか止まらなくて困っちゃって",
+   "ko": "한번 웃기 시작하면 좀처럼 안 멈춰서 곤란해요.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: もう笑い出すとなかなか止まらなくて困っちゃっても"
+  },
+  {
+   "start": 64.96,
+   "end": 67.9,
+   "speaker": "사나에",
+   "ja": "でも美味しかったですよ、これ",
+   "ko": "그래도 맛있었어요, 이거.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 68.16,
+   "end": 71.2,
+   "speaker": "마이",
+   "ja": "そ、そう?本当に?",
+   "ko": "그, 그래요? 정말요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 71.74,
+   "end": 76.76,
+   "speaker": "마이",
+   "ja": "いや、一瞬焦ったけど、まあ結果オーライってことでいっか",
+   "ko": "순간 철렁했지만, 뭐 결과가 좋으니 된 걸로 칠까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 77.5,
+   "end": 81.4,
+   "speaker": "마이",
+   "ja": "実は姉妹品の舞茸パイっていうのがあるんですけど",
+   "ko": "실은 자매품으로 마이타케 파이라는 것도 있는데요,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 81.88,
+   "end": 86.24,
+   "speaker": "마이",
+   "ja": "よろしかったらこちらも毒味、もとい、味見を",
+   "ko": "괜찮으시면 이것도 독 시식… 아니, 시식을…",
+   "status": "needs_human_review",
+   "note": "2차 검수: 毒味(독 시식)/味見(시식) 말장난"
+  },
+  {
+   "start": 86.24,
+   "end": 92.1,
+   "speaker": "스치파이",
+   "ja": "おほん、舞ちゃん、それってあのスーパーとかで売ってるちゃんとした舞茸なんでしょうね",
+   "ko": "흠흠, 마이, 그거 슈퍼에서 파는 제대로 된 마이타케 맞지?",
+   "status": "needs_human_review",
+   "note": "舞茸(마이타케=잎새버섯)와 마이의 이름을 엮은 말장난"
+  },
+  {
+   "start": 92.1,
+   "end": 96.66,
+   "speaker": "마이",
+   "ja": "いや、発見者の名前を取って私がつけたんだけど",
+   "ko": "아니, 발견자 이름을 따서 제가 붙인 건데요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 97.54,
+   "end": 99.02,
+   "speaker": "스치파이",
+   "ja": "さあもう行かなくちゃ",
+   "ko": "자, 이제 가 봐야겠다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 99.02,
+   "end": 101.84,
+   "speaker": "사나에",
+   "ja": "ああ、そうなんですか",
+   "ko": "아, 그래요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 102.92,
+   "end": 105.1,
+   "speaker": "사나에",
+   "ja": "それではごちそうさまでした",
+   "ko": "그럼 잘 먹었습니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 105.62,
+   "end": 106.68,
+   "speaker": "마이",
+   "ja": "あ、あのー",
+   "ko": "아, 저기…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 107.62,
+   "end": 109.46,
+   "speaker": "마이",
+   "ja": "やっぱ逃げられちゃったか",
+   "ko": "역시 도망가 버렸네.",
+   "status": "needs_human_review"
+  }
+ ]
+}

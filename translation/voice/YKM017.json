@@ -1,0 +1,16 @@
+{
+ "voice": "YKM017.AIF",
+ "scene": "대국 전 대화 — 유키 17번째, 유키 한마디",
+ "duration": 2.59,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.68,
+   "end": 2.4,
+   "speaker": "유키",
+   "ja": "また会えるといいね",
+   "ko": "또 만날 수 있으면 좋겠다.",
+   "status": "needs_human_review"
+  }
+ ]
+}

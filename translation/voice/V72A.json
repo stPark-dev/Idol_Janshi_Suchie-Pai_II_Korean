@@ -1,0 +1,48 @@
+{
+ "voice": "V72A.AIF",
+ "scene": "쿄코(스치파이) 장면 2",
+ "duration": 12.28,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 0.86,
+   "speaker": "스치파이",
+   "ja": "あら?",
+   "ko": "어라?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.4,
+   "end": 2.98,
+   "speaker": "스치파이",
+   "ja": "わあ!",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.88,
+   "end": 4.56,
+   "speaker": "스치파이",
+   "ja": "やあ!",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.06,
+   "end": 7.2,
+   "speaker": "스치파이",
+   "ja": "あ、やあ!",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.06,
+   "end": 11.8,
+   "speaker": "스치파이",
+   "ja": "うふっ、もう!電池切れなんてあんまりよ!",
+   "ko": "정말! 배터리가 다 되다니 너무해!",
+   "status": "needs_human_review"
+  }
+ ]
+}

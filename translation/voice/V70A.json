@@ -1,0 +1,48 @@
+{
+ "voice": "V70A.AIF",
+ "scene": "벌칙 장면 — 쿄코(스치파이), A: 패배 직후",
+ "duration": 17.75,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 3.16,
+   "speaker": "스치파이",
+   "ja": "ま、期待に応えるのもヒロインの務めね",
+   "ko": "뭐, 기대에 부응하는 것도 히로인의 의무지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.94,
+   "end": 5.26,
+   "speaker": "스치파이",
+   "ja": "脱ぐからあっち向いてて",
+   "ko": "벗을 테니까 저쪽 보고 있어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.68,
+   "end": 10.6,
+   "speaker": "스치파이",
+   "ja": "こんなことしてるから世間の風当たりが厳しいんだわ、きっと",
+   "ko": "이런 짓을 하니까 세상 눈초리가 따가운 거야, 분명.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.22,
+   "end": 15.12,
+   "speaker": "스치파이",
+   "ja": "心の準備だってあるんだから",
+   "ko": "마음의 준비라는 것도 있다고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.16,
+   "end": 16.5,
+   "speaker": "스치파이",
+   "ja": "はい",
+   "ko": "자!",
+   "status": "needs_human_review"
+  }
+ ]
+}

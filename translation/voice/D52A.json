@@ -1,0 +1,40 @@
+{
+ "voice": "D52A.AIF",
+ "scene": "파트너 소개 — 사나에(체리파이), 스치파이의 설명",
+ "duration": 11.44,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.86,
+   "speaker": "스치파이",
+   "ja": "いざ勝負!となればワイルドなチェリーパイ",
+   "ko": "막상 승부가 붙으면 와일드한 체리파이.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.24,
+   "end": 5.62,
+   "speaker": "스치파이",
+   "ja": "でも決着がついて緊張がほぐれると",
+   "ko": "하지만 승부가 나서 긴장이 풀리면",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.62,
+   "end": 8.32,
+   "speaker": "스치파이",
+   "ja": "のんびりほえほえなサナエさんに戻っちゃう",
+   "ko": "느긋하고 멍한 사나에 씨로 돌아가 버려.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.32,
+   "end": 11.24,
+   "speaker": "스치파이",
+   "ja": "うーん、彼女と付き合うと疲れそうだわ",
+   "ko": "으음, 이 아이랑 어울리면 피곤하겠어.",
+   "status": "needs_human_review"
+  }
+ ]
+}

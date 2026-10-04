@@ -1,0 +1,32 @@
+{
+ "voice": "D53A.AIF",
+ "scene": "파트너 소개 — 체리파이 필살기 설명",
+ "duration": 7.87,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.76,
+   "speaker": "스치파이",
+   "ja": "必殺技はチェリーボンバー",
+   "ko": "필살기는 체리 봄버.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.24,
+   "end": 5.32,
+   "speaker": "스치파이",
+   "ja": "カンした時にテンパってればリンシャンツモで大当たり",
+   "ko": "깡했을 때 텐파이면 영상개화로 대박!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.72,
+   "end": 7.56,
+   "speaker": "스치파이",
+   "ja": "でもリーチしてなきゃダメなのよね",
+   "ko": "하지만 리치를 안 했으면 소용없어.",
+   "status": "needs_human_review"
+  }
+ ]
+}

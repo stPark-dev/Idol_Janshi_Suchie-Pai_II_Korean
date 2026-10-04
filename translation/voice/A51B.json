@@ -1,0 +1,16 @@
+{
+ "voice": "A51B.AIF",
+ "scene": "파트너 변신 — 레몬파이 변신 외침 (다른 판)",
+ "duration": 10.6,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 8.4,
+   "end": 10.32,
+   "speaker": "레몬파이(츠카사)",
+   "ja": "レモンパイ、ただいま参上!",
+   "ko": "레몬파이, 지금 등장!",
+   "status": "needs_human_review"
+  }
+ ]
+}

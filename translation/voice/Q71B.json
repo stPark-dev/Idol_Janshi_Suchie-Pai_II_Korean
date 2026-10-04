@@ -1,0 +1,60 @@
+{
+ "voice": "Q71B.AIF",
+ "scene": "벌칙 장면 — 루미 2번째, B: 벗는 애니메이션",
+ "duration": 11.37,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.3,
+   "end": 1.98,
+   "speaker": "루미",
+   "ja": "はぁ、覚悟を決めるか",
+   "ko": "하아, 각오해야겠네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 1.98,
+   "end": 3.5,
+   "speaker": "고양이(미상)",
+   "ja": "ミャー、ミャー、ミャー、ミャー、ミャー",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.5,
+   "end": 4.26,
+   "speaker": "루미",
+   "ja": "あぁー!",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.42,
+   "end": 6.96,
+   "speaker": "고양이(미상)",
+   "ja": "あの、黙っていてごめんなさい",
+   "ko": "저기, 말 안 해서 미안해요.",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: あの、食べていてごめんなさい / 말하는 사람 불확실: 고양이(미상)인지 밀크인지. 받아쓰기 食べていて→黙っていて 추정"
+  },
+  {
+   "start": 7.3,
+   "end": 9.2,
+   "speaker": "고양이(미상)",
+   "ja": "本当は私がニャカマだったの",
+   "ko": "사실은 나도 동료였다냥.",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 本当は私がニャカマだったの (ニャカマ=고양이 말투 仲間로 봄) / 말하는 사람 불확실: 고양이(미상)인지 밀크인지. 「ニャカマ」 해석 확인 필요"
+  },
+  {
+   "start": 9.64,
+   "end": 10.98,
+   "speaker": "루미",
+   "ja": "びっくりしたー",
+   "ko": "깜짝이야!",
+   "status": "needs_human_review"
+  }
+ ]
+}

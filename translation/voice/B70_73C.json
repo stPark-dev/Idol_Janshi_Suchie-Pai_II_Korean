@@ -1,0 +1,16 @@
+{
+ "voice": "B70_73C.AIF",
+ "scene": "벌칙 장면 — 아리스(피치파이) 1~4번째 공통, C: 마무리",
+ "duration": 0.5,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 0.36,
+   "speaker": "아리스",
+   "ja": "へへっ",
+   "ko": "",
+   "status": "needs_human_review"
+  }
+ ]
+}

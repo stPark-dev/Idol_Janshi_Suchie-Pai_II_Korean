@@ -1,0 +1,16 @@
+{
+ "voice": "D73A.AIF",
+ "scene": "벌칙 장면 — 사나에(체리파이) 4번째, A: 패배 직후",
+ "duration": 1.63,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 0.84,
+   "speaker": "사나에",
+   "ja": "そんなー!",
+   "ko": "그럴 수가!",
+   "status": "needs_human_review"
+  }
+ ]
+}

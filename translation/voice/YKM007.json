@@ -1,0 +1,258 @@
+{
+ "voice": "YKM007.AIF",
+ "scene": "대국 전 대화 — 유키 7번째, 상대 츠카사(별자리 궁합으로 영입 시도)",
+ "duration": 98.55,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.82,
+   "end": 5.76,
+   "speaker": "츠카사",
+   "ja": "あの悪夢のような麻雀ドタバタ劇も、終わってみるとなんだか懐かしく思えるぜ",
+   "ko": "그 악몽 같은 마작 소동극도 끝나고 보니 왠지 그립군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.84,
+   "end": 9.48,
+   "speaker": "츠카사",
+   "ja": "考えてみりゃ、スーチーのやつ汚ねえよな",
+   "ko": "생각해 보면 스치 녀석, 치사하단 말이야.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 考えてみりゃ数値のやつ汚ねえよな"
+  },
+  {
+   "start": 10.2,
+   "end": 14.4,
+   "speaker": "츠카사",
+   "ja": "結局俺たち相手には一方的なインチキ麻雀でしか戦ってねえもんな",
+   "ko": "결국 우리 상대로는 일방적인 사기 마작으로만 싸웠잖아.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 結局俺たち相手では一方的なインチキ麻雀でしか戦ってねえもんな"
+  },
+  {
+   "start": 14.92,
+   "end": 16.48,
+   "speaker": "유키",
+   "ja": "そうよ、不公平よね",
+   "ko": "맞아, 불공평해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.98,
+   "end": 18.62,
+   "speaker": "유키",
+   "ja": "私たち、気が合うのね",
+   "ko": "우리 마음이 잘 맞네.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 私たち生きて会うのね (VAD: 私たち来て会うのね)"
+  },
+  {
+   "start": 19.88,
+   "end": 21.92,
+   "speaker": "츠카사",
+   "ja": "俺、用事があったんだ。失敬",
+   "ko": "아차, 볼일이 있었지. 실례한다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.26,
+   "end": 25.0,
+   "speaker": "유키",
+   "ja": "一文字つかさ! 所属と階級を言え!",
+   "ko": "이치몬지 츠카사! 소속과 계급을 대라!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 一文字塚さん所属と階級を言え"
+  },
+  {
+   "start": 25.0,
+   "end": 28.4,
+   "speaker": "츠카사",
+   "ja": "は! 防衛軍東部方面隊第1師団",
+   "ko": "넵! 방위군 동부방면대 제1사단",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.4,
+   "end": 32.34,
+   "speaker": "츠카사",
+   "ja": "第32普通科連隊独立対戦車中隊所属",
+   "ko": "제32보통과연대 독립대전차중대 소속!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 第32普通科連隊独立耐性者中隊所属 / 2차 검수: 普通科連隊를 「보통과연대」로 직역(=보병연대). 표기 결정 필요"
+  },
+  {
+   "start": 32.34,
+   "end": 34.76,
+   "speaker": "츠카사",
+   "ja": "階級は三等陸尉であります",
+   "ko": "계급은 3등 육위입니다!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 階級は三頭陸尉であります / 2차 검수: 三等陸尉를 「3등 육위」로 직역(한국군 계급이면 소위). 표기 결정 필요"
+  },
+  {
+   "start": 34.76,
+   "end": 36.36,
+   "speaker": "유키",
+   "ja": "誕生日と血液型",
+   "ko": "생일과 혈액형!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.36,
+   "end": 39.58,
+   "speaker": "츠카사",
+   "ja": "は! 12月16日、B型であります",
+   "ko": "넵! 12월 16일, B형입니다!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.58,
+   "end": 41.78,
+   "speaker": "유키",
+   "ja": "ということは射手座ね",
+   "ko": "그렇다면 궁수자리네.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ということは伊手座ね"
+  },
+  {
+   "start": 42.32,
+   "end": 43.76,
+   "speaker": "유키",
+   "ja": "やーん、どうしよう",
+   "ko": "꺄아, 어떡해~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.22,
+   "end": 49.76,
+   "speaker": "유키",
+   "ja": "目標に向かって突き進む射手座は、理想主義者の水瓶座と相性ぴったりなのよ",
+   "ko": "목표를 향해 돌진하는 궁수자리는 이상주의자 물병자리랑 궁합이 딱이야.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 目標に向かって突き進む伊手座は理想主義者の水亀座と相性ぴったりなのよ"
+  },
+  {
+   "start": 50.26,
+   "end": 53.74,
+   "speaker": "유키",
+   "ja": "ちなみにユキは2月9日生まれの水瓶座ね",
+   "ko": "참고로 유키는 2월 9일생 물병자리야.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ちなみにユキは2月9日生まれの水亀座ね"
+  },
+  {
+   "start": 53.74,
+   "end": 57.14,
+   "speaker": "유키",
+   "ja": "うーん、もうこれは運命かもしれないわ",
+   "ko": "으음, 이건 정말 운명일지도 몰라.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 57.14,
+   "end": 61.1,
+   "speaker": "츠카사",
+   "ja": "くだらねえ。運命なんてクソくらえだ",
+   "ko": "시시하긴. 운명 따위 엿이나 먹으라지.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: くだらねえ運命なんてクソくらいだ"
+  },
+  {
+   "start": 61.1,
+   "end": 65.42,
+   "speaker": "츠카사",
+   "ja": "俺にとっちゃ運命なんて言葉は偶然と同義語だぜ",
+   "ko": "나한테 운명이란 말은 우연이랑 같은 뜻이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 65.42,
+   "end": 70.26,
+   "speaker": "유키",
+   "ja": "しかもB型ってことは、O型のユキとまたまた相性バッチリよ",
+   "ko": "게다가 B형이면 O형인 유키랑 또 궁합이 딱이야!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: しかもB型ってことは大型の雪とまたまた相性バッチリよ"
+  },
+  {
+   "start": 71.1,
+   "end": 73.86,
+   "speaker": "츠카사",
+   "ja": "お前って人の話全然聞いてないのな",
+   "ko": "너 남의 말을 전혀 안 듣는구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 73.86,
+   "end": 78.52,
+   "speaker": "유키",
+   "ja": "というわけで、私とパートナー組んで恭子さんをやっつけましょう",
+   "ko": "그러니까 나랑 파트너 맺고 쿄코 씨를 해치우자.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: というわけで私とパートナー組んで京子さんをやっつけましょう"
+  },
+  {
+   "start": 78.52,
+   "end": 80.34,
+   "speaker": "유키",
+   "ja": "これはきっと運命よ",
+   "ko": "이건 분명 운명이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 80.34,
+   "end": 83.58,
+   "speaker": "츠카사",
+   "ja": "やなこった。運命に縛られるなんてごめんだぜ",
+   "ko": "싫거든. 운명에 묶이는 건 사양이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 83.58,
+   "end": 86.16,
+   "speaker": "유키",
+   "ja": "へー、運命に逆らう気?",
+   "ko": "흐응, 운명을 거스르겠다고?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 86.62,
+   "end": 91.66,
+   "speaker": "유키",
+   "ja": "今日、水瓶座の勝負運は星5つ、射手座はたったの1つなんだけど",
+   "ko": "오늘 물병자리 승부운은 별 다섯 개, 궁수자리는 겨우 한 개인데.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 今日水亀座の勝負運は星5つ伊手座はたったの1つなんだけど"
+  },
+  {
+   "start": 92.28,
+   "end": 96.3,
+   "speaker": "유키",
+   "ja": "運命に立ち向かうってんなら、私と麻雀で勝負するべきよね",
+   "ko": "운명에 맞서겠다면 나랑 마작으로 승부해야겠지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 96.3,
+   "end": 98.14,
+   "speaker": "츠카사",
+   "ja": "おう、やってやるぜ",
+   "ko": "오냐, 해 주마!",
+   "status": "needs_human_review"
+  }
+ ]
+}

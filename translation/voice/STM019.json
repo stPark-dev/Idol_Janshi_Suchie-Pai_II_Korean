@@ -1,0 +1,64 @@
+{
+ "voice": "STM019.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 19번째, 엔딩 직전",
+ "duration": 19.96,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.2,
+   "end": 4.74,
+   "speaker": "쿄코",
+   "ja": "ミ、ミルキーと一緒だととんでもない評価を受けるわね",
+   "ko": "미, 밀키랑 같이 있으면 터무니없는 평가를 받는다니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.38,
+   "end": 9.6,
+   "speaker": "밀크",
+   "ja": "これで私たちが最強麻雀軍団ということがはっきりしたでみゃー",
+   "ko": "이걸로 우리가 최강 마작 군단이라는 게 확실해졌다먀~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.6,
+   "end": 12.02,
+   "speaker": "쿄코",
+   "ja": "勝手に団体作んないでほしいわね",
+   "ko": "멋대로 단체 만들지 말아 줄래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.6,
+   "end": 13.34,
+   "speaker": "쿄코",
+   "ja": "まあいいか",
+   "ko": "뭐, 됐나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.76,
+   "end": 15.44,
+   "speaker": "쿄코",
+   "ja": "じゃあミルキー、ご苦労様",
+   "ko": "그럼 밀키, 수고했어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.78,
+   "end": 17.6,
+   "speaker": "쿄코",
+   "ja": "もうルミさんのところに帰っていいわよ",
+   "ko": "이제 루미 씨한테 돌아가도 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.96,
+   "end": 19.44,
+   "speaker": "밀크",
+   "ja": "その前にやることがあるみゃー",
+   "ko": "그 전에 할 일이 있다먀~",
+   "status": "needs_human_review"
+  }
+ ]
+}

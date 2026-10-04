@@ -1,0 +1,32 @@
+{
+ "voice": "D73B.AIF",
+ "scene": "벌칙 장면 — 사나에(체리파이) 4번째, B: 벗는 애니메이션",
+ "duration": 18.98,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 3.42,
+   "end": 5.68,
+   "speaker": "사나에",
+   "ja": "あの、手が震えて",
+   "ko": "저기, 손이 떨려서…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.8,
+   "end": 12.92,
+   "speaker": "사나에",
+   "ja": "あ、いや!",
+   "ko": "아, 안 돼!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.76,
+   "end": 18.36,
+   "speaker": "사나에",
+   "ja": "はぁ、レイカ様、すみません",
+   "ko": "하아… 레이카 님, 죄송해요.",
+   "status": "needs_human_review"
+  }
+ ]
+}

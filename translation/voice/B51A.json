@@ -1,0 +1,18 @@
+{
+ "voice": "B51A.AIF",
+ "scene": "파트너 변신 — 피치파이 변신 외침",
+ "duration": 12.75,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 7.96,
+   "end": 9.74,
+   "speaker": "피치파이(아리스)",
+   "ja": "ピーチパイ、デビュー!",
+   "ko": "피치파이, 데뷔!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ピーチファイトデビュー (앞 8초는 받아쓰기 없음)"
+  }
+ ]
+}

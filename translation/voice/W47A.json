@@ -1,0 +1,26 @@
+{
+ "voice": "W47A.AIF",
+ "scene": "만관 보너스 화면 — 변신 게이지 MAX, 피치파이",
+ "duration": 4.74,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.76,
+   "speaker": "스치파이",
+   "ja": "変身ゲージMAX、ピーチ、お願いね!",
+   "ko": "변신 게이지 MAX! 피치, 부탁해!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 変身ゲージマックス、ビーチ、お願いね!"
+  },
+  {
+   "start": 2.96,
+   "end": 4.38,
+   "speaker": "피치파이(아리스)",
+   "ja": "がんばりまーす!",
+   "ko": "힘낼게요!",
+   "status": "needs_human_review"
+  }
+ ]
+}

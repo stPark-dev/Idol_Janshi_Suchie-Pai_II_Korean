@@ -1,0 +1,210 @@
+{
+ "voice": "STM006.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 6번째, 사유리의 토끼 하우스",
+ "duration": 72.39,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.58,
+   "end": 2.5,
+   "speaker": "사유리",
+   "ja": "いらっしゃいませー!",
+   "ko": "어서 오세요~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.54,
+   "end": 4.34,
+   "speaker": "사유리",
+   "ja": "はぁ…",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.26,
+   "end": 9.14,
+   "speaker": "사유리",
+   "ja": "夕暮れ、駅の雑踏、窓の明かり…",
+   "ko": "해 질 녘, 역의 인파, 창가의 불빛…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.74,
+   "end": 13.0,
+   "speaker": "사유리",
+   "ja": "ふっと、寂しさがこみ上げてきませんか?",
+   "ko": "문득 쓸쓸함이 밀려오지 않나요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.74,
+   "end": 17.2,
+   "speaker": "사유리",
+   "ja": "何もかも、めんどくさくなっちゃうことってありませんか?",
+   "ko": "모든 게 다 귀찮아질 때가 있지 않나요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.2,
+   "end": 19.5,
+   "speaker": "사유리",
+   "ja": "でも安心してね",
+   "ko": "하지만 안심하세요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.5,
+   "end": 22.6,
+   "speaker": "사유리",
+   "ja": "そう、ここが旅の終着駅",
+   "ko": "그래요, 여기가 여행의 종착역.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.6,
+   "end": 24.98,
+   "speaker": "사유리",
+   "ja": "あなたの心のユートピア",
+   "ko": "당신 마음의 유토피아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.98,
+   "end": 28.54,
+   "speaker": "사유리",
+   "ja": "ようこそ、うさぎハウスへ!",
+   "ko": "어서 오세요, 토끼 하우스에!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.22,
+   "end": 31.88,
+   "speaker": "사유리",
+   "ja": "渡しそびれたプレゼント",
+   "ko": "전하지 못한 선물,",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 私そびれたプレゼント"
+  },
+  {
+   "start": 31.88,
+   "end": 33.58,
+   "speaker": "사유리",
+   "ja": "宛先のないラブレター",
+   "ko": "받는 이 없는 러브레터,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 33.58,
+   "end": 35.72,
+   "speaker": "사유리",
+   "ja": "みんな私にちょうだいな",
+   "ko": "전부 저한테 주세요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.48,
+   "end": 39.72,
+   "speaker": "쿄코",
+   "ja": "さ、さゆりさん、バニーガールやめたって聞いたんだけど",
+   "ko": "사, 사유리 씨, 바니걸 그만뒀다고 들었는데?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.72,
+   "end": 44.62,
+   "speaker": "사유리",
+   "ja": "まー!あたしからうさぎさん取ったら一体全体何が残るというの!",
+   "ko": "어머! 저한테서 토끼를 빼면 대체 뭐가 남는다는 거예요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.62,
+   "end": 45.64,
+   "speaker": "쿄코",
+   "ja": "ただの変な人",
+   "ko": "그냥 이상한 사람.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 45.64,
+   "end": 49.68,
+   "speaker": "사유리",
+   "ja": "世界は今うさぎさんを必要としているのよ",
+   "ko": "세상은 지금 토끼를 필요로 하고 있다고요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.16,
+   "end": 53.0,
+   "speaker": "쿄코",
+   "ja": "あ、私の方は間に合ってるんだけどね、ほら",
+   "ko": "아, 난 이미 하나 있거든. 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 53.0,
+   "end": 53.72,
+   "speaker": "밀크",
+   "ja": "みー",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 53.72,
+   "end": 54.48,
+   "speaker": "사유리",
+   "ja": "げげっ",
+   "ko": "헉!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 55.0,
+   "end": 55.8,
+   "speaker": "사유리",
+   "ja": "こ、この耳は",
+   "ko": "이, 이 귀는…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.34,
+   "end": 58.2,
+   "speaker": "쿄코",
+   "ja": "そう、本物のうさぎさんよ",
+   "ko": "그래, 진짜 토끼야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 58.82,
+   "end": 63.72,
+   "speaker": "사유리",
+   "ja": "ママ…ママですよー、いい子でしたかー",
+   "ko": "엄마… 엄마 왔어요~ 착하게 있었나요~?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.88,
+   "end": 67.7,
+   "speaker": "쿄코",
+   "ja": "時間の無駄だったわ、行くわよミルク",
+   "ko": "시간 낭비였네. 가자, 밀크.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 67.71,
+   "end": 68.35,
+   "speaker": "밀크",
+   "ja": "みゃ",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 69.52,
+   "end": 71.5,
+   "speaker": "사유리",
+   "ja": "ああ、帰る前に何か注文して",
+   "ko": "아앗, 가기 전에 뭐라도 주문해 줘요!",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "voice": "YKM015.AIF",
+ "scene": "대국 전 대화 — 유키 15번째, 유키의 마지막 인사",
+ "duration": 5.15,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.7,
+   "end": 3.96,
+   "speaker": "유키",
+   "ja": "今までユキちゃんを応援してくれて、本当にありがとうございました",
+   "ko": "지금까지 유키를 응원해 줘서 정말 고맙습니다!",
+   "status": "needs_human_review"
+  }
+ ]
+}

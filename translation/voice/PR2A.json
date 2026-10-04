@@ -1,0 +1,16 @@
+{
+ "voice": "PR2A.AIF",
+ "scene": "오프닝(프롤로그) — 스치파이 출동",
+ "duration": 2.31,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.08,
+   "end": 1.96,
+   "speaker": "스치파이",
+   "ja": "よーし、ヒロインの出番よ!",
+   "ko": "좋아, 히로인이 나설 차례야!",
+   "status": "needs_human_review"
+  }
+ ]
+}

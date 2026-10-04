@@ -1,0 +1,28 @@
+{
+ "voice": "F51A.AIF",
+ "scene": "파트너 변신 — 밀키파이 변신 외침",
+ "duration": 7.33,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.74,
+   "end": 3.38,
+   "speaker": "밀키파이(밀크)",
+   "ja": "ミルキーチェンジ!",
+   "ko": "밀키 체인지!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ミルキーチャレンジ"
+  },
+  {
+   "start": 4.98,
+   "end": 6.96,
+   "speaker": "밀키파이(밀크)",
+   "ja": "ミルキーパイだぴょん",
+   "ko": "밀키파이다뿅!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ミルキーパイってピョン"
+  }
+ ]
+}

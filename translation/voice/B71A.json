@@ -1,0 +1,16 @@
+{
+ "voice": "B71A.AIF",
+ "scene": "벌칙 장면 — 아리스(피치파이) 2번째, A: 패배 직후",
+ "duration": 2.9,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.38,
+   "speaker": "아리스",
+   "ja": "でもアリス胸ちっちゃいから",
+   "ko": "하지만 아리스는 가슴이 작은걸요.",
+   "status": "needs_human_review"
+  }
+ ]
+}

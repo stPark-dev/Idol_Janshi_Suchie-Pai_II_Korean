@@ -1,0 +1,18 @@
+{
+ "voice": "YOP0.AIF",
+ "scene": "유키 등장",
+ "duration": 5.42,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.4,
+   "end": 1.9,
+   "speaker": "유키",
+   "ja": "美少女雀士スーチー…",
+   "ko": "미소녀 작사 스치…",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 美少女男子数値 (VAD 있는 받아쓰기만 있음, 뒤 3.5초 받아쓰기 없음)"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "voice": "D54A.AIF",
+ "scene": "파트너 소개 — 체리파이(흑화) 인사",
+ "duration": 5.83,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.6,
+   "speaker": "체리파이(사나에)",
+   "ja": "アハハハハ!",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 1.82,
+   "end": 5.5,
+   "speaker": "체리파이(사나에)",
+   "ja": "見せてやろう!究極の技を!",
+   "ko": "보여 주마! 궁극의 기술을!",
+   "status": "needs_human_review"
+  }
+ ]
+}

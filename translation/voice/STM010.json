@@ -1,0 +1,262 @@
+{
+ "voice": "STM010.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 10번째, 상대 유키",
+ "duration": 84.87,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.82,
+   "end": 3.9,
+   "speaker": "쿄코(추정)",
+   "ja": "若さ、清純さ、可憐さ",
+   "ko": "젊음, 청순함, 가련함,",
+   "status": "needs_review",
+   "note": "2차 검수: 화자 불확실(쿄코 추정, 밀크일 수도)"
+  },
+  {
+   "start": 3.96,
+   "end": 7.16,
+   "speaker": "쿄코(추정)",
+   "ja": "そして漂うちょっと危険な香り",
+   "ko": "그리고 풍기는 살짝 위험한 향기.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.82,
+   "end": 10.36,
+   "speaker": "쿄코(추정)",
+   "ja": "やっぱセーラー服は制服の王様よね",
+   "ko": "역시 세일러복은 교복의 왕이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.2,
+   "end": 13.5,
+   "speaker": "밀크",
+   "ja": "はぁー!あの服欲しい欲しい欲しい!",
+   "ko": "하아~! 저 옷 갖고 싶어 갖고 싶어!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.56,
+   "end": 15.36,
+   "speaker": "밀크",
+   "ja": "で、でもどうすればいいんだぴょん",
+   "ko": "그, 그치만 어떡하면 되냐뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.94,
+   "end": 16.36,
+   "speaker": "밀크",
+   "ja": "くぅー",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.36,
+   "end": 17.84,
+   "speaker": "밀크",
+   "ja": "欲しいぴょーん!",
+   "ko": "갖고 싶다뿅~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.66,
+   "end": 21.58,
+   "speaker": "악마 밀크",
+   "ja": "へいへいへい、なーに唸ってんだぴょん",
+   "ko": "헤이헤이헤이, 뭘 끙끙대냐뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.58,
+   "end": 24.5,
+   "speaker": "악마 밀크",
+   "ja": "服なんて力づくで奪っちまえばいいぴょん",
+   "ko": "옷 따윈 힘으로 뺏어 버리면 된다뿅.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 服なんて力づくで割っちまえばいいぴょん"
+  },
+  {
+   "start": 25.18,
+   "end": 26.98,
+   "speaker": "천사 밀크",
+   "ja": "ダメだぴょん、ミルクちゃん",
+   "ko": "안 된다뿅, 밀크야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.98,
+   "end": 29.72,
+   "speaker": "천사 밀크",
+   "ja": "人の物を取るのはいけないことだぴょん",
+   "ko": "남의 물건을 뺏는 건 나쁜 짓이다뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.72,
+   "end": 31.98,
+   "speaker": "악마 밀크",
+   "ja": "き、きれいごと言いやがって",
+   "ko": "이, 입바른 소리나 하고!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.48,
+   "end": 35.3,
+   "speaker": "악마 밀크",
+   "ja": "おめえが軟弱だからこいつはいつまでたっても",
+   "ko": "네가 물러 터져서 이 녀석이 언제까지나",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.3,
+   "end": 38.66,
+   "speaker": "악마 밀크",
+   "ja": "天然ボケの脳天気うさぎ呼ばわりされるんだぴょん",
+   "ko": "어리바리 태평한 토끼 소리를 듣는 거다뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.08,
+   "end": 40.54,
+   "speaker": "천사 밀크",
+   "ja": "何を言うんですかぴょん",
+   "ko": "무슨 소리예요뿅.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 何を呼んですかぴょん"
+  },
+  {
+   "start": 40.54,
+   "end": 42.8,
+   "speaker": "천사 밀크",
+   "ja": "あなたがいい加減だからミルクちゃんは",
+   "ko": "당신이 무책임하니까 밀크가",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.8,
+   "end": 45.74,
+   "speaker": "천사 밀크",
+   "ja": "脳なしとかバカうさぎとか呼ばれているのですぴょん",
+   "ko": "멍청이니 바보 토끼니 소리를 듣는 거예요뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 45.74,
+   "end": 47.6,
+   "speaker": "악마 밀크",
+   "ja": "おいおい、冗談きついぴょん",
+   "ko": "어이어이, 농담이 심하다뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.6,
+   "end": 50.44,
+   "speaker": "악마 밀크",
+   "ja": "こいつのバカは俺とは無関係だぴょん",
+   "ko": "이 녀석이 바보인 건 나랑 상관없다뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.44,
+   "end": 52.68,
+   "speaker": "천사 밀크",
+   "ja": "あら、私とだって無関係ですぴょん",
+   "ko": "어머, 저랑도 상관없어요뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.68,
+   "end": 56.76,
+   "speaker": "천사 밀크",
+   "ja": "第一、私の力だけでここまでバカになれるわけないですぴょん",
+   "ko": "애초에 제 힘만으로 이렇게까지 바보가 될 리 없잖아요뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.76,
+   "end": 61.2,
+   "speaker": "악마 밀크",
+   "ja": "そうだな、これはもっと根の深いところに原因が",
+   "ko": "그렇군, 이건 더 뿌리 깊은 곳에 원인이…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 62.16,
+   "end": 65.32,
+   "speaker": "밀크",
+   "ja": "お、お前ら、一体何しに出てきたぴょん",
+   "ko": "너, 너희들 대체 뭐 하러 나온 거냐뿅!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 65.32,
+   "end": 66.9,
+   "speaker": "밀크",
+   "ja": "誰がバカうさぎじゃ",
+   "ko": "누가 바보 토끼야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 66.9,
+   "end": 68.94,
+   "speaker": "밀크",
+   "ja": "もう一度言ってみるぴょん",
+   "ko": "다시 한번 말해 봐라뿅.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 68.94,
+   "end": 71.22,
+   "speaker": "밀크",
+   "ja": "ほら、もう一度言ってみるぴょーん",
+   "ko": "자, 다시 한번 말해 봐라뿅~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 71.94,
+   "end": 73.08,
+   "speaker": "유키",
+   "ja": "バカうさぎ",
+   "ko": "바보 토끼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 73.08,
+   "end": 74.12,
+   "speaker": "밀크",
+   "ja": "ガーン",
+   "ko": "쿠궁!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 75.04,
+   "end": 76.08,
+   "speaker": "밀크",
+   "ja": "ショックのパー",
+   "ko": "충격 먹었다…",
+   "status": "needs_human_review",
+   "note": "「ショックのパー」는 옛 유행 개그 문구"
+  },
+  {
+   "start": 76.74,
+   "end": 79.94,
+   "speaker": "쿄코",
+   "ja": "待ってました、これはもう麻雀勝負で対決ね",
+   "ko": "기다렸어! 이건 마작 승부로 결판내야겠네!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 79.94,
+   "end": 84.4,
+   "speaker": "유키",
+   "ja": "な、なにそれ、ユキ言われた通りに言っただけなのに",
+   "ko": "뭐, 뭐야 그게. 유키는 시키는 대로 말했을 뿐인데!",
+   "status": "needs_human_review"
+  }
+ ]
+}

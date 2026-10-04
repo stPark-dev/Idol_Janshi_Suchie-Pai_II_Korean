@@ -1,0 +1,18 @@
+{
+ "voice": "E60A.AIF",
+ "scene": "필살기·소환 연출 — 체리파이 필살기 (추정)",
+ "duration": 5.76,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.68,
+   "end": 2.78,
+   "speaker": "체리파이(사나에)",
+   "ja": "チェリーボンバー!",
+   "ko": "체리 봄버!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: VAD 없음: 次回予告 (환각) / VAD: シュリー ポン. 필살기 음성 배열(C=피치, A=레몬, G=밀키)로 보아 체리파이로 추정"
+  }
+ ]
+}

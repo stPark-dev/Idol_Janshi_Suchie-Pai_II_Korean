@@ -1,0 +1,16 @@
+{
+ "voice": "D70C.AIF",
+ "scene": "벌칙 장면 — 사나에(체리파이) 1번째, C: 마무리",
+ "duration": 5.28,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 4.62,
+   "speaker": "사나에",
+   "ja": "ふぅ、あのー、これでよろしいでしょうか?",
+   "ko": "후우… 저기, 이 정도면 될까요?",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "voice": "W48A.AIF",
+ "scene": "만관 보너스 화면 — 변신 게이지 MAX, 레몬파이",
+ "duration": 4.67,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.77,
+   "speaker": "스치파이",
+   "ja": "変身ゲージMAX!頼むわ、レモン!",
+   "ko": "변신 게이지 MAX! 부탁해, 레몬!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.05,
+   "end": 4.21,
+   "speaker": "레몬파이(츠카사)",
+   "ja": "俺の出番だな!",
+   "ko": "내 차례로군!",
+   "status": "needs_human_review"
+  }
+ ]
+}

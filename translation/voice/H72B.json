@@ -1,0 +1,56 @@
+{
+ "voice": "H72B.AIF",
+ "scene": "벌칙 장면 — 유키 3번째, B: 벗는 애니메이션",
+ "duration": 16.56,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.04,
+   "speaker": "유키",
+   "ja": "脱ぐとこが見たいなんて",
+   "ko": "벗는 걸 보고 싶다니…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.04,
+   "end": 4.86,
+   "speaker": "유키",
+   "ja": "ユキ、恥ずかしいよ",
+   "ko": "유키 부끄러워.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.62,
+   "end": 7.92,
+   "speaker": "유키",
+   "ja": "はーい、かわいいでしょ",
+   "ko": "짜잔, 귀엽지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.92,
+   "end": 8.8,
+   "speaker": "유키",
+   "ja": "え?",
+   "ko": "어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.56,
+   "end": 12.14,
+   "speaker": "유키",
+   "ja": "あ、怒ってる",
+   "ko": "아, 화났다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.96,
+   "end": 15.08,
+   "speaker": "유키",
+   "ja": "じゃ、サービス",
+   "ko": "그럼 서비스!",
+   "status": "needs_human_review"
+  }
+ ]
+}

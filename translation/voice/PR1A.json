@@ -1,0 +1,32 @@
+{
+ "voice": "PR1A.AIF",
+ "scene": "오프닝(프롤로그) — 습격 장면",
+ "duration": 16.14,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 2.29,
+   "end": 3.55,
+   "speaker": "악당(미상)",
+   "ja": "あははははは",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.55,
+   "end": 5.24,
+   "speaker": "악당(미상)",
+   "ja": "足掻いても無駄だよ",
+   "ko": "발버둥 쳐도 소용없어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.25,
+   "end": 6.21,
+   "speaker": "피해자(미상)",
+   "ja": "助けてー",
+   "ko": "살려 줘!",
+   "status": "needs_human_review"
+  }
+ ]
+}

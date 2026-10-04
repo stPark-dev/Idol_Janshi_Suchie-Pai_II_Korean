@@ -1,0 +1,198 @@
+{
+ "voice": "STC003.AIF",
+ "scene": "대국 전 대화 — 체리파이(사나에) 3번째, 레이카의 저택 (레이카의 심부름, 쿄코와 동행)",
+ "duration": 91.23,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.7,
+   "end": 3.18,
+   "speaker": "레이카",
+   "ja": "さなえ、いるかい?",
+   "ko": "사나에, 거기 있니?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.96,
+   "end": 5.16,
+   "speaker": "사나에",
+   "ja": "はい、レイカ様",
+   "ko": "네, 레이카 님.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.98,
+   "end": 11.08,
+   "speaker": "레이카",
+   "ja": "ちょっと久しぶりに片桐志穂と麻雀が打ちたいんだけど、連絡が取れないんだ",
+   "ko": "오랜만에 카타기리 시호와 마작을 치고 싶은데 연락이 안 되는구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.52,
+   "end": 14.86,
+   "speaker": "레이카",
+   "ja": "お前、直接行ってここへ連れてきておくれよ",
+   "ko": "네가 직접 가서 여기로 데려오렴.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.92,
+   "end": 17.14,
+   "speaker": "사나에",
+   "ja": "はい、レイカ様",
+   "ko": "네, 레이카 님.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.14,
+   "end": 21.2,
+   "speaker": "레이카",
+   "ja": "さなえ、あんた礼儀正しいのは結構だけど",
+   "ko": "사나에, 너는 예의 바른 건 좋은데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.34,
+   "end": 23.32,
+   "speaker": "레이카",
+   "ja": "なんか退屈なんだよね",
+   "ko": "어쩐지 따분하단 말이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.32,
+   "end": 26.98,
+   "speaker": "레이카",
+   "ja": "たまには洒落の一つでもやってみせておくれよ",
+   "ko": "가끔은 농담 하나쯤 해 보렴.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.12,
+   "end": 31.2,
+   "speaker": "사나에",
+   "ja": "あ、はい、申し訳ありません",
+   "ko": "아, 네, 죄송합니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.32,
+   "end": 36.04,
+   "speaker": "사나에",
+   "ja": "で、では、えーと、あ、あの…",
+   "ko": "그, 그럼… 음, 아, 저기…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 37.84,
+   "end": 41.8,
+   "speaker": "사나에",
+   "ja": "レ、レイカ様が麻雀に負けない秘密は何かしら?",
+   "ko": "레, 레이카 님이 마작에서 안 지는 비결은 뭘까요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.94,
+   "end": 46.2,
+   "speaker": "사나에",
+   "ja": "それ、イカサマ、それイカサマ、レイカ様",
+   "ko": "그건 이카사마(속임수)! 이카사마… 레이카사마!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: それ、イカ様、それイカ様、レイカ様 (イカサマ=속임수와 レイカ様의 말장난) / 2차 검수: イカサマ/レイカ様 말장난을 '이카사마(속임수)… 레이카사마'로 둠. 괄호 풀이를 자막에 둘지, 한국어 말장난으로 바꿀지 사람 결정 필요"
+  },
+  {
+   "start": 46.32,
+   "end": 49.8,
+   "speaker": "사나에",
+   "ja": "なんちゃって…",
+   "ko": "…라는 농담이었어요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 49.94,
+   "end": 51.2,
+   "speaker": "사나에",
+   "ja": "んんっ",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.34,
+   "end": 55.82,
+   "speaker": "사나에",
+   "ja": "申し訳ありません、私ったらなんてこと",
+   "ko": "죄송합니다, 제가 무슨 소리를…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.98,
+   "end": 61.6,
+   "speaker": "레이카",
+   "ja": "さなえ…なかなか面白いことを言うじゃないか",
+   "ko": "사나에… 제법 재미있는 소리를 하는구나.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: そんな a なかなか面白いことを言うじゃないか (VAD 쪽은 さなえ)"
+  },
+  {
+   "start": 62.02,
+   "end": 67.8,
+   "speaker": "레이카",
+   "ja": "見直したよ。帰ったらたっぷり褒めてやるから、早く使いに行っておいで",
+   "ko": "다시 봤다. 돌아오면 듬뿍 칭찬해 줄 테니 어서 심부름 다녀오렴.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 71.0,
+   "end": 75.88,
+   "speaker": "사나에",
+   "ja": "はぁ、てっきり怒られるものと勘違いしてしまった",
+   "ko": "하아, 영락없이 혼나는 줄로만 알았어요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 76.44,
+   "end": 78.78,
+   "speaker": "스치파이",
+   "ja": "本当に勘違いかな",
+   "ko": "정말 착각일까?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 78.88,
+   "end": 81.3,
+   "speaker": "스치파이",
+   "ja": "あのー、まあそれは置いといて",
+   "ko": "저기~ 뭐, 그건 그렇다 치고",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 81.32,
+   "end": 83.96,
+   "speaker": "스치파이",
+   "ja": "私もちょうど志穂さんに会いに行くところなの",
+   "ko": "나도 마침 시호 씨를 만나러 가는 참이야.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 私もちょうど司法さんに会いに行くところなの"
+  },
+  {
+   "start": 84.16,
+   "end": 87.0,
+   "speaker": "스치파이",
+   "ja": "途中ちょっと寄り道するけど、よかったら一緒に来ない?",
+   "ko": "가는 길에 좀 들르는 데가 있는데, 괜찮으면 같이 갈래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 87.72,
+   "end": 90.64,
+   "speaker": "사나에",
+   "ja": "あ、はい!ぜひお供させてください!",
+   "ko": "아, 네! 꼭 함께 가게 해 주세요!",
+   "status": "needs_human_review"
+  }
+ ]
+}

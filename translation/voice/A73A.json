@@ -1,0 +1,16 @@
+{
+ "voice": "A73A.AIF",
+ "scene": "벌칙 장면 — 츠카사(레몬파이) 4번째, A: 패배 직후",
+ "duration": 2.08,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.66,
+   "speaker": "츠카사",
+   "ja": "まあ負けは負けだからな",
+   "ko": "뭐, 진 건 진 거니까.",
+   "status": "needs_human_review"
+  }
+ ]
+}

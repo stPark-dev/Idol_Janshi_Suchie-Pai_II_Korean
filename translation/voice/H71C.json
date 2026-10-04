@@ -1,0 +1,16 @@
+{
+ "voice": "H71C.AIF",
+ "scene": "벌칙 장면 — 유키 2번째, C: 마무리",
+ "duration": 1.6,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.1,
+   "speaker": "유키",
+   "ja": "やだもん",
+   "ko": "싫은걸.",
+   "status": "needs_human_review"
+  }
+ ]
+}

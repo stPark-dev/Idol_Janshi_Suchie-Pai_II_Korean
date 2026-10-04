@@ -1,0 +1,16 @@
+{
+ "voice": "Q70A.AIF",
+ "scene": "벌칙 장면 — 루미 1번째, A: 패배 직후",
+ "duration": 1.62,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.08,
+   "speaker": "루미",
+   "ja": "どうなってんの?",
+   "ko": "어떻게 된 거야?",
+   "status": "needs_human_review"
+  }
+ ]
+}

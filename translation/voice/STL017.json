@@ -1,0 +1,50 @@
+{
+ "voice": "STL017.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 17번째, 엔딩 (휴가 여행)",
+ "duration": 19.83,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.66,
+   "end": 4.58,
+   "speaker": "미상(내레이션)",
+   "ja": "つかささんは休暇が取れても一人でぶらっと出かけてしまいます",
+   "ko": "츠카사 씨는 휴가를 얻어도 혼자서 훌쩍 떠나 버려요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.36,
+   "end": 9.7,
+   "speaker": "츠카사",
+   "ja": "一人旅も悪くねえが、今度は誰かと二人で来てみたいぜ",
+   "ko": "혼자 여행도 나쁘진 않은데, 다음엔 누구랑 둘이 와 보고 싶군.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 一人旅も悪くねえが今度は誰か二人で来てみたいぜ"
+  },
+  {
+   "start": 10.12,
+   "end": 12.1,
+   "speaker": "쿄코(추정)",
+   "ja": "そうね、また会いましょうね",
+   "ko": "그래, 또 만나자.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.64,
+   "end": 16.66,
+   "speaker": "쿄코(추정)",
+   "ja": "きっと口喧嘩になっちゃうだろうけど、それもまた楽しいじゃない",
+   "ko": "분명 말다툼하겠지만 그것도 즐겁잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.16,
+   "end": 18.28,
+   "speaker": "쿄코(추정)",
+   "ja": "ね、つかささん",
+   "ko": "그렇지, 츠카사 씨?",
+   "status": "needs_human_review"
+  }
+ ]
+}

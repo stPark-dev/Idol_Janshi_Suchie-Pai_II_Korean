@@ -1,0 +1,16 @@
+{
+ "voice": "T70A.AIF",
+ "scene": "벌칙 장면 — 시호, A: 패배 직후",
+ "duration": 3.0,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.53,
+   "end": 2.56,
+   "speaker": "시호",
+   "ja": "せ、セシル様",
+   "ko": "세, 세실 님…",
+   "status": "needs_human_review"
+  }
+ ]
+}

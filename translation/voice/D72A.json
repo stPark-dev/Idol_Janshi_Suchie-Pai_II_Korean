@@ -1,0 +1,16 @@
+{
+ "voice": "D72A.AIF",
+ "scene": "벌칙 장면 — 사나에(체리파이) 3번째, A: 패배 직후",
+ "duration": 3.65,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 3.04,
+   "speaker": "사나에",
+   "ja": "あのー、少々お待ちください。",
+   "ko": "저기, 잠시만 기다려 주세요.",
+   "status": "needs_human_review"
+  }
+ ]
+}

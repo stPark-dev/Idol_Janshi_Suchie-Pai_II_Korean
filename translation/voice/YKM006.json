@@ -1,0 +1,322 @@
+{
+ "voice": "YKM006.AIF",
+ "scene": "대국 전 대화 — 유키 6번째, 상대 미유리(지우개를 빼앗긴 미유리를 달래다)",
+ "duration": 148.17,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 6.9,
+   "end": 8.98,
+   "speaker": "유키",
+   "ja": "みゆりちゃん、どうしたの?",
+   "ko": "미유리야, 왜 그래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.98,
+   "end": 10.78,
+   "speaker": "미유리",
+   "ja": "ユキお姉ちゃん…",
+   "ko": "유키 언니…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.46,
+   "end": 15.96,
+   "speaker": "유키",
+   "ja": "泣いてちゃわかんないよ",
+   "ko": "울기만 하면 모르잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.96,
+   "end": 19.02,
+   "speaker": "유키",
+   "ja": "何があったの? 誰かにいじめられたの?",
+   "ko": "무슨 일 있었어? 누가 괴롭혔어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.6,
+   "end": 27.52,
+   "speaker": "미유리",
+   "ja": "みゆりのね… みゆりの猫さんの消しゴム取られちゃったの",
+   "ko": "미유리 거… 미유리 고양이 지우개를 빼앗겼어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.22,
+   "end": 33.8,
+   "speaker": "미유리",
+   "ja": "みゆりが走ると咳が出て走れないの知ってるから、走って逃げちゃうの",
+   "ko": "미유리가 뛰면 기침이 나서 못 뛰는 걸 아니까 뛰어서 도망가.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 34.2,
+   "end": 38.62,
+   "speaker": "미유리",
+   "ja": "みゆりが追いかけられないの知ってるから、バカにするの",
+   "ko": "미유리가 못 쫓아가는 걸 아니까 놀리는 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.26,
+   "end": 45.54,
+   "speaker": "유키",
+   "ja": "ひどーい! どこの誰よ? ユキがやっつけてやるから",
+   "ko": "너무해! 어디 사는 누구야? 유키가 혼내 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 48.5,
+   "end": 52.88,
+   "speaker": "미유리",
+   "ja": "だめだよ。お姉ちゃんのいないところでもっといじめられるもん",
+   "ko": "안 돼. 언니가 없는 데서 더 괴롭힐 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.88,
+   "end": 55.62,
+   "speaker": "미유리",
+   "ja": "みゆりが頑張るしかないんだもん",
+   "ko": "미유리가 힘내는 수밖에 없어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 55.62,
+   "end": 56.72,
+   "speaker": "유키",
+   "ja": "みゆりちゃん…",
+   "ko": "미유리야…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 57.9,
+   "end": 61.16,
+   "speaker": "유키",
+   "ja": "ねえ、相手はどんな子なの? 同じクラスの男子?",
+   "ko": "있잖아, 상대는 어떤 애야? 같은 반 남자애?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 61.66,
+   "end": 65.48,
+   "speaker": "미유리",
+   "ja": "女の子だよ。男の子はあんまり意地悪しないよ",
+   "ko": "여자애야. 남자애들은 별로 못되게 안 굴어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 66.22,
+   "end": 70.78,
+   "speaker": "미유리",
+   "ja": "でもみゆり、学校つまんないよ。行きたくないよ",
+   "ko": "그래도 미유리는 학교 재미없어. 가기 싫어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 70.78,
+   "end": 73.5,
+   "speaker": "유키",
+   "ja": "いいよ、そんな学校行かなくていいよ",
+   "ko": "됐어, 그런 학교 안 가도 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 73.5,
+   "end": 76.26,
+   "speaker": "유키",
+   "ja": "みゆりちゃん、ユキのお家においでよ",
+   "ko": "미유리야, 유키네 집으로 와.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 76.26,
+   "end": 81.16,
+   "speaker": "유키",
+   "ja": "ユキ、学校やめてみゆりちゃんに勉強教えてあげるから",
+   "ko": "유키가 학교 그만두고 미유리한테 공부 가르쳐 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 81.58,
+   "end": 83.68,
+   "speaker": "유키",
+   "ja": "みゆりちゃんかわいそうだよ",
+   "ko": "미유리가 너무 불쌍해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 83.68,
+   "end": 86.98,
+   "speaker": "미유리",
+   "ja": "だめだよ、お姉ちゃんまで泣いちゃ…",
+   "ko": "안 돼, 언니까지 울면…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 87.52,
+   "end": 89.8,
+   "speaker": "유키",
+   "ja": "だってかわいそうなんだもん",
+   "ko": "그치만 불쌍한걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 89.8,
+   "end": 91.86,
+   "speaker": "유키",
+   "ja": "みんなひどいんだもん",
+   "ko": "다들 너무하잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 93.06,
+   "end": 94.26,
+   "speaker": "미유리",
+   "ja": "そんなことないよ",
+   "ko": "그렇지 않아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 94.26,
+   "end": 97.74,
+   "speaker": "미유리",
+   "ja": "ユキお姉ちゃんとか、うさぎさんとか、みんなお友達だもん",
+   "ko": "유키 언니도, 토끼도 다 친구인걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 98.12,
+   "end": 99.34,
+   "speaker": "미유리",
+   "ja": "みんな優しいよ",
+   "ko": "다들 착해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 99.82,
+   "end": 101.38,
+   "speaker": "미유리",
+   "ja": "だからみゆり平気だよ",
+   "ko": "그러니까 미유리는 괜찮아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 101.82,
+   "end": 104.0,
+   "speaker": "미유리",
+   "ja": "だからお姉ちゃんが泣いちゃだめだよ",
+   "ko": "그러니까 언니가 울면 안 돼.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: だからお姉ちゃんがないじゃだめだよ"
+  },
+  {
+   "start": 104.0,
+   "end": 107.32,
+   "speaker": "유키",
+   "ja": "でも、猫さんの消しゴム取られちゃったんでしょ",
+   "ko": "그래도 고양이 지우개 빼앗겼잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 107.92,
+   "end": 111.56,
+   "speaker": "미유리",
+   "ja": "平気だよ。みゆり、お家にあと二つ持ってるもん",
+   "ko": "괜찮아. 미유리 집에 두 개 더 있는걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 112.08,
+   "end": 113.7,
+   "speaker": "미유리",
+   "ja": "黒猫さんと白猫さんだよ",
+   "ko": "검은 고양이랑 하얀 고양이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 113.7,
+   "end": 116.66,
+   "speaker": "미유리",
+   "ja": "白猫さんの方、ユキお姉ちゃんにあげるよ",
+   "ko": "하얀 고양이는 유키 언니한테 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 117.64,
+   "end": 118.82,
+   "speaker": "유키",
+   "ja": "うん、どうもありがとう",
+   "ko": "응, 고마워.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 119.64,
+   "end": 121.6,
+   "speaker": "미유리",
+   "ja": "みゆり、ちゃんと学校にも行くよ",
+   "ko": "미유리는 학교도 꼬박꼬박 갈 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 121.94,
+   "end": 126.76,
+   "speaker": "미유리",
+   "ja": "だって、ルミさんとか病院の人のおかげで学校に行けるようになったんだもん",
+   "ko": "루미 씨랑 병원 사람들 덕분에 학교에 갈 수 있게 됐으니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 127.46,
+   "end": 130.3,
+   "speaker": "미유리",
+   "ja": "楽しみにしてたのとちょっと違うとこもあるけど",
+   "ko": "기대했던 거랑 좀 다른 데도 있지만",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 130.78,
+   "end": 131.8,
+   "speaker": "미유리",
+   "ja": "頑張ってみるよ",
+   "ko": "힘내 볼게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 132.22,
+   "end": 134.78,
+   "speaker": "미유리",
+   "ja": "だからお姉ちゃんもちゃんと学校に行ってね",
+   "ko": "그러니까 언니도 학교 꼭 가야 해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 135.72,
+   "end": 139.22,
+   "speaker": "유키",
+   "ja": "そ、そうね。ユキにはみゆりちゃんがついてるもんね",
+   "ko": "그, 그래. 유키한테는 미유리가 있으니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 140.3,
+   "end": 143.0,
+   "speaker": "미유리",
+   "ja": "そうだよ。だから元気出してね",
+   "ko": "맞아. 그러니까 힘내.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 143.84,
+   "end": 147.72,
+   "speaker": "유키",
+   "ja": "あ、あのー、ユキってそんなに頼りないかな",
+   "ko": "저, 저기… 유키가 그렇게 미덥지 못한가?",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -1,0 +1,399 @@
+{
+ "voice": "STP012.AIF",
+ "scene": "대국 전 대화 — 피치파이(아리스) 12번째 장면, 상대 미유리",
+ "duration": 166.74,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.42,
+   "end": 4.34,
+   "speaker": "아리스",
+   "ja": "もう、キョウコさんたら足早いんだもんな",
+   "ko": "정말, 쿄코 씨는 걸음이 너무 빠르다니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.34,
+   "end": 6.52,
+   "speaker": "아리스",
+   "ja": "はぐれちゃったじゃないの",
+   "ko": "놓쳐 버렸잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.12,
+   "end": 8.62,
+   "speaker": "아리스",
+   "ja": "ここどこだろう",
+   "ko": "여기가 어디지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.62,
+   "end": 10.94,
+   "speaker": "아리스",
+   "ja": "うーん、困ったな",
+   "ko": "음, 곤란하네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.44,
+   "end": 15.66,
+   "speaker": "아리스",
+   "ja": "もう、こうなったら魔法でなんとかしちゃおう",
+   "ko": "에잇, 이렇게 된 이상 마법으로 어떻게든 해 보자.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.66,
+   "end": 18.54,
+   "speaker": "아리스",
+   "ja": "せーの、マジカルワープ!",
+   "ko": "하나 둘, 매지컬 워프!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.54,
+   "end": 20.32,
+   "speaker": "아리스",
+   "ja": "なんちゃって",
+   "ko": "…는 농담이고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 20.32,
+   "end": 24.14,
+   "speaker": "미유리",
+   "ja": "わぁ、お姉ちゃん魔法使いなんだ",
+   "ko": "와아, 언니 마법사구나!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: は?お姉ちゃん魔法使いなんだ"
+  },
+  {
+   "start": 24.14,
+   "end": 26.26,
+   "speaker": "아리스",
+   "ja": "え?ま、まさか",
+   "ko": "어? 서, 설마.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.08,
+   "end": 31.42,
+   "speaker": "아리스",
+   "ja": "魔法なんて使えないわよ。ろくなのはね",
+   "ko": "마법 같은 거 못 써. 제대로 된 건 말이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.92,
+   "end": 34.38,
+   "speaker": "아리스",
+   "ja": "だから普通の人なのよね、私は",
+   "ko": "그러니까 난 평범한 사람이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.1,
+   "end": 37.08,
+   "speaker": "미유리",
+   "ja": "ねえねえ",
+   "ko": "있잖아, 있잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 37.74,
+   "end": 40.42,
+   "speaker": "미유리",
+   "ja": "魔法でおいしいパイを作ったりできるのかな",
+   "ko": "마법으로 맛있는 파이도 만들 수 있어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 40.96,
+   "end": 42.28,
+   "speaker": "아리스",
+   "ja": "できると思うよ",
+   "ko": "할 수 있을 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.74,
+   "end": 47.02,
+   "speaker": "아리스",
+   "ja": "魔法ってね、心の中のものを現実にする力なんだって",
+   "ko": "마법은 마음속에 있는 걸 현실로 만드는 힘이래.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.54,
+   "end": 52.6,
+   "speaker": "아리스",
+   "ja": "おいしいパイを心に描いて念じれば、パーッと出すことができるはずなんだけど",
+   "ko": "맛있는 파이를 마음에 그리며 빌면 짠 하고 꺼낼 수 있을 텐데",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 53.46,
+   "end": 55.54,
+   "speaker": "아리스",
+   "ja": "でも外見だけじゃダメなの",
+   "ko": "겉모습만으론 안 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 55.54,
+   "end": 60.22,
+   "speaker": "아리스",
+   "ja": "ちゃんと中身も味も香りも温度も何もかも同時にイメージするのよ",
+   "ko": "속도 맛도 향도 온도도 전부 한꺼번에 떠올려야 하거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 60.7,
+   "end": 62.71,
+   "speaker": "아리스",
+   "ja": "今の私にはとっても無理ね",
+   "ko": "지금의 나로선 도저히 무리야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 62.71,
+   "end": 64.94,
+   "speaker": "아리스",
+   "ja": "きっとヘンテコなものを出しちゃうわ",
+   "ko": "분명 이상한 걸 꺼내 버릴 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 65.8,
+   "end": 71.02,
+   "speaker": "미유리",
+   "ja": "じゃあ魔法で看護婦さんや婦警さんや、あとうさぎさんになったりできる?",
+   "ko": "그럼 마법으로 간호사나 여경이나 토끼가 될 수도 있어?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: じゃあ魔法で看護婦さんや父兄さんやあとうさぎさんになったりできる?"
+  },
+  {
+   "start": 71.32,
+   "end": 72.22,
+   "speaker": "아리스",
+   "ja": "できるわよ",
+   "ko": "될 수 있지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 73.58,
+   "end": 78.7,
+   "speaker": "아리스",
+   "ja": "でもすごい知識が必要だから、きっとその頃はおばあさんになっちゃうと思うけど",
+   "ko": "하지만 엄청난 지식이 필요해서 그때쯤엔 할머니가 돼 있을걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 79.86,
+   "end": 83.36,
+   "speaker": "미유리",
+   "ja": "あっ、だから大魔法使いはおばあさんばかりなのか",
+   "ko": "아, 그래서 대마법사는 다 할머니구나!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 83.36,
+   "end": 84.74,
+   "speaker": "아리스",
+   "ja": "がーん",
+   "ko": "충격…!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 85.82,
+   "end": 88.7,
+   "speaker": "미유리",
+   "ja": "ミユリね、実は魔法使いなんだ",
+   "ko": "미유리는 사실 마법사야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 88.7,
+   "end": 89.9,
+   "speaker": "아리스",
+   "ja": "え",
+   "ko": "어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 90.42,
+   "end": 94.76,
+   "speaker": "미유리",
+   "ja": "でもね、魔法はまだ使えないの。変かな?",
+   "ko": "그치만 마법은 아직 못 써. 이상한가?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 96.38,
+   "end": 100.6,
+   "speaker": "아리스",
+   "ja": "うん、魔法が使えなきゃ魔法使いじゃないと思う",
+   "ko": "응, 마법을 못 쓰면 마법사가 아닌 것 같은데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 101.12,
+   "end": 103.98,
+   "speaker": "미유리",
+   "ja": "魔法はね、今使ってるんだよ",
+   "ko": "마법은 지금 쓰고 있는 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 104.58,
+   "end": 107.78,
+   "speaker": "미유리",
+   "ja": "ミユリはね、ミユリ自身に魔法かけてるの",
+   "ko": "미유리는 미유리 자신한테 마법을 걸고 있어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 108.28,
+   "end": 111.38,
+   "speaker": "미유리",
+   "ja": "ミユリの魔法は時間がかかるんだよ",
+   "ko": "미유리의 마법은 시간이 걸리거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 112.28,
+   "end": 114.3,
+   "speaker": "아리스",
+   "ja": "あの、どんな魔法かけたの?",
+   "ko": "저기, 어떤 마법을 걸었어?",
+   "status": "needs_review",
+   "note": "114~119초 미유리의 대답(속삭임)은 받아쓰기에 없음. 들어 보고 채울 것"
+  },
+  {
+   "start": 118.92,
+   "end": 122.96,
+   "speaker": "아리스",
+   "ja": "へー、素敵な魔法だね。きっと叶うよ",
+   "ko": "와, 멋진 마법이다. 꼭 이루어질 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 123.8,
+   "end": 126.72,
+   "speaker": "미유리",
+   "ja": "うん。お姉ちゃん本物の魔法使いでしょ",
+   "ko": "응. 언니는 진짜 마법사지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 127.28,
+   "end": 129.36,
+   "speaker": "미유리",
+   "ja": "ミユリ、会ってすぐわかったよ",
+   "ko": "미유리는 만나자마자 알았어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 129.92,
+   "end": 131.88,
+   "speaker": "아리스",
+   "ja": "ミユリちゃんも魔法使いだね",
+   "ko": "미유리도 마법사구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 132.44,
+   "end": 135.14,
+   "speaker": "아리스",
+   "ja": "私は鈍感だから、今わかったけど",
+   "ko": "나는 둔해서 이제야 알았지만.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 135.66,
+   "end": 140.24,
+   "speaker": "쿄코",
+   "ja": "あはん、アリスちゃんが鈍感だってことなんて会ってすぐわかったわ",
+   "ko": "아항~ 아리스가 둔하다는 건 만나자마자 알았지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 140.84,
+   "end": 144.7,
+   "speaker": "쿄코",
+   "ja": "まったく、前歩かせりゃ道に迷う、後ろ歩かせりゃいなくなる",
+   "ko": "정말이지, 앞에 세우면 길을 잃고 뒤에 세우면 사라지고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 144.7,
+   "end": 146.48,
+   "speaker": "쿄코",
+   "ja": "頼りないったらありゃしないわ",
+   "ko": "미덥지 못하기 짝이 없다니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 146.48,
+   "end": 148.06,
+   "speaker": "아리스",
+   "ja": "ご、ごめんなさい",
+   "ko": "죄, 죄송해요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 149.58,
+   "end": 151.9,
+   "speaker": "아리스",
+   "ja": "でも今は頼りないけど",
+   "ko": "하지만 지금은 미덥지 못해도",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 151.92,
+   "end": 155.76,
+   "speaker": "아리스",
+   "ja": "きっといつかはみんなの夢を叶えられるようになってみせるわ",
+   "ko": "언젠가 꼭 모두의 꿈을 이뤄 줄 수 있게 될 거예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 156.18,
+   "end": 157.96,
+   "speaker": "아리스",
+   "ja": "それが私の夢だもん",
+   "ko": "그게 제 꿈인걸요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 158.48,
+   "end": 159.86,
+   "speaker": "미유리",
+   "ja": "きっと叶うよ",
+   "ko": "꼭 이루어질 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 160.48,
+   "end": 162.18,
+   "speaker": "미유리",
+   "ja": "それ、素敵な夢だもん",
+   "ko": "멋진 꿈인걸.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 162.18,
+   "end": 165.58,
+   "speaker": "쿄코",
+   "ja": "迷子にならないことってのも付け加えておいてほしいわ",
+   "ko": "'길 안 잃기'도 꿈에 덧붙여 줬으면 좋겠네.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: いらないことってのも付け加えておいてほしいわ (VAD 없는 쪽: 迷子にならないことってのも)"
+  }
+ ]
+}

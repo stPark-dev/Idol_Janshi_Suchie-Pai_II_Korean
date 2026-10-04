@@ -1,0 +1,68 @@
+{
+ "voice": "STM011.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 11번째, 유키에게 이긴 뒤",
+ "duration": 24.88,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.78,
+   "end": 3.78,
+   "speaker": "유키",
+   "ja": "勝負に負けたんだからその服はあなたにあげるわ",
+   "ko": "승부에 졌으니까 그 옷은 너한테 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.24,
+   "end": 6.06,
+   "speaker": "유키",
+   "ja": "一張羅ってわけでもないしね",
+   "ko": "하나뿐인 나들이옷도 아니고.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: いっちょらってわけでもないしね"
+  },
+  {
+   "start": 6.06,
+   "end": 8.92,
+   "speaker": "유키",
+   "ja": "さあ、今日はジャージで帰ろっと",
+   "ko": "자, 오늘은 체육복 입고 가야지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.6,
+   "end": 13.1,
+   "speaker": "밀크",
+   "ja": "ゆ、ゆきちゃんって見かけによらずいい人だったみゃ",
+   "ko": "유, 유키는 보기와 달리 좋은 사람이었다먀.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ゆ、ゆきちゃんって見かけによらずいい人だったねみゃ"
+  },
+  {
+   "start": 13.1,
+   "end": 16.5,
+   "speaker": "밀크",
+   "ja": "こ、この仕返しはいつか必ずするみゃ",
+   "ko": "이, 이 복수는 언젠가 꼭 하겠다먀!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.5,
+   "end": 19.7,
+   "speaker": "쿄코",
+   "ja": "仕返しじゃない、お返しよお返し",
+   "ko": "복수가 아니라 보답이야, 보답!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 20.24,
+   "end": 24.48,
+   "speaker": "유키",
+   "ja": "ちょっとおばさん、見かけによらずってとこも訂正させるべきじゃないの",
+   "ko": "잠깐 아줌마, 보기와 달리라는 부분도 고치게 해야 하는 거 아냐?",
+   "status": "needs_human_review"
+  }
+ ]
+}

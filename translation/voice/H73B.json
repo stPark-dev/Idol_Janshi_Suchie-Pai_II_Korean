@@ -1,0 +1,50 @@
+{
+ "voice": "H73B.AIF",
+ "scene": "벌칙 장면 — 유키 4번째, B: 벗는 애니메이션",
+ "duration": 16.56,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.28,
+   "speaker": "유키",
+   "ja": "前も見せなきゃダメ?",
+   "ko": "앞도 보여 줘야 돼?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.34,
+   "end": 5.22,
+   "speaker": "유키",
+   "ja": "うーん、じゃあ",
+   "ko": "으음, 그럼…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.0,
+   "end": 7.9,
+   "speaker": "유키",
+   "ja": "はーい、ニプレスだよー",
+   "ko": "짜잔, 니플 패치야~",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: はーいリープレスだよー"
+  },
+  {
+   "start": 9.34,
+   "end": 12.04,
+   "speaker": "유키",
+   "ja": "え?剥がすの?うそー",
+   "ko": "어? 떼라고? 말도 안 돼~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.94,
+   "end": 15.16,
+   "speaker": "유키",
+   "ja": "おー、感じちゃう",
+   "ko": "오~ 느껴져~",
+   "status": "needs_human_review"
+  }
+ ]
+}

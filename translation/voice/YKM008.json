@@ -1,0 +1,90 @@
+{
+ "voice": "YKM008.AIF",
+ "scene": "대국 전 대화 — 유키 8번째, 츠카사(대국 후 영입)",
+ "duration": 37.75,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.76,
+   "end": 3.2,
+   "speaker": "츠카사",
+   "ja": "確かに負けた。負けたけどな",
+   "ko": "그래, 졌다. 지긴 졌지만,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.2,
+   "end": 7.78,
+   "speaker": "츠카사",
+   "ja": "俺は運命なんて信じないぞ。実力で負けたんだ、実力で",
+   "ko": "난 운명 따윈 안 믿어. 실력으로 진 거야, 실력으로.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.78,
+   "end": 10.5,
+   "speaker": "유키",
+   "ja": "ふーん、運じゃなくて実力ね",
+   "ko": "흐응, 운이 아니라 실력이라.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.5,
+   "end": 13.96,
+   "speaker": "유키",
+   "ja": "だったら喜んでユキのお手伝いしてくれるわよね",
+   "ko": "그럼 기꺼이 유키를 도와주겠네?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.16,
+   "end": 19.06,
+   "speaker": "츠카사",
+   "ja": "うん、法律に触れること以外なら何でも手伝ってやるよ",
+   "ko": "그래, 법에 걸리는 일만 아니면 뭐든 도와주지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.9,
+   "end": 21.15,
+   "speaker": "유키",
+   "ja": "これであと一人だわ",
+   "ko": "이제 한 명 남았어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.15,
+   "end": 24.8,
+   "speaker": "유키",
+   "ja": "ま、アリスちゃんは駆け出しのアイドルやってるから",
+   "ko": "뭐, 아리스는 신인 아이돌을 하고 있으니까",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.8,
+   "end": 28.94,
+   "speaker": "유키",
+   "ja": "歌でも歌って賑やかに騒いでれば、向こうから寄ってくるわよね",
+   "ko": "노래라도 부르며 시끌벅적 놀면 알아서 다가올 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.56,
+   "end": 32.68,
+   "speaker": "유키",
+   "ja": "あとはユキの方が2歳年上なのを生かして",
+   "ko": "그다음엔 유키가 두 살 많다는 걸 살려서",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.68,
+   "end": 37.18,
+   "speaker": "유키",
+   "ja": "18歳のお姉さんらしく、多少強引に迫ってみようっと",
+   "ko": "열여덟 살 언니답게 좀 강하게 밀어붙여 봐야지.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 18歳のお姉さんらしく多少強引に迫ってみようと"
+  }
+ ]
+}

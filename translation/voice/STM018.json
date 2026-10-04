@@ -1,0 +1,192 @@
+{
+ "voice": "STM018.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 18번째, 마지막 상대(세실로 추정)에게 이긴 뒤, 시호 납치",
+ "duration": 62.91,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.18,
+   "end": 4.3,
+   "speaker": "세실(추정)",
+   "ja": "あはははは、負けちまったよ",
+   "ko": "아하하하, 져 버렸네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.72,
+   "end": 6.6,
+   "speaker": "세실(추정)",
+   "ja": "だけどそれがなんだってんだい",
+   "ko": "그런데 그게 뭐 어쨌다는 거지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.2,
+   "end": 8.84,
+   "speaker": "세실(추정)",
+   "ja": "麻雀に勝てばそれで終わりか",
+   "ko": "마작에서 이기면 그걸로 끝인가?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.84,
+   "end": 10.58,
+   "speaker": "세실(추정)",
+   "ja": "いや違うよな",
+   "ko": "아니, 아니지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.98,
+   "end": 12.4,
+   "speaker": "세실(추정)",
+   "ja": "周りを見てみろよ",
+   "ko": "주위를 둘러봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.4,
+   "end": 15.46,
+   "speaker": "세실(추정)",
+   "ja": "何か足りねえ奴がいるだろ、ほら",
+   "ko": "누가 하나 빠졌잖아, 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.46,
+   "end": 16.92,
+   "speaker": "세실(추정)",
+   "ja": "そいつはどうした",
+   "ko": "그 녀석은 어떻게 됐지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.54,
+   "end": 19.62,
+   "speaker": "세실(추정)",
+   "ja": "心なんてもんは脆いもんだよな",
+   "ko": "마음이란 건 약한 법이지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 20.68,
+   "end": 24.12,
+   "speaker": "세실(추정)",
+   "ja": "仲間との戦いよりも自分の幸せを選んだそいつを",
+   "ko": "동료와의 싸움보다 자기 행복을 고른 그 녀석을",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.12,
+   "end": 26.12,
+   "speaker": "세실(추정)",
+   "ja": "お前らに責めることができるのか",
+   "ko": "너희가 탓할 수 있겠어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.12,
+   "end": 31.56,
+   "speaker": "세실(추정)",
+   "ja": "え?麻雀程度で掴んだ絆なんてその程度だよな。違うか?",
+   "ko": "응? 마작 따위로 맺은 인연은 그 정도라는 거지. 안 그래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.26,
+   "end": 35.32,
+   "speaker": "세실(추정)",
+   "ja": "そんじゃ、シホはいただいてくぜ。あばよ!",
+   "ko": "그럼 시호는 데려간다. 잘 있어라!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: そんじゃ、主婦はいただいてくぜ!アバよ! (다른 파트너 같은 장면 STC018 받아쓰기는 「志穂」)"
+  },
+  {
+   "start": 35.56,
+   "end": 37.9,
+   "speaker": "시호",
+   "ja": "ああ!助けてくださーい!",
+   "ko": "아앗! 살려 주세요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 37.9,
+   "end": 41.24,
+   "speaker": "시호",
+   "ja": "スーチーパイさん!ミルキーパイさん!",
+   "ko": "스치파이 씨! 밀키파이 씨!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.7,
+   "end": 44.7,
+   "speaker": "밀크",
+   "ja": "はあ!またまたさらわれちゃったみゃ!",
+   "ko": "하아! 또또 당했다먀!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: はあ!またまた行かれちゃったみゃ!"
+  },
+  {
+   "start": 44.92,
+   "end": 47.0,
+   "speaker": "쿄코",
+   "ja": "ああ、もうちょっとだったのに",
+   "ko": "아아, 조금만 더 하면 됐는데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.54,
+   "end": 51.88,
+   "speaker": "쿄코",
+   "ja": "ミルキー、人参あげるからまた一から人探ししましょう。いい?",
+   "ko": "밀키, 당근 줄 테니까 처음부터 다시 사람 찾자. 알았지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.14,
+   "end": 55.14,
+   "speaker": "밀크",
+   "ja": "人参三本!それも千葉産のやつで手を打つみゃ!",
+   "ko": "당근 세 개! 그것도 치바산으로 하면 받아들이겠다먀!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 人参三本!それまたちぎさんのやつで手を打つみゃ! / 2차 검수: 「千葉産」은 받아쓰기(ちぎさん)에서 추정. 음성 확인 필요"
+  },
+  {
+   "start": 55.14,
+   "end": 56.62,
+   "speaker": "밀크",
+   "ja": "レタスでもOKだみゃ",
+   "ko": "양상추도 OK다먀.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.62,
+   "end": 58.24,
+   "speaker": "밀크",
+   "ja": "ただし無農薬に限るみゃ",
+   "ko": "단, 무농약만 된다먀.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ただしも農薬に限るみゃ"
+  },
+  {
+   "start": 58.24,
+   "end": 59.02,
+   "speaker": "쿄코",
+   "ja": "いいわよ",
+   "ko": "좋아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 59.02,
+   "end": 62.64,
+   "speaker": "쿄코",
+   "ja": "あんただけは人参あれば何でもしてくれるから楽だわ",
+   "ko": "너 하나는 당근만 주면 뭐든 해 주니 편하다니까.",
+   "status": "needs_human_review"
+  }
+ ]
+}

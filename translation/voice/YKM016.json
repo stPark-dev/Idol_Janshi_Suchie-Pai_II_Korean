@@ -1,0 +1,16 @@
+{
+ "voice": "YKM016.AIF",
+ "scene": "대국 전 대화 — 유키 16번째, 유키 한마디",
+ "duration": 2.16,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.1,
+   "end": 1.94,
+   "speaker": "유키",
+   "ja": "大好き",
+   "ko": "정말 좋아!",
+   "status": "needs_human_review"
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "voice": "STL013.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 13번째, 상대 시호 (조종당한 상태)",
+ "duration": 59.04,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.78,
+   "end": 4.9,
+   "speaker": "시호",
+   "ja": "あら、スーチーパイさん、そしてレモンパイさん",
+   "ko": "어머, 스치파이 씨, 그리고 레몬파이 씨.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.98,
+   "end": 7.44,
+   "speaker": "시호",
+   "ja": "嬉しいわ、来てくださって",
+   "ko": "기뻐요, 와 주셔서.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.44,
+   "end": 8.72,
+   "speaker": "쿄코",
+   "ja": "シホさん、大丈夫?",
+   "ko": "시호 씨, 괜찮아?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.46,
+   "end": 10.66,
+   "speaker": "시호",
+   "ja": "大丈夫ですわ",
+   "ko": "괜찮아요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.66,
+   "end": 11.6,
+   "speaker": "쿄코",
+   "ja": "ほんとにほんと?",
+   "ko": "진짜 진짜?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.04,
+   "end": 14.42,
+   "speaker": "시호",
+   "ja": "ほんとにほんと、ですわ",
+   "ko": "진짜 진짜예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.42,
+   "end": 16.46,
+   "speaker": "츠카사",
+   "ja": "おい、様子が変だぜ",
+   "ko": "야, 상태가 이상한데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.46,
+   "end": 21.72,
+   "speaker": "쿄코",
+   "ja": "ひょっとしてシホさん、しゃぶしゃぶはやっぱりポン酢よりごまだれよね?",
+   "ko": "혹시 시호 씨, 샤부샤부는 역시 폰즈보다 참깨 소스지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.36,
+   "end": 25.04,
+   "speaker": "시호",
+   "ja": "ポン酢よりごまだれ、ですわ",
+   "ko": "폰즈보다 참깨 소스예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 25.04,
+   "end": 28.5,
+   "speaker": "쿄코",
+   "ja": "やっぱり、心ここにあらずって感じよね",
+   "ko": "역시, 넋이 나간 느낌이네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.54,
+   "end": 32.5,
+   "speaker": "쿄코",
+   "ja": "これなら麻雀勝負に話を持ってくのも楽だわ",
+   "ko": "이러면 마작 승부로 끌고 가기도 쉽겠어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.98,
+   "end": 35.06,
+   "speaker": "쿄코",
+   "ja": "でも少し遊んでからにしようっと",
+   "ko": "그래도 조금 놀고 나서 해야지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.06,
+   "end": 35.6,
+   "speaker": "츠카사",
+   "ja": "おい",
+   "ko": "야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.6,
+   "end": 39.0,
+   "speaker": "쿄코",
+   "ja": "シホさんって、自分が一番綺麗だと思ってるのよね",
+   "ko": "시호 씨는 자기가 제일 예쁘다고 생각하지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.72,
+   "end": 42.52,
+   "speaker": "시호",
+   "ja": "私が一番綺麗です",
+   "ko": "제가 제일 예뻐요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.52,
+   "end": 44.46,
+   "speaker": "츠카사",
+   "ja": "おい、いい加減に",
+   "ko": "야, 적당히 좀…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.46,
+   "end": 48.44,
+   "speaker": "쿄코",
+   "ja": "うぶなふりして、本当は自分の体を自慢したいと思ってるのよね",
+   "ko": "순진한 척하면서 사실은 자기 몸을 자랑하고 싶은 거지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 49.02,
+   "end": 51.04,
+   "speaker": "시호",
+   "ja": "したいと思っています",
+   "ko": "자랑하고 싶다고 생각해요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.04,
+   "end": 56.0,
+   "speaker": "쿄코",
+   "ja": "じゃ、麻雀勝負でサクッと負けて、その自慢の体を見せてもらいましょう",
+   "ko": "그럼 마작에서 깔끔하게 지고 그 자랑스러운 몸을 보여 줘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.0,
+   "end": 58.74,
+   "speaker": "시호",
+   "ja": "そう簡単には参りませんわ",
+   "ko": "그렇게 쉽게는 안 될걸요.",
+   "status": "needs_human_review"
+  }
+ ]
+}

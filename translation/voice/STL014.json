@@ -1,0 +1,184 @@
+{
+ "voice": "STL014.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 14번째, 상대 세실 (시호를 되찾은 뒤)",
+ "duration": 67.54,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.4,
+   "end": 3.82,
+   "speaker": "시호",
+   "ja": "わ、私、今まで何を?",
+   "ko": "제, 제가 지금까지 뭘…?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.08,
+   "end": 5.74,
+   "speaker": "쿄코",
+   "ja": "気がついたのね、シホさん",
+   "ko": "정신이 들었구나, 시호 씨.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.24,
+   "end": 9.4,
+   "speaker": "쿄코",
+   "ja": "シホさん、さっきまで悪い奴に操られていたのよ",
+   "ko": "시호 씨는 아까까지 나쁜 녀석한테 조종당하고 있었어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.92,
+   "end": 12.6,
+   "speaker": "시호",
+   "ja": "で、でも、おぼろげな記憶では",
+   "ko": "하, 하지만 어렴풋한 기억으로는",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.73,
+   "end": 16.38,
+   "speaker": "시호",
+   "ja": "スーチーさんに何か、こう、いろいろと…",
+   "ko": "스치 씨한테 뭔가, 이렇게, 이것저것…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.38,
+   "end": 20.04,
+   "speaker": "쿄코",
+   "ja": "あはは、私は何にもしてないわよ",
+   "ko": "아하하, 난 아무것도 안 했어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 20.04,
+   "end": 22.68,
+   "speaker": "쿄코",
+   "ja": "なんて言ったって、正義のヒロインですもの",
+   "ko": "뭐니 뭐니 해도 정의의 히로인이니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.26,
+   "end": 26.62,
+   "speaker": "세실",
+   "ja": "正義のヒロインさん?嘘はいけませんね",
+   "ko": "정의의 히로인 씨? 거짓말은 안 되지요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.62,
+   "end": 29.98,
+   "speaker": "쿄코",
+   "ja": "来たわね、セシル。あなたがシホさんを連れ去ったのね",
+   "ko": "왔구나, 세실. 네가 시호 씨를 납치했지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.46,
+   "end": 34.12,
+   "speaker": "쿄코",
+   "ja": "でも残念ね。この通り、シホさんは返してもらいましたからね",
+   "ko": "하지만 아쉽게 됐네. 보다시피 시호 씨는 돌려받았거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 34.16,
+   "end": 35.52,
+   "speaker": "세실",
+   "ja": "構いませんわ",
+   "ko": "상관없습니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.08,
+   "end": 40.28,
+   "speaker": "세실",
+   "ja": "その子はあなた方をおびき出すための餌だったのですからね",
+   "ko": "그 아이는 당신들을 꾀어내기 위한 미끼였으니까요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.14,
+   "end": 43.34,
+   "speaker": "세실",
+   "ja": "まあ、ちょっと可愛い子だったから",
+   "ko": "뭐, 조금 귀여운 아이였으니",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 43.34,
+   "end": 46.08,
+   "speaker": "세실",
+   "ja": "着せ替え人形にして遊んだりもしましたけど",
+   "ko": "옷 입히기 인형 삼아 놀기도 했지만요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 46.46,
+   "end": 48.28,
+   "speaker": "쿄코",
+   "ja": "そんなめんどくさいことしなくても",
+   "ko": "그런 귀찮은 짓 안 해도",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 48.28,
+   "end": 51.44,
+   "speaker": "쿄코",
+   "ja": "麻雀するから来いって言ってくれれば飛んでいったのに",
+   "ko": "마작할 테니 오라고 했으면 날아갔을 텐데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.84,
+   "end": 54.4,
+   "speaker": "츠카사",
+   "ja": "事情を知ってたんなら、なぜ話さなかったんだ",
+   "ko": "사정을 알고 있었으면 왜 말 안 했어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 54.4,
+   "end": 59.22,
+   "speaker": "쿄코",
+   "ja": "いや、軍人さんが出動するにはちょっとローカルな問題かなと思って",
+   "ko": "아니, 군인이 출동하기엔 좀 사소한 동네 문제인가 싶어서.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 59.22,
+   "end": 61.84,
+   "speaker": "츠카사",
+   "ja": "バカヤロー、俺を見くびんじゃねえよ",
+   "ko": "멍청아! 날 얕보지 마!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 62.56,
+   "end": 63.28,
+   "speaker": "세실",
+   "ja": "どうしました",
+   "ko": "왜 그러시죠?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 63.98,
+   "end": 66.22,
+   "speaker": "세실",
+   "ja": "勝負を始めても良いですわね",
+   "ko": "승부를 시작해도 되겠지요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 66.22,
+   "end": 67.24,
+   "speaker": "쿄코",
+   "ja": "もちろん",
+   "ko": "물론이지!",
+   "status": "needs_human_review"
+  }
+ ]
+}

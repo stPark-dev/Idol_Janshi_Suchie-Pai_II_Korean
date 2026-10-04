@@ -1,0 +1,92 @@
+{
+ "voice": "STM002.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 2번째, 사나에에게 이긴 뒤",
+ "duration": 25.99,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.68,
+   "end": 2.68,
+   "speaker": "쿄코",
+   "ja": "サナエさん、チェリーに伝えてね",
+   "ko": "사나에 씨, 체리한테 전해 줘.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.06,
+   "end": 5.5,
+   "speaker": "쿄코",
+   "ja": "負けたんだから協力しなさいよってね",
+   "ko": "졌으니까 협력하라고 말이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.36,
+   "end": 7.08,
+   "speaker": "사나에",
+   "ja": "わかりました",
+   "ko": "알겠습니다.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.74,
+   "end": 11.58,
+   "speaker": "사나에",
+   "ja": "でもチェリーさんってどなたかしら",
+   "ko": "그런데 체리 씨가 누구시죠?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.04,
+   "end": 13.32,
+   "speaker": "밀크",
+   "ja": "お腹すいたぴょーん",
+   "ko": "배고프다뿅~!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: お腹すいてぴょーん"
+  },
+  {
+   "start": 13.32,
+   "end": 16.0,
+   "speaker": "밀크",
+   "ja": "何か食べさせてくれるって言うからついてきたのに",
+   "ko": "뭐 먹여 준다길래 따라온 건데!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: なんか食べさせてくれるって言うからついてきたにょに"
+  },
+  {
+   "start": 16.0,
+   "end": 17.82,
+   "speaker": "쿄코",
+   "ja": "あーわかったわかった",
+   "ko": "아, 알았어 알았어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.26,
+   "end": 20.14,
+   "speaker": "쿄코",
+   "ja": "今からでも連れてってあげるわよ",
+   "ko": "지금 바로 데려가 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 20.82,
+   "end": 23.92,
+   "speaker": "쿄코",
+   "ja": "でも街中歩くときはちゃんとうさぎのふりしててよね",
+   "ko": "대신 시내 걸을 땐 얌전히 토끼인 척해야 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.48,
+   "end": 25.52,
+   "speaker": "밀크",
+   "ja": "了解でぴょん",
+   "ko": "알았다뿅.",
+   "status": "needs_human_review"
+  }
+ ]
+}

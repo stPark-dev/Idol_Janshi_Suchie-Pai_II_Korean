@@ -1,0 +1,16 @@
+{
+ "voice": "D71C.AIF",
+ "scene": "벌칙 장면 — 사나에(체리파이) 2번째, C: 마무리",
+ "duration": 2.53,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.9,
+   "speaker": "사나에",
+   "ja": "すみません。これで。",
+   "ko": "죄송해요. 이걸로 봐주세요.",
+   "status": "needs_human_review"
+  }
+ ]
+}

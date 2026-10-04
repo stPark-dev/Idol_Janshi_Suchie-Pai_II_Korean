@@ -1,0 +1,32 @@
+{
+ "voice": "B72B.AIF",
+ "scene": "벌칙 장면 — 아리스(피치파이) 3번째, B: 벗는 애니메이션",
+ "duration": 12.0,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 2.5,
+   "speaker": "아리스",
+   "ja": "ええ、でも…",
+   "ko": "네? 하지만…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.7,
+   "end": 7.46,
+   "speaker": "아리스",
+   "ja": "わかりました。待っててね。",
+   "ko": "알겠어요. 기다려 주세요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.7,
+   "end": 11.36,
+   "speaker": "아리스",
+   "ja": "はーい、どう?",
+   "ko": "자, 어때요?",
+   "status": "needs_human_review"
+  }
+ ]
+}

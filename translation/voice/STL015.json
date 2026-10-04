@@ -1,0 +1,202 @@
+{
+ "voice": "STL015.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 15번째, 상대 세실 (악마의 정체를 드러냄, 마지막 승부)",
+ "duration": 65.66,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.62,
+   "end": 3.5,
+   "speaker": "세실(악마 모습)",
+   "ja": "いや、思ったよりやるもんだね",
+   "ko": "이야, 생각보다 제법이군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 3.5,
+   "end": 7.46,
+   "speaker": "세실(악마 모습)",
+   "ja": "まさかこの姿を晒すことになるとは思わなかったよ",
+   "ko": "설마 이 모습을 드러내게 될 줄은 몰랐어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.46,
+   "end": 9.5,
+   "speaker": "츠카사",
+   "ja": "正体を現しやがったな",
+   "ko": "정체를 드러냈군!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.5,
+   "end": 11.96,
+   "speaker": "쿄코",
+   "ja": "それがあなたの真の姿なのね",
+   "ko": "그게 너의 진짜 모습이구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 11.96,
+   "end": 13.76,
+   "speaker": "쿄코",
+   "ja": "まるで悪魔みたいだわ",
+   "ko": "꼭 악마 같아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.16,
+   "end": 16.74,
+   "speaker": "세실(악마 모습)",
+   "ja": "みたいじゃなくて正真正銘の悪魔さ",
+   "ko": "같은 게 아니라 진짜배기 악마지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.28,
+   "end": 18.54,
+   "speaker": "세실(악마 모습)",
+   "ja": "ところでレモンパイ",
+   "ko": "그런데 레몬파이.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.54,
+   "end": 21.42,
+   "speaker": "세실(악마 모습)",
+   "ja": "いや、一文字司と言った方がいいか",
+   "ko": "아니, 이치몬지 츠카사라고 부르는 게 낫나?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.42,
+   "end": 23.62,
+   "speaker": "세실(악마 모습)",
+   "ja": "あたしの仲間にならないかい",
+   "ko": "내 동료가 되지 않겠어?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.62,
+   "end": 26.94,
+   "speaker": "세실(악마 모습)",
+   "ja": "そうすりゃあんたの悩みを解決してやるよ",
+   "ko": "그럼 네 고민을 해결해 주지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.94,
+   "end": 29.56,
+   "speaker": "츠카사",
+   "ja": "あいにく俺に悩みなんかねえよ",
+   "ko": "안됐지만 난 고민 같은 거 없거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.56,
+   "end": 32.44,
+   "speaker": "세실(악마 모습)",
+   "ja": "あら、無理しちゃって。可愛いね",
+   "ko": "어머, 무리하기는. 귀엽네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.44,
+   "end": 36.48,
+   "speaker": "세실(악마 모습)",
+   "ja": "私が人間に戻してやろうかって言ってんだよ",
+   "ko": "내가 인간으로 되돌려 주겠다는 거야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.48,
+   "end": 37.82,
+   "speaker": "세실(악마 모습)",
+   "ja": "いい話だろ",
+   "ko": "좋은 얘기지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 37.82,
+   "end": 39.56,
+   "speaker": "츠카사",
+   "ja": "俺は人間だぜ",
+   "ko": "난 인간이야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 39.56,
+   "end": 41.64,
+   "speaker": "츠카사",
+   "ja": "なんか勘違いしてたみたいだな",
+   "ko": "뭔가 착각한 모양이군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.64,
+   "end": 45.74,
+   "speaker": "세실(악마 모습)",
+   "ja": "チッ、この石頭が。それじゃお話にならないじゃないか",
+   "ko": "쳇, 이 돌대가리. 그럼 얘기가 안 되잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 45.74,
+   "end": 49.1,
+   "speaker": "쿄코",
+   "ja": "あら、レモンの頭は石より硬い鋼鉄製よね",
+   "ko": "어머, 레몬 머리는 돌보다 단단한 강철이잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 49.1,
+   "end": 51.18,
+   "speaker": "츠카사",
+   "ja": "そういうこと言ってんじゃねえ",
+   "ko": "그런 얘기가 아니잖아!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.18,
+   "end": 55.42,
+   "speaker": "쿄코",
+   "ja": "まあまあまあ、そういうわけで残念でした",
+   "ko": "자자자, 그런 고로 아쉽게 됐네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 55.96,
+   "end": 58.98,
+   "speaker": "쿄코",
+   "ja": "あとは麻雀勝負に持ち込むしか手がなくなったわよ",
+   "ko": "이제 마작 승부로 끌고 가는 수밖에 없게 됐어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 58.98,
+   "end": 61.24,
+   "speaker": "세실(악마 모습)",
+   "ja": "結構物分かりがいいな",
+   "ko": "꽤 말이 잘 통하는군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 61.26,
+   "end": 62.82,
+   "speaker": "미상",
+   "ja": "それいけ、戦え",
+   "ko": "자, 가라! 싸워!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: でもいけ戦え (VAD 없음 쪽에만 있음, 말한 사람 불명) / 2차 검수: VAD 없는 받아쓰기에만 있고 말한 사람 불명(밀크일 가능성). 들어 보고 확인 필요"
+  },
+  {
+   "start": 62.82,
+   "end": 65.35,
+   "speaker": "쿄코",
+   "ja": "さあセシル、最後の勝負よ",
+   "ko": "자, 세실, 마지막 승부야!",
+   "status": "needs_human_review"
+  }
+ ]
+}

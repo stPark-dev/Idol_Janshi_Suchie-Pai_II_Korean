@@ -1,0 +1,16 @@
+{
+ "voice": "A72A.AIF",
+ "scene": "벌칙 장면 — 츠카사(레몬파이) 3번째, A: 패배 직후",
+ "duration": 1.68,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 1.18,
+   "speaker": "츠카사",
+   "ja": "なんでこうなっちまうんだ?",
+   "ko": "왜 이렇게 되는 거야?",
+   "status": "needs_human_review"
+  }
+ ]
+}

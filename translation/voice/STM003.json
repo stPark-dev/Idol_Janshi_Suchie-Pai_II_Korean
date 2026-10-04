@@ -1,0 +1,230 @@
+{
+ "voice": "STM003.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 3번째, 마이의 파이 가게",
+ "duration": 80.91,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.02,
+   "end": 4.96,
+   "speaker": "마이",
+   "ja": "や、やばいわ、すっかりお客が来なくなっちゃったわ",
+   "ko": "크, 큰일이야. 손님이 완전히 끊겨 버렸어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.66,
+   "end": 11.14,
+   "speaker": "마이",
+   "ja": "やっぱあれね、先週開発した納豆ヨーグルトうなぎパイがやばかったのね",
+   "ko": "역시 그거네. 지난주에 개발한 낫토 요구르트 장어 파이가 문제였어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.16,
+   "end": 13.6,
+   "speaker": "마이",
+   "ja": "あ、いらっしゃいませ",
+   "ko": "아, 어서 오세요!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.5,
+   "end": 15.0,
+   "speaker": "밀크",
+   "ja": "にゃっ",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.6,
+   "end": 17.76,
+   "speaker": "마이",
+   "ja": "なんだ、うさぎじゃないの",
+   "ko": "뭐야, 토끼잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.46,
+   "end": 19.62,
+   "speaker": "마이",
+   "ja": "あら、どうしたの?",
+   "ko": "어머, 왜 그래?",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: あ、どうしたの?"
+  },
+  {
+   "start": 20.2,
+   "end": 23.48,
+   "speaker": "마이",
+   "ja": "お腹すいてんのならどれでも好きなの食べていいわよ",
+   "ko": "배고프면 아무거나 좋아하는 거 먹어도 돼.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 23.48,
+   "end": 25.3,
+   "speaker": "마이",
+   "ja": "どうせ売れ残りだしね",
+   "ko": "어차피 팔다 남은 거니까.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 25.3,
+   "end": 26.12,
+   "speaker": "밀크",
+   "ja": "にゃー",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 27.5,
+   "end": 29.94,
+   "speaker": "마이",
+   "ja": "まあ、相当腹ペコだったみたいね",
+   "ko": "어머, 엄청 배고팠나 보네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 31.06,
+   "end": 35.54,
+   "speaker": "마이",
+   "ja": "あ、それは新作のスーパートンコツカスタードパイトロピカーナXってやつよ",
+   "ko": "아, 그건 신작 슈퍼 돈코츠 커스터드 파이 트로피카나 X야.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.54,
+   "end": 37.12,
+   "speaker": "마이",
+   "ja": "結構自信作なんだ",
+   "ko": "꽤 자신 있는 작품이거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 37.12,
+   "end": 38.82,
+   "speaker": "마이",
+   "ja": "さあ、食べてみて",
+   "ko": "자, 먹어 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 42.18,
+   "end": 44.06,
+   "speaker": "마이",
+   "ja": "あら、どうしたの?",
+   "ko": "어머, 왜 그래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 44.46,
+   "end": 50.3,
+   "speaker": "밀크",
+   "ja": "ぴきゃー!まずっ!マジ!",
+   "ko": "삐갸~! 맛없어! 진짜로!",
+   "status": "needs_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: VAD: ピキャー! 怖ぇ! マジ! / VAD 없음: ミヤー、ミヤー、ミヤー、マジ / 2차 검수: 두 받아쓰기가 다름(VAD 「ピキャー 怖ぇ マジ」/ VAD 없음 「ミヤー×3 マジ」). 「まずっ」은 추정, 음성 확인 필요"
+  },
+  {
+   "start": 51.0,
+   "end": 54.86,
+   "speaker": "마이",
+   "ja": "い、今、一瞬うさぎが喋ったような",
+   "ko": "바, 방금 토끼가 말한 것 같은데…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 55.46,
+   "end": 57.96,
+   "speaker": "쿄코",
+   "ja": "もう、何こんなとこで油売ってんのよ",
+   "ko": "정말, 이런 데서 뭘 노닥거리고 있어!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 57.96,
+   "end": 60.28,
+   "speaker": "쿄코",
+   "ja": "ちょっとミルク、ミルクってば",
+   "ko": "얘, 밀크! 밀크야!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 60.28,
+   "end": 61.84,
+   "speaker": "쿄코",
+   "ja": "ミルク…",
+   "ko": "밀크…?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 61.84,
+   "end": 64.16,
+   "speaker": "쿄코",
+   "ja": "し、死んでる",
+   "ko": "주, 죽었어…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.16,
+   "end": 66.34,
+   "speaker": "마이",
+   "ja": "ま、まさか",
+   "ko": "서, 설마…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 67.34,
+   "end": 68.54,
+   "speaker": "밀크",
+   "ja": "なんちゃってね",
+   "ko": "…는 뻥이지롱.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 69.22,
+   "end": 70.38,
+   "speaker": "밀크",
+   "ja": "みゃははは",
+   "ko": "",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 70.38,
+   "end": 72.44,
+   "speaker": "밀크",
+   "ja": "ちょっと仕返ししました",
+   "ko": "살짝 앙갚음해 봤습니다.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: たまたまお仕返ししました (맛없는 파이에 대한 앙갚음으로 해석)"
+  },
+  {
+   "start": 74.06,
+   "end": 75.4,
+   "speaker": "마이",
+   "ja": "そ、そうよね",
+   "ko": "그, 그래.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 75.98,
+   "end": 77.54,
+   "speaker": "마이",
+   "ja": "疲れているのよね、私",
+   "ko": "나, 피곤한가 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 78.16,
+   "end": 80.44,
+   "speaker": "마이",
+   "ja": "今日はもう店閉めて寝よっと",
+   "ko": "오늘은 그냥 가게 닫고 자야지.",
+   "status": "needs_human_review"
+  }
+ ]
+}

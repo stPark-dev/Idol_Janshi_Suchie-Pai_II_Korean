@@ -1,0 +1,249 @@
+{
+ "voice": "STL012.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 12번째, 미유리와 만남 (병원의 아이)",
+ "duration": 89.69,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.62,
+   "end": 2.52,
+   "speaker": "미유리",
+   "ja": "京子さん",
+   "ko": "쿄코 언니!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.88,
+   "end": 4.11,
+   "speaker": "쿄코",
+   "ja": "あら、みゆりちゃん",
+   "ko": "어머, 미유리구나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.11,
+   "end": 7.29,
+   "speaker": "츠카사",
+   "ja": "お前、こんなちっちゃい子にも知り合いいるわけ?",
+   "ko": "너, 이런 꼬마랑도 아는 사이냐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.52,
+   "end": 10.65,
+   "speaker": "미유리",
+   "ja": "あ、はじめまして、桜井みゆりです",
+   "ko": "아, 처음 뵙겠습니다. 사쿠라이 미유리예요.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.65,
+   "end": 13.09,
+   "speaker": "츠카사",
+   "ja": "あ、ああ、俺、つかさ。よろしくな",
+   "ko": "어, 어어. 난 츠카사. 잘 부탁해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.09,
+   "end": 16.83,
+   "speaker": "쿄코",
+   "ja": "つかささんはね、兵隊さんなのよ。かっこいいでしょ",
+   "ko": "츠카사 씨는 말이야, 군인이야. 멋지지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.31,
+   "end": 20.65,
+   "speaker": "츠카사",
+   "ja": "お、おい、ったく。やだろ兵隊なんて",
+   "ko": "야, 야, 참나. 군인 같은 거 싫지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 21.6,
+   "end": 25.91,
+   "speaker": "미유리",
+   "ja": "え、なんで?兵隊さんって何をする人なの?",
+   "ko": "어, 왜요? 군인은 뭘 하는 사람이에요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 25.91,
+   "end": 29.2,
+   "speaker": "츠카사",
+   "ja": "そ、そうだなぁ、うーん",
+   "ko": "그, 그러게… 음~",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 29.27,
+   "end": 33.99,
+   "speaker": "츠카사",
+   "ja": "基地で運動したり、のんびりしたりするのが俺の仕事かな",
+   "ko": "기지에서 운동하거나 느긋하게 쉬는 게 내 일이려나.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 34.72,
+   "end": 35.99,
+   "speaker": "미유리",
+   "ja": "戦争したりする?",
+   "ko": "전쟁도 해요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.41,
+   "end": 40.94,
+   "speaker": "츠카사",
+   "ja": "大丈夫さ。そんなことになんねえように、俺が悪いやつやっつけてやるよ",
+   "ko": "걱정 마. 그런 일 안 생기게 내가 나쁜 놈들 혼내 줄게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 40.94,
+   "end": 44.07,
+   "speaker": "미유리",
+   "ja": "ほんと?約束だよ、つかさお姉さん",
+   "ko": "정말? 약속이에요, 츠카사 언니.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ほんと?約束だよ、スカサお姉さん"
+  },
+  {
+   "start": 44.07,
+   "end": 45.96,
+   "speaker": "츠카사",
+   "ja": "ああ、任せとけって",
+   "ko": "그래, 맡겨 두라고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 46.67,
+   "end": 50.88,
+   "speaker": "미유리",
+   "ja": "あ、そうだ。ねえ京子さん、スーチーパイさんいつ来てくれるの?",
+   "ko": "아, 맞다. 쿄코 언니, 스치파이 언니는 언제 와요?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 51.32,
+   "end": 54.0,
+   "speaker": "미유리",
+   "ja": "みゆり、早く麻雀教えてもらいたいな",
+   "ko": "미유리, 빨리 마작 배우고 싶어요.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: みゆり早くまーちゃん教えてもらいたいな"
+  },
+  {
+   "start": 54.0,
+   "end": 56.85,
+   "speaker": "쿄코",
+   "ja": "そ、そうね、今度聞いとくわ",
+   "ko": "그, 그래. 다음에 물어볼게.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 56.85,
+   "end": 58.98,
+   "speaker": "츠카사",
+   "ja": "お前、そんな約束してんの?",
+   "ko": "너, 그런 약속까지 했냐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 59.57,
+   "end": 61.2,
+   "speaker": "미유리",
+   "ja": "でも病院の人はね",
+   "ko": "그런데 병원 사람들은요,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 61.39,
+   "end": 65.93,
+   "speaker": "미유리",
+   "ja": "みゆりはあんな人とお友達になっちゃいけませんなんて言うんだよ",
+   "ko": "미유리는 그런 사람이랑 친구 하면 안 된대요.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 三浦はあんな人とお友達になっちゃいけませんなんて言うんだよ"
+  },
+  {
+   "start": 65.93,
+   "end": 70.3,
+   "speaker": "쿄코",
+   "ja": "あ、あ、そうなの?おかしいな、正義のヒロインなのにね",
+   "ko": "아, 아, 그래? 이상하네. 정의의 히로인인데.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 70.87,
+   "end": 72.07,
+   "speaker": "쿄코",
+   "ja": "みんなに言っといてね",
+   "ko": "모두한테 잘 말해 줘.",
+   "status": "needs_human_review",
+   "note": "2차 검수: 문맥상 쿄코의 말(미유리 답 「うん」 앞)로 보아 말한 사람을 고침"
+  },
+  {
+   "start": 72.07,
+   "end": 74.53,
+   "speaker": "미유리",
+   "ja": "うん、じゃあまたね、京子さん",
+   "ko": "그럼 또 봐요, 쿄코 언니.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 74.53,
+   "end": 76.03,
+   "speaker": "미유리",
+   "ja": "バイバイ、つかささん",
+   "ko": "안녕, 츠카사 언니.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 78.37,
+   "end": 80.78,
+   "speaker": "츠카사",
+   "ja": "ああ、世間の評判はそんなもんか",
+   "ko": "하, 세상 평판은 그 정도란 거군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 80.78,
+   "end": 81.84,
+   "speaker": "쿄코",
+   "ja": "うるさいわね",
+   "ko": "시끄러워.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 81.84,
+   "end": 85.87,
+   "speaker": "츠카사",
+   "ja": "しかしお前、全然態度違うね、普段と",
+   "ko": "그나저나 너, 평소랑 태도가 완전 딴판이네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 85.87,
+   "end": 87.98,
+   "speaker": "쿄코",
+   "ja": "あなたこそ口元緩んでたわよ",
+   "ko": "너야말로 입꼬리가 풀려 있던데?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 87.98,
+   "end": 89.43,
+   "speaker": "츠카사",
+   "ja": "ば、バカ言え",
+   "ko": "바, 바보 같은 소리!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: ば、ばあいえ"
+  }
+ ]
+}

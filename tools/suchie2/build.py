@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import cdsector, chunkpics as chunkpics_mod, credits as credits_mod, iso9660, lzss, rle16, select1 as select1_mod, title, wheel as wheel_mod, yc
+from . import cdsector, chunkpics as chunkpics_mod, credits as credits_mod, iso9660, lzss, rle16, select1 as select1_mod, subtitles as subtitles_mod, title, wheel as wheel_mod, yc
 from .writeplan import PlanError, WritePlan
 
 OUT_STEM = "Idol Janshi Suchie-Pai II (Korean) (Disc 1)"
@@ -310,7 +310,7 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
                 "translation": _rel(translation), "translation_sha1": _sha1(translation),
                 "layout": _rel(layout), "layout_sha1": _sha1(layout),
                 "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
-                "font": font, "font_sha1": _sha1(Path(font))}
+                "font": font, "font_sha1": _sha1(Path(select1_mod.label.resolve_font(font)))}
         out.append((info, changes))
     return out
 
@@ -352,7 +352,7 @@ def _plan_roll(t1: _Track1, profile: SourceProfile, job: dict, tdoc: dict, font:
                 "translation": _rel(translation), "translation_sha1": _sha1(translation),
                 "layout": _rel(layout), "layout_sha1": _sha1(layout),
                 "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
-                "font": font, "font_sha1": _sha1(Path(font))}
+                "font": font, "font_sha1": _sha1(Path(select1_mod.label.resolve_font(font)))}
         out.append((info, changes))
     return out
 
@@ -426,7 +426,7 @@ def _render_block_labels(t1: _Track1, profile: SourceProfile, job: dict, name: s
             "translation": _rel(translation), "translation_sha1": _sha1(translation),
             "layout": _rel(layout), "layout_sha1": _sha1(layout),
             "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
-            "font": font, "font_sha1": _sha1(Path(font))}
+            "font": font, "font_sha1": _sha1(Path(select1_mod.label.resolve_font(font)))}
     return new, info
 
 
@@ -476,8 +476,37 @@ def _plan_packed(t1: _Track1, profile: SourceProfile, job: dict,
     return info, [(lo, stream + bytes(hi - lo - len(stream)))], stream, new
 
 
+def _plan_subtitles(plan: WritePlan, t1: _Track1, sub: dict) -> tuple[dict, list, list[int]]:
+    """Voice subtitles: executable stub (file-level changes), new files and root directory (sector writes)."""
+    S = subtitles_mod
+    if iso9660.find_file(t1.user, S.EXE_NAME) != (S.EXE_LBA, S.EXE_SIZE):
+        raise BuildError("executable extent differs from the subtitle profile")
+    scenes = json.loads(Path(sub["scenes"]).read_text(encoding="utf-8"))
+    docs = S.load_voice_docs(sub["voices"])
+    code = Path(sub["code"]).read_bytes()
+    font = sub.get("font", select1_mod.label.DEFAULT_FONT)
+    sub_bin, subdat, info = S.build_data(code, scenes, docs, font)
+    exe = _read_file_range(t1, S.EXE_LBA, 0, S.EXE_SIZE)
+    changes = S.exe_changes(exe)
+    sectors, files = S.disc_sectors(t1.user, sub_bin, subdat)
+    lbas = []
+    for lba, data in sectors:
+        raw = t1.raw(lba)
+        if bytes(cdsector.fix_mode1(bytearray(raw))) != raw or cdsector.header_lba(raw) != lba:
+            raise BuildError(f"LBA {lba}: source sector does not match the Mode 1 EDC/ECC model")
+        sec = bytearray(raw)
+        sec[16:16 + cdsector.USER] = data
+        cdsector.fix_mode1(sec)
+        plan.add(f"subtitles@{lba}", lba * cdsector.RAW + 16, raw[16:], bytes(sec[16:]))
+        lbas.append(lba)
+    info = {"code": _rel(Path(sub["code"])), "code_sha1": _sha1(Path(sub["code"])), "scenes": _rel(Path(sub["scenes"])),
+            "font": font, "font_sha1": _sha1(Path(select1_mod.label.resolve_font(font))), "files": files,
+            "sub_bin_sha1": hashlib.sha1(sub_bin).hexdigest(), "subdat_sha1": hashlib.sha1(subdat).hexdigest(), **info}
+    return info, changes, lbas
+
+
 def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile,
-           select1=None, bundles=None, title: bool = True, title_labels=None) -> dict:
+           select1=None, bundles=None, title: bool = True, title_labels=None, subtitles=None) -> dict:
     tr1, tr2 = _cue_tracks(source_cue)
     if _sha1(tr1) != profile.track1_sha1:
         raise BuildError(f"Track 1 SHA-1 mismatch: {tr1}")
@@ -516,6 +545,10 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
             if (prolog_lba, size) != (profile.prolog_lba, profile.prolog_size):
                 raise BuildError(f"{profile.prolog_name} extent {prolog_lba}/{size} differs from profile")
             extents.append((prolog_lba, size))
+        if subtitles:
+            S = subtitles_mod
+            extents += [(S.EXE_LBA, S.EXE_SIZE), (S.DIR_LBA, S.DIR_SECTORS * cdsector.USER),
+                        (S.FREE_LBA, (S.FREE_END - S.FREE_LBA) * cdsector.USER)]
         plan = WritePlan(tr1, protected=_outside(extents, tr1.stat().st_size))
         regions = [(profile.prolog_name, lo, hi, "title")] if title else []
         regions += [(*profile.packed[j["packed"]][:3], j["packed"]) for j in packed_jobs]
@@ -552,6 +585,11 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
         for _, infos in results:
             for info, changes in infos:
                 per_file.setdefault(info["file"], []).append((info, changes))
+        sub_info, sub_lbas = None, []
+        if subtitles:
+            sub_info, exe_changes, sub_lbas = _plan_subtitles(plan, t1, subtitles)
+            exe_slot = {"file": subtitles_mod.EXE_NAME, "lba": subtitles_mod.EXE_LBA}
+            per_file.setdefault(subtitles_mod.EXE_NAME, []).append((exe_slot, exe_changes))
         for name, items in per_file.items():
             lba = items[0][0]["lba"]
             if any(info["lba"] != lba for info, _ in items):
@@ -561,6 +599,9 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
                 touched = {lba + (o + k) // cdsector.USER for o, t in ch for k in (0, len(t) - 1)}
                 info["sectors"] = [x for x in sectors if min(touched, default=-1) <= x <= max(touched, default=-1)]
         lbas = title_slot["sectors"] if title else []
+        if subtitles:
+            sub_info["exe_sectors"] = exe_slot["sectors"]
+            sub_info["sectors"] = sub_lbas
     finally:
         t1.close()
 
@@ -585,6 +626,20 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
                 for off, tex in changes:
                     if _read_file_range(t, info["lba"], off, off + len(tex)) != tex:
                         raise BuildError(f"output {info['file']} texture at {off:#x} differs from the rendered label")
+        if subtitles:
+            for lba in sub_info["sectors"] + sub_info["exe_sectors"]:
+                raw = t.raw(lba)
+                if bytes(cdsector.fix_mode1(bytearray(raw))) != raw:
+                    raise BuildError(f"output LBA {lba}: EDC/ECC inconsistent")
+            for off, new in exe_changes:
+                if _read_file_range(t, subtitles_mod.EXE_LBA, off, off + len(new)) != new:
+                    raise BuildError(f"output executable differs from the subtitle stub at {off:#x}")
+            for key, name in (("sub_bin", subtitles_mod.SUB_NAME), ("subdat", subtitles_mod.DAT_NAME)):
+                lba, size = iso9660.find_file(t.user, name)
+                if (lba, size) != (sub_info["files"][key]["lba"], sub_info["files"][key]["bytes"]):
+                    raise BuildError(f"output directory entry of {name} differs from the plan")
+                if hashlib.sha1(_read_file_range(t, lba, 0, size)).hexdigest() != sub_info[key + "_sha1"]:
+                    raise BuildError(f"output {name} differs from the built data")
     finally:
         t.close()
     cue_name = f"{OUT_STEM}.cue"
@@ -608,12 +663,14 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
     sel = next((per_file[0][0] for job, per_file in results if job.get("_select1")), None)
     manifest = {
         "cue": cue_name, "track1": o1, "track2": o2,
-        "distribution": bool(title_ok and all(i["distribution"] for i in infos)),
+        "distribution": bool(title_ok and all(i["distribution"] for i in infos)
+                             and (sub_info is None or sub_info["distribution"])),
         "source": {"track1_sha1": profile.track1_sha1, "track2_sha1": profile.track2_sha1},
         "output": {"track1_sha1": _sha1(out_dir / o1), "track2_sha1": _sha1(out_dir / o2)},
         "title": title_info,
         "select1": sel,
         "bundles": [i for i in infos if i is not sel],
+        "subtitles": sub_info,
         "profile": asdict(profile),
     }
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
@@ -621,7 +678,7 @@ def _build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: So
 
 
 def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: SourceProfile = None,
-          select1=None, bundles=None, title: bool = True, title_labels=None) -> dict:
+          select1=None, bundles=None, title: bool = True, title_labels=None, subtitles=None) -> dict:
     """Build into a fresh staging directory and replace out_dir only when every check passed."""
     profile = profile or JP_DISC1
     source_cue, out_dir = Path(source_cue), Path(out_dir)
@@ -631,10 +688,10 @@ def build(source_cue: Path, out_dir: Path, title_spec: Path | None, profile: Sou
         shutil.rmtree(stage)
     stage.mkdir(parents=True)
     try:
-        manifest = _build(source_cue, stage, title_spec, profile, select1, bundles, title, title_labels)
+        manifest = _build(source_cue, stage, title_spec, profile, select1, bundles, title, title_labels, subtitles)
     except BuildError:
         raise
-    except (PlanError, ValueError, OSError, KeyError) as err:
+    except (PlanError, ValueError, OSError, KeyError, subtitles_mod.SubtitleError) as err:
         raise BuildError(f"{type(err).__name__}: {err}") from err
     finally:
         if stage.exists() and not (stage / "manifest.json").exists():

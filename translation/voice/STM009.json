@@ -1,0 +1,233 @@
+{
+ "voice": "STM009.AIF",
+ "scene": "대국 전 대화 — 밀키파이(밀크) 9번째, 에리카",
+ "duration": 73.05,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.8,
+   "end": 1.7,
+   "speaker": "에리카",
+   "ja": "軟弱だわ",
+   "ko": "나약해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 2.42,
+   "end": 4.38,
+   "speaker": "에리카",
+   "ja": "アメリカ帰りの私から見れば",
+   "ko": "미국에서 돌아온 내가 보기엔",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.38,
+   "end": 7.3,
+   "speaker": "에리카",
+   "ja": "日本人はとことん軟弱に思えるわ",
+   "ko": "일본인은 너무너무 나약해 보여.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.08,
+   "end": 10.94,
+   "speaker": "에리카",
+   "ja": "大都会のジャングルで何かをやり遂げようというのなら",
+   "ko": "대도시라는 정글에서 뭔가를 해내려면",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.94,
+   "end": 13.6,
+   "speaker": "에리카",
+   "ja": "猛獣のようなたくましさが必要なのよ",
+   "ko": "맹수 같은 강인함이 필요해.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 13.94,
+   "end": 16.34,
+   "speaker": "밀크",
+   "ja": "おー!目から鱗がぼろぼろぼろ",
+   "ko": "오오! 눈에서 비늘이 우수수 떨어진다!",
+   "status": "needs_human_review",
+   "note": "원문 관용구 「目から鱗」(깨달음). 이전 초안 「콩깍지」는 뜻이 달라 고침"
+  },
+  {
+   "start": 16.34,
+   "end": 17.88,
+   "speaker": "에리카",
+   "ja": "な、なに?",
+   "ko": "뭐, 뭐야?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 18.22,
+   "end": 19.58,
+   "speaker": "에리카",
+   "ja": "うさぎが喋ってるわ",
+   "ko": "토끼가 말을 하잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 19.58,
+   "end": 22.1,
+   "speaker": "밀크",
+   "ja": "おっと、誤解されては困るみゃ",
+   "ko": "어이쿠, 오해하면 곤란하다먀.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 22.1,
+   "end": 24.14,
+   "speaker": "밀크",
+   "ja": "あたしは今テレパシーで会話してるみゃ",
+   "ko": "난 지금 텔레파시로 대화하는 거다먀.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.14,
+   "end": 26.68,
+   "speaker": "에리카",
+   "ja": "でも、口パクパクしてるじゃないの",
+   "ko": "그래도 입이 뻐끔뻐끔 움직이잖아.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 27.1,
+   "end": 27.98,
+   "speaker": "밀크",
+   "ja": "それは置いといて",
+   "ko": "그건 그렇다 치고.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 28.28,
+   "end": 30.3,
+   "speaker": "밀크",
+   "ja": "お願いでみゃ!あたしたくましい",
+   "ko": "부탁이다먀! 나도 강인한",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.3,
+   "end": 34.0,
+   "speaker": "밀크",
+   "ja": "猛獣になりたいみゃ!この星の人はうさぎのことナメてるみゃ!",
+   "ko": "맹수가 되고 싶다먀! 이 별 사람들은 토끼를 얕본다먀!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 34.4,
+   "end": 35.9,
+   "speaker": "에리카",
+   "ja": "そりゃ考えすぎよ",
+   "ko": "그건 생각이 지나쳐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 36.52,
+   "end": 41.34,
+   "speaker": "에리카",
+   "ja": "でも、ライオンのようにたくましく生きたいっていうその気持ちには共感できるものがあるわね",
+   "ko": "하지만 사자처럼 강인하게 살고 싶다는 그 마음엔 공감이 가네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 41.78,
+   "end": 45.38,
+   "speaker": "밀크",
+   "ja": "よろしくお願い…はっくしゅん!",
+   "ko": "잘 부탁… 에취!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: よろしくおねがい!きっけーしゅりーするぴょん! / VAD: キッケーストレースルピョン (다음 줄의 「くしゃみ」로 보아 재채기)"
+  },
+  {
+   "start": 45.64,
+   "end": 47.84,
+   "speaker": "에리카",
+   "ja": "テレパシーの会話でなんでくしゃみするのよ",
+   "ko": "텔레파시 대화에서 재채기는 왜 해?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 48.08,
+   "end": 48.84,
+   "speaker": "밀크",
+   "ja": "それは置いといて",
+   "ko": "그건 그렇다 치고.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: さいはあいていて"
+  },
+  {
+   "start": 49.5,
+   "end": 53.38,
+   "speaker": "에리카",
+   "ja": "おほん、昔ライオンの子育ての話を聞いたことがあるわ",
+   "ko": "에헴, 옛날에 사자의 새끼 키우기 얘기를 들은 적이 있어.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 53.96,
+   "end": 59.7,
+   "speaker": "에리카",
+   "ja": "なんでも百獣の王ライオンは生まれたばかりの我が子を千尋の谷に突き落とすそうよ",
+   "ko": "백수의 왕 사자는 갓 태어난 새끼를 천 길 낭떠러지에 떨어뜨린대.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: …我が子を先人の谷に突き落とすそうよ"
+  },
+  {
+   "start": 59.7,
+   "end": 61.24,
+   "speaker": "밀크",
+   "ja": "はー、過激でみゃ",
+   "ko": "하아, 과격하다먀.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 61.24,
+   "end": 64.82,
+   "speaker": "에리카",
+   "ja": "そして這い上がってきた我が子をさらに突き落とすそうよ",
+   "ko": "그리고 기어 올라온 새끼를 또 떨어뜨린대.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 64.82,
+   "end": 67.1,
+   "speaker": "밀크",
+   "ja": "はー…って、我が子はどうなるみゃ",
+   "ko": "하아… 잠깐, 그럼 새끼는 어떻게 되냐먀?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 67.86,
+   "end": 68.82,
+   "speaker": "에리카",
+   "ja": "さあ。ほい",
+   "ko": "글쎄. 자.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 69.4,
+   "end": 70.36,
+   "speaker": "에리카",
+   "ja": "じゃあそういうことで",
+   "ko": "그럼 그런 걸로.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 70.36,
+   "end": 72.86,
+   "speaker": "밀크",
+   "ja": "ああ、やっぱめちゃくちゃナメられてるぴょん",
+   "ko": "아아, 역시 완전히 얕보이고 있다뿅.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: さあやっぱめちゃくちゃ舐められてるぴょん"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "voice": "V51A.AIF",
+ "scene": "오프닝(프롤로그) — 스치파이 변신 외침",
+ "duration": 7.25,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.28,
+   "end": 2.86,
+   "speaker": "스치파이",
+   "ja": "スーチーフラッシュ!",
+   "ko": "스치 플래시!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 数値フラッシュ!"
+  },
+  {
+   "start": 3.58,
+   "end": 5.92,
+   "speaker": "스치파이",
+   "ja": "アイドル雀士スーチーパイ、見参!",
+   "ko": "아이돌 작사 스치파이, 등장!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: アイドル女子数値いっぱい検索!"
+  }
+ ]
+}

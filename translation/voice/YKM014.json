@@ -1,0 +1,66 @@
+{
+ "voice": "YKM014.AIF",
+ "scene": "대국 전 대화 — 유키 14번째, 엔딩 인사(밀크·쿄코)",
+ "duration": 22.49,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.64,
+   "end": 5.2,
+   "speaker": "유키",
+   "ja": "イエーイ! 全国3000万人のユキちゃんファンのみなさん",
+   "ko": "예이! 전국 3천만 유키 팬 여러분,",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 5.2,
+   "end": 7.56,
+   "speaker": "유키",
+   "ja": "とうとうやりましたー!",
+   "ko": "드디어 해냈어요~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 7.74,
+   "end": 9.26,
+   "speaker": "밀크",
+   "ja": "ユキちゃんかっこいいぴょん!",
+   "ko": "유키 멋지다뿅!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 9.5,
+   "end": 14.4,
+   "speaker": "유키",
+   "ja": "これからはユキちゃんシリーズで続々リリース予定でーす!",
+   "ko": "앞으로는 유키 시리즈로 속속 발매할 예정이에요~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 14.9,
+   "end": 16.66,
+   "speaker": "유키",
+   "ja": "お楽しみにねー!",
+   "ko": "기대해 줘~!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 16.84,
+   "end": 18.42,
+   "speaker": "밀크",
+   "ja": "期待しててぴょん!",
+   "ko": "기대해 달라뿅!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: 期待すねでぴょん!"
+  },
+  {
+   "start": 19.04,
+   "end": 22.14,
+   "speaker": "쿄코",
+   "ja": "ユキちゃん、あんまり調子に乗らないようにね",
+   "ko": "유키, 너무 우쭐대지는 마.",
+   "status": "needs_human_review"
+  }
+ ]
+}

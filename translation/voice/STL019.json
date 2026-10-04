@@ -1,0 +1,16 @@
+{
+ "voice": "STL019.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 19번째, 마지막 맺음말",
+ "duration": 2.83,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 0.75,
+   "end": 2.52,
+   "speaker": "쿄코",
+   "ja": "これでなんとかハッピーエンドね",
+   "ko": "이걸로 그럭저럭 해피 엔딩이네.",
+   "status": "needs_human_review"
+  }
+ ]
+}

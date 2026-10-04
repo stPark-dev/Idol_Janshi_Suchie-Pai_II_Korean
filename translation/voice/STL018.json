@@ -1,0 +1,212 @@
+{
+ "voice": "STL018.AIF",
+ "scene": "대국 전 대화 — 레몬파이(츠카사) 18번째, 세실(악마)이 시호를 다시 납치함",
+ "duration": 75.46,
+ "source": "faster-whisper large-v3 받아쓰기 초안, 번역 초안 (사람 검수 전)",
+ "lines": [
+  {
+   "start": 1.18,
+   "end": 4.3,
+   "speaker": "세실(악마 모습)",
+   "ja": "あははは、負けちまったよ",
+   "ko": "아하하하, 져 버렸군.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 4.72,
+   "end": 6.6,
+   "speaker": "세실(악마 모습)",
+   "ja": "だけどそれがなんだってんだい",
+   "ko": "하지만 그게 뭐 어쨌다는 거지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 6.94,
+   "end": 8.84,
+   "speaker": "세실(악마 모습)",
+   "ja": "麻雀に勝てばそれで終わりか",
+   "ko": "마작에서 이기면 그걸로 끝이냐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 8.84,
+   "end": 10.58,
+   "speaker": "세실(악마 모습)",
+   "ja": "いや、違うよな",
+   "ko": "아니, 그렇지 않지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 10.96,
+   "end": 12.4,
+   "speaker": "세실(악마 모습)",
+   "ja": "周りを見てみろよ",
+   "ko": "주위를 둘러봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 12.4,
+   "end": 15.46,
+   "speaker": "세실(악마 모습)",
+   "ja": "何か足りねえ奴がいるだろ、ほら",
+   "ko": "누가 하나 모자라잖아, 봐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 15.46,
+   "end": 16.92,
+   "speaker": "세실(악마 모습)",
+   "ja": "そいつはどうした",
+   "ko": "그 녀석은 어떻게 됐지?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 17.54,
+   "end": 19.62,
+   "speaker": "세실(악마 모습)",
+   "ja": "心なんてもんは脆いもんだよな",
+   "ko": "마음이란 건 깨지기 쉬운 법이지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 20.68,
+   "end": 24.12,
+   "speaker": "세실(악마 모습)",
+   "ja": "仲間との戦いよりも自分の幸せを選んだそいつを",
+   "ko": "동료와의 싸움보다 자기 행복을 택한 그 녀석을",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 24.12,
+   "end": 26.56,
+   "speaker": "세실(악마 모습)",
+   "ja": "お前らに責めることができるのか?え?",
+   "ko": "너희가 탓할 수 있겠어? 엉?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 26.62,
+   "end": 30.58,
+   "speaker": "세실(악마 모습)",
+   "ja": "麻雀程度で掴んだ絆なんてその程度だよな",
+   "ko": "마작 정도로 맺은 유대 따윈 딱 그 정도지.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 30.58,
+   "end": 31.58,
+   "speaker": "세실(악마 모습)",
+   "ja": "違うか?",
+   "ko": "안 그래?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 32.18,
+   "end": 34.4,
+   "speaker": "세실(악마 모습)",
+   "ja": "そんじゃ、シホはいただいてくぜ",
+   "ko": "그럼 시호는 데려간다!",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: そんじゃ司法はいただいてくぜ (VAD) / そんじゃ、主婦はいただいてくぜ (VAD 없음)"
+  },
+  {
+   "start": 34.4,
+   "end": 35.34,
+   "speaker": "세실(악마 모습)",
+   "ja": "あばよ",
+   "ko": "잘 있어라!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 35.58,
+   "end": 41.2,
+   "speaker": "시호",
+   "ja": "ああ!助けてくださーい!スーチーパイさん!レモンパイさん!",
+   "ko": "아앗! 살려 주세요! 스치파이 씨! 레몬파이 씨!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 43.76,
+   "end": 45.74,
+   "speaker": "쿄코",
+   "ja": "ああ、またさらわれちゃったわ",
+   "ko": "아아, 또 잡혀가 버렸네.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 45.74,
+   "end": 46.88,
+   "speaker": "츠카사",
+   "ja": "ちきしょう",
+   "ko": "젠장!",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 47.64,
+   "end": 49.06,
+   "speaker": "츠카사",
+   "ja": "これで振り出しかよ",
+   "ko": "결국 원점이냐.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 50.24,
+   "end": 51.48,
+   "speaker": "쿄코",
+   "ja": "ありがとう、レモン",
+   "ko": "고마워, 레몬.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 52.86,
+   "end": 57.62,
+   "speaker": "쿄코",
+   "ja": "あのさ、なんかあんたのこと騙してここまで連れてきちゃった感じだし",
+   "ko": "저기, 왠지 너를 속여서 여기까지 데려온 것 같고…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 58.12,
+   "end": 61.08,
+   "speaker": "쿄코",
+   "ja": "あとはあたし一人でなんとかしてみせるから、もう",
+   "ko": "나머진 나 혼자서 어떻게든 해 볼 테니까, 이제…",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 61.12,
+   "end": 63.96,
+   "speaker": "츠카사",
+   "ja": "あいにく俺は諦めだけは悪いんだ",
+   "ko": "안됐지만 난 포기 하나는 못 하거든.",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 63.96,
+   "end": 67.56,
+   "speaker": "쿄코",
+   "ja": "でもあんた、結構根に持つタイプなのね",
+   "ko": "근데 너 의외로 뒤끝 있는 타입이구나.",
+   "status": "needs_human_review",
+   "asr_uncertain": true,
+   "note": "받아쓰기를 문맥으로 고침: でもあんた結構ね荷物タイプなのね"
+  },
+  {
+   "start": 67.56,
+   "end": 69.4,
+   "speaker": "츠카사",
+   "ja": "他に言うことはないのか",
+   "ko": "다른 할 말은 없냐?",
+   "status": "needs_human_review"
+  },
+  {
+   "start": 69.4,
+   "end": 75.1,
+   "speaker": "쿄코",
+   "ja": "あ、冗談よ。私たち仲間じゃないの。怒らない怒らない",
+   "ko": "아, 농담이야. 우리 동료잖아. 화내지 마, 화내지 마.",
+   "status": "needs_human_review"
+  }
+ ]
+}
