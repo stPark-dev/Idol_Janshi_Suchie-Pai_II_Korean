@@ -19,3 +19,5 @@ __pycache__/
 *.pyc
 .coverage
 *.partial
+# 우리가 빌드한 자막 코드(tools/subtitle/build.sh 결과)는 원본 데이터가 아니므로 커밋
+!assets/subtitle/SUB.BIN
