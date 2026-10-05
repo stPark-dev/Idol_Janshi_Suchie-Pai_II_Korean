@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "必殺技はチェリーボンバー",
    "ko": "필살기는 체리 봄버.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.24,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "カンした時にテンパってればリンシャンツモで大当たり",
    "ko": "깡했을 때 텐파이면 영상개화로 대박!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.72,
@@ -26,7 +26,7 @@
    "speaker": "스치파이",
    "ja": "でもリーチしてなきゃダメなのよね",
    "ko": "하지만 리치를 안 했으면 소용없어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

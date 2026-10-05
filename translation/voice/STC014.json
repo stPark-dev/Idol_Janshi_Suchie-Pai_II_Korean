@@ -10,7 +10,7 @@
    "speaker": "시호",
    "ja": "あら、私、どうして",
    "ko": "어머, 제가 어째서…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.62,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "気がついたのね",
    "ko": "정신이 들었구나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.18,
@@ -26,7 +26,7 @@
    "speaker": "시호",
    "ja": "あの、その、こちらの人は一体",
    "ko": "저, 그, 이쪽 분은 대체…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.12,
@@ -34,7 +34,7 @@
    "speaker": "스치파이",
    "ja": "あの、その、私の仲間よ。チェリーパイっていうのよ",
    "ko": "그, 그게, 내 동료야. 체리파이라고 해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 13.54,
@@ -42,7 +42,7 @@
    "speaker": "시호",
    "ja": "で、でも…うさぎさんが喋ってます",
    "ko": "그, 그런데… 토끼가 말을 하네요.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: でも本当でした うさぎさんが喋ってます"
   },
@@ -52,7 +52,7 @@
    "speaker": "스치파이",
    "ja": "気にしないで、この子も私の仲間よ",
    "ko": "신경 쓰지 마. 이 애도 내 동료야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.42,
@@ -60,7 +60,7 @@
    "speaker": "스치파이",
    "ja": "宇宙人だからちょっとおつむが弱いんだけどね",
    "ko": "외계인이라 머리가 좀 모자라지만.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.34,
@@ -68,7 +68,7 @@
    "speaker": "밀크",
    "ja": "その発言は宇宙人すべてに対する暴言だみゃ",
    "ko": "그 발언은 모든 외계인에 대한 폭언이다먀!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.4,
@@ -76,7 +76,7 @@
    "speaker": "밀크",
    "ja": "全宇宙を代表して抗議するみゃ",
    "ko": "전 우주를 대표해서 항의한다먀!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 30.98,
@@ -84,7 +84,7 @@
    "speaker": "스치파이",
    "ja": "あんたが代表じゃ宇宙も終わりね",
    "ko": "네가 대표면 우주도 끝장이네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.0,
@@ -92,7 +92,7 @@
    "speaker": "세실",
    "ja": "あら、お久しぶりねチェリー",
    "ko": "어머, 오랜만이에요, 체리.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 37.78,
@@ -100,7 +100,7 @@
    "speaker": "체리파이",
    "ja": "お前だけは許さないよ",
    "ko": "너만은 용서 못 해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 39.74,
@@ -108,7 +108,7 @@
    "speaker": "스치파이",
    "ja": "なになに、あなたたち知り合いだったの",
    "ko": "뭐야 뭐야, 너희 아는 사이였어?",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: なにあにあなたたち知り合いだったの"
   },
@@ -118,7 +118,7 @@
    "speaker": "세실",
    "ja": "私、チェリーの古い友人ですわ",
    "ko": "저는 체리의 오랜 친구랍니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.7,
@@ -126,7 +126,7 @@
    "speaker": "스치파이",
    "ja": "なんだ、じゃあ麻雀しましょう",
    "ko": "뭐야, 그럼 마작 하자.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 48.36,
@@ -134,7 +134,7 @@
    "speaker": "스치파이",
    "ja": "はい決定",
    "ko": "네, 결정!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 49.58,
@@ -142,7 +142,7 @@
    "speaker": "시호",
    "ja": "チェリーさん、あなたの友人って言ったら麻雀友達しかいないの",
    "ko": "체리 씨, 당신 친구라고 하면 마작 친구밖에 없나요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

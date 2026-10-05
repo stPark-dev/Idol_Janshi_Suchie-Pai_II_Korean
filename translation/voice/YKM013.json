@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "ジャーン!",
    "ko": "짠!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.1,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "天が呼んだか、地が叫んだか、悪を倒せと勇気を呼ぶ!",
    "ko": "하늘이 불렀나, 땅이 외쳤나, 악을 쓰러뜨리라 용기를 부른다!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.16,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "愛と正義と真実の正統派美少女雀士、スーチーユキちゃん、ただいま見参!",
    "ko": "사랑과 정의와 진실의 정통파 미소녀 작사, 스치 유키, 지금 등장!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 愛と正義と真実の正統派美少女ジャンシー、スーチーゆきちゃん、ただいま健三!"
   },
@@ -36,7 +36,7 @@
    "speaker": "쿄코",
    "ja": "ふーん、ずいぶんと威勢がいいわね",
    "ko": "흐응, 꽤나 기세가 좋네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.58,
@@ -44,7 +44,7 @@
    "speaker": "쿄코",
    "ja": "ん?",
    "ko": "응?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.68,
@@ -52,7 +52,7 @@
    "speaker": "쿄코",
    "ja": "ああ! あんたたちまでそんなとこで何やってんのよ!",
    "ko": "아앗! 너희까지 거기서 뭐 하는 거야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.3,
@@ -60,7 +60,7 @@
    "speaker": "밀크",
    "ja": "あたしたちはイカサマなしの麻雀軍団だみゃ!",
    "ko": "우리는 사기 없는 마작 군단이다먀!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あたしたちはイカ様なしの麻雀軍団だミャ!"
   },
@@ -69,8 +69,8 @@
    "end": 25.5,
    "speaker": "유키",
    "ja": "何驚いてんのよ、イカサマ雀士!",
-   "ko": "뭘 놀라, 사기 작사!",
-   "status": "needs_human_review",
+   "ko": "뭘 놀라, 사기꾼 작사!",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 何驚いてんのよイカ様ジャンシー!"
   },
@@ -80,7 +80,7 @@
    "speaker": "유키",
    "ja": "みんな本当の正義に目覚めただけじゃない!",
    "ko": "다들 진정한 정의에 눈뜬 것뿐이잖아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.82,
@@ -88,7 +88,7 @@
    "speaker": "유키",
    "ja": "それはいいから、さっさと負けちゃってよね",
    "ko": "그건 됐으니까 얼른 져 줘.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.04,
@@ -96,7 +96,7 @@
    "speaker": "쿄코",
    "ja": "さーて、そう簡単にいくかしら",
    "ko": "글쎄, 그렇게 쉽게 될까?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 34.6,
@@ -104,7 +104,7 @@
    "speaker": "유키",
    "ja": "じゃあせっかくだからサービスして、イカサマなしで勝負よ",
    "ko": "그럼 모처럼이니 서비스로 사기 없이 승부야!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: じゃあせっかくだからサービスしてイカ様なしで勝負よ"
   },
@@ -114,7 +114,7 @@
    "speaker": "쿄코",
    "ja": "こうも簡単に引っかかるなんて、単純ね",
    "ko": "이렇게 쉽게 걸려들다니, 단순하네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 42.58,
@@ -122,7 +122,7 @@
    "speaker": "유키",
    "ja": "あれ? あれ?",
    "ko": "어라? 어라?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

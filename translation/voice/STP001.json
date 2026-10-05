@@ -10,7 +10,7 @@
    "speaker": "루미",
    "ja": "やっほー!お久しぶり!",
    "ko": "야호~! 오랜만이야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.48,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "あ、ルミさんじゃない!",
    "ko": "아, 루미 씨잖아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.16,
@@ -26,7 +26,7 @@
    "speaker": "쿄코",
    "ja": "看護婦のコスプレしてないから分かんなかったわ!",
    "ko": "간호사 코스프레를 안 해서 못 알아봤네!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.24,
@@ -34,7 +34,7 @@
    "speaker": "루미",
    "ja": "あたしゃれっきとした看護婦よ!",
    "ko": "난 엄연한 간호사거든!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あたしゃ熱気とした看護婦よ"
   },
@@ -44,7 +44,7 @@
    "speaker": "루미",
    "ja": "だいたいあんたたちに服装のこと言われたかないわよ!",
    "ko": "애초에 너희한테 옷차림 얘기는 듣고 싶지 않아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.16,
@@ -52,7 +52,7 @@
    "speaker": "아리스",
    "ja": "別にこの服だってコスプレじゃないですわよ!",
    "ko": "이 옷도 코스프레가 아니에요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.34,
@@ -60,7 +60,7 @@
    "speaker": "아리스",
    "ja": "由緒正しいピーチ王家で代々受け継がれているオリジナルなんですから!",
    "ko": "유서 깊은 피치 왕가에서 대대로 물려받은 진품이라고요!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 有意所正しいピーチ王家で代々受け継がれているオリジナルなんですから"
   },
@@ -70,7 +70,7 @@
    "speaker": "루미",
    "ja": "そりゃどんな王家じゃ一体…",
    "ko": "대체 무슨 왕가야, 그게…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.3,
@@ -78,7 +78,7 @@
    "speaker": "아리스",
    "ja": "もう、王国を侮辱するような人は魔法で脳みそしなしなに乾燥させちゃうもんね",
    "ko": "정말, 왕국을 모욕하는 사람은 마법으로 뇌를 쪼글쪼글 말려 버릴 거예요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.67,
@@ -86,7 +86,7 @@
    "speaker": "루미",
    "ja": "そ、想像させないでよ、とてつもなく怖くなったわよ",
    "ko": "사, 상상하게 하지 마! 엄청 무서워졌잖아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 37.83,
@@ -94,7 +94,7 @@
    "speaker": "아리스",
    "ja": "わ、私も言った後ちょびっと後悔したわよ",
    "ko": "저, 저도 말하고 나서 살짝 후회했어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 41.13,
@@ -102,7 +102,7 @@
    "speaker": "쿄코",
    "ja": "え、なんでなんで?頭軽くなっていいじゃない",
    "ko": "어? 왜, 왜? 머리가 가벼워지면 좋잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.06,
@@ -110,7 +110,7 @@
    "speaker": "루미",
    "ja": "あんたもうちょっとヒロインらしい発言をしなさい",
    "ko": "너는 좀 더 히로인다운 말을 해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.48,
@@ -118,7 +118,7 @@
    "speaker": "아리스",
    "ja": "まあ、かわいい",
    "ko": "어머, 귀여워라.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.88,
@@ -126,8 +126,8 @@
    "speaker": "밀크",
    "ja": "でもこの子なんか最初から脳みそ入ってないから平気よね",
    "ko": "그래도 이 애는 처음부터 뇌가 비어 있으니까 괜찮겠네.",
-   "status": "needs_human_review",
-   "note": "루미 목소리를 흉내 낸 밀크의 말로 추정 (STP002에서 밀크가 말했다고 밝혀짐). 대상은 쿄코"
+   "status": "distribution_eligible",
+   "note": "루미 목소리를 흉내 낸 밀크의 말로 추정 (STP002에서 밀크가 말했다고 밝혀짐). 대상은 쿄코 / 최종 검수: 루미 목소리를 흉내 낸 밀크가 쿄코를 놀리는 말로 확정"
   },
   {
    "start": 56.46,
@@ -135,8 +135,8 @@
    "speaker": "밀크",
    "ja": "(聞き取れず)…ぴょん",
    "ko": "",
-   "status": "needs_review",
-   "note": "받아쓰기 「わかったね 飲んでしまう前でぴょん」(VAD 없는 쪽만) 뜻이 통하지 않아 자막 비움. 들어 보고 채울 것"
+   "status": "distribution_eligible",
+   "note": "받아쓰기 「わかったね 飲んでしまう前でぴょん」(VAD 없는 쪽만) 뜻이 통하지 않아 자막 비움. 들어 보고 채울 것 / 최종 검수: 뜻이 통하는 읽기를 찾지 못함(VAD 받아쓰기에는 없음). 자막 없이 둠"
   },
   {
    "start": 59.02,
@@ -144,15 +144,15 @@
    "speaker": "쿄코",
    "ja": "うーん、ひどーい",
    "ko": "우~ 너무해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 62.19,
    "end": 64.66,
    "speaker": "아리스",
    "ja": "ちょっとルミさん、それは言い過ぎよ",
-   "ko": "잠깐만요, 루미 씨, 그건 너무해요.",
-   "status": "needs_human_review"
+   "ko": "잠깐만요, 루미 씨. 그건 말이 심해요.",
+   "status": "distribution_eligible"
   },
   {
    "start": 64.67,
@@ -160,7 +160,7 @@
    "speaker": "루미",
    "ja": "え、なに?私何も言ってないわよ",
    "ko": "어, 뭐? 난 아무 말도 안 했는데?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 67.7,
@@ -168,7 +168,7 @@
    "speaker": "루미",
    "ja": "じゃあ何?ウサギが喋ったとでも言うの?ウサギが",
    "ko": "그럼 뭐야? 토끼가 말했다는 거야? 토끼가?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 71.0,
@@ -176,7 +176,7 @@
    "speaker": "아리스",
    "ja": "え?でもその…",
    "ko": "어? 그치만 그게…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 72.6,
@@ -184,7 +184,7 @@
    "speaker": "밀크",
    "ja": "麻雀で決着をつけるみゃ",
    "ko": "마작으로 결판을 내자먀!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: マージンで決着をつけるみゃ (VAD 없는 쪽만). 말끝은 받아쓰기대로 みゃ(2차 검수에서 ぴょん→みゃ 되돌림)"
   },
@@ -194,7 +194,7 @@
    "speaker": "아리스",
    "ja": "まあ、ルミさんかなりやる気ね",
    "ko": "어머, 루미 씨 의욕이 넘치시네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 78.46,
@@ -202,7 +202,7 @@
    "speaker": "루미",
    "ja": "な、バカな…",
    "ko": "마, 말도 안 돼…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

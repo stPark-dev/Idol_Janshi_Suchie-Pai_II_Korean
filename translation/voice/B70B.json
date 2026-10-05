@@ -10,15 +10,15 @@
    "speaker": "아리스",
    "ja": "んー、恥ずかしいのにー。",
    "ko": "으음, 부끄러운데…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.84,
    "end": 5.8,
    "speaker": "아리스",
    "ja": "しょうがないなー。",
-   "ko": "어쩔 수 없네요.",
-   "status": "needs_human_review"
+   "ko": "어쩔 수 없지 뭐.",
+   "status": "distribution_eligible"
   },
   {
    "start": 6.0,
@@ -26,7 +26,7 @@
    "speaker": "아리스",
    "ja": "ドキドキ。",
    "ko": "두근두근.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.94,
@@ -34,15 +34,15 @@
    "speaker": "아리스",
    "ja": "もう。",
    "ko": "정말…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 10.04,
    "end": 10.68,
    "speaker": "아리스",
    "ja": "はい!",
-   "ko": "자, 여기요!",
-   "status": "needs_human_review"
+   "ko": "자, 여기!",
+   "status": "distribution_eligible"
   }
  ]
 }

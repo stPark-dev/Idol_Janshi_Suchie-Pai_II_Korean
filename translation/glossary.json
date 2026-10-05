@@ -1122,6 +1122,123 @@
    "approved_by": "프로젝트 소유자 2026-10-01 (번역 검수 결과 승인 답변)",
    "note": "패널 매치 패널(折檻)",
    "scope": "panel"
+  },
+  {
+   "id": "voice.agaru",
+   "ja": "上がる",
+   "ko": "화료",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "마작: 和了하다",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.uradora",
+   "ja": "裏ドラ",
+   "ko": "뒷도라",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.kandora",
+   "ja": "カンドラ",
+   "ko": "깡도라",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.naku",
+   "ja": "鳴く",
+   "ko": "울다",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "마작: 副露. 명사형 「울기」",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.kenzan",
+   "ja": "見参 / 参上",
+   "ko": "등장",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "변신 외침 「〜見参!」",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.janshi",
+   "ja": "雀士",
+   "ko": "작사",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "제목 표기 아이돌 작사와 같음. 「마작사」 쓰지 않음",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.ikasama",
+   "ja": "イカサマ",
+   "ko": "사기 / 속임수",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "사람이면 사기꾼, 행위면 속임수",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.pyon",
+   "ja": "〜ぴょん",
+   "ko": "~뿅",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "밀크 말끝 (사람 결정 2026-10-04)",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.mya",
+   "ja": "〜みゃ",
+   "ko": "~먀",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "밀크 말끝 (사람 결정 2026-10-04)",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.rank",
+   "ja": "三等陸尉",
+   "ko": "3등 육위",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "츠카사의 계급, 직역",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.regiment",
+   "ja": "普通科連隊",
+   "ko": "보통과연대",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "직역",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.heroine",
+   "ja": "正義のヒロイン",
+   "ko": "정의의 히로인",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "",
+   "scope": "voice"
+  },
+  {
+   "id": "voice.mikata",
+   "ja": "正義の味方",
+   "ko": "정의의 사도",
+   "state": "approved",
+   "approved_by": "Claude 최종 검수 2026-10-05 (프로젝트 소유자가 음성 자막 검수를 위임)",
+   "note": "",
+   "scope": "voice"
   }
  ]
 }

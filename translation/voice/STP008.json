@@ -10,7 +10,7 @@
    "speaker": "사나에",
    "ja": "あのー、一つだけ",
    "ko": "저기, 딱 하나만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.78,
@@ -18,7 +18,7 @@
    "speaker": "사나에",
    "ja": "私の質問にも答えていただけないでしょうか?",
    "ko": "제 질문에도 대답해 주시지 않겠어요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.58,
@@ -26,7 +26,7 @@
    "speaker": "사나에",
    "ja": "あなた方は、一体何の用でいらっしゃったのですか?",
    "ko": "여러분은 대체 무슨 일로 오신 건가요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.2,
@@ -34,7 +34,7 @@
    "speaker": "쿄코",
    "ja": "片桐志穂って人を探しているの",
    "ko": "카타기리 시호라는 사람을 찾고 있어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.52,
@@ -42,7 +42,7 @@
    "speaker": "쿄코",
    "ja": "ついでにね。で、本当はあなたと麻雀をするためよ",
    "ko": "겸사겸사 말이야. 진짜 목적은 너랑 마작 하는 거고.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.16,
@@ -50,7 +50,7 @@
    "speaker": "아리스",
    "ja": "う、私はちゃんと人探しをメインに考えてます!",
    "ko": "윽, 저는 진짜로 사람 찾기가 주목적이에요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

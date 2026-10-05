@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "イエーイ! 全国3000万人のユキちゃんファンのみなさん",
    "ko": "예이! 전국 3천만 유키 팬 여러분,",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.2,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "とうとうやりましたー!",
    "ko": "드디어 해냈어요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.74,
@@ -26,7 +26,7 @@
    "speaker": "밀크",
    "ja": "ユキちゃんかっこいいぴょん!",
    "ko": "유키 멋지다뿅!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.5,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "これからはユキちゃんシリーズで続々リリース予定でーす!",
    "ko": "앞으로는 유키 시리즈로 속속 발매할 예정이에요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.9,
@@ -42,7 +42,7 @@
    "speaker": "유키",
    "ja": "お楽しみにねー!",
    "ko": "기대해 줘~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.84,
@@ -50,7 +50,7 @@
    "speaker": "밀크",
    "ja": "期待しててぴょん!",
    "ko": "기대해 달라뿅!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 期待すねでぴょん!"
   },
@@ -60,7 +60,7 @@
    "speaker": "쿄코",
    "ja": "ユキちゃん、あんまり調子に乗らないようにね",
    "ko": "유키, 너무 우쭐대지는 마.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

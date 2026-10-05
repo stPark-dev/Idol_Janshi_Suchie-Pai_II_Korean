@@ -10,7 +10,7 @@
    "speaker": "쿄코",
    "ja": "ん?右前方に怪しい人影",
    "ko": "응? 오른쪽 전방에 수상한 사람이!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.36,
@@ -18,7 +18,7 @@
    "speaker": "아리스",
    "ja": "あなたがつかささんね",
    "ko": "당신이 츠카사 씨군요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.0,
@@ -26,7 +26,7 @@
    "speaker": "아리스",
    "ja": "ふーん、結構凛々しいのね",
    "ko": "흐응, 꽤 늠름하네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.8,
@@ -34,7 +34,7 @@
    "speaker": "쿄코",
    "ja": "油断しないで、ピーチ",
    "ko": "방심하지 마, 피치.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.14,
@@ -42,7 +42,7 @@
    "speaker": "쿄코",
    "ja": "彼女こう見えてもロボットなんだから",
    "ko": "저래 봬도 저 여자 로봇이거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 13.6,
@@ -50,7 +50,7 @@
    "speaker": "아리스",
    "ja": "え、ロボット?",
    "ko": "네? 로봇?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.18,
@@ -58,7 +58,7 @@
    "speaker": "아리스",
    "ja": "じゃあ目がサーチライトでビカビカーとか",
    "ko": "그럼 눈이 서치라이트라 번쩍번쩍~ 한다든가",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.82,
@@ -66,7 +66,7 @@
    "speaker": "아리스",
    "ja": "お尻からマシンガンがダダダダーとか",
    "ko": "엉덩이에서 기관총이 두두두두~ 한다든가요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.32,
@@ -74,7 +74,7 @@
    "speaker": "쿄코",
    "ja": "あーもう、古いわね",
    "ko": "아, 정말 구닥다리네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.28,
@@ -82,7 +82,7 @@
    "speaker": "쿄코",
    "ja": "せめてオートバイからジャンボジェットに二段変形とか言ってほしいわね",
    "ko": "적어도 오토바이에서 점보제트기로 2단 변형한다고는 해 줘야지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.12,
@@ -90,7 +90,7 @@
    "speaker": "츠카사",
    "ja": "おい、おめーら、好き勝手言ってんじゃねえ",
    "ko": "어이, 너희들 멋대로 지껄이지 마!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: おいおめーら好きかって言ってんじゃね"
   },
@@ -100,7 +100,7 @@
    "speaker": "아리스",
    "ja": "そうよ、大きさ的に無理よ",
    "ko": "맞아요, 크기로 봐선 무리예요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 30.44,
@@ -108,7 +108,7 @@
    "speaker": "츠카사",
    "ja": "そういうこと言ってんじゃねえ",
    "ko": "그런 얘기가 아니잖아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.64,
@@ -116,7 +116,7 @@
    "speaker": "쿄코",
    "ja": "じゃあ何?",
    "ko": "그럼 뭔데?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 33.5,
@@ -124,7 +124,7 @@
    "speaker": "츠카사",
    "ja": "俺はな、ロボットなんかじゃねえ",
    "ko": "난 말이야, 로봇 따위가 아니야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.76,
@@ -132,7 +132,7 @@
    "speaker": "츠카사",
    "ja": "サイボーグなんだよ",
    "ko": "사이보그라고!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 37.16,
@@ -140,7 +140,7 @@
    "speaker": "쿄코",
    "ja": "同じじゃないの?",
    "ko": "똑같은 거 아냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 38.74,
@@ -148,7 +148,7 @@
    "speaker": "츠카사",
    "ja": "ロボットはただの機械",
    "ko": "로봇은 그냥 기계.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.74,
@@ -156,7 +156,7 @@
    "speaker": "츠카사",
    "ja": "サイボーグは機械化された人間",
    "ko": "사이보그는 기계화된 인간이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.22,
@@ -164,7 +164,7 @@
    "speaker": "쿄코",
    "ja": "そんなマニアなこと誰も気にしてないって",
    "ko": "그런 마니아 같은 거 아무도 신경 안 써.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 46.32,
@@ -172,7 +172,7 @@
    "speaker": "츠카사",
    "ja": "人間である俺が気にしてんだよ!",
    "ko": "인간인 내가 신경 쓴다고!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 49.74,
@@ -180,7 +180,7 @@
    "speaker": "쿄코",
    "ja": "うーん、機械か人間かね…",
    "ko": "음, 기계냐 인간이냐라…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 53.14,
@@ -188,7 +188,7 @@
    "speaker": "쿄코",
    "ja": "どうやらあなた自身が一番不安に思ってるみたいね",
    "ko": "아무래도 너 자신이 제일 불안한가 보네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 56.16,
@@ -196,7 +196,7 @@
    "speaker": "쿄코",
    "ja": "いいわ、私たちが確かめてあげる",
    "ko": "좋아, 우리가 확인해 줄게.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 58.98,
@@ -204,7 +204,7 @@
    "speaker": "쿄코",
    "ja": "さあ、麻雀勝負よ!",
    "ko": "자, 마작 승부야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

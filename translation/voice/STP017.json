@@ -10,7 +10,7 @@
    "speaker": "아리스",
    "ja": "私、夢を見ました",
    "ko": "저, 꿈을 꿨어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.76,
@@ -18,7 +18,7 @@
    "speaker": "아리스",
    "ja": "世界中の人を全部幸せにして、魔法の国に帰った夢",
    "ko": "온 세상 사람들을 모두 행복하게 하고 마법의 나라로 돌아간 꿈.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.92,
@@ -26,7 +26,7 @@
    "speaker": "아리스",
    "ja": "いつになるかわからないけど",
    "ko": "언제가 될지는 모르지만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.44,
@@ -34,7 +34,7 @@
    "speaker": "아리스",
    "ja": "そうしたら褒めてくれるよね",
    "ko": "그러면 칭찬해 주실 거죠?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.56,
@@ -42,7 +42,7 @@
    "speaker": "아리스",
    "ja": "パパ、ママ",
    "ko": "아빠, 엄마.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.34,
@@ -50,7 +50,7 @@
    "speaker": "아리스",
    "ja": "いつ帰るかわからないけど、元気でいてね",
    "ko": "언제 돌아갈지 모르지만 건강하게 지내세요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.46,
@@ -58,7 +58,7 @@
    "speaker": "아리스",
    "ja": "きっと帰るから",
    "ko": "꼭 돌아갈게요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 24.1,
@@ -66,7 +66,7 @@
    "speaker": "아리스",
    "ja": "アリス",
    "ko": "아리스가.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

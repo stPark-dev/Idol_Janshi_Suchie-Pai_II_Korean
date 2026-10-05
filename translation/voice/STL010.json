@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "ああ、ユキの命も残りあと3ヶ月なのね",
    "ko": "아아, 유키의 목숨도 이제 석 달 남았구나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.14,
@@ -18,7 +18,7 @@
    "speaker": "츠카사",
    "ja": "お、おい、今の",
    "ko": "야, 야, 방금 그거…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.72,
@@ -26,7 +26,7 @@
    "speaker": "쿄코",
    "ja": "慌てない",
    "ko": "침착해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 10.9,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "どうもありがとう",
    "ko": "정말 고마워요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.9,
@@ -42,7 +42,7 @@
    "speaker": "유키",
    "ja": "あなた、あなたがいたからユキは今まで幸せでした",
    "ko": "여보, 당신이 있어서 유키는 지금까지 행복했어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.78,
@@ -50,7 +50,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "何を言ってるんだユキ、気をしっかり持つんだ",
    "ko": "무슨 소리야, 유키. 정신 똑바로 차려.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.5,
@@ -58,7 +58,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "俺がついてるじゃないか",
    "ko": "내가 곁에 있잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 23.06,
@@ -66,7 +66,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "そうだ、何か欲しいものはないか",
    "ko": "그래, 뭔가 갖고 싶은 건 없어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.15,
@@ -74,7 +74,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "何でも言っていいぞ",
    "ko": "뭐든 말해도 돼.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.02,
@@ -82,7 +82,7 @@
    "speaker": "유키",
    "ja": "じゃあ、ユキの手を握って",
    "ko": "그럼 유키 손을 잡아 줘요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.06,
@@ -90,7 +90,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "こ、こうかい?",
    "ko": "이, 이렇게?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 33.6,
@@ -98,7 +98,7 @@
    "speaker": "유키",
    "ja": "そう、ああ、あったかいわ",
    "ko": "응, 아아, 따뜻해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.17,
@@ -106,7 +106,7 @@
    "speaker": "유키",
    "ja": "ユキ、こうしてるとなんだか安心できるの",
    "ko": "유키는 이러고 있으면 왠지 안심이 돼.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.12,
@@ -114,7 +114,7 @@
    "speaker": "츠카사",
    "ja": "何やってんだ、あいつ",
    "ko": "뭐 하는 거야, 쟤.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 41.65,
@@ -122,7 +122,7 @@
    "speaker": "쿄코",
    "ja": "黙ってて",
    "ko": "조용히 해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.68,
@@ -130,7 +130,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "ユキ、他に俺にできることはないのか",
    "ko": "유키, 그 밖에 내가 해 줄 수 있는 건 없어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 46.96,
@@ -138,7 +138,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "頼む、なんでもいい",
    "ko": "부탁이야, 뭐든 좋아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 48.45,
@@ -146,7 +146,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "お前が生きているうちに何かしてやらないと",
    "ko": "네가 살아 있는 동안 뭔가 해 주지 않으면",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 51.26,
@@ -154,7 +154,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "俺は、俺は",
    "ko": "나는, 나는…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 54.1,
@@ -162,15 +162,15 @@
    "speaker": "유키",
    "ja": "わかったわ",
    "ko": "알았어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 56.12,
    "end": 58.7,
    "speaker": "유키",
    "ja": "じゃあ、ユキ少しわがままを言っちゃおうかな",
-   "ko": "그럼 유키, 조금만 응석 부려 볼까.",
-   "status": "needs_human_review"
+   "ko": "그럼 유키, 조금만 떼써 볼까?",
+   "status": "distribution_eligible"
   },
   {
    "start": 59.38,
@@ -178,7 +178,7 @@
    "speaker": "유키",
    "ja": "ユキ、死ぬ前にウェディングドレスを着てみたいな",
    "ko": "유키는 죽기 전에 웨딩드레스를 입어 보고 싶어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 63.12,
@@ -186,7 +186,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "わかった、パリの有名デザイナーに今すぐ作らせるよ",
    "ko": "알았어. 파리의 유명 디자이너한테 당장 만들게 할게.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 67.93,
@@ -194,7 +194,7 @@
    "speaker": "유키",
    "ja": "あと、一度でいいからペンギンさんを抱っこしてみたかったな",
    "ko": "그리고 한 번이라도 좋으니 펭귄을 안아 보고 싶었어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 72.65,
@@ -202,7 +202,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "任せろ、南極から皇帝ペンギンを一団輸入だ",
    "ko": "맡겨 둬. 남극에서 황제펭귄을 한 무리 수입해 주지.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 任せろ南極から皇帝ペンギンを一段水入だ"
   },
@@ -212,7 +212,7 @@
    "speaker": "유키",
    "ja": "それに、英語の先生がすぐユキのこと指すから",
    "ko": "그리고 영어 선생님이 자꾸 유키만 시키니까",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 81.36,
@@ -220,7 +220,7 @@
    "speaker": "유키",
    "ja": "どっかに転勤させてほしいな",
    "ko": "어디로 전근 보내 줬으면 좋겠어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 84.46,
@@ -228,7 +228,7 @@
    "speaker": "유키(남편 역 1인 2역)",
    "ja": "よし、明日からシベリア勤務だ",
    "ko": "좋아, 내일부터 시베리아 근무다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 87.62,
@@ -236,7 +236,7 @@
    "speaker": "유키",
    "ja": "うーん、ここまでしてくれたら死んじゃうのもったいないな",
    "ko": "음~ 이렇게까지 해 주면 죽기 아깝네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 93.16,
@@ -244,7 +244,7 @@
    "speaker": "유키",
    "ja": "あ、そうだ。一度死んでから恋人のキスで復活するってことにすれば",
    "ko": "아, 그래. 한 번 죽었다가 연인의 키스로 부활하는 걸로 하면",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 98.85,
@@ -252,7 +252,7 @@
    "speaker": "유키",
    "ja": "美しいし都合もいいしね",
    "ko": "아름답기도 하고 딱 좋잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 101.72,
@@ -260,7 +260,7 @@
    "speaker": "쿄코",
    "ja": "もう、ユキちゃんたら天才ね",
    "ko": "어머, 유키는 천재라니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 104.86,
@@ -268,7 +268,7 @@
    "speaker": "유키",
    "ja": "あ、イカサマ軍団",
    "ko": "앗, 사기꾼 군단!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 107.4,
@@ -276,7 +276,7 @@
    "speaker": "쿄코",
    "ja": "ねえねえ、もろあんたの苦手なタイプでしょ",
    "ko": "저기저기, 딱 네가 질색하는 타입이지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 110.43,
@@ -284,7 +284,7 @@
    "speaker": "츠카사",
    "ja": "あ、頭痛え",
    "ko": "아, 머리 아파.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 112.0,
@@ -292,7 +292,7 @@
    "speaker": "쿄코",
    "ja": "ほらレモン、シャキッとして",
    "ko": "자, 레몬, 정신 차려.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 113.95,
@@ -300,7 +300,7 @@
    "speaker": "쿄코",
    "ja": "さ、ユキちゃん、麻雀で勝負よ",
    "ko": "자, 유키, 마작으로 승부야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 116.53,
@@ -308,7 +308,7 @@
    "speaker": "유키",
    "ja": "えぇ、信じらんない",
    "ko": "에에, 말도 안 돼.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

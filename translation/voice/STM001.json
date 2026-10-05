@@ -10,7 +10,7 @@
    "speaker": "밀크",
    "ja": "お邪魔いたしみゃーす",
    "ko": "실례하겠습니먀~",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: おじめいたしみゃーす"
   },
@@ -19,8 +19,8 @@
    "end": 7.66,
    "speaker": "사나에",
    "ja": "あら、ぬいぐるみさんかしら",
-   "ko": "어머, 인형님인가요?",
-   "status": "needs_human_review"
+   "ko": "어머, 봉제 인형인가요?",
+   "status": "distribution_eligible"
   },
   {
    "start": 7.98,
@@ -28,7 +28,7 @@
    "speaker": "밀크",
    "ja": "誰がぬいぐるみじゃ",
    "ko": "누가 인형이야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.58,
@@ -36,9 +36,9 @@
    "speaker": "밀크",
    "ja": "ともかくおめでとうございます",
    "ko": "아무튼 축하드립니다.",
-   "status": "needs_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
-   "note": "받아쓰기를 문맥으로 고침: ともといおめでとうございます / 2차 검수: 「ともかく」는 받아쓰기(ともとい)를 문맥으로 고친 추정. 밀크가 일부러 엉터리 경어를 쓰는 장면이라 원문 확인 필요"
+   "note": "받아쓰기를 문맥으로 고침: ともといおめでとうございます / 2차 검수: 「ともかく」는 받아쓰기(ともとい)를 문맥으로 고친 추정. 밀크가 일부러 엉터리 경어를 쓰는 장면이라 원문 확인 필요 / 최종 검수: 받아쓰기 「ともとい」를 「ともかく」로 보고 「아무튼 축하드립니다」로 확정. 밀크의 엉터리 경어 인사로 봄"
   },
   {
    "start": 11.84,
@@ -46,7 +46,7 @@
    "speaker": "밀크",
    "ja": "わたくしは幸運を招くうさぎぴょんですぴょん",
    "ko": "저는 행운을 부르는 토끼뿅입니다뿅.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: わたくしはごうおうまねくうさぎぴょんですぴょん (뒤이은 「ですぴょん」 15.82~16.66은 중복으로 보고 뺌)"
   },
@@ -56,7 +56,7 @@
    "speaker": "밀크",
    "ja": "つきましてはレタスもいいがにんじんも捨てがたいぴょんですぴょん",
    "ko": "그러하오니 양상추도 좋지만 당근도 버리기 아깝다뿅입니다뿅.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: つきましてはレタスもいいがにんじんも捨てがたぴょんですぴょん"
   },
@@ -66,7 +66,7 @@
    "speaker": "밀크",
    "ja": "ああ、地球語はややこしい",
    "ko": "아아, 지구어는 너무 복잡해.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あ、あ、ちきゅうごはややこしい"
   },
@@ -76,7 +76,7 @@
    "speaker": "사나에",
    "ja": "はあ、捨てがたいぴょん…？",
    "ko": "네에, 버리기 아깝다뿅…?",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あ、捨てがたぴょん"
   },
@@ -86,16 +86,16 @@
    "speaker": "밀크",
    "ja": "何か恵んで",
    "ko": "뭐 좀 베풀어 줘.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 27.52,
    "end": 30.34,
    "speaker": "사나에",
    "ja": "はぁ、何か…めぐろん？",
-   "ko": "네에, 뭔가… 메구롱?",
-   "status": "needs_human_review",
-   "note": "「恵んで」를 잘못 알아들은 말장난으로 봄"
+   "ko": "네에, 뭔가… 베풀롱?",
+   "status": "distribution_eligible",
+   "note": "「恵んで」를 잘못 알아들은 말장난으로 봄 / 최종 검수: 「恵んで」→「めぐろん」 잘못 알아듣기 말장난을 살려 「베풀어」→「베풀롱」으로 옮김(13번 줄과 같게)"
   },
   {
    "start": 30.34,
@@ -103,7 +103,7 @@
    "speaker": "밀크",
    "ja": "はぁ、もうまどろっこしいぴょーん",
    "ko": "하아, 정말 답답하다뿅~!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: はぁ、もうまどろっかしいぴゃーん"
   },
@@ -113,7 +113,7 @@
    "speaker": "밀크",
    "ja": "つまりぽんぽがぴくぴくぴーにゃんで",
    "ko": "그러니까 배가 꿈틀꿈틀 삐냥이라서,",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: つまりぽんぽくがぴくぴくぴーにゃんで (말이 안 되는 설명, 일부러 엉터리인 듯)"
   },
@@ -123,7 +123,7 @@
    "speaker": "밀크",
    "ja": "レタスがにんじんをはむはむさせてくれていたんやに",
    "ko": "양상추가 당근을 냠냠하게 해 주고 있었는데,",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: レタスがにんじんをはむはむさしてくれていたんやに"
   },
@@ -132,10 +132,10 @@
    "end": 42.38,
    "speaker": "밀크",
    "ja": "なんでにゃーかめぐろんが出てきて話が終わっちゃうにゃ",
-   "ko": "왠지 메구롱이 나와서 얘기가 끝나 버린다냥.",
-   "status": "needs_human_review",
+   "ko": "왠지 베풀롱이 나와서 얘기가 끝나 버린다냥.",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
-   "note": "받아쓰기를 문맥으로 고침: なんでにゃーかめぐろんが出てきて話が終わっちゃうにゃや"
+   "note": "받아쓰기를 문맥으로 고침: なんでにゃーかめぐろんが出てきて話が終わっちゃうにゃや / 최종 검수: 「めぐろん」은 9번 줄과 같게 「베풀롱」"
   },
   {
    "start": 42.38,
@@ -143,7 +143,7 @@
    "speaker": "쿄코",
    "ja": "あんたのが100倍まどろっこしいわよ",
    "ko": "네 설명이 100배는 더 답답하거든!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.32,
@@ -151,7 +151,7 @@
    "speaker": "사나에",
    "ja": "ほう",
    "ko": "아하.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.66,
@@ -159,7 +159,7 @@
    "speaker": "쿄코",
    "ja": "つまりね、あなたと麻雀がしたいって言ってるのよ",
    "ko": "그러니까 너랑 마작하고 싶다는 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.64,
@@ -167,7 +167,7 @@
    "speaker": "사나에",
    "ja": "なんだ、そうでしたの",
    "ko": "어머, 그런 거였군요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.34,
@@ -175,7 +175,7 @@
    "speaker": "밀크",
    "ja": "なんじゃそりゃ",
    "ko": "뭐야, 그게!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: なんでしょりゃ"
   },
@@ -185,7 +185,7 @@
    "speaker": "쿄코",
    "ja": "さ、勝負開始ね",
    "ko": "자, 승부 시작이야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

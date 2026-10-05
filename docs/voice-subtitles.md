@@ -33,7 +33,8 @@
 - `ja`: 원문. 받아쓰기를 문맥으로 고친 줄은 `"asr_uncertain": true`와 `"note"`에 원래 받아쓰기를 남긴다.
 - `ko`: 자막. 비우면 그 줄은 화면에 나오지 않는다(신음·웃음만 있는 줄 등).
 - `speaker`: 말하는 사람(추정). 화면에는 나오지 않고 검수용.
-- `status`: `needs_review`(초벌) → `needs_human_review`(2차 검수 통과) → `distribution_eligible`(사람 승인).
+- `status`: `needs_review`(초벌) → `needs_human_review`(2차 검수 통과) → `distribution_eligible`(최종 검수 통과).
+- **최종 검수 (2026-10-05):** 프로젝트 소유자가 일본어를 읽지 못해 최종 검수를 Claude에 맡김. 2,078줄 모두 `distribution_eligible`. 음성은 직접 듣지 못했고, 받아쓰기 두 벌(VAD 있음/없음)과 문맥으로 판단. 뜻이 끝내 불확실한 줄(약 40줄)은 가장 그럴듯한 해석으로 두고 `note`에 "최종 검수:"로 근거를 적음. 일본어를 듣고 읽을 수 있는 사람이 나중에 다시 보면 좋은 곳은 `asr_uncertain`이 붙은 줄과 이 note.
 
 ### 2.2 화면 제약
 

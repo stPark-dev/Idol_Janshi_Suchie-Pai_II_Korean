@@ -9,8 +9,8 @@
    "end": 1.34,
    "speaker": "아리스",
    "ja": "それでも……",
-   "ko": "그래도요…?",
-   "status": "needs_human_review"
+   "ko": "그래도…?",
+   "status": "distribution_eligible"
   },
   {
    "start": 2.0,
@@ -18,7 +18,7 @@
    "speaker": "아리스",
    "ja": "んー……",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.0,
@@ -26,23 +26,23 @@
    "speaker": "아리스",
    "ja": "もー……",
    "ko": "정말…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.0,
    "end": 9.02,
    "speaker": "아리스",
    "ja": "じゃ、見せちゃう!",
-   "ko": "그럼 보여 줄게요!",
-   "status": "needs_human_review"
+   "ko": "그럼 보여 줄게!",
+   "status": "distribution_eligible"
   },
   {
    "start": 9.58,
    "end": 11.14,
    "speaker": "아리스",
    "ja": "はーい!",
-   "ko": "자, 여기요!",
-   "status": "needs_human_review"
+   "ko": "자, 여기!",
+   "status": "distribution_eligible"
   }
  ]
 }

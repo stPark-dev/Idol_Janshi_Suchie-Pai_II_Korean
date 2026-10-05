@@ -10,7 +10,7 @@
    "speaker": "세실",
    "ja": "あはははは、負けちまったよ",
    "ko": "아하하하하, 져 버렸네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.72,
@@ -18,7 +18,7 @@
    "speaker": "세실",
    "ja": "だけどそれがなんだってんだい",
    "ko": "하지만 그게 뭐 어쨌다는 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.2,
@@ -26,15 +26,15 @@
    "speaker": "세실",
    "ja": "麻雀に勝てばそれで終わりか",
    "ko": "마작에서 이기면 그걸로 끝인가?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.84,
    "end": 10.58,
    "speaker": "세실",
    "ja": "いや、違うよな",
-   "ko": "아니, 아니잖아.",
-   "status": "needs_human_review"
+   "ko": "아니, 아니지.",
+   "status": "distribution_eligible"
   },
   {
    "start": 10.98,
@@ -42,7 +42,7 @@
    "speaker": "세실",
    "ja": "周りを見てみろよ",
    "ko": "주위를 둘러봐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.4,
@@ -50,7 +50,7 @@
    "speaker": "세실",
    "ja": "何か足りねえ奴がいるだろ、ほら",
    "ko": "누가 하나 빠졌잖아, 봐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.46,
@@ -58,7 +58,7 @@
    "speaker": "세실",
    "ja": "そいつはどうした",
    "ko": "그 녀석은 어떻게 됐지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.54,
@@ -66,15 +66,15 @@
    "speaker": "세실",
    "ja": "心なんてもんは脆いもんだよな",
    "ko": "마음이란 건 깨지기 쉬운 법이지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.68,
    "end": 24.12,
    "speaker": "세실",
    "ja": "仲間との戦いよりも自分の幸せを選んだそいつを",
-   "ko": "동료와 함께 싸우기보다 자기 행복을 고른 그 녀석을",
-   "status": "needs_human_review"
+   "ko": "동료와의 싸움보다 자기 행복을 고른 그 녀석을",
+   "status": "distribution_eligible"
   },
   {
    "start": 24.12,
@@ -82,7 +82,7 @@
    "speaker": "세실",
    "ja": "お前らに責めることができるのか?え?",
    "ko": "너희가 탓할 수 있겠어? 응?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.64,
@@ -90,7 +90,7 @@
    "speaker": "세실",
    "ja": "麻雀程度で掴んだ絆なんてその程度だよな。違うか?",
    "ko": "마작 정도로 맺은 인연은 고작 그 정도지. 아닌가?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.26,
@@ -98,7 +98,7 @@
    "speaker": "세실",
    "ja": "そんじゃ、シホはいただいてくぜ。あばよ!",
    "ko": "그럼 시호는 데려간다. 잘 있어라!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.58,
@@ -106,7 +106,7 @@
    "speaker": "시호",
    "ja": "ああ!助けてくださーい!",
    "ko": "아앗! 살려 주세요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 38.1,
@@ -114,7 +114,7 @@
    "speaker": "시호",
    "ja": "スーチーパイさん!ピーチパイさん!",
    "ko": "스치파이 씨! 피치파이 씨!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 42.4,
@@ -122,7 +122,7 @@
    "speaker": "아리스",
    "ja": "ああ!私、魔法使いなのに何もできないなんて!",
    "ko": "아아! 난 마법사인데 아무것도 못 하다니!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 47.4,
@@ -130,7 +130,7 @@
    "speaker": "아리스",
    "ja": "みんなを幸せにするのが夢なのに!シホさん一人助けられないなんて!",
    "ko": "모두를 행복하게 하는 게 꿈인데! 시호 씨 한 명도 못 구하다니!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.9,
@@ -138,7 +138,7 @@
    "speaker": "쿄코",
    "ja": "ピーチ、まだ終わりじゃないわ。またシホさんを探そうよ。ね?",
    "ko": "피치, 아직 끝난 거 아니야. 다시 시호 씨를 찾자. 응?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 57.6,
@@ -146,7 +146,7 @@
    "speaker": "아리스",
    "ja": "そうよね。私も今魔法を使ってる最中なんだわ",
    "ko": "그렇죠. 저도 지금 마법을 쓰고 있는 중이잖아요.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "STP012 미유리의 「魔法はね今使ってるんだよ」를 받는 말"
   },
   {
@@ -155,7 +155,7 @@
    "speaker": "아리스",
    "ja": "諦めたところできっと魔法も失敗しちゃうのね",
    "ko": "포기하면 분명 마법도 실패하고 말 거예요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 65.74,
@@ -163,7 +163,7 @@
    "speaker": "아리스",
    "ja": "もう少し頑張ってみる、私",
    "ko": "조금만 더 힘내 볼게요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

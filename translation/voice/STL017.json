@@ -10,7 +10,7 @@
    "speaker": "미상(내레이션)",
    "ja": "つかささんは休暇が取れても一人でぶらっと出かけてしまいます",
    "ko": "츠카사 씨는 휴가를 얻어도 혼자서 훌쩍 떠나 버려요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.36,
@@ -18,7 +18,7 @@
    "speaker": "츠카사",
    "ja": "一人旅も悪くねえが、今度は誰かと二人で来てみたいぜ",
    "ko": "혼자 여행도 나쁘진 않은데, 다음엔 누구랑 둘이 와 보고 싶군.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 一人旅も悪くねえが今度は誰か二人で来てみたいぜ"
   },
@@ -28,15 +28,15 @@
    "speaker": "쿄코(추정)",
    "ja": "そうね、また会いましょうね",
    "ko": "그래, 또 만나자.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.64,
    "end": 16.66,
    "speaker": "쿄코(추정)",
    "ja": "きっと口喧嘩になっちゃうだろうけど、それもまた楽しいじゃない",
-   "ko": "분명 말다툼하겠지만 그것도 즐겁잖아.",
-   "status": "needs_human_review"
+   "ko": "분명 말다툼하게 되겠지만 그것도 나름 즐겁잖아.",
+   "status": "distribution_eligible"
   },
   {
    "start": 17.16,
@@ -44,7 +44,7 @@
    "speaker": "쿄코(추정)",
    "ja": "ね、つかささん",
    "ko": "그렇지, 츠카사 씨?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

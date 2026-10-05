@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "今日の夕食何にしようかな?",
    "ko": "오늘 저녁은 뭘로 할까~?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.5,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "なんて迷った時は中華よね",
    "ko": "…하고 고민될 땐 중화요리지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.34,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "ユキ、餃子作りなら自信あるもんね",
    "ko": "유키는 만두 빚기라면 자신 있거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.72,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "焼くのは自信ないけどさ",
    "ko": "굽는 건 자신 없지만.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.64,
@@ -42,7 +42,7 @@
    "speaker": "유키",
    "ja": "あとはラーメンでも買って",
    "ko": "그리고 라면이라도 사서",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 13.46,
@@ -50,7 +50,7 @@
    "speaker": "유키",
    "ja": "メンマとか具とかなんか適当に入れればOKかな",
    "ko": "멘마랑 건더기를 대충 넣으면 OK려나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.48,
@@ -58,7 +58,7 @@
    "speaker": "유키",
    "ja": "あ、人間チャーシュー",
    "ko": "아, 인간 차슈다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.98,
@@ -66,15 +66,15 @@
    "speaker": "스치파이",
    "ja": "あははは、言えてる言えてる",
    "ko": "아하하, 맞아 맞아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 23.32,
    "end": 25.44,
    "speaker": "스치파이",
    "ja": "服の食い込み具合がなんとも",
-   "ko": "옷이 파고든 모양새가 딱이야.",
-   "status": "needs_human_review"
+   "ko": "옷이 살에 파고든 게 아주 그냥…",
+   "status": "distribution_eligible"
   },
   {
    "start": 25.44,
@@ -82,7 +82,7 @@
    "speaker": "체리파이",
    "ja": "何笑ってんだよお前",
    "ko": "뭘 웃고 있어, 너.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 27.6,
@@ -90,7 +90,7 @@
    "speaker": "체리파이",
    "ja": "お前、私がちょっとおとなしくしてるからってリーダー気取りしてんじゃないよ",
    "ko": "내가 좀 얌전히 있어 줬다고 리더 행세하지 마.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.26,
@@ -98,7 +98,7 @@
    "speaker": "스치파이",
    "ja": "あら、そんなこと言ってるとサナエさんに戻った時仲良くしてあげないから",
    "ko": "어머, 그런 말 하면 사나에 씨로 돌아왔을 때 안 놀아 줄 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.64,
@@ -106,15 +106,15 @@
    "speaker": "체리파이",
    "ja": "お前、それが正義のヒロインとか名乗ってるやつのセリフか?",
    "ko": "너, 그게 정의의 히로인이라는 녀석이 할 소리냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 41.84,
    "end": 44.82,
    "speaker": "스치파이",
    "ja": "結果オーライがモットーだもん、手段は選ばないわ",
-   "ko": "결과만 좋으면 그만이 모토인걸. 수단은 안 가려.",
-   "status": "needs_human_review",
+   "ko": "결과만 좋으면 된다는 게 모토인걸. 수단은 안 가려.",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 結果往来がモットーだもん、手段は選ばないわ"
   },
@@ -123,8 +123,8 @@
    "end": 47.48,
    "speaker": "스치파이",
    "ja": "それよりか、もう仲間割れはなしにしない?",
-   "ko": "그보다, 이제 집안싸움은 그만하지 않을래?",
-   "status": "needs_human_review"
+   "ko": "그보다, 이제 우리끼리 싸우는 건 그만하지 않을래?",
+   "status": "distribution_eligible"
   },
   {
    "start": 47.8,
@@ -132,7 +132,7 @@
    "speaker": "유키",
    "ja": "そうよ、おばさん同士でいがみ合っても不毛よ",
    "ko": "맞아, 아줌마들끼리 으르렁대 봤자 소용없어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 51.68,
@@ -140,7 +140,7 @@
    "speaker": "스치파이",
    "ja": "ちょっとユキちゃん、人見て物言ってよね",
    "ko": "잠깐, 유키! 사람 봐 가면서 말해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 54.6,
@@ -148,7 +148,7 @@
    "speaker": "스치파이",
    "ja": "チェリーはともかく私はあんたと同じ18歳でしょうが",
    "ko": "체리는 몰라도 난 너랑 같은 18살이잖아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 59.54,
@@ -156,15 +156,15 @@
    "speaker": "유키",
    "ja": "ユキは18歳になった今",
    "ko": "유키는 18살이 된 지금",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 62.27,
    "end": 65.78,
    "speaker": "유키",
    "ja": "実際の年齢に対してどう見えるかをポイントにしてるんだもん",
-   "ko": "실제 나이에 비해 어떻게 보이느냐가 포인트인걸.",
-   "status": "needs_human_review"
+   "ko": "실제 나이보다 어떻게 보이느냐가 중요한걸.",
+   "status": "distribution_eligible"
   },
   {
    "start": 65.78,
@@ -172,7 +172,7 @@
    "speaker": "스치파이",
    "ja": "私が年相応なの、あんたがお子様体型なだけ",
    "ko": "난 나이에 맞는 거고, 넌 그냥 어린애 체형일 뿐이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 69.9,
@@ -180,7 +180,7 @@
    "speaker": "유키",
    "ja": "まあ、自分の秤で人を計るのってよくないわ",
    "ko": "어머, 자기 잣대로 남을 재는 건 좋지 않아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 73.84,
@@ -188,7 +188,7 @@
    "speaker": "스치파이",
    "ja": "そりゃユキちゃんのことでしょ、自覚ないの",
    "ko": "그건 유키 얘기잖아. 자각 없어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 76.72,
@@ -196,7 +196,7 @@
    "speaker": "체리파이",
    "ja": "お前にもバッチリ当てはまるけどな",
    "ko": "너한테도 딱 들어맞는다만.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 80.54,
@@ -204,7 +204,7 @@
    "speaker": "유키",
    "ja": "もう、二人ともわがままね",
    "ko": "정말, 둘 다 제멋대로네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 84.6,
@@ -212,7 +212,7 @@
    "speaker": "체리파이",
    "ja": "この小娘にわがまま呼ばわりされるとはね",
    "ko": "이런 꼬맹이한테 제멋대로란 소릴 듣다니.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 89.46,
@@ -220,7 +220,7 @@
    "speaker": "스치파이",
    "ja": "あのさ、自分で言うのもなんだけど",
    "ko": "있잖아, 내 입으로 말하긴 뭐하지만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 92.64,
@@ -228,7 +228,7 @@
    "speaker": "스치파이",
    "ja": "この3人の中にトラブルシューターはいないんじゃないかしら",
    "ko": "이 셋 중에 중재자는 없는 거 아닐까?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 96.24,
@@ -236,7 +236,7 @@
    "speaker": "유키",
    "ja": "このまま話し合っても平行線だわ",
    "ko": "이대로 얘기해 봤자 평행선이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 98.96,
@@ -244,7 +244,7 @@
    "speaker": "체리파이",
    "ja": "じゃあ麻雀勝負といくか",
    "ko": "그럼 마작 승부로 갈까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 100.94,
@@ -252,7 +252,7 @@
    "speaker": "스치파이",
    "ja": "そうね、しかしつくづく麻雀って偉大なゲームだと思うわ",
    "ko": "그래. 정말이지 마작은 위대한 게임이라니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

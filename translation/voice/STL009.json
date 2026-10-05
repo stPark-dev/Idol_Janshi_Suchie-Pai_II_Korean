@@ -10,7 +10,7 @@
    "speaker": "마이",
    "ja": "大きなお店じゃないけれど、豪華なお店でもないけれど",
    "ko": "큰 가게도 아니고 화려한 가게도 아니지만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.72,
@@ -18,7 +18,7 @@
    "speaker": "마이",
    "ja": "私だけの手作りパイのお店、それがアンパイズ",
    "ko": "나만의 수제 파이 가게, 그게 바로 안파이즈.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "가게 이름 アンパイズ(안전패 安牌와 파이를 겹친 말장난으로 보임)"
   },
   {
@@ -27,7 +27,7 @@
    "speaker": "마이",
    "ja": "女の子一人で店を切り盛りするのは並大抵じゃないけれど",
    "ko": "여자 혼자 가게를 꾸려 가는 건 보통 일이 아니지만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 13.54,
@@ -35,7 +35,7 @@
    "speaker": "마이",
    "ja": "私のパイを楽しみにしてくれるお客さんの笑顔があれば",
    "ko": "내 파이를 기다려 주는 손님들의 웃는 얼굴이 있다면,",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.26,
@@ -43,7 +43,7 @@
    "speaker": "마이",
    "ja": "それさえあれば、マイはいくらでも頑張れちゃう気がするの",
    "ko": "그것만 있으면 마이는 얼마든지 힘낼 수 있을 것 같아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.52,
@@ -51,7 +51,7 @@
    "speaker": "마이",
    "ja": "いらっしゃいませ!アンパイズへようこそ!",
    "ko": "어서 오세요! 안파이즈에 오신 걸 환영해요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.64,
@@ -59,7 +59,7 @@
    "speaker": "마이",
    "ja": "ご注文は何にいたしましょうか?",
    "ko": "주문은 뭘로 하시겠어요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.34,
@@ -67,7 +67,7 @@
    "speaker": "츠카사",
    "ja": "うん、腹減った。俺、チーズバーガーにポテトのS",
    "ko": "음, 배고프다. 난 치즈버거에 감자튀김 S.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.68,
@@ -75,7 +75,7 @@
    "speaker": "쿄코",
    "ja": "私、テリヤキのセット。ドリンクはコーラね",
    "ko": "난 데리야키 세트. 음료는 콜라로.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 34.5,
@@ -83,7 +83,7 @@
    "speaker": "마이",
    "ja": "店が違うでしょうが!ほら、どっか他で買いなさいよ、もう",
    "ko": "가게를 잘못 찾았잖아요! 자, 딴 데 가서 사세요, 정말!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 店が違うでしょうがほらどっとか買いなさいよもう"
   },
@@ -93,7 +93,7 @@
    "speaker": "츠카사",
    "ja": "なんだ、ここハンバーガー屋じゃねえのかよ",
    "ko": "뭐야, 여기 햄버거 가게 아니었냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 42.2,
@@ -101,7 +101,7 @@
    "speaker": "쿄코",
    "ja": "もう、紛らわしいな",
    "ko": "참, 헷갈리게 하네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.86,
@@ -109,7 +109,7 @@
    "speaker": "마이",
    "ja": "ああもう、今日は閉店閉店!塩まかなきゃ、しっし",
    "ko": "아, 진짜! 오늘은 폐점, 폐점! 소금 뿌려야지. 훠이훠이!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

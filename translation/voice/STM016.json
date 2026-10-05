@@ -10,15 +10,15 @@
    "speaker": "세실",
    "ja": "ま、負けたよ",
    "ko": "져, 졌다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.9,
    "end": 7.1,
    "speaker": "세실",
    "ja": "お前らみたいに脳天気で行き当たりばったりで無計画で",
-   "ko": "너희처럼 태평하고 되는대로에 무계획이고",
-   "status": "needs_human_review"
+   "ko": "너희처럼 태평하고 주먹구구에 계획도 없고",
+   "status": "distribution_eligible"
   },
   {
    "start": 7.1,
@@ -26,7 +26,7 @@
    "speaker": "세실",
    "ja": "理屈が通じない奴らが一番やりにくいぜ",
    "ko": "말이 안 통하는 놈들이 제일 상대하기 힘들어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.22,
@@ -34,7 +34,7 @@
    "speaker": "세실",
    "ja": "今回は出直させてもらうよ",
    "ko": "이번엔 일단 물러가 주지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

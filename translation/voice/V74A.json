@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "ん?",
    "ko": "응?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.12,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "さあ、あー",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.06,
@@ -26,15 +26,15 @@
    "speaker": "스치파이",
    "ja": "ちょっと、いや、あ、いやー",
    "ko": "잠깐, 싫어! 아, 안 돼!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.0,
    "end": 11.0,
    "speaker": "스치파이",
    "ja": "な、なんなのよ、もう",
-   "ko": "뭐, 뭐야 대체, 정말!",
-   "status": "needs_human_review"
+   "ko": "뭐, 뭐야, 정말!",
+   "status": "distribution_eligible"
   }
  ]
 }

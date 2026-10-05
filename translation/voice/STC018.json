@@ -9,8 +9,8 @@
    "end": 4.3,
    "speaker": "세실",
    "ja": "あはははは、負けちまったよ",
-   "ko": "아하하하하, 져 버렸군.",
-   "status": "needs_human_review"
+   "ko": "아하하하하, 져 버렸네.",
+   "status": "distribution_eligible"
   },
   {
    "start": 4.72,
@@ -18,39 +18,39 @@
    "speaker": "세실",
    "ja": "だけどそれがなんだってんだい",
    "ko": "하지만 그게 뭐 어쨌다는 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.2,
    "end": 8.84,
    "speaker": "세실",
    "ja": "麻雀に勝てばそれで終わりか",
-   "ko": "마작에서 이기면 그걸로 끝이냐?",
-   "status": "needs_human_review"
+   "ko": "마작에서 이기면 그걸로 끝인가?",
+   "status": "distribution_eligible"
   },
   {
    "start": 8.84,
    "end": 10.58,
    "speaker": "세실",
    "ja": "いや、違うよな",
-   "ko": "아니, 그렇지 않지.",
-   "status": "needs_human_review"
+   "ko": "아니, 아니지.",
+   "status": "distribution_eligible"
   },
   {
    "start": 10.98,
    "end": 12.4,
    "speaker": "세실",
    "ja": "周りを見てみろよ",
-   "ko": "주위를 둘러봐라.",
-   "status": "needs_human_review"
+   "ko": "주위를 둘러봐.",
+   "status": "distribution_eligible"
   },
   {
    "start": 12.4,
    "end": 15.46,
    "speaker": "세실",
    "ja": "何か足りねえ奴がいるだろ、ほら",
-   "ko": "누가 하나 모자라잖아, 봐.",
-   "status": "needs_human_review"
+   "ko": "누가 하나 빠졌잖아, 봐.",
+   "status": "distribution_eligible"
   },
   {
    "start": 15.46,
@@ -58,7 +58,7 @@
    "speaker": "세실",
    "ja": "そいつはどうした",
    "ko": "그 녀석은 어떻게 됐지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.54,
@@ -66,31 +66,31 @@
    "speaker": "세실",
    "ja": "心なんてもんは脆いもんだよな",
    "ko": "마음이란 건 깨지기 쉬운 법이지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.68,
    "end": 24.12,
    "speaker": "세실",
    "ja": "仲間との戦いよりも自分の幸せを選んだそいつを",
-   "ko": "동료와의 싸움보다 자기 행복을 택한 그 녀석을",
-   "status": "needs_human_review"
+   "ko": "동료와의 싸움보다 자기 행복을 고른 그 녀석을",
+   "status": "distribution_eligible"
   },
   {
    "start": 24.12,
    "end": 26.12,
    "speaker": "세실",
    "ja": "お前らに責めることができるのか",
-   "ko": "너희가 탓할 수 있나?",
-   "status": "needs_human_review"
+   "ko": "너희가 탓할 수 있겠어?",
+   "status": "distribution_eligible"
   },
   {
    "start": 26.64,
    "end": 31.56,
    "speaker": "세실",
    "ja": "え?麻雀程度で掴んだ絆なんてその程度だよな。違うか?",
-   "ko": "응? 마작 정도로 맺은 유대 따윈 딱 그 정도지. 안 그래?",
-   "status": "needs_human_review"
+   "ko": "응? 마작 정도로 맺은 인연은 고작 그 정도지. 안 그래?",
+   "status": "distribution_eligible"
   },
   {
    "start": 32.18,
@@ -98,7 +98,7 @@
    "speaker": "세실",
    "ja": "そんじゃ、志穂はいただいてくぜ!あばよ!",
    "ko": "그럼 시호는 데려간다! 잘 있어라!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.56,
@@ -106,7 +106,7 @@
    "speaker": "시호",
    "ja": "ああ!助けてくださーい!スーチーパイさん!チェリーパイさん!",
    "ko": "아아! 살려 주세요! 스치파이 씨! 체리파이 씨!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.52,
@@ -114,7 +114,7 @@
    "speaker": "스치파이",
    "ja": "ああ!志穂さんてばとろいんだからもう!またさらわれちゃったじゃないの!",
    "ko": "아! 시호 씨는 굼떠서 정말! 또 잡혀갔잖아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 49.12,
@@ -122,7 +122,7 @@
    "speaker": "체리파이",
    "ja": "逃がすもんか!絶対にな!",
    "ko": "놓칠 줄 알고! 절대로!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

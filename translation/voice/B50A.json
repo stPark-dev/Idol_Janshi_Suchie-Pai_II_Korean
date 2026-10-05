@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "篠原アリスちゃん。こう見えても16歳。高校生なのよ。",
    "ko": "시노하라 아리스. 이래 봬도 16살 고등학생이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.66,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "実は彼女、いわゆる魔法少女ってやつなんだけど、",
    "ko": "사실 이 아이, 이른바 마법소녀라는 거거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.1,
@@ -26,7 +26,7 @@
    "speaker": "스치파이",
    "ja": "大人に変身できる以外は大した魔法が使えないみたいね。",
    "ko": "그런데 어른으로 변신하는 것 말고는 별다른 마법을 못 쓰나 봐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

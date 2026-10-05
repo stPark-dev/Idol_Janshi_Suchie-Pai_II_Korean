@@ -10,7 +10,7 @@
    "speaker": "쿄코",
    "ja": "篠原アリスちゃんね",
    "ko": "시노하라 아리스지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.04,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "あなた本当は魔法の雀士ピーチパイなんでしょ",
    "ko": "너 사실은 마법의 작사 피치파이지?",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あなた本当は魔法のジャンシーピーチパイなんでしょ"
   },
@@ -28,7 +28,7 @@
    "speaker": "아리스",
    "ja": "ひえー、私の秘密を一発で見抜いてしまったあなた方は一体何者",
    "ko": "히에엑, 제 비밀을 단번에 꿰뚫어 보시다니, 대체 누구세요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 10.46,
@@ -36,7 +36,7 @@
    "speaker": "쿄코",
    "ja": "私、正義のヒロイン",
    "ko": "나는 정의의 히로인.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.04,
@@ -44,15 +44,15 @@
    "speaker": "밀크",
    "ja": "私、宇宙人",
    "ko": "나는 우주인.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.34,
    "end": 18.38,
    "speaker": "아리스",
    "ja": "ではその知識を見込んでスペシャルクーイズ",
-   "ko": "그럼 그 지식을 믿고, 스페셜 퀴~즈!",
-   "status": "needs_human_review"
+   "ko": "그럼 그 지식을 높이 사서, 스페셜 퀴~즈!",
+   "status": "distribution_eligible"
   },
   {
    "start": 18.38,
@@ -60,7 +60,7 @@
    "speaker": "쿄코",
    "ja": "え、何?",
    "ko": "어, 뭐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 19.32,
@@ -68,9 +68,9 @@
    "speaker": "밀크",
    "ja": "わーい",
    "ko": "와아!",
-   "status": "needs_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
-   "note": "받아쓰기를 문맥으로 고침: 戦い / 2차 검수: 받아쓰기는 「戦い」. 「わーい」는 추정이며 화자도 불확실"
+   "note": "받아쓰기를 문맥으로 고침: 戦い / 2차 검수: 받아쓰기는 「戦い」. 「わーい」는 추정이며 화자도 불확실 / 최종 검수: 퀴즈를 반기는 밀크의 「わーい」로 확정"
   },
   {
    "start": 20.28,
@@ -78,7 +78,7 @@
    "speaker": "아리스",
    "ja": "さて第一問です",
    "ko": "자, 제1문입니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.4,
@@ -86,7 +86,7 @@
    "speaker": "아리스",
    "ja": "インドの首都は?",
    "ko": "인도의 수도는?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 23.72,
@@ -94,7 +94,7 @@
    "speaker": "밀크",
    "ja": "カレー",
    "ko": "카레!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 24.3,
@@ -102,7 +102,7 @@
    "speaker": "아리스",
    "ja": "ブー",
    "ko": "땡!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 24.74,
@@ -110,7 +110,7 @@
    "speaker": "밀크",
    "ja": "メキシコ",
    "ko": "멕시코!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.68,
@@ -118,7 +118,7 @@
    "speaker": "아리스",
    "ja": "ブブー",
    "ko": "땡땡!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.28,
@@ -126,7 +126,7 @@
    "speaker": "아리스",
    "ja": "メキシコは国の名前です",
    "ko": "멕시코는 나라 이름이에요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.3,
@@ -134,7 +134,7 @@
    "speaker": "아리스",
    "ja": "答えはニューデリーです",
    "ko": "정답은 뉴델리랍니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 29.92,
@@ -142,7 +142,7 @@
    "speaker": "밀크",
    "ja": "ほら、宇宙人相手に地球ローカルな出題は卑怯だぴょん",
    "ko": "이봐, 우주인한테 지구 로컬 문제를 내는 건 비겁하다뿅!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 33.46,
@@ -150,7 +150,7 @@
    "speaker": "밀크",
    "ja": "もっと宇宙的なやつ出せ、宇宙的なやつ",
    "ko": "좀 더 우주적인 걸 내 봐, 우주적인 거!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.12,
@@ -158,7 +158,7 @@
    "speaker": "아리스",
    "ja": "わ、わかりました",
    "ko": "아, 알겠어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 38.64,
@@ -166,7 +166,7 @@
    "speaker": "아리스",
    "ja": "では第2問",
    "ko": "그럼 제2문.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 39.88,
@@ -174,7 +174,7 @@
    "speaker": "아리스",
    "ja": "夏の代表的な星座といえば?",
    "ko": "여름의 대표적인 별자리라고 하면?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 42.42,
@@ -182,7 +182,7 @@
    "speaker": "밀크",
    "ja": "みかん",
    "ko": "귤!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.22,
@@ -190,7 +190,7 @@
    "speaker": "아리스",
    "ja": "ブー",
    "ko": "땡!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.94,
@@ -198,7 +198,7 @@
    "speaker": "밀크",
    "ja": "たー",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 44.92,
@@ -206,7 +206,7 @@
    "speaker": "밀크",
    "ja": "地球人がつけた星の名前なんてわかってたまるかぴょん",
    "ko": "지구인이 붙인 별 이름 따위 알 게 뭐냐뿅!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 48.48,
@@ -214,7 +214,7 @@
    "speaker": "쿄코",
    "ja": "あんた自信満々に答えといて後からケチつけてどうすんのよ",
    "ko": "자신만만하게 대답해 놓고 이제 와서 트집 잡으면 어떡해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.4,
@@ -222,7 +222,7 @@
    "speaker": "밀크",
    "ja": "お前、地球人のくせになんで答えないぴょん",
    "ko": "넌 지구인이면서 왜 대답 안 하냐뿅!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 54.76,
@@ -230,7 +230,7 @@
    "speaker": "아리스",
    "ja": "まあまあまあ",
    "ko": "자자자, 진정하세요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 56.48,
@@ -238,7 +238,7 @@
    "speaker": "아리스",
    "ja": "次、ラストクイズ",
    "ko": "다음은 마지막 퀴즈.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 58.3,
@@ -246,7 +246,7 @@
    "speaker": "아리스",
    "ja": "麻雀の問題です",
    "ko": "마작 문제예요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 60.18,
@@ -254,7 +254,7 @@
    "speaker": "쿄코",
    "ja": "待ってました",
    "ko": "기다렸어!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 61.9,
@@ -262,17 +262,17 @@
    "speaker": "아리스",
    "ja": "相手の捨て牌を間違って鳴いてしまったときの罰金は一般的には何点?",
    "ko": "상대의 버림패를 잘못 울었을 때 벌금은 일반적으로 몇 점일까요?",
-   "status": "needs_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
-   "note": "받아쓰기를 문맥으로 고침: 相手の捨て牌を間違って泣いてしまったときの罰金は一般的には何点? / 2차 검수: 鳴く를 「울다」로 옮김. 마작 용어 「울기(鳴き)」 표기를 용어집에서 정해야 함"
+   "note": "받아쓰기를 문맥으로 고침: 相手の捨て牌を間違って泣いてしまったときの罰金は一般的には何点? / 2차 검수: 鳴く를 「울다」로 옮김. 마작 용어 「울기(鳴き)」 표기를 용어집에서 정해야 함 / 최종 검수: 용어집(voice) 「鳴く=울다」에 맞음"
   },
   {
    "start": 67.5,
    "end": 69.28,
    "speaker": "쿄코",
    "ja": "なし、それが私のルールよ",
-   "ko": "없음! 그게 내 룰이야.",
-   "status": "needs_human_review"
+   "ko": "없어! 그게 내 룰이야.",
+   "status": "distribution_eligible"
   },
   {
    "start": 69.28,
@@ -280,7 +280,7 @@
    "speaker": "아리스",
    "ja": "何それ",
    "ko": "그게 뭐예요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 70.6,
@@ -288,7 +288,7 @@
    "speaker": "쿄코",
    "ja": "うふ、詳しいことは実戦で教えてあげるわ",
    "ko": "우후, 자세한 건 실전에서 가르쳐 줄게.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: うふ、詳しいことは実践で教えてあげるわ"
   },
@@ -298,7 +298,7 @@
    "speaker": "쿄코",
    "ja": "さあ、勝負しましょ",
    "ko": "자, 승부하자!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

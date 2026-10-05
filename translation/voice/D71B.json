@@ -9,8 +9,8 @@
    "end": 6.3,
    "speaker": "사나에",
    "ja": "誰にも見せるなと言われてるんですが",
-   "ko": "아무에게도 보이지 말라고 하셨는데…",
-   "status": "needs_human_review"
+   "ko": "아무한테도 보여 주지 말라고 하셨는데…",
+   "status": "distribution_eligible"
   },
   {
    "start": 12.0,
@@ -18,7 +18,7 @@
    "speaker": "사나에",
    "ja": "あ、いやー",
    "ko": "아, 안 돼!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.7,
@@ -26,7 +26,7 @@
    "speaker": "사나에",
    "ja": "はー、レイカ様、すみません",
    "ko": "하아… 레이카 님, 죄송해요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

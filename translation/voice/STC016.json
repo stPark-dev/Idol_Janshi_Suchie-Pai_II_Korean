@@ -10,7 +10,7 @@
    "speaker": "세실",
    "ja": "負けた?このセシル様が下界の人間どもに勝負ごとで負けたのか?",
    "ko": "졌다고? 이 세실 님이 하계의 인간들한테 승부에서 졌단 말이냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.9,
@@ -18,7 +18,7 @@
    "speaker": "세실",
    "ja": "しかもチームワーク、統一感ともにゼロのわがまま五人衆相手にか?",
    "ko": "그것도 팀워크도 통일감도 제로인 제멋대로 5인방한테?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.04,
@@ -26,7 +26,7 @@
    "speaker": "세실",
    "ja": "チェリーよ、見事だ",
    "ko": "체리여, 훌륭하다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.62,
@@ -34,7 +34,7 @@
    "speaker": "세실",
    "ja": "しかしもう少し付き合う相手を考えろよ",
    "ko": "하지만 어울릴 상대는 좀 더 생각해라.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.34,
@@ -42,7 +42,7 @@
    "speaker": "세실",
    "ja": "さらばだ",
    "ko": "잘 있거라!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

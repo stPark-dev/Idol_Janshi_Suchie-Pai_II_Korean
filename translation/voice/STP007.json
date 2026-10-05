@@ -10,7 +10,7 @@
    "speaker": "쿄코",
    "ja": "どうしたのよ、そわそわして。このお屋敷に一体何かあるの?",
    "ko": "왜 그래, 안절부절못하고. 이 저택에 대체 뭐가 있는데?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.68,
@@ -18,7 +18,7 @@
    "speaker": "아리스",
    "ja": "うーん、さっきからなんか感じるのよね",
    "ko": "음, 아까부터 뭔가 느껴져요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.78,
@@ -26,7 +26,7 @@
    "speaker": "아리스",
    "ja": "こう、モヤモヤーっとしたのが",
    "ko": "이렇게 싱숭생숭~한 게.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.54,
@@ -34,7 +34,7 @@
    "speaker": "쿄코",
    "ja": "えっ、ちょっと、私ノーマルだからね",
    "ko": "어? 잠깐, 나 그런 취향 아니거든?",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "「ノーマル」= 동성애 취향이 아니라는 뜻. 아리스의 「モヤモヤ」(답답함)를 「ムラムラ」(성적 흥분)로 받은 말장난"
   },
   {
@@ -43,7 +43,7 @@
    "speaker": "아리스",
    "ja": "それはムラムラーっとした時でしょうが",
    "ko": "그건 몸이 달아오를 때 얘기잖아요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.22,
@@ -51,7 +51,7 @@
    "speaker": "쿄코",
    "ja": "そりゃそうと、あんたも魔法少女なんだったら",
    "ko": "그건 그렇고, 너도 마법소녀라면",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: そりゃそうとあんたも魔法のジャージなんだったら (VAD 받아쓰기: 魔法の邪魔師)"
   },
@@ -61,7 +61,7 @@
    "speaker": "쿄코",
    "ja": "人探しくらいチチンプイプイパパーとかやっちゃってよね",
    "ko": "사람 찾기쯤은 수리수리 마수리 뚝딱 해 줘야지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.94,
@@ -69,7 +69,7 @@
    "speaker": "아리스",
    "ja": "そんな簡単に言わないでよ。魔法なんて万能じゃないんだから",
    "ko": "그렇게 쉽게 말하지 마세요. 마법은 만능이 아니라고요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 30.14,
@@ -77,7 +77,7 @@
    "speaker": "사나에",
    "ja": "もしもし",
    "ko": "저기요…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.1,
@@ -85,7 +85,7 @@
    "speaker": "아리스",
    "ja": "イライラの原因さえ分かれば作戦だって立てられるのに",
    "ko": "짜증의 원인만 알면 작전도 세울 수 있을 텐데.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 34.28,
@@ -93,7 +93,7 @@
    "speaker": "쿄코",
    "ja": "そんな時は牛乳よ、牛乳。カルシウムが足んないのよ、きっと",
    "ko": "그럴 땐 우유야, 우유! 분명 칼슘이 부족한 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 39.38,
@@ -101,7 +101,7 @@
    "speaker": "사나에",
    "ja": "すみません、あの、何かご用…",
    "ko": "실례합니다, 저기, 무슨 용건이라도…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.18,
@@ -109,7 +109,7 @@
    "speaker": "아리스",
    "ja": "誰よあなた、私に何か用?",
    "ko": "누구야, 당신? 나한테 무슨 볼일 있어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.4,
@@ -117,7 +117,7 @@
    "speaker": "사나에",
    "ja": "ええ、困ったわ",
    "ko": "어머, 곤란하네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 48.58,
@@ -125,16 +125,16 @@
    "speaker": "사나에",
    "ja": "こういうのって先に言われちゃった時はどうすればいいのかしら",
    "ko": "이렇게 먼저 물어 오시면 어쩌면 좋을까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 53.62,
    "end": 55.62,
-   "speaker": "쿄코",
+   "speaker": "아리스(추정)",
    "ja": "あの、怯えてるんじゃないですか",
    "ko": "저기, 겁먹은 거 아니에요?",
-   "status": "needs_review",
-   "note": "말하는 사람 불확실 / 말하는 사람 불확실(쿄코의 존댓말이 어색함. 아리스 또는 다른 인물일 수 있음)"
+   "status": "distribution_eligible",
+   "note": "말하는 사람 불확실 / 말하는 사람 불확실(쿄코의 존댓말이 어색함. 아리스 또는 다른 인물일 수 있음) / 최종 검수: 존댓말이라 아리스로 봄, 문장은 그대로"
   },
   {
    "start": 56.34,
@@ -142,7 +142,7 @@
    "speaker": "아리스",
    "ja": "どうやらこの子みたいね、私にいじいじ電波を飛ばしてたのは",
    "ko": "아무래도 이 애인가 봐. 나한테 우물쭈물 전파를 보낸 게.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: どうやらこの子みたいね私にいじめて電波を飛ばしてたのは"
   },
@@ -152,7 +152,7 @@
    "speaker": "쿄코",
    "ja": "何よそれ",
    "ko": "그게 뭔데?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 64.34,
@@ -160,7 +160,7 @@
    "speaker": "사나에",
    "ja": "何かご用なのかと言われましても",
    "ko": "무슨 볼일이냐고 물으셔도",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 68.34,
@@ -168,7 +168,7 @@
    "speaker": "사나에",
    "ja": "私も何かご用はとお聞きしようと思っていたところ…",
    "ko": "저도 무슨 용건이신지 여쭤보려던 참이라…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 75.06,
@@ -176,7 +176,7 @@
    "speaker": "아리스",
    "ja": "ああもうだめ!我慢できない!",
    "ko": "아아, 이제 안 돼! 못 참겠어!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 77.82,
@@ -184,7 +184,7 @@
    "speaker": "아리스",
    "ja": "こういうとろい子見てると、麻雀で喝を入れてあげなきゃ気が済まないわ!",
    "ko": "이런 굼뜬 애를 보면 마작으로 정신 차리게 해 줘야 직성이 풀려!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: こういうとろい子見てると麻雀で勝つを入れてあげなきゃ気が済まないわ"
   },
@@ -194,7 +194,7 @@
    "speaker": "아리스",
    "ja": "止めても無駄よ!正義は我にあるのよ!",
    "ko": "말려도 소용없어! 정의는 나에게 있다고!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 84.66,
@@ -202,7 +202,7 @@
    "speaker": "아리스",
    "ja": "明日という字は明るい日と書くのよ!",
    "ko": "내일이라는 한자는 밝은 날이라고 쓰는 거야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 88.2,
@@ -210,7 +210,7 @@
    "speaker": "쿄코",
    "ja": "ああ!何が作戦よ!単に壊れちゃっただけじゃない!",
    "ko": "아아! 작전은 무슨! 그냥 고장 난 거잖아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 93.5,
@@ -218,7 +218,7 @@
    "speaker": "사나에",
    "ja": "な、なんだかよくわかりませーん",
    "ko": "뭐, 뭐가 뭔지 잘 모르겠어요~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

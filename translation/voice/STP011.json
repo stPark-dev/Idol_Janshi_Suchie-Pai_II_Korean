@@ -9,8 +9,8 @@
    "end": 2.76,
    "speaker": "쿄코",
    "ja": "相変わらず成長してないわね",
-   "ko": "여전히 성장을 안 했네.",
-   "status": "needs_human_review"
+   "ko": "여전히 하나도 성장 안 했네.",
+   "status": "distribution_eligible"
   },
   {
    "start": 2.76,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "言動も体つきも",
    "ko": "말하는 것도 몸매도.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.58,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "ひどーい",
    "ko": "너무해~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.88,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "ユキこう見えても小学校の時保健の先生に",
    "ko": "유키는 이래 봬도 초등학교 때 보건 선생님한테",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.26,
@@ -42,7 +42,7 @@
    "speaker": "유키",
    "ja": "ユキちゃんは将来グラマーになるねって言われたもん",
    "ko": "'유키는 커서 글래머가 되겠네' 소리 들었단 말이야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.54,
@@ -50,7 +50,7 @@
    "speaker": "쿄코",
    "ja": "そんな大昔のこと掘り返してどうすんのよ",
    "ko": "그런 옛날얘기 꺼내서 뭐 하게.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.26,
@@ -58,7 +58,7 @@
    "speaker": "아리스",
    "ja": "私その気持ちわかる",
    "ko": "나 그 마음 알아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.98,
@@ -66,7 +66,7 @@
    "speaker": "아리스",
    "ja": "そういうのって心の支えだもん",
    "ko": "그런 건 마음의 버팀목이잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.62,
@@ -74,7 +74,7 @@
    "speaker": "유키",
    "ja": "ありがとう、ピーチ姫",
    "ko": "고마워, 피치 공주!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 23.82,
@@ -82,7 +82,7 @@
    "speaker": "아리스",
    "ja": "でもその呼び方だけはやめてくんない?",
    "ko": "근데 그 호칭만은 그만해 줄래?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

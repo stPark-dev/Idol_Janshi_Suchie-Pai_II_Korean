@@ -9,8 +9,8 @@
    "end": 4.3,
    "speaker": "세실(악마 모습)",
    "ja": "あははは、負けちまったよ",
-   "ko": "아하하하, 져 버렸군.",
-   "status": "needs_human_review"
+   "ko": "아하하하, 져 버렸네.",
+   "status": "distribution_eligible"
   },
   {
    "start": 4.72,
@@ -18,23 +18,23 @@
    "speaker": "세실(악마 모습)",
    "ja": "だけどそれがなんだってんだい",
    "ko": "하지만 그게 뭐 어쨌다는 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.94,
    "end": 8.84,
    "speaker": "세실(악마 모습)",
    "ja": "麻雀に勝てばそれで終わりか",
-   "ko": "마작에서 이기면 그걸로 끝이냐?",
-   "status": "needs_human_review"
+   "ko": "마작에서 이기면 그걸로 끝인가?",
+   "status": "distribution_eligible"
   },
   {
    "start": 8.84,
    "end": 10.58,
    "speaker": "세실(악마 모습)",
    "ja": "いや、違うよな",
-   "ko": "아니, 그렇지 않지.",
-   "status": "needs_human_review"
+   "ko": "아니, 아니지.",
+   "status": "distribution_eligible"
   },
   {
    "start": 10.96,
@@ -42,15 +42,15 @@
    "speaker": "세실(악마 모습)",
    "ja": "周りを見てみろよ",
    "ko": "주위를 둘러봐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.4,
    "end": 15.46,
    "speaker": "세실(악마 모습)",
    "ja": "何か足りねえ奴がいるだろ、ほら",
-   "ko": "누가 하나 모자라잖아, 봐.",
-   "status": "needs_human_review"
+   "ko": "누가 하나 빠졌잖아, 봐.",
+   "status": "distribution_eligible"
   },
   {
    "start": 15.46,
@@ -58,7 +58,7 @@
    "speaker": "세실(악마 모습)",
    "ja": "そいつはどうした",
    "ko": "그 녀석은 어떻게 됐지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.54,
@@ -66,31 +66,31 @@
    "speaker": "세실(악마 모습)",
    "ja": "心なんてもんは脆いもんだよな",
    "ko": "마음이란 건 깨지기 쉬운 법이지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.68,
    "end": 24.12,
    "speaker": "세실(악마 모습)",
    "ja": "仲間との戦いよりも自分の幸せを選んだそいつを",
-   "ko": "동료와의 싸움보다 자기 행복을 택한 그 녀석을",
-   "status": "needs_human_review"
+   "ko": "동료와의 싸움보다 자기 행복을 고른 그 녀석을",
+   "status": "distribution_eligible"
   },
   {
    "start": 24.12,
    "end": 26.56,
    "speaker": "세실(악마 모습)",
    "ja": "お前らに責めることができるのか?え?",
-   "ko": "너희가 탓할 수 있겠어? 엉?",
-   "status": "needs_human_review"
+   "ko": "너희가 탓할 수 있겠어? 응?",
+   "status": "distribution_eligible"
   },
   {
    "start": 26.62,
    "end": 30.58,
    "speaker": "세실(악마 모습)",
    "ja": "麻雀程度で掴んだ絆なんてその程度だよな",
-   "ko": "마작 정도로 맺은 유대 따윈 딱 그 정도지.",
-   "status": "needs_human_review"
+   "ko": "마작 정도로 맺은 인연은 고작 그 정도지.",
+   "status": "distribution_eligible"
   },
   {
    "start": 30.58,
@@ -98,7 +98,7 @@
    "speaker": "세실(악마 모습)",
    "ja": "違うか?",
    "ko": "안 그래?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.18,
@@ -106,7 +106,7 @@
    "speaker": "세실(악마 모습)",
    "ja": "そんじゃ、シホはいただいてくぜ",
    "ko": "그럼 시호는 데려간다!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: そんじゃ司法はいただいてくぜ (VAD) / そんじゃ、主婦はいただいてくぜ (VAD 없음)"
   },
@@ -116,7 +116,7 @@
    "speaker": "세실(악마 모습)",
    "ja": "あばよ",
    "ko": "잘 있어라!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.58,
@@ -124,7 +124,7 @@
    "speaker": "시호",
    "ja": "ああ!助けてくださーい!スーチーパイさん!レモンパイさん!",
    "ko": "아앗! 살려 주세요! 스치파이 씨! 레몬파이 씨!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.76,
@@ -132,7 +132,7 @@
    "speaker": "쿄코",
    "ja": "ああ、またさらわれちゃったわ",
    "ko": "아아, 또 잡혀가 버렸네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.74,
@@ -140,7 +140,7 @@
    "speaker": "츠카사",
    "ja": "ちきしょう",
    "ko": "젠장!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 47.64,
@@ -148,7 +148,7 @@
    "speaker": "츠카사",
    "ja": "これで振り出しかよ",
    "ko": "결국 원점이냐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.24,
@@ -156,7 +156,7 @@
    "speaker": "쿄코",
    "ja": "ありがとう、レモン",
    "ko": "고마워, 레몬.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.86,
@@ -164,7 +164,7 @@
    "speaker": "쿄코",
    "ja": "あのさ、なんかあんたのこと騙してここまで連れてきちゃった感じだし",
    "ko": "저기, 왠지 너를 속여서 여기까지 데려온 것 같고…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 58.12,
@@ -172,7 +172,7 @@
    "speaker": "쿄코",
    "ja": "あとはあたし一人でなんとかしてみせるから、もう",
    "ko": "나머진 나 혼자서 어떻게든 해 볼 테니까, 이제…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 61.12,
@@ -180,7 +180,7 @@
    "speaker": "츠카사",
    "ja": "あいにく俺は諦めだけは悪いんだ",
    "ko": "안됐지만 난 포기 하나는 못 하거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 63.96,
@@ -188,7 +188,7 @@
    "speaker": "쿄코",
    "ja": "でもあんた、結構根に持つタイプなのね",
    "ko": "근데 너 의외로 뒤끝 있는 타입이구나.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: でもあんた結構ね荷物タイプなのね"
   },
@@ -198,7 +198,7 @@
    "speaker": "츠카사",
    "ja": "他に言うことはないのか",
    "ko": "다른 할 말은 없냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 69.4,
@@ -206,7 +206,7 @@
    "speaker": "쿄코",
    "ja": "あ、冗談よ。私たち仲間じゃないの。怒らない怒らない",
    "ko": "아, 농담이야. 우리 동료잖아. 화내지 마, 화내지 마.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

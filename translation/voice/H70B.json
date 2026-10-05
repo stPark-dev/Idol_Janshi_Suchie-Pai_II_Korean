@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "へー、これが限界だよ",
    "ko": "헤헤, 여기까지가 한계야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.34,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "どうしても見たいなら",
    "ko": "그래도 꼭 보고 싶다면…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.22,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "はーい、MA18です",
    "ko": "짜잔, MA-18이에요!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "참고: MA-18 = 당시 세가새턴 심의 등급(18세 이상 권장). 등급 마크로 가린 장면으로 봄"
   },
   {
@@ -35,7 +35,7 @@
    "speaker": "유키",
    "ja": "え?X指定だったの?",
    "ko": "어? X등급이었어?",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "참고: X指定 = 세가새턴 심의의 성인 전용 등급"
   },
   {
@@ -44,7 +44,7 @@
    "speaker": "유키",
    "ja": "剥がすときがちょっと快感なの",
    "ko": "뗄 때가 살짝 짜릿하거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

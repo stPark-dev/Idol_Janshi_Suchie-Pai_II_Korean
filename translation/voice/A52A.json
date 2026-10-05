@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "というように、状況は複雑だけど、性格は単純そうだから。",
    "ko": "이렇게 사정은 복잡하지만 성격은 단순해 보이니까",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.02,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "ま、適当にあしらって、私のお手伝いをさせちゃいましょう。",
    "ko": "적당히 구슬려서 내 일을 돕게 만들자고.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.76,
@@ -26,7 +26,7 @@
    "speaker": "스치파이",
    "ja": "うん。",
    "ko": "응.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

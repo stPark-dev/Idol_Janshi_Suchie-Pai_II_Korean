@@ -10,15 +10,15 @@
    "speaker": "아리스",
    "ja": "あなたの麻雀ルールって要するにイカサマなんですね",
    "ko": "결국 그쪽 마작 룰은 속임수란 거네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.98,
    "end": 9.74,
    "speaker": "쿄코",
    "ja": "失礼ね、あなたの魔法だって普通の人から見たらイカサマと同じじゃない",
-   "ko": "실례야! 네 마법도 보통 사람이 보면 속임수랑 똑같잖아.",
-   "status": "needs_human_review"
+   "ko": "실례네! 네 마법도 보통 사람이 보면 속임수랑 똑같잖아.",
+   "status": "distribution_eligible"
   },
   {
    "start": 10.1,
@@ -26,7 +26,7 @@
    "speaker": "밀크",
    "ja": "宇宙人のあたしから見ればどっちが普通でどっちがイカサマかなんてどうでもいいことだぴょーん",
    "ko": "우주인인 내가 보기엔 뭐가 보통이고 뭐가 속임수든 상관없다뿅~",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 宇宙人のアーティストから見ればどっちが普通でどっちがイカサマかなんてどうでもいいことだピョーン"
   },
@@ -36,7 +36,7 @@
    "speaker": "아리스",
    "ja": "なるほど、スーチーさんが仕切ってる以上これが普通なんですね",
    "ko": "그렇군요. 스치 씨가 판을 짜는 이상, 이게 보통이란 거네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.2,
@@ -44,7 +44,7 @@
    "speaker": "아리스",
    "ja": "でもまあ、気持ちの整理ができたら私も協力しますね",
    "ko": "뭐, 마음 정리가 되면 저도 협력할게요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

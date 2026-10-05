@@ -10,7 +10,7 @@
    "speaker": "쿄코",
    "ja": "あったかくって白くてぷにぷにした皮に包まれてて",
    "ko": "따끈하고 하얗고 말랑말랑한 껍질에 싸여 있는",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.96,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "ユキの大好きなものと言ったらなーんだ?",
    "ko": "유키가 제일 좋아하는 건 뭘까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.78,
@@ -26,7 +26,7 @@
    "speaker": "쿄코",
    "ja": "はい、水野さん",
    "ko": "네, 미즈노 양.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 10.72,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "はーい、答えは餃子でーす",
    "ko": "네~ 정답은 만두예요~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.16,
@@ -42,7 +42,7 @@
    "speaker": "쿄코",
    "ja": "ピポピポピポー、大正解",
    "ko": "딩동댕~ 대정답!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.46,
@@ -50,7 +50,7 @@
    "speaker": "유키",
    "ja": "やったわー、みんな。今日から私を餃子姫と呼んでね",
    "ko": "해냈다~ 다들, 오늘부터 유키를 만두 공주라고 불러 줘!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.84,
@@ -58,7 +58,7 @@
    "speaker": "쿄코",
    "ja": "じゃあ餃子姫さん、第2問よ",
    "ko": "그럼 만두 공주님, 두 번째 문제야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.02,
@@ -66,7 +66,7 @@
    "speaker": "유키",
    "ja": "え?",
    "ko": "어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.36,
@@ -74,7 +74,7 @@
    "speaker": "쿄코",
    "ja": "柔らかくてほんのりピンクでとってもジューシーで甘い果物はなーんだ?",
    "ko": "말랑하고 살짝 분홍빛에 촉촉하고 달콤한 과일은 뭘까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.82,
@@ -82,7 +82,7 @@
    "speaker": "유키",
    "ja": "はい、福神漬け",
    "ko": "네! 장아찌!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "福神漬け(후쿠진즈케, 카레에 곁들이는 장아찌)"
   },
   {
@@ -91,7 +91,7 @@
    "speaker": "쿄코",
    "ja": "ブー!果物って言ってんでしょうが。答えは桃、ピーチよ",
    "ko": "땡! 과일이라고 했잖아. 정답은 복숭아, 피치야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 39.46,
@@ -99,7 +99,7 @@
    "speaker": "유키",
    "ja": "わかった、あなた桃のセールスマンね",
    "ko": "알았다, 너 복숭아 판매원이구나!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.82,
@@ -107,7 +107,7 @@
    "speaker": "유키",
    "ja": "なんか全身桃色だし、あちこちに桃の絵が描いてあるし、変だと思ったのよ",
    "ko": "온몸이 분홍색에 여기저기 복숭아 그림이 있어서 이상하다 했어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 49.64,
@@ -115,7 +115,7 @@
    "speaker": "아리스",
    "ja": "失礼ね。私これでもお姫様なんですからね",
    "ko": "실례네요. 저 이래 봬도 공주님이라고요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 53.68,
@@ -123,7 +123,7 @@
    "speaker": "아리스",
    "ja": "魔法の国ピーチ王国のプリンセスなのよ",
    "ko": "마법의 나라 피치 왕국의 프린세스란 말이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 57.28,
@@ -131,7 +131,7 @@
    "speaker": "유키",
    "ja": "へー、じゃあピーチ姫ってわけね",
    "ko": "흐응~ 그럼 피치 공주라는 거네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 60.47,
@@ -139,7 +139,7 @@
    "speaker": "유키",
    "ja": "きっといつかヒゲオヤジが現れてプロポーズされるわよ",
    "ko": "언젠가 분명 수염 난 아저씨가 나타나서 청혼할 거야.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "피치 공주와 수염 아저씨(마리오) 패러디"
   },
   {
@@ -148,7 +148,7 @@
    "speaker": "쿄코",
    "ja": "ユキちゃん、場所と立場をわきまえなさい",
    "ko": "유키, 때와 장소랑 입장 좀 가려.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ゆうきちゃん場所と立場をわきまえなさい"
   },
@@ -157,8 +157,8 @@
    "end": 69.65,
    "speaker": "유키",
    "ja": "あ、イカサマ雀士!",
-   "ko": "아, 사기 작사!",
-   "status": "needs_human_review",
+   "ko": "아, 사기꾼 작사!",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あイカサマジャンシー"
   },
@@ -168,7 +168,7 @@
    "speaker": "유키",
    "ja": "はっはーん、またどうせ麻雀挑みに来たんでしょう",
    "ko": "흐흥~ 또 마작 승부 걸러 온 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 73.44,
@@ -176,7 +176,7 @@
    "speaker": "쿄코",
    "ja": "ピンポーン",
    "ko": "딩동~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 74.46,
@@ -184,7 +184,7 @@
    "speaker": "유키",
    "ja": "しかも負けたら服脱ぐんでしょう",
    "ko": "게다가 지면 옷 벗는 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 76.68,
@@ -192,7 +192,7 @@
    "speaker": "쿄코",
    "ja": "ピンポンピンポーン",
    "ko": "딩동딩동~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 77.46,
@@ -200,7 +200,7 @@
    "speaker": "유키",
    "ja": "その上イカサマすんでしょう",
    "ko": "그것도 모자라 사기 치는 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 79.4,
@@ -208,7 +208,7 @@
    "speaker": "쿄코",
    "ja": "ピッポピッポピッポ",
    "ko": "딩동딩동딩동~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 80.68,
@@ -216,7 +216,7 @@
    "speaker": "쿄코",
    "ja": "おめでとう",
    "ko": "축하해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 82.06,
@@ -224,7 +224,7 @@
    "speaker": "쿄코",
    "ja": "全問正解のご褒美として勝負開始よ",
    "ko": "전부 맞힌 상으로 승부 시작이야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

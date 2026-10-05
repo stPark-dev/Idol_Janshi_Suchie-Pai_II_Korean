@@ -10,7 +10,7 @@
    "speaker": "츠카사",
    "ja": "なんだよ、脱げばいいんだろ?",
    "ko": "뭐야, 벗으면 되는 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.32,
@@ -18,7 +18,7 @@
    "speaker": "츠카사",
    "ja": "いい趣味してるぜ",
    "ko": "취미 한번 고약하네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.06,
@@ -26,7 +26,7 @@
    "speaker": "츠카사",
    "ja": "あ!",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.08,
@@ -34,7 +34,7 @@
    "speaker": "츠카사",
    "ja": "あ、もう!",
    "ko": "아, 진짜!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

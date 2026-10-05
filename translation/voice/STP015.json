@@ -10,7 +10,7 @@
    "speaker": "세실",
    "ja": "なかなかやるじゃないか、負けちまったよ",
    "ko": "제법이잖아. 져 버렸네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.48,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "ピーチ見なさい、あれがセシルの正体よ",
    "ko": "피치, 봐. 저게 세실의 정체야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.94,
@@ -26,7 +26,7 @@
    "speaker": "아리스",
    "ja": "ええ!?あんな奴が私と同じなわけないわ、あんなのただの悪魔だわ",
    "ko": "네!? 저런 게 저랑 같을 리 없어요. 저건 그냥 악마예요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.26,
@@ -34,7 +34,7 @@
    "speaker": "세실",
    "ja": "アハハハハ",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.02,
@@ -42,7 +42,7 @@
    "speaker": "세실",
    "ja": "さっき外見だけで判断するなと言ったろ",
    "ko": "아까 겉모습만 보고 판단하지 말라고 했지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.68,
@@ -50,7 +50,7 @@
    "speaker": "세실",
    "ja": "私の名はセシル、正確にはセシエルと発音する",
    "ko": "내 이름은 세실. 정확히는 세시엘이라고 발음하지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 24.64,
@@ -58,7 +58,7 @@
    "speaker": "세실",
    "ja": "ミカエル、ガブリエル、ラファエル、ウリエル",
    "ko": "미카엘, 가브리엘, 라파엘, 우리엘.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ミカエル、ガブリエル、ラファエル、ウーリエル"
   },
@@ -68,7 +68,7 @@
    "speaker": "세실",
    "ja": "このエルという言葉は神を示す言葉",
    "ko": "이 '엘'이라는 말은 신을 가리키는 말.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.62,
@@ -76,7 +76,7 @@
    "speaker": "세실",
    "ja": "もう一度名乗らせてもらおう",
    "ko": "다시 한번 이름을 대 주지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 34.04,
@@ -84,7 +84,7 @@
    "speaker": "세실",
    "ja": "私の名はセシエル",
    "ko": "내 이름은 세시엘.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.6,
@@ -92,7 +92,7 @@
    "speaker": "세실",
    "ja": "天界で8番目の大天使さ",
    "ko": "천계의 여덟 번째 대천사다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.58,
@@ -100,7 +100,7 @@
    "speaker": "아리스",
    "ja": "キョ、キョウコさん、やばいよ。相手が天界じゃ歯が立たないよ",
    "ko": "쿄, 쿄코 씨, 큰일이에요. 상대가 천계라면 당해 낼 수 없어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.42,
@@ -108,7 +108,7 @@
    "speaker": "아리스",
    "ja": "ダメだよ私じゃ。私の魔法なんかじゃ…",
    "ko": "저로는 안 돼요. 제 마법 따위로는…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 48.68,
@@ -116,15 +116,15 @@
    "speaker": "밀크",
    "ja": "何言ってるぴょん、私がいるぴょん",
    "ko": "무슨 소리냐뿅, 내가 있잖아뿅!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 51.5,
    "end": 55.94,
    "speaker": "츠카사",
    "ja": "その通りさ。俺一人でも戦う。帰りたいやつは帰んな",
-   "ko": "그 말이 맞아. 나 혼자라도 싸운다. 돌아갈 녀석은 돌아가.",
-   "status": "needs_human_review"
+   "ko": "맞아. 나 혼자라도 싸운다. 돌아가고 싶은 놈은 돌아가.",
+   "status": "distribution_eligible"
   },
   {
    "start": 55.94,
@@ -132,7 +132,7 @@
    "speaker": "아리스",
    "ja": "み、みんな…",
    "ko": "모, 모두…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 57.88,
@@ -140,7 +140,7 @@
    "speaker": "쿄코",
    "ja": "よく聞いて、ピーチ",
    "ko": "잘 들어, 피치.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: よく聞いてピッチ"
   },
@@ -150,7 +150,7 @@
    "speaker": "아리스",
    "ja": "はい、キョウコさん",
    "ko": "네, 쿄코 씨.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 60.74,
@@ -158,7 +158,7 @@
    "speaker": "쿄코",
    "ja": "あたしキョウコじゃなくてスーチーパイよ",
    "ko": "난 쿄코가 아니라 스치파이야.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あたしキョウコじゃなくてスーチーパーよ"
   },
@@ -168,7 +168,7 @@
    "speaker": "쿄코",
    "ja": "今度間違ったらあたし一人でも帰るからね",
    "ko": "또 틀리면 나 혼자라도 돌아갈 거야.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 今度間違ったらあたし一人でも帰るかね"
   },
@@ -178,7 +178,7 @@
    "speaker": "밀크",
    "ja": "こんなやつ、ちゃっちゃと勝負して、さっさと帰って人参でも食べるみゃー",
    "ko": "이런 녀석은 후딱 해치우고 얼른 돌아가서 당근이나 먹자먀~!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: こんなやつほっといて勝負して せっせと帰って人参でも食べるみゃー. 말끝은 받아쓰기대로 みゃー(2차 검수에서 ぴょん→みゃ 되돌림)"
   },
@@ -188,7 +188,7 @@
    "speaker": "세실",
    "ja": "また麻雀かい",
    "ko": "또 마작이야?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 72.6,
@@ -196,7 +196,7 @@
    "speaker": "세실",
    "ja": "さあどうぞ。好きなだけ相手をしてやるよ",
    "ko": "자, 덤벼. 원하는 만큼 상대해 주지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

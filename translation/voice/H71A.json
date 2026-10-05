@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "ねえ、ここまでじゃダメかな?",
    "ko": "있잖아, 여기까지면 안 될까?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.68,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "うーん…",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

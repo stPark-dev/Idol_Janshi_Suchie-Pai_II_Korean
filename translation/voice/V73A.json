@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "え?",
    "ko": "어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.56,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "あ、あー、そんなー",
    "ko": "아, 아… 그럴 수가~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.8,
@@ -26,7 +26,7 @@
    "speaker": "스치파이",
    "ja": "あ、あー",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.52,
@@ -34,7 +34,7 @@
    "speaker": "스치파이",
    "ja": "なんでこうなっちゃうわけ?",
    "ko": "왜 이렇게 되는 건데?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

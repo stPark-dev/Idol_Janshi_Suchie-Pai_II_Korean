@@ -10,7 +10,7 @@
    "speaker": "사나에",
    "ja": "はぁ、あのー、もう、これで",
    "ko": "하아… 저기, 이제 이걸로…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.76,
@@ -18,7 +18,7 @@
    "speaker": "사나에",
    "ja": "あ、いやー!",
    "ko": "아, 안 돼!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.72,
@@ -26,7 +26,7 @@
    "speaker": "사나에",
    "ja": "はぁ、レイカ様、すみません",
    "ko": "하아… 레이카 님, 죄송해요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

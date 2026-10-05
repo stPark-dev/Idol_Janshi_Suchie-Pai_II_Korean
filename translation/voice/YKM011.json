@@ -10,7 +10,7 @@
    "speaker": "아리스",
    "ja": "スーチーさんが見当たらないと思ったら、ユキさんが仕切ってたんですね",
    "ko": "스치 씨가 안 보인다 했더니 유키 씨가 이끌고 있었군요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.22,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "まあね。ユキは… というよりもユキたちは",
    "ko": "뭐, 그렇지. 유키는… 아니, 유키네는",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.74,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "いつもスーチーパイに振り回されっぱなしよね",
    "ko": "늘 스치파이한테 휘둘리기만 했잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.48,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "だから今回はその仕返しをしちゃおうってわけなのよ",
    "ko": "그래서 이번엔 그 앙갚음을 하자는 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.04,
@@ -42,7 +42,7 @@
    "speaker": "아리스",
    "ja": "なるほど",
    "ko": "그렇군요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.12,
@@ -50,7 +50,7 @@
    "speaker": "아리스",
    "ja": "なんかいけない衝動に駆られてしまいますね",
    "ko": "왠지 못된 충동이 드네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.88,
@@ -58,7 +58,7 @@
    "speaker": "아리스",
    "ja": "わかりました。私も協力しまーす",
    "ko": "알겠어요. 저도 협력할게요~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.16,
@@ -66,7 +66,7 @@
    "speaker": "유키",
    "ja": "じゃあ全員集合を確認して、近場で打ち上げパーティーでもしましょう",
    "ko": "그럼 전원 집합 확인했으니 근처에서 뒤풀이 파티라도 하자.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: じゃあ全員集合を確認して / 近場で打ち入りパーティーでもしましょう"
   },
@@ -76,7 +76,7 @@
    "speaker": "모두",
    "ja": "イエーイ!",
    "ko": "예이!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

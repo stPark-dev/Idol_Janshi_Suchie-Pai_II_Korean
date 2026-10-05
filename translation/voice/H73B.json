@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "前も見せなきゃダメ?",
    "ko": "앞도 보여 줘야 돼?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.34,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "うーん、じゃあ",
    "ko": "으음, 그럼…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.0,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "はーい、ニプレスだよー",
    "ko": "짜잔, 니플 패치야~",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: はーいリープレスだよー"
   },
@@ -36,7 +36,7 @@
    "speaker": "유키",
    "ja": "え?剥がすの?うそー",
    "ko": "어? 떼라고? 말도 안 돼~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.94,
@@ -44,7 +44,7 @@
    "speaker": "유키",
    "ja": "おー、感じちゃう",
    "ko": "오~ 느껴져~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

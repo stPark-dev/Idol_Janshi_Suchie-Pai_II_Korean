@@ -10,7 +10,7 @@
    "speaker": "아리스",
    "ja": "ええ、でも…",
    "ko": "네? 하지만…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.7,
@@ -18,15 +18,15 @@
    "speaker": "아리스",
    "ja": "わかりました。待っててね。",
    "ko": "알겠어요. 기다려 주세요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.7,
    "end": 11.36,
    "speaker": "아리스",
    "ja": "はーい、どう?",
-   "ko": "자, 어때요?",
-   "status": "needs_human_review"
+   "ko": "자, 어때?",
+   "status": "distribution_eligible"
   }
  ]
 }

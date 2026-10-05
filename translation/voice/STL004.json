@@ -10,7 +10,7 @@
    "speaker": "사나에",
    "ja": "さあ、お庭のお掃除も終わったし、これで一段落かしら",
    "ko": "자, 정원 청소도 끝났으니 이걸로 한숨 돌릴까요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.78,
@@ -18,7 +18,7 @@
    "speaker": "츠카사",
    "ja": "おい、本当にあいつが雀士なのか?なんか全然それっぽくないぜ",
    "ko": "야, 정말 저 녀석이 작사냐? 전혀 그렇게 안 보이는데.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: おい、本当にあいつがジャン氏なのか?なんか全然それっぽくないぜ"
   },
@@ -28,7 +28,7 @@
    "speaker": "쿄코",
    "ja": "正義の味方の言うこと信じなさいよ",
    "ko": "정의의 사도가 하는 말을 믿으라고.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.28,
@@ -36,7 +36,7 @@
    "speaker": "츠카사",
    "ja": "ったく勝手なやつだな。おい、お前!",
    "ko": "하여간 제멋대로라니까. 야, 너!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.02,
@@ -44,7 +44,7 @@
    "speaker": "사나에",
    "ja": "あら、お客様ですか?いらっしゃいませ",
    "ko": "어머, 손님이세요? 어서 오세요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 24.32,
@@ -52,7 +52,7 @@
    "speaker": "사나에",
    "ja": "今お茶をお持ちいたしますわ",
    "ko": "지금 차를 내오겠습니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 27.76,
@@ -60,7 +60,7 @@
    "speaker": "츠카사",
    "ja": "はあ、お構いなく…じゃねえっての",
    "ko": "아, 신경 쓰지 마세요… 가 아니라고!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 30.84,
@@ -68,7 +68,7 @@
    "speaker": "츠카사",
    "ja": "さあかかってこい。麻雀で勝負だ",
    "ko": "자, 덤벼라. 마작으로 승부다!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 34.48,
@@ -76,7 +76,7 @@
    "speaker": "사나에",
    "ja": "まあ、お嬢様の麻雀友達ですのね",
    "ko": "어머, 아가씨의 마작 친구분이시군요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 39.16,
@@ -84,7 +84,7 @@
    "speaker": "사나에",
    "ja": "レイカ様はすぐお戻りになられますから、お待ちになっていてください",
    "ko": "레이카 님은 곧 돌아오시니 기다려 주세요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 44.19,
@@ -92,7 +92,7 @@
    "speaker": "츠카사",
    "ja": "誰だよレイカ様って。人の話聞け",
    "ko": "레이카 님은 또 누구야. 남의 말 좀 들어!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 48.13,
@@ -100,7 +100,7 @@
    "speaker": "쿄코",
    "ja": "どうやらここで間違いないみたいね。よーし",
    "ko": "아무래도 여기가 맞는 것 같네. 좋아!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.24,
@@ -108,7 +108,7 @@
    "speaker": "쿄코",
    "ja": "正義の雀士スーチーパイ参上!",
    "ko": "정의의 작사 스치파이 등장!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 54.69,
@@ -116,7 +116,7 @@
    "speaker": "쿄코",
    "ja": "サナエさん、勝負よ",
    "ko": "사나에 씨, 승부야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 56.41,
@@ -124,7 +124,7 @@
    "speaker": "츠카사",
    "ja": "おい、なんだ今頃出てきやがって",
    "ko": "야, 뭐야. 이제 와서 나타나기는.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 59.05,
@@ -132,7 +132,7 @@
    "speaker": "츠카사",
    "ja": "まさかてめえ、当てずっぽうでここに来たのかよ",
    "ko": "설마 너, 어림짐작으로 여기 온 거냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 62.59,
@@ -140,7 +140,7 @@
    "speaker": "쿄코",
    "ja": "バカにしないで。40%くらいはここに間違いないと思ってたわ",
    "ko": "무시하지 마. 40% 정도는 여기가 확실하다고 생각했어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 67.03,
@@ -148,7 +148,7 @@
    "speaker": "츠카사",
    "ja": "40%で威張んな",
    "ko": "40%로 뻐기지 마!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 69.01,
@@ -156,7 +156,7 @@
    "speaker": "츠카사",
    "ja": "要するに半分以上逃げる気でいやがったんじゃねえかよ",
    "ko": "결국 반 이상은 도망칠 생각이었던 거잖아.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 要するに半分以上逃げる気で嫌がったんじゃねえかよ"
   },
@@ -166,7 +166,7 @@
    "speaker": "츠카사",
    "ja": "なんで俺こんな奴と組んでんだろう",
    "ko": "내가 왜 이런 녀석이랑 한 팀인 거지…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 77.34,
@@ -174,7 +174,7 @@
    "speaker": "츠카사",
    "ja": "もうやけだ",
    "ko": "에라, 모르겠다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 78.33,
@@ -182,7 +182,7 @@
    "speaker": "츠카사",
    "ja": "そこの女、さっさと雀卓用意しやがれ",
    "ko": "거기 여자, 얼른 마작 테이블 준비해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 81.72,
@@ -190,7 +190,7 @@
    "speaker": "사나에",
    "ja": "まあ、賑やかな方ですのね",
    "ko": "어머, 활기찬 분이시네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 86.7,
@@ -198,7 +198,7 @@
    "speaker": "사나에",
    "ja": "それではお嬢様が戻るまでの間",
    "ko": "그럼 아가씨께서 돌아오실 때까지",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 89.36,
@@ -206,7 +206,7 @@
    "speaker": "사나에",
    "ja": "私がお相手いたしますわ",
    "ko": "제가 상대해 드리겠습니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 92.64,
@@ -214,7 +214,7 @@
    "speaker": "사나에",
    "ja": "それはそうと、コーヒーと紅茶どちらになさいますか",
    "ko": "그건 그렇고, 커피와 홍차 중 어느 쪽으로 하시겠어요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 97.52,
@@ -222,7 +222,7 @@
    "speaker": "츠카사",
    "ja": "さっさとしろ",
    "ko": "빨리 좀 해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

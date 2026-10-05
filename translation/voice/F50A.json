@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "とってもラブリーな白ウサギのミルクちゃん。",
    "ko": "아주 러블리한 흰 토끼 밀크.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.64,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "でも外見に騙されちゃダメよ。",
    "ko": "하지만 겉모습에 속으면 안 돼.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.0,
@@ -26,7 +26,7 @@
    "speaker": "스치파이",
    "ja": "なんてったって彼女は宇宙人、もとい宇宙ウサギなんですから。",
    "ko": "뭐니 뭐니 해도 이 아이는 외계인, 아니 우주 토끼니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

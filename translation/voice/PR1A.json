@@ -10,7 +10,7 @@
    "speaker": "악당(미상)",
    "ja": "あははははは",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.55,
@@ -18,7 +18,7 @@
    "speaker": "악당(미상)",
    "ja": "足掻いても無駄だよ",
    "ko": "발버둥 쳐도 소용없어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.25,
@@ -26,7 +26,7 @@
    "speaker": "피해자(미상)",
    "ja": "助けてー",
    "ko": "살려 줘!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

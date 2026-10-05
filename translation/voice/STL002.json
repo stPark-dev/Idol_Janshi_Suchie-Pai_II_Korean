@@ -9,8 +9,8 @@
    "end": 3.88,
    "speaker": "아리스",
    "ja": "ぐすっ、とうとう見せてしまったわ",
-   "ko": "흑, 결국 보여 버렸어요.",
-   "status": "needs_human_review",
+   "ko": "흑, 결국 보여 주고 말았어…",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ぐっすっとうとう見せてしまったわ"
   },
@@ -20,7 +20,7 @@
    "speaker": "츠카사",
    "ja": "おい、これって本当に人助けになってんだろうな",
    "ko": "야, 이거 정말 사람 돕는 일 맞지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.94,
@@ -28,7 +28,7 @@
    "speaker": "쿄코",
    "ja": "焦んない焦んない。ここだけ見てると追い剥ぎしてるようにしか見えないけど",
    "ko": "진정해, 진정해. 여기만 보면 노상강도짓으로밖에 안 보이겠지만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.71,
@@ -36,7 +36,7 @@
    "speaker": "쿄코",
    "ja": "実はちゃんと人類の明るい未来と、ついでに日本の平和の維持のために役立つことをしてるのよ",
    "ko": "실은 인류의 밝은 미래와 겸사겸사 일본 평화 유지에 도움 되는 일이거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.68,
@@ -44,7 +44,7 @@
    "speaker": "츠카사",
    "ja": "どうもうさんくさいよな",
    "ko": "아무래도 수상쩍단 말이지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.32,
@@ -52,7 +52,7 @@
    "speaker": "쿄코",
    "ja": "じゃあアリスちゃん、ピーチパイによろしくね",
    "ko": "그럼 아리스, 피치파이한테 안부 전해 줘.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 23.78,
@@ -60,7 +60,7 @@
    "speaker": "아리스",
    "ja": "え、あなた知ってたんですか",
    "ko": "어, 알고 계셨어요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.08,
@@ -68,7 +68,7 @@
    "speaker": "쿄코",
    "ja": "そりゃあ正義のヒロインですものね",
    "ko": "그야 정의의 히로인이니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

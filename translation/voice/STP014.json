@@ -10,7 +10,7 @@
    "speaker": "쿄코",
    "ja": "気分はどう、シホさん?",
    "ko": "기분은 어때, 시호 씨?",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 気分はどう塩さん"
   },
@@ -20,7 +20,7 @@
    "speaker": "시호",
    "ja": "あの…私、何かずっと悪い夢を見ていたような気がします",
    "ko": "저… 왠지 계속 나쁜 꿈을 꾼 것 같아요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.5,
@@ -28,7 +28,7 @@
    "speaker": "세실",
    "ja": "それは残念ですわ。私、あなたのことを気に入ってたんですよ",
    "ko": "그거 유감이네요. 저는 당신이 마음에 들었는데요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.44,
@@ -36,7 +36,7 @@
    "speaker": "쿄코",
    "ja": "誰!?",
    "ko": "누구야!?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.44,
@@ -44,7 +44,7 @@
    "speaker": "세실",
    "ja": "私をご存知ありませんか。変ですわね",
    "ko": "저를 모르시나요? 이상하네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 19.26,
@@ -52,7 +52,7 @@
    "speaker": "세실",
    "ja": "私はあなたのことをよく知っていますよ",
    "ko": "저는 당신을 잘 알고 있는데요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 23.32,
@@ -60,7 +60,7 @@
    "speaker": "세실",
    "ja": "だってあなたと私は似た者同士なんですもの",
    "ko": "당신과 저는 닮은꼴이니까요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 27.96,
@@ -68,7 +68,7 @@
    "speaker": "쿄코",
    "ja": "どこが?派手派手と地味地味で、どこも似てないわよ",
    "ko": "어디가? 요란한 쪽이랑 수수한 쪽, 닮은 데라곤 없거든!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.86,
@@ -76,7 +76,7 @@
    "speaker": "세실",
    "ja": "人を外見で判断してはいけませんよ",
    "ko": "사람을 겉모습으로 판단하면 안 돼요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.76,
@@ -84,7 +84,7 @@
    "speaker": "세실",
    "ja": "私は今このような姿をしておりますが、実は悪魔なのです",
    "ko": "저는 지금 이런 모습을 하고 있지만 실은 악마랍니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 42.58,
@@ -92,7 +92,7 @@
    "speaker": "세실",
    "ja": "人の魂を誘惑し過ちを起こさせるのが",
    "ko": "사람의 영혼을 유혹해 죄를 짓게 하는 것이",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 46.44,
@@ -100,7 +100,7 @@
    "speaker": "세실",
    "ja": "私たち悪魔の役目なのです",
    "ko": "저희 악마의 역할이지요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 49.24,
@@ -108,7 +108,7 @@
    "speaker": "세실",
    "ja": "そうですよね、プリンセス",
    "ko": "그렇죠, 프린세스?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 51.96,
@@ -116,7 +116,7 @@
    "speaker": "아리스",
    "ja": "冗談じゃないわ。私は悪魔なんかじゃないもん",
    "ko": "농담 마세요! 저는 악마 같은 게 아니에요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 55.6,
@@ -124,7 +124,7 @@
    "speaker": "아리스",
    "ja": "精霊界と魔界は確かに近い存在ではあるけれど",
    "ko": "정령계와 마계가 가까운 존재이긴 하지만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 59.44,
@@ -132,7 +132,7 @@
    "speaker": "아리스",
    "ja": "やってることは白黒正反対よ",
    "ko": "하는 일은 흑과 백처럼 정반대예요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 62.6,
@@ -140,7 +140,7 @@
    "speaker": "아리스",
    "ja": "人を不幸になんかしないわ",
    "ko": "사람을 불행하게 하진 않아요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 64.3,
@@ -148,7 +148,7 @@
    "speaker": "세실",
    "ja": "あら、誤解しないで",
    "ko": "어머, 오해하지 마세요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 66.36,
@@ -156,7 +156,7 @@
    "speaker": "세실",
    "ja": "私も人を幸せにする力しか持っていないのですよ",
    "ko": "저도 사람을 행복하게 하는 힘밖에 없답니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 70.86,
@@ -164,7 +164,7 @@
    "speaker": "세실",
    "ja": "欲しいものを出してあげたり、悲しみを取り除いたり",
    "ko": "원하는 것을 꺼내 주거나 슬픔을 없애 주거나",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 74.96,
@@ -172,7 +172,7 @@
    "speaker": "세실",
    "ja": "病気を治してあげたりね",
    "ko": "병을 고쳐 주거나 말이죠.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 77.08,
@@ -180,7 +180,7 @@
    "speaker": "쿄코",
    "ja": "言ってることが矛盾してるわよ。バカみたい",
    "ko": "말이 앞뒤가 안 맞잖아. 바보 같아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 81.02,
@@ -188,7 +188,7 @@
    "speaker": "세실",
    "ja": "貧しい人はなぜ貧しいのでしょう",
    "ko": "가난한 사람은 왜 가난할까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 83.58,
@@ -196,7 +196,7 @@
    "speaker": "세실",
    "ja": "体の不自由な人はなぜ不自由なのでしょう",
    "ko": "몸이 불편한 사람은 왜 불편할까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 86.9,
@@ -204,7 +204,7 @@
    "speaker": "세실",
    "ja": "不幸な人はなぜ不幸なのでしょう",
    "ko": "불행한 사람은 왜 불행할까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 89.88,
@@ -212,7 +212,7 @@
    "speaker": "세실",
    "ja": "それは裕福な人がいて",
    "ko": "그건 부유한 사람이 있고",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 92.42,
@@ -220,7 +220,7 @@
    "speaker": "세실",
    "ja": "五体満足な人がいて",
    "ko": "몸이 멀쩡한 사람이 있고",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 94.3,
@@ -228,7 +228,7 @@
    "speaker": "세실",
    "ja": "幸せそうな人がいるからなのです",
    "ko": "행복해 보이는 사람이 있기 때문이랍니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 97.08,
@@ -236,7 +236,7 @@
    "speaker": "쿄코",
    "ja": "詭弁よ。皮肉を言ってるだけだわ",
    "ko": "궤변이야. 비꼬는 것뿐이잖아.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 気弁よ皮肉を言ってるだけだわ (VAD 받아쓰기: 偽弁よ)"
   },
@@ -246,7 +246,7 @@
    "speaker": "세실",
    "ja": "不治の病人一千人のうち",
    "ko": "불치병 환자 천 명 중에",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: フジの病人一千人のうち"
   },
@@ -256,7 +256,7 @@
    "speaker": "세실",
    "ja": "たった一人に奇跡が起こり、健康そのものになったといたしましょう",
    "ko": "단 한 명에게 기적이 일어나 완전히 건강해졌다고 합시다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 109.44,
@@ -264,7 +264,7 @@
    "speaker": "세실",
    "ja": "残りの999人は幸せですか",
    "ko": "나머지 999명은 행복할까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 112.4,
@@ -272,7 +272,7 @@
    "speaker": "세실",
    "ja": "一人、また一人と倒れていく中で",
    "ko": "한 명, 또 한 명 쓰러져 가는 가운데",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 116.22,
@@ -280,7 +280,7 @@
    "speaker": "세실",
    "ja": "残った人々は希望を持ち続けられますか",
    "ko": "남은 사람들이 계속 희망을 품을 수 있을까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 119.7,
@@ -288,7 +288,7 @@
    "speaker": "세실",
    "ja": "奇跡の人を妬み、選ばれなかった自分を悲観し絶望する",
    "ko": "기적의 주인공을 시기하고, 선택받지 못한 자신을 비관하며 절망하겠지요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 125.76,
@@ -296,7 +296,7 @@
    "speaker": "세실",
    "ja": "一つの幸せは999人の不幸を生み出すのです",
    "ko": "하나의 행복은 999명의 불행을 낳는 법이랍니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 130.7,
@@ -304,7 +304,7 @@
    "speaker": "세실",
    "ja": "私の名はセシル",
    "ko": "제 이름은 세실.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 私の名はセシール"
   },
@@ -314,7 +314,7 @@
    "speaker": "세실",
    "ja": "私の力は人を幸せにすること",
    "ko": "제 힘은 사람을 행복하게 하는 것.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 137.14,
@@ -322,7 +322,7 @@
    "speaker": "세실",
    "ja": "私の使命は全ての人々を不幸と絶望の淵へ誘うこと",
    "ko": "제 사명은 모든 사람을 불행과 절망의 늪으로 이끄는 것.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 私の使命は全ての人々を不幸と絶望の淵ピーチに誘うこと"
   },
@@ -332,7 +332,7 @@
    "speaker": "쿄코",
    "ja": "ピーチ、あんたさっきから黙りこんでっけど",
    "ko": "피치, 너 아까부터 입 다물고 있는데",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ピーチ、あんたさっきからダメりこんでっけど"
   },
@@ -342,7 +342,7 @@
    "speaker": "쿄코",
    "ja": "あんな奴の言うことなんか真に受けちゃダメよ",
    "ko": "저런 녀석 말을 곧이곧대로 들으면 안 돼.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 149.44,
@@ -350,7 +350,7 @@
    "speaker": "아리스",
    "ja": "う、うん。さ、麻雀しましょう",
    "ko": "으, 응. 자, 마작 해요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 152.6,
@@ -358,7 +358,7 @@
    "speaker": "쿄코",
    "ja": "いいわね、セシル",
    "ko": "알겠지, 세실?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 153.84,
@@ -366,7 +366,7 @@
    "speaker": "세실",
    "ja": "麻雀で全てが解決するというのですか?",
    "ko": "마작으로 모든 게 해결된다는 건가요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 157.66,
@@ -374,7 +374,7 @@
    "speaker": "세실",
    "ja": "麻雀で勝てばこの状況が何とかなるというのですか?",
    "ko": "마작에서 이기면 이 상황이 어떻게든 된다는 건가요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 162.54,
@@ -382,7 +382,7 @@
    "speaker": "세실",
    "ja": "でも、あなた方はそれを信じているのですものね",
    "ko": "하지만 당신들은 그걸 믿고 있으니까요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 166.24,
@@ -390,7 +390,7 @@
    "speaker": "세실",
    "ja": "よろしいわ、勝負いたしましょう",
    "ko": "좋아요, 승부하죠.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 168.46,
@@ -398,7 +398,7 @@
    "speaker": "세실",
    "ja": "アハハハハ",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

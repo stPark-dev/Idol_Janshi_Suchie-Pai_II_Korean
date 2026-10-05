@@ -10,7 +10,7 @@
    "speaker": "시호",
    "ja": "え、ああ、ああー!",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.48,
@@ -18,7 +18,7 @@
    "speaker": "시호",
    "ja": "わ、わたくし、いったいどうしていたんですか?",
    "ko": "저, 저는 대체 어떻게 된 거죠?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

@@ -10,15 +10,15 @@
    "speaker": "미스터 X",
    "ja": "いらっしゃいませー!",
    "ko": "어서 오세요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.8,
    "end": 7.72,
    "speaker": "미스터 X",
    "ja": "うさぎハウス改め、マル秘うさぎ養成所「うさぎの穴」へようこそー!",
-   "ko": "토끼 하우스, 이제는 극비 토끼 양성소 '토끼 굴'! 어서 오세요~!",
-   "status": "needs_human_review",
+   "ko": "토끼 하우스에서 이름을 바꾼 극비 토끼 양성소 '토끼 굴'에 어서 오세요~!",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: うさぎハウス改め、丸日うさぎ養成所、うさぎの穴へようこそー (VAD 받아쓰기: マルフィ)"
   },
@@ -28,7 +28,7 @@
    "speaker": "미스터 X",
    "ja": "これからは、あたしのことはミスターXって呼んでね!",
    "ko": "앞으로는 저를 미스터 X라고 불러 줘요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 13.36,
@@ -36,7 +36,7 @@
    "speaker": "쿄코",
    "ja": "さあ、帰りましょうか!",
    "ko": "자, 돌아갈까!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.84,
@@ -44,7 +44,7 @@
    "speaker": "미스터 X",
    "ja": "わー!そんなこと言わないでー!もうちょっとだけ見てってくださいー!",
    "ko": "앗~! 그런 말 마세요~! 조금만 더 보고 가 주세요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.38,
@@ -52,7 +52,7 @@
    "speaker": "아리스",
    "ja": "ミスターXさん、質問!",
    "ko": "미스터 X 씨, 질문이요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.76,
@@ -60,7 +60,7 @@
    "speaker": "아리스",
    "ja": "なんで「うさぎさん養成所」なんですか?",
    "ko": "왜 '토끼 양성소'인 거예요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.32,
@@ -68,7 +68,7 @@
    "speaker": "미스터 X",
    "ja": "よくぞ聞いてくれました!",
    "ko": "잘 물어봐 주셨어요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.22,
@@ -76,7 +76,7 @@
    "speaker": "미스터 X",
    "ja": "今の世の中、ストレスが多すぎます",
    "ko": "요즘 세상은 스트레스가 너무 많아요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.28,
@@ -84,7 +84,7 @@
    "speaker": "미스터 X",
    "ja": "会社行って、学校行って、バイトして",
    "ko": "회사 가고, 학교 가고, 아르바이트하고…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.82,
@@ -92,7 +92,7 @@
    "speaker": "미스터 X",
    "ja": "本当に心の安らぐ時があるのか",
    "ko": "정말로 마음 편할 때가 있을까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 39.76,
@@ -100,7 +100,7 @@
    "speaker": "미스터 X",
    "ja": "遠慮なく悩みを話せる人がそばにいるのか",
    "ko": "부담 없이 고민을 털어놓을 사람이 곁에 있을까요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 44.02,
@@ -108,7 +108,7 @@
    "speaker": "미스터 X",
    "ja": "毎日毎日、社会というリングで戦い続けている",
    "ko": "날이면 날마다 사회라는 링에서 계속 싸우는",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 47.92,
@@ -116,7 +116,7 @@
    "speaker": "미스터 X",
    "ja": "あなたの心に必要なパートナー",
    "ko": "당신의 마음에 필요한 파트너!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.36,
@@ -124,7 +124,7 @@
    "speaker": "미스터 X",
    "ja": "人生のセコンド、それがうさぎさんなのです!",
    "ko": "인생의 세컨드, 그게 바로 토끼랍니다!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 56.08,
@@ -132,7 +132,7 @@
    "speaker": "아리스",
    "ja": "チーン!",
    "ko": "",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "감동을 나타내는 효과음 흉내라 자막 비움"
   },
   {
@@ -141,7 +141,7 @@
    "speaker": "아리스",
    "ja": "ミスターX、あたし感動しました!",
    "ko": "미스터 X, 저 감동했어요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 61.12,
@@ -149,7 +149,7 @@
    "speaker": "아리스",
    "ja": "やります!うさぎになりまーす!",
    "ko": "할래요! 토끼가 될래요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 64.3,
@@ -157,7 +157,7 @@
    "speaker": "쿄코",
    "ja": "はあ、乗せられやすいんだから",
    "ko": "하아, 너무 쉽게 넘어간다니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 66.5,
@@ -165,7 +165,7 @@
    "speaker": "미스터 X",
    "ja": "では、まずうさぎさんになるためにその1!",
    "ko": "그럼 먼저, 토끼가 되기 위한 첫째!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 71.44,
@@ -173,7 +173,7 @@
    "speaker": "미스터 X",
    "ja": "胸でライターが挟めるようになるまで牛乳を飲むべし!飲むべし!飲むべーし!",
    "ko": "가슴에 라이터를 끼울 수 있을 때까지 우유를 마셔라! 마셔라! 마셔라~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 77.94,
@@ -181,7 +181,7 @@
    "speaker": "미스터 X",
    "ja": "ちなみにバストのサイズはいくつですか?",
    "ko": "참고로 가슴 사이즈는 몇이에요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 82.16,
@@ -189,7 +189,7 @@
    "speaker": "아리스",
    "ja": "うっ、そ、それはー…72",
    "ko": "윽, 그, 그건… 72…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 86.42,
@@ -197,7 +197,7 @@
    "speaker": "미스터 X",
    "ja": "うげー、それはまずいですね",
    "ko": "으엑, 그건 곤란하네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 92.34,
@@ -205,7 +205,7 @@
    "speaker": "미스터 X",
    "ja": "それでは毎日牛乳5リットルがノルマです",
    "ko": "그럼 매일 우유 5리터가 할당량이에요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 95.12,
@@ -213,7 +213,7 @@
    "speaker": "쿄코",
    "ja": "そんだけ飲んだら胸大きくなる前にお腹壊しちゃうでしょ",
    "ko": "그만큼 마시면 가슴 커지기 전에 배탈 나겠다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 99.32,
@@ -221,7 +221,7 @@
    "speaker": "아리스",
    "ja": "ちゃんと飲んだら本当にミスターXさんみたく大きくなるんですか?",
    "ko": "꼬박꼬박 마시면 정말 미스터 X 씨처럼 커지나요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 103.52,
@@ -229,7 +229,7 @@
    "speaker": "미스터 X",
    "ja": "はーい",
    "ko": "네~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 104.1,
@@ -237,7 +237,7 @@
    "speaker": "아리스",
    "ja": "私飲みます!スタイル良くなるならそのくらいお安いもんよ!",
    "ko": "저 마실래요! 몸매가 좋아진다면 그 정도야 싼 거죠!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 109.58,
@@ -245,7 +245,7 @@
    "speaker": "쿄코",
    "ja": "なんか本来の目標とずれてきてない?",
    "ko": "뭔가 원래 목표에서 벗어나고 있지 않아?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 112.32,
@@ -253,7 +253,7 @@
    "speaker": "쿄코",
    "ja": "だいたいあなた変身すればなかなかのプロポーションじゃないの",
    "ko": "애초에 너 변신하면 몸매 꽤 괜찮잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 116.22,
@@ -261,7 +261,7 @@
    "speaker": "아리스",
    "ja": "い、今までの発言と矛盾するかもしれませんが",
    "ko": "지, 지금까지 한 말이랑 모순될지도 모르지만",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 120.38,
@@ -269,7 +269,7 @@
    "speaker": "아리스",
    "ja": "現実問題として、さすがにあの格好でデートしたりしたら",
    "ko": "현실적으로 아무래도 그 차림으로 데이트를 하면",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 124.84,
@@ -277,7 +277,7 @@
    "speaker": "아리스",
    "ja": "一発でオタク扱いされてしまいそうだし",
    "ko": "단번에 오타쿠 취급을 받을 것 같고…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 128.24,
@@ -285,7 +285,7 @@
    "speaker": "아리스",
    "ja": "それにもしも、もしもですよ",
    "ko": "게다가 만약, 만약에요",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 132.08,
@@ -293,7 +293,7 @@
    "speaker": "아리스",
    "ja": "おっきい方が、いざっていう時に喜ばれるってことも",
    "ko": "큰 쪽이 결정적인 순간에 더 환영받는다든가…",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: おっきい方がいいさっていう時に喜ばれるってことも"
   },
@@ -303,7 +303,7 @@
    "speaker": "아리스",
    "ja": "いやーん、いやーん、エッチー",
    "ko": "아이참, 아이참~ 야해라~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 139.06,
@@ -311,7 +311,7 @@
    "speaker": "쿄코",
    "ja": "エッチはあんたでしょ",
    "ko": "야한 건 너거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 141.42,
@@ -319,7 +319,7 @@
    "speaker": "쿄코",
    "ja": "あ〜頭痛くなってきた",
    "ko": "아~ 머리가 아파 오네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 144.12,
@@ -327,7 +327,7 @@
    "speaker": "미스터 X",
    "ja": "結構変わりもんですね",
    "ko": "꽤 별난 분이네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 146.32,
@@ -335,7 +335,7 @@
    "speaker": "쿄코",
    "ja": "あなたに言われたらおしまいよね",
    "ko": "너한테 그런 말 들으면 끝장이지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 149.08,
@@ -343,7 +343,7 @@
    "speaker": "미스터 X",
    "ja": "ありゃりゃ",
    "ko": "어라라.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

@@ -10,7 +10,7 @@
    "speaker": "루미",
    "ja": "ついてないなぁ",
    "ko": "운이 없네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 1.96,
@@ -18,7 +18,7 @@
    "speaker": "고양이(미상)",
    "ja": "ミャー ミャー ミャー ミャー ミャー",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.52,
@@ -26,16 +26,16 @@
    "speaker": "루미",
    "ja": "あー",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.82,
    "end": 6.06,
    "speaker": "밀크(추정)",
    "ja": "ちょっと弱すぎだミャー",
-   "ko": "좀 너무 약했다먀.",
-   "status": "needs_review",
-   "note": "말끝 「ミャー」와 다음 줄 「ピョン」으로 보아 밀크로 추정(사람 결정 みゃ→먀 적용). 고양이 울음 「ミャー」와 Q70B~Q72B 「にゃかま」 줄의 화자도 밀크인지 확인 필요"
+   "ko": "너무 약하다먀.",
+   "status": "distribution_eligible",
+   "note": "말끝 「ミャー」와 다음 줄 「ピョン」으로 보아 밀크로 추정(사람 결정 みゃ→먀 적용). 고양이 울음 「ミャー」와 Q70B~Q72B 「にゃかま」 줄의 화자도 밀크인지 확인 필요 / 최종 검수: 밀크로 확정(다음 줄 「ピョン」과 이어짐, Q70B~Q72B 「にゃかま」 줄도 밀크로 통일)"
   },
   {
    "start": 6.06,
@@ -43,7 +43,7 @@
    "speaker": "밀크",
    "ja": "私が変身すればよかったピョン",
    "ko": "내가 변신할 걸 그랬다뿅.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.04,
@@ -51,7 +51,7 @@
    "speaker": "루미",
    "ja": "ちょっとあんたは黙っててよ",
    "ko": "야, 넌 좀 조용히 해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

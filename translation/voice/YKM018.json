@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "あー、面白かった。また見に行っちゃおうかな",
    "ko": "아~ 재밌었다. 또 보러 갈까?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 4.48,
@@ -18,7 +18,7 @@
    "speaker": "루미",
    "ja": "あら、ユキちゃん。やけに楽しそうじゃない。なんかいいことあったの?",
    "ko": "어머, 유키. 꽤 신나 보이네. 뭐 좋은 일 있었어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 10.12,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "うん、今映画見てきたとこなんだけど",
    "ko": "응, 방금 영화 보고 왔는데",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 13.25,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "それがすっごく素敵だったの",
    "ko": "그게 엄청 멋졌어!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.88,
@@ -42,7 +42,7 @@
    "speaker": "유키",
    "ja": "一人で見ちゃったのが悔しいくらい",
    "ko": "혼자 본 게 아까울 정도야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 19.42,
@@ -50,7 +50,7 @@
    "speaker": "루미",
    "ja": "なに? どんな映画?",
    "ko": "뭔데? 무슨 영화?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.38,
@@ -58,7 +58,7 @@
    "speaker": "유키",
    "ja": "あのね、家柄が違うせいで結婚を認めてもらえない恋人同士が",
    "ko": "있잖아, 집안이 달라서 결혼을 허락받지 못한 연인이",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.78,
@@ -66,7 +66,7 @@
    "speaker": "유키",
    "ja": "2人だけの新しい生活を求めて、離れ小島に駆け落ちしちゃうの",
    "ko": "둘만의 새 생활을 찾아 외딴섬으로 사랑의 도피를 해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.52,
@@ -74,7 +74,7 @@
    "speaker": "루미",
    "ja": "へー、なんかロマンチックね",
    "ko": "흐응, 왠지 로맨틱하네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.24,
@@ -82,7 +82,7 @@
    "speaker": "유키",
    "ja": "でしょ",
    "ko": "그치?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.8,
@@ -90,7 +90,7 @@
    "speaker": "유키",
    "ja": "でもね、その島はゾンビの島だったの",
    "ko": "그런데 그 섬이 좀비 섬이었던 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.22,
@@ -98,7 +98,7 @@
    "speaker": "루미",
    "ja": "は?",
    "ko": "뭐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 41.26,
@@ -106,7 +106,7 @@
    "speaker": "유키",
    "ja": "でね、恋人たちはありあわせの武器を手にゾンビたちと戦うんだけど",
    "ko": "그래서 연인들은 닥치는 대로 무기를 들고 좀비들과 싸우는데",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.76,
@@ -114,7 +114,7 @@
    "speaker": "유키",
    "ja": "それがまたすごいの",
    "ko": "그게 또 굉장해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 47.78,
@@ -122,7 +122,7 @@
    "speaker": "유키",
    "ja": "腐りかけのゾンビの顔面をハンマーでくしゃーって叩き割ったり",
    "ko": "썩어 가는 좀비 얼굴을 망치로 콰직 하고 깨부수거나",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.04,
@@ -130,7 +130,7 @@
    "speaker": "유키",
    "ja": "チェーンソーでお腹のあたりをゾブゾブゾブーってやって",
    "ko": "전기톱으로 배 언저리를 드드드득 하고 갈면",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 55.0,
@@ -138,7 +138,7 @@
    "speaker": "유키",
    "ja": "中から血やら腸やらがドバー! にゅるにゅるにゅるー! とか",
    "ko": "안에서 피랑 창자가 콸콸! 주르륵주르륵! 하고",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 中から血やら蝶やらがドバー!にゅるにゅるにゅるー!とか"
   },
@@ -148,7 +148,7 @@
    "speaker": "유키",
    "ja": "もう、壮絶の一言",
    "ko": "정말 처절하다는 말밖에 안 나와.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 妄想絶の一言"
   },
@@ -158,7 +158,7 @@
    "speaker": "유키",
    "ja": "ユキ、何度も悲鳴あげちゃったわ",
    "ko": "유키는 몇 번이나 비명을 질렀어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 64.98,
@@ -166,7 +166,7 @@
    "speaker": "루미",
    "ja": "それのどこが素敵なのよ",
    "ko": "그게 어디가 멋진데?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 67.4,
@@ -174,7 +174,7 @@
    "speaker": "유키",
    "ja": "もう、ちゃんと最後まで聞いてよ",
    "ko": "정말, 끝까지 들어 봐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 70.92,
@@ -182,7 +182,7 @@
    "speaker": "유키",
    "ja": "で、二人はとうとう島中のゾンビを全滅させちゃって",
    "ko": "그래서 두 사람은 결국 섬의 좀비를 전멸시키고",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 74.36,
@@ -190,7 +190,7 @@
    "speaker": "유키",
    "ja": "ぐちょぐちょの死体と内臓の中で結ばれるの",
    "ko": "질척질척한 시체와 내장 속에서 맺어지는 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 78.96,
@@ -198,7 +198,7 @@
    "speaker": "유키",
    "ja": "なんかここまでやっちゃうとゾクゾクっとしちゃうよね",
    "ko": "이렇게까지 하니까 왠지 짜릿짜릿하지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 83.88,
@@ -206,7 +206,7 @@
    "speaker": "루미",
    "ja": "聞くんじゃなかった",
    "ko": "괜히 들었어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 85.92,
@@ -214,7 +214,7 @@
    "speaker": "루미",
    "ja": "こりゃしばらくは肉類は食べられそうにないわ",
    "ko": "이거 한동안 고기는 못 먹겠네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 89.44,
@@ -222,15 +222,15 @@
    "speaker": "루미",
    "ja": "一体この娘と付き合っていける男なんて、果たしてこの世にいるのかしらね",
    "ko": "대체 이 아이랑 사귈 수 있는 남자가 과연 이 세상에 있을까?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 94.4,
    "end": 97.52,
    "speaker": "유키",
    "ja": "失礼ね。きっといるもんね",
-   "ko": "실례야! 분명 있거든!",
-   "status": "needs_human_review"
+   "ko": "실례네! 분명 있거든!",
+   "status": "distribution_eligible"
   }
  ]
 }

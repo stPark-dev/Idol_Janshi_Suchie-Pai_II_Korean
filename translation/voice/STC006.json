@@ -10,7 +10,7 @@
    "speaker": "사유리",
    "ja": "どうもー!",
    "ko": "안녕하세요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.1,
@@ -18,7 +18,7 @@
    "speaker": "사유리",
    "ja": "愛の伝道師、サユリちゃんの、うさぎさんが聞いてあげるコーナー!",
    "ko": "사랑의 전도사 사유리의 \"토끼가 들어 줄게요\" 코너!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 愛の伝道師、セユリちゃんのウサギさんが聞いてあげるコーナー!"
   },
@@ -28,7 +28,7 @@
    "speaker": "사유리",
    "ja": "さあ、あなたの悩み、相談、何でも聞かせてくださいね!",
    "ko": "자, 당신의 고민, 상담, 뭐든 들려주세요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.52,
@@ -36,7 +36,7 @@
    "speaker": "사유리",
    "ja": "はい、そこの彼女!",
    "ko": "네, 거기 아가씨!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.26,
@@ -44,7 +44,7 @@
    "speaker": "사나에",
    "ja": "え、あ、あのー",
    "ko": "어, 아, 저기…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.0,
@@ -52,7 +52,7 @@
    "speaker": "사나에",
    "ja": "私、たまに自分の記憶が途切れてしまうことがあるんですが…",
    "ko": "제가 가끔 기억이 끊길 때가 있는데요…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.58,
@@ -60,7 +60,7 @@
    "speaker": "스치파이",
    "ja": "あ、そっか、サナエさんってば知らないんだっけか",
    "ko": "아, 그렇지. 사나에 씨는 모르는구나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.7,
@@ -68,7 +68,7 @@
    "speaker": "사유리",
    "ja": "ふむふむ、それでそれで?",
    "ko": "흠흠, 그래서 그래서?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 27.6,
@@ -76,7 +76,7 @@
    "speaker": "사나에",
    "ja": "はい、ふっと我に返ると、なんか知らないところにいたりして",
    "ko": "네. 문득 정신을 차려 보면 모르는 곳에 있기도 하고",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 34.0,
@@ -84,7 +84,7 @@
    "speaker": "사나에",
    "ja": "あれ?ワープしたのかなーなんて",
    "ko": "어라? 워프했나~ 싶고.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 37.84,
@@ -92,7 +92,7 @@
    "speaker": "사나에",
    "ja": "でも、なんかこう、充実した満足感みたいなのがあって",
    "ko": "그런데 뭐랄까, 뿌듯한 만족감 같은 게 있어서",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.76,
@@ -100,7 +100,7 @@
    "speaker": "사나에",
    "ja": "ちょっと癖になりそうで怖いんです",
    "ko": "좀 버릇이 될 것 같아서 무서워요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 47.06,
@@ -108,7 +108,7 @@
    "speaker": "사유리",
    "ja": "なるなる、そんでそんで",
    "ko": "그렇구나 그렇구나, 그래서 그래서?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.52,
@@ -116,7 +116,7 @@
    "speaker": "사나에",
    "ja": "はい、あとはまあ、私おっちょこちょいなので",
    "ko": "네, 그리고 뭐, 제가 덜렁이라서",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 55.2,
@@ -124,7 +124,7 @@
    "speaker": "사나에",
    "ja": "そういうところもまとめて直せないかなって",
    "ko": "그런 점도 한꺼번에 고칠 수 없을까 해서요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 59.12,
@@ -132,7 +132,7 @@
    "speaker": "스치파이",
    "ja": "なんか読めたような気が",
    "ko": "왠지 다음 전개가 보이는 것 같은데.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 61.74,
@@ -140,7 +140,7 @@
    "speaker": "사유리",
    "ja": "はいはい、どんどん言ってね",
    "ko": "네네, 계속 말해 봐요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 65.52,
@@ -148,7 +148,7 @@
    "speaker": "사나에",
    "ja": "あの、何かアドバイスとか",
    "ko": "저, 무슨 조언 같은 건…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 69.22,
@@ -156,7 +156,7 @@
    "speaker": "사유리",
    "ja": "ちっちっち",
    "ko": "쯧쯧쯧.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 70.46,
@@ -164,7 +164,7 @@
    "speaker": "사유리",
    "ja": "お客さん、勘違いしちゃ困るな",
    "ko": "손님, 착각하시면 곤란해요.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: お客さん勘違いしちゃくまるな"
   },
@@ -174,7 +174,7 @@
    "speaker": "사유리",
    "ja": "ここはうさぎさんが聞いてあげるコーナーですから",
    "ko": "여긴 토끼가 \"들어 주기만\" 하는 코너니까요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 78.08,
@@ -182,7 +182,7 @@
    "speaker": "사유리",
    "ja": "どんどん言ってください",
    "ko": "얼마든지 말씀하세요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 79.64,
@@ -190,7 +190,7 @@
    "speaker": "사유리",
    "ja": "どんどん聞いちゃいますから",
    "ko": "얼마든지 들어 드릴 테니까요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 82.28,
@@ -198,7 +198,7 @@
    "speaker": "스치파이",
    "ja": "やっぱし",
    "ko": "역시나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 83.5,
@@ -206,7 +206,7 @@
    "speaker": "사나에",
    "ja": "ふーん",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 85.02,
@@ -214,7 +214,7 @@
    "speaker": "사나에",
    "ja": "やっぱりこういう運命なんですのね",
    "ko": "역시 이런 운명이군요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 88.9,
@@ -222,7 +222,7 @@
    "speaker": "사나에",
    "ja": "ほろほろほろ",
    "ko": "훌쩍훌쩍…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 90.7,
@@ -230,7 +230,7 @@
    "speaker": "스치파이",
    "ja": "ちょっとサナエさん",
    "ko": "잠깐, 사나에 씨.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 92.24,
@@ -238,7 +238,7 @@
    "speaker": "스치파이",
    "ja": "そっちは壁よ壁",
    "ko": "거긴 벽이야, 벽!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 94.82,
@@ -246,7 +246,7 @@
    "speaker": "사나에",
    "ja": "ありゃりゃ",
    "ko": "어라라.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 95.58,
@@ -254,7 +254,7 @@
    "speaker": "사유리",
    "ja": "お元気で",
    "ko": "잘 가요~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

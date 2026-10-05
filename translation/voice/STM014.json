@@ -10,7 +10,7 @@
    "speaker": "쿄코",
    "ja": "シホさん平気?あなた一体誰に操られていたの?",
    "ko": "시호 씨, 괜찮아? 대체 누구한테 조종당했던 거야?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.72,
@@ -18,7 +18,7 @@
    "speaker": "시호",
    "ja": "ごめんなさい、よく覚えていないのです",
    "ko": "죄송해요, 잘 기억나지 않아요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.4,
@@ -26,7 +26,7 @@
    "speaker": "세실",
    "ja": "嘘はいけないわよ、うさぎちゃん",
    "ko": "거짓말은 못써요, 토끼 씨.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.94,
@@ -34,7 +34,7 @@
    "speaker": "세실",
    "ja": "その子を操っていたのは私ですわ",
    "ko": "그 아이를 조종한 건 저랍니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.6,
@@ -42,7 +42,7 @@
    "speaker": "쿄코",
    "ja": "え?それ本当なの?",
    "ko": "뭐? 그거 정말이야?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.42,
@@ -50,7 +50,7 @@
    "speaker": "세실",
    "ja": "私が嘘を言うわけないわ",
    "ko": "제가 거짓말을 할 리 없지요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 23.5,
@@ -58,7 +58,7 @@
    "speaker": "세실",
    "ja": "だって私は嘘のつけない立場にいるんですもの",
    "ko": "저는 거짓말을 할 수 없는 처지니까요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 29.32,
@@ -66,7 +66,7 @@
    "speaker": "쿄코",
    "ja": "なるほど",
    "ko": "그렇군.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.2,
@@ -74,7 +74,7 @@
    "speaker": "쿄코",
    "ja": "よーくも私のことバカだのアホだのマヌケだの言ってくれたわね",
    "ko": "잘도 나를 바보니 멍청이니 얼간이니 불러 줬겠다?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.58,
@@ -82,7 +82,7 @@
    "speaker": "쿄코",
    "ja": "さ、麻雀で勝負よ",
    "ko": "자, 마작으로 승부야!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: さ、まーちゃんで勝負よ"
   },
@@ -92,7 +92,7 @@
    "speaker": "세실",
    "ja": "な、なんですか、この娘は",
    "ko": "뭐, 뭔가요, 이 아가씨는.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.76,
@@ -100,7 +100,7 @@
    "speaker": "세실",
    "ja": "まあ、どうしてもというのでしたら勝負をお受けしても構いませんが",
    "ko": "뭐, 정 그러시다면 승부를 받아들여도 상관없지만요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 46.34,
@@ -108,7 +108,7 @@
    "speaker": "밀크",
    "ja": "イカサマ女の部分だけ否定してないとこが気になるぴょん",
    "ko": "사기꾼 여자 부분만 부정 안 하는 게 신경 쓰인다뿅.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 私はイカシャマーオンニャンの部分だけを否定していないとこが気になるぴょん"
   },
@@ -118,7 +118,7 @@
    "speaker": "쿄코",
    "ja": "ほら、ミルキー行くよ",
    "ko": "자, 밀키 가자.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.18,
@@ -126,7 +126,7 @@
    "speaker": "밀크",
    "ja": "ふん",
    "ko": "흥.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

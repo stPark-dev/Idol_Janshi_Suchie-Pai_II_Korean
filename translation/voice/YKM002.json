@@ -10,7 +10,7 @@
    "speaker": "사나에",
    "ja": "あのー、私、本当に知らないんです",
    "ko": "저어, 저 정말 몰라요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.04,
@@ -18,7 +18,7 @@
    "speaker": "유키",
    "ja": "実はね、ユキ、チェリーパイの正体を知ってるのよ",
    "ko": "실은 말이야, 유키는 체리파이의 정체를 알고 있어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.62,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "簡単な推理よね",
    "ko": "간단한 추리지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.36,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "ある人が消えて、ある人が現れているんだもの",
    "ko": "어떤 사람이 사라지면 어떤 사람이 나타나니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.98,
@@ -42,15 +42,15 @@
    "speaker": "사나에",
    "ja": "ある人って、二人いるんですか?",
    "ko": "어떤 사람이라니, 두 사람이에요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.32,
    "end": 21.82,
    "speaker": "유키",
    "ja": "そうね、二人でもあり、一人でもある",
-   "ko": "글쎄, 두 사람이기도 하고 한 사람이기도 해.",
-   "status": "needs_human_review"
+   "ko": "그렇지, 두 사람이기도 하고 한 사람이기도 해.",
+   "status": "distribution_eligible"
   },
   {
    "start": 21.82,
@@ -58,7 +58,7 @@
    "speaker": "유키",
    "ja": "そして、サナエさんは会ったことがない人",
    "ko": "그리고 사나에 씨는 만난 적이 없는 사람.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.56,
@@ -66,7 +66,7 @@
    "speaker": "유키",
    "ja": "つまり、もう一人のあなたがチェリーパイなのよ",
    "ko": "즉, 또 하나의 당신이 체리파이야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.8,
@@ -74,7 +74,7 @@
    "speaker": "사나에",
    "ja": "ええ、そ、そんな… あら…",
    "ko": "네? 그, 그런… 어머…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 34.26,
@@ -82,7 +82,7 @@
    "speaker": "사나에",
    "ja": "んー、んー",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 38.54,
@@ -90,7 +90,7 @@
    "speaker": "체리파이",
    "ja": "ああ、はははは! チェリーパイ見参!",
    "ko": "아하하하하! 체리파이 등장!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ああ、はははは、チェリーパイ健三"
   },
@@ -100,7 +100,7 @@
    "speaker": "체리파이",
    "ja": "よくぞ私の正体を見破ったね",
    "ko": "용케 내 정체를 꿰뚫어 봤구나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 46.84,
@@ -108,7 +108,7 @@
    "speaker": "체리파이",
    "ja": "ま、スーチーパイをギャフンと言わせるのには興味があるね",
    "ko": "뭐, 스치파이 코를 납작하게 해 주는 건 흥미가 있지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.74,
@@ -116,7 +116,7 @@
    "speaker": "체리파이",
    "ja": "少しの間なら付き合ってやってもいいぜ",
    "ko": "잠깐이라면 어울려 줘도 좋다고.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 53.56,
@@ -124,7 +124,7 @@
    "speaker": "유키",
    "ja": "やっぱチェリーパイの正体はサナエさんだったのね",
    "ko": "역시 체리파이의 정체는 사나에 씨였어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 58.56,
@@ -132,7 +132,7 @@
    "speaker": "유키",
    "ja": "でもこれで力強い仲間ができたわ",
    "ko": "그래도 이걸로 든든한 동료가 생겼네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 61.16,
@@ -140,7 +140,7 @@
    "speaker": "유키",
    "ja": "次はミルクを探さなきゃ",
    "ko": "다음은 밀크를 찾아야지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

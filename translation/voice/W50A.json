@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "変身ゲージMAX!",
    "ko": "변신 게이지 MAX!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 1.12,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "出番よ!ミルク!",
    "ko": "네 차례야, 밀크!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.56,
@@ -26,7 +26,7 @@
    "speaker": "밀크",
    "ja": "みんみみみゃーん!",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

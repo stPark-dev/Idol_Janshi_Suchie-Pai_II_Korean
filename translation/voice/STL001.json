@@ -10,7 +10,7 @@
    "speaker": "아리스",
    "ja": "わあ、誰なんですかあなた方",
    "ko": "어머, 여러분은 누구세요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.14,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "じゃーん、かわいさ業界ナンバーワン、みんなのアイドル、スーチーパイ見参",
    "ko": "짜잔! 귀여움 업계 넘버원, 모두의 아이돌 스치파이 등장!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: じゃーんかわいさ業界ナンバーワンみんなのアイドルスーチーパイ健三"
   },
@@ -28,7 +28,7 @@
    "speaker": "쿄코",
    "ja": "そしてこっちはそのしもべ、スーチーイエローよ",
    "ko": "그리고 이쪽은 내 부하, 스치 옐로야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.82,
@@ -36,7 +36,7 @@
    "speaker": "츠카사",
    "ja": "ちょっと待て、誰がしもべだ、誰が",
    "ko": "잠깐, 누가 부하라는 거야, 누가!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.04,
@@ -44,7 +44,7 @@
    "speaker": "츠카사",
    "ja": "それに勝手に変な名前つけんな",
    "ko": "그리고 멋대로 이상한 이름 붙이지 마.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.12,
@@ -52,7 +52,7 @@
    "speaker": "츠카사",
    "ja": "俺の名はレモンパイだ",
    "ko": "내 이름은 레몬파이다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 19.3,
@@ -60,7 +60,7 @@
    "speaker": "아리스",
    "ja": "ははは、面白いけどやっぱり怪しいから逃げちゃおっと",
    "ko": "하하하, 재미있지만 역시 수상하니까 도망쳐야겠어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.0,
@@ -68,7 +68,7 @@
    "speaker": "쿄코",
    "ja": "甘い!透視スコープよ、スーチーイエロー",
    "ko": "어림없지! 투시 스코프야, 스치 옐로!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 甘い投資スコープよスーチーイエロー"
   },
@@ -78,7 +78,7 @@
    "speaker": "츠카사",
    "ja": "だから違うって",
    "ko": "그러니까 아니라니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 29.18,
@@ -86,7 +86,7 @@
    "speaker": "쿄코",
    "ja": "イエローの目は超音波カメラなの",
    "ko": "옐로의 눈은 초음파 카메라거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.36,
@@ -94,7 +94,7 @@
    "speaker": "쿄코",
    "ja": "これであなたの秘密もバッチリくっきり見えちゃうわよ",
    "ko": "이걸로 네 비밀도 아주 똑똑히 다 보인다고.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.62,
@@ -102,7 +102,7 @@
    "speaker": "아리스",
    "ja": "え、いやー",
    "ko": "어, 싫어요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 37.38,
@@ -110,7 +110,7 @@
    "speaker": "츠카사",
    "ja": "ほほー、見える見えるぞ",
    "ko": "호오, 보인다, 보여.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.02,
@@ -118,7 +118,7 @@
    "speaker": "츠카사",
    "ja": "ピンク色の大脳皮質からちっちゃな胃袋",
    "ko": "분홍색 대뇌피질부터 조그만 위장까지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 43.84,
@@ -126,7 +126,7 @@
    "speaker": "츠카사",
    "ja": "小腸大腸もうねうねしてるぜ",
    "ko": "소장, 대장도 꿈틀꿈틀하는걸.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 47.16,
@@ -134,7 +134,7 @@
    "speaker": "츠카사",
    "ja": "そっから下は…おっと",
    "ko": "거기서 아래는… 이런.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.22,
@@ -142,7 +142,7 @@
    "speaker": "츠카사",
    "ja": "こりゃちょっと口に出しては言えねえな",
    "ko": "이건 좀 입 밖에 낼 수가 없겠는걸.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 52.56,
@@ -150,7 +150,7 @@
    "speaker": "아리스",
    "ja": "あ、そんなとこ見ちゃだめー",
    "ko": "아, 그런 데 보면 안 돼요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 55.4,
@@ -158,7 +158,7 @@
    "speaker": "쿄코",
    "ja": "あんた、ふざけてないで真面目にやんなさいよ",
    "ko": "너, 장난치지 말고 똑바로 좀 해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 59.22,
@@ -166,7 +166,7 @@
    "speaker": "츠카사",
    "ja": "汚ねえ女だな",
    "ko": "치사한 여자네!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 61.02,
@@ -174,7 +174,7 @@
    "speaker": "츠카사",
    "ja": "てめえが乗せたんだろ、てめえが",
    "ko": "네가 부추겼잖아, 네가!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 63.28,
@@ -182,7 +182,7 @@
    "speaker": "쿄코",
    "ja": "勘違いしないでよ",
    "ko": "착각하지 마.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 64.5,
@@ -190,7 +190,7 @@
    "speaker": "쿄코",
    "ja": "内臓見てどうすんのって言ってんのよ",
    "ko": "내장을 봐서 뭐 하냐는 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 66.88,
@@ -198,7 +198,7 @@
    "speaker": "쿄코",
    "ja": "普通はほら、背中に蝶々の痣があるとか",
    "ko": "보통은 왜, 등에 나비 모양 반점이 있다든가",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 70.0,
@@ -206,7 +206,7 @@
    "speaker": "쿄코",
    "ja": "頭に666の傷があるとか",
    "ko": "머리에 666 흉터가 있다든가,",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "원문 ロクロクロク(666, 영화 오멘 패러디로 보임)"
   },
   {
@@ -214,8 +214,8 @@
    "end": 74.1,
    "speaker": "쿄코",
    "ja": "そういうリアクションを期待するじゃないの",
-   "ko": "그런 반응을 기대하잖아.",
-   "status": "needs_human_review"
+   "ko": "그런 반응을 기대하게 되잖아.",
+   "status": "distribution_eligible"
   },
   {
    "start": 74.34,
@@ -223,7 +223,7 @@
    "speaker": "츠카사",
    "ja": "知るか!",
    "ko": "알 게 뭐야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 75.48,
@@ -231,7 +231,7 @@
    "speaker": "쿄코",
    "ja": "というわけでアリスちゃん",
    "ko": "그래서 말인데, 아리스.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 76.76,
@@ -239,7 +239,7 @@
    "speaker": "쿄코",
    "ja": "ただで脱げとは言わないわ",
    "ko": "공짜로 벗으라고는 안 할게.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 78.54,
@@ -247,7 +247,7 @@
    "speaker": "쿄코",
    "ja": "一応チャンスもあげるわよ",
    "ko": "일단 기회도 줄게.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 80.6,
@@ -255,7 +255,7 @@
    "speaker": "츠카사",
    "ja": "なんだ、結局麻雀かよ",
    "ko": "뭐야, 결국 마작이냐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 83.86,
@@ -263,7 +263,7 @@
    "speaker": "아리스",
    "ja": "あーん!とうとう逃げ遅れちゃったー!",
    "ko": "아앙! 결국 못 도망쳤어요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

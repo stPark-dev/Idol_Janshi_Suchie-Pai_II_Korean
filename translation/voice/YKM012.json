@@ -10,8 +10,8 @@
    "speaker": "웨이트리스",
    "ja": "いらっしゃいませー!",
    "ko": "어서 오세요~!",
-   "status": "needs_review",
-   "note": "2차 검수: 웨이트리스 정체 불확실(사유리일 가능성: 「うさぎ」 일을 함). 사람 확인 필요"
+   "status": "distribution_eligible",
+   "note": "2차 검수: 웨이트리스 정체 불확실(사유리일 가능성: 「うさぎ」 일을 함). 사람 확인 필요 / 최종 검수: 정체는 사유리로 보이나(토끼 일·마작) 자막 문장에는 영향 없음. 화자 「웨이트리스」 그대로"
   },
   {
    "start": 3.12,
@@ -19,7 +19,7 @@
    "speaker": "웨이트리스",
    "ja": "はぁー! ユキちゃんだー!",
    "ko": "어머! 유키다~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.72,
@@ -27,7 +27,7 @@
    "speaker": "유키",
    "ja": "今日は麻雀しに来たわけじゃないから安心してね",
    "ko": "오늘은 마작하러 온 게 아니니까 안심해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.46,
@@ -35,7 +35,7 @@
    "speaker": "웨이트리스",
    "ja": "あてし、麻雀も好きだけど、ご飯の方がもっと好きー!",
    "ko": "나 마작도 좋아하지만 밥이 훨씬 더 좋아~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.42,
@@ -43,7 +43,7 @@
    "speaker": "웨이트리스",
    "ja": "さあさあ、注文しましょう!",
    "ko": "자자, 주문하세요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.22,
@@ -51,7 +51,7 @@
    "speaker": "유키",
    "ja": "あなたがウサギやってんのって、そうやって堂々と客にたかれるからでしょ",
    "ko": "네가 토끼 노릇 하는 건 그렇게 당당히 손님한테 얻어먹을 수 있어서지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.88,
@@ -59,7 +59,7 @@
    "speaker": "유키",
    "ja": "普通のウェイトレスじゃそうはいかないもんね",
    "ko": "보통 웨이트리스는 그렇게 못 하잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.54,
@@ -67,7 +67,7 @@
    "speaker": "웨이트리스",
    "ja": "もう、人聞きの悪いこと言わないで!",
    "ko": "정말, 남 듣기 안 좋은 소리 하지 마!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.1,
@@ -75,7 +75,7 @@
    "speaker": "웨이트리스",
    "ja": "ちゃんとウェイトレスの仕事もできますよー!",
    "ko": "웨이트리스 일도 제대로 할 수 있다고요~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.18,
@@ -83,7 +83,7 @@
    "speaker": "유키",
    "ja": "へー、じゃあ",
    "ko": "흐응, 그럼",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 30.0,
@@ -91,7 +91,7 @@
    "speaker": "유키",
    "ja": "このお店のパスタ以外のメニューは?",
    "ko": "이 가게 파스타 말고 메뉴는?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.12,
@@ -99,7 +99,7 @@
    "speaker": "웨이트리스",
    "ja": "はーい!",
    "ko": "네~!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 33.3,
@@ -107,7 +107,7 @@
    "speaker": "웨이트리스",
    "ja": "まずは牛フィレのカルパッチョ",
    "ko": "먼저 소 안심 카르파초",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 35.22,
@@ -115,7 +115,7 @@
    "speaker": "웨이트리스",
    "ja": "続いてラザニアパルマ風、ボロニアソースのドリア",
    "ko": "이어서 파르마풍 라자냐, 볼로냐 소스 도리아",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 39.08,
@@ -123,7 +123,7 @@
    "speaker": "웨이트리스",
    "ja": "ミックスピッツァ、照り焼きチキン",
    "ko": "믹스 피자, 데리야키 치킨",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 41.74,
@@ -131,7 +131,7 @@
    "speaker": "웨이트리스",
    "ja": "ロースステーキ、ビーフシチュー、キノコのリゾット、ミネストローネ",
    "ko": "등심 스테이크, 비프스튜, 버섯 리소토, 미네스트로네",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 45.72,
@@ -139,7 +139,7 @@
    "speaker": "웨이트리스",
    "ja": "ヤリイカのリピエーノ、ブイヤベースうさぎちゃん風",
    "ko": "한치 리피에노, 토끼풍 부야베스",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ヤリイカのリピエーの / ブイヤベースうさぎちゃん風"
   },
@@ -149,7 +149,7 @@
    "speaker": "웨이트리스",
    "ja": "などなど",
    "ko": "등등.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 50.54,
@@ -157,7 +157,7 @@
    "speaker": "유키",
    "ja": "ふーん",
    "ko": "흐응.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 51.68,
@@ -165,7 +165,7 @@
    "speaker": "유키",
    "ja": "食べ物の名前だとちゃんと覚えられるのね",
    "ko": "음식 이름은 제대로 외우는구나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 54.78,
@@ -173,7 +173,7 @@
    "speaker": "유키",
    "ja": "じゃあ私、4番目に言ったやつちょうだい",
    "ko": "그럼 난 네 번째로 말한 거 줘.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: じゃあ私4番目に行ったやつちょうだい"
   },
@@ -183,7 +183,7 @@
    "speaker": "웨이트리스",
    "ja": "え、えーと",
    "ko": "어, 그러니까",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 60.0,
@@ -191,7 +191,7 @@
    "speaker": "웨이트리스",
    "ja": "牛フィレのカルパッチョ、ラザニアパルマ風、ボロニアソースのドリア",
    "ko": "소 안심 카르파초, 파르마풍 라자냐, 볼로냐 소스 도리아",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ギューフィレのカルパチョ、ザザニアパルマ風、ボロニアソースのドリーや"
   },
@@ -201,7 +201,7 @@
    "speaker": "웨이트리스",
    "ja": "ミックスピッツァですね!",
    "ko": "믹스 피자 말씀이시죠!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 67.24,
@@ -209,7 +209,7 @@
    "speaker": "츠카사",
    "ja": "じゃあ俺、7番目のやつ!",
    "ko": "그럼 난 일곱 번째 거!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 68.88,
@@ -217,7 +217,7 @@
    "speaker": "아리스",
    "ja": "私、後ろから4番目と前から7番目がいいな",
    "ko": "저는 뒤에서 네 번째랑 앞에서 일곱 번째가 좋아요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 72.86,
@@ -225,7 +225,7 @@
    "speaker": "밀크",
    "ja": "みゃみゃみゃみゃみゃみゃ",
    "ko": "먀먀먀먀먀먀",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 74.5,
@@ -233,7 +233,7 @@
    "speaker": "유키",
    "ja": "ふむふむ、後ろから3番目だって",
    "ko": "흠흠, 뒤에서 세 번째래.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 77.9,
@@ -241,7 +241,7 @@
    "speaker": "사나에",
    "ja": "あのー、私、その1つ後の料理を…",
    "ko": "저어, 저는 그 하나 다음 요리를…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 82.42,
@@ -249,7 +249,7 @@
    "speaker": "츠카사",
    "ja": "あ、俺やっぱ2つ後ろのやつに変更ね",
    "ko": "아, 난 역시 두 개 뒤 걸로 바꿀래.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 84.78,
@@ -257,7 +257,7 @@
    "speaker": "아리스",
    "ja": "私、追加で最後から5番目のが欲しいなー",
    "ko": "저는 추가로 끝에서 다섯 번째 것도 먹고 싶어요~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 88.32,
@@ -265,7 +265,7 @@
    "speaker": "웨이트리스",
    "ja": "おーほっほっほ、了解了解",
    "ko": "오호호호, 알겠어요 알겠어요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 91.84,
@@ -273,7 +273,7 @@
    "speaker": "웨이트리스",
    "ja": "ではではオーダー。ビッグちゃんぽん2つ、焼きおにぎり4つ",
    "ko": "그럼 주문 들어갑니다. 빅 짬뽕 둘, 구운 주먹밥 넷",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 96.25,
@@ -281,7 +281,7 @@
    "speaker": "웨이트리스",
    "ja": "ハムサンド3、ローストビーフサラダ、チリドッグ、エビチャーハン、オール2",
    "ko": "햄 샌드위치 셋, 로스트비프 샐러드, 칠리도그, 새우볶음밥 전부 둘",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ハムサンド3ローストビーフサラダチリドックエビチャーハンオール2"
   },
@@ -291,7 +291,7 @@
    "speaker": "웨이트리스",
    "ja": "白玉あんみつアイスクリームのせ、肉じゃが2つにビーフシチュー",
    "ko": "아이스크림 얹은 경단 안미츠, 고기감자조림 둘에 비프스튜",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 104.3,
@@ -299,7 +299,7 @@
    "speaker": "웨이트리스",
    "ja": "麻婆豆腐に、あと江戸前中トロ3人前",
    "ko": "마파두부, 그리고 참치 뱃살 초밥 3인분",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 106.88,
@@ -307,7 +307,7 @@
    "speaker": "웨이트리스",
    "ja": "あ、これサビ抜きね",
    "ko": "아, 이건 와사비 빼고요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 108.3,
@@ -315,7 +315,7 @@
    "speaker": "웨이트리스",
    "ja": "あと味噌バターチャーシュー細麺2人前、いちごショート4つに",
    "ko": "그리고 된장버터 차슈 라멘 가는 면 2인분, 딸기 케이크 넷에",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: あと味噌バタチャーシュー細め2人前いちごショート4つに"
   },
@@ -325,7 +325,7 @@
    "speaker": "웨이트리스",
    "ja": "サバラン2つ、コーヒーフロートとアイスウーロンは食前に3つずつ",
    "ko": "사바랭 둘, 커피 플로트랑 아이스 우롱차는 식전에 셋씩",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 115.28,
@@ -333,7 +333,7 @@
    "speaker": "웨이트리스",
    "ja": "麻婆の豆腐は木綿でお願いしまーす",
    "ko": "마파두부 두부는 단단한 걸로 부탁해요~",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: マーボンの豆腐は木綿でお願いします"
   },
@@ -343,7 +343,7 @@
    "speaker": "유키",
    "ja": "そうきたわね",
    "ko": "그렇게 나오시겠다?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 121.0,
@@ -351,7 +351,7 @@
    "speaker": "유키",
    "ja": "じゃあ御崎恭子の名前でツケといてね",
    "ko": "그럼 미사키 쿄코 이름으로 외상 달아 둬.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: じゃあ三崎京子の名前で付けといてね"
   },
@@ -361,7 +361,7 @@
    "speaker": "웨이트리스",
    "ja": "お客さん、ツケの支払いは3日以内でお願いしますよ",
    "ko": "손님, 외상은 사흘 안에 갚아 주세요~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 128.98,
@@ -369,7 +369,7 @@
    "speaker": "유키",
    "ja": "あんた、きっと畳の上じゃ死ねないから、そう思いなさいよ",
    "ko": "너, 분명 곱게 죽지는 못할 테니까 각오해 둬.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

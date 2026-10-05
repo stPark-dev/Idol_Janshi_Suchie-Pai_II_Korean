@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "普段は真面目で器用なメイドのサナエさん。",
    "ko": "평소엔 성실하고 솜씨 좋은 메이드 사나에 씨.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.84,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "しかし、彼女のストレスと緊張が頂点に達した時、",
    "ko": "하지만 스트레스와 긴장이 정점에 달하면",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.7,
@@ -26,7 +26,7 @@
    "speaker": "스치파이",
    "ja": "ダークでグレートな暗黒の雀士チェリーパイへと変身するの。",
    "ko": "다크하고 그레이트한 암흑의 작사 체리파이로 변신해.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ダークでグレートな暗黒のジャンシーチェリーパンへと変身するの。"
   }

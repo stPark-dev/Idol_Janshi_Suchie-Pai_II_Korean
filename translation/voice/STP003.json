@@ -10,7 +10,7 @@
    "speaker": "에리카",
    "ja": "あんたたち、ちょっと止まりなさい",
    "ko": "너희들, 잠깐 멈춰!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.14,
@@ -18,7 +18,7 @@
    "speaker": "아리스",
    "ja": "は、はい。あれ?なんか派手なお巡りさんですね",
    "ko": "네, 네. 어라? 왠지 화려한 경찰관이네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.44,
@@ -26,7 +26,7 @@
    "speaker": "쿄코",
    "ja": "あ、エリカさん",
    "ko": "아, 에리카 씨.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.76,
@@ -34,7 +34,7 @@
    "speaker": "쿄코",
    "ja": "でもエリカさんって、確かアメリカで婦警さんになったって聞いたけど",
    "ko": "근데 에리카 씨는 분명 미국에서 여경이 됐다고 들었는데",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: でもエリカさんって確かアメリカで不敬さんになったって聞いたけど"
   },
@@ -44,7 +44,7 @@
    "speaker": "쿄코",
    "ja": "まだ生きてたんですか?",
    "ko": "아직 살아 계셨어요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.84,
@@ -52,7 +52,7 @@
    "speaker": "에리카",
    "ja": "生きてるわよ。悪い?",
    "ko": "살아 있거든? 불만 있어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 19.46,
@@ -60,7 +60,7 @@
    "speaker": "아리스",
    "ja": "へー、じゃあお姉さん本物のアメリカンポリスなんですか",
    "ko": "와, 그럼 언니는 진짜 아메리칸 폴리스예요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 24.06,
@@ -68,7 +68,7 @@
    "speaker": "아리스",
    "ja": "すごいですね",
    "ko": "대단하네요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.94,
@@ -76,7 +76,7 @@
    "speaker": "에리카",
    "ja": "えへー、まあねー",
    "ko": "에헤~ 뭐, 그렇지~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.5,
@@ -84,7 +84,7 @@
    "speaker": "에리카",
    "ja": "でも思い出すわー",
    "ko": "그래도 생각나네~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 29.98,
@@ -92,7 +92,7 @@
    "speaker": "에리카",
    "ja": "偽警官だのコスプレ姉ちゃんだの散々バカにされて",
    "ko": "가짜 경찰이니 코스프레 언니니 실컷 놀림받고",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 33.88,
@@ -100,7 +100,7 @@
    "speaker": "에리카",
    "ja": "それでもくじけずに苦労に苦労を重ねて",
    "ko": "그래도 꺾이지 않고 고생에 고생을 거듭해서",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.2,
@@ -108,7 +108,7 @@
    "speaker": "에리카",
    "ja": "やっとアメリカで夢を実現させたってわけなのよ",
    "ko": "마침내 미국에서 꿈을 이뤘다는 거지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.0,
@@ -116,7 +116,7 @@
    "speaker": "에리카",
    "ja": "まさにアメリカンドリームってとこねー",
    "ko": "그야말로 아메리칸 드림이랄까~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 44.04,
@@ -124,7 +124,7 @@
    "speaker": "아리스",
    "ja": "人生山あり谷ありですねー",
    "ko": "인생엔 오르막도 내리막도 있네요~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 46.92,
@@ -132,7 +132,7 @@
    "speaker": "아리스",
    "ja": "でも日本に帰ってくると",
    "ko": "그런데 일본에 돌아오면",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 49.82,
@@ -140,15 +140,15 @@
    "speaker": "아리스",
    "ja": "またただのコスプレ姉ちゃんに逆戻りなのがちょっと悲しいですね",
    "ko": "도로 그냥 코스프레 언니가 되는 게 좀 슬프네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 54.66,
    "end": 56.08,
    "speaker": "에리카",
    "ja": "ほっといてくんない?",
-   "ko": "내버려 둘래?",
-   "status": "needs_human_review"
+   "ko": "신경 꺼 줄래?",
+   "status": "distribution_eligible"
   }
  ]
 }

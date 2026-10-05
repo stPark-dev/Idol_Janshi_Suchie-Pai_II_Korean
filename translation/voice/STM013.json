@@ -10,7 +10,7 @@
    "speaker": "시호",
    "ja": "あら、スーチーパイさん、そしてミルキーパイさん",
    "ko": "어머, 스치파이 씨. 그리고 밀키파이 씨.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.3,
@@ -18,7 +18,7 @@
    "speaker": "시호",
    "ja": "嬉しいわ、来てくださって",
    "ko": "와 주셔서 기뻐요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.44,
@@ -26,7 +26,7 @@
    "speaker": "밀크",
    "ja": "わー、その服すげー、くれくれ、あたしにくれ",
    "ko": "와, 그 옷 끝내준다! 줘, 줘, 나 줘!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.18,
@@ -34,7 +34,7 @@
    "speaker": "시호",
    "ja": "この服は私がいただいたものです",
    "ko": "이 옷은 제가 받은 거예요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 15.2,
@@ -42,7 +42,7 @@
    "speaker": "시호",
    "ja": "お譲りするわけには参りませんわ",
    "ko": "양보해 드릴 수는 없어요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.42,
@@ -50,7 +50,7 @@
    "speaker": "쿄코",
    "ja": "しほさん、誰かに操られてるのね",
    "ko": "시호 씨, 누군가에게 조종당하고 있구나.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.16,
@@ -58,7 +58,7 @@
    "speaker": "쿄코",
    "ja": "誰?正体を現しなさいよ!",
    "ko": "누구야? 정체를 드러내!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.56,
@@ -66,7 +66,7 @@
    "speaker": "밀크",
    "ja": "ばっはっはー、バレちゃしょうがないぴょん",
    "ko": "바하하하, 들켰으면 어쩔 수 없다뿅.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.9,
@@ -74,7 +74,7 @@
    "speaker": "밀크",
    "ja": "私が大ボスだぴょん!",
    "ko": "내가 대보스다뿅!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 31.92,
@@ -82,7 +82,7 @@
    "speaker": "쿄코",
    "ja": "ほー、で、何のつもりなの、ミルキーパイ",
    "ko": "호오, 그래서 무슨 속셈이야, 밀키파이?",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ほー で何のつもりなのミルクいっぱい"
   },
@@ -92,18 +92,18 @@
    "speaker": "밀크",
    "ja": "それ、シホよ、スーチーになんとか言ってやるみゃ",
    "ko": "자, 시호! 스치한테 뭐라고 좀 해 줘라먀!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: それしほよ スーチになんとか言ってみるみゃ"
   },
   {
    "start": 39.2,
    "end": 41.76,
-   "speaker": "시호(추정)",
+   "speaker": "쿄코(추정)",
    "ja": "あんたの言うことなんか聞くわけないでしょうが",
-   "ko": "당신 말 따위 들을 리가 없잖아요.",
-   "status": "needs_review",
-   "note": "2차 검수: 화자 불확실: 「でしょうが」 말투가 시호답지 않음(쿄코일 수도). 화자에 따라 존댓말 여부가 달라짐"
+   "ko": "네 말 따위 들을 리가 없잖아.",
+   "status": "distribution_eligible",
+   "note": "2차 검수: 화자 불확실: 「でしょうが」 말투가 시호답지 않음(쿄코일 수도). 화자에 따라 존댓말 여부가 달라짐 / 최종 검수: 「でしょうが」 말투로 보아 쿄코로 봄"
   },
   {
    "start": 42.32,
@@ -111,7 +111,7 @@
    "speaker": "밀크",
    "ja": "バカ、アホ、マヌケ、イカサマ女",
    "ko": "바보, 멍청이, 얼간이, 사기꾼 여자!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 46.32,
@@ -119,7 +119,7 @@
    "speaker": "밀크",
    "ja": "ほら、じゃあ麻雀で勝負を挑むみゃ",
    "ko": "자, 그럼 마작으로 승부를 걸어라먀.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ほー じゃあマージャンで勝負を挑むみゃ"
   },
@@ -129,7 +129,7 @@
    "speaker": "밀크",
    "ja": "やい、イカサマ女、麻雀で勝負しやがれ",
    "ko": "야, 사기꾼 여자! 마작으로 승부해라!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 53.4,
@@ -137,7 +137,7 @@
    "speaker": "쿄코",
    "ja": "ミルキー、あんたまさか",
    "ko": "밀키, 너 설마…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 55.52,
@@ -145,7 +145,7 @@
    "speaker": "밀크",
    "ja": "はっはっはー、ほれ勝負勝負",
    "ko": "하하하, 자 승부다 승부!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: はっはっはーほでしょぶしょぶ"
   }

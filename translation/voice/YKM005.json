@@ -10,7 +10,7 @@
    "speaker": "유키",
    "ja": "というわけで、ルミさん、ミルクを借りていくけどいいわよね",
    "ko": "그래서 말인데 루미 씨, 밀크 좀 빌려 갈게. 괜찮지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.84,
@@ -18,7 +18,7 @@
    "speaker": "루미",
    "ja": "そうね、まあ本人がOKすればいいんじゃないの",
    "ko": "글쎄, 뭐 본인이 좋다면 괜찮지 않겠어?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 10.38,
@@ -26,7 +26,7 @@
    "speaker": "유키",
    "ja": "ミルクちゃん、とっても美味しい人参あげるから",
    "ko": "밀크야, 엄청 맛있는 당근 줄 테니까",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.5,
@@ -34,7 +34,7 @@
    "speaker": "유키",
    "ja": "ユキのお手伝いしてほしいな",
    "ko": "유키 좀 도와줬으면 좋겠어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.5,
@@ -42,7 +42,7 @@
    "speaker": "밀크",
    "ja": "ミャー",
    "ko": "먀~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.54,
@@ -50,7 +50,7 @@
    "speaker": "유키",
    "ja": "ほらほら、この人参さん、こんなに太いから",
    "ko": "자자, 이 당근 좀 봐. 이렇게 굵으니까",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.65,
@@ -58,7 +58,7 @@
    "speaker": "유키",
    "ja": "きっと変身しないとかじれないわよ",
    "ko": "분명 변신 안 하면 못 갉아 먹을걸.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.22,
@@ -66,7 +66,7 @@
    "speaker": "밀크",
    "ja": "しょうがないミャー",
    "ko": "어쩔 수 없다먀~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 27.38,
@@ -74,7 +74,7 @@
    "speaker": "유키",
    "ja": "これでミルキーパイも手なずけたわ",
    "ko": "이걸로 밀키파이도 길들였어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 30.26,
@@ -82,7 +82,7 @@
    "speaker": "유키",
    "ja": "次はつかささんを攻略しましょう",
    "ko": "다음은 츠카사 씨를 공략하자.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

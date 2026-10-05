@@ -10,7 +10,7 @@
    "speaker": "시호",
    "ja": "シホは身も心もセシル様に捧げたのです",
    "ko": "시호는 몸도 마음도 세실 님께 바쳤답니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.44,
@@ -18,7 +18,7 @@
    "speaker": "시호",
    "ja": "もう…",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

@@ -9,24 +9,24 @@
    "end": 2.7,
    "speaker": "아리스",
    "ja": "絶対?どうしても?",
-   "ko": "꼭이요? 무슨 일이 있어도요?",
-   "status": "needs_human_review"
+   "ko": "꼭? 무슨 일이 있어도?",
+   "status": "distribution_eligible"
   },
   {
    "start": 3.64,
    "end": 7.68,
    "speaker": "아리스",
    "ja": "じゃあ、うーん、ちょっと待ってて",
-   "ko": "그럼… 으음, 잠깐 기다려 주세요.",
-   "status": "needs_human_review"
+   "ko": "그럼… 으음, 잠깐 기다려 줘.",
+   "status": "distribution_eligible"
   },
   {
    "start": 8.9,
    "end": 11.06,
    "speaker": "아리스",
    "ja": "はーい",
-   "ko": "자, 여기요!",
-   "status": "needs_human_review"
+   "ko": "자, 여기!",
+   "status": "distribution_eligible"
   }
  ]
 }

@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "でも麻雀自体はあまりよくわかってないみたいね",
    "ko": "그런데 마작 자체는 잘 모르는 것 같아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.3,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "まあ所詮は動物だから餌で手なずけるのが一番一番",
    "ko": "뭐, 어차피 동물이니까 먹이로 길들이는 게 최고지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

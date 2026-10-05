@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "ま、期待に応えるのもヒロインの務めね",
    "ko": "뭐, 기대에 부응하는 것도 히로인의 의무지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.94,
@@ -18,15 +18,15 @@
    "speaker": "스치파이",
    "ja": "脱ぐからあっち向いてて",
    "ko": "벗을 테니까 저쪽 보고 있어.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.68,
    "end": 10.6,
    "speaker": "스치파이",
    "ja": "こんなことしてるから世間の風当たりが厳しいんだわ、きっと",
-   "ko": "이런 짓을 하니까 세상 눈초리가 따가운 거야, 분명.",
-   "status": "needs_human_review"
+   "ko": "분명 이런 짓을 하니까 세상 눈초리가 따가운 거야.",
+   "status": "distribution_eligible"
   },
   {
    "start": 13.22,
@@ -34,7 +34,7 @@
    "speaker": "스치파이",
    "ja": "心の準備だってあるんだから",
    "ko": "마음의 준비라는 것도 있다고.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.16,
@@ -42,7 +42,7 @@
    "speaker": "스치파이",
    "ja": "はい",
    "ko": "자!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

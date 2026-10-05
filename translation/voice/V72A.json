@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "あら?",
    "ko": "어라?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.4,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "わあ!",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.88,
@@ -26,7 +26,7 @@
    "speaker": "스치파이",
    "ja": "やあ!",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.06,
@@ -34,7 +34,7 @@
    "speaker": "스치파이",
    "ja": "あ、やあ!",
    "ko": "",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.06,
@@ -42,7 +42,7 @@
    "speaker": "스치파이",
    "ja": "うふっ、もう!電池切れなんてあんまりよ!",
    "ko": "정말! 배터리가 다 되다니 너무해!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

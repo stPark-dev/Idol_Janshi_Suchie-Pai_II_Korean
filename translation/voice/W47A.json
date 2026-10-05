@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "変身ゲージMAX、ピーチ、お願いね!",
    "ko": "변신 게이지 MAX! 피치, 부탁해!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 変身ゲージマックス、ビーチ、お願いね!"
   },
@@ -20,7 +20,7 @@
    "speaker": "피치파이(아리스)",
    "ja": "がんばりまーす!",
    "ko": "힘낼게요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

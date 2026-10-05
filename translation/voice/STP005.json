@@ -10,7 +10,7 @@
    "speaker": "쿄코",
    "ja": "うふふ、わかったわ、つかささん。あなたは紛れもなく人間よ",
    "ko": "우후후, 알았어, 츠카사 씨. 넌 틀림없는 인간이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.08,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "それもとっても素敵な女性だわ",
    "ko": "그것도 아주 멋진 여자야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.72,
@@ -26,7 +26,7 @@
    "speaker": "츠카사",
    "ja": "よく言うぜ",
    "ko": "말은 잘하네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 10.76,
@@ -34,7 +34,7 @@
    "speaker": "아리스",
    "ja": "じゃあ、私たちがピンチの時にはズバーっと変形して助けに来てね",
    "ko": "그럼 저희가 위기일 땐 휙 변형해서 도와주러 와요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 14.9,
@@ -42,7 +42,7 @@
    "speaker": "츠카사",
    "ja": "変形じゃねえよ。変身と言え、変身と",
    "ko": "변형이 아니라고. 변신이라고 해, 변신.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.96,
@@ -50,7 +50,7 @@
    "speaker": "쿄코",
    "ja": "またマニアなこと",
    "ko": "또 마니아 같은 소리.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 20.02,
@@ -58,7 +58,7 @@
    "speaker": "츠카사",
    "ja": "お前ら本当に俺を人間だと思ってんのかよ",
    "ko": "너희들 진짜 날 인간이라고 생각하는 거냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

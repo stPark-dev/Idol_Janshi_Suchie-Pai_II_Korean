@@ -9,8 +9,8 @@
    "end": 5.0,
    "speaker": "유키",
    "ja": "こうして再びユキはイカサマ軍団の毒牙にかかってしまったのね",
-   "ko": "이리하여 유키는 또다시 사기꾼 군단의 독니에 걸리고 말았구나.",
-   "status": "needs_human_review",
+   "ko": "이리하여 유키는 또다시 사기꾼 군단의 마수에 걸리고 말았구나.",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: こうして再びユキはイカサマ軍団の毒蛾にかかってしまったのね"
   },
@@ -20,7 +20,7 @@
    "speaker": "유키",
    "ja": "悲劇だわ",
    "ko": "비극이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 9.0,
@@ -28,7 +28,7 @@
    "speaker": "유키",
    "ja": "それはそうと、レモンさんの正体当ててみせましょうか",
    "ko": "그건 그렇고, 레몬 씨의 정체를 맞혀 볼까?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.64,
@@ -36,7 +36,7 @@
    "speaker": "유키",
    "ja": "ズバリ、ミホちゃんでしょ。シホさんの妹の",
    "ko": "바로 미호지? 시호 씨 동생 말이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.0,
@@ -44,7 +44,7 @@
    "speaker": "츠카사",
    "ja": "誰だそりゃ",
    "ko": "그게 누군데.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.12,
@@ -52,7 +52,7 @@
    "speaker": "쿄코",
    "ja": "うふふ、確かに似てるけど、残念ながら別人よ",
    "ko": "우후후, 확실히 닮긴 했지만 아쉽게도 다른 사람이야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.34,
@@ -60,7 +60,7 @@
    "speaker": "쿄코",
    "ja": "ミホちゃんは見た目は男の子っぽいけど中身はお上品でしょ",
    "ko": "미호는 겉모습은 남자애 같아도 속은 얌전하잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.7,
@@ -68,7 +68,7 @@
    "speaker": "쿄코",
    "ja": "それに引き換え、レモンは中身も外見もガサツそのものだもんね",
    "ko": "그에 비해 레몬은 속도 겉도 거칠기 짝이 없으니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 30.84,
@@ -76,7 +76,7 @@
    "speaker": "츠카사",
    "ja": "おい",
    "ko": "야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 32.22,
@@ -84,7 +84,7 @@
    "speaker": "유키",
    "ja": "なんだ",
    "ko": "뭐야~",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 33.02,
@@ -92,7 +92,7 @@
    "speaker": "유키",
    "ja": "でも最近シホさんの様子が変なのよ",
    "ko": "그런데 요즘 시호 씨 상태가 이상해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.68,
@@ -100,7 +100,7 @@
    "speaker": "유키",
    "ja": "結構気にしてんだけど",
    "ko": "꽤 신경 쓰이거든.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 38.26,
@@ -108,7 +108,7 @@
    "speaker": "쿄코",
    "ja": "知っているわ、もちろんね",
    "ko": "알고 있어, 물론이지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 40.32,
@@ -116,7 +116,7 @@
    "speaker": "쿄코",
    "ja": "だって私は正義のヒロインだもん",
    "ko": "왜냐면 난 정의의 히로인이니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

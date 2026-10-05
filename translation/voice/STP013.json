@@ -10,7 +10,7 @@
    "speaker": "시호",
    "ja": "あら、スーチーパイさん、そしてピーチパイさん",
    "ko": "어머, 스치파이 씨, 그리고 피치파이 씨.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.7,
@@ -18,7 +18,7 @@
    "speaker": "시호",
    "ja": "嬉しいわ、来てくださって",
    "ko": "와 주셔서 기뻐요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.38,
@@ -26,7 +26,7 @@
    "speaker": "쿄코",
    "ja": "あなたがシホさんね。でも、ちょっと様子がおかしいわ",
    "ko": "당신이 시호 씨구나. 그런데 좀 이상한데.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 12.8,
@@ -34,7 +34,7 @@
    "speaker": "쿄코",
    "ja": "ピーチ、あなたも気がついた?",
    "ko": "피치, 너도 눈치챘지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 16.02,
@@ -42,7 +42,7 @@
    "speaker": "아리스",
    "ja": "ええ。シックなお嬢様風だって聞いていたけど、本当はずいぶんと派手派手なのね",
    "ko": "네. 차분한 아가씨풍이라고 들었는데 실제론 꽤 번쩍번쩍하네요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 21.7,
@@ -50,7 +50,7 @@
    "speaker": "쿄코",
    "ja": "こんな時になんだけど、あんた推理力ないの?",
    "ko": "이런 말 하긴 뭐하지만, 너 추리력 없니?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.26,
@@ -58,7 +58,7 @@
    "speaker": "쿄코",
    "ja": "あれはきっと誰かに無理やり着せられてるに決まってるじゃない",
    "ko": "저건 분명 누가 억지로 입힌 거잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.26,
@@ -66,7 +66,7 @@
    "speaker": "시호",
    "ja": "このドレスはセシル様に頂いたのです",
    "ko": "이 드레스는 세실 님께 받은 것입니다.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: このドレスはセシロ様に頂いたのです"
   },
@@ -76,7 +76,7 @@
    "speaker": "시호",
    "ja": "だって私は今日結婚するんですもの",
    "ko": "저는 오늘 결혼하거든요.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 36.2,
@@ -84,7 +84,7 @@
    "speaker": "쿄코",
    "ja": "何ですって!?",
    "ko": "뭐라고!?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 37.06,
@@ -92,7 +92,7 @@
    "speaker": "아리스",
    "ja": "わあ、おめでとう",
    "ko": "와아, 축하해요!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 38.58,
@@ -100,7 +100,7 @@
    "speaker": "쿄코",
    "ja": "あちゃ…もういいわ、そこがあんたのいいところだもんね",
    "ko": "아이고… 됐다. 그게 네 장점이니까.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 44.96,
@@ -108,15 +108,15 @@
    "speaker": "시호",
    "ja": "でも一つ困ったことがあるのです",
    "ko": "그런데 한 가지 곤란한 일이 있습니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 48.82,
    "end": 52.62,
    "speaker": "시호",
    "ja": "私まだ結納の品を納めていないのです",
-   "ko": "저는 아직 유이노 예물을 바치지 않았거든요.",
-   "status": "needs_human_review",
+   "ko": "저는 아직 유이노 예물을 보내지 않았거든요.",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 私まだユイノオの品を収めていないのです"
   },
@@ -126,7 +126,7 @@
    "speaker": "아리스",
    "ja": "ユイノウって何?",
    "ko": "유이노가 뭐예요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 54.72,
@@ -134,7 +134,7 @@
    "speaker": "쿄코",
    "ja": "名古屋名物の…",
    "ko": "나고야 명물인…",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 57.54,
@@ -142,7 +142,7 @@
    "speaker": "시호",
    "ja": "それはういろうです",
    "ko": "그건 우이로입니다.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "note": "말장난: 結納(유이노, 약혼 예물)와 나고야 명물 과자 ういろう(우이로)의 소리가 비슷함"
   },
   {
@@ -151,7 +151,7 @@
    "speaker": "시호",
    "ja": "結納品とは婚約の際に納める金品のことです",
    "ko": "유이노 예물이란 약혼할 때 보내는 금품을 말합니다.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 優位納品とは婚約の際に納める金品のことです"
   },
@@ -161,7 +161,7 @@
    "speaker": "아리스",
    "ja": "えー、どうしよう。キョウコさん今いくら持ってる?",
    "ko": "에, 어떡해요. 쿄코 씨 지금 얼마 있어요?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 67.84,
@@ -169,7 +169,7 @@
    "speaker": "쿄코",
    "ja": "今はスーチーパイだってば",
    "ko": "지금은 스치파이라니까!",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: 今は数値一杯だってば"
   },
@@ -179,7 +179,7 @@
    "speaker": "쿄코",
    "ja": "細かいの合わせて4000円くらい持ってるけど",
    "ko": "잔돈까지 합쳐서 4000엔쯤 있긴 한데",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 72.98,
@@ -187,7 +187,7 @@
    "speaker": "쿄코",
    "ja": "きっとそんなことはどうでもいいことだと思うわ",
    "ko": "분명 그런 건 아무 상관 없을 거야.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 75.58,
@@ -195,7 +195,7 @@
    "speaker": "시호",
    "ja": "ご安心ください。お金は必要ありません",
    "ko": "안심하십시오. 돈은 필요 없습니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 79.96,
@@ -203,7 +203,7 @@
    "speaker": "시호",
    "ja": "生贄が必要なのです",
    "ko": "제물이 필요합니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 82.78,
@@ -211,7 +211,7 @@
    "speaker": "시호",
    "ja": "それが私なのです",
    "ko": "그게 바로 저입니다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 85.06,
@@ -219,7 +219,7 @@
    "speaker": "아리스",
    "ja": "それは変だわ。嫁兼生贄なんて無理よ。どっちかにするべきだわ",
    "ko": "그건 이상해요. 신부 겸 제물은 무리예요. 하나만 하셔야죠.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 90.4,
@@ -227,7 +227,7 @@
    "speaker": "쿄코",
    "ja": "ピーチ、あんたはあんまり喋らない方がいいわ",
    "ko": "피치, 넌 말 좀 줄이는 게 좋겠다.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 93.98,
@@ -235,7 +235,7 @@
    "speaker": "쿄코",
    "ja": "それはそうと、どうやら麻雀勝負でシホさんの目を覚ましてあげなくちゃいけないようね",
    "ko": "그건 그렇고, 마작 승부로 시호 씨 정신을 차리게 해 줘야겠네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

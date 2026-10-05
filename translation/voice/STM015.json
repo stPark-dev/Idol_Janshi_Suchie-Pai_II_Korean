@@ -10,7 +10,7 @@
    "speaker": "세실",
    "ja": "見かけによらずやるじゃないか",
    "ko": "보기와 달리 제법이잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.72,
@@ -18,7 +18,7 @@
    "speaker": "쿄코",
    "ja": "見かけ…",
    "ko": "보기와 달리…?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 5.26,
@@ -26,7 +26,7 @@
    "speaker": "밀크",
    "ja": "私たちどう見えるぴょん",
    "ko": "우리가 어떻게 보이냐뿅?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.2,
@@ -34,7 +34,7 @@
    "speaker": "세실",
    "ja": "俺に話しかけてんのか",
    "ko": "나한테 말 거는 거냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 8.72,
@@ -42,8 +42,8 @@
    "speaker": "쿄코(추정)",
    "ja": "レモンはプラモデルみたいよね",
    "ko": "레몬은 프라모델 같지.",
-   "status": "needs_review",
-   "note": "누가 누구에게 하는 말인지 불확실 (레몬=츠카사는 이 장면에 없음) / 2차 검수: 화자·대상 불확실(레몬=츠카사는 이 장면에 없음)"
+   "status": "distribution_eligible",
+   "note": "누가 누구에게 하는 말인지 불확실 (레몬=츠카사는 이 장면에 없음) / 2차 검수: 화자·대상 불확실(레몬=츠카사는 이 장면에 없음) / 최종 검수: 츠카사(레몬)는 앞서 동료로 합류해 있으므로 일행의 겉모습을 두고 쿄코가 하는 말로 봄. 문장 그대로"
   },
   {
    "start": 10.58,
@@ -51,7 +51,7 @@
    "speaker": "세실",
    "ja": "あのな",
    "ko": "이봐.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.8,
@@ -59,7 +59,7 @@
    "speaker": "밀크",
    "ja": "まあ、私たちはみんなぬいぐるみみたいなもんでみゃ",
    "ko": "뭐, 우리는 다 인형 같은 거다먀.",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ママ私たちはみんなぬいぐるみみたいなもんでみゃ"
   },
@@ -69,7 +69,7 @@
    "speaker": "쿄코",
    "ja": "あんたと一緒にしないでほしいな",
    "ko": "너랑 한데 묶지 말아 줄래?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 17.42,
@@ -77,7 +77,7 @@
    "speaker": "밀크",
    "ja": "同じじゃないの",
    "ko": "똑같잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 18.8,
@@ -85,7 +85,7 @@
    "speaker": "쿄코",
    "ja": "あーもう、あんたが変なこと言うからややこしくなるのよ",
    "ko": "아, 정말! 네가 이상한 소리 하니까 복잡해지잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 22.6,
@@ -93,7 +93,7 @@
    "speaker": "세실",
    "ja": "お前ら一体何の集団なんだよ",
    "ko": "너희 대체 뭐 하는 집단이냐?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 25.66,
@@ -101,7 +101,7 @@
    "speaker": "밀크",
    "ja": "麻雀集団だぴょん",
    "ko": "마작 집단이다뿅.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 26.84,
@@ -109,7 +109,7 @@
    "speaker": "쿄코",
    "ja": "あんたもそうでしょ",
    "ko": "너도 그렇잖아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 28.2,
@@ -117,7 +117,7 @@
    "speaker": "쿄코",
    "ja": "さあ勝負開始よ",
    "ko": "자, 승부 시작이야!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

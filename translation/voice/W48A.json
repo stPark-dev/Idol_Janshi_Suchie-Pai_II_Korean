@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "変身ゲージMAX!頼むわ、レモン!",
    "ko": "변신 게이지 MAX! 부탁해, 레몬!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 3.05,
@@ -18,7 +18,7 @@
    "speaker": "레몬파이(츠카사)",
    "ja": "俺の出番だな!",
    "ko": "내 차례로군!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

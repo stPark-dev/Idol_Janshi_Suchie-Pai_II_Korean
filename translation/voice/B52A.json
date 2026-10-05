@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "ま、彼女は今人間界で修行中の身ってやつだから、",
    "ko": "뭐, 이 아이는 지금 인간계에서 수행 중인 몸이라",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: ま、彼女は今人間界で修行中のみってやつだから、"
   },
@@ -20,7 +20,7 @@
    "speaker": "스치파이",
    "ja": "私の頼みも当然聞いてくれるわけよね。",
    "ko": "내 부탁도 당연히 들어준다는 거지.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.74,
@@ -28,7 +28,7 @@
    "speaker": "스치파이",
    "ja": "うん。",
    "ko": "응.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 7.48,
@@ -36,7 +36,7 @@
    "speaker": "스치파이",
    "ja": "じゃあ、一緒に頑張りましょ。",
    "ko": "그럼, 같이 힘내자!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

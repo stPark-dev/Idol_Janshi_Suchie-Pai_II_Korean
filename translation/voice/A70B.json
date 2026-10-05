@@ -10,7 +10,7 @@
    "speaker": "츠카사",
    "ja": "なんだよ、脱げばいいんだろ?",
    "ko": "뭐야, 벗으면 되는 거지?",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.32,
@@ -18,7 +18,7 @@
    "speaker": "츠카사",
    "ja": "参ったぜ",
    "ko": "미치겠네.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 11.58,
@@ -26,7 +26,7 @@
    "speaker": "츠카사",
    "ja": "もう",
    "ko": "아, 진짜!",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   }
  ]
 }

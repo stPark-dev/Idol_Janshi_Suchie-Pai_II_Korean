@@ -10,7 +10,7 @@
    "speaker": "스치파이",
    "ja": "必殺技はピンキッシュフローレア",
    "ko": "필살기는 핑키시 플로레아.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 2.68,
@@ -18,7 +18,7 @@
    "speaker": "스치파이",
    "ja": "なんかトイレの芳香剤って感じだけど",
    "ko": "왠지 화장실 방향제 같은 이름이지만",
-   "status": "needs_human_review",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: なんかトイレの方向剤って感じだけど"
   },
@@ -28,15 +28,15 @@
    "speaker": "스치파이",
    "ja": "効果は抜群",
    "ko": "효과는 확실해.",
-   "status": "needs_human_review"
+   "status": "distribution_eligible"
   },
   {
    "start": 6.24,
    "end": 9.9,
    "speaker": "스치파이",
    "ja": "リーチで上がれば暗刻ってる手牌に裏ドラがついちゃうのよ",
-   "ko": "리치로 화료하면 안커가 된 손패에 뒷도라가 붙거든.",
-   "status": "needs_human_review",
+   "ko": "리치로 화료하면 안커가 있는 손패에 뒷도라가 붙거든.",
+   "status": "distribution_eligible",
    "asr_uncertain": true,
    "note": "받아쓰기를 문맥으로 고침: リーチで上がればアンコッテル手配に裏ドラがついちゃうのよ"
   }
