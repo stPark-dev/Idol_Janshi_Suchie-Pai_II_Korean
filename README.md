@@ -72,6 +72,17 @@ v1.0에 들어 있는 것:
 
 조사 기록은 [`docs/initial-survey.md`](docs/initial-survey.md)에 있습니다.
 
+## 배포 파일
+
+원본 디스크 이미지는 배포하지 않고, 사용자가 가진 원본에 씌우는 BPS 패치를 배포합니다. 적용 방법은 zip 안 `README.txt`(원문 [`docs/release/README.txt`](docs/release/README.txt))에 있습니다.
+
+| zip 안 폴더 | 원본 | v1.1 패치 결과 |
+|---|---|---|
+| `Redump/` | Redump 판 1번 트랙 BIN (SHA-1 `90efa69e3b3f89503e356d6d6f5112ff8a541f1d`) | 한글판 1번 트랙 (SHA-1 `2a540f4791b886a5c588d3b6d842e35af7a021a8`). 한글판 cue가 원본 2번 트랙을 그대로 읽음 |
+| `CHD/` | CHD를 `chdman extractcd`로 푼 BIN 하나(Redump 두 트랙을 합친 것과 같음, SHA-1 `c943e23cdd74bb223e1cb2de7fb10e3c27379042`) | 음악까지 든 한글판 BIN 하나 (SHA-1 `5dce0e65ff95c1d0c755e19366fd162d77d77431`) |
+
+패치는 Floating IPS(flips)로 적용합니다. zip은 `python tools/mkrelease.py --source "원본.cue" --build out/v11 --version 1.1`로 만들며(`out/release/`), 쓰기 전에 각 패치를 원본에 다시 적용해 빌드와 같은지 확인합니다. v1.1 zip `Suchie-Pai2_KR_v1.1.zip` 3,015,953바이트, SHA-1 `5b83de69cdb52a617a829287c872500d541589c6`. 빌드는 WSL Ubuntu(Pillow 10.4, raqm)에서 커밋 `22694bb`로 한 것입니다. 두 방식 모두 패치를 적용한 결과를 Mednafen에서 부팅해 확인했습니다.
+
 ## 준비물
 
 - Python 3.11 이상, [Pillow](https://pypi.org/project/Pillow/) 9.4 이상(raqm 글자 배치 포함 — Windows에서는 WSL에서 빌드), pytest (테스트용)
