@@ -29,9 +29,9 @@ ORIG_FUNC_SHA1 = "7e315f8624d3acf5f124188a9eef0cddbd74d948"   # original 0x06004
 STUB = 0x06004614
 BASE = 0x060F6800
 MAGIC = 0x4B485355          # "KHSU"
-CODE_MAX = 0x1400           # SUB.BIN code; the index follows at BASE + CODE_MAX
-SUB_MAX = 0x2800            # code + index, read in whole sectors up to the group data area
-GROUP_MAX = 0x5800          # one group of SUBDAT.BIN at 0x060F9000..0x060FE800
+CODE_MAX = 0x1C00           # SUB.BIN code; the index follows at BASE + CODE_MAX
+SUB_MAX = 0x3000            # code + index, read in whole sectors up to the group data area
+GROUP_MAX = 0x5000          # one unpacked group at 0x060F9800..0x060FE800
 INDEX_MAGIC = 0x4B484958    # "KHIX"
 GROUP_MAGIC = 0x4B484732    # "KHG2"
 
