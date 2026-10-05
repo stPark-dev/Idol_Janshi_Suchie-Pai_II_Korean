@@ -287,15 +287,27 @@ static int voice_slot_on(void)
     return 0;
 }
 
+static u8 off_count = 0;
+
+/* key-on starts the clock; after that, a voice slot that stays off ends the voice (the
+   player skipped the scene, or a voice stopped early), so no line outlives its sound */
 static void watch_keyon(u32 now)
 {
-    if (started || cur_voice < 0)
+    if (cur_voice < 0)
         return;
+    if (started) {
+        if (voice_slot_on())
+            off_count = 0;
+        else if (++off_count >= 12)
+            cur_voice = -1;
+        return;
+    }
     if (!voice_slot_on()) {
         seen_off = 1;
     } else if (seen_off) {
         anchor = now;
         started = 1;
+        off_count = 0;
         logit(3, 0, cur_voice, (u8)(now - called));
         return;
     }
