@@ -32,6 +32,17 @@
 
 **v1.1 — 음성 자막판** (2026-10-05, 빌드가 배포 가능으로 판정): v1.0에 대사 음성 한국어 자막을 더했습니다. 대국 전 대화 94개, 벌칙·파트너 소개·변신·오프닝 등 장면 음성 100개, 모두 2,078줄. 자막은 대사가 들리는 순간에 맞춰 화면 아래에 최대 두 줄로 나옵니다. 번역은 음성 인식(Whisper) 받아쓰기 → 초벌 → 독립 2차 검수 → 최종 검수를 거쳤습니다. 최종 검수는 프로젝트 소유자가 일본어를 읽지 못해 Claude에게 맡겼고, 음성을 직접 듣지 못한 채 받아쓰기 두 벌과 문맥으로 판단했습니다. 뜻이 불확실한 줄은 각 줄 `note`에 남겼습니다([`docs/voice-subtitles.md`](docs/voice-subtitles.md)). 파트너 네 경로(아리스·츠카사·사나에·밀크)를 처음부터 세실전 뒤까지 에뮬레이터로 확인했고, 유키 경로·엔딩 일부 갈래·실기는 확인하지 않았습니다.
 
+**v1.2 — 스치유키짱판** (2026-10-16, 빌드가 배포 가능으로 판정):
+- **멈춤 수정:** 스테이지 선택에서 「스치 유키」를 고르면 「스치파이 보너스 극장」 다음에 멈추던 문제를 고쳤습니다(사용자 보고, 모바일 RetroArch).
+  - 원인은 원본 게임에 있습니다. 이 장면의 320×240 풀컬러 그림이 작업 버퍼를 넘쳐 BSS 끝 뒤 `0x060FBD13`까지 씁니다.
+  - v1.1은 자막 코드를 바로 그 자리에 두었습니다. v1.2는 자막 코드를 그 위로 옮겼고, 넘침이 닿는 색인·자막 데이터는 체크섬으로 확인합니다([`docs/voice-subtitles.md`](docs/voice-subtitles.md) 3.1절).
+  - v1.1 상태 저장(세이브 스테이트)은 옛 코드를 담고 있어 같은 곳에서 다시 멈춥니다. 게임 세이브는 그대로 쓸 수 있습니다.
+- **추가한 그림 글자:**
+  - 「스치 유키」 경로(스치파이 보너스 극장)의 타이틀 로고 「미소녀작사 스치유키짱」. 로고 이미지는 프로젝트 소유자가 만들었고, 날아오는 로고와 멈춘 타이틀 모두 바뀝니다.
+  - 이야기 카드 「스치유키짱 대활약! 사기꾼 작사의 정체를 밝혀라!! 편」(`YUKIOP.BIN`)
+  - 유키 엔딩 크레딧 아래 노래 가사 18줄(`ED_YUKI.DAT`)
+- **확인:** 유키 경로를 타이틀부터 엔딩·크레딧 뒤까지 libretro Beetle Saturn 코어와 사용자 세이브로 진행했습니다. 그 사이의 자막(유키 등장, 벌칙, 대화)도 나왔습니다([`docs/initial-survey.md`](docs/initial-survey.md) 3.22절).
+
 v1.0에 들어 있는 것:
 
 - 한글 타이틀 로고 (제공 로고 `title_logo.png`를 원래 스프라이트 3칸과 팔레트에 맞춰 넣음, 승인)
@@ -60,6 +71,8 @@ v1.0에 들어 있는 것:
 | [`translation/title_labels.json`](translation/title_labels.json) | 타이틀 선택지 1개와 제외 항목 10개 |
 | [`translation/credits/`](translation/credits/) | 엔딩 크레딧 롤 다섯 벌(줄마다 한 항목, 배치 `assets/ending/`) |
 | [`translation/clear.json`](translation/clear.json) | 엔딩 뒤 화면 글자 그림 14장(`CLEAR.DAT`) |
+| [`translation/yukiop.json`](translation/yukiop.json) | 스치유키짱(스테이지 선택 「스치 유키」) 타이틀 로고(소유자 제작 `yuki_title_ko.png`)와 이야기 카드(`YUKIOP.BIN`, 배치 `assets/yuki/layout.json`) |
+| [`translation/lyrics_yuki.json`](translation/lyrics_yuki.json) | 유키 엔딩 크레딧 아래 노래 가사 18줄(`ED_YUKI.DAT`) |
 | [`translation/voice/`](translation/voice/) | 음성 자막: 음성 파일마다 한 개(시작·끝 초, 말한 사람, 일본어, 한국어, 상태). 그룹·촉발 파일은 [`assets/subtitle/scenes.json`](assets/subtitle/scenes.json) |
 | [`translation/boot_notice.json`](translation/boot_notice.json) | 첫 부팅 안내 5줄과 제외 항목 3개 |
 | [`translation/boot_unready.json`](translation/boot_unready.json), [`boot_ram.json`](translation/boot_ram.json), [`boot_savefail.json`](translation/boot_savefail.json) | 백업 RAM 안내 화면 8장(전체 화면 글자 그림, 배치 `assets/boot/notices_layout.json`) |
@@ -76,18 +89,18 @@ v1.0에 들어 있는 것:
 
 원본 디스크 이미지는 배포하지 않고, 사용자가 가진 원본에 씌우는 BPS 패치를 배포합니다. 적용 방법은 zip 안 `README.txt`(원문 [`docs/release/README.txt`](docs/release/README.txt))에 있습니다.
 
-| zip 안 폴더 | 원본 | v1.1 패치 결과 |
+| zip 안 폴더 | 원본 | v1.2 패치 결과 |
 |---|---|---|
-| `Redump/` | Redump 판 1번 트랙 BIN (SHA-1 `90efa69e3b3f89503e356d6d6f5112ff8a541f1d`) | 한글판 1번 트랙 (SHA-1 `2a540f4791b886a5c588d3b6d842e35af7a021a8`). 한글판 cue가 원본 2번 트랙을 그대로 읽음 |
-| `CHD/` | CHD를 `chdman extractcd`로 푼 BIN 하나(Redump 두 트랙을 합친 것과 같음, SHA-1 `c943e23cdd74bb223e1cb2de7fb10e3c27379042`) | 음악까지 든 한글판 BIN 하나 (SHA-1 `5dce0e65ff95c1d0c755e19366fd162d77d77431`) |
+| `Redump/` | Redump 판 1번 트랙 BIN (SHA-1 `90efa69e3b3f89503e356d6d6f5112ff8a541f1d`) | 한글판 1번 트랙 (SHA-1 `dc200fc6ccc09cffa6ec97724586831bc8351f30`). 한글판 cue가 원본 2번 트랙을 그대로 읽음 |
+| `CHD/` | CHD를 `chdman extractcd`로 푼 BIN 하나(Redump 두 트랙을 합친 것과 같음, SHA-1 `c943e23cdd74bb223e1cb2de7fb10e3c27379042`) | 음악까지 든 한글판 BIN 하나 (SHA-1 `9b91fa80cfd7e9a8a29b9282e2dc2d677fc9b6cd`) |
 
-패치는 Floating IPS(flips)로 적용합니다. zip은 `python tools/mkrelease.py --source "원본.cue" --build out/v11 --version 1.1`로 만들며(`out/release/`), 쓰기 전에 각 패치를 원본에 다시 적용해 빌드와 같은지 확인합니다. v1.1 zip `Suchie-Pai2_KR_v1.1.zip` 3,015,953바이트, SHA-1 `5b83de69cdb52a617a829287c872500d541589c6`. 빌드는 WSL Ubuntu(Pillow 10.4, raqm)에서 커밋 `22694bb`로 한 것입니다. 두 방식 모두 패치를 적용한 결과를 Mednafen에서 부팅해 확인했습니다.
+패치는 Floating IPS(flips)로 적용합니다. zip은 `python tools/mkrelease.py --source "원본.cue" --build out/v12 --version 1.2`로 만들며(`out/release/`), 쓰기 전에 각 패치를 원본에 다시 적용해 빌드와 같은지 확인합니다. v1.2 zip `Suchie-Pai2_KR_v1.2.zip` 3,281,529바이트, SHA-1 `1c171113dfd4148b03bc6f9988dd907dd0ca81e2`. 빌드는 데비안 12(Pillow 9.4, raqm)에서 v1.2 릴리스 커밋으로 한 것입니다. 같은 한글판을 CHD로 묶어 libretro Beetle Saturn 코어에서 유키 경로 전체를 확인했습니다. (v1.1 zip `Suchie-Pai2_KR_v1.1.zip` SHA-1 `5b83de69cdb52a617a829287c872500d541589c6`, 커밋 `22694bb`.)
 
 ## 준비물
 
 - Python 3.11 이상, [Pillow](https://pypi.org/project/Pillow/) 9.4 이상(raqm 글자 배치 포함 — Windows에서는 WSL에서 빌드), pytest (테스트용)
-- 자막 코드 `assets/subtitle/SUB.BIN`을 다시 만들 때만: 빅엔디언 SH 크로스 gcc(`apt install gcc-sh4-linux-gnu`) 후 `sh tools/subtitle/build.sh`
-- 나눔스퀘어라운드 ExtraBold (`/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf`, 데비안 `fonts-nanum-extra`)
+- 자막 코드 `assets/subtitle/SUB.BIN`을 다시 만들 때만: 빅엔디언 SH 크로스 gcc(`apt install gcc-sh4-linux-gnu`) 후 `sh tools/subtitle/build.sh`. 커밋된 `SUB.BIN`과 바이트까지 같게 하려면 Ubuntu 24.04의 gcc 13을 씁니다(데비안 12의 gcc 12는 SH-2에 없는 명령을 만들어 검사에서 거부됨)
+- 나눔스퀘어라운드 ExtraBold·Bold, 나눔바른펜 Bold (`/usr/share/fonts/truetype/nanum/NanumSquareRoundEB.ttf`, `NanumSquareRoundB.ttf`, `NanumBarunpenB.ttf`, 데비안 `fonts-nanum`·`fonts-nanum-extra`)
 - 원본 1번 디스크 BIN/CUE (Redump `Idol Janshi Suchie-Pai II (Japan) (Disc 1)`). 트랙 SHA-1이 다르면 빌드가 거부합니다.
   - Track 1: `90efa69e3b3f89503e356d6d6f5112ff8a541f1d`
   - Track 2: `5328aad6e81dc43b59ccde73ada1f51c930be5e4`
@@ -99,7 +112,7 @@ v1.0에 들어 있는 것:
 python3 tools/khpatch.py build --source "/경로/Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
 
 # 대조군: 타이틀 그림은 그대로 두고 압축만 다시 한 디스크 (압축기 호환 확인용)
-python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original --bonus original --ending original --subtitles original
+python3 tools/khpatch.py build --source "/경로/...(Disc 1).cue" --out out/control --title original --select1 original --match original --cards original --opening original --boot original --panel original --bonus original --ending original --subtitles original --yuki original
 
 # 테스트
 python3 -m pytest -q tests
@@ -139,6 +152,7 @@ python3 -m pytest -q tests
 
 | 버전 | 의미 |
 |---|---|
+| **v1.2** | 스치유키짱판. v1.1 + 「스치 유키」 경로 멈춤 수정, 스치유키짱 로고·이야기 카드, 유키 엔딩 가사 18줄 |
 | **v1.1** | 음성 자막판. v1.0 + 대사 음성 자막 2,078줄(최종 검수는 소유자 위임으로 Claude가 함) |
 | **v1.0** | **정식판**. 1번 디스크의 모든 그림 글자가 사람 검수를 통과한 첫 버전 |
 | v0.x | 개발판. 검수 전 번역이 들어 있음 |
@@ -147,6 +161,7 @@ python3 -m pytest -q tests
 
 - 이 저장소에는 원본 디스크 이미지나, 원본에서 뽑아낸 그래픽·글꼴·음성 덤프를 넣지 않습니다.
 - 원작 게임의 권리는 쟈레코와 각 권리자에게 있습니다. 합법적으로 가진 원본에만 적용하세요.
-- 나눔스퀘어라운드는 SIL Open Font License입니다(저장소에 포함하지 않고 시스템 글꼴을 사용).
+- 나눔스퀘어라운드·나눔바른펜은 SIL Open Font License입니다(저장소에 포함하지 않고 시스템 글꼴을 사용).
 - 번역 표의 `ja` 필드에는 그림 글자에서 옮겨 적은 원문 문자열이 들어 있습니다(재삽입·검수에 필요).
 - `cd_ko.png`(한글판 표지)와 `title_logo.png`(한글 로고)는 프로젝트 소유자가 만든 이미지이며, 원작 캐릭터 그림과 로고 디자인을 바탕으로 합니다. 배포에 쓸 이용 권리는 프로젝트 소유자가 확인함(2026-10-02).
+- `assets/yuki/yuki_title_ko.png`(「미소녀작사 스치유키짱」 로고)도 프로젝트 소유자가 만든 이미지(2026-10-16)이며, 원작 로고 디자인을 바탕으로 합니다.
