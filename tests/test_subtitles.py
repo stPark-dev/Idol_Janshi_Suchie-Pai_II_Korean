@@ -159,3 +159,78 @@ def test_sub_bin_checks_sizes():
         S.sub_bin(bytes(S.CODE_MAX + 1), S.empty_index())
     img = S.sub_bin(bytes(16), S.empty_index())
     assert len(img) == S.CODE_MAX + 8 and img[S.CODE_MAX:S.CODE_MAX + 4] == b"KHIX"
+
+
+# ---- RAM layout: the Suchie-Yuki picture overflow -------------------------------------------
+# The game unpacks a 320x240 16-bit picture (153600 bytes) to its work buffer 0x060D6514 in the
+# Suchie-Yuki scenes; the buffer ends at the BSS end 0x060F6518, so the picture runs on to
+# 0x060FBD14.  Whatever must survive it (the code that the hooks run) lies above.
+def test_code_and_cell_buffers_lie_above_the_picture_overflow():
+    assert S.PICTURE_END == 0x060D6514 + 320 * 240 * 2
+    assert S.BASE >= S.PICTURE_END
+    assert S.BASE + S.CODE_MAX == S.CELLUSE
+    assert S.CELLUSE + 0x200 <= S.CELLBUF and S.CELLBUF + 160 * 32 == 0x06100000
+    # the stub reads SUB.BIN (code + index) to BASE in whole sectors
+    assert S.SUB_MAX % 2048 == 0 and S.BASE + S.SUB_MAX <= 0x06100000
+    assert S.CODE_MAX + S.INDEX_MAX <= S.SUB_MAX
+
+
+def test_index_and_group_data_lie_between_the_bss_end_and_the_code():
+    assert S.INDEX >= 0x060F6518
+    assert S.INDEX + S.INDEX_MAX <= S.DATA and S.DATA + S.GROUP_MAX == S.BASE
+
+
+def test_sub_c_and_linker_script_use_the_build_addresses():
+    import re
+    from pathlib import Path
+    src = Path(__file__).resolve().parents[1] / "tools" / "subtitle"
+    c = src.joinpath("sub.c").read_text()
+    defs = {k: int(v, 16) for k, v in re.findall(r"#define (\w+)\s+\(?\(?[\w *]*\)?\s*(0x[0-9A-Fa-f]+)u?\)?", c)}
+    for name in ("BASE", "INDEX", "DATA", "CELLUSE", "CELLBUF", "GROUP_MAX", "CODE_MAX", "INDEX_MAX"):
+        assert defs[name] == getattr(S, name), name
+    ld = src.joinpath("sub.ld").read_text()
+    assert int(re.search(r"\. = (0x[0-9A-Fa-f]+);", ld).group(1), 16) == S.BASE
+    assert int(re.search(r"_end <= (0x[0-9A-Fa-f]+)", ld).group(1), 16) == S.BASE + S.CODE_MAX
+    crt = src.joinpath("crt.S").read_text()
+    assert f"BASE = {S.BASE:#010X}".replace("0X", "0x") in crt
+
+
+def test_small_groups_unpack_at_the_end_of_the_data_area():
+    # the "Yuki appears" group: 906 bytes in one sector
+    read_at, unpack_at = S.group_place(off=1000, packed=700, size=906)
+    assert read_at == 0
+    assert unpack_at == S.GROUP_MAX - 908                      # word aligned, ends at BASE
+    assert S.DATA + unpack_at >= S.PICTURE_END                 # out of the picture's reach
+    assert read_at + 2048 <= unpack_at                         # the sectors stay clear of the output
+
+
+def test_large_groups_unpack_in_place_from_the_start():
+    read_at, unpack_at = S.group_place(off=5000, packed=9000, size=16756)
+    area = ((5000 + 9000 - 1) // 2048 - 5000 // 2048 + 1) * 2048
+    assert (read_at, unpack_at) == (S.GROUP_MAX - area, 0)
+
+
+def test_index_must_fit_its_ram_copy():
+    g = S.build_group(0, [{"voice": "A.AIF", "lines": [{"start": 0, "end": 1, "ko": "가"}]}], label.DEFAULT_FONT)
+    many = [f"F{i:07d}.BIN" for i in range(S.INDEX_MAX // 16)]
+    with pytest.raises(S.SubtitleError, match="index"):
+        S.build_index([g], [many])
+
+
+def test_yuki_appearance_group_unpacks_above_the_picture():
+    """The picture is unpacked after YUKIOP.BIN has loaded its group: the group must sit above."""
+    import json
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[1]
+    scenes = json.loads((root / "assets" / "subtitle" / "scenes.json").read_text(encoding="utf-8"))
+    docs = S.load_voice_docs(root / "translation" / "voice")
+    code = bytes(0x10) + struct.pack(">I", S.MAGIC)
+    sub, subdat, _ = S.build_data(code, scenes, docs, label.DEFAULT_FONT)
+    index = sub[S.CODE_MAX:]
+    _, ntrig, ngroups = struct.unpack(">IHH", index[:8])
+    tab = index[8 + 8 * ngroups:]
+    groups = {tab[16 * i + 12] for i in range(ntrig) if tab[16 * i:16 * i + 12].rstrip(bytes(1)) == b"YUKIOP.BIN"}
+    assert groups
+    for g in groups:
+        off, packed, size = struct.unpack(">IHH", index[8 + 8 * g:16 + 8 * g])
+        assert S.DATA + S.group_place(off, packed, size)[1] >= S.PICTURE_END

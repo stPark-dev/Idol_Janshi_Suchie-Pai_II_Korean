@@ -2,7 +2,7 @@ OUTPUT_FORMAT("elf32-shbig-linux")
 ENTRY(_start)
 SECTIONS
 {
-    . = 0x060F6800;
+    . = 0x060FC800;
     .text : { *(.text.entry) *(.text .text.*) }
     .rodata : { *(.rodata .rodata.*) }
     .data : { *(.data .data.*) }
@@ -10,4 +10,4 @@ SECTIONS
     _end = .;
     /DISCARD/ : { *(.comment) *(.note*) *(.eh_frame*) }
 }
-ASSERT(_end <= 0x060F8400, "subtitle code overruns its 7 KB (the index starts at BASE+0x1C00)")
+ASSERT(_end <= 0x060FE800, "subtitle code overruns its 8 KB (the cell use table starts at BASE+0x2000)")

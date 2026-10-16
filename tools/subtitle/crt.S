@@ -1,4 +1,4 @@
-/* SUB.BIN entry points, loaded at BASE = 0x060F6800 by the stub in the executable "0".
+/* SUB.BIN entry points, loaded at BASE = 0x060FC800 by the stub in the executable "0".
 
    The stub replaces every call of the file loader 0x06006874(name, dest).  On the first call
    it reads SUB.BIN through the loader itself (the CD is idle then), purges the cache and

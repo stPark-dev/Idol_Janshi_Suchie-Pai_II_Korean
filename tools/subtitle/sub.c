@@ -1,8 +1,8 @@
 /* Voice subtitles (SUB.BIN) for Idol Janshi Suchie-Pai II, Saturn, disc 1.
 
-   SUB.BIN = this code (up to 0x1C00 bytes) + the index of groups and trigger files appended by
-   the build at BASE+0x1C00.  It is read once by the stub in the executable on the first
-   file load, then installs its hooks in RAM:
+   SUB.BIN = this code (up to 0x2000 bytes) + the index of groups and trigger files appended by
+   the build at BASE+0x2000.  It is read once by the stub in the executable on the first
+   file load, copies the index to its RAM place, then installs its hooks in RAM:
      - every literal holding the voice player 0x06055C80 / its wrapper 0x06055E88
        -> BASE+0x18 / BASE+0x1C (sub_on_play, then the original);
      - the vblank callback's call of 0x0608C9E4 (library frame end, VDP2 register upload)
@@ -25,6 +25,14 @@
    fields are written right after the library's upload, and restored from the copies
    afterwards.
 
+   RAM: everything lies above the game's BSS end 0x060F6518, which nothing else uses except
+   one thing: the Suchie-Yuki scenes unpack a 320x240 16-bit picture into the work buffer
+   0x060D6514, and it runs on to 0x060FBD14.  This code (the hooks run it every frame) and
+   the cell buffers lie above that; the index and the group data lie below and are checked
+   before use: a damaged index is read again on the next file load, a damaged group shows
+   nothing until its scene file loads it again.  A group that fits beside its sectors is
+   unpacked at the end of the data area, above the picture.
+
    Built with sh4-linux-gnu-gcc -m4-nofpu -mb -Os; check_sh2.py rejects any opcode the SH-2
    does not have.  No libc, no division, no variable shifts. */
 
@@ -33,9 +41,11 @@ typedef unsigned short u16;
 typedef unsigned int u32;
 typedef short s16;
 
-#define BASE        0x060F6800u
-#define INDEX       ((const u8 *)0x060F8400)    /* BASE + 0x1C00, appended by the build */
-#define DATA        ((const u8 *)0x060F9800)    /* group data, up to GROUP_MAX bytes */
+#define BASE        0x060FC800u
+#define CODE_MAX    0x2000                      /* the index follows the code in SUB.BIN */
+#define INDEX       ((u8 *)0x060F6600)          /* RAM copy of the index */
+#define INDEX_MAX   0x1200
+#define DATA        ((u8 *)0x060F7800)          /* group data, up to GROUP_MAX bytes, ending at BASE */
 #define GROUP_MAX   0x5000
 #define CELLBUF     ((u32 *)0x060FEC00)         /* 160 NBG3 cells, up to 0x06100000 */
 #define INDEX_MAGIC 0x4B484958u                 /* "KHIX" */
@@ -114,6 +124,8 @@ static const u32 play2_lits[] = {
 
 static int hooked = 0;
 
+static void copy_index(const u8 *src);
+
 static void patch(const u32 *lits, unsigned n, u32 orig, u32 hook)
 {
     for (unsigned i = 0; i < n; i++) {
@@ -128,6 +140,7 @@ static void install_hooks(void)
     if (hooked)
         return;
     hooked = 1;
+    copy_index((const u8 *)BASE + CODE_MAX);   /* still there: the stub has just read SUB.BIN */
     patch(play_lits, sizeof play_lits / 4, 0x06055C80, BASE + 0x18);
     patch(play2_lits, sizeof play2_lits / 4, 0x06055E88, BASE + 0x1C);
     if (*(volatile u32 *)0x060046F8 == 0x0608C9E4)
@@ -136,7 +149,7 @@ static void install_hooks(void)
 }
 
 /* ---- index and group data ------------------------------------------------------------ */
-/* index (BASE+0x1C00): header, ngroups x {byte offset in SUBDAT.BIN, packed and unpacked sizes}, then the
+/* index (RAM copy at INDEX): header, ngroups x {byte offset in SUBDAT.BIN, packed and unpacked sizes}, then the
    trigger files: a group is read when the game loads one of its scene files (the CD is
    busy loading anyway), never while a scene runs.  A file may trigger several groups (a
    scene file shared by variants); then the loaded group is kept if it lists the file. */
@@ -161,9 +174,76 @@ struct glyph { u16 width, bits; };
 #define GFS_LOAD    ((int (*)(int, int, void *, int))0x060902C2)
 
 static int loaded_group = -1;
+static const u8 *grp = DATA;        /* where the loaded group was unpacked */
+static u32 grp_bytes = 0, grp_sum = 0;
+static u32 idx_bytes = 0, idx_sum = 0;
 
 static u32 shr_n(u32 x, int n) { while (n-- > 0) x = shr1(x); return x; }
 static u32 shl_n(u32 x, int n) { while (n-- > 0) x = shl1(x); return x; }
+
+/* index and group data lie where the Suchie-Yuki picture can land: kept with a sum */
+static u32 sum32(const u8 *p, u32 bytes)
+{
+    u32 s = 0;
+    for (const u32 *w = (const u32 *)p, *e = (const u32 *)(p + bytes); w < e; w++)
+        s += *w;
+    return s;
+}
+
+static void copy_index(const u8 *src)
+{
+    const struct index_header *h = (const struct index_header *)src;
+    if (h->magic != INDEX_MAGIC)
+        return;
+    u32 bytes = 8 + shl_n(h->ngroups, 3) + shl_n(h->ntriggers, 4);
+    if (bytes > INDEX_MAX || (idx_bytes && bytes != idx_bytes))
+        return;
+    for (u32 i = 0; i < bytes; i += 4)
+        *(u32 *)(INDEX + i) = *(const u32 *)(src + i);
+    if (!idx_bytes) {
+        idx_bytes = bytes;
+        idx_sum = sum32(INDEX, bytes);
+    }
+}
+
+static int index_ok(void)
+{
+    return idx_bytes && sum32(INDEX, idx_bytes) == idx_sum;
+}
+
+/* the index is in SUB.BIN from CODE_MAX (a sector boundary) on; read through the data area */
+static void reload_index(void)
+{
+    u32 bytes = (idx_bytes + 2047) & ~2047u;
+    if (!bytes)
+        return;
+    CD_READY = 0;
+    VOICE_STOP();
+    int fid = GFS_NAME2ID("SUB.BIN");
+    int n = fid >= 0 ? GFS_LOAD(fid, CODE_MAX / 2048, DATA, (int)bytes) : -1;
+    CD_READY = 1;
+    if (n > 0) {
+        purge_cache();
+        copy_index(DATA);
+        if (grp < DATA + bytes)     /* a group at the end of the area stays */
+            loaded_group = -1;
+    } else {
+        loaded_group = -1;
+    }
+    logit(5, "SUB", index_ok(), 0);
+}
+
+/* header only: cheap enough for every vblank (the picture overwrites a group from its start) */
+static int group_head_ok(void)
+{
+    const struct group_header *h = (const struct group_header *)grp;
+    return loaded_group >= 0 && h->magic == GROUP_MAGIC && h->group == loaded_group;
+}
+
+static int group_ok(void)
+{
+    return group_head_ok() && sum32(grp, grp_bytes) == grp_sum;
+}
 
 /* The game's LZSS format (tools/suchie2/lzss.py) without its 4-byte header: flag byte read
    LSB first, 1 = literal, 0 = reference lo, hi: window position lo | (hi & 0xF0) << 4,
@@ -204,16 +284,23 @@ static int load_group(int g)
 {
     const struct index_header *ih = (const struct index_header *)INDEX;
     const struct index_group *gr = (const struct index_group *)(INDEX + 8) + g;
-    if (loaded_group == g)
+    if (loaded_group == g && group_ok())
         return 1;
     loaded_group = -1;
     if (g >= ih->ngroups)
         return 0;
-    /* the sectors holding the packed group go to the end of the data area; the group is
-       unpacked from there to its start (the build checks the output never overtakes the input) */
+    /* the same rule as group_place() in the build: a group that fits beside its sectors is
+       unpacked at the end of the data area (above the picture), with the sectors at the
+       start; a larger one in place, sectors at the end and output from the start (the build
+       checks the output never overtakes the input) */
     u32 first = shr_n(gr->offset, 11), last = shr_n(gr->offset + gr->packed - 1, 11);
     u32 bytes = shl_n(last - first + 1, 11);
-    u8 *buf = (u8 *)DATA + GROUP_MAX - bytes;
+    u32 size = (gr->size + 3) & ~3u;
+    u8 *buf = DATA, *out = DATA + GROUP_MAX - size;
+    if (bytes > GROUP_MAX - size) {
+        buf = DATA + GROUP_MAX - bytes;
+        out = DATA;
+    }
     CD_READY = 0;
     VOICE_STOP();
     int fid = GFS_NAME2ID("SUBDAT.BIN");
@@ -221,10 +308,13 @@ static int load_group(int g)
     CD_READY = 1;
     if (n > 0) {
         purge_cache();
-        unlzss(buf + (gr->offset & 2047), gr->packed, (u8 *)DATA);
-        const struct group_header *h = (const struct group_header *)DATA;
-        if (h->magic == GROUP_MAGIC && h->group == g)
-            loaded_group = g;
+        unlzss(buf + (gr->offset & 2047), gr->packed, out);
+        grp = out;
+        grp_bytes = size;
+        grp_sum = sum32(out, size);
+        loaded_group = g;
+        if (!group_head_ok())
+            loaded_group = -1;
     }
     logit(4, "SUBDAT", loaded_group == g, g);
     return loaded_group == g;
@@ -242,16 +332,23 @@ static int same_name(const char *game, const char *stored, int n, int stop_at_do
 
 static void on_trigger(const char *name)
 {
+    if (!index_ok()) {
+        reload_index();
+        if (!index_ok())
+            return;
+    }
     const struct index_header *h = (const struct index_header *)INDEX;
-    if (h->magic != INDEX_MAGIC)
-        return;
     const struct trigger *t = (const struct trigger *)(INDEX + 8 + shl2(shl1(h->ngroups)));
     int first = -1;
     for (int i = 0; i < h->ntriggers; i++, t++) {
         if (!same_name(name, t->name, 12, 0))
             continue;
-        if (t->group == loaded_group)
-            return;                 /* the loaded group already covers this scene file */
+        if (t->group == loaded_group) {
+            if (group_ok())
+                return;             /* the loaded group already covers this scene file */
+            first = t->group;       /* damaged: read it again */
+            break;
+        }
         if (first < 0)
             first = t->group;
     }
@@ -262,10 +359,10 @@ static void on_trigger(const char *name)
 /* the voice's number in the loaded group, or -1 */
 static int find_voice(const char *name)
 {
-    if (loaded_group < 0)
+    if (!group_ok())
         return -1;
-    const struct group_header *h = (const struct group_header *)DATA;
-    const char *n = (const char *)(DATA + h->names);
+    const struct group_header *h = (const struct group_header *)grp;
+    const char *n = (const char *)(grp + h->names);
     for (int i = 0; i < h->nvoices; i++, n += 8)
         if (same_name(name, n, 8, 1))
             return i;
@@ -497,7 +594,7 @@ static int pick_window(void)
 }
 
 /* VRAM the scene's cell layers use: their map planes and every character their maps name,
-   as a bit per 128-byte slot (4096 slots, kept in the free RAM after the group data). */
+   as a bit per 128-byte slot (4096 slots, kept in the free RAM after the code). */
 #define CELLUSE     ((u8 *)0x060FE800)
 
 static const u8 bit8[8] = { 1, 2, 4, 8, 16, 32, 64, 128 };
@@ -818,14 +915,14 @@ static int place_free(void)
 /* one line of glyphs into the cell buffer: line 0 = cells 0..79, line 1 = 80..159 */
 static void n3_line(int line, const u16 *text, int n, int x)
 {
-    const struct group_header *h = (const struct group_header *)DATA;
-    const struct glyph *gl = (const struct glyph *)(DATA + h->glyphs);
+    const struct group_header *h = (const struct group_header *)grp;
+    const struct glyph *gl = (const struct glyph *)(grp + h->glyphs);
     u8 *buf = (u8 *)CELLBUF;
     int base = line ? 2 * N3_COLS : 0;
     for (int i = 0; i < n; i++) {
         const struct glyph *g = gl + text[i];
         int w = g->width, pitch = shr2(w + 3);
-        const u8 *bits = DATA + h->bits + g->bits;
+        const u8 *bits = grp + h->bits + g->bits;
         for (int y = 0; y < GLYPH_ROWS; y++, bits += pitch) {
             int rowcell = base + (y < 8 ? 0 : N3_COLS);
             int yoff = shl2(y & 7);
@@ -857,10 +954,14 @@ static void n3_draw(int idx)
 {
     for (int i = 0; i < N3_CELLS * 8; i++)
         CELLBUF[i] = 0;
+    if (idx >= 0 && !group_ok()) {
+        idx = -1;                   /* the group was overwritten: nothing more for this voice */
+        cur_voice = -1;
+    }
     if (idx >= 0) {
-        const struct group_header *h = (const struct group_header *)DATA;
-        const struct cue *c = (const struct cue *)(DATA + h->cues) + idx;
-        const u16 *text = (const u16 *)(DATA + h->text) + c->text;
+        const struct group_header *h = (const struct group_header *)grp;
+        const struct cue *c = (const struct cue *)(grp + h->cues) + idx;
+        const u16 *text = (const u16 *)(grp + h->text) + c->text;
         if (c->n1)
             n3_line(0, text, c->n1, c->x1);
         if (c->n2)
@@ -884,10 +985,10 @@ static void n3_draw(int idx)
 
 static int cue_now(u32 now)
 {
-    if (cur_voice < 0 || !started || loaded_group < 0)
+    if (cur_voice < 0 || !started || !group_head_ok())
         return -1;
-    const struct group_header *h = (const struct group_header *)DATA;
-    const struct cue *c = (const struct cue *)(DATA + h->cues);
+    const struct group_header *h = (const struct group_header *)grp;
+    const struct cue *c = (const struct cue *)(grp + h->cues);
     u32 t = now - anchor;
     for (int i = 0; i < h->ncues; i++)
         if (c[i].voice == cur_voice && t >= c[i].start && t < c[i].end)

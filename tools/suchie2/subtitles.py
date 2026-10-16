@@ -27,11 +27,21 @@ LOADER = 0x06006874
 FUNC, FUNC_END = 0x060045EC, 0x0600466C
 ORIG_FUNC_SHA1 = "7e315f8624d3acf5f124188a9eef0cddbd74d948"   # original 0x060045EC..0x0600466C
 STUB = 0x06004614
-BASE = 0x060F6800
 MAGIC = 0x4B485355          # "KHSU"
-CODE_MAX = 0x1C00           # SUB.BIN code; the index follows at BASE + CODE_MAX
-SUB_MAX = 0x3000            # code + index, read in whole sectors up to the group data area
-GROUP_MAX = 0x5000          # one unpacked group at 0x060F9800..0x060FE800
+# RAM after the BSS end 0x060F6518 is free, except that the Suchie-Yuki scenes unpack a
+# 320x240 16-bit picture into the work buffer 0x060D6514 and it runs past the BSS end up to
+# PICTURE_END.  The code (the hooks run it every frame) and the cell buffers lie above; the
+# index and the group data lie below and are checked before use (sub.c).
+PICTURE_END = 0x060D6514 + 320 * 240 * 2        # 0x060FBD14
+BASE = 0x060FC800
+CODE_MAX = 0x2000           # SUB.BIN code; the index follows at BASE + CODE_MAX in the file
+SUB_MAX = 0x3800            # code + index, read in whole sectors from BASE up to 0x06100000
+INDEX = 0x060F6600          # RAM copy of the index (sub.c copies it from BASE + CODE_MAX)
+INDEX_MAX = 0x1200
+DATA = 0x060F7800           # one unpacked group, up to GROUP_MAX bytes, ending at BASE
+GROUP_MAX = 0x5000
+CELLUSE = 0x060FE800        # VRAM slot bits (512 bytes)
+CELLBUF = 0x060FEC00        # 160 NBG3 cells, up to 0x06100000
 INDEX_MAGIC = 0x4B484958    # "KHIX"
 GROUP_MAGIC = 0x4B484732    # "KHG2"
 
@@ -472,6 +482,18 @@ def pack_group(data: bytes) -> bytes:
     return stream
 
 
+def group_place(off: int, packed: int, size: int) -> tuple[int, int]:
+    """(where the group's sectors are read, where it is unpacked), as offsets in the data area;
+    the same rule as sub.c load_group().  A group that fits beside its sectors is unpacked at
+    the end of the area, where the Suchie-Yuki picture does not reach; a larger one is
+    unpacked in place: sectors at the end, output from the start (never passing the input)."""
+    area = ((off + packed - 1) // cdsector.USER - off // cdsector.USER + 1) * cdsector.USER
+    top = GROUP_MAX - ((size + 3) & ~3)
+    if area <= top:
+        return 0, top
+    return GROUP_MAX - area, 0
+
+
 def build_index(groups: list[bytes], triggers: list[list[str]]) -> tuple[bytes, bytes]:
     """(index, SUBDAT.BIN) for groups (bytes) and the scene files that trigger each group.
 
@@ -483,11 +505,12 @@ def build_index(groups: list[bytes], triggers: list[list[str]]) -> tuple[bytes, 
         off = len(subdat)
         first, last = off // cdsector.USER, (off + len(stream) - 1) // cdsector.USER
         area = (last - first + 1) * cdsector.USER
-        start = GROUP_MAX - area + off % cdsector.USER        # where the stream begins in the area
         if area > GROUP_MAX or len(data) > GROUP_MAX:
             raise SubtitleError(f"group {g}: {len(data)} bytes unpacked, {area} bytes of sectors")
+        read_at, unpack_at = group_place(off, len(stream), len(data))
+        start = read_at + off % cdsector.USER                 # where the stream begins in the area
         for produced, consumed in unpack(stream)[1]:
-            if produced > start + consumed:
+            if unpack_at < start + len(stream) and unpack_at + produced > start + consumed:
                 raise SubtitleError(f"group {g}: unpacking would overwrite its own input")
         table += struct.pack(">IHH", off, len(stream), len(data))
         subdat += stream
@@ -497,8 +520,8 @@ def build_index(groups: list[bytes], triggers: list[list[str]]) -> tuple[bytes, 
                 raise SubtitleError(f"trigger file name {name} longer than 12 characters")
             entries += raw + bytes(12 - len(raw)) + struct.pack(">B3x", g)
     index = struct.pack(">IHH", INDEX_MAGIC, len(entries) // 16, len(groups)) + table + entries
-    if CODE_MAX + len(index) > SUB_MAX:
-        raise SubtitleError(f"subtitle index is {len(index)} bytes, room for {SUB_MAX - CODE_MAX}")
+    if len(index) > INDEX_MAX:
+        raise SubtitleError(f"subtitle index is {len(index)} bytes, room for {INDEX_MAX}")
     return index, subdat + bytes(-len(subdat) % cdsector.USER) if subdat else bytes(cdsector.USER)
 
 
