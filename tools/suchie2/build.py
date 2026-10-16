@@ -7,6 +7,7 @@ WritePlan over the raw Track 1 image, one write per touched sector (changes merg
 """
 import hashlib
 import json
+from collections import Counter
 import re
 import shutil
 from dataclasses import asdict, dataclass, field
@@ -14,7 +15,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import cdsector, chunkpics as chunkpics_mod, credits as credits_mod, iso9660, lzss, rle16, select1 as select1_mod, subtitles as subtitles_mod, title, wheel as wheel_mod, yc
+from . import cdsector, chunkpics as chunkpics_mod, credits as credits_mod, iso9660, lyrics as lyrics_mod, lzss, rle16, select1 as select1_mod, subtitles as subtitles_mod, title, wheel as wheel_mod, yc, yukiop as yukiop_mod
 from .writeplan import PlanError, WritePlan
 
 OUT_STEM = "Idol Janshi Suchie-Pai II (Korean) (Disc 1)"
@@ -88,6 +89,7 @@ JP_DISC1 = SourceProfile(
         "ENDY": (269989, 741060), "ED_MILK.DAT": (268417, 212260), "ED_YUKI.DAT": (268521, 240712),
         "ED_SANAE.DAT": (269381, 394836), "ED_ALIS.DAT": (269574, 343308),
         "CLEAR.DAT": (269742, 120240),  # pictures after an ending: save notice, hints (chunk file, §3.21)
+        "YUKIOP.BIN": (20892, 307200),  # Suchie-Yuki opening: title logo and story card (§3.22)
     },
     # opening character-intro name plates (docs/initial-survey.md §3.11)
     packed={"letters": ("PROLOG.BIN", 0x0, 0x3C00, "6a3247b67c3b042d7a92724be1288c4b8f3167e5"),   # big letters (§3.12)
@@ -107,7 +109,7 @@ CARD_FILES = ["APALICE.BIN", "APDEVIL.BIN", "APKYOKO.BIN", "APMILK.BIN", "APRUMI
               "APSECIL.BIN", "APSHIHO.BIN", "APSUB.BIN", "APTSUKA.BIN", "APYUKI.BIN"]
 BONUS_FILES = ["MAXGRP1.BIN", "MAXGRP2.BIN", "MAXGRP3.BIN"]
 ROLL_FILES = ["ENDY", "ED_ALIS.DAT", "ED_MILK.DAT", "ED_SANAE.DAT", "ED_YUKI.DAT"]
-assert sorted(STAGE_FILES + CARD_FILES + BONUS_FILES + ROLL_FILES + ["BACKRAM.BIN", "PMATCH.BIN", "CLEAR.DAT"]) == sorted(JP_DISC1.files)
+assert sorted(STAGE_FILES + CARD_FILES + BONUS_FILES + ROLL_FILES + ["BACKRAM.BIN", "PMATCH.BIN", "CLEAR.DAT", "YUKIOP.BIN"]) == sorted(JP_DISC1.files)
 
 
 def _sha1(path: Path) -> str:
@@ -282,6 +284,8 @@ def _plan_bundle(t1: _Track1, profile: SourceProfile, job: dict) -> list[tuple[d
     glossary = Path(job["glossary"]) if job.get("glossary") else None
     font = json.loads(layout.read_text()).get("font", select1_mod.label.DEFAULT_FONT)
     tdoc = json.loads(translation.read_text())
+    if tdoc.get("yukiop"):
+        return _plan_yukiop(t1, profile, job, tdoc)
     if "chunks" in tdoc or tdoc.get("picture_chunks"):
         return _plan_roll(t1, profile, job, tdoc, font)
     if "packed" in tdoc or "palette_file" in tdoc:
@@ -340,6 +344,22 @@ def _plan_roll(t1: _Track1, profile: SourceProfile, job: dict, tdoc: dict, font:
         new, res = render(data, translation, layout, font=font, glossary=glossary, file_name=name, palette_data=pal_data)
         if len(new) != len(data):
             raise BuildError(f"{name}: rebuilt roll file changed size {len(data)} -> {len(new)}")
+        lyrics_info = None
+        if job.get("lyrics"):     # song lines in the same file: drawn into the rebuilt roll, one write per file
+            ltr, llay = (Path(x) for x in job["lyrics"])
+            try:
+                new, lres = lyrics_mod.render(new, ltr, llay, file_name=name)
+            except lyrics_mod.LyricsError as err:
+                raise BuildError(f"{name}: {err}") from err
+            if len(new) != len(data):
+                raise BuildError(f"{name}: lyrics changed the file size {len(data)} -> {len(new)}")
+            res.ids = list(res.ids) + list(lres.ids)
+            res.states = dict(Counter(res.states) + Counter(lres.states))
+            res.distribution = res.distribution and lres.distribution
+            lfont = select1_mod.label.resolve_font(json.loads(llay.read_text())["font"])
+            lyrics_info = {"translation": _rel(ltr), "translation_sha1": _sha1(ltr), "layout": _rel(llay),
+                           "layout_sha1": _sha1(llay), "entries": lres.ids, "states": lres.states,
+                           "font": lfont, "font_sha1": _sha1(Path(lfont))}
         if roll and pf == name:   # the palette lives in the file being rewritten: its bank must stay as it was
             bank, n = select1_mod.bank_span(int(tdoc["colr"], 16))
             lo = int(tdoc["palette_offset"], 16) + 2 * bank
@@ -353,8 +373,37 @@ def _plan_roll(t1: _Track1, profile: SourceProfile, job: dict, tdoc: dict, font:
                 "layout": _rel(layout), "layout_sha1": _sha1(layout),
                 "glossary": _rel(glossary) if glossary else None, "glossary_sha1": _sha1(glossary) if glossary else None,
                 "font": font, "font_sha1": _sha1(Path(select1_mod.label.resolve_font(font)))}
+        if lyrics_info:
+            info["lyrics"] = lyrics_info
         out.append((info, changes))
     return out
+
+
+def _plan_yukiop(t1: _Track1, profile: SourceProfile, job: dict, tdoc: dict) -> list[tuple[dict, list]]:
+    """YUKIOP.BIN (yukiop.py): logo sprites, still title and story card, rebuilt at the file's size."""
+    translation, layout = Path(job["translation"]), Path(job["layout"])
+    if job["files"] != [tdoc.get("file")]:
+        raise BuildError(f"{translation.name}: table is for file {tdoc.get('file')!r}, job lists {job['files']}")
+    name = job["files"][0]
+    lba, size = _file_extent(profile, name)
+    data = _checked_file(t1, (lba, size), name)
+    try:
+        new, res = yukiop_mod.render(data, translation, layout)
+    except yukiop_mod.YukiopError as err:
+        raise BuildError(f"{name}: {err}") from err
+    if len(new) != len(data):
+        raise BuildError(f"{name}: rebuilt file changed size {len(data)} -> {len(new)}")
+    changes = [(0, new)] if new != data else []
+    lay = json.loads(layout.read_text())
+    fonts = sorted({select1_mod.label.resolve_font(ln["font"]) for ln in lay.get("story", {}).get("lines", [])})
+    logo = next((e for e in tdoc.get("entries", []) if e.get("image")), None)
+    info = {"file": name, "lba": lba, "entries": res.ids, "states": res.states, "distribution": res.distribution,
+            "changes": [[o, len(t)] for o, t in changes], "sectors": [],
+            "translation": _rel(translation), "translation_sha1": _sha1(translation),
+            "layout": _rel(layout), "layout_sha1": _sha1(layout),
+            "image": logo["image"] if logo else None, "image_sha1": logo.get("image_sha1") if logo else None,
+            "fonts": {f: _sha1(Path(f)) for f in fonts}, "output_sha1": hashlib.sha1(new).hexdigest()}
+    return [(info, changes)]
 
 
 def _checked_file(t1: _Track1, extent: tuple[int, int], name: str) -> bytes:

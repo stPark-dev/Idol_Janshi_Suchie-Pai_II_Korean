@@ -1013,3 +1013,77 @@ def test_ambiguous_chunk_tables_are_rejected(tmp_path, monkeypatch, tdoc, msg):
     with pytest.raises(build.BuildError, match=msg):
         build.build(cue, tmp_path / "out", None, profile=profile, title=False,
                     bundles=[{"files": ["STG1.BIN"], "translation": tr, "layout": lay}])
+
+
+# ---- YUKIOP.BIN job and the lyrics of a roll job ------------------------------------------
+def _fake_result(ids, state):
+    from suchie2 import select1
+    r = select1.Result()
+    r.ids, r.states, r.distribution = ids, {state: len(ids)}, state == "distribution_eligible"
+    return r
+
+
+def _read_file(track1, lba, size):
+    data = track1.read_bytes()
+    return b"".join(data[(lba + i) * 2352 + 16:(lba + i) * 2352 + 2064] for i in range((size + 2047) // 2048))[:size]
+
+
+def test_yukiop_job_writes_the_rendered_file(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    (tmp_path / "y.json").write_text(json.dumps({"yukiop": True, "file": "STG1.BIN", "entries": []}))
+    (tmp_path / "ylay.json").write_text("{}")
+    new = bytes(b ^ 0x5A for b in sel)
+    seen = {}
+
+    def fake(data, translation, layout):
+        seen["data"] = data
+        return new, _fake_result(["yukiop.logo"], "distribution_eligible")
+    monkeypatch.setattr(build.yukiop_mod, "render", fake)
+    job = {"files": ["STG1.BIN"], "translation": tmp_path / "y.json", "layout": tmp_path / "ylay.json"}
+    m = build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+    assert seen["data"] == sel
+    assert _read_file(tmp_path / "out" / m["track1"], 60, len(sel)) == new
+    assert _read_file(tmp_path / "out" / m["track1"], 70, len(sel)) == sel
+    assert m["bundles"][0]["file"] == "STG1.BIN" and m["bundles"][0]["entries"] == ["yukiop.logo"]
+    assert m["distribution"] is True
+
+
+def test_yukiop_job_rejects_a_size_change(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    (tmp_path / "y.json").write_text(json.dumps({"yukiop": True, "file": "STG1.BIN", "entries": []}))
+    (tmp_path / "ylay.json").write_text("{}")
+    monkeypatch.setattr(build.yukiop_mod, "render", lambda d, t, l: (d[:-1], _fake_result([], "needs_review")))
+    job = {"files": ["STG1.BIN"], "translation": tmp_path / "y.json", "layout": tmp_path / "ylay.json"}
+    with pytest.raises(build.BuildError, match="size"):
+        build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+
+
+def test_roll_job_applies_its_lyrics_after_the_roll(tmp_path, monkeypatch):
+    cue, profile, sel = _stage_disc(tmp_path)
+    tr = tmp_path / "roll.json"
+    tr.write_text(json.dumps({"file": "STG1.BIN", "picture_chunks": True, "entries": []}))
+    (tmp_path / "lay.json").write_text("{}")
+    (tmp_path / "ly.json").write_text("{}")
+    (tmp_path / "lylay.json").write_text(json.dumps({"font": "/usr/share/fonts/truetype/nanum/NanumSquareRoundB.ttf"}))
+    rolled = bytes(b ^ 1 for b in sel)
+    sung = bytes(b ^ 3 for b in sel)
+    order = []
+
+    def fake_roll(data, translation, layout, **kw):
+        order.append("roll")
+        return rolled, _fake_result(["clear.c0"], "distribution_eligible")
+
+    def fake_lyrics(data, translation, layout, file_name=None):
+        order.append("lyrics")
+        assert data == rolled
+        return sung, _fake_result(["lyrics.c0"], "needs_human_review")
+    monkeypatch.setattr(build.chunkpics_mod, "render", fake_roll)
+    monkeypatch.setattr(build.lyrics_mod, "render", fake_lyrics)
+    job = {"files": ["STG1.BIN"], "translation": tr, "layout": tmp_path / "lay.json",
+           "lyrics": [tmp_path / "ly.json", tmp_path / "lylay.json"]}
+    m = build.build(cue, tmp_path / "out", None, profile=profile, bundles=[job], title=False)
+    assert order == ["roll", "lyrics"]
+    assert _read_file(tmp_path / "out" / m["track1"], 60, len(sel)) == sung
+    b = m["bundles"][0]
+    assert b["entries"] == ["clear.c0", "lyrics.c0"] and b["distribution"] is False
+    assert b["lyrics"]["translation"].endswith("ly.json")

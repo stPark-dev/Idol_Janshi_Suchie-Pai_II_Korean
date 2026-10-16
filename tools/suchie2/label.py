@@ -34,6 +34,20 @@ class LabelError(ValueError):
     pass
 
 
+def missing_glyphs(font, text: str) -> list[str]:
+    """Characters the font draws as its .notdef box (compared with a noncharacter's mask)."""
+    ref = font.getmask("\uffff")
+    ref = (ref.size, bytes(ref))
+    out = []
+    for ch in dict.fromkeys(text):
+        if ch.isspace():
+            continue
+        m = font.getmask(ch)
+        if (m.size, bytes(m)) == ref:
+            out.append(ch)
+    return out
+
+
 def _box_iter(box):
     x0, y0, x1, y1 = box
     for y in range(y0, y1):

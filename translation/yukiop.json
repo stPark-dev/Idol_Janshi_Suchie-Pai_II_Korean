@@ -1,0 +1,73 @@
+{
+ "yukiop": true,
+ "_about": "YUKIOP.BIN(스테이지 선택 「스치 유키」 = 스치파이 보너스 극장) 타이틀 로고와 이야기 카드. Yc 묶음(워드 RLE) 8항목 + 이야기 카드(8bpp 비압축). 로고는 프로젝트 소유자가 만든 yuki_title_ko.png 한 장을 위 줄(스프라이트 6)과 본 로고(스프라이트 5)로 나눠 넣고, 같은 그림을 완성 타이틀(항목 7)에도 그린다.",
+ "file": "YUKIOP.BIN",
+ "source_sha1": "e39d50ac788efbf25e1fc2d16e2cae796f74cd18",
+ "id_prefix": "yukiop.",
+ "entries": [
+  {
+   "id": "yukiop.logo",
+   "entries": [
+    5,
+    6,
+    7
+   ],
+   "image": "assets/yuki/yuki_title_ko.png",
+   "image_sha1": "aa9004b4ca8ad47d6de32989f48838106c196f80",
+   "ja": "美少女雀士\nスチユキちゃん",
+   "ko": "미소녀작사\n스치유키짱",
+   "state": "distribution_eligible",
+   "terms": [
+    "name.suchie",
+    "name.yuki"
+   ],
+   "note": "로고 이미지는 프로젝트 소유자 제작(2026-10-16). 게임 칸에 맞춘 화면(감색·메운 자리 포함)을 캡처로 확인",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "yukiop.story",
+   "ja": "スーチーユキちゃん\n大かつやく！\nイカサマ雀士の\n正体をあばけ!!\nの巻",
+   "ko": "스치유키짱\n대활약!\n사기꾼 작사의\n정체를 밝혀라!!\n편",
+   "state": "distribution_eligible",
+   "terms": [
+    "name.suchie",
+    "name.yuki",
+    "ce.ikasama"
+   ],
+   "note": "칠판 글꼴 나눔바른펜 Bold(소유자 선택 2026-10-16). イカサマ雀士 → 사기꾼 작사(용어집 ce.ikasama: 사람이면 사기꾼)",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "yukiop.e0",
+   "entry": 0,
+   "reason": "PRESS START (영어)"
+  },
+  {
+   "id": "yukiop.e1",
+   "entry": 1,
+   "reason": "속도선 배경 그림"
+  },
+  {
+   "id": "yukiop.e2",
+   "entry": 2,
+   "reason": "속도선 배경 그림"
+  },
+  {
+   "id": "yukiop.e3",
+   "entry": 3,
+   "reason": "유키 그림"
+  },
+  {
+   "id": "yukiop.e4",
+   "entry": 4,
+   "reason": "유키 그림"
+  },
+  {
+   "id": "yukiop.e7copyright",
+   "entry": 7,
+   "reason": "완성 타이틀 아래 ©1996 JALECO LTD. ALL RIGHTS RESERVED (영어, 그대로)"
+  }
+ ]
+}

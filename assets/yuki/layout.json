@@ -1,0 +1,66 @@
+{
+ "_about": "YUKIOP.BIN 배치. logo/small: 스프라이트 항목과 완성 타이틀(picture) 안의 위치(게임이 그린 자리, 색 일치 99.5%로 확인). split_search: 로고 이미지에서 위 줄과 본 로고를 가르는 행 범위. story: 칠판 상자(x0,y0,x1,y1), 칠판 무늬 색 번호, 무늬를 빌려 오는 행 간격, 줄마다 글꼴·크기·y.",
+ "logo": {
+  "entry": 5,
+  "at": [
+   65,
+   151
+  ]
+ },
+ "small": {
+  "entry": 6,
+  "at": [
+   67,
+   135
+  ]
+ },
+ "picture": {
+  "entry": 7
+ },
+ "split_search": [
+  230,
+  310
+ ],
+ "story": {
+  "box": [
+   159,
+   64,
+   283,
+   176
+  ],
+  "board": [
+   153,
+   154
+  ],
+  "period": 18,
+  "lines": [
+   {
+    "font": "/usr/share/fonts/truetype/nanum/NanumBarunpenB.ttf",
+    "size": 19,
+    "y": 0
+   },
+   {
+    "font": "/usr/share/fonts/truetype/nanum/NanumBarunpenB.ttf",
+    "size": 19,
+    "y": 22
+   },
+   {
+    "font": "/usr/share/fonts/truetype/nanum/NanumBarunpenB.ttf",
+    "size": 19,
+    "y": 44
+   },
+   {
+    "font": "/usr/share/fonts/truetype/nanum/NanumBarunpenB.ttf",
+    "size": 19,
+    "y": 66
+   },
+   {
+    "font": "/usr/share/fonts/truetype/nanum/NanumBarunpenB.ttf",
+    "size": 16,
+    "y": 88,
+    "align": "right",
+    "right": 16
+   }
+  ]
+ }
+}

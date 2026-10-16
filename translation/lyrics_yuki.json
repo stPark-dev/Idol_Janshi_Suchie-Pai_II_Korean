@@ -1,0 +1,260 @@
+{
+ "_about": "유키 엔딩 크레딧 아래 노래 가사(ED_YUKI.DAT 청크 14~31, 256x16 4bpp). 색 번호가 안티앨리어싱 단계(1 진함~15 옅음, 0 투명). 원문 받아쓰기는 그림에서 옮겨 적은 것.",
+ "file": "ED_YUKI.DAT",
+ "lyrics": true,
+ "id_prefix": "lyrics.yuki.",
+ "entries": [
+  {
+   "id": "lyrics.yuki.c14",
+   "chunk": 14,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "cf58243adbfa38b1b0c31df8e812c24171b287f5",
+   "ja": "孤独が好きって言わないで",
+   "ko": "고독이 좋다고 말하지 마",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c15",
+   "chunk": 15,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "398e0c37ab5ef4798e636e45aac26d49b7ec95df",
+   "ja": "涙が好きって言わないで",
+   "ko": "눈물이 좋다고 말하지 마",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c16",
+   "chunk": 16,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "27abbfef04a01143f390ceb41d799b71156a77f5",
+   "ja": "君の君の笑い顔",
+   "ko": "너의, 너의 웃는 얼굴",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c17",
+   "chunk": 17,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "2d3fa7219c3421f4dcbf6e68437085750d960b08",
+   "ja": "世界中で一番　光ってるから…",
+   "ko": "세상에서 제일 빛나고 있으니까…",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c18",
+   "chunk": 18,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "c5530f524e3d1ea80eab24737af745e9ce6c3ac7",
+   "ja": "また逢えるといいね",
+   "ko": "또 만날 수 있으면 좋겠다",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c19",
+   "chunk": 19,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "7358885ec66ef7fdef288e6661c0700804e01304",
+   "ja": "ゼンゼン思ってもいない時",
+   "ko": "전연 생각지도 못한 때",
+   "state": "distribution_eligible",
+   "note": "ゼンゼン·グウゼン·トツゼン의 운을 전연·우연·돌연으로 살림",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c20",
+   "chunk": 20,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "644ca0adb58b6ada02181d52b2f0b188c63c21dd",
+   "ja": "グウゼン　トツゼン",
+   "ko": "우연 돌연",
+   "state": "distribution_eligible",
+   "note": "ゼンゼン·グウゼン·トツゼン의 운을 전연·우연·돌연으로 살림",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c21",
+   "chunk": 21,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "1e27901c7012c8296830cd7ba8aeb2a711aafa97",
+   "ja": "胸のすき間のあたりで…",
+   "ko": "가슴 틈새 언저리에서…",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c22",
+   "chunk": 22,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "29aa7cb466cdac76c7832d86e9d8dbdbeb63d633",
+   "ja": "再見！",
+   "ko": "짜이찌엔~",
+   "state": "distribution_eligible",
+   "note": "중국어 인사 再見(짜이찌엔). 원래 그림 칸(440바이트)에 들어가도록 느낌표 대신 물결표(「짜이찌엔!」은 446바이트로 넘침)",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c23",
+   "chunk": 23,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "0dec2da78814bfde2c19fdfe28734b0b66671df7",
+   "ja": "日暮れが好きって言わないで",
+   "ko": "해 질 녘이 좋다고 말하지 마",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c24",
+   "chunk": 24,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "2b0b2519708e5bd14a6716c5f4a74c318638741a",
+   "ja": "嵐が好きって言わないで",
+   "ko": "폭풍이 좋다고 말하지 마",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c25",
+   "chunk": 25,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "98986d30d41b9957970dc3777859f8f35eb099aa",
+   "ja": "君の君のその瞳",
+   "ko": "너의, 너의 그 눈동자",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c26",
+   "chunk": 26,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "7cd1ebec57c658f86c3103806cde11a7b8b82817",
+   "ja": "世界中で一番　かげりあるから",
+   "ko": "세상에서 제일 그늘져 있으니까",
+   "state": "distribution_eligible",
+   "note": "4행 '빛나고 있으니까'와 짝",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c27",
+   "chunk": 27,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "a6e5ee0c08fc9758f1c90decc4737e7373521f67",
+   "ja": "ゼンゼン思いがけない場所",
+   "ko": "전연 뜻밖의 장소",
+   "state": "distribution_eligible",
+   "note": "전연(全然) = 5행과 같은 운",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c28",
+   "chunk": 28,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "c523a51a7279a04ec95b7986c5f72b90bbac5976",
+   "ja": "夢の向こうのあたりで…",
+   "ko": "꿈 저편 언저리에서…",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c29",
+   "chunk": 29,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "7795d5bbd2ceaaa3e02e9eb28adc82c186fb261d",
+   "ja": "キラキラ変わってく世の中で",
+   "ko": "반짝반짝 변해 가는 세상 속에서",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c30",
+   "chunk": 30,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "8546fbab1a43a232e0720a27bf8cb27f88d8c553",
+   "ja": "一千光年",
+   "ko": "일천 광년",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  },
+  {
+   "id": "lyrics.yuki.c31",
+   "chunk": 31,
+   "size": [
+    256,
+    16
+   ],
+   "src_sha1": "2b49213ca61aa492c1567aabfbbae94c89b6d347",
+   "ja": "愛が生まれるあたりで",
+   "ko": "사랑이 태어나는 언저리에서",
+   "state": "distribution_eligible",
+   "note": "",
+   "approved_by": "프로젝트 소유자 2026-10-16 (게임 화면 캡처 확인 후 v1.2 정리 지시)"
+  }
+ ]
+}
