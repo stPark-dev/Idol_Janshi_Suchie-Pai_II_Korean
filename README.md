@@ -94,7 +94,7 @@ v1.0에 들어 있는 것:
 | `Redump/` | Redump 판 1번 트랙 BIN (SHA-1 `90efa69e3b3f89503e356d6d6f5112ff8a541f1d`) | 한글판 1번 트랙 (SHA-1 `dc200fc6ccc09cffa6ec97724586831bc8351f30`). 한글판 cue가 원본 2번 트랙을 그대로 읽음 |
 | `CHD/` | CHD를 `chdman extractcd`로 푼 BIN 하나(Redump 두 트랙을 합친 것과 같음, SHA-1 `c943e23cdd74bb223e1cb2de7fb10e3c27379042`) | 음악까지 든 한글판 BIN 하나 (SHA-1 `9b91fa80cfd7e9a8a29b9282e2dc2d677fc9b6cd`) |
 
-패치는 Floating IPS(flips)로 적용합니다. zip은 `python tools/mkrelease.py --source "원본.cue" --build out/v12 --version 1.2`로 만들며(`out/release/`), 쓰기 전에 각 패치를 원본에 다시 적용해 빌드와 같은지 확인합니다. v1.2 zip `Suchie-Pai2_KR_v1.2.zip` 3,281,679바이트, SHA-1 `17fa056c26ce7aca2c665dd4cedaebdcc2554972`(2026-10-22 안내문 수정판: 최신 FLIPS·롬포지 안내). 빌드는 데비안 12(Pillow 9.4, raqm)에서 v1.2 릴리스 커밋으로 한 것입니다. 같은 한글판을 CHD로 묶어 libretro Beetle Saturn 코어에서 유키 경로 전체를 확인했습니다. (v1.1 zip `Suchie-Pai2_KR_v1.1.zip` SHA-1 `5b83de69cdb52a617a829287c872500d541589c6`, 커밋 `22694bb`.)
+패치는 Floating IPS(flips)로 적용합니다. zip은 `python tools/mkrelease.py --source "원본.cue" --build out/v12 --version 1.2`로 만들며(`out/release/`), 쓰기 전에 각 패치를 원본에 다시 적용해 빌드와 같은지 확인합니다. v1.2 zip `Suchie-Pai2_KR_v1.2.zip` 3,281,657바이트, SHA-1 `4cade8a9424ca598308c60312c41dba49b59caf3`(2026-10-22 안내문 수정판: 최신 64비트 FLIPS 안내). 빌드는 데비안 12(Pillow 9.4, raqm)에서 v1.2 릴리스 커밋으로 한 것입니다. 같은 한글판을 CHD로 묶어 libretro Beetle Saturn 코어에서 유키 경로 전체를 확인했습니다. (v1.1 zip `Suchie-Pai2_KR_v1.1.zip` SHA-1 `5b83de69cdb52a617a829287c872500d541589c6`, 커밋 `22694bb`.)
 
 ## 준비물
 
