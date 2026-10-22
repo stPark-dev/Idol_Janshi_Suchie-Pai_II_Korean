@@ -34,7 +34,9 @@
         637,257,936바이트  SHA-1 90efa69e3b3f89503e356d6d6f5112ff8a541f1d
         (Track 2) 는 음악 트랙이라 고치지 않습니다.
   1. 원본 폴더를 통째로 복사해 둡니다(보관용).
-  2. Floating IPS(flips)로 패치합니다. https://github.com/Alcaro/Flips/releases
+  2. Floating IPS(flips) 최신 버전으로 패치합니다. https://github.com/Sir-Walrus/Flips/releases
+     (flips-windows.zip). 예전 버전 FLIPS는 파일이 커서(약 640MB) 메모리가 모자라면
+     메시지 없이 꺼집니다. 그럴 때는 최신 버전이나 롬포지(Rom Patcher JS)를 쓰세요.
        패치 = Redump\Idol Janshi Suchie-Pai II (Japan) (Disc 1) (Track 1).bin.bps
        원본 = Idol Janshi Suchie-Pai II (Japan) (Disc 1) (Track 1).bin
      저장할 이름은 반드시 아래처럼, 원본과 같은 폴더에 저장합니다.
@@ -48,7 +50,7 @@
        chdman extractcd -i "원본.chd" -o "Idol Janshi Suchie-Pai II (Japan) (Disc 1).cue"
   원본: 위에서 나온 BIN 하나 (646,593,024바이트)  SHA-1 c943e23cdd74bb223e1cb2de7fb10e3c27379042
         Redump 판 BIN 2개를 하나로 합친 BIN 도 이것과 같습니다.
-  1. Floating IPS(flips)로 패치합니다.
+  1. Floating IPS(flips) 최신 버전(또는 롬포지)으로 패치합니다.
        패치 = CHD\Idol Janshi Suchie-Pai II (Japan) (Disc 1).bin.bps
        원본 = 위의 BIN
      저장할 이름: Idol Janshi Suchie-Pai II (Korean) (Disc 1).bin
